@@ -1,0 +1,19 @@
+{
+	"title": "Puyo Puyo Fever logo",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000001e000000000061800000007c80cf80000083edb07cf801381ba70306017ddb2fbb71017d52efab7d013ddc27bb7d031c1053837d043860f78f7109bdbf0704720bffdc37b1f90bdfdf7bfbfc8bdfdf7bfbbe8bffdf7ffbfe89bd9c37b1f884387e0704f78380ff301a0a807eefffe9fa8002ffc08f2780027e408927f0013cc0993210008140de3210007e7cd23210000004f279f0000004844900000009044f0000000907c00000000900000000000f00000000000000000"
+	],
+	"tags": [
+		"logo"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "9697cb3e5da6e85817494d7ba5e1c66839a42ddd",
+	"added": "2026-10-04"
+}

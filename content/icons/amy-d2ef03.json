@@ -1,0 +1,19 @@
+{
+	"title": "Amy",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00003d55fc1f000033af841b000060f6040de000401876059f008013f607b88000063503e00000083703c00000003703c00000002513807800006b1381fc00004d1383c21f000a11876070c102118640c06600098c41803800099cc1062000099ce207202009d6b40d31c009b2b80b3e000ba2c00b50020ba1e00b50021ba1b80b50021ba1e60d90061ba10187d00617b0807c600437b0c000200c3fb06004200c7f985838401871888e004018e18c87c18031c18c8dff80e381ff890301cfff"
+	],
+	"tags": [
+		"amy",
+		"portrait"
+	],
+	"source": "The Spriters Resource: \"Sonic VMU Sprites\" sheet by Zach \"Zin\" Furr (alt SA2 logo added by Shessy). Art by Sonic Team.",
+	"hash": "d2ef031bfd82e474ad5444388f8f06b65235b348",
+	"added": "2026-10-04"
+}

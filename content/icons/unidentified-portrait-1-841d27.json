@@ -1,0 +1,19 @@
+{
+	"title": "Unidentified portrait 1",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"4080000001012080000000832100000000821100700000441200180000440a00fc0008280e0156001f380603570035b0040555803540040555c05540840555405540e405556055413c055550554784055550555cde055550557087c755505562bcfffd5055cc8f1fffd057f1e3fce1d05f867e06a07078f8fe02a03070c3ff03e013d1ff6f05e01c73b6fe087060bdfffe280f80c1ff6c19000003b6fc0c800006fff806600008ff700f1c0010f6e01bc000607fc0307803803f804007fc0016"
+	],
+	"tags": [
+		"portrait",
+		"unidentified"
+	],
+	"source": "The Spriters Resource: \"Sonic VMU Sprites\" sheet by Zach \"Zin\" Furr (alt SA2 logo added by Shessy). Art by Sonic Team.",
+	"hash": "841d27597583f8e7ed64cf7d3f2accfba88c5ac8",
+	"added": "2026-10-04"
+}

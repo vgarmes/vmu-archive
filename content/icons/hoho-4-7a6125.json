@@ -1,0 +1,21 @@
+{
+	"title": "Hoho 4",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000808000000000804000000000804000000101004000000981d820000008ce302000000870ec20000014e3c2200018153421200028771c10a0004580c808a000847708086000821408086001011408086001008a141e4001007d34314002000fe3c0c00200000002c00200000006c0040000001ac8047fe0006ac605d85fff8cc3062c420889420026420892440021420892440010c208a44800306208c85000301e099060005003fe20c0004c0000c3000043c01f0c0000803fe01000"
+	],
+	"tags": [
+		"character",
+		"hoho",
+		"hohow-bird"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "7a6125a05fe5d6b2a9dabe3646f6ecc45cad61d0",
+	"added": "2026-10-04"
+}

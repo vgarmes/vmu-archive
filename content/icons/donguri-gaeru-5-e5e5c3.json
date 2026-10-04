@@ -1,0 +1,21 @@
+{
+	"title": "Donguri Gaeru 5",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000000000000000000000000007c0001f00001c6000e0c000302003003f80202005f80c4060e00ffe022043f017ff811046c81fffc09005882fffe04807082ffff04800082ffff82800007ffff8280000c00ffc1000033805fc10000c47027e10001081cc3e100020c2301e10004024000e10008018000620008000000220010f80000220011fc0000240023fe0000280027fe00003000effe00e0400127fe011180013bfe010e0000e7fc0108000000ffff90000000000060000"
+	],
+	"tags": [
+		"character",
+		"donguri-gaeru",
+		"dongurigaeru"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "e5e5c3350ad5c2abf9bf5fe28a9a74da2096fcdd",
+	"added": "2026-10-04"
+}

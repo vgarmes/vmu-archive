@@ -1,0 +1,20 @@
+{
+	"title": "Ms. Accord 4",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0100ffffc002010300003802020c03e006040230ffff01040243ffffe084028ffffff844033ffdfffc4802fffdfffe2803dff9ffff1803bff9ffff88077ff0eff8d00efe90ecf7701dfef07777b01dff7037f7d01bff701bffd013f8b00dffd813f79000ffac3beff803f04ffbefcc363f8ffbff93c81f1ffdfd92481ffffcfb0c303dfff90300007dfff3bb83f0f8ffeb77e211f53fd6e3fa13edcf35dbff27d6f3edfbffffbbfdddfb8a47fcfebdfc3227fc7fbe484223f83f7fe48411f01f"
+	],
+	"tags": [
+		"character",
+		"ms-accord"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "ddd587044d8b894e593c41ed33e81d620a7fad2e",
+	"added": "2026-10-04"
+}

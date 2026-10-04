@@ -1,0 +1,20 @@
+{
+	"title": "Yu 2",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000000000003c0000000000f40001fffe00f4001e0001c0e40020000020c2004000c01082004000e42002008600624001008de00180010118180080010e38460040009058cd802000a0a8d4e02000c32925901000cca5068810105e43008c10105f50411c08082fe0392608082f8001d60804178f803604020b88806c048101c880180440c0e480f00830205b01c0700c102c0f8783030c17f2381c00e3030cc7e0001c01313000000000c20e000000388001e00003c000001f"
+	],
+	"tags": [
+		"character",
+		"yu"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "0fb45fdf4f51459ba5d790f88db4e8c9a21619be",
+	"added": "2026-10-04"
+}

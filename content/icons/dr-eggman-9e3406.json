@@ -1,0 +1,19 @@
+{
+	"title": "Dr. Eggman",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffe7ffff1fffffcdfffecfffff90e07c2fffffa180061fffffe30001afffffd600006ffeffec00003ffc7fd8000017f83f90000013f01fb000000be10ee300000dc3842000870886c2238108058821e4611c070000e0f93e0e0000718f311c00800d1de37001e0073d67c00700017e2f0000c000f43e0000fe000c18000ffff8082807ff005f880fffc000627c1eac00003a222458006017a145b0009c087ffe200e62070000c0111a00ffff002402003c0e0048"
+	],
+	"tags": [
+		"eggman",
+		"portrait"
+	],
+	"source": "The Spriters Resource: \"Sonic VMU Sprites\" sheet by Zach \"Zin\" Furr (alt SA2 logo added by Shessy). Art by Sonic Team.",
+	"hash": "9e3406068cb54d4f07b29df75687b826a04a582a",
+	"added": "2026-10-04"
+}

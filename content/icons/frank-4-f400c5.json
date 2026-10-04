@@ -1,0 +1,21 @@
+{
+	"title": "Frank 4",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000000000000003ffe78000003ffff9400001fff7f2200007ffe7f220001ffee3f220003fdc43122000ffc849f94001ffc088678003fcc4b03000001e07d01000000b721008000037d12304000078f0d503e000004009011c0007c0320223001838c40420002b07f80440004c8000084000508000084000604000504003c0c00090400c43000110800824800e1080043840fc208002358f0220800627f00220800a1e00022080110001fe3e8021001f882180210004084080"
+	],
+	"tags": [
+		"character",
+		"frank",
+		"frankestein"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "f400c5733f571f8782afb516492f02e0887fb616",
+	"added": "2026-10-04"
+}

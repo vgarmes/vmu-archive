@@ -1,0 +1,18 @@
+{
+	"title": "Sonic Adventure 2 logo (alt)",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000007fe000000003c03c0000000e0007000000380000c0000060007e300000c00001c800018000003c0003000007d00fffffffffffe80408c8c1001cfbf73f3eff398618c8e181b90408488000991840088900b908c0081ff89cc080081180bd0409088101a90e1988c20128fffffffe3f3921810202009a0808480600ba42424842012bffffffffff7c00000000001fffffffffffe009fffff1f000067fffe3300003cfffc6100001ffff1c000000fffc700000003fe3c000000007fe00000"
+	],
+	"tags": [
+		"logo"
+	],
+	"source": "The Spriters Resource: \"Sonic VMU Sprites\" sheet by Zach \"Zin\" Furr (alt SA2 logo added by Shessy). Art by Sonic Team.",
+	"hash": "6e1eee4e473fd4a1a524cdc9dcdec01239f529d3",
+	"added": "2026-10-04"
+}

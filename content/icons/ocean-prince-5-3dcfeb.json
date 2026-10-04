@@ -1,0 +1,21 @@
+{
+	"title": "Ocean Prince 5",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000038000000000028000000000039c0000000004b400000000045c00000000fe1000000003018f80000004006280000008001380000010000c0070001381c403560027c3e262da0027c3e251540047c3e158d8e187c3e1d4765e1381c9c45520080010e45518060060e85907000000f05a00e00078eaba001c0389f5aa0003fc11f5a400000013cf5000000026b0f80000005a5f00000001a2569c00000244355400000d84a8d200007e056012007fe006200a00000004000a00000000000e"
+	],
+	"tags": [
+		"character",
+		"ocean-prince",
+		"prince-of-ocean"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "3dcfeb1a411be7649721b54ba558a03fece82b67",
+	"added": "2026-10-04"
+}

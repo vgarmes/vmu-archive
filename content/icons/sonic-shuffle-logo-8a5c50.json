@@ -1,0 +1,18 @@
+{
+	"title": "Sonic Shuffle logo",
+	"game": "Sonic Shuffle",
+	"publisher": "Sega",
+	"year": 2000,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000003f87e1e3bc1f7fcff9f3bc7fffdff9f3bcfffbdffdfbbdfff83e3dfbbdf1ff3c3dffbde07fbc3dffbde03fbc3dffbde107fe7ddfbdf3f7dff9dfbdffffdff9cfbcffff8ff1cfbc7f3f07e1c7bc1f000000000000ffffffffffffc04c998613c187cc993cf39f87cc993cf39fc0c099041381f84c993cf39ff84c893cf39f80ccc13cf841ffffffffffffffffffffffffffffffffffffffc03ffffffefc0001fffffcf000000ffff080000000ff80000000000000000000000000"
+	],
+	"tags": [
+		"logo"
+	],
+	"source": "The Spriters Resource: \"Sonic VMU Sprites\" sheet by Zach \"Zin\" Furr (alt SA2 logo added by Shessy). Art by Sonic Team.",
+	"hash": "8a5c506b35ccf4e7842e5bec0b0d7e020b9b55ae",
+	"added": "2026-10-04"
+}

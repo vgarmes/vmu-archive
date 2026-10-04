@@ -1,0 +1,19 @@
+{
+	"title": "Shadow",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffff00f8ffffffff80feffffffffc0ffffff7fffe1ff07ff3ffff1ff1fff1dfff9ff7fff0efffbffffff067fffdfffff377fffdfffff7b3fffeffffecfbfffeeffff83bffffcffff81dffff9ffff01dffff3ffff00efffe7ffff0c7fffefffff1e7fffeeff7f963fffcfffff923ffbdfffffda1ffb96ff7cda1ffbbfff787a0ff73fffb01a07f776ffb00e03ee7fffd00301dc07fff800c3fff2fffc003c3f1bfffe00001ff3eff7bc001fe69ff38200700f3fe0f80387ff3fc07ffc3db6"
+	],
+	"tags": [
+		"shadow",
+		"portrait"
+	],
+	"source": "The Spriters Resource: \"Sonic VMU Sprites\" sheet by Zach \"Zin\" Furr (alt SA2 logo added by Shessy). Art by Sonic Team.",
+	"hash": "61d244a5ab96c875bb06ab36d6dc3f69fee38ade",
+	"added": "2026-10-04"
+}

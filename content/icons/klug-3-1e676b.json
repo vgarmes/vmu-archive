@@ -1,0 +1,20 @@
+{
+	"title": "Klug 3",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003fff0bfe0001ffff13ffc007fffe75fff00fffc2991ffc1ffe020b07f27ff87e0ff1f39fc3ff1ffcec979fffffff44637fffffffc220ffffffff8241fffc27ffc143ffe003ffe087ff8001fff007ff0000fff80ffe00007ff81ffe00187ffc1ffc300f3ffc3ffce0003ff03ffc04403bc07fec028f1d003fdce39b97001fd5329d150007d612891a0000ee02463c0000160430d000000f080f20000001f0e040000000c111800000003f1e0000000005f4000000001ebc0000000031c60000"
+	],
+	"tags": [
+		"character",
+		"klug"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "1e676b958bc33f6ab3e64a708cd0a97a37675c01",
+	"added": "2026-10-04"
+}

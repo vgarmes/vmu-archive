@@ -1,0 +1,20 @@
+{
+	"title": "Popoi 5",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000700000000001880000000001280000000001c80000000000180000000000200fc0007c00107ff0000fe001ffc00001fcfbff000010fffffe20004cfffffcc40032fffff918000bbe9fee20007fc1c01ffe003fe3f07ffc000ffffffff80003fffffff00000ffffffc000001fffff00000000fff00000000003f80000000003fc0000000001fc0000000001fe0000000001fe0400000001fe0c00000001fe1e00000001fe3e00000003ff3600000003ff66c0000007ffe7e0000007ffc3a"
+	],
+	"tags": [
+		"character",
+		"popoi"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "32640b58cc414185407fe75f6b582f927b161a7c",
+	"added": "2026-10-04"
+}

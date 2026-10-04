@@ -1,0 +1,63 @@
+@import 'tailwindcss';
+
+@custom-variant dark (&:is(.dark *));
+
+/* Tokens shared with retro-blog: a neutral, square-cornered palette. */
+:root {
+	--background: oklch(1 0 0);
+	--foreground: oklch(0.145 0 0);
+	--card: oklch(0.985 0 0);
+	--primary: oklch(0.205 0 0);
+	--primary-foreground: oklch(0.985 0 0);
+	--muted: oklch(0.97 0 0);
+	--muted-foreground: oklch(0.556 0 0);
+	--border: oklch(0.922 0 0);
+	--input: oklch(0.922 0 0);
+	--ring: oklch(0.708 0 0);
+}
+
+.dark {
+	--background: oklch(0.145 0 0);
+	--foreground: oklch(0.985 0 0);
+	--card: oklch(0.185 0 0);
+	--primary: oklch(0.922 0 0);
+	--primary-foreground: oklch(0.205 0 0);
+	--muted: oklch(0.269 0 0);
+	--muted-foreground: oklch(0.708 0 0);
+	--border: oklch(1 0 0 / 10%);
+	--input: oklch(1 0 0 / 15%);
+	--ring: oklch(0.556 0 0);
+}
+
+@theme inline {
+	--font-sans: var(--font-geist-mono);
+	--font-mono: var(--font-geist-mono);
+	--color-background: var(--background);
+	--color-foreground: var(--foreground);
+	--color-card: var(--card);
+	--color-muted: var(--muted);
+	--color-muted-foreground: var(--muted-foreground);
+	--color-border: var(--border);
+	--color-ring: var(--ring);
+	--color-input: var(--input);
+	--color-primary: var(--primary);
+	--color-primary-foreground: var(--primary-foreground);
+}
+
+@layer base {
+	* {
+		@apply border-border outline-ring/50;
+	}
+	body {
+		@apply bg-background text-foreground;
+	}
+	button:not(:disabled),
+	[role='button']:not(:disabled) {
+		cursor: pointer;
+	}
+}
+
+/* Native-size pixel art scaled up without smoothing. */
+@utility pixelated {
+	image-rendering: pixelated;
+}

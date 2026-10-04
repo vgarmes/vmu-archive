@@ -1,0 +1,21 @@
+{
+	"title": "Tartar 4",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03f800001fc00c070000e030d0008001000b38004002001c063020040c6001a010080580006010080600001810081800000410082000e00220044007f801f00f801ffc009009003fff00881100ffff80481201ffffc0700e03ffffe023c407fffff02ff40ffffff8ffff1fffffff7ffefffffff8fe7f1ffffff1f24f8fffffe3cff3c7ffff87b00de1ffff074422e0fffe068181607fff9f8001f9fffff1ffff8ffffff8c6631fffffff0990fffffff813c81fffffc427e423ffff824ff241ff"
+	],
+	"tags": [
+		"character",
+		"tartar",
+		"tarutaru"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "d92cb344f5f587f9a52151abd57cfbffa1ef2fe5",
+	"added": "2026-10-04"
+}

@@ -1,0 +1,20 @@
+{
+	"title": "Arle 1",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00001801c000000023e0300000004410080000007fc804000000e03c0200000300062100007f800190c0018000004c3c0660000022080884000431301318200218c0242020091f00284040850800104340e488000884c094840006808082540001808082640000f380fa4e00039f80efd1807c36ffb4f060205540a4c81f209d40256c0211158019aa040a2401c2950804241e42e2f0044b104481c0034ac898410000ca3fe84600003a0ffe78000007ffe3c0000000dfdd000000078fa28000"
+	],
+	"tags": [
+		"character",
+		"arle"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "580d6a06daadeaa948d3d04479fc259321a86901",
+	"added": "2026-10-04"
+}

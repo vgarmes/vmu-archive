@@ -1,0 +1,21 @@
+{
+	"title": "Dapper Bones 1",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffffff8000003fffdfc0000007ffdfc0000003ff1fc0000007fe3fe0000004387f1000000407fe0800000200fc04000001003002000000ffe0020000004800010000008407c1000000841fe10000008c3fe0800000fc3ff08000019c7ff0c000069c7ef0b00008847d708c0030c87ef08e0040bc3ff53c00808bffe5f80100474fcbf8020070c037f004002c01eff008001bff3fe010001e49ffe0201ffffbffc04fe043fc7fc0b000c48f9f80c003c50fef80000fc617ff80001ffa13fff0"
+	],
+	"tags": [
+		"character",
+		"dapper-bones",
+		"oshare-bones"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "40d30bb138c22f668a8e876af411f6df154b07ee",
+	"added": "2026-10-04"
+}

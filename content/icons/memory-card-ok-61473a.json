@@ -1,0 +1,20 @@
+{
+	"title": "Memory card: OK",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000000000ffffffffffff0000000000000000000000000001f8e1c0000003fce3c00000079ee7800000070eef000000070efe000000070efc000000070efc000000070efe000000070eef000000079ee780000003fce3c0000001f8e1c000000000000000000000000000ffffffffffff000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": [
+		"memory-card",
+		"menu"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "61473ab961d06163a2546f064dff86d91a4d0bbb",
+	"added": "2026-10-04"
+}

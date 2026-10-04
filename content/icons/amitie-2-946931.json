@@ -1,0 +1,20 @@
+{
+	"title": "Amitie 2",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000038000000000049000001ff804a00000ff9f894000033f8ff280000c3f879f0000343f87926000621f07329000e20e0e650001e3001e290003e3c07e338007e7fffe0d8007c7fff90b800b8ffff91ff0081ffff92fcf083fda58cfc0f8ffae2c0fc01fffa81e1fc80ffff1e9ffc40ffe62b8878e7ffa00f88f818ff20091470fc7c3c0714f0444036013e603e702a19238001b0766a21000040d08a66000033d04a42000027383cb400003957c498000001a884a000000003034000"
+	],
+	"tags": [
+		"character",
+		"amitie"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "946931ac0167cdb8ae5b2bcf9f6edcc3add6bafe",
+	"added": "2026-10-04"
+}

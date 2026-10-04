@@ -1,0 +1,21 @@
+{
+	"title": "Onion Pixie 2",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000a00000000001f00000000001100000000003f8000000000714000000001c9a00000000e065000000010052c00000060392200000080c2110000010302088000030c04044000021004022000662004022000a4200801100724400801101e1440080090fe1fc6083090bf3c89084890fffc890848a07ffe860830a07ffff00801407fcfd07f01807f87f188e3005f877e081c004fce75ffe0007fffd81e80000125067a400000c203e74000000003cfc000000003a30000000003c70000"
+	],
+	"tags": [
+		"character",
+		"onion-pixie",
+		"onion-pixy"
+	],
+	"source": "The Spriters Resource: \"VMU Screens & File Menu Icons\" from Puyo Pop Fever (Dreamcast), ripped by Mister Man.",
+	"hash": "916ab33917005bdf309a849b1fe21f4967e6f35e",
+	"added": "2026-10-04"
+}
