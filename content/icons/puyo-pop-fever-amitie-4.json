@@ -1,0 +1,19 @@
+{
+	"title": "Amitie 4",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000fe000000001f3fc0000001fc7ff0000007c47fec00000fe43fe200001fe61fc100803fc7078180605f8f8001c0188e1fe003e006803ff807f101c0fffffffb9dfffffffffc63fffbfffff823fffa9ffff9a3fff487fff963ffd53ffff893ff4e43fff87ffe6002f8fc01f0801e78f20180803638e301c1601e1ce4060390130cc8041c801d059007f187c08ff0000a444090680006a24153c800797fc6527400844038e8640112400d2838024a300b2450023d4038d390"
+	],
+	"tags": [
+		"character",
+		"amitie"
+	],
+	"hash": "cea3c32a9df9b749d04c3a3019c73928d5030536",
+	"added": "2026-10-04"
+}

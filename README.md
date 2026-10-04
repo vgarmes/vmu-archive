@@ -30,13 +30,13 @@ pnpm typecheck
      "year": 1998,
      "region": "JP",
      "tags": ["chao"],
-     "source": "my VMU",
      "invert": false,
      "frameDelayMs": 200
    }
    ```
 3. Run `pnpm icons:import` (`--dry-run` to preview, `--keep` to leave the
-   sources in place). Each piece becomes `content/icons/<slug>-<hash>.json`;
+   sources in place). Each piece becomes `content/icons/<game>-<title>.json`
+   (a readable id, chosen once and kept if the title changes);
    sources move to `inbox/imported/`. Pixel-identical art is skipped.
 4. Commit the new JSON files.
 
@@ -48,9 +48,15 @@ its own entry. Crops take the same fields as the sidecar and override it:
 ```json
 {
   "publisher": "Sega",
-  "source": "The Spriters Resource: sheet by …",
   "crops": [
-    { "x": 24, "y": 67, "w": 48, "h": 32, "title": "Sonic", "game": "Sonic Adventure" }
+    {
+      "x": 24,
+      "y": 67,
+      "w": 48,
+      "h": 32,
+      "title": "Sonic",
+      "game": "Sonic Adventure"
+    }
   ]
 }
 ```
@@ -65,22 +71,22 @@ To add frames to a piece that's already in the archive, import the **full**
 animation with a sidecar naming the entry to replace:
 
 ```json
-{ "replaces": "crazy-taxi-84631e", "frameDelayMs": 400 }
+{ "replaces": "crazy-taxi-title-screen", "frameDelayMs": 400 }
 ```
 
 The id (and so the URL), added date and unchanged metadata are kept.
 
 ## How it works
 
-| Piece | Where |
-| --- | --- |
-| Frame encoding, SVG / RGBA / C export, trimming | `src/lib/pixels.ts` |
-| Reading + validating entries at build time | `src/lib/icons.ts` |
-| Search index (metadata only, fetched once) | `src/app/search-index.json/route.ts` |
-| Native-size PNG thumbnails | `src/app/thumbs/[file]/route.ts` |
-| Search, filter, grid (batches of 60 as you scroll) | `src/components/Archive.tsx` |
-| Preview, trim option, download menu (Base UI) | `src/components/IconDetail.tsx` |
-| Importer | `scripts/import.ts` |
+| Piece                                              | Where                                |
+| -------------------------------------------------- | ------------------------------------ |
+| Frame encoding, SVG / RGBA / C export, trimming    | `src/lib/pixels.ts`                  |
+| Reading + validating entries at build time         | `src/lib/icons.ts`                   |
+| Search index (metadata only, fetched once)         | `src/app/search-index.json/route.ts` |
+| Native-size PNG thumbnails                         | `src/app/thumbs/[file]/route.ts`     |
+| Search, filter, grid (batches of 60 as you scroll) | `src/components/Archive.tsx`         |
+| Preview, trim option, download menu (Base UI)      | `src/components/IconDetail.tsx`      |
+| Importer                                           | `scripts/import.ts`                  |
 
 Everything is prerendered by `next build` into `out/`; downloads are generated
 in the browser from the frame data.

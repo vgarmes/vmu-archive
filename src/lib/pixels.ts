@@ -130,7 +130,9 @@ export function toSvg(art: PixelArt, opts: SvgOptions = {}): string {
 	const viewBox = `0 0 ${w - gap} ${h - gap}`
 	let body = ''
 	if (style === 'lcd' && off) {
-		const id = `dots-${Math.random().toString(36).slice(2, 8)}`
+		// Fixed, not random: the server and browser renders must match, and
+		// there's only ever one preview per page.
+		const id = 'vmu-dots'
 		body +=
 			`<defs><pattern id="${id}" width="1" height="1" patternUnits="userSpaceOnUse">` +
 			`<rect width="${dot}" height="${dot}" fill="${off}"/></pattern></defs>` +

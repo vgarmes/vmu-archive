@@ -24,8 +24,6 @@ const schema = z
 		frames: z.array(z.string().regex(/^[0-9a-f]+$/)).min(1),
 		frameDelayMs: z.number().int().positive().optional(),
 		tags: z.array(z.string()).default([]),
-		/** Where the art came from, for credit. */
-		source: z.string().optional(),
 		/** Content hash of the pixels; the importer uses it to skip duplicates. */
 		hash: z.string(),
 		added: z.string()
@@ -52,8 +50,6 @@ export interface IndexEntry {
 	publisher?: string
 	year?: number
 	tags: string[]
-	/** Animated (more than one frame). */
-	anim?: 1
 }
 
 let cache: Icon[] | undefined
@@ -91,6 +87,5 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 	game: data.game,
 	publisher: data.publisher,
 	year: data.year,
-	tags: data.tags,
-	...(data.frames.length > 1 ? { anim: 1 as const } : {})
+	tags: data.tags
 })

@@ -1,0 +1,19 @@
+{
+	"title": "Popoi 3",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000000000000000000000000000000780000000003e0000000001fc000fe00007f80007fc000ff00001ff1fffe000007ffffff080001ffffff120000ffffe3a40021ffff87e80093fffe9ff8006b07f8ffff0017f8f1fffe000fff67fffe007ffffffffc003ffffffff8001ffffffff00007ffffffe00003ffffffc00000ffffff0000003ffffc00000001fffe0000000007ff0000000007ff0000000007ff838000000fff8fc000000fff9ce000001fffb86000003ffff06"
+	],
+	"tags": [
+		"character",
+		"popoi"
+	],
+	"hash": "83a99c91660e462f513cba14649a06b5df140192",
+	"added": "2026-10-04"
+}

@@ -1,0 +1,18 @@
+{
+	"title": "Unidentified portrait 2",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"6dd030003301ffd060001982ffd0c0000cc66dd18000066cffd30000023dff962e0001396dbe03800019ffbcf9e0000dff39fef8000d6d73fffc001dff7ffffe003dfe7fe3ff003d6effdcff8079fef7bf3fc07bfce7bfdfe0fb6defbfeff8fbfddffff7fff2f9dffffbfff77bbfbffdfff7f3bffff6ffe6f77ffff37fef677ffff3ffefeefffff2df4ecffffff0ff5fdffffff8fe5f9fffe7fdfe96bfffb3ff27bf3fff987c23bf7fff7e003936ffffff001f7f03fffff03c7f00007ffff9f6"
+	],
+	"tags": [
+		"portrait",
+		"unidentified"
+	],
+	"hash": "1ef0bfd3cab74f5c420589f1df532a01e6445b38",
+	"added": "2026-10-04"
+}

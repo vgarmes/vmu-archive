@@ -1,0 +1,19 @@
+{
+	"title": "Memory card: Delete",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000000000ffffffffffff00000000000000000000000078fb0fbf7c007cfb0fbf7c006ec30c0c600066c30c0c600066fb0f8c7db666fb0f8c7db666c30c0c600066c30c0c60006ec30c0c60007cfbef8c7c0078fbef8c7c00000000000000000000000000000000000000ffffffffffff000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": [
+		"memory-card",
+		"menu"
+	],
+	"hash": "c96329f41d79b2b315d8ef7bd8e256b11b7a8145",
+	"added": "2026-10-04"
+}

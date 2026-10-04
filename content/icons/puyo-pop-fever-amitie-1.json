@@ -1,0 +1,19 @@
+{
+	"title": "Amitie 1",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000fe000000001f3fc0000001fc7ff0000007c47fec00000fe43fe200001fe61fc100803fc7078180605f8f8001c0188e1fe003e006803ff807f101c0fffffffb9dfffffffffc63fffbfffff823fffa9ffff9a3fff487fff963ffd53ffff893ff4e43fff87ffe6002fff801f0801e7ffc0180e0363fff01c1501e1ff00603b0130ff0041cb01d07e007f1800081c0000a47c080600006a001402000017fc660c0000040387240000040072d800000300ae300000040110000"
+	],
+	"tags": [
+		"character",
+		"amitie"
+	],
+	"hash": "26e0a87a22399ed1c9506d84b7d77aa543123a21",
+	"added": "2026-10-04"
+}

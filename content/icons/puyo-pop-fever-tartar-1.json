@@ -1,0 +1,20 @@
+{
+	"title": "Tartar 1",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000000000000000000000000000000ffe00000000ffffe0000003fffffc00000ffffffe00003fffffff8000ffffffffc001ffffffffe003fffffffff007fffffffff00ffffffffff81ffffe1ffffc3ffffc0ffffc3fffe409fffc7fff84087ffe7fff02103ffe7ffe07f01ffefffe180f1ffffffc6000cffffff880006fff7ffd30061fff7f8631c60c7f3e0c0140071f1c7801c0028e1c900000024cfffe00007ff80001fffff807c03f80807e00e1fc01e00fc0fff003f001f8"
+	],
+	"tags": [
+		"character",
+		"tartar",
+		"tarutaru"
+	],
+	"hash": "0134950bee54ad327c95d38fe27cc385c697f83c",
+	"added": "2026-10-04"
+}

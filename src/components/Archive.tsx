@@ -1,8 +1,9 @@
 'use client'
 
+import { Input } from '@base-ui/react/input'
 import Fuse from 'fuse.js'
-import Link from 'next/link'
-import { useEffect, useMemo, useRef, useState } from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import SpriteDrawer from '@/components/SpriteDrawer'
 import type { IndexEntry } from '@/lib/icons'
 
 /**
@@ -13,6 +14,9 @@ import type { IndexEntry } from '@/lib/icons'
  * rendered in batches as the visitor scrolls (the svgl pattern) rather than
  * virtualised — each card is one lazy-loaded <img>, so even thousands stay
  * light, and search keeps most result sets small.
+ *
+ * Clicking a card opens the sprite drawer and adds ?screen=<id> to the URL
+ * (Back closes it, and a shared link opens it).
  */
 
 const BATCH = 60
@@ -25,31 +29,63 @@ interface Props {
 export default function Archive({ initial, total }: Props) {
 	const [index, setIndex] = useState<IndexEntry[]>(initial)
 	const [query, setQuery] = useState('')
-	const [animatedOnly, setAnimatedOnly] = useState(false)
 	const [shown, setShown] = useState(BATCH)
+	const [screen, setScreen] = useState<string | null>(null)
+	// Whether the open drawer added a history entry, so closing can go Back.
+	const pushed = useRef(false)
 	const sentinel = useRef<HTMLDivElement>(null)
 
 	// Restore state from the URL, then load the full index.
 	useEffect(() => {
 		const params = new URLSearchParams(location.search)
 		setQuery(params.get('q') ?? '')
-		setAnimatedOnly(params.has('animated'))
+		setScreen(params.get('screen'))
+		const onPop = () => {
+			pushed.current = false
+			setScreen(new URLSearchParams(location.search).get('screen'))
+		}
+		addEventListener('popstate', onPop)
 
 		fetch('/search-index.json')
 			.then(r => r.json())
 			.then(setIndex)
 			.catch(() => {})
+		return () => removeEventListener('popstate', onPop)
 	}, [])
 
-	// Keep the URL shareable.
+	const urlFor = useCallback(
+		(screen: string | null) => {
+			const params = new URLSearchParams()
+			if (query) params.set('q', query)
+			if (screen) params.set('screen', screen)
+			const qs = params.toString().replace(/=(?=&|$)/g, '')
+			return qs ? `?${qs}` : location.pathname
+		},
+		[query]
+	)
+
+	// Keep the URL shareable as the search changes.
 	useEffect(() => {
-		const params = new URLSearchParams()
-		if (query) params.set('q', query)
-		if (animatedOnly) params.set('animated', '')
-		const qs = params.toString().replace(/=(?=&|$)/g, '')
-		history.replaceState(null, '', qs ? `?${qs}` : location.pathname)
+		history.replaceState(null, '', urlFor(screen))
 		setShown(BATCH)
-	}, [query, animatedOnly])
+		// eslint-disable-next-line react-hooks/exhaustive-deps -- only on search changes
+	}, [query])
+
+	const openScreen = (id: string) => {
+		history.pushState(null, '', urlFor(id))
+		pushed.current = true
+		setScreen(id)
+	}
+	const closeScreen = () => {
+		if (pushed.current) {
+			// popstate clears `screen`.
+			history.back()
+		} else {
+			history.replaceState(null, '', urlFor(null))
+			setScreen(null)
+		}
+	}
+	const selected = screen ? (index.find(i => i.id === screen) ?? null) : null
 
 	const fuse = useMemo(
 		() =>
@@ -68,11 +104,9 @@ export default function Archive({ initial, total }: Props) {
 	)
 
 	const results = useMemo(() => {
-		const base = query.trim()
-			? fuse.search(query.trim()).map(r => r.item)
-			: index
-		return animatedOnly ? base.filter(i => i.anim) : base
-	}, [fuse, index, query, animatedOnly])
+		const q = query.trim()
+		return q ? fuse.search(q).map(r => r.item) : index
+	}, [fuse, index, query])
 
 	// Render the next batch as the end of the grid nears the viewport.
 	useEffect(() => {
@@ -90,28 +124,39 @@ export default function Archive({ initial, total }: Props) {
 	}, [results.length])
 
 	const visible = results.slice(0, shown)
-	const filtered = query || animatedOnly
+	const filtered = !!query
 
 	return (
 		<div className="flex flex-col gap-6">
 			<div className="flex flex-col gap-3">
-				<input
-					type="search"
-					value={query}
-					onChange={e => setQuery(e.currentTarget.value)}
-					placeholder="Search by title, game, publisher or tag…"
-					aria-label="Search icons"
-					className="border-input bg-background focus-visible:ring-ring w-full border px-4 py-3 text-base outline-none focus-visible:ring-2"
-				/>
-				<div className="flex flex-wrap items-center gap-2 text-sm">
-					<button
-						type="button"
-						aria-pressed={animatedOnly}
-						onClick={() => setAnimatedOnly(a => !a)}
-						className="border-border text-muted-foreground hover:text-foreground aria-pressed:bg-primary aria-pressed:text-primary-foreground aria-pressed:border-primary border px-3 py-1 uppercase"
+				<div
+					role="search"
+					className="border-border bg-card/50 focus-within:border-foreground focus-within:ring-foreground/30 box-border flex h-9 max-h-9 min-h-9 min-w-0 flex-1 items-center gap-2 border px-2.5 transition-[border-color,box-shadow] focus-within:ring-1"
+				>
+					<svg
+						viewBox="0 0 24 24"
+						fill="none"
+						stroke="currentColor"
+						strokeWidth="2"
+						strokeLinecap="round"
+						strokeLinejoin="round"
+						className="text-muted-foreground h-3.5 w-3.5 shrink-0"
+						aria-hidden="true"
 					>
-						Animated
-					</button>
+						<path d="m21 21-4.34-4.34" />
+						<circle cx="11" cy="11" r="8" />
+					</svg>
+					<Input
+						type="text"
+						enterKeyHint="search"
+						value={query}
+						onValueChange={setQuery}
+						placeholder="Search by title, game, publisher or tag…"
+						aria-label="Search icons"
+						className="placeholder:text-muted-foreground h-full min-h-0 w-full min-w-0 flex-1 border-0 bg-transparent py-0 font-mono text-xs leading-none ring-0 outline-none focus:outline-none"
+					/>
+				</div>
+				<div className="flex flex-wrap items-center gap-2 text-sm">
 					<span className="text-muted-foreground ml-auto" aria-live="polite">
 						{filtered ? `${results.length} of ${total}` : total} icons
 					</span>
@@ -125,20 +170,40 @@ export default function Archive({ initial, total }: Props) {
 			) : (
 				<ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
 					{visible.map(icon => (
-						<Card key={icon.id} icon={icon} />
+						<Card key={icon.id} icon={icon} onOpen={openScreen} />
 					))}
 				</ul>
 			)}
 			<div ref={sentinel} className="h-px" />
+			<SpriteDrawer entry={selected} onClose={closeScreen} />
 		</div>
 	)
 }
 
-function Card({ icon }: { icon: IndexEntry }) {
+function Card({
+	icon,
+	onOpen
+}: {
+	icon: IndexEntry
+	onOpen: (id: string) => void
+}) {
 	return (
 		<li className="[contain-intrinsic-size:auto_200px] [content-visibility:auto]">
-			<Link
-				href={`/icon/${icon.id}`}
+			{/* A real link, so new-tab and copy-link still work; a plain click opens the drawer. */}
+			<a
+				href={`?screen=${icon.id}`}
+				onClick={e => {
+					if (
+						e.button !== 0 ||
+						e.metaKey ||
+						e.ctrlKey ||
+						e.shiftKey ||
+						e.altKey
+					)
+						return
+					e.preventDefault()
+					onOpen(icon.id)
+				}}
 				className="group border-border bg-card hover:border-foreground focus-visible:ring-ring flex h-full flex-col border outline-none focus-visible:ring-2"
 			>
 				{/*
@@ -158,19 +223,12 @@ function Card({ icon }: { icon: IndexEntry }) {
 					/>
 				</div>
 				<div className="border-border flex flex-col gap-0.5 border-t px-3 py-2 text-xs">
-					<div className="flex items-baseline justify-between gap-2">
-						<span className="truncate">{icon.title}</span>
-						{icon.anim && (
-							<span className="text-muted-foreground shrink-0 uppercase">
-								Anim
-							</span>
-						)}
-					</div>
+					<span className="truncate">{icon.title}</span>
 					<span className="text-muted-foreground truncate">
 						{icon.game === icon.title ? '\u00a0' : icon.game}
 					</span>
 				</div>
-			</Link>
+			</a>
 		</li>
 	)
 }

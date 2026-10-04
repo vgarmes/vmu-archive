@@ -1,0 +1,19 @@
+{
+	"title": "Memory card: Save",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000000000000000ffffffffffff0000000000000000000000001f038c1bf8003f87cc1bf80071c6cc1b000070ceee3b00003c0c6633f9b61f0c6633f9b6079ff773000061dff363000071d8336300003f9833e3f8001f1831c3f800000000000000000000000000000000000000ffffffffffff000000000000000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": [
+		"memory-card",
+		"menu"
+	],
+	"hash": "69d51aaa7b808ab0a9bd1c24b752860abdd6a31b",
+	"added": "2026-10-04"
+}

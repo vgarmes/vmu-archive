@@ -1,0 +1,19 @@
+{
+	"title": "Ms. Accord 2",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000a081c008800120c238048001f13f06050003feffe1830007f9fe7863000ffeff9f9f001ffc77fc73001bec3bfbbf00379c1cffbe006fdc061f7e0097dc01f0fe002fec0719fc006fc7b901f400df9e4901ec07bfb24601ec0f71a18003e80eeec00f03d80efec07087b80efec1808f780f7ec1009c680fb9c080bf680fc5a080bfa80f9da040bfa8087bb0213f2807f7b81e1e280fef7e00e4280fdc7fffc8281fdf7fe430283fbfbff910283fbf838988287fbf1e128824ffdee0204415f"
+	],
+	"tags": [
+		"character",
+		"ms-accord"
+	],
+	"hash": "817700a4ad2efc09d118448bbc009e4e10c7fd99",
+	"added": "2026-10-04"
+}

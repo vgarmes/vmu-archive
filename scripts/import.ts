@@ -15,14 +15,14 @@
  *
  * Sprite sheets: give a PNG's sidecar a "crops" list and every box becomes its
  * own entry. Each crop takes the same metadata fields, overriding the sheet's:
- *   { "game": "Sonic Adventure", "source": "…",
+ *   { "game": "Sonic Adventure", "publisher": "Sega",
  *     "crops": [{ "x": 24, "y": 67, "w": 48, "h": 32, "title": "Sonic" }, …] }
  * A 48x32 box is used as is; any other box is trimmed and centred, so it can
  * be loose.
  *
  * Metadata comes from an optional sidecar with the same basename
  * (sonic.png → sonic.json): { title, game, publisher, year, region, tags,
- * source, frameDelayMs, invert, replaces }. Without one, the filename is the
+ * frameDelayMs, invert, replaces }. Without one, the filename is the
  * title. Pixel-identical art that is already in the archive is skipped.
  *
  * To change an existing piece — e.g. add the missing frames of an animation —
@@ -51,7 +51,6 @@ interface Meta {
 	year?: number
 	region?: 'JP' | 'US' | 'EU' | 'WW'
 	tags?: string[]
-	source?: string
 	frameDelayMs?: number
 	invert?: boolean
 	/** Id of an existing entry to replace (e.g. to add animation frames). */
@@ -190,8 +189,33 @@ const slug = (s: string) =>
 		.normalize('NFKD')
 		.toLowerCase()
 		.replace(/[^a-z0-9]+/g, '-')
-		.replace(/^-|-$/g, '')
-		.slice(0, 48) || 'icon'
+		.replace(/^-|-$/g, '') || 'icon'
+
+/**
+ * A readable id from the game and title ("ikaruga-title-screen"), without
+ * repeating the game when the title already starts with it, "-sprite" for
+ * entries tagged as small sprites, and -2, -3… when it's taken. Chosen once: editing a title later keeps the id (and so the
+ * thumbnail URL and ?screen= links).
+ */
+function newId(
+	game: string,
+	title: string,
+	tags: string[],
+	taken: Set<string>
+) {
+	const g = slug(game)
+	const t = slug(title)
+	const base = (
+		(t === g || t.startsWith(`${g}-`) ? t : `${g}-${t}`) +
+		(tags.includes('sprite') ? '-sprite' : '')
+	)
+		.slice(0, 80)
+		.replace(/-$/, '')
+	let id = base
+	for (let n = 2; taken.has(id); n++) id = `${base}-${n}`
+	taken.add(id)
+	return id
+}
 
 /** Kept identical to earlier versions so existing entries still match. */
 const hashOf = (frames: string[]) =>
@@ -234,6 +258,12 @@ function main() {
 
 	fs.mkdirSync(OUT_DIR, { recursive: true })
 	const hashes = existingHashes()
+	const taken = new Set(
+		fs
+			.readdirSync(OUT_DIR)
+			.filter(f => f.endsWith('.json'))
+			.map(f => f.replace(/\.json$/, ''))
+	)
 	let added = 0
 	let updated = 0
 	let skipped = 0
@@ -281,7 +311,9 @@ function main() {
 					meta[k] ?? (prev[k] as Meta[K] | undefined)
 
 				const title = pick('title') || path.basename(base)
-				const id = meta.replaces ?? `${slug(title)}-${hash.slice(0, 6)}`
+				const id =
+					meta.replaces ??
+					newId(pick('game') || title, title, pick('tags') ?? [], taken)
 				const entry = {
 					title,
 					game: pick('game') || title,
@@ -294,7 +326,6 @@ function main() {
 					frames,
 					frameDelayMs: frames.length > 1 ? pick('frameDelayMs') : undefined,
 					tags: pick('tags') ?? [],
-					source: pick('source'),
 					hash,
 					added:
 						(prev.added as string | undefined) ??

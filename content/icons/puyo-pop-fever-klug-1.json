@@ -1,0 +1,19 @@
+{
+	"title": "Klug 1",
+	"game": "Puyo Pop Fever",
+	"publisher": "Sega",
+	"year": 2004,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07ff04041ff00ff03f0fc3fc1fc3fffff9f27f8ffffffef29f3fffffff4d967fffffff8462ffffffff84a1fff027ffc4a1ff8001ffc523ff0001ffe6e7fe000cffe007fec01e7ff00ffde0003ff00ffc00003ff00ff8000c1fc01ff8001f19801fecf49bbd001fddb28fb7001ff5f389350007d59289550000d652465a00004e74309c000025080f1000001cf0202000000201c04000000180018000000071e6000000000e9c000000000484000000001ebc0000000011c60000000031458000"
+	],
+	"tags": [
+		"character",
+		"klug"
+	],
+	"hash": "e845d96d76758857d7a78857887f326d82b06eca",
+	"added": "2026-10-04"
+}
