@@ -36,7 +36,8 @@ pnpm typecheck
    ```
 3. Run `pnpm icons:import` (`--dry-run` to preview, `--keep` to leave the
    sources in place). Each piece becomes `content/icons/<game>-<title>.json`
-   (a readable id, chosen once and kept if the title changes);
+   (a readable id, chosen once and kept if the title changes; pieces with
+   the same title get -2, -3… in import order);
    sources move to `inbox/imported/`. Pixel-identical art is skipped.
 4. Commit the new JSON files.
 

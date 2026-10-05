@@ -188,13 +188,16 @@ const slug = (s: string) =>
 	s
 		.normalize('NFKD')
 		.toLowerCase()
+		// "Tony Hawk's" → tony-hawks, not tony-hawk-s.
+		.replace(/['’]/g, '')
 		.replace(/[^a-z0-9]+/g, '-')
 		.replace(/^-|-$/g, '') || 'icon'
 
 /**
  * A readable id from the game and title ("ikaruga-title-screen"), without
  * repeating the game when the title already starts with it, "-sprite" for
- * entries tagged as small sprites, and -2, -3… when it's taken. Chosen once: editing a title later keeps the id (and so the
+ * entries tagged as small sprites, and -2, -3… when it's taken, so pieces
+ * with the same title keep their import order. Chosen once: editing a title later keeps the id (and so the
  * thumbnail URL and ?screen= links).
  */
 function newId(

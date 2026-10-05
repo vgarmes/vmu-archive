@@ -1,0 +1,17 @@
+{
+	"title": "Title screen",
+	"game": "Tony Hawk's Pro Skater",
+	"publisher": "Crave Entertainment",
+	"year": 2000,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"aaaaaaaaaaaa555555555555aaaa8000aaaa55503ffc0555aa87ffffe0aa543fc003fc55a8f800001f2a40e000000785ae0000a0000244e950ae8ab194ad70eaab2034ab20aeda9534e920aa8ab47000000000060000060000063c001e00000636007090000236e060b67e3a3dae78e7256a31ea1ce52778b1ca06b7a470356e1e94a75984003c0000024780700001e5a1e06000078a54f800001f15aa3fc003fc2a5507ffffe155aaa03ffc0aaa555500015555aaaaaaaaaaaa555555555555"
+	],
+	"tags": [
+		"logo"
+	],
+	"hash": "6dbdd80b307cb3ec132d7bc69d03504e5cfbcfe5",
+	"added": "2026-10-05"
+}

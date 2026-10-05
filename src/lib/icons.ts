@@ -57,7 +57,10 @@ let cache: Icon[] | undefined
 /** Unknown games sort after every named one. */
 const gameKey = (game: string) => (game === 'Unknown' ? '￿' : game)
 
-/** Every icon, grouped by game, then by title ("Amitie 2" before "Amitie 10"). */
+/**
+ * Every icon, grouped by game, then by title ("Stage 2" before "Stage 10"),
+ * then by id, so "amitie", "amitie-2"… keep their import order.
+ */
 export function getIcons(): Icon[] {
 	cache ??= fs
 		.readdirSync(DIR)
@@ -74,7 +77,10 @@ export function getIcons(): Icon[] {
 		.sort(
 			(a, b) =>
 				gameKey(a.data.game).localeCompare(gameKey(b.data.game)) ||
-				a.data.title.localeCompare(b.data.title, undefined, { numeric: true })
+				a.data.title.localeCompare(b.data.title, undefined, {
+					numeric: true
+				}) ||
+				a.id.localeCompare(b.id, undefined, { numeric: true })
 		)
 	return cache
 }
