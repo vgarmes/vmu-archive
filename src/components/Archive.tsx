@@ -131,7 +131,7 @@ export default function Archive({ initial, total }: Props) {
 			<div className="flex flex-col gap-3">
 				<div
 					role="search"
-					className="border-border bg-card/50 focus-within:border-foreground focus-within:ring-foreground/30 box-border flex h-9 max-h-9 min-h-9 min-w-0 flex-1 items-center gap-2 border px-2.5 transition-[border-color,box-shadow] focus-within:ring-1"
+					className="border-border bg-card/50 focus-within:border-foreground focus-within:ring-foreground/30 box-border flex h-9 max-h-9 min-h-9 min-w-0 flex-1 items-center gap-2 border px-3 transition-[border-color,box-shadow] focus-within:ring-1"
 				>
 					<svg
 						viewBox="0 0 24 24"
@@ -140,7 +140,7 @@ export default function Archive({ initial, total }: Props) {
 						strokeWidth="2"
 						strokeLinecap="round"
 						strokeLinejoin="round"
-						className="text-muted-foreground h-3.5 w-3.5 shrink-0"
+						className="text-muted-foreground h-4 w-4 shrink-0"
 						aria-hidden="true"
 					>
 						<path d="m21 21-4.34-4.34" />
@@ -153,7 +153,7 @@ export default function Archive({ initial, total }: Props) {
 						onValueChange={setQuery}
 						placeholder="Search by title, game, publisher or tag…"
 						aria-label="Search icons"
-						className="placeholder:text-muted-foreground h-full min-h-0 w-full min-w-0 flex-1 border-0 bg-transparent py-0 font-mono text-xs leading-none ring-0 outline-none focus:outline-none"
+						className="placeholder:text-muted-foreground h-full min-h-0 w-full min-w-0 flex-1 border-0 bg-transparent py-0 font-mono text-sm leading-5 ring-0 outline-none focus:outline-none"
 					/>
 				</div>
 				<div className="flex flex-wrap items-center gap-2 text-sm">

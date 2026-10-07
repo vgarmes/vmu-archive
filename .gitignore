@@ -43,3 +43,6 @@ next-env.d.ts
 # importer drop folder (sources are moved to inbox/imported/ after import)
 inbox/*
 !inbox/.gitkeep
+
+# Claude Code worktrees
+.claude/worktrees/

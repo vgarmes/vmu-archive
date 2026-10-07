@@ -1,4 +1,4 @@
-import type { Metadata } from 'next'
+import type { Metadata, Viewport } from 'next'
 import { Geist_Mono } from 'next/font/google'
 import Link from 'next/link'
 import Swirl from '@/components/Swirl'
@@ -17,6 +17,13 @@ export const metadata: Metadata = {
 	description:
 		'An archive of Dreamcast VMU screen art, searchable and free to download.',
 	icons: { icon: '/favicon.svg' }
+}
+
+// Stops iOS Safari zooming into small inputs on focus; it still allows pinch-zoom.
+export const viewport: Viewport = {
+	width: 'device-width',
+	initialScale: 1,
+	maximumScale: 1
 }
 
 // Runs before first paint so the page never flashes the wrong theme.
