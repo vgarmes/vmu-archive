@@ -206,7 +206,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 					)}
 				</DrawerHeader>
 				<div className="flex flex-col gap-4 p-4">
-					<div className="border-border bg-card flex aspect-[3/2] items-center justify-center border p-4">
+					<div className="flex aspect-[3/2] items-center justify-center">
 						{preview ? (
 							<div
 								className="w-full"
