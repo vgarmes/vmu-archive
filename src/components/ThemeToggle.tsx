@@ -55,19 +55,13 @@ export default function ThemeToggle() {
 	}
 
 	return (
-		<Select
-			items={THEMES}
-			value={theme}
-			onValueChange={v => v && choose(v)}
-		>
+		<Select items={THEMES} value={theme} onValueChange={v => v && choose(v)}>
 			{/* Blank until mounted, since the saved theme isn't known on the server. */}
-			<SelectTrigger aria-label="Theme" size="sm" className="w-30">
+			<SelectTrigger aria-label="Theme" size="sm" className="sm:w-30">
 				<SelectValue>
 					{(value: Theme | null) => {
 						const t = THEMES.find(t => t.value === value)
-						return t ? (
-							<ThemeLabel {...t} />
-						) : null
+						return t ? <ThemeLabel {...t} compact /> : null
 					}}
 				</SelectValue>
 			</SelectTrigger>
@@ -84,12 +78,18 @@ export default function ThemeToggle() {
 
 function ThemeLabel({
 	label,
-	Icon
-}: Pick<(typeof THEMES)[number], 'label' | 'Icon'>) {
+	Icon,
+	compact = false
+}: Pick<(typeof THEMES)[number], 'label' | 'Icon'> & {
+	/** Icon only on small screens; the label stays readable by screen readers. */
+	compact?: boolean
+}) {
 	return (
 		<span className="flex items-center gap-2">
 			<Icon className="text-muted-foreground size-4" />
-			{label}
+			<span className={compact ? 'sr-only sm:not-sr-only' : undefined}>
+				{label}
+			</span>
 		</span>
 	)
 }

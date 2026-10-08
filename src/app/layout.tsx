@@ -45,7 +45,15 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 						<Swirl className="h-4 w-auto shrink-0" />
 						{SITE}
 					</Link>
-					<ThemeToggle />
+					<nav className="flex items-center gap-4">
+						<Link
+							href="/about"
+							className="text-muted-foreground hover:text-foreground text-sm uppercase"
+						>
+							About
+						</Link>
+						<ThemeToggle />
+					</nav>
 				</header>
 				<main className="mx-auto max-w-6xl px-4 pb-16">{children}</main>
 			</body>
