@@ -94,8 +94,18 @@ export interface SvgOptions {
 	on?: string
 	/** Fill for unlit dots in "lcd" style; omit to leave them out. */
 	off?: string
+	/** Draw the unlit dots only inside this area, e.g. to show a trim. */
+	offBox?: Box
 	/** Extra attributes for the root element, e.g. 'class="w-full"'. */
 	attrs?: string
+}
+
+/** An area of the art, in pixels. */
+export interface Box {
+	x: number
+	y: number
+	width: number
+	height: number
 }
 
 /**
@@ -104,7 +114,42 @@ export interface SvgOptions {
  * than one per pixel.
  */
 export function toSvg(art: PixelArt, opts: SvgOptions = {}): string {
-	const { frame = 0, style = 'flat', on = toHexColor(LCD_INK), off } = opts
+	const { frame = 0, style = 'flat', on = toHexColor(LCD_INK) } = opts
+	return svgDocument(
+		art.width,
+		art.height,
+		svgPaths(art, frame, style, on),
+		opts
+	)
+}
+
+/**
+ * Every frame side by side, frame 1 at the left, each in its own
+ * <g id="frame-N"> so design tools show the frames as separate groups.
+ */
+export function toSvgSheet(
+	art: PixelArt,
+	opts: Omit<SvgOptions, 'frame'> = {}
+): string {
+	const { style = 'flat', on = toHexColor(LCD_INK) } = opts
+	const body = art.frames
+		.map((_, f) => {
+			const move = f ? ` transform="translate(${f * art.width} 0)"` : ''
+			return `<g id="frame-${f + 1}"${move}>${svgPaths(art, f, style, on)}</g>`
+		})
+		.join('')
+	return svgDocument(art.width * art.frames.length, art.height, body, opts)
+}
+
+const lcdGap = (style: SvgOptions['style']) => (style === 'lcd' ? 0.12 : 0)
+
+/** One frame's pixels as <path>s, one per colour, in pixel units. */
+function svgPaths(
+	art: PixelArt,
+	frame: number,
+	style: SvgOptions['style'],
+	on: string
+): string {
 	const { width: w, height: h, bpp } = art
 	const px = decodeFrame(art.frames[frame], w, h, bpp)
 	const fills = bpp === 1 ? ['', on] : (art.palette ?? []).map(svgFill)
@@ -112,8 +157,7 @@ export function toSvg(art: PixelArt, opts: SvgOptions = {}): string {
 	const add = (idx: number, d: string) =>
 		paths.set(idx, (paths.get(idx) ?? '') + d)
 
-	const gap = style === 'lcd' ? 0.12 : 0
-	const dot = +(1 - gap).toFixed(2)
+	const dot = +(1 - lcdGap(style)).toFixed(2)
 
 	for (let y = 0; y < h; y++) {
 		let x = 0
@@ -130,6 +174,20 @@ export function toSvg(art: PixelArt, opts: SvgOptions = {}): string {
 		}
 	}
 
+	let body = ''
+	for (const [idx, d] of paths) body += `<path fill="${fills[idx]}" d="${d}"/>`
+	return body
+}
+
+/** The <svg> around some paths: the unlit-dot grid for "lcd", and the size. */
+function svgDocument(
+	w: number,
+	h: number,
+	paths: string,
+	{ style = 'flat', off, offBox, attrs }: SvgOptions
+): string {
+	const gap = lcdGap(style)
+	const dot = +(1 - gap).toFixed(2)
 	const viewBox = `0 0 ${w - gap} ${h - gap}`
 	let body = ''
 	if (style === 'lcd' && off) {
@@ -139,11 +197,13 @@ export function toSvg(art: PixelArt, opts: SvgOptions = {}): string {
 		body +=
 			`<defs><pattern id="${id}" width="1" height="1" patternUnits="userSpaceOnUse">` +
 			`<rect width="${dot}" height="${dot}" fill="${off}"/></pattern></defs>` +
-			`<rect width="100%" height="100%" fill="url(#${id})"/>`
+			(offBox
+				? `<rect x="${offBox.x}" y="${offBox.y}" width="${offBox.width}" height="${offBox.height}" fill="url(#${id})"/>`
+				: `<rect width="100%" height="100%" fill="url(#${id})"/>`)
 	}
-	for (const [idx, d] of paths) body += `<path fill="${fills[idx]}" d="${d}"/>`
+	body += paths
 
-	const extra = opts.attrs ? ` ${opts.attrs}` : ''
+	const extra = attrs ? ` ${attrs}` : ''
 	return (
 		`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" ` +
 		`width="${w * 8}" height="${h * 8}" shape-rendering="crispEdges"${extra}>` +
@@ -159,17 +219,17 @@ function isVisible(art: PixelArt, idx: number) {
 }
 
 /**
- * The art cropped to the smallest box that holds every visible pixel. One box
- * covers all frames, so an animation stays aligned. Blank art is returned as is.
+ * The smallest box that holds every visible pixel. One box covers all frames,
+ * so an animation stays aligned. Null for blank art.
  */
-export function trimArt(art: PixelArt): PixelArt {
+export function trimBox(art: PixelArt): Box | null {
 	const { width: w, height: h, bpp } = art
-	const decoded = art.frames.map(hex => decodeFrame(hex, w, h, bpp))
 	let x0 = w,
 		y0 = h,
 		x1 = -1,
 		y1 = -1
-	for (const px of decoded)
+	for (const hex of art.frames) {
+		const px = decodeFrame(hex, w, h, bpp)
 		for (let y = 0; y < h; y++)
 			for (let x = 0; x < w; x++)
 				if (isVisible(art, px[y * w + x])) {
@@ -178,9 +238,18 @@ export function trimArt(art: PixelArt): PixelArt {
 					x1 = Math.max(x1, x)
 					y1 = Math.max(y1, y)
 				}
-	if (x1 < 0) return art
-	const width = x1 - x0 + 1
-	const height = y1 - y0 + 1
+	}
+	if (x1 < 0) return null
+	return { x: x0, y: y0, width: x1 - x0 + 1, height: y1 - y0 + 1 }
+}
+
+/** The art cropped to its `trimBox`. Blank art is returned as is. */
+export function trimArt(art: PixelArt): PixelArt {
+	const box = trimBox(art)
+	if (!box) return art
+	const { width: w, height: h, bpp } = art
+	const { x: x0, y: y0, width, height } = box
+	const decoded = art.frames.map(hex => decodeFrame(hex, w, h, bpp))
 	const frames = decoded.map(px => {
 		const out = new Uint8Array(width * height)
 		for (let y = 0; y < height; y++)
@@ -189,6 +258,39 @@ export function trimArt(art: PixelArt): PixelArt {
 		return encodeFrame(out, bpp)
 	})
 	return { ...art, width, height, frames }
+}
+
+/**
+ * Indices of the frames that differ from every earlier one. An animation can
+ * repeat a frame to hold it longer (Puck is 1, 2, 3, 3), which a frame picker
+ * shouldn't list twice.
+ */
+export const distinctFrames = (art: PixelArt) =>
+	art.frames.flatMap((hex, i) => (art.frames.indexOf(hex) === i ? [i] : []))
+
+/** One frame of an animation as a still. */
+export const withFrame = (art: PixelArt, frame: number): PixelArt => ({
+	...art,
+	frames: [art.frames[frame]],
+	frameDelayMs: undefined
+})
+
+/** Every frame side by side, frame 1 at the left, as one still (a sprite sheet). */
+export function toSheet(art: PixelArt): PixelArt {
+	const { width: w, height: h, bpp } = art
+	const n = art.frames.length
+	const out = new Uint8Array(w * n * h)
+	art.frames.forEach((hex, f) => {
+		const px = decodeFrame(hex, w, h, bpp)
+		for (let y = 0; y < h; y++)
+			for (let x = 0; x < w; x++) out[y * w * n + f * w + x] = px[y * w + x]
+	})
+	return {
+		...art,
+		width: w * n,
+		frames: [encodeFrame(out, bpp)],
+		frameDelayMs: undefined
+	}
 }
 
 function svgFill(hex: string) {

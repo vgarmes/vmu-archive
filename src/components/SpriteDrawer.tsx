@@ -1,5 +1,6 @@
 'use client'
 
+import { BracesIcon, CheckIcon } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
@@ -24,11 +25,16 @@ import {
 	encodeFrame,
 	LCD_INK,
 	parseColor,
+	distinctFrames,
 	toCArray,
 	toHexColor,
 	toRgba,
+	toSheet,
 	toSvg,
+	toSvgSheet,
 	trimArt,
+	trimBox,
+	withFrame,
 	type PixelArt
 } from '@/lib/pixels'
 
@@ -41,7 +47,9 @@ import {
  * grid already loaded (a native 48x32 PNG where opaque means lit, with
  * animation frames stacked below each other), and every export is generated
  * in the browser from them. Animations always play in the preview, unless the
- * visitor asks for reduced motion.
+ * visitor asks for reduced motion or picks a single frame to export. PNG and
+ * SVG export an animation as a sprite sheet (frames side by side) or one frame;
+ * GIF and the C array always hold every frame.
  */
 
 const SCALES = [1, 4, 8, 16]
@@ -49,6 +57,10 @@ const SCALES = [1, 4, 8, 16]
 const DESKTOP = '(min-width: 768px)'
 
 type Format = 'png' | 'svg' | 'svg-lcd' | 'gif'
+/** Which frames of an animation to export: all as a sheet, or one (its index). */
+type Frames = 'all' | number
+/** The Frames select's value: "all" or a frame index, as a string. */
+type FramesChoice = 'all' | `${number}`
 
 /** Sprites already read from their thumbnails this visit, by icon id. */
 const artCache = new Map<string, PixelArt>()
@@ -116,18 +128,21 @@ function useThumbnailArt(entry: IndexEntry) {
 	return read && read.id === id ? read.art : null
 }
 
-/** The frame to show now: cycles through an animation, else always 0. */
-function useFrame(art: PixelArt | null) {
+/**
+ * The frame to show now: cycles through an animation while `playing`, else
+ * always 0.
+ */
+function useFrame(art: PixelArt | null, playing: boolean) {
 	const reduced = useReducedMotion()
 	const [frame, setFrame] = useState(0)
 	const count = art?.frames.length ?? 1
 	const delay = art?.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
 	useEffect(() => {
 		setFrame(0)
-		if (count < 2 || reduced) return
+		if (count < 2 || reduced || !playing) return
 		const timer = setInterval(() => setFrame(f => (f + 1) % count), delay)
 		return () => clearInterval(timer)
-	}, [count, delay, reduced])
+	}, [count, delay, reduced, playing])
 	return Math.min(frame, count - 1)
 }
 
@@ -163,11 +178,30 @@ export default function SpriteDrawer({ entry, onClose }: Props) {
 
 function SpritePanel({ entry }: { entry: IndexEntry }) {
 	const art = useThumbnailArt(entry)
-	const frame = useFrame(art)
 	const [scale, setScale] = useState<number>(8)
 	const [copied, setCopied] = useState(false)
 	const [trim, setTrim] = useState(false)
 	const [format, setFormat] = useState<Format>('png')
+	const [frames, setFrames] = useState<FramesChoice>('all')
+
+	// The Frames row only applies to animations, and not to GIF, which is
+	// always the whole animation.
+	const animated = (art?.frames.length ?? 0) > 1
+	const pick: Frames =
+		animated && format !== 'gif' && frames !== 'all' ? Number(frames) : 'all'
+	const playing = useFrame(art, pick === 'all')
+	const frame = pick === 'all' ? playing : pick
+	const poses = useMemo(() => (art ? distinctFrames(art) : []), [art])
+	const poseNumber = pick === 'all' ? 0 : poses.indexOf(pick) + 1
+	const sheet = animated && pick === 'all' && format !== 'gif'
+	const delay = art?.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
+
+	// With trim on, the unlit dots are drawn only inside the area the download
+	// keeps: the shared box for an animation, a single frame's own box.
+	const keptBox = useMemo(() => {
+		if (!art || !trim) return undefined
+		return trimBox(pick === 'all' ? art : withFrame(art, pick)) ?? undefined
+	}, [art, trim, pick])
 
 	const preview = art
 		? toSvg(art, {
@@ -175,6 +209,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 				style: 'lcd',
 				on: 'currentColor',
 				off: 'color-mix(in srgb, currentColor 10%, transparent)',
+				offBox: keptBox,
 				attrs: 'class="block h-auto w-full" aria-hidden="true"'
 			})
 		: null
@@ -182,15 +217,39 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	// Downloads use the trimmed art when asked; the C array never does, since
 	// VMU code expects the whole 48x32 screen.
 	const out = useMemo(() => (art && trim ? trimArt(art) : art), [art, trim])
-	const name = trim ? `${entry.id}-trimmed` : entry.id
+	// What a PNG holds: one frame, every frame side by side, or the still. A
+	// single frame is trimmed to its own box; frames that play together share
+	// one so they stay aligned.
+	const still = useMemo(() => {
+		if (!out || !animated || format === 'gif') return out
+		if (pick === 'all') return toSheet(out)
+		const one = withFrame(art!, pick)
+		return trim ? trimArt(one) : one
+	}, [out, art, animated, format, pick, trim])
+	const name =
+		(trim ? `${entry.id}-trimmed` : entry.id) +
+		(sheet
+			? `-sheet-${out?.frames.length}f-${delay}ms`
+			: animated && pick !== 'all'
+				? `-frame-${poseNumber}`
+				: '')
 	const ink = toHexColor(LCD_INK)
 	// Unlit LCD dots: the ink at ~12% opacity. toHexColor already includes the
 	// alpha, so build the colour rather than appending to `ink`.
 	const [r, g, b] = LCD_INK
 	const unlit = toHexColor([r, g, b, 0x1f])
 	const vector = format === 'svg' || format === 'svg-lcd'
-	const outW = out?.width ?? 48
-	const outH = out?.height ?? 32
+	// GIFs are frame-sized; everything else is the size of `still`.
+	const sized = format === 'gif' ? out : still
+	const outW = sized?.width ?? 48
+	const outH = sized?.height ?? 32
+	const frameOptions: { value: FramesChoice; label: string }[] = [
+		{ value: 'all', label: 'All frames · sheet' },
+		...poses.map(f => ({
+			value: `${f}` as const,
+			label: `Frame ${poses.indexOf(f) + 1}`
+		}))
+	]
 
 	const formats: { value: Format; label: string }[] = [
 		{ value: 'png', label: 'PNG' },
@@ -204,23 +263,22 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	}))
 
 	const download = async () => {
-		if (!out) return
-		if (format === 'png') save(await toPng(out, scale), `${name}@${scale}x.png`)
+		if (!out || !still) return
+		// An SVG sheet keeps each frame in its own group, so it's drawn from the
+		// animation rather than from the merged sheet image.
+		const svg = (opts: Parameters<typeof toSvg>[1]) =>
+			sheet ? toSvgSheet(out, opts) : toSvg(still, opts)
+		if (format === 'png')
+			save(await toPng(still, scale), `${name}@${scale}x.png`)
 		else if (format === 'gif')
 			save(await toGif(out, scale), `${name}@${scale}x.gif`)
-		else if (format === 'svg')
-			save(svgBlob(toSvg(out, { on: ink })), `${name}.svg`)
+		else if (format === 'svg') save(svgBlob(svg({ on: ink })), `${name}.svg`)
 		else
 			save(
-				svgBlob(toSvg(out, { style: 'lcd', on: ink, off: unlit })),
+				svgBlob(svg({ style: 'lcd', on: ink, off: unlit })),
 				`${name}-lcd.svg`
 			)
 	}
-	const formatLabel = formats.find(f => f.value === format)?.label ?? ''
-	const downloadLabel = vector
-		? `Download ${formatLabel}`
-		: `Download ${formatLabel} · ${outW * scale}×${outH * scale}`
-
 	const copyC = async () => {
 		if (!art) return
 		await navigator.clipboard.writeText(toCArray(art, entry.title))
@@ -282,6 +340,28 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 							</SelectContent>
 						</Select>
 
+						{animated && format !== 'gif' && (
+							<>
+								<span className="text-muted-foreground">Frames</span>
+								<Select
+									items={frameOptions}
+									value={frames}
+									onValueChange={v => v && setFrames(v)}
+								>
+									<SelectTrigger aria-label="Frames" className="w-full">
+										<SelectValue />
+									</SelectTrigger>
+									<SelectContent alignItemWithTrigger={false}>
+										{frameOptions.map(f => (
+											<SelectItem key={f.value} value={f.value}>
+												{f.label}
+											</SelectItem>
+										))}
+									</SelectContent>
+								</Select>
+							</>
+						)}
+
 						{/* Vectors have no pixel size, so scale only applies to PNG and GIF. */}
 						{!vector && (
 							<>
@@ -315,22 +395,31 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 				</div>
 			</div>
 			<DrawerFooter className="pt-4">
-				<button
-					type="button"
-					onClick={download}
-					disabled={!out}
-					className="border-primary bg-primary text-primary-foreground hover:bg-primary/90 border px-4 py-2 text-left text-sm uppercase disabled:opacity-50"
-				>
-					{downloadLabel}
-				</button>
-				<button
-					type="button"
-					onClick={copyC}
-					disabled={!art}
-					className="border-border text-muted-foreground hover:text-foreground hover:border-foreground border px-4 py-2 text-left text-sm uppercase disabled:opacity-50"
-				>
-					{copied ? 'Copied!' : 'Copy as C array'}
-				</button>
+				{/* The C array is a niche export, so it's an icon beside Download. */}
+				<div className="flex gap-2">
+					<button
+						type="button"
+						onClick={download}
+						disabled={!out}
+						className="border-primary bg-primary text-primary-foreground hover:bg-primary/90 h-10 flex-1 border px-4 text-left text-sm uppercase disabled:opacity-50"
+					>
+						Download
+					</button>
+					<button
+						type="button"
+						onClick={copyC}
+						disabled={!art}
+						aria-label={copied ? 'Copied C array' : 'Copy as C array'}
+						title={copied ? 'Copied!' : 'Copy as C array'}
+						className="border-border text-muted-foreground hover:text-foreground hover:border-foreground flex size-10 shrink-0 items-center justify-center border disabled:opacity-50"
+					>
+						{copied ? (
+							<CheckIcon className="size-4" aria-hidden="true" />
+						) : (
+							<BracesIcon className="size-4" aria-hidden="true" />
+						)}
+					</button>
+				</div>
 			</DrawerFooter>
 		</div>
 	)

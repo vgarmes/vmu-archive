@@ -41,6 +41,9 @@ export default function Archive({ initial, total }: Props) {
 	const [query, setQuery] = useState('')
 	const [shown, setShown] = useState(BATCH)
 	const [screen, setScreen] = useState<string | null>(null)
+	// Whether `query` and `screen` have been read from the URL yet. Until then
+	// the URL is the only copy of them, so nothing may overwrite it.
+	const [restored, setRestored] = useState(false)
 	// Whether the open drawer added a history entry, so closing can go Back.
 	const pushed = useRef(false)
 	const sentinel = useRef<HTMLDivElement>(null)
@@ -50,6 +53,7 @@ export default function Archive({ initial, total }: Props) {
 		const params = new URLSearchParams(location.search)
 		setQuery(params.get('q') ?? '')
 		setScreen(params.get('screen'))
+		setRestored(true)
 		const onPop = () => {
 			pushed.current = false
 			setScreen(new URLSearchParams(location.search).get('screen'))
@@ -74,12 +78,15 @@ export default function Archive({ initial, total }: Props) {
 		[query]
 	)
 
-	// Keep the URL shareable as the search changes.
+	// Keep the URL shareable as the search changes. Not before the URL has been
+	// read: on the first render `screen` is still null, and writing then would
+	// drop the ?screen= of a shared link.
 	useEffect(() => {
+		if (!restored) return
 		history.replaceState(null, '', urlFor(screen))
 		setShown(BATCH)
 		// eslint-disable-next-line react-hooks/exhaustive-deps -- only on search changes
-	}, [query])
+	}, [query, restored])
 
 	const openScreen = (id: string) => {
 		history.pushState(null, '', urlFor(id))
