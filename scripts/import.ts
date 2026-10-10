@@ -7,9 +7,12 @@
  *
  * Every entry is a 48x32 1-bit VMU LCD screen. Supported sources:
  * - .png  A 48x32 screen; stack frames vertically for animation (48x64 = 2
- *         frames). Dark pixels are lit; set "invert" for the opposite. Any
- *         other size is treated as smaller art: trimmed to its lit pixels and
- *         centred on the screen.
+ *         frames). Dark pixels are lit; set "invert" for the opposite.
+ *         Anything bigger at a 3:2 ratio is a scaled-up screenshot of a whole
+ *         screen (e.g. an emulator capture at 4.5x, 216x144): a uniform border
+ *         is stripped, the majority colour is unlit whether it's light or dark,
+ *         and "invert" flips that. Any other size is treated as smaller art:
+ *         trimmed to its lit pixels and centred on the screen.
  * - .txt  Rows of "#" (lit) and spaces, up to 48x32, centred. Separate
  *         animation frames with a line containing only "---".
  *
@@ -96,6 +99,10 @@ function readImage(img: Image, meta: Meta): Frames {
 		}
 		return frames
 	}
+	if (img.width > W || img.height > H) {
+		const screen = readScreenshot(img, meta.invert)
+		if (screen) return [screen]
+	}
 	// Smaller art: trim to its lit pixels, then centre it on the screen.
 	let x0 = Infinity,
 		y0 = Infinity,
@@ -117,6 +124,111 @@ function readImage(img: Image, meta: Meta): Frames {
 		rows.push(row)
 	}
 	return [centre(rows)]
+}
+
+const rgbOf = (img: Image, x: number, y: number) => {
+	const i = (y * img.width + x) * 4
+	return (img.data[i] << 16) | (img.data[i + 1] << 8) | img.data[i + 2]
+}
+
+const lumaOf = (img: Image, x: number, y: number) => {
+	const i = (y * img.width + x) * 4
+	return 0.299 * img.data[i] + 0.587 * img.data[i + 1] + 0.114 * img.data[i + 2]
+}
+
+/**
+ * The screen area of a scaled screenshot: the image minus uniform rows and
+ * columns along its edges (an emulator's frame), stripped until it's 3:2.
+ * Null if it doesn't get there or is under 2x.
+ */
+function screenBox(img: Image) {
+	const counts = new Map<number, number>()
+	for (let y = 0; y < img.height; y++)
+		for (let x = 0; x < img.width; x++) {
+			const c = rgbOf(img, x, y)
+			counts.set(c, (counts.get(c) ?? 0) + 1)
+		}
+	const background = [...counts].sort((a, b) => b[1] - a[1])[0][0]
+
+	let [x0, y0, x1, y1] = [0, 0, img.width, img.height]
+	/** The single colour of a row (or column), or null if it has several. */
+	const uniform = (row: boolean, at: number) => {
+		const c = row ? rgbOf(img, x0, at) : rgbOf(img, at, y0)
+		const len = row ? x1 - x0 : y1 - y0
+		for (let i = 1; i < len; i++)
+			if ((row ? rgbOf(img, x0 + i, at) : rgbOf(img, at, y0 + i)) !== c)
+				return null
+		return c
+	}
+	while ((x1 - x0) * 2 !== (y1 - y0) * 3) {
+		const rows = (x1 - x0) * 2 < (y1 - y0) * 3
+		const first = rows ? uniform(true, y0) : uniform(false, x0)
+		const last = rows ? uniform(true, y1 - 1) : uniform(false, x1 - 1)
+		if (first === null && last === null) break
+		// A frame differs from the screen's background, so strip that side first.
+		const takeLast =
+			first === null ||
+			(last !== null && first === background && last !== background)
+		if (rows) takeLast ? y1-- : y0++
+		else takeLast ? x1-- : x0++
+	}
+	const w = x1 - x0
+	const h = y1 - y0
+	// A resized capture may be a pixel or so off 3:2.
+	if (Math.abs(w * 2 - h * 3) > 3 || w < W * 2) return null
+	return { x0, y0, w, h }
+}
+
+/** A whole screen from a scaled screenshot, or null if it isn't one. */
+function readScreenshot(img: Image, invert = false): number[] | null {
+	const box = screenBox(img)
+	if (!box) return null
+	const { x0, y0, w, h } = box
+
+	// Lit is whichever side of the mid-grey has fewer pixels.
+	let lo = Infinity,
+		hi = -Infinity,
+		light = 0
+	for (let y = y0; y < y0 + h; y++)
+		for (let x = x0; x < x0 + w; x++) {
+			const l = lumaOf(img, x, y)
+			lo = Math.min(lo, l)
+			hi = Math.max(hi, l)
+		}
+	const mid = (lo + hi) / 2
+	for (let y = y0; y < y0 + h; y++)
+		for (let x = x0; x < x0 + w; x++) if (lumaOf(img, x, y) > mid) light++
+	const litIsLight = light * 2 < w * h
+	const isOn = (x: number, y: number) =>
+		(lumaOf(img, x0 + x, y0 + y) > mid === litIsLight) !== invert
+
+	// Sample a 3x3 spread inside every cell. At a non-integer scale the grid
+	// can sit a little off, so try a few shifts and keep the one where the
+	// cells read most consistently.
+	const sx = w / W
+	const sy = h / H
+	const at = (v: number, max: number) =>
+		Math.min(max - 1, Math.max(0, Math.floor(v)))
+	let best = { bits: [] as number[], mixed: Infinity }
+	for (const dy of [0, -0.25, 0.25])
+		for (const dx of [0, -0.25, 0.25]) {
+			const bits: number[] = []
+			let mixed = 0
+			for (let r = 0; r < H; r++)
+				for (let c = 0; c < W; c++) {
+					let on = 0
+					for (const fy of [0.3, 0.5, 0.7])
+						for (const fx of [0.3, 0.5, 0.7])
+							if (isOn(at((c + fx + dx) * sx, w), at((r + fy + dy) * sy, h)))
+								on++
+					if (on % 9) mixed++
+					bits.push(on > 4 ? 1 : 0)
+				}
+			if (mixed < best.mixed) best = { bits, mixed }
+		}
+	if (!best.bits.includes(1))
+		throw new Error('no lit pixels in this screenshot')
+	return best.bits
 }
 
 function readTxt(text: string): Frames {
