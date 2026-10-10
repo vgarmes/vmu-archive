@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowLeftRightIcon, BracesIcon, CheckIcon } from 'lucide-react'
+import { ArrowLeftRightIcon, CheckIcon, CopyIcon } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
@@ -18,6 +18,11 @@ import {
 	SelectTrigger,
 	SelectValue
 } from '@/components/ui/Select'
+import {
+	Tooltip,
+	TooltipContent,
+	TooltipTrigger
+} from '@/components/ui/tooltip'
 import type { IndexEntry } from '@/lib/icons'
 import {
 	decodeFrame,
@@ -545,24 +550,29 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 						type="button"
 						onClick={download}
 						disabled={!out}
-						className="border-primary bg-primary text-primary-foreground hover:bg-primary/90 h-10 flex-1 border px-4 text-left text-sm uppercase disabled:opacity-50"
+						className="border-primary bg-primary text-primary-foreground hover:bg-primary/90 h-10 flex-1 border px-4 text-center text-sm uppercase disabled:opacity-50"
 					>
 						Download
 					</button>
-					<button
-						type="button"
-						onClick={copyC}
-						disabled={!art}
-						aria-label={copied ? 'Copied C array' : 'Copy as C array'}
-						title={copied ? 'Copied!' : 'Copy as C array'}
-						className="border-border text-muted-foreground hover:text-foreground hover:border-foreground flex size-10 shrink-0 items-center justify-center border disabled:opacity-50"
-					>
-						{copied ? (
-							<CheckIcon className="size-4" aria-hidden="true" />
-						) : (
-							<BracesIcon className="size-4" aria-hidden="true" />
-						)}
-					</button>
+					<Tooltip>
+						{/* Stays open on click, so "Copied!" replaces the label in place. */}
+						<TooltipTrigger
+							closeOnClick={false}
+							onClick={copyC}
+							disabled={!art}
+							aria-label={copied ? 'Copied C array' : 'Copy as C array'}
+							className="border-border text-muted-foreground hover:text-foreground hover:border-foreground flex size-10 shrink-0 items-center justify-center border disabled:opacity-50"
+						>
+							{copied ? (
+								<CheckIcon className="size-4" aria-hidden="true" />
+							) : (
+								<CopyIcon className="size-4" aria-hidden="true" />
+							)}
+						</TooltipTrigger>
+						<TooltipContent>
+							{copied ? 'Copied!' : 'Copy as C array'}
+						</TooltipContent>
+					</Tooltip>
 				</div>
 			</DrawerFooter>
 		</div>
