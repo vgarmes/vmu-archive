@@ -3,6 +3,17 @@
 A searchable archive of Dreamcast VMU screen art — every piece is a 48×32,
 1-bit VMU LCD screen — with downloads as PNG, SVG, GIF or a C array.
 
+Browse it at **[vmu-archive.vercel.app](https://vmu-archive.vercel.app)**.
+
+## Contributing
+
+Missing a game or a screen?
+[Open an issue with a screenshot](https://github.com/vgarmes/vmu-archive/issues/new?template=submit-art.yml)
+— an emulator capture or a photo of a real VMU is enough. If you'd rather add
+it yourself, follow [Adding art](#adding-art) and open a pull request.
+
+## Development
+
 [Next.js](https://nextjs.org) (App Router, static export), React, Tailwind,
 [Fuse.js](https://www.fusejs.io) for search and [Base UI](https://base-ui.com)
 for the download menu.
@@ -91,3 +102,10 @@ The id (and so the URL), added date and unchanged metadata are kept.
 
 Everything is prerendered by `next build` into `out/`; downloads are generated
 in the browser from the frame data.
+
+## License
+
+The code is [MIT](LICENSE). The VMU art belongs to its publishers and rights
+holders (Sega and others) and is collected here for preservation and
+reference, not for commercial use. If you hold the rights to a piece and want
+it removed, [open an issue](https://github.com/vgarmes/vmu-archive/issues).

@@ -1,0 +1,34 @@
+name: Submit VMU art
+description: Share a screenshot or photo of a VMU screen that isn't in the archive yet.
+title: '[Art] '
+labels: [art]
+body:
+  - type: input
+    id: game
+    attributes:
+      label: Game
+      description: Or "System" for BIOS / menu screens.
+    validations:
+      required: true
+  - type: input
+    id: title
+    attributes:
+      label: What's on screen
+      placeholder: e.g. Chao Garden, title screen, low health
+    validations:
+      required: true
+  - type: textarea
+    id: images
+    attributes:
+      label: Screenshots
+      description: >-
+        Drag images in here. An emulator screenshot of the VMU, a crop of a
+        VMU sprite sheet or a clear photo of a real VMU all work. For an
+        animation, attach every frame or a short video.
+    validations:
+      required: true
+  - type: textarea
+    id: notes
+    attributes:
+      label: Notes
+      description: Region, when it appears, frame timing, source… anything that helps.
