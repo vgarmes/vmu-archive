@@ -46,12 +46,6 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 						{SITE}
 					</Link>
 					<nav className="flex items-center gap-4">
-						<Link
-							href="/about"
-							className="text-muted-foreground hover:text-foreground text-sm uppercase"
-						>
-							About
-						</Link>
 						<ThemeToggle />
 					</nav>
 				</header>
