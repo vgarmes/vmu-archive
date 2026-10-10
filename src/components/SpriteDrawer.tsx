@@ -184,6 +184,10 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	const out = useMemo(() => (art && trim ? trimArt(art) : art), [art, trim])
 	const name = trim ? `${entry.id}-trimmed` : entry.id
 	const ink = toHexColor(LCD_INK)
+	// Unlit LCD dots: the ink at ~12% opacity. toHexColor already includes the
+	// alpha, so build the colour rather than appending to `ink`.
+	const [r, g, b] = LCD_INK
+	const unlit = toHexColor([r, g, b, 0x1f])
 	const vector = format === 'svg' || format === 'svg-lcd'
 	const outW = out?.width ?? 48
 	const outH = out?.height ?? 32
@@ -208,7 +212,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 			save(svgBlob(toSvg(out, { on: ink })), `${name}.svg`)
 		else
 			save(
-				svgBlob(toSvg(out, { style: 'lcd', on: ink, off: `${ink}1f` })),
+				svgBlob(toSvg(out, { style: 'lcd', on: ink, off: unlit })),
 				`${name}-lcd.svg`
 			)
 	}
