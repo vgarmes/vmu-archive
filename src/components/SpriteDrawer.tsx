@@ -1,6 +1,6 @@
 'use client'
 
-import { BracesIcon, CheckIcon } from 'lucide-react'
+import { ArrowLeftRightIcon, BracesIcon, CheckIcon } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
@@ -36,7 +36,8 @@ import {
 	trimArt,
 	trimBox,
 	withFrame,
-	type PixelArt
+	type PixelArt,
+	type Rgba
 } from '@/lib/pixels'
 
 /**
@@ -65,6 +66,70 @@ type Frames = 'all' | number
  * itself; SVG formats only) or a frame index, as a string.
  */
 type FramesChoice = 'all' | 'animated' | `${number}`
+
+/**
+ * Colour presets: the ink of lit pixels, used by every export, and the screen
+ * behind them, used by the preview and the LCD-dots SVG only (the other
+ * formats stay transparent). "Site theme" has neither: the preview follows the
+ * page and exports use the default ink, as before presets.
+ */
+const PALETTES = [
+	{ id: 'site', name: 'Site theme', ink: null, screen: null },
+	// Dark blue on green, like a real VMU; ⇄ gives Flycast's light-on-dark look.
+	{ id: 'vmu', name: 'VMU', ink: '#32365d', screen: '#87a186' },
+	{ id: 'lcd', name: 'LCD', ink: '#262a33', screen: '#a7b3a0' },
+	{ id: 'mono', name: 'Mono', ink: '#000000', screen: '#ffffff' },
+	{ id: 'gameboy', name: 'Game Boy', ink: '#0f380f', screen: '#9bbc0f' }
+] as const
+type PaletteId = (typeof PALETTES)[number]['id']
+const COLORS_KEY = 'vmu-archive:colors'
+
+/** The chosen preset and whether its colours are swapped, kept per browser. */
+function useColors() {
+	const [colors, setColors] = useState<{ id: PaletteId; swapped: boolean }>({
+		id: 'site',
+		swapped: false
+	})
+	useEffect(() => {
+		try {
+			const saved = JSON.parse(localStorage.getItem(COLORS_KEY) ?? 'null')
+			if (saved && PALETTES.some(p => p.id === saved.id))
+				setColors({ id: saved.id, swapped: !!saved.swapped })
+		} catch {}
+	}, [])
+	const update = (next: { id: PaletteId; swapped: boolean }) => {
+		setColors(next)
+		try {
+			localStorage.setItem(COLORS_KEY, JSON.stringify(next))
+		} catch {}
+	}
+	const palette = PALETTES.find(p => p.id === colors.id) ?? PALETTES[0]
+	const ink = colors.swapped ? palette.screen : palette.ink
+	const screen = colors.swapped ? palette.ink : palette.screen
+	return { ...colors, palette, ink, screen, update }
+}
+
+/** A preset's colours: an ink square on its screen colour. */
+function Swatch({
+	ink,
+	screen
+}: {
+	ink: string | null
+	screen: string | null
+}) {
+	return (
+		<span
+			aria-hidden="true"
+			className="border-border inline-flex size-4 shrink-0 border"
+			style={{ background: screen ?? 'transparent' }}
+		>
+			<span
+				className="m-auto size-2"
+				style={{ background: ink ?? 'currentColor' }}
+			/>
+		</span>
+	)
+}
 
 /** Sprites already read from their thumbnails this visit, by icon id. */
 const artCache = new Map<string, PixelArt>()
@@ -187,6 +252,14 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	const [trim, setTrim] = useState(false)
 	const [format, setFormat] = useState<Format>('png')
 	const [frames, setFrames] = useState<FramesChoice>('all')
+	const colors = useColors()
+	// Ink for every export: the preset's, or the default. Unlit LCD dots are
+	// the ink at ~12% opacity; toHexColor already includes the alpha, so the
+	// colour is built rather than appended to.
+	const inkRgba = colors.ink ? parseColor(colors.ink) : LCD_INK
+	const ink = toHexColor(inkRgba)
+	const [r, g, b] = inkRgba
+	const unlit = toHexColor([r, g, b, 0x1f])
 
 	// The Frames row only applies to animations, and not to GIF, which is
 	// always the whole animation.
@@ -213,12 +286,18 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 		return trimBox(pick === 'all' ? art : withFrame(art, pick)) ?? undefined
 	}, [art, trim, pick])
 
+	// "Site theme" follows the page's text colour; a preset shows its own ink
+	// on its screen colour, as the LCD-dots export will.
 	const preview = art
 		? toSvg(art, {
 				frame,
 				style: 'lcd',
-				on: 'currentColor',
-				off: 'color-mix(in srgb, currentColor 10%, transparent)',
+				...(colors.ink
+					? { on: ink, off: unlit, background: colors.screen ?? undefined }
+					: {
+							on: 'currentColor',
+							off: 'color-mix(in srgb, currentColor 10%, transparent)'
+						}),
 				offBox: keptBox,
 				attrs: 'class="block h-auto w-full" aria-hidden="true"'
 			})
@@ -245,11 +324,6 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 				: animated && pick !== 'all'
 					? `-frame-${poseNumber}`
 					: '')
-	const ink = toHexColor(LCD_INK)
-	// Unlit LCD dots: the ink at ~12% opacity. toHexColor already includes the
-	// alpha, so build the colour rather than appending to `ink`.
-	const [r, g, b] = LCD_INK
-	const unlit = toHexColor([r, g, b, 0x1f])
 	// GIFs are frame-sized; everything else is the size of `still`.
 	const sized = format === 'gif' ? out : still
 	const outW = sized?.width ?? 48
@@ -287,13 +361,20 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 					? toSvgSheet(out, opts)
 					: toSvg(still, opts)
 		if (format === 'png')
-			save(await toPng(still, scale), `${name}@${scale}x.png`)
+			save(await toPng(still, scale, inkRgba), `${name}@${scale}x.png`)
 		else if (format === 'gif')
-			save(await toGif(out, scale), `${name}@${scale}x.gif`)
+			save(await toGif(out, scale, inkRgba), `${name}@${scale}x.gif`)
 		else if (format === 'svg') save(svgBlob(svg({ on: ink })), `${name}.svg`)
 		else
 			save(
-				svgBlob(svg({ style: 'lcd', on: ink, off: unlit })),
+				svgBlob(
+					svg({
+						style: 'lcd',
+						on: ink,
+						off: unlit,
+						background: colors.screen ?? undefined
+					})
+				),
 				`${name}-lcd.svg`
 			)
 	}
@@ -357,6 +438,51 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 								))}
 							</SelectContent>
 						</Select>
+
+						<span className="text-muted-foreground">Colors</span>
+						<div className="flex min-w-0 gap-2">
+							<Select
+								items={PALETTES.map(p => ({ value: p.id, label: p.name }))}
+								value={colors.id}
+								onValueChange={v =>
+									v && colors.update({ id: v, swapped: false })
+								}
+							>
+								<SelectTrigger aria-label="Colors" className="min-w-0 flex-1">
+									<SelectValue>
+										{() => (
+											<span className="flex items-center gap-2">
+												<Swatch ink={colors.ink} screen={colors.screen} />
+												{colors.palette.name}
+											</span>
+										)}
+									</SelectValue>
+								</SelectTrigger>
+								<SelectContent alignItemWithTrigger={false}>
+									{PALETTES.map(p => (
+										<SelectItem key={p.id} value={p.id}>
+											<span className="flex items-center gap-2">
+												<Swatch ink={p.ink} screen={p.screen} />
+												{p.name}
+											</span>
+										</SelectItem>
+									))}
+								</SelectContent>
+							</Select>
+							<button
+								type="button"
+								onClick={() =>
+									colors.update({ id: colors.id, swapped: !colors.swapped })
+								}
+								disabled={!colors.palette.ink}
+								aria-pressed={colors.swapped}
+								aria-label="Swap ink and screen colors"
+								title="Swap ink and screen colors"
+								className="border-input hover:border-foreground text-muted-foreground hover:text-foreground aria-pressed:text-foreground flex size-8 shrink-0 items-center justify-center rounded-lg border disabled:opacity-40"
+							>
+								<ArrowLeftRightIcon className="size-4" aria-hidden="true" />
+							</button>
+						</div>
 
 						{animated && format !== 'gif' && (
 							<>
@@ -455,12 +581,12 @@ function save(blob: Blob, filename: string) {
 
 const svgBlob = (svg: string) => new Blob([svg], { type: 'image/svg+xml' })
 
-function toPng(art: PixelArt, scale: number): Promise<Blob> {
+function toPng(art: PixelArt, scale: number, ink: Rgba): Promise<Blob> {
 	const canvas = document.createElement('canvas')
 	canvas.width = art.width * scale
 	canvas.height = art.height * scale
 	const data = new ImageData(
-		toRgba(art, 0, scale) as Uint8ClampedArray<ArrayBuffer>,
+		toRgba(art, 0, scale, ink) as Uint8ClampedArray<ArrayBuffer>,
 		canvas.width,
 		canvas.height
 	)
@@ -474,11 +600,10 @@ function toPng(art: PixelArt, scale: number): Promise<Blob> {
  * Our frames are already palette indices, so GIF needs no quantising.
  * gifenc is CommonJS and only needed on click, so it loads lazily.
  */
-async function toGif(art: PixelArt, scale: number): Promise<Blob> {
+async function toGif(art: PixelArt, scale: number, ink: Rgba): Promise<Blob> {
 	const { GIFEncoder } = await import('gifenc')
 	const { width: w, height: h, bpp } = art
-	const colors =
-		bpp === 1 ? [[0, 0, 0, 0], LCD_INK] : art.palette!.map(parseColor)
+	const colors = bpp === 1 ? [[0, 0, 0, 0], ink] : art.palette!.map(parseColor)
 	const palette = colors.map(([r, g, b]) => [r, g, b])
 	const transparentIndex = colors.findIndex(c => c[3] === 0)
 	const W = w * scale

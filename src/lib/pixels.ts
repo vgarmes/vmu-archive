@@ -94,6 +94,8 @@ export interface SvgOptions {
 	on?: string
 	/** Fill for unlit dots in "lcd" style; omit to leave them out. */
 	off?: string
+	/** Fill behind everything (the screen colour); omit for transparent. */
+	background?: string
 	/** Draw the unlit dots only inside this area, e.g. to show a trim. */
 	offBox?: Box
 	/** Extra attributes for the root element, e.g. 'class="w-full"'. */
@@ -231,13 +233,20 @@ function svgDocument(
 	w: number,
 	h: number,
 	paths: string,
-	{ style = 'flat', off, offBox, attrs }: SvgOptions,
+	{ style = 'flat', off, offBox, background, attrs }: SvgOptions,
 	extra: { css?: string; defs?: string; rootAttrs?: string } = {}
 ): string {
 	const gap = lcdGap(style)
 	const dot = +(1 - gap).toFixed(2)
 	const viewBox = `0 0 ${w - gap} ${h - gap}`
 	let defs = extra.defs ?? ''
+	// The screen colour, like the dots limited to `offBox` when there is one,
+	// and ending at the last dot's edge as the viewBox does.
+	const screen = background
+		? offBox
+			? `<rect x="${offBox.x}" y="${offBox.y}" width="${+(offBox.width - gap).toFixed(2)}" height="${+(offBox.height - gap).toFixed(2)}" fill="${background}"/>`
+			: `<rect width="100%" height="100%" fill="${background}"/>`
+		: ''
 	let grid = ''
 	if (style === 'lcd' && off) {
 		// Fixed, not random: the server and browser renders must match, and
@@ -254,6 +263,7 @@ function svgDocument(
 	const body =
 		(extra.css ? `<style>${extra.css}</style>` : '') +
 		(defs ? `<defs>${defs}</defs>` : '') +
+		screen +
 		grid +
 		paths
 
