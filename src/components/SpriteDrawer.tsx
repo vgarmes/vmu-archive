@@ -151,18 +151,6 @@ function useIsDesktop() {
 	return desktop
 }
 
-function useReducedMotion() {
-	const [reduced, setReduced] = useState(false)
-	useEffect(() => {
-		const media = matchMedia('(prefers-reduced-motion: reduce)')
-		const update = () => setReduced(media.matches)
-		update()
-		media.addEventListener('change', update)
-		return () => media.removeEventListener('change', update)
-	}, [])
-	return reduced
-}
-
 /** The sprite's pixels, read from its (already cached) thumbnail. */
 function useThumbnailArt(entry: IndexEntry) {
 	const { id, frameDelayMs } = entry
@@ -200,24 +188,6 @@ function useThumbnailArt(entry: IndexEntry) {
 		}
 	}, [id, frameDelayMs])
 	return read && read.id === id ? read.art : null
-}
-
-/**
- * The frame to show now: cycles through an animation while `playing`, else
- * always 0.
- */
-function useFrame(art: PixelArt | null, playing: boolean) {
-	const reduced = useReducedMotion()
-	const [frame, setFrame] = useState(0)
-	const count = art?.frames.length ?? 1
-	const delay = art?.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
-	useEffect(() => {
-		setFrame(0)
-		if (count < 2 || reduced || !playing) return
-		const timer = setInterval(() => setFrame(f => (f + 1) % count), delay)
-		return () => clearInterval(timer)
-	}, [count, delay, reduced, playing])
-	return Math.min(frame, count - 1)
 }
 
 interface Props {
@@ -277,8 +247,6 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 		animated && format !== 'gif' && choice !== 'all' && choice !== 'animated'
 			? Number(choice)
 			: 'all'
-	const playing = useFrame(art, pick === 'all')
-	const frame = pick === 'all' ? playing : pick
 	const poses = useMemo(() => (art ? distinctFrames(art) : []), [art])
 	const poseNumber = pick === 'all' ? 0 : poses.indexOf(pick) + 1
 	const sheet = animated && pick === 'all' && format !== 'gif' && !selfPlaying
@@ -293,19 +261,27 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 
 	// "Site theme" follows the page's text colour; a preset shows its own ink
 	// on its screen colour, as the LCD-dots export will.
+	const previewOpts = {
+		style: 'lcd',
+		...(colors.ink
+			? { on: ink, off: unlit, background: colors.screen ?? undefined }
+			: {
+					on: 'currentColor',
+					off: 'color-mix(in srgb, currentColor 10%, transparent)'
+				}),
+		offBox: keptBox,
+		// Decorative, so touches land on its (stable) wrapper instead.
+		attrs: 'class="pointer-events-none block h-auto w-full" aria-hidden="true"'
+	} as const
+	// An animation plays as the self-playing SVG, so the preview's markup is
+	// set once rather than replaced every frame. Safari keeps sending a touch to
+	// the element it started on; when that element was replaced mid-swipe, the
+	// drawer never saw the release and stayed part-way down. Its CSS also holds
+	// frame 1 for reduced motion.
 	const preview = art
-		? toSvg(art, {
-				frame,
-				style: 'lcd',
-				...(colors.ink
-					? { on: ink, off: unlit, background: colors.screen ?? undefined }
-					: {
-							on: 'currentColor',
-							off: 'color-mix(in srgb, currentColor 10%, transparent)'
-						}),
-				offBox: keptBox,
-				attrs: 'class="block h-auto w-full" aria-hidden="true"'
-			})
+		? animated && pick === 'all'
+			? toAnimatedSvg(art, previewOpts)
+			: toSvg(art, { ...previewOpts, frame: pick === 'all' ? 0 : pick })
 		: null
 
 	// Downloads use the trimmed art when asked; the C array never does, since
