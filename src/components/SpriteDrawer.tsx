@@ -31,6 +31,7 @@ import {
 	toRgba,
 	toSheet,
 	toSvg,
+	toAnimatedSvg,
 	toSvgSheet,
 	trimArt,
 	trimBox,
@@ -59,8 +60,11 @@ const DESKTOP = '(min-width: 768px)'
 type Format = 'png' | 'svg' | 'svg-lcd' | 'gif'
 /** Which frames of an animation to export: all as a sheet, or one (its index). */
 type Frames = 'all' | number
-/** The Frames select's value: "all" or a frame index, as a string. */
-type FramesChoice = 'all' | `${number}`
+/**
+ * The Frames select's value: "all" (a sheet), "animated" (an SVG that plays
+ * itself; SVG formats only) or a frame index, as a string.
+ */
+type FramesChoice = 'all' | 'animated' | `${number}`
 
 /** Sprites already read from their thumbnails this visit, by icon id. */
 const artCache = new Map<string, PixelArt>()
@@ -187,13 +191,19 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	// The Frames row only applies to animations, and not to GIF, which is
 	// always the whole animation.
 	const animated = (art?.frames.length ?? 0) > 1
+	const vector = format === 'svg' || format === 'svg-lcd'
+	// "Animated" is only offered for SVG; for other formats it reads as "all".
+	const choice: FramesChoice = frames === 'animated' && !vector ? 'all' : frames
+	const selfPlaying = animated && choice === 'animated'
 	const pick: Frames =
-		animated && format !== 'gif' && frames !== 'all' ? Number(frames) : 'all'
+		animated && format !== 'gif' && choice !== 'all' && choice !== 'animated'
+			? Number(choice)
+			: 'all'
 	const playing = useFrame(art, pick === 'all')
 	const frame = pick === 'all' ? playing : pick
 	const poses = useMemo(() => (art ? distinctFrames(art) : []), [art])
 	const poseNumber = pick === 'all' ? 0 : poses.indexOf(pick) + 1
-	const sheet = animated && pick === 'all' && format !== 'gif'
+	const sheet = animated && pick === 'all' && format !== 'gif' && !selfPlaying
 	const delay = art?.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
 
 	// With trim on, the unlit dots are drawn only inside the area the download
@@ -228,23 +238,27 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	}, [out, art, animated, format, pick, trim])
 	const name =
 		(trim ? `${entry.id}-trimmed` : entry.id) +
-		(sheet
-			? `-sheet-${out?.frames.length}f-${delay}ms`
-			: animated && pick !== 'all'
-				? `-frame-${poseNumber}`
-				: '')
+		(selfPlaying
+			? '-animated'
+			: sheet
+				? `-sheet-${out?.frames.length}f-${delay}ms`
+				: animated && pick !== 'all'
+					? `-frame-${poseNumber}`
+					: '')
 	const ink = toHexColor(LCD_INK)
 	// Unlit LCD dots: the ink at ~12% opacity. toHexColor already includes the
 	// alpha, so build the colour rather than appending to `ink`.
 	const [r, g, b] = LCD_INK
 	const unlit = toHexColor([r, g, b, 0x1f])
-	const vector = format === 'svg' || format === 'svg-lcd'
 	// GIFs are frame-sized; everything else is the size of `still`.
 	const sized = format === 'gif' ? out : still
 	const outW = sized?.width ?? 48
 	const outH = sized?.height ?? 32
 	const frameOptions: { value: FramesChoice; label: string }[] = [
 		{ value: 'all', label: 'All frames · sheet' },
+		...(vector
+			? [{ value: 'animated' as const, label: 'All frames · animated' }]
+			: []),
 		...poses.map(f => ({
 			value: `${f}` as const,
 			label: `Frame ${poses.indexOf(f) + 1}`
@@ -264,10 +278,14 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 
 	const download = async () => {
 		if (!out || !still) return
-		// An SVG sheet keeps each frame in its own group, so it's drawn from the
-		// animation rather than from the merged sheet image.
+		// SVG sheets and animations keep each frame as its own group, so they're
+		// drawn from the animation rather than from the merged sheet image.
 		const svg = (opts: Parameters<typeof toSvg>[1]) =>
-			sheet ? toSvgSheet(out, opts) : toSvg(still, opts)
+			selfPlaying
+				? toAnimatedSvg(out, opts)
+				: sheet
+					? toSvgSheet(out, opts)
+					: toSvg(still, opts)
 		if (format === 'png')
 			save(await toPng(still, scale), `${name}@${scale}x.png`)
 		else if (format === 'gif')
@@ -345,7 +363,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 								<span className="text-muted-foreground">Frames</span>
 								<Select
 									items={frameOptions}
-									value={frames}
+									value={choice}
 									onValueChange={v => v && setFrames(v)}
 								>
 									<SelectTrigger aria-label="Frames" className="w-full">

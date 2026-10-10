@@ -141,6 +141,50 @@ export function toSvgSheet(
 	return svgDocument(art.width * art.frames.length, art.height, body, opts)
 }
 
+/**
+ * An animation as one SVG that plays itself, e.g. in an <img> on any page.
+ * Each distinct frame is drawn once in <defs>; a <use> per stored frame shows
+ * it for one delay, so repeated frames (held longer) cost a line, not a copy.
+ * CSS does the timing: every frame loops with the same cycle, visible for its
+ * slot only, offset by its position. With reduced motion it shows frame 1.
+ * Names are prefixed because CSS in an SVG inlined into HTML is page-wide.
+ */
+export function toAnimatedSvg(
+	art: PixelArt,
+	opts: Omit<SvgOptions, 'frame'> = {}
+): string {
+	const n = art.frames.length
+	if (n < 2) return toSvg(art, opts)
+	const { style = 'flat', on = toHexColor(LCD_INK) } = opts
+	const delay = art.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
+	const distinct = distinctFrames(art)
+	const drawn = distinct
+		.map(
+			(f, k) => `<g id="vmu-frame-${k + 1}">${svgPaths(art, f, style, on)}</g>`
+		)
+		.join('')
+	const uses = art.frames
+		.map((hex, i) => {
+			const k = distinct.indexOf(art.frames.indexOf(hex)) + 1
+			return `<use class="vmu-f vmu-f${i + 1}" href="#vmu-frame-${k}"/>`
+		})
+		.join('')
+	const slot = +(100 / n).toFixed(4)
+	const css =
+		`.vmu-f{visibility:hidden;animation:vmu-frame ${n * delay}ms step-end infinite}` +
+		art.frames
+			.slice(1)
+			.map((_, i) => `.vmu-f${i + 2}{animation-delay:${(i + 1) * delay}ms}`)
+			.join('') +
+		`@keyframes vmu-frame{0%{visibility:visible}${slot}%{visibility:hidden}}` +
+		`@media (prefers-reduced-motion:reduce){.vmu-f{animation:none}.vmu-f1{visibility:visible}}`
+	return svgDocument(art.width, art.height, uses, opts, {
+		css,
+		defs: drawn,
+		rootAttrs: `data-frames="${n}" data-frame-delay-ms="${delay}"`
+	})
+}
+
 const lcdGap = (style: SvgOptions['style']) => (style === 'lcd' ? 0.12 : 0)
 
 /** One frame's pixels as <path>s, one per colour, in pixel units. */
@@ -179,34 +223,45 @@ function svgPaths(
 	return body
 }
 
-/** The <svg> around some paths: the unlit-dot grid for "lcd", and the size. */
+/**
+ * The <svg> around some paths: the unlit-dot grid for "lcd", and the size.
+ * `extra` adds a <style>, more <defs> and root attributes (animated export).
+ */
 function svgDocument(
 	w: number,
 	h: number,
 	paths: string,
-	{ style = 'flat', off, offBox, attrs }: SvgOptions
+	{ style = 'flat', off, offBox, attrs }: SvgOptions,
+	extra: { css?: string; defs?: string; rootAttrs?: string } = {}
 ): string {
 	const gap = lcdGap(style)
 	const dot = +(1 - gap).toFixed(2)
 	const viewBox = `0 0 ${w - gap} ${h - gap}`
-	let body = ''
+	let defs = extra.defs ?? ''
+	let grid = ''
 	if (style === 'lcd' && off) {
 		// Fixed, not random: the server and browser renders must match, and
 		// there's only ever one preview per page.
 		const id = 'vmu-dots'
-		body +=
-			`<defs><pattern id="${id}" width="1" height="1" patternUnits="userSpaceOnUse">` +
-			`<rect width="${dot}" height="${dot}" fill="${off}"/></pattern></defs>` +
-			(offBox
-				? `<rect x="${offBox.x}" y="${offBox.y}" width="${offBox.width}" height="${offBox.height}" fill="url(#${id})"/>`
-				: `<rect width="100%" height="100%" fill="url(#${id})"/>`)
+		defs =
+			`<pattern id="${id}" width="1" height="1" patternUnits="userSpaceOnUse">` +
+			`<rect width="${dot}" height="${dot}" fill="${off}"/></pattern>` +
+			defs
+		grid = offBox
+			? `<rect x="${offBox.x}" y="${offBox.y}" width="${offBox.width}" height="${offBox.height}" fill="url(#${id})"/>`
+			: `<rect width="100%" height="100%" fill="url(#${id})"/>`
 	}
-	body += paths
+	const body =
+		(extra.css ? `<style>${extra.css}</style>` : '') +
+		(defs ? `<defs>${defs}</defs>` : '') +
+		grid +
+		paths
 
-	const extra = attrs ? ` ${attrs}` : ''
+	const root =
+		(extra.rootAttrs ? ` ${extra.rootAttrs}` : '') + (attrs ? ` ${attrs}` : '')
 	return (
 		`<svg xmlns="http://www.w3.org/2000/svg" viewBox="${viewBox}" ` +
-		`width="${w * 8}" height="${h * 8}" shape-rendering="crispEdges"${extra}>` +
+		`width="${w * 8}" height="${h * 8}" shape-rendering="crispEdges"${root}>` +
 		body +
 		`</svg>`
 	)
