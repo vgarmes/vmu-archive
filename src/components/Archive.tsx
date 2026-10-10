@@ -1,10 +1,19 @@
 'use client'
 
 import { Input } from '@base-ui/react/input'
+import { cn } from 'cn'
 import Fuse from 'fuse.js'
-import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import {
+	type CSSProperties,
+	useCallback,
+	useEffect,
+	useMemo,
+	useRef,
+	useState
+} from 'react'
 import SpriteDrawer from '@/components/SpriteDrawer'
 import type { IndexEntry } from '@/lib/icons'
+import { DEFAULT_FRAME_DELAY_MS } from '@/lib/pixels'
 
 /**
  * Search box, filters and the icon grid.
@@ -16,7 +25,8 @@ import type { IndexEntry } from '@/lib/icons'
  * light, and search keeps most result sets small.
  *
  * Clicking a card opens the sprite drawer and adds ?screen=<id> to the URL
- * (Back closes it, and a shared link opens it).
+ * (Back closes it, and a shared link opens it). Animated cards play on hover
+ * or keyboard focus, in CSS alone (see `animate-frames`).
  */
 
 const BATCH = 60
@@ -218,8 +228,22 @@ function Card({
 						height={32}
 						loading="lazy"
 						decoding="async"
-						// The art is near-black; flip it for dark mode.
-						className="pixelated absolute inset-0 m-auto size-4/5 object-contain dark:invert"
+						// The art is near-black; flip it for dark mode. An animation's
+						// thumbnail is a strip of frames: show the first, play on hover.
+						className={cn(
+							'pixelated absolute inset-0 m-auto size-4/5 dark:invert',
+							icon.frames
+								? 'motion-safe:group-hover:animate-frames motion-safe:group-focus-visible:animate-frames object-cover object-top'
+								: 'object-contain'
+						)}
+						style={
+							icon.frames
+								? ({
+										'--frames': icon.frames,
+										'--frame-delay': `${icon.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS}ms`
+									} as CSSProperties)
+								: undefined
+						}
 					/>
 				</div>
 				<div className="border-border flex flex-col gap-0.5 border-t px-3 py-2 text-xs">

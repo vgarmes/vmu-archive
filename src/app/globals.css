@@ -87,3 +87,21 @@
 @utility pixelated {
 	image-rendering: pixelated;
 }
+
+/*
+ * Plays an animation's thumbnail strip: the <img> shows one frame (object-fit
+ * cover, top aligned) and this steps it down the strip, holding each frame
+ * for its delay. Set --frames and --frame-delay on the element.
+ */
+@keyframes vmu-frames {
+	from {
+		object-position: 50% 0%;
+	}
+	to {
+		object-position: 50% 100%;
+	}
+}
+@utility animate-frames {
+	animation: vmu-frames calc(var(--frames) * var(--frame-delay))
+		steps(var(--frames), jump-none) infinite;
+}

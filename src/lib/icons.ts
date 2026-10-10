@@ -50,6 +50,10 @@ export interface IndexEntry {
 	publisher?: string
 	year?: number
 	tags: string[]
+	/** Only on animations: how many frames their thumbnail strip holds. */
+	frames?: number
+	/** Only on animations: delay between frames, when not the default. */
+	frameDelayMs?: number
 }
 
 let cache: Icon[] | undefined
@@ -93,5 +97,9 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 	game: data.game,
 	publisher: data.publisher,
 	year: data.year,
-	tags: data.tags
+	tags: data.tags,
+	...(data.frames.length > 1 && {
+		frames: data.frames.length,
+		frameDelayMs: data.frameDelayMs
+	})
 })

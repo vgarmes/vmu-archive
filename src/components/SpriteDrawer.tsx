@@ -20,6 +20,7 @@ import {
 import type { IndexEntry } from '@/lib/icons'
 import {
 	decodeFrame,
+	DEFAULT_FRAME_DELAY_MS,
 	encodeFrame,
 	LCD_INK,
 	parseColor,
@@ -37,13 +38,13 @@ import {
  * smaller screens.
  *
  * No extra data is fetched: the pixels are read back from the thumbnail the
- * grid already loaded (a native 48x32 PNG where opaque means lit), and every
- * export is generated in the browser from them. Animated sprites aren't
- * supported yet — only the first frame is in the thumbnail.
+ * grid already loaded (a native 48x32 PNG where opaque means lit, with
+ * animation frames stacked below each other), and every export is generated
+ * in the browser from them. Animations always play in the preview, unless the
+ * visitor asks for reduced motion.
  */
 
 const SCALES = [1, 4, 8, 16]
-const DEFAULT_DELAY = 250
 /** Above this width the drawer is a side panel rather than a bottom sheet. */
 const DESKTOP = '(min-width: 768px)'
 
@@ -64,8 +65,21 @@ function useIsDesktop() {
 	return desktop
 }
 
+function useReducedMotion() {
+	const [reduced, setReduced] = useState(false)
+	useEffect(() => {
+		const media = matchMedia('(prefers-reduced-motion: reduce)')
+		const update = () => setReduced(media.matches)
+		update()
+		media.addEventListener('change', update)
+		return () => media.removeEventListener('change', update)
+	}, [])
+	return reduced
+}
+
 /** The sprite's pixels, read from its (already cached) thumbnail. */
-function useThumbnailArt(id: string) {
+function useThumbnailArt(entry: IndexEntry) {
+	const { id, frameDelayMs } = entry
 	const [read, setRead] = useState<{ id: string; art: PixelArt } | null>(null)
 	useEffect(() => {
 		const cached = artCache.get(id)
@@ -73,21 +87,24 @@ function useThumbnailArt(id: string) {
 		let cancelled = false
 		const img = new Image()
 		img.onload = () => {
+			// One 48x32 frame per 32 rows of the strip.
+			const count = Math.max(1, Math.floor(img.naturalHeight / 32))
 			const canvas = document.createElement('canvas')
 			canvas.width = 48
-			canvas.height = 32
+			canvas.height = 32 * count
 			const ctx = canvas.getContext('2d')!
 			ctx.drawImage(img, 0, 0)
-			const { data } = ctx.getImageData(0, 0, 48, 32)
-			const bits = Array.from({ length: 48 * 32 }, (_, i) =>
-				data[i * 4 + 3] >= 128 ? 1 : 0
+			const { data } = ctx.getImageData(0, 0, 48, 32 * count)
+			const frames = Array.from({ length: count }, (_, f) =>
+				encodeFrame(
+					Array.from({ length: 48 * 32 }, (_, i) =>
+						data[(f * 48 * 32 + i) * 4 + 3] >= 128 ? 1 : 0
+					),
+					1
+				)
 			)
-			const art: PixelArt = {
-				width: 48,
-				height: 32,
-				bpp: 1,
-				frames: [encodeFrame(bits, 1)]
-			}
+			const art: PixelArt = { width: 48, height: 32, bpp: 1, frames }
+			if (count > 1) art.frameDelayMs = frameDelayMs
 			artCache.set(id, art)
 			if (!cancelled) setRead({ id, art })
 		}
@@ -95,8 +112,23 @@ function useThumbnailArt(id: string) {
 		return () => {
 			cancelled = true
 		}
-	}, [id])
+	}, [id, frameDelayMs])
 	return read && read.id === id ? read.art : null
+}
+
+/** The frame to show now: cycles through an animation, else always 0. */
+function useFrame(art: PixelArt | null) {
+	const reduced = useReducedMotion()
+	const [frame, setFrame] = useState(0)
+	const count = art?.frames.length ?? 1
+	const delay = art?.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
+	useEffect(() => {
+		setFrame(0)
+		if (count < 2 || reduced) return
+		const timer = setInterval(() => setFrame(f => (f + 1) % count), delay)
+		return () => clearInterval(timer)
+	}, [count, delay, reduced])
+	return Math.min(frame, count - 1)
 }
 
 interface Props {
@@ -130,7 +162,8 @@ export default function SpriteDrawer({ entry, onClose }: Props) {
 }
 
 function SpritePanel({ entry }: { entry: IndexEntry }) {
-	const art = useThumbnailArt(entry.id)
+	const art = useThumbnailArt(entry)
+	const frame = useFrame(art)
 	const [scale, setScale] = useState<number>(8)
 	const [copied, setCopied] = useState(false)
 	const [trim, setTrim] = useState(false)
@@ -138,6 +171,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 
 	const preview = art
 		? toSvg(art, {
+				frame,
 				style: 'lcd',
 				on: 'currentColor',
 				off: 'color-mix(in srgb, currentColor 10%, transparent)',
@@ -219,7 +253,8 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 								alt=""
 								width={48}
 								height={32}
-								className="pixelated h-auto w-full dark:invert"
+								// An animation's strip shows its first frame only.
+								className="pixelated aspect-[3/2] h-auto w-full object-cover object-top dark:invert"
 							/>
 						)}
 					</div>
@@ -347,7 +382,7 @@ async function toGif(art: PixelArt, scale: number): Promise<Blob> {
 				big[y * W + x] = px[Math.floor(y / scale) * w + Math.floor(x / scale)]
 		gif.writeFrame(big, W, H, {
 			palette,
-			delay: art.frameDelayMs ?? DEFAULT_DELAY,
+			delay: art.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS,
 			transparent: transparentIndex >= 0,
 			transparentIndex: Math.max(0, transparentIndex)
 		})

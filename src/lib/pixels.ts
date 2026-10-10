@@ -83,6 +83,9 @@ export function colorsOf(art: PixelArt, ink: Rgba = LCD_INK): Rgba[] {
 
 export const frameCount = (art: PixelArt) => art.frames.length
 
+/** Delay between animation frames when an entry doesn't set one. */
+export const DEFAULT_FRAME_DELAY_MS = 250
+
 export interface SvgOptions {
 	frame?: number
 	/** "flat": crisp square pixels. "lcd": VMU dot matrix with gaps. */
