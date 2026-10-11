@@ -30,6 +30,8 @@ import {
 	encodeFrame,
 	LCD_INK,
 	parseColor,
+	STRIP_GAP,
+	stripPosition,
 	distinctFrames,
 	toCArray,
 	toHexColor,
@@ -161,18 +163,22 @@ function useThumbnailArt(entry: IndexEntry) {
 		let cancelled = false
 		const img = new Image()
 		img.onload = () => {
-			// One 48x32 frame per 32 rows of the strip.
-			const count = Math.max(1, Math.floor(img.naturalHeight / 32))
+			// One 48x32 frame every 32 + STRIP_GAP rows of the strip.
+			const pitch = 32 + STRIP_GAP
+			const count = Math.max(
+				1,
+				Math.floor((img.naturalHeight + STRIP_GAP) / pitch)
+			)
 			const canvas = document.createElement('canvas')
 			canvas.width = 48
-			canvas.height = 32 * count
+			canvas.height = img.naturalHeight
 			const ctx = canvas.getContext('2d')!
 			ctx.drawImage(img, 0, 0)
-			const { data } = ctx.getImageData(0, 0, 48, 32 * count)
+			const { data } = ctx.getImageData(0, 0, 48, img.naturalHeight)
 			const frames = Array.from({ length: count }, (_, f) =>
 				encodeFrame(
 					Array.from({ length: 48 * 32 }, (_, i) =>
-						data[(f * 48 * 32 + i) * 4 + 3] >= 128 ? 1 : 0
+						data[(f * pitch * 48 + i) * 4 + 3] >= 128 ? 1 : 0
 					),
 					1
 				)
@@ -395,8 +401,18 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 								alt=""
 								width={48}
 								height={32}
-								// An animation's strip shows its first frame only.
+								// An animation's strip shows one frame: its poster, as in the grid.
 								className="pixelated aspect-[3/2] h-auto w-full object-cover object-top dark:invert"
+								style={
+									entry.frames && entry.posterFrame
+										? {
+												objectPosition: stripPosition(
+													entry.frames,
+													entry.posterFrame
+												)
+											}
+										: undefined
+								}
 							/>
 						)}
 					</div>

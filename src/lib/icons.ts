@@ -23,6 +23,8 @@ const schema = z
 		bpp: z.literal(1),
 		frames: z.array(z.string().regex(/^[0-9a-f]+$/)).min(1),
 		frameDelayMs: z.number().int().positive().optional(),
+		/** Frame (from 0) the grid shows at rest, instead of the first. */
+		posterFrame: z.number().int().nonnegative().optional(),
 		tags: z.array(z.string()).default([]),
 		/** Content hash of the pixels; the importer uses it to skip duplicates. */
 		hash: z.string(),
@@ -35,6 +37,9 @@ const schema = z
 			),
 		{ message: 'frame length does not match width x height x bpp' }
 	)
+	.refine(a => (a.posterFrame ?? 0) < a.frames.length, {
+		message: 'posterFrame is past the last frame'
+	})
 
 export type IconData = z.infer<typeof schema>
 export interface Icon {
@@ -54,6 +59,8 @@ export interface IndexEntry {
 	frames?: number
 	/** Only on animations: delay between frames, when not the default. */
 	frameDelayMs?: number
+	/** Only on animations: the frame shown at rest, when not the first. */
+	posterFrame?: number
 }
 
 let cache: Icon[] | undefined
@@ -100,6 +107,7 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 	tags: data.tags,
 	...(data.frames.length > 1 && {
 		frames: data.frames.length,
-		frameDelayMs: data.frameDelayMs
+		frameDelayMs: data.frameDelayMs,
+		posterFrame: data.posterFrame
 	})
 })

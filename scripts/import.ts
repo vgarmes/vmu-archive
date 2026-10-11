@@ -21,12 +21,17 @@
  *   { "game": "Sonic Adventure", "publisher": "Sega",
  *     "crops": [{ "x": 24, "y": 67, "w": 48, "h": 32, "title": "Sonic" }, …] }
  * A 48x32 box is used as is; any other box is trimmed and centred, so it can
- * be loose.
+ * be loose. For a sheet with one animation per row, give a 48x32 crop
+ * "frames": n and it reads n boxes left to right, "step" pixels apart
+ * (default: the box width), as one animated entry:
+ *   { "x": 2, "y": 36, "w": 48, "h": 32, "frames": 8, "step": 50, "title": "Bow" }
  *
  * Metadata comes from an optional sidecar with the same basename
  * (sonic.png → sonic.json): { title, game, publisher, year, region, tags,
- * frameDelayMs, invert, replaces }. Without one, the filename is the
- * title. Pixel-identical art that is already in the archive is skipped.
+ * frameDelayMs, posterFrame, invert, replaces }. "posterFrame" is the frame
+ * (from 0) the grid shows at rest, for animations whose first frame is a poor
+ * thumbnail. Without a sidecar, the filename is the title. Pixel-identical art
+ * that is already in the archive is skipped.
  *
  * To change an existing piece — e.g. add the missing frames of an animation —
  * import the full art with `"replaces": "<existing id>"` in its sidecar. The
@@ -55,6 +60,8 @@ interface Meta {
 	region?: 'JP' | 'US' | 'EU' | 'WW'
 	tags?: string[]
 	frameDelayMs?: number
+	/** Frame (from 0) the grid shows when the animation isn't playing. */
+	posterFrame?: number
 	invert?: boolean
 	/** Id of an existing entry to replace (e.g. to add animation frames). */
 	replaces?: string
@@ -67,6 +74,10 @@ interface Crop extends Omit<Meta, 'crops'> {
 	y: number
 	w: number
 	h: number
+	/** Read this many boxes to the right as one animation's frames. */
+	frames?: number
+	/** Distance between those boxes, in pixels (default: `w`). */
+	step?: number
 }
 
 interface Image {
@@ -284,13 +295,24 @@ function readSource(
 	if (!meta.crops) return [{ frames: readImage(png, meta), meta, label: name }]
 	const { crops, ...sheet } = meta
 	return crops.map(crop => {
-		const { x, y, w, h, ...own } = crop
+		const { x, y, w, h, frames: count = 1, step = w, ...own } = crop
 		const pieceMeta: Meta = { ...sheet, ...own }
-		return {
-			frames: readImage(cropImage(png, crop), pieceMeta),
-			meta: pieceMeta,
-			label: `${name} @${x},${y}`
-		}
+		const label = `${name} @${x},${y}`
+		if (count === 1)
+			return {
+				frames: readImage(cropImage(png, crop), pieceMeta),
+				meta: pieceMeta,
+				label
+			}
+		// Frames are used as is, never trimmed one by one, so they stay aligned.
+		if (w !== W || h !== H)
+			throw new Error(`${label}: a crop with "frames" must be ${W}x${H}`)
+		const frames = Array.from(
+			{ length: count },
+			(_, i) =>
+				readImage(cropImage(png, { x: x + i * step, y, w, h }), pieceMeta)[0]
+		)
+		return { frames, meta: pieceMeta, label: `${label} ×${count}` }
 	})
 }
 
@@ -425,6 +447,17 @@ function main() {
 				const pick = <K extends keyof Meta>(k: K) =>
 					meta[k] ?? (prev[k] as Meta[K] | undefined)
 
+				const posterFrame = pick('posterFrame')
+				if (
+					posterFrame !== undefined &&
+					(!Number.isInteger(posterFrame) ||
+						posterFrame < 0 ||
+						posterFrame >= frames.length)
+				)
+					throw new Error(
+						`"posterFrame": ${posterFrame} is not one of its ${frames.length} frames (0-${frames.length - 1})`
+					)
+
 				const title = pick('title') || path.basename(base)
 				const id =
 					meta.replaces ??
@@ -440,6 +473,7 @@ function main() {
 					bpp: 1,
 					frames,
 					frameDelayMs: frames.length > 1 ? pick('frameDelayMs') : undefined,
+					posterFrame: frames.length > 1 ? posterFrame : undefined,
 					tags: pick('tags') ?? [],
 					hash,
 					added:

@@ -86,6 +86,21 @@ export const frameCount = (art: PixelArt) => art.frames.length
 /** Delay between animation frames when an entry doesn't set one. */
 export const DEFAULT_FRAME_DELAY_MS = 250
 
+/**
+ * Transparent rows between the frames of a thumbnail strip. Scaled up by a
+ * non-integer factor, a frame's edge can land part-way through a screen pixel
+ * and show a sliver of the next frame; with a gap, that sliver is empty.
+ */
+export const STRIP_GAP = 2
+
+/**
+ * The CSS object-position that shows one frame of a vertical thumbnail strip
+ * (the image is one frame tall, object-fit: cover). Gaps between frames don't
+ * change it: frame k is always k / (frames - 1) of the way down.
+ */
+export const stripPosition = (frames: number, frame = 0) =>
+	`50% ${frames > 1 ? (frame / (frames - 1)) * 100 : 0}%`
+
 export interface SvgOptions {
 	frame?: number
 	/** "flat": crisp square pixels. "lcd": VMU dot matrix with gaps. */
