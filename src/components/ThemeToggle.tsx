@@ -1,6 +1,5 @@
 'use client'
 
-import { MonitorIcon, MoonIcon, SunIcon } from 'lucide-react'
 import { useEffect, useState } from 'react'
 import {
 	Select,
@@ -12,10 +11,10 @@ import {
 
 type Theme = 'auto' | 'light' | 'dark'
 const THEMES = [
-	{ value: 'auto', label: 'Auto', Icon: MonitorIcon },
-	{ value: 'light', label: 'Light', Icon: SunIcon },
-	{ value: 'dark', label: 'Dark', Icon: MoonIcon }
-] as const satisfies { value: Theme; label: string; Icon: unknown }[]
+	{ value: 'auto', label: 'Auto' },
+	{ value: 'light', label: 'Light' },
+	{ value: 'dark', label: 'Dark' }
+] as const satisfies { value: Theme; label: string }[]
 
 const prefersDark = () => matchMedia('(prefers-color-scheme: dark)').matches
 
@@ -57,39 +56,24 @@ export default function ThemeToggle() {
 	return (
 		<Select items={THEMES} value={theme} onValueChange={v => v && choose(v)}>
 			{/* Blank until mounted, since the saved theme isn't known on the server. */}
-			<SelectTrigger aria-label="Theme" size="sm" className="sm:w-30">
+			<SelectTrigger aria-label="Theme" size="xs" className="w-20 uppercase">
 				<SelectValue>
-					{(value: Theme | null) => {
-						const t = THEMES.find(t => t.value === value)
-						return t ? <ThemeLabel {...t} compact /> : null
-					}}
+					{(value: Theme | null) =>
+						THEMES.find(t => t.value === value)?.label ?? null
+					}
 				</SelectValue>
 			</SelectTrigger>
-			<SelectContent alignItemWithTrigger={false} align="end">
-				{THEMES.map(({ value, label, Icon }) => (
+			<SelectContent
+				alignItemWithTrigger={false}
+				align="end"
+				className="min-w-0! uppercase"
+			>
+				{THEMES.map(({ value, label }) => (
 					<SelectItem key={value} value={value}>
-						<ThemeLabel label={label} Icon={Icon} />
+						{label}
 					</SelectItem>
 				))}
 			</SelectContent>
 		</Select>
-	)
-}
-
-function ThemeLabel({
-	label,
-	Icon,
-	compact = false
-}: Pick<(typeof THEMES)[number], 'label' | 'Icon'> & {
-	/** Icon only on small screens; the label stays readable by screen readers. */
-	compact?: boolean
-}) {
-	return (
-		<span className="flex items-center gap-2">
-			<Icon className="text-muted-foreground size-4" />
-			<span className={compact ? 'sr-only sm:not-sr-only' : undefined}>
-				{label}
-			</span>
-		</span>
 	)
 }
