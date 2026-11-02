@@ -3,6 +3,7 @@
 import { Input } from '@base-ui/react/input'
 import { cn } from 'cn'
 import Fuse from 'fuse.js'
+import { XIcon } from 'lucide-react'
 import {
 	type CSSProperties,
 	useCallback,
@@ -55,6 +56,7 @@ interface Props {
 export default function Archive({ initial, total, games }: Props) {
 	const [index, setIndex] = useState<IndexEntry[]>(initial)
 	const [query, setQuery] = useState('')
+	const searchRef = useRef<HTMLInputElement>(null)
 	const [game, setGame] = useState<Game | null>(null)
 	const [shown, setShown] = useState(BATCH)
 	const [screen, setScreen] = useState<string | null>(null)
@@ -169,7 +171,11 @@ export default function Archive({ initial, total, games }: Props) {
 				<div className="flex flex-col gap-3 sm:flex-row">
 					<div
 						role="search"
-						className="border-border bg-card/50 focus-within:border-foreground focus-within:ring-foreground/30 box-border flex h-9 max-h-9 min-h-9 min-w-0 flex-1 items-center gap-2 border px-3 transition-[border-color,box-shadow] focus-within:ring-1"
+						className={cn(
+							'border-border bg-card/50 focus-within:border-foreground focus-within:ring-foreground/30 box-border flex h-9 max-h-9 min-h-9 min-w-0 flex-1 items-center gap-2 border pl-3 transition-[border-color,box-shadow] focus-within:ring-1',
+							// The clear button brings its own padding, like the game picker's.
+							query ? 'pr-1' : 'pr-3'
+						)}
 					>
 						<svg
 							viewBox="0 0 24 24"
@@ -191,8 +197,22 @@ export default function Archive({ initial, total, games }: Props) {
 							onValueChange={setQuery}
 							placeholder="Search by title, game, publisher or tag…"
 							aria-label="Search icons"
+							ref={searchRef}
 							className="placeholder:text-muted-foreground h-full min-h-0 w-full min-w-0 flex-1 border-0 bg-transparent py-0 font-mono text-sm leading-5 ring-0 outline-none focus:outline-none"
 						/>
+						{query && (
+							<button
+								type="button"
+								aria-label="Clear search"
+								onClick={() => {
+									setQuery('')
+									searchRef.current?.focus()
+								}}
+								className="text-muted-foreground hover:text-foreground focus-visible:ring-ring flex size-7 shrink-0 items-center justify-center outline-none focus-visible:ring-1"
+							>
+								<XIcon className="size-4" />
+							</button>
+						)}
 					</div>
 					<GamePicker games={games} value={game} onChange={setGame} />
 				</div>
