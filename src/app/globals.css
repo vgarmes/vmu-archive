@@ -91,7 +91,9 @@
 /*
  * Plays an animation's thumbnail strip: the <img> shows one frame (object-fit
  * cover, top aligned) and this steps it down the strip, holding each frame
- * for its delay. Set --frames and --frame-delay on the element.
+ * for its delay. Set --frames and --frame-delay on the element; for frames
+ * that last different times, also --frame-cycle (the total) and
+ * --frame-easing (from stripEasing).
  */
 @keyframes vmu-frames {
 	from {
@@ -102,6 +104,7 @@
 	}
 }
 @utility animate-frames {
-	animation: vmu-frames calc(var(--frames) * var(--frame-delay))
-		steps(var(--frames), jump-none) infinite;
+	animation: vmu-frames
+		var(--frame-cycle, calc(var(--frames) * var(--frame-delay)))
+		var(--frame-easing, steps(var(--frames), jump-none)) infinite;
 }

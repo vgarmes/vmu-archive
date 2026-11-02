@@ -13,10 +13,16 @@
  *         is stripped, the majority colour is unlit whether it's light or dark,
  *         and "invert" flips that. Any other size is treated as smaller art:
  *         trimmed to its lit pixels and centred on the screen.
+ * - .gif  An animation, one entry frame per GIF frame, read like a .png of
+ *         the same size (48x32, a scaled screenshot, or smaller art; smaller
+ *         art is trimmed to one box shared by every frame, so it stays
+ *         aligned). The GIF's timing becomes "frameDelayMs", or
+ *         "frameDelaysMs" if its frames last different times; a sidecar
+ *         setting either overrides it.
  * - .txt  Rows of "#" (lit) and spaces, up to 48x32, centred. Separate
  *         animation frames with a line containing only "---".
  *
- * Sprite sheets: give a PNG's sidecar a "crops" list and every box becomes its
+ * Sprite sheets (PNG only): give a PNG's sidecar a "crops" list and every box becomes its
  * own entry. Each crop takes the same metadata fields, overriding the sheet's:
  *   { "game": "Sonic Adventure", "publisher": "Sega",
  *     "crops": [{ "x": 24, "y": 67, "w": 48, "h": 32, "title": "Sonic" }, …] }
@@ -28,7 +34,12 @@
  *
  * Metadata comes from an optional sidecar with the same basename
  * (sonic.png → sonic.json): { title, game, publisher, year, region, tags,
- * frameDelayMs, posterFrame, invert, replaces }. "posterFrame" is the frame
+ * frameDelayMs, frameDelaysMs, posterFrame, invert, replaces }.
+ * "frameDelaysMs" gives each frame its own delay, one per frame, for frames
+ * that last different times. Back-to-back copies of a frame are merged into
+ * one frame held for their combined delay, so holding a pose by repeating it
+ * (in a GIF or a PNG stack) is stored as the pose once, with a longer delay.
+ * "posterFrame" is the frame
  * (from 0) the grid shows at rest, for animations whose first frame is a poor
  * thumbnail. Without a sidecar, the filename is the title. Pixel-identical art
  * that is already in the archive is skipped.
@@ -41,7 +52,8 @@ import { createHash } from 'node:crypto'
 import fs from 'node:fs'
 import path from 'node:path'
 import pngjs from 'pngjs'
-import { encodeFrame } from '../src/lib/pixels.ts'
+import { DEFAULT_FRAME_DELAY_MS, encodeFrame } from '../src/lib/pixels.ts'
+import { decodeGif } from './gif.ts'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 const OUT_DIR = path.join(ROOT, 'content/icons')
@@ -50,7 +62,7 @@ const DONE = path.join(INBOX, 'imported')
 
 const W = 48
 const H = 32
-const SOURCE_EXT = new Set(['.png', '.txt'])
+const SOURCE_EXT = new Set(['.png', '.gif', '.txt'])
 
 interface Meta {
 	title?: string
@@ -60,6 +72,8 @@ interface Meta {
 	region?: 'JP' | 'US' | 'EU' | 'WW'
 	tags?: string[]
 	frameDelayMs?: number
+	/** Delay of each frame, one per frame, when they differ. */
+	frameDelaysMs?: number[]
 	/** Frame (from 0) the grid shows when the animation isn't playing. */
 	posterFrame?: number
 	invert?: boolean
@@ -114,27 +128,64 @@ function readImage(img: Image, meta: Meta): Frames {
 		const screen = readScreenshot(img, meta.invert)
 		if (screen) return [screen]
 	}
-	// Smaller art: trim to its lit pixels, then centre it on the screen.
+	return readSmall([img], meta.invert)
+}
+
+/**
+ * Smaller art: trimmed to the lit pixels of all the images together, then
+ * centred, so the frames of an animation keep their places.
+ */
+function readSmall(imgs: Image[], invert = false): Frames {
 	let x0 = Infinity,
 		y0 = Infinity,
 		x1 = -1,
 		y1 = -1
-	for (let y = 0; y < img.height; y++)
-		for (let x = 0; x < img.width; x++)
-			if (isLit(img, x, y, meta.invert)) {
-				x0 = Math.min(x0, x)
-				y0 = Math.min(y0, y)
-				x1 = Math.max(x1, x)
-				y1 = Math.max(y1, y)
-			}
+	for (const img of imgs)
+		for (let y = 0; y < img.height; y++)
+			for (let x = 0; x < img.width; x++)
+				if (isLit(img, x, y, invert)) {
+					x0 = Math.min(x0, x)
+					y0 = Math.min(y0, y)
+					x1 = Math.max(x1, x)
+					y1 = Math.max(y1, y)
+				}
 	if (x1 < 0) throw new Error('no lit pixels in this area')
-	const rows: boolean[][] = []
-	for (let y = y0; y <= y1; y++) {
-		const row: boolean[] = []
-		for (let x = x0; x <= x1; x++) row.push(isLit(img, x, y, meta.invert))
-		rows.push(row)
-	}
-	return [centre(rows)]
+	return imgs.map(img => {
+		const rows: boolean[][] = []
+		for (let y = y0; y <= y1; y++) {
+			const row: boolean[] = []
+			for (let x = x0; x <= x1; x++) row.push(isLit(img, x, y, invert))
+			rows.push(row)
+		}
+		return centre(rows)
+	})
+}
+
+/** Every frame of a GIF, with its timing: one delay, or one per frame. */
+function readGif(buf: Uint8Array, meta: Meta) {
+	const gif = decodeGif(buf)
+	const { width, height } = gif[0]
+	let frames: Frames
+	if (width === W && height === H)
+		frames = gif.map(img => readImage(img, meta)[0])
+	else if (width > W || height > H)
+		frames = gif.map((img, i) => {
+			const screen = readScreenshot(img, meta.invert)
+			if (!screen)
+				throw new Error(
+					`frame ${i} is ${width}x${height}: not 48x32 or a scaled screenshot`
+				)
+			return screen
+		})
+	else frames = readSmall(gif, meta.invert)
+
+	const delays = gif.map(f => f.delayMs)
+	const timing: Pick<Meta, 'frameDelayMs' | 'frameDelaysMs'> = delays.every(
+		d => d === delays[0]
+	)
+		? { frameDelayMs: delays[0] }
+		: { frameDelaysMs: delays }
+	return { frames, timing }
 }
 
 const rgbOf = (img: Image, x: number, y: number) => {
@@ -288,8 +339,17 @@ function readSource(
 ): { frames: Frames; meta: Meta; label: string }[] {
 	const name = path.basename(file)
 	const buf = fs.readFileSync(file)
-	if (path.extname(file).toLowerCase() === '.txt')
+	const ext = path.extname(file).toLowerCase()
+	if (ext === '.txt')
 		return [{ frames: readTxt(buf.toString('utf8')), meta, label: name }]
+	if (ext === '.gif') {
+		if (meta.crops) throw new Error('"crops" only works on PNG sprite sheets')
+		const { frames, timing } = readGif(buf, meta)
+		// A sidecar's timing wins over the GIF's.
+		const timed =
+			meta.frameDelayMs || meta.frameDelaysMs ? meta : { ...meta, ...timing }
+		return [{ frames, meta: timed, label: name }]
+	}
 
 	const png = pngjs.PNG.sync.read(buf)
 	if (!meta.crops) return [{ frames: readImage(png, meta), meta, label: name }]
@@ -354,6 +414,30 @@ function newId(
 	return id
 }
 
+/**
+ * Back-to-back copies of a frame become one frame shown for their combined
+ * delay: an animation that holds a pose by repeating it is stored with the
+ * pose once. A frame that comes back later (A B A) stays, since that's motion,
+ * not a hold. `from` is the index each merged frame started at.
+ */
+function mergeHolds(frames: string[], delays: number[]) {
+	const out = {
+		frames: [] as string[],
+		delays: [] as number[],
+		from: [] as number[]
+	}
+	frames.forEach((hex, i) => {
+		const last = out.frames.length - 1
+		if (last >= 0 && out.frames[last] === hex) out.delays[last] += delays[i]
+		else {
+			out.frames.push(hex)
+			out.delays.push(delays[i])
+			out.from.push(i)
+		}
+	})
+	return out
+}
+
 /** Kept identical to earlier versions so existing entries still match. */
 const hashOf = (frames: string[]) =>
 	createHash('sha1')
@@ -389,7 +473,7 @@ function main() {
 	const inputs = args.filter(a => !a.startsWith('--'))
 	const files = collect(inputs.length ? inputs : [INBOX])
 	if (!files.length) {
-		console.log('Nothing to import. Drop .png or .txt files into inbox/.')
+		console.log('Nothing to import. Drop .png, .gif or .txt files into inbox/.')
 		return
 	}
 
@@ -425,14 +509,7 @@ function main() {
 		let fileFailed = false
 		for (const { frames: bits, meta, label } of pieces) {
 			try {
-				const frames = bits.map(f => encodeFrame(f, 1))
-				const hash = hashOf(frames)
-				const dupe = hashes.get(hash)
-				if (dupe) {
-					console.log(`  skip  ${label}: same pixels as ${dupe}`)
-					skipped++
-					continue
-				}
+				const read = bits.map(f => encodeFrame(f, 1))
 
 				// Replacing keeps the id (so URLs don't change), the added date and
 				// any metadata the sidecar doesn't override.
@@ -442,21 +519,89 @@ function main() {
 					if (!fs.existsSync(prevFile))
 						throw new Error(`"replaces": no entry ${meta.replaces}.json`)
 					prev = JSON.parse(fs.readFileSync(prevFile, 'utf8'))
-					hashes.delete(prev.hash as string)
 				}
 				const pick = <K extends keyof Meta>(k: K) =>
 					meta[k] ?? (prev[k] as Meta[K] | undefined)
 
-				const posterFrame = pick('posterFrame')
+				// Timing: the new art's, else the replaced entry's while it still
+				// fits.
+				const ownTiming =
+					meta.frameDelayMs !== undefined || meta.frameDelaysMs !== undefined
+				const frameDelayMs = ownTiming
+					? meta.frameDelayMs
+					: (prev.frameDelayMs as number | undefined)
+				const frameDelaysMs = ownTiming
+					? meta.frameDelaysMs
+					: (prev.frameDelaysMs as number[] | undefined)
+				if (frameDelaysMs && frameDelayMs !== undefined)
+					throw new Error('set "frameDelayMs" or "frameDelaysMs", not both')
+				if (frameDelaysMs) {
+					if (frameDelaysMs.length !== read.length) {
+						if (!ownTiming)
+							throw new Error(
+								`the replaced entry has ${frameDelaysMs.length} frame delays but this art has ${read.length} frames; set "frameDelaysMs" or "frameDelayMs"`
+							)
+						throw new Error(
+							`"frameDelaysMs" has ${frameDelaysMs.length} delays for ${read.length} frames`
+						)
+					}
+					if (!frameDelaysMs.every(d => Number.isInteger(d) && d > 0))
+						throw new Error(
+							'"frameDelaysMs" must be whole milliseconds above 0'
+						)
+				}
+
+				// A sidecar's poster frame counts the frames as read, before merging.
+				const ownPoster = meta.posterFrame
 				if (
-					posterFrame !== undefined &&
-					(!Number.isInteger(posterFrame) ||
-						posterFrame < 0 ||
-						posterFrame >= frames.length)
+					ownPoster !== undefined &&
+					(!Number.isInteger(ownPoster) ||
+						ownPoster < 0 ||
+						ownPoster >= read.length)
 				)
 					throw new Error(
-						`"posterFrame": ${posterFrame} is not one of its ${frames.length} frames (0-${frames.length - 1})`
+						`"posterFrame": ${ownPoster} is not one of its ${read.length} frames (0-${read.length - 1})`
 					)
+
+				const merged = mergeHolds(
+					read,
+					frameDelaysMs ??
+						read.map(() => frameDelayMs ?? DEFAULT_FRAME_DELAY_MS)
+				)
+				const frames = merged.frames
+				const delays = merged.delays
+				// One delay for all is stored as frameDelayMs; left unset if it was.
+				const even = delays.every(d => d === delays[0])
+				const timing =
+					frames.length < 2
+						? {}
+						: even
+							? {
+									frameDelayMs:
+										frameDelaysMs || merged.from.length !== read.length
+											? delays[0]
+											: frameDelayMs
+								}
+							: { frameDelaysMs: delays }
+
+				const posterFrame =
+					ownPoster !== undefined
+						? merged.from.findLastIndex(start => start <= ownPoster)
+						: (prev.posterFrame as number | undefined)
+				if (posterFrame !== undefined && posterFrame >= frames.length)
+					throw new Error(
+						`the replaced entry's "posterFrame" ${posterFrame} is past this art's ${frames.length} frames; set "posterFrame"`
+					)
+
+				const hash = hashOf(frames)
+				const dupe = hashes.get(hash)
+				// Same pixels as the entry being replaced is fine: it updates the rest.
+				if (dupe && dupe !== `${meta.replaces}.json`) {
+					console.log(`  skip  ${label}: same pixels as ${dupe}`)
+					skipped++
+					continue
+				}
+				if (meta.replaces) hashes.delete(prev.hash as string)
 
 				const title = pick('title') || path.basename(base)
 				const id =
@@ -472,7 +617,7 @@ function main() {
 					height: H,
 					bpp: 1,
 					frames,
-					frameDelayMs: frames.length > 1 ? pick('frameDelayMs') : undefined,
+					...timing,
 					posterFrame: frames.length > 1 ? posterFrame : undefined,
 					tags: pick('tags') ?? [],
 					hash,

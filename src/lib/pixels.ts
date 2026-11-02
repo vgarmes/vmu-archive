@@ -22,6 +22,8 @@ export interface PixelArt {
 	frames: string[]
 	/** Delay between animation frames. */
 	frameDelayMs?: number
+	/** Delay of each frame, one per frame, when they differ (wins over frameDelayMs). */
+	frameDelaysMs?: number[]
 }
 
 export type Rgba = [number, number, number, number]
@@ -85,6 +87,39 @@ export const frameCount = (art: PixelArt) => art.frames.length
 
 /** Delay between animation frames when an entry doesn't set one. */
 export const DEFAULT_FRAME_DELAY_MS = 250
+
+/** How long each frame shows, in ms: its own delay, or the shared one. */
+export const frameDelays = (art: {
+	frames: unknown[] | number
+	frameDelayMs?: number
+	frameDelaysMs?: number[]
+}): number[] =>
+	art.frameDelaysMs ??
+	Array.from(
+		{ length: typeof art.frames === 'number' ? art.frames : art.frames.length },
+		() => art.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
+	)
+
+/**
+ * A CSS timing function that steps a thumbnail strip's object-position from
+ * frame to frame, holding each for its own share of `delays` (the strip's
+ * keyframes run from the first frame at 0% to the last at 100%). For uneven
+ * delays; even ones are plain `steps(n, jump-none)`.
+ */
+export function stripEasing(delays: number[]) {
+	const n = delays.length
+	const total = delays.reduce((a, b) => a + b, 0)
+	const points: string[] = []
+	let at = 0
+	delays.forEach((d, k) => {
+		const value = +(k / (n - 1)).toFixed(4)
+		const from = +((at / total) * 100).toFixed(4)
+		at += d
+		const to = +((at / total) * 100).toFixed(4)
+		points.push(`${value} ${from}% ${to}%`)
+	})
+	return `linear(${points.join(', ')})`
+}
 
 /**
  * Transparent rows between the frames of a thumbnail strip. Scaled up by a
@@ -161,9 +196,10 @@ export function toSvgSheet(
 /**
  * An animation as one SVG that plays itself, e.g. in an <img> on any page.
  * Each distinct frame is drawn once in <defs>; a <use> per stored frame shows
- * it for one delay, so repeated frames (held longer) cost a line, not a copy.
+ * it for its delay, so repeated frames (held longer) cost a line, not a copy.
  * CSS does the timing: every frame loops with the same cycle, visible for its
- * slot only, offset by its position. With reduced motion it shows frame 1.
+ * own delay only, offset by the delays before it. With reduced motion it shows
+ * frame 1.
  * Names are prefixed because CSS in an SVG inlined into HTML is page-wide.
  */
 export function toAnimatedSvg(
@@ -173,7 +209,8 @@ export function toAnimatedSvg(
 	const n = art.frames.length
 	if (n < 2) return toSvg(art, opts)
 	const { style = 'flat', on = toHexColor(LCD_INK) } = opts
-	const delay = art.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
+	const delays = frameDelays(art)
+	const total = delays.reduce((a, b) => a + b, 0)
 	const distinct = distinctFrames(art)
 	const drawn = distinct
 		.map(
@@ -186,19 +223,38 @@ export function toAnimatedSvg(
 			return `<use class="vmu-f vmu-f${i + 1}" href="#vmu-frame-${k}"/>`
 		})
 		.join('')
-	const slot = +(100 / n).toFixed(4)
+	// One visibility window per distinct delay: frame i shows for its share of
+	// the cycle, starting once the frames before it have had theirs.
+	const lengths = [...new Set(delays)]
+	const window = (d: number) =>
+		lengths.length === 1 ? 'vmu-frame' : `vmu-frame-${lengths.indexOf(d) + 1}`
+	const starts = delays.map((_, i) =>
+		delays.slice(0, i).reduce((a, b) => a + b, 0)
+	)
 	const css =
-		`.vmu-f{visibility:hidden;animation:vmu-frame ${n * delay}ms step-end infinite}` +
+		`.vmu-f{visibility:hidden;animation:${window(delays[0])} ${total}ms step-end infinite}` +
 		art.frames
 			.slice(1)
-			.map((_, i) => `.vmu-f${i + 2}{animation-delay:${(i + 1) * delay}ms}`)
+			.map(
+				(_, j) =>
+					`.vmu-f${j + 2}{${window(delays[j + 1]) === window(delays[0]) ? '' : `animation-name:${window(delays[j + 1])};`}animation-delay:${starts[j + 1]}ms}`
+			)
 			.join('') +
-		`@keyframes vmu-frame{0%{visibility:visible}${slot}%{visibility:hidden}}` +
+		lengths
+			.map(
+				d =>
+					`@keyframes ${window(d)}{0%{visibility:visible}${+((d / total) * 100).toFixed(4)}%{visibility:hidden}}`
+			)
+			.join('') +
 		`@media (prefers-reduced-motion:reduce){.vmu-f{animation:none}.vmu-f1{visibility:visible}}`
 	return svgDocument(art.width, art.height, uses, opts, {
 		css,
 		defs: drawn,
-		rootAttrs: `data-frames="${n}" data-frame-delay-ms="${delay}"`
+		rootAttrs:
+			`data-frames="${n}" ` +
+			(lengths.length === 1
+				? `data-frame-delay-ms="${delays[0]}"`
+				: `data-frame-delays-ms="${delays.join(',')}"`)
 	})
 }
 
@@ -352,7 +408,8 @@ export const distinctFrames = (art: PixelArt) =>
 export const withFrame = (art: PixelArt, frame: number): PixelArt => ({
 	...art,
 	frames: [art.frames[frame]],
-	frameDelayMs: undefined
+	frameDelayMs: undefined,
+	frameDelaysMs: undefined
 })
 
 /** Every frame side by side, frame 1 at the left, as one still (a sprite sheet). */
@@ -369,7 +426,8 @@ export function toSheet(art: PixelArt): PixelArt {
 		...art,
 		width: w * n,
 		frames: [encodeFrame(out, bpp)],
-		frameDelayMs: undefined
+		frameDelayMs: undefined,
+		frameDelaysMs: undefined
 	}
 }
 
@@ -401,42 +459,4 @@ export function toRgba(
 		}
 	}
 	return out
-}
-
-/** The frames as a C source snippet, for VMU homebrew. */
-export function toCArray(art: PixelArt, name: string): string {
-	const ident =
-		name
-			.toLowerCase()
-			.replace(/[^a-z0-9]+/g, '_')
-			.replace(/^_|_$/g, '') || 'icon'
-	const bytesPerFrame = frameHexLength(art.width, art.height, art.bpp) / 2
-	const lines = [
-		`/* ${name}: ${art.width}x${art.height}, ${art.bpp}bpp, ${art.frames.length} frame(s) */`
-	]
-	if (art.bpp === 4 && art.palette) {
-		// VMS headers store colours as ARGB4444.
-		const argb = art.palette.map(c => {
-			const [r, g, b, a] = parseColor(c).map(v => v >> 4)
-			return (
-				'0x' +
-				((a << 12) | (r << 8) | (g << 4) | b).toString(16).padStart(4, '0')
-			)
-		})
-		lines.push(
-			`const unsigned short ${ident}_palette[16] = { ${argb.join(', ')} };`
-		)
-	}
-	lines.push(
-		`const unsigned char ${ident}[${art.frames.length}][${bytesPerFrame}] = {`
-	)
-	for (const hex of art.frames) {
-		const bytes = hex.match(/../g)!.map(b => '0x' + b)
-		const rows: string[] = []
-		for (let i = 0; i < bytes.length; i += 12)
-			rows.push('\t\t' + bytes.slice(i, i + 12).join(', '))
-		lines.push('\t{\n' + rows.join(',\n') + '\n\t},')
-	}
-	lines.push('};')
-	return lines.join('\n')
 }

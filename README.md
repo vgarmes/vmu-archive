@@ -1,7 +1,7 @@
 # VMU Archive
 
 A searchable archive of Dreamcast VMU screen art — every piece is a 48×32,
-1-bit VMU LCD screen — with downloads as PNG, SVG, GIF or a C array.
+1-bit VMU LCD screen — with downloads as PNG, SVG or GIF.
 
 Browse it at **[vmu-archive.vercel.app](https://vmu-archive.vercel.app)**.
 
@@ -31,6 +31,9 @@ pnpm typecheck
    - `.png` — a 48×32 screen (dark pixels are lit). Stack frames vertically
      for animation (48×64 = 2 frames). Smaller art is trimmed and centred on
      the screen.
+   - `.gif` — an animation; each GIF frame becomes a frame, and the GIF's
+     timing becomes `frameDelayMs` (or `frameDelaysMs` when frames last
+     different times). Read like a `.png` of the same size.
    - `.txt` — rows of `#` and spaces, frames separated by `---`.
 2. Optionally add a sidecar with the same name (`sonic.png` → `sonic.json`):
    ```json
@@ -45,6 +48,11 @@ pnpm typecheck
      "frameDelayMs": 200
    }
    ```
+   For frames that last different times, give `"frameDelaysMs"` instead: one
+   delay per frame, e.g. `[600, 100, 100]` for a 3-frame animation that holds
+   its first frame. You don't need it to hold a pose: back-to-back copies of
+   a frame (in a GIF or a PNG stack) are merged into one frame held for their
+   combined delay.
 3. Run `pnpm icons:import` (`--dry-run` to preview, `--keep` to leave the
    sources in place). Each piece becomes `content/icons/<game>-<title>.json`
    (a readable id, chosen once and kept if the title changes; pieces with

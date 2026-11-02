@@ -13,7 +13,11 @@ import {
 } from 'react'
 import SpriteDrawer from '@/components/SpriteDrawer'
 import type { IndexEntry } from '@/lib/icons'
-import { DEFAULT_FRAME_DELAY_MS, stripPosition } from '@/lib/pixels'
+import {
+	DEFAULT_FRAME_DELAY_MS,
+	stripEasing,
+	stripPosition
+} from '@/lib/pixels'
 
 /**
  * Search box, filters and the icon grid.
@@ -248,6 +252,11 @@ function Card({
 								? ({
 										'--frames': icon.frames,
 										'--frame-delay': `${icon.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS}ms`,
+										// Frames that last different times: their own cycle and steps.
+										...(icon.frameDelaysMs && {
+											'--frame-cycle': `${icon.frameDelaysMs.reduce((a, b) => a + b, 0)}ms`,
+											'--frame-easing': stripEasing(icon.frameDelaysMs)
+										}),
 										// At rest, the poster frame; the hover animation overrides it.
 										...(icon.posterFrame && {
 											objectPosition: stripPosition(

@@ -1,6 +1,6 @@
 'use client'
 
-import { ArrowLeftRightIcon, CheckIcon, CopyIcon } from 'lucide-react'
+import { ArrowLeftRightIcon } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
@@ -18,22 +18,17 @@ import {
 	SelectTrigger,
 	SelectValue
 } from '@/components/ui/Select'
-import {
-	Tooltip,
-	TooltipContent,
-	TooltipTrigger
-} from '@/components/ui/tooltip'
 import type { IndexEntry } from '@/lib/icons'
 import {
 	decodeFrame,
 	DEFAULT_FRAME_DELAY_MS,
 	encodeFrame,
+	frameDelays,
 	LCD_INK,
 	parseColor,
 	STRIP_GAP,
 	stripPosition,
 	distinctFrames,
-	toCArray,
 	toHexColor,
 	toRgba,
 	toSheet,
@@ -58,7 +53,7 @@ import {
  * in the browser from them. Animations always play in the preview, unless the
  * visitor asks for reduced motion or picks a single frame to export. PNG and
  * SVG export an animation as a sprite sheet (frames side by side) or one frame;
- * GIF and the C array always hold every frame.
+ * GIF always holds every frame.
  */
 
 const SCALES = [1, 4, 8, 16]
@@ -155,7 +150,7 @@ function useIsDesktop() {
 
 /** The sprite's pixels, read from its (already cached) thumbnail. */
 function useThumbnailArt(entry: IndexEntry) {
-	const { id, frameDelayMs } = entry
+	const { id, frameDelayMs, frameDelaysMs } = entry
 	const [read, setRead] = useState<{ id: string; art: PixelArt } | null>(null)
 	useEffect(() => {
 		const cached = artCache.get(id)
@@ -184,7 +179,10 @@ function useThumbnailArt(entry: IndexEntry) {
 				)
 			)
 			const art: PixelArt = { width: 48, height: 32, bpp: 1, frames }
-			if (count > 1) art.frameDelayMs = frameDelayMs
+			if (count > 1) {
+				art.frameDelayMs = frameDelayMs
+				art.frameDelaysMs = frameDelaysMs
+			}
 			artCache.set(id, art)
 			if (!cancelled) setRead({ id, art })
 		}
@@ -192,7 +190,7 @@ function useThumbnailArt(entry: IndexEntry) {
 		return () => {
 			cancelled = true
 		}
-	}, [id, frameDelayMs])
+	}, [id, frameDelayMs, frameDelaysMs])
 	return read && read.id === id ? read.art : null
 }
 
@@ -229,7 +227,6 @@ export default function SpriteDrawer({ entry, onClose }: Props) {
 function SpritePanel({ entry }: { entry: IndexEntry }) {
 	const art = useThumbnailArt(entry)
 	const [scale, setScale] = useState<number>(8)
-	const [copied, setCopied] = useState(false)
 	const [trim, setTrim] = useState(false)
 	const [format, setFormat] = useState<Format>('png')
 	const [frames, setFrames] = useState<FramesChoice>('all')
@@ -256,7 +253,10 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	const poses = useMemo(() => (art ? distinctFrames(art) : []), [art])
 	const poseNumber = pick === 'all' ? 0 : poses.indexOf(pick) + 1
 	const sheet = animated && pick === 'all' && format !== 'gif' && !selfPlaying
-	const delay = art?.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
+	// A sheet's name carries its timing: one delay, or each frame's.
+	const delay = art?.frameDelaysMs
+		? art.frameDelaysMs.join('-')
+		: (art?.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS)
 
 	// With trim on, the unlit dots are drawn only inside the area the download
 	// keeps: the shared box for an animation, a single frame's own box.
@@ -290,8 +290,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 			: toSvg(art, { ...previewOpts, frame: pick === 'all' ? 0 : pick })
 		: null
 
-	// Downloads use the trimmed art when asked; the C array never does, since
-	// VMU code expects the whole 48x32 screen.
+	// Downloads use the trimmed art when asked.
 	const out = useMemo(() => (art && trim ? trimArt(art) : art), [art, trim])
 	// What a PNG holds: one frame, every frame side by side, or the still. A
 	// single frame is trimmed to its own box; frames that play together share
@@ -364,12 +363,6 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 				),
 				`${name}-lcd.svg`
 			)
-	}
-	const copyC = async () => {
-		if (!art) return
-		await navigator.clipboard.writeText(toCArray(art, entry.title))
-		setCopied(true)
-		setTimeout(() => setCopied(false), 1500)
 	}
 
 	return (
@@ -536,36 +529,14 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 				</div>
 			</div>
 			<DrawerFooter className="pt-4">
-				{/* The C array is a niche export, so it's an icon beside Download. */}
-				<div className="flex gap-2">
-					<button
-						type="button"
-						onClick={download}
-						disabled={!out}
-						className="border-primary bg-primary text-primary-foreground hover:bg-primary/90 h-10 flex-1 border px-4 text-center text-sm uppercase disabled:opacity-50"
-					>
-						Download
-					</button>
-					<Tooltip>
-						{/* Stays open on click, so "Copied!" replaces the label in place. */}
-						<TooltipTrigger
-							closeOnClick={false}
-							onClick={copyC}
-							disabled={!art}
-							aria-label={copied ? 'Copied C array' : 'Copy as C array'}
-							className="border-border text-muted-foreground hover:text-foreground hover:border-foreground flex size-10 shrink-0 items-center justify-center border disabled:opacity-50"
-						>
-							{copied ? (
-								<CheckIcon className="size-4" aria-hidden="true" />
-							) : (
-								<CopyIcon className="size-4" aria-hidden="true" />
-							)}
-						</TooltipTrigger>
-						<TooltipContent>
-							{copied ? 'Copied!' : 'Copy as C array'}
-						</TooltipContent>
-					</Tooltip>
-				</div>
+				<button
+					type="button"
+					onClick={download}
+					disabled={!out}
+					className="border-primary bg-primary text-primary-foreground hover:bg-primary/90 h-10 w-full border px-4 text-center text-sm uppercase disabled:opacity-50"
+				>
+					Download
+				</button>
 			</DrawerFooter>
 		</div>
 	)
@@ -611,8 +582,9 @@ async function toGif(art: PixelArt, scale: number, ink: Rgba): Promise<Blob> {
 	const W = w * scale
 	const H = h * scale
 
+	const delays = frameDelays(art)
 	const gif = GIFEncoder()
-	for (const hex of art.frames) {
+	art.frames.forEach((hex, f) => {
 		const px = decodeFrame(hex, w, h, bpp)
 		const big = new Uint8Array(W * H)
 		for (let y = 0; y < H; y++)
@@ -620,11 +592,11 @@ async function toGif(art: PixelArt, scale: number, ink: Rgba): Promise<Blob> {
 				big[y * W + x] = px[Math.floor(y / scale) * w + Math.floor(x / scale)]
 		gif.writeFrame(big, W, H, {
 			palette,
-			delay: art.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS,
+			delay: delays[f],
 			transparent: transparentIndex >= 0,
 			transparentIndex: Math.max(0, transparentIndex)
 		})
-	}
+	})
 	gif.finish()
 	return new Blob([gif.bytes() as Uint8Array<ArrayBuffer>], {
 		type: 'image/gif'

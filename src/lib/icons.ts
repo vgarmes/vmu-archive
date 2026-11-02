@@ -23,6 +23,8 @@ const schema = z
 		bpp: z.literal(1),
 		frames: z.array(z.string().regex(/^[0-9a-f]+$/)).min(1),
 		frameDelayMs: z.number().int().positive().optional(),
+		/** Delay of each frame, one per frame, for animations whose frames differ. */
+		frameDelaysMs: z.array(z.number().int().positive()).optional(),
 		/** Frame (from 0) the grid shows at rest, instead of the first. */
 		posterFrame: z.number().int().nonnegative().optional(),
 		tags: z.array(z.string()).default([]),
@@ -39,6 +41,12 @@ const schema = z
 	)
 	.refine(a => (a.posterFrame ?? 0) < a.frames.length, {
 		message: 'posterFrame is past the last frame'
+	})
+	.refine(a => !a.frameDelaysMs || a.frameDelaysMs.length === a.frames.length, {
+		message: 'frameDelaysMs needs one delay per frame'
+	})
+	.refine(a => !(a.frameDelaysMs && a.frameDelayMs), {
+		message: 'set frameDelayMs or frameDelaysMs, not both'
 	})
 
 export type IconData = z.infer<typeof schema>
@@ -59,6 +67,8 @@ export interface IndexEntry {
 	frames?: number
 	/** Only on animations: delay between frames, when not the default. */
 	frameDelayMs?: number
+	/** Only on animations whose frames last different times: each one's delay. */
+	frameDelaysMs?: number[]
 	/** Only on animations: the frame shown at rest, when not the first. */
 	posterFrame?: number
 }
@@ -108,6 +118,7 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 	...(data.frames.length > 1 && {
 		frames: data.frames.length,
 		frameDelayMs: data.frameDelayMs,
+		frameDelaysMs: data.frameDelaysMs,
 		posterFrame: data.posterFrame
 	})
 })
