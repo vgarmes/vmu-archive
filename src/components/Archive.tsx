@@ -12,7 +12,15 @@ import {
 	useState
 } from 'react'
 import SpriteDrawer from '@/components/SpriteDrawer'
-import type { IndexEntry } from '@/lib/icons'
+import {
+	Combobox,
+	ComboboxContent,
+	ComboboxEmpty,
+	ComboboxInput,
+	ComboboxItem,
+	ComboboxList
+} from '@/components/ui/combobox'
+import type { Game, IndexEntry } from '@/lib/icons'
 import {
 	DEFAULT_FRAME_DELAY_MS,
 	stripEasing,
@@ -20,13 +28,16 @@ import {
 } from '@/lib/pixels'
 
 /**
- * Search box, filters and the icon grid.
+ * Search box, game picker and the icon grid.
  *
  * The page prerenders the first batch (`initial`) so the grid shows up
  * without JS; the full metadata index is fetched once on load. Cards are
  * rendered in batches as the visitor scrolls (the svgl pattern) rather than
  * virtualised — each card is one lazy-loaded <img>, so even thousands stay
  * light, and search keeps most result sets small.
+ *
+ * Picking a game narrows the grid (and the search) to it and adds
+ * ?game=<slug> to the URL, so a game's sprites can be linked to.
  *
  * Clicking a card opens the sprite drawer and adds ?screen=<id> to the URL
  * (Back closes it, and a shared link opens it). Animated cards play on hover
@@ -38,14 +49,16 @@ const BATCH = 60
 interface Props {
 	initial: IndexEntry[]
 	total: number
+	games: Game[]
 }
 
-export default function Archive({ initial, total }: Props) {
+export default function Archive({ initial, total, games }: Props) {
 	const [index, setIndex] = useState<IndexEntry[]>(initial)
 	const [query, setQuery] = useState('')
+	const [game, setGame] = useState<Game | null>(null)
 	const [shown, setShown] = useState(BATCH)
 	const [screen, setScreen] = useState<string | null>(null)
-	// Whether `query` and `screen` have been read from the URL yet. Until then
+	// Whether `query`, `game` and `screen` have been read from the URL yet. Until then
 	// the URL is the only copy of them, so nothing may overwrite it.
 	const [restored, setRestored] = useState(false)
 	// Whether the open drawer added a history entry, so closing can go Back.
@@ -56,6 +69,7 @@ export default function Archive({ initial, total }: Props) {
 	useEffect(() => {
 		const params = new URLSearchParams(location.search)
 		setQuery(params.get('q') ?? '')
+		setGame(games.find(g => g.slug === params.get('game')) ?? null)
 		setScreen(params.get('screen'))
 		setRestored(true)
 		const onPop = () => {
@@ -69,20 +83,21 @@ export default function Archive({ initial, total }: Props) {
 			.then(setIndex)
 			.catch(() => {})
 		return () => removeEventListener('popstate', onPop)
-	}, [])
+	}, [games])
 
 	const urlFor = useCallback(
 		(screen: string | null) => {
 			const params = new URLSearchParams()
 			if (query) params.set('q', query)
+			if (game) params.set('game', game.slug)
 			if (screen) params.set('screen', screen)
 			const qs = params.toString().replace(/=(?=&|$)/g, '')
 			return qs ? `?${qs}` : location.pathname
 		},
-		[query]
+		[query, game]
 	)
 
-	// Keep the URL shareable as the search changes. Not before the URL has been
+	// Keep the URL shareable as the search or game changes. Not before the URL has been
 	// read: on the first render `screen` is still null, and writing then would
 	// drop the ?screen= of a shared link.
 	useEffect(() => {
@@ -90,7 +105,7 @@ export default function Archive({ initial, total }: Props) {
 		history.replaceState(null, '', urlFor(screen))
 		setShown(BATCH)
 		// eslint-disable-next-line react-hooks/exhaustive-deps -- only on search changes
-	}, [query, restored])
+	}, [query, game, restored])
 
 	const openScreen = (id: string) => {
 		history.pushState(null, '', urlFor(id))
@@ -126,8 +141,9 @@ export default function Archive({ initial, total }: Props) {
 
 	const results = useMemo(() => {
 		const q = query.trim()
-		return q ? fuse.search(q).map(r => r.item) : index
-	}, [fuse, index, query])
+		const matches = q ? fuse.search(q).map(r => r.item) : index
+		return game ? matches.filter(i => i.game === game.name) : matches
+	}, [fuse, index, query, game])
 
 	// Render the next batch as the end of the grid nears the viewport.
 	useEffect(() => {
@@ -145,37 +161,40 @@ export default function Archive({ initial, total }: Props) {
 	}, [results.length])
 
 	const visible = results.slice(0, shown)
-	const filtered = !!query
+	const filtered = !!query || !!game
 
 	return (
 		<div className="flex flex-col gap-6">
 			<div className="flex flex-col gap-3">
-				<div
-					role="search"
-					className="border-border bg-card/50 focus-within:border-foreground focus-within:ring-foreground/30 box-border flex h-9 max-h-9 min-h-9 min-w-0 flex-1 items-center gap-2 border px-3 transition-[border-color,box-shadow] focus-within:ring-1"
-				>
-					<svg
-						viewBox="0 0 24 24"
-						fill="none"
-						stroke="currentColor"
-						strokeWidth="2"
-						strokeLinecap="round"
-						strokeLinejoin="round"
-						className="text-muted-foreground h-4 w-4 shrink-0"
-						aria-hidden="true"
+				<div className="flex flex-col gap-3 sm:flex-row">
+					<div
+						role="search"
+						className="border-border bg-card/50 focus-within:border-foreground focus-within:ring-foreground/30 box-border flex h-9 max-h-9 min-h-9 min-w-0 flex-1 items-center gap-2 border px-3 transition-[border-color,box-shadow] focus-within:ring-1"
 					>
-						<path d="m21 21-4.34-4.34" />
-						<circle cx="11" cy="11" r="8" />
-					</svg>
-					<Input
-						type="text"
-						enterKeyHint="search"
-						value={query}
-						onValueChange={setQuery}
-						placeholder="Search by title, game, publisher or tag…"
-						aria-label="Search icons"
-						className="placeholder:text-muted-foreground h-full min-h-0 w-full min-w-0 flex-1 border-0 bg-transparent py-0 font-mono text-sm leading-5 ring-0 outline-none focus:outline-none"
-					/>
+						<svg
+							viewBox="0 0 24 24"
+							fill="none"
+							stroke="currentColor"
+							strokeWidth="2"
+							strokeLinecap="round"
+							strokeLinejoin="round"
+							className="text-muted-foreground h-4 w-4 shrink-0"
+							aria-hidden="true"
+						>
+							<path d="m21 21-4.34-4.34" />
+							<circle cx="11" cy="11" r="8" />
+						</svg>
+						<Input
+							type="text"
+							enterKeyHint="search"
+							value={query}
+							onValueChange={setQuery}
+							placeholder="Search by title, game, publisher or tag…"
+							aria-label="Search icons"
+							className="placeholder:text-muted-foreground h-full min-h-0 w-full min-w-0 flex-1 border-0 bg-transparent py-0 font-mono text-sm leading-5 ring-0 outline-none focus:outline-none"
+						/>
+					</div>
+					<GamePicker games={games} value={game} onChange={setGame} />
 				</div>
 				<div className="flex flex-wrap items-center gap-2 text-sm">
 					<span className="text-muted-foreground ml-auto" aria-live="polite">
@@ -186,7 +205,9 @@ export default function Archive({ initial, total }: Props) {
 
 			{results.length === 0 ? (
 				<p className="text-muted-foreground py-16 text-center">
-					Nothing matches “{query}”.
+					{query
+						? `Nothing matches “${query}”${game ? ` in ${game.name}` : ''}.`
+						: `No icons for ${game?.name} yet.`}
 				</p>
 			) : (
 				<ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
@@ -198,6 +219,45 @@ export default function Archive({ initial, total }: Props) {
 			<div ref={sentinel} className="h-px" />
 			<SpriteDrawer entry={selected} onClose={closeScreen} />
 		</div>
+	)
+}
+
+function GamePicker({
+	games,
+	value,
+	onChange
+}: {
+	games: Game[]
+	value: Game | null
+	onChange: (game: Game | null) => void
+}) {
+	return (
+		<Combobox
+			items={games}
+			value={value}
+			onValueChange={onChange}
+			itemToStringLabel={(g: Game) => g.name}
+			isItemEqualToValue={(a: Game, b: Game) => a.slug === b.slug}
+		>
+			<ComboboxInput
+				placeholder="All games"
+				aria-label="Filter by game"
+				className="sm:w-72"
+			/>
+			<ComboboxContent>
+				<ComboboxEmpty>No games match.</ComboboxEmpty>
+				<ComboboxList>
+					{(g: Game) => (
+						<ComboboxItem key={g.slug} value={g}>
+							<span className="min-w-0 flex-1 truncate">{g.name}</span>
+							<span className="text-muted-foreground tabular-nums">
+								{g.count}
+							</span>
+						</ComboboxItem>
+					)}
+				</ComboboxList>
+			</ComboboxContent>
+		</Combobox>
 	)
 }
 

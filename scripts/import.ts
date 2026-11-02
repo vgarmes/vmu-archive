@@ -53,6 +53,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import pngjs from 'pngjs'
 import { DEFAULT_FRAME_DELAY_MS, encodeFrame } from '../src/lib/pixels.ts'
+import { slug } from '../src/lib/slug.ts'
 import { decodeGif } from './gif.ts'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
@@ -377,15 +378,6 @@ function readSource(
 }
 
 // ---------------------------------------------------------------- main
-
-const slug = (s: string) =>
-	s
-		.normalize('NFKD')
-		.toLowerCase()
-		// "Tony Hawk's" → tony-hawks, not tony-hawk-s.
-		.replace(/['’]/g, '')
-		.replace(/[^a-z0-9]+/g, '-')
-		.replace(/^-|-$/g, '') || 'icon'
 
 /**
  * A readable id from the game and title ("ikaruga-title-screen"), without

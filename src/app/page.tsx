@@ -1,5 +1,5 @@
 import Archive from '@/components/Archive'
-import { getIcons, toIndexEntry } from '@/lib/icons'
+import { getGames, getIcons, toIndexEntry } from '@/lib/icons'
 
 export default function Home() {
 	const icons = getIcons()
@@ -15,7 +15,7 @@ export default function Home() {
 					archive and download any piece as PNG, SVG, GIF or C source.
 				</p>
 			</section>
-			<Archive initial={initial} total={icons.length} />
+			<Archive initial={initial} total={icons.length} games={getGames()} />
 		</>
 	)
 }

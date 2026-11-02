@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { z } from 'zod'
 import { frameHexLength } from './pixels'
+import { slug } from './slug'
 
 /**
  * One JSON file per VMU screen in content/icons/, written by
@@ -122,3 +123,22 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 		posterFrame: data.posterFrame
 	})
 })
+
+export interface Game {
+	name: string
+	slug: string
+	/** How many icons the game has. */
+	count: number
+}
+
+/** Every game with at least one icon, in the grid's order (Unknown last). */
+export function getGames(): Game[] {
+	const games = new Map<string, Game>()
+	for (const { data } of getIcons()) {
+		const game = games.get(data.game)
+		if (game) game.count++
+		else
+			games.set(data.game, { name: data.game, slug: slug(data.game), count: 1 })
+	}
+	return [...games.values()]
+}
