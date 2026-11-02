@@ -96,6 +96,21 @@ animation with a sidecar naming the entry to replace:
 
 The id (and so the URL), added date and unchanged metadata are kept.
 
+## Posting an update
+
+Add an entry to the top of `content/changelog.json`; it shows on
+[/changelog](https://vmu-archive.vercel.app/changelog):
+
+```json
+{
+  "date": "2026-11-01",
+  "title": "Carrier",
+  "body": "The title screen from Jaleco's survival horror Carrier."
+}
+```
+
+`body` is optional; entries are sorted by date.
+
 ## How it works
 
 | Piece                                              | Where                                |
