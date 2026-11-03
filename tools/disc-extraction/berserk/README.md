@@ -52,3 +52,11 @@ ammo counter's three digits (screens 11–20). Three other routines show screen 
 Screens 0, 1, 2, 44, 45 and 46 are never drawn by any code that calls the draw
 routine (`0x8C03C89C` has four callers), so they're marked `unused`. The Japanese
 release's title screen isn't on this disc.
+
+## Sprites
+
+Entries 11–20 are the ten 4×5 digits the computed calls draw as the ammo
+counter. `prep.py` emits them as sprites, so the importer keeps them at their
+own size in `content/sprites/berserk-millennium-falcon-hen-wasurebana-no-sho/`,
+titled by entry number. Still to check in the code: which digit each entry is,
+which screen the counter goes on, and where (the sprites' `drawnAt`).

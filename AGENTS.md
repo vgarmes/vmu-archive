@@ -15,6 +15,11 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   `scroll`: one wider strip that `getIcons()` cuts into 48x32 frames on load,
   so code after that only sees frames. Add art with `pnpm icons:import`;
   don't hand-write frames.
+- Smaller art a game draws onto part of a screen (digits, buttons) is a
+  sprite: `content/sprites/<game slug>/*.json` at its own size, imported with
+  `"sprite": true` (see `scripts/sprites.ts`). They're kept for preservation;
+  the site never reads them, so `pnpm content:check` is what validates them.
+  Findings about a game go in its README in `tools/disc-extraction/<game>/`.
 - `src/lib/pixels.ts` is run by Node directly from the importer: keep it free
   of imports and non-erasable TypeScript.
 - The site is a static export (`output: 'export'`): every dynamic route needs

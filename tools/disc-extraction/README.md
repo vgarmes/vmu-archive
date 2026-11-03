@@ -35,6 +35,12 @@ Python loads modules.
    around the hit with `sh4.py`. The captured timing tells you the tick rate.
 5. Write a per-game script that walks that code and emits every animation, then
    import the result with `pnpm icons:import`.
+6. Smaller art the game draws onto a screen (digits, buttons, counters) isn't a
+   screen, but keep it: have the script emit it with `"sprite": true` in its
+   sidecar, and the importer stores it at its own size in `content/sprites/`.
+   The site never shows sprites; `pnpm content:check` validates them.
+7. Write the findings (format, timing, unused screens, sprites) in the game's
+   README here: it's the game's notes as well as how to run its scripts.
 
 Captures stay the ground truth: a game's code says what it can play, a capture
 shows what it did.

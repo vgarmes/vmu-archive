@@ -7,6 +7,11 @@ per screen the code never draws (marked "unused"). Anything already in the archi
 is skipped: an animation counts as present when an entry uses the same disc
 screens, whichever frame it starts on. Titles and tags come from TITLES; the rest
 are "Puck".
+
+Also writes the ten 4x5 digits of the ammo counter as sprites ("sprite": true),
+which the importer keeps in content/sprites/ at their own size; it skips the ones
+already there. Which digit each entry is hasn't been checked, so they're titled
+by entry number.
 """
 import json
 import shutil
@@ -48,6 +53,16 @@ def main(out, inbox):
         if unused:
             meta['unused'] = True
         (inbox / f'{stem}.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1))
+        written += 1
+    manifest = json.loads((out / 'manifest.json').read_text())
+    for m in manifest:
+        if m['kind'] != 'glyph':
+            continue
+        n = int(m['name'])
+        shutil.copy(out / 'lcd' / f"{m['name']}.png", inbox / f'berserk-sprite-{n:02d}.png')
+        meta = dict(title=f'Digit (entry {n})', **BASE, tags=['digit', 'ammo-counter'], sprite=True,
+                    source={'file': '/LCDIMG.BIN', 'entry': n, 'offset': m['offset']})
+        (inbox / f'berserk-sprite-{n:02d}.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1))
         written += 1
     print(written, 'pieces to import ->', inbox)
 

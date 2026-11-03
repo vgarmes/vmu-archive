@@ -27,6 +27,13 @@
  * `"scroll": { "stepPx": 1, "delayMs": 17 }` in its sidecar (how far the
  * window moves per update, and how often). It's stored once and cut into
  * frames when the site loads it; see `scrollFrames` in src/lib/pixels.ts.
+ *
+ * A sprite — art the game draws onto part of a screen, like the digits of a
+ * counter — is imported at its own size with `"sprite": true` in its sidecar.
+ * It goes to content/sprites/<game slug>/ for preservation; the site never
+ * shows it (see scripts/sprites.ts). Its sidecar can also say where it came
+ * from, `"source": { "file": "/LCDIMG.BIN", "entry": 11 }`, and where the game
+ * draws it, `"drawnAt": [{ "screen": "<icon id>", "x": 30, "y": 2 }]`.
  */
 import { createHash } from 'node:crypto'
 import fs from 'node:fs'
@@ -34,9 +41,16 @@ import path from 'node:path'
 import pngjs from 'pngjs'
 import { DEFAULT_FRAME_DELAY_MS, encodeFrame } from '../src/lib/pixels.ts'
 import { slug } from '../src/lib/slug.ts'
+import {
+	ICONS_DIR,
+	SPRITES_DIR,
+	type Sprite,
+	spriteHash,
+	spriteProblems
+} from './sprites.ts'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
-const OUT_DIR = path.join(ROOT, 'content/icons')
+const OUT_DIR = ICONS_DIR
 
 const W = 48
 const H = 32
@@ -59,6 +73,12 @@ interface Meta {
 	replaces?: string
 	/** The art is a strip the window scrolls through, not stacked frames. */
 	scroll?: { stepPx: number; delayMs: number }
+	/** Art drawn onto part of a screen, kept at its own size in content/sprites/. */
+	sprite?: boolean
+	/** Sprites only: where on the disc it came from. */
+	source?: Sprite['source']
+	/** Sprites only: where the game draws it. */
+	drawnAt?: Sprite['drawnAt']
 }
 
 // ---------------------------------------------------------------- reading
@@ -101,6 +121,36 @@ function readStrip(buf: Buffer): { width: number; strip: string } {
 			bits.push(a >= 128 && 0.299 * r + 0.587 * g + 0.114 * b < 128 ? 1 : 0)
 		}
 	return { width: img.width, strip: encodeFrame(bits, 1) }
+}
+
+/** One frame at the PNG's own size, for a sprite. */
+function readSprite(buf: Buffer) {
+	const img = pngjs.PNG.sync.read(buf)
+	const bits: number[] = []
+	for (let y = 0; y < img.height; y++)
+		for (let x = 0; x < img.width; x++) {
+			const i = (y * img.width + x) * 4
+			const [r, g, b, a] = img.data.subarray(i, i + 4)
+			bits.push(a >= 128 && 0.299 * r + 0.587 * g + 0.114 * b < 128 ? 1 : 0)
+		}
+	return { width: img.width, height: img.height, frame: encodeFrame(bits, 1) }
+}
+
+/** Every sprite's hash, as "<game slug>/<id>.json", to skip duplicates. */
+function existingSprites() {
+	const hashes = new Map<string, string>()
+	if (!fs.existsSync(SPRITES_DIR)) return hashes
+	for (const dir of fs.readdirSync(SPRITES_DIR)) {
+		const full = path.join(SPRITES_DIR, dir)
+		if (!fs.statSync(full).isDirectory()) continue
+		for (const file of fs.readdirSync(full).filter(f => f.endsWith('.json'))) {
+			const { hash } = JSON.parse(
+				fs.readFileSync(path.join(full, file), 'utf8')
+			)
+			if (hash) hashes.set(hash, `${dir}/${file}`)
+		}
+	}
+	return hashes
 }
 
 // ---------------------------------------------------------------- main
@@ -203,12 +253,14 @@ function main() {
 
 	fs.mkdirSync(OUT_DIR, { recursive: true })
 	const hashes = existingHashes()
-	const taken = new Set(
+	const spriteHashes = existingSprites()
+	const screenIds = new Set(
 		fs
 			.readdirSync(OUT_DIR)
 			.filter(f => f.endsWith('.json'))
 			.map(f => f.replace(/\.json$/, ''))
 	)
+	const taken = new Set(screenIds)
 	let added = 0
 	let updated = 0
 	let skipped = 0
@@ -237,6 +289,73 @@ function main() {
 			const addedDate = () =>
 				(prev.added as string | undefined) ??
 				new Date().toISOString().slice(0, 10)
+
+			if (meta.sprite) {
+				const bad = (
+					[
+						'replaces',
+						'scroll',
+						'unused',
+						'frameDelayMs',
+						'frameDelaysMs',
+						'posterFrame'
+					] as const
+				).filter(k => meta[k] !== undefined)
+				if (bad.length)
+					throw new Error(
+						`a sprite doesn't take ${bad.map(k => `"${k}"`).join(', ')}`
+					)
+				const { width, height, frame } = readSprite(fs.readFileSync(file))
+				const frames = [frame]
+				const hash = spriteHash(width, height, frames)
+				const dupe = spriteHashes.get(hash)
+				if (dupe) {
+					console.log(`  skip  ${label}: same pixels as sprites/${dupe}`)
+					skipped++
+					continue
+				}
+				const title = meta.title || path.basename(base)
+				const game = meta.game || title
+				const dir = path.join(SPRITES_DIR, slug(game))
+				const takenHere = new Set(
+					fs.existsSync(dir)
+						? fs.readdirSync(dir).map(f => f.replace(/\.json$/, ''))
+						: []
+				)
+				let id = slug(title)
+				for (let n = 2; takenHere.has(id); n++) id = `${slug(title)}-${n}`
+				const sprite: Sprite = {
+					title,
+					game,
+					publisher: meta.publisher,
+					year: meta.year,
+					region: meta.region,
+					width,
+					height,
+					bpp: 1,
+					frames,
+					source: meta.source,
+					drawnAt: meta.drawnAt,
+					tags: meta.tags ?? [],
+					hash,
+					added: new Date().toISOString().slice(0, 10)
+				}
+				const problems = spriteProblems(sprite, screenIds)
+				if (problems.length) throw new Error(problems.join('; '))
+				if (!dryRun) {
+					fs.mkdirSync(dir, { recursive: true })
+					fs.writeFileSync(
+						path.join(dir, `${id}.json`),
+						JSON.stringify(sprite, null, '\t') + '\n'
+					)
+				}
+				spriteHashes.set(hash, `${slug(game)}/${id}.json`)
+				console.log(
+					`  add   ${label} → sprites/${slug(game)}/${id}.json (sprite, ${width}x${height})`
+				)
+				added++
+				continue
+			}
 
 			if (meta.scroll) {
 				const { stepPx, delayMs } = meta.scroll
