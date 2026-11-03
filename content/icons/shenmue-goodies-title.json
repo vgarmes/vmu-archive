@@ -1,0 +1,18 @@
+{
+	"title": "Goodies title",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffffffffffffb9ffff7fffff56fff6bfffff4dc3ea8e01fe32bceaf5fefdeec7758a19fe3379aeaba7ff73beaaab5ffe94bea98b5ffe9cb1649b63fecaaef767bdff3b71f8ffc3ff87ffffffffffffffdfffffff3fffa7fdfffecdffbbfafffe72c1cbbafffd9abef755fffee6c9fed5e07f35ebf9ab9fbfcdebe76b407fdb88dcd05fff377f53bfdffeef80efc05fff1fffffffbffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff543f54ff55bf"
+	],
+	"tags": [
+		"logo"
+	],
+	"hash": "56d77e6b3bd43051d1e17e60a7f4e957a9b7c16d",
+	"added": "2026-11-03"
+}
