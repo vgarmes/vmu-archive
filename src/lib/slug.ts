@@ -8,6 +8,8 @@
 export const slug = (s: string) =>
 	s
 		.normalize('NFKD')
+		// Drop the accents NFKD splits off, so "Rōko" → roko, not ro-ko.
+		.replace(/[̀-ͯ]/g, '')
 		.toLowerCase()
 		// "Tony Hawk's" → tony-hawks, not tony-hawk-s.
 		.replace(/['’]/g, '')
