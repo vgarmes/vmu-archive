@@ -29,6 +29,12 @@ const schema = z
 		/** Frame (from 0) the grid shows at rest, instead of the first. */
 		posterFrame: z.number().int().nonnegative().optional(),
 		tags: z.array(z.string()).default([]),
+		/**
+		 * The game's code never shows this screen (cut or leftover art). Set it
+		 * only when that was checked in the code, not just because no capture
+		 * caught the screen.
+		 */
+		unused: z.boolean().optional(),
 		/** Content hash of the pixels; the importer uses it to skip duplicates. */
 		hash: z.string(),
 		added: z.string()
@@ -64,6 +70,8 @@ export interface IndexEntry {
 	publisher?: string
 	year?: number
 	tags: string[]
+	/** Only when the game's code never shows the screen. */
+	unused?: true
 	/** Only on animations: how many frames their thumbnail strip holds. */
 	frames?: number
 	/** Only on animations: delay between frames, when not the default. */
@@ -116,6 +124,7 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 	publisher: data.publisher,
 	year: data.year,
 	tags: data.tags,
+	...(data.unused && { unused: true as const }),
 	...(data.frames.length > 1 && {
 		frames: data.frames.length,
 		frameDelayMs: data.frameDelayMs,

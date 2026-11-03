@@ -34,7 +34,7 @@
  *
  * Metadata comes from an optional sidecar with the same basename
  * (sonic.png → sonic.json): { title, game, publisher, year, region, tags,
- * frameDelayMs, frameDelaysMs, posterFrame, invert, replaces }.
+ * unused, frameDelayMs, frameDelaysMs, posterFrame, invert, replaces }.
  * "frameDelaysMs" gives each frame its own delay, one per frame, for frames
  * that last different times. Back-to-back copies of a frame are merged into
  * one frame held for their combined delay, so holding a pose by repeating it
@@ -72,6 +72,8 @@ interface Meta {
 	year?: number
 	region?: 'JP' | 'US' | 'EU' | 'WW'
 	tags?: string[]
+	/** The game's code never shows this screen (checked in the code). */
+	unused?: boolean
 	frameDelayMs?: number
 	/** Delay of each frame, one per frame, when they differ. */
 	frameDelaysMs?: number[]
@@ -628,6 +630,7 @@ function main() {
 					...timing,
 					posterFrame: frames.length > 1 ? posterFrame : undefined,
 					tags: pick('tags') ?? [],
+					unused: pick('unused') || undefined,
 					hash,
 					added:
 						(prev.added as string | undefined) ??

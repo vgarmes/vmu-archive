@@ -2,6 +2,7 @@
 
 import { ArrowLeftRightIcon } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
+import { Badge } from '@/components/ui/badge'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
 	Drawer,
@@ -378,6 +379,14 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 						<DrawerDescription className="text-xs">
 							{[entry.publisher, entry.year].filter(Boolean).join(' · ')}
 						</DrawerDescription>
+					)}
+					{entry.unused && (
+						<Badge
+							variant="outline"
+							title="The game's code never shows this screen"
+						>
+							Unused
+						</Badge>
 					)}
 				</DrawerHeader>
 				<div className="flex flex-col gap-4 p-4">
