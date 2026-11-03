@@ -5,8 +5,9 @@ Scripts: `tools/disc-extraction/sakura3/`.
 Dump: `Sakura Taisen 3 - Paris wa Moete Iru Ka v1.003 (2001)(Sega)(JP)(Disc 1 of 3)[!][3M1]`
 (`.gdi`). Every entry from it has region `JP`.
 
-**Partly imported.** 26 stills, the animated title screen and 23 scrolling
-battle banners are in the archive; the other animations and the strategy map wait (see [Waiting](#waiting)).
+**Imported.** Every screen, animation and banner on the disc is in the archive,
+and the battle screen's parts are kept as a sprite. Only the title screen and
+the banners have measured timing; the rest is assumed (see [Waiting](#waiting)).
 
 ## What's on the disc
 
@@ -23,7 +24,8 @@ that conversion wasn't found in the code. A Flycast capture of the logo (entry 4
 frame 10) settles it: a dot is lit where the value is below 8. That frame
 matches the capture in all but 81 of 1,536 dots (edges of a 3.7x scaled
 capture), and 181 of its 193 dots of value 7 show lit. Value 8 (64 dots in
-`SYSTEM.LC1` entry 3) isn't covered by a capture yet, so `prep.py` refuses it.
+`SYSTEM.LC1` entry 3) isn't covered by a capture yet; `prep.py` takes it as lit
+for that entry only (`VALUE8_LIT`) and refuses it anywhere else.
 
 | Source                           | Entries   | Content                                                                                                                          |
 | -------------------------------- | --------- | -------------------------------------------------------------------------------------------------------------------------------- |
@@ -35,12 +37,18 @@ capture), and 181 of its 193 dots of value 7 show lit. Value 8 (64 dots in
 
 ## Imported
 
-| Entries                                                                | Archive title                                                                      |
-| ---------------------------------------------------------------------- | ---------------------------------------------------------------------------------- |
-| `system-01`                                                            | Crest                                                                              |
-| `system-02`                                                            | Message                                                                            |
-| `system-04`, all 11 frames                                             | Title screen (animated, 100 ms a frame, logo held 4 s)                             |
-| `mgkg_coq`, `_eri`, `_gly`, `_han`, `_oga`, `_rob`: entries 0, 2, 4, 6 | Coquelicot, Erica, Glycine, Hanabi, Ogami, Lobelia (4 expressions each, eyes open) |
+| Entries                              | Archive title                                      | Timing                                |
+| ------------------------------------ | -------------------------------------------------- | ------------------------------------- |
+| `system-00`, 6 frames                | Power-on                                           | assumed: 100 ms a frame, last 4 s     |
+| `system-01`                          | Crest                                              | still                                 |
+| `system-02`                          | Message                                            | still                                 |
+| `system-03`                          | Crest (the second one; value 8 taken as lit)       | still                                 |
+| `system-04`, 11 frames               | Title screen                                       | measured: 100 ms a frame, last 4 s    |
+| `kajino1`–`3.LC1`, entries 0–9 each  | Kajino Taisen, Kajino Taisen 2, Kajino Taisen 3    | assumed: 100 ms a frame, last 4 s     |
+| `mgkg_*`: entries 0+1, 2+3, 4+5, 6+7 | Coquelicot, Erica, Glycine, Hanabi, Ogami, Lobelia | assumed: eyes open 3 s, closed 150 ms |
+| `smap01`, entries 0 and 1            | Strategy map                                       | read off a recording: 267 / 67 ms     |
+| unit files                           | the 23 banners (see below)                         | measured: 1 px per 17 ms              |
+| `smap01`, entry 2 (sprite)           | Battle screen parts                                | -                                     |
 
 **Title screen.** A Flycast recording of the logo intro plays `system-04`
 frames 0–10 in order: blank, a line that opens to a lit screen, the logo
@@ -48,6 +56,14 @@ unfolding from it. The frame changes average 104 ms over the nine steps
 (capture jitter 50–150 ms), so each frame is taken as 100 ms (6 ticks). The
 logo then stays up about 4.2 s before the map; the entry holds it 4 s before
 looping.
+
+**Assumed timing.** The power-on animation and the カジノ大戦 intros open the
+way the title does (a line, a lit screen, then the art), so they borrow its
+measured rhythm. Each face file holds four expressions, each followed by the
+same face with the eyes closed; they import as blinks with a guess at the
+timing. The strategy map's two frames differ only in their corners, which
+alternate about 267 / 67 ms in a recording; the units the game draws on top
+aren't part of it. None of this was checked against the game.
 
 The `MG*.BIN` minigames carry the same faces as the `MGKG_*` files (Ogami's in six
 of them), so they add nothing.
@@ -63,21 +79,22 @@ accents); the Japanese ones add their reading, so their ids are readable.
 
 ## Waiting
 
-Things to check in an emulator (Flycast) before importing the rest:
+Things to check in an emulator (Flycast):
 
 1. **Flicker.** One capture can't rule out the game alternating grey dots; a
    second capture of the same screen with the same dots lit would.
-2. **Value 8.** Capture the second crest (`SYSTEM.LC1` entry 3).
-3. **Timing.** The power-on animation, the カジノ大戦 intros and
-   the faces' blinks; capture them playing for frame order and timing.
-4. **Maps.** The map frames alternate (about 267 / 67 ms in a recording) with
-   units drawn on top at run time; left out for now.
+2. **Value 8.** The second crest (`SYSTEM.LC1` entry 3) is imported with value
+   8 taken as lit; a capture of it would confirm or flip that.
+3. **Timing.** The power-on animation, the カジノ大戦 intros, the faces'
+   blinks and the map run on assumed or rough timing; capture them playing.
+4. **Map units.** The game draws units on the map at run time; only the map's
+   own two frames are imported.
 5. **Banner speed.** Only Gigantesque ciseau was measured; a capture of another
    banner would confirm they all scroll at 1 px per tick.
 6. **Battle screen.** A recording shows a battle VMU screen (DESTROY 5, HP / MP
-   swapping with their values, 1 TARGET) that no LCD1 block on the disc holds
-   (all 1,261 files scanned), and its rows, rebuilt from the recording, aren't
-   in any file as raw 1-bit data either. Its numbers change, so the game likely
-   draws it at run time from parts; left out for now. Finding them means
-   tracing the battle code in `1ST_READ.BIN`, or a sharper capture to search
-   with.
+   swapping with their values, 1 TARGET). The game builds it at run time from
+   the 96x48 sheet in `SLG/G0x/SMAP0x.ESM` (entry 2, the same in all six
+   files): the DESTROY and TARGET panels, HP and MP labels, small digits 0–9,
+   large digits 0–5 and X, and large slanted digits 0–9. The sheet is kept
+   whole as a sprite ("Battle screen parts", in `content/sprites/`). Where each
+   piece goes, and so the screen itself, wasn't traced.
