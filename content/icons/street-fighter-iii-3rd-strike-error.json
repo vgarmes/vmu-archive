@@ -1,0 +1,17 @@
+{
+	"title": "Error",
+	"game": "Street Fighter III: 3rd Strike",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffff000000000000ffffffffffffffffffffffffff0430e30cffff04104104ffff3c924924ffff3c924924ffff0c924904ffff0c30c90cffff3c104924ffff3c924927ffff04924124ffff04926324ffffffffffffffffffffffffff000000000000ffffffffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	],
+	"tags": [
+		"memory-card"
+	],
+	"hash": "6a25b2c4dbea0466365cb31decdc8b1fc2bf51d0",
+	"added": "2026-11-03"
+}

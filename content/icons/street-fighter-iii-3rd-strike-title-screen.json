@@ -1,0 +1,17 @@
+{
+	"title": "Title screen",
+	"game": "Street Fighter III: 3rd Strike",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00001ffc00000000f007800000038ff8e00000067fff38003f1dffffcfff61f3fffff001de0ffffffffdb1fe7108c945a4fe6499494dbcaa6799484d99907398c8c5bc92799848c5a4926499494da4926499494db19971994945dffffffffffd63fff3fff62137ff679fcd572ce6d67fab362b8a34b2a95b2b26962e2b6d2daa3caaa9f566ad9eb2fe3dddfffefff1d3b307c003ef6ebefbf24fd838c18cf24f30007f071248e0000001f24f800000004002000000007ffe0000000000000000"
+	],
+	"tags": [
+		"logo"
+	],
+	"hash": "ba5a42200f43995a6a840ce86080d67ae7a0fd3c",
+	"added": "2026-11-03"
+}
