@@ -41,11 +41,12 @@ shows what it did.
 
 ## Games
 
-| Game | Dump | Folder |
-| --- | --- | --- |
-| Sword of the Berserk: Guts' Rage | US v1.000 (2000, Eidos) | [`berserk/`](berserk/) |
-| Bakuretsu Muteki Bangaioh | JP v1.003 (1999, ESP) | [`bangaioh/`](bangaioh/) |
-| Moero! Justice Gakuen | JP v1.004 (2000, Capcom) | [`justice/`](justice/) |
-| Power Stone, Power Stone 2 | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/) |
-| Shenmue II | JP v1.003 disc 1 (2001, Sega) | [`shenmue2/`](shenmue2/) |
-| Sakura Taisen 3 (partly imported) | JP v1.003 disc 1 (2001, Sega) | [`sakura3/`](sakura3/) |
+| Game                              | Dump                                       | Folder                         |
+| --------------------------------- | ------------------------------------------ | ------------------------------ |
+| Sword of the Berserk: Guts' Rage  | US v1.000 (2000, Eidos)                    | [`berserk/`](berserk/)         |
+| Bakuretsu Muteki Bangaioh         | JP v1.003 (1999, ESP)                      | [`bangaioh/`](bangaioh/)       |
+| Moero! Justice Gakuen             | JP v1.004 (2000, Capcom)                   | [`justice/`](justice/)         |
+| Power Stone, Power Stone 2        | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/) |
+| Shenmue II                        | JP v1.003 disc 1 (2001, Sega)              | [`shenmue2/`](shenmue2/)       |
+| Sakura Taisen 3 (partly imported) | JP v1.003 disc 1 (2001, Sega)              | [`sakura3/`](sakura3/)         |
+| Soul Calibur (partly imported)    | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) |
