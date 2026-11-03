@@ -1,0 +1,18 @@
+{
+	"title": "Access",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffb99199ffffff577777fff555577111aaafff1777ddffffff599133fffffffffffffff00000700000000000980000000001840000000003040000003f0784000001e1ff9ff0000300cd1c10000600c43c9000060ce064be000608f04406000601da9c840006c30784fd8c07c2239ffbbe03c67387fee300c623ffdee300c70787564300ffdf038f4600f3ff02030fc0e039378f0c600031b8560c600031b05e99e000301cfcd8e000301cf9f3c000383c9fb0c0000fff87bf8"
+	],
+	"tags": [
+		"logo",
+		"memory-card"
+	],
+	"hash": "4e7f4a61138e65163f06a8678f06e342eb5811d0",
+	"added": "2026-11-03"
+}
