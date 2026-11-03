@@ -46,3 +46,4 @@ shows what it did.
 | Sword of the Berserk: Guts' Rage | US v1.000 (2000, Eidos) | [`berserk/`](berserk/) |
 | Bakuretsu Muteki Bangaioh | JP v1.003 (1999, ESP) | [`bangaioh/`](bangaioh/) |
 | Moero! Justice Gakuen | JP v1.004 (2000, Capcom) | [`justice/`](justice/) |
+| Power Stone, Power Stone 2 | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/) |
