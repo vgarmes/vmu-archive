@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-03",
+		"title": "Soul Calibur's fighters",
+		"body": "All 19 fighters from Soul Calibur, the little figures the game shows on the VMU, five poses each, decompressed from the US disc with the game's own routine. They play at the site's default speed until their in-game timing is measured."
+	},
+	{
+		"date": "2026-11-03",
 		"title": "Sakura Taisen 3, with scrolling banners",
 		"body": "From the Japanese Sakura Taisen 3 disc: the title screen with its logo intro, the crest, and four expressions each for Erica, Glycine, Coquelicot, Lobelia, Hanabi and Ogami. Also the 23 special attack banners the game scrolls across the VMU in battle, stored as the one strip the game slides through the screen and played at its speed. They download as that strip, or as an animation."
 	},
