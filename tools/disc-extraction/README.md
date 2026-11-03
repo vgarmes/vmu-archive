@@ -44,3 +44,4 @@ shows what it did.
 | Game | Dump | Folder |
 | --- | --- | --- |
 | Sword of the Berserk: Guts' Rage | US v1.000 (2000, Eidos) | [`berserk/`](berserk/) |
+| Bakuretsu Muteki Bangaioh | JP v1.003 (1999, ESP) | [`bangaioh/`](bangaioh/) |
