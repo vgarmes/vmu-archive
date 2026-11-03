@@ -59,6 +59,8 @@ Every game so far did it differently. What has turned up:
 - In the program itself, `1ST_READ.BIN`, with no file of its own: Bangaioh,
   Crazy Taxi 2, Ikaruga, Moero! Justice Gakuen, Power Stone 1 and 2, Street
   Fighter III 3rd Strike.
+- In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
+  `TYPE_E.EXE` (a PE file; map addresses through its section table).
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
 - As a chunk inside a bigger file: Shenmue II's `IWAD` chunk in `MISC/COLD.BIN`.
 - As small blocks in many files: Sakura Taisen 3's `LCD1` blocks, in its own
@@ -70,14 +72,14 @@ colour textures; the real art was found by following the code that loads it.
 
 **How the dots are stored.**
 
-| Encoding                 | Example                                                                   |
-| ------------------------ | ------------------------------------------------------------------------- |
-| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue II (with a width and height byte) |
-| 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2: turned 180°, the way the VMU's LCD takes it       |
-| 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)            |
-| 1 byte per dot, mirrored | Berserk                                                                   |
-| Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                           |
-| Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)             |
+| Encoding                 | Example                                                                    |
+| ------------------------ | -------------------------------------------------------------------------- |
+| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue II (with a width and height byte)  |
+| 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Typing E-Keikaku: turned 180°, as the LCD takes it |
+| 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)             |
+| 1 byte per dot, mirrored | Berserk                                                                    |
+| Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                            |
+| Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)              |
 
 So try every packing, every flip and mirror, and inverted bits before
 concluding the art isn't there.
@@ -123,4 +125,5 @@ The code also says what the game never shows: screens nothing calls are marked
 | Street Fighter III 3rd Strike    | JP v1.003 (2000, Capcom)                   | [`sf3/`](sf3/)                 | [street-fighter-iii-3rd-strike](../../content/games/street-fighter-iii-3rd-strike.md)                                     |
 | Ikaruga                          | JP v1.002 (2002, ESP)                      | [`ikaruga/`](ikaruga/)         | [ikaruga](../../content/games/ikaruga.md)                                                                                 |
 | Crazy Taxi 2                     | US v1.004 (2001, Sega)                     | [`crazytaxi2/`](crazytaxi2/)   | [crazy-taxi-2](../../content/games/crazy-taxi-2.md)                                                                       |
+| Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                   | [`eva-typing/`](eva-typing/)   | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
