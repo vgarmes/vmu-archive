@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-03",
+		"title": "The VMU's own main menu",
+		"body": "The screen the Visual Memory Unit shows by itself, with no game: the SEGA logo over \"Visual Memory Unit\", drawn by the US VMU BIOS every time it returns to its menu. Read from a commented disassembly of that BIOS, which also gave up the dog, fish and bird of its clock animation and both of its fonts, kept behind the scenes with the Dreamcast BIOS's 129 memory card icons."
+	},
+	{
+		"date": "2026-11-03",
 		"title": "Shinseiki Evangelion: Typing E-Keikaku",
 		"body": "Every VMU screen in Gainax's Evangelion typing game: its title logo, and the Access, Save OK, Save NG, Load OK and Load NG screens it shows while saving and loading. The first Windows CE game in the archive. Nothing on its VMU animates."
 	},
