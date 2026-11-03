@@ -216,11 +216,25 @@ export default function Archive({ initial, total, games }: Props) {
 			</div>
 
 			{results.length === 0 ? (
-				<p className="text-muted-foreground py-16 text-center">
-					{query
-						? `Nothing matches “${query}”${game ? ` in ${game.name}` : ''}.`
-						: `No icons for ${game?.name} yet.`}
-				</p>
+				<div className="flex flex-col items-center gap-4 py-16 text-center">
+					<p className="text-muted-foreground">
+						{query
+							? `Nothing matches “${query}”${game ? ` in ${game.name}` : ''}.`
+							: `No icons for ${game?.name} yet.`}
+					</p>
+					{query && (
+						<button
+							type="button"
+							onClick={() => {
+								setQuery('')
+								searchRef.current?.focus()
+							}}
+							className="border-primary bg-primary text-primary-foreground hover:bg-primary/90 focus-visible:ring-primary focus-visible:ring-offset-background h-9 border px-4 text-xs uppercase transition-[background-color,box-shadow] outline-none focus-visible:ring-1 focus-visible:ring-offset-2"
+						>
+							Clear search
+						</button>
+					)}
+				</div>
 			) : (
 				<ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
 					{visible.map(icon => (
