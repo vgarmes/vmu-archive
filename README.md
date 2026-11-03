@@ -7,10 +7,10 @@ Browse it at **[vmu-archive.vercel.app](https://vmu-archive.vercel.app)**.
 
 ## Contributing
 
-Missing a game or a screen?
-[Open an issue with a screenshot](https://github.com/vgarmes/vmu-archive/issues/new?template=submit-art.yml)
-— an emulator capture or a photo of a real VMU is enough. If you'd rather add
-it yourself, follow [Adding art](#adding-art) and open a pull request.
+Missing a game?
+[Request it](https://github.com/vgarmes/vmu-archive/issues/new?template=request-game.yml).
+New screens are extracted from the game's disc, with the order and timing its
+own code uses; see [Adding art](#adding-art).
 
 ## Development
 
@@ -27,68 +27,37 @@ pnpm typecheck
 
 ## Adding art
 
-1. Drop files into `inbox/`:
-   - `.png` — a 48×32 screen (dark pixels are lit). Stack frames vertically
-     for animation (48×64 = 2 frames). Smaller art is trimmed and centred on
-     the screen.
-   - `.gif` — an animation; each GIF frame becomes a frame, and the GIF's
-     timing becomes `frameDelayMs` (or `frameDelaysMs` when frames last
-     different times). Read like a `.png` of the same size.
-   - `.txt` — rows of `#` and spaces, frames separated by `---`.
-2. Optionally add a sidecar with the same name (`sonic.png` → `sonic.json`):
+Art comes from disc dumps, through a per-game folder in
+[`tools/disc-extraction/`](tools/disc-extraction/) (its README has the method).
+
+1. Run the game's scripts. They write one `.png` per piece, 48 pixels wide and
+   32 tall per frame with frames stacked top to bottom (dark pixels are lit),
+   and a sidecar with the same name (`title-screen.png` → `title-screen.json`):
    ```json
    {
-     "title": "Chao Garden",
-     "game": "Sonic Adventure",
-     "publisher": "Sega",
-     "year": 1998,
-     "region": "JP",
-     "tags": ["chao"],
-     "invert": false,
-     "frameDelayMs": 200
+     "title": "Title screen",
+     "game": "Power Stone 2",
+     "publisher": "Capcom",
+     "year": 2000,
+     "tags": ["logo"],
+     "frameDelayMs": 133
    }
    ```
-   For frames that last different times, give `"frameDelaysMs"` instead: one
-   delay per frame, e.g. `[600, 100, 100]` for a 3-frame animation that holds
-   its first frame. You don't need it to hold a pose: back-to-back copies of
-   a frame (in a GIF or a PNG stack) are merged into one frame held for their
-   combined delay.
-3. Run `pnpm icons:import` (`--dry-run` to preview, `--keep` to leave the
-   sources in place). Each piece becomes `content/icons/<game>-<title>.json`
-   (a readable id, chosen once and kept if the title changes; pieces with
-   the same title get -2, -3… in import order);
-   sources move to `inbox/imported/`. Pixel-identical art is skipped.
-4. Commit the new JSON files.
-
-### Sprite sheets
-
-For a PNG with many pieces, list the boxes in its sidecar and each one becomes
-its own entry. Crops take the same fields as the sidecar and override it:
-
-```json
-{
-  "publisher": "Sega",
-  "crops": [
-    {
-      "x": 24,
-      "y": 67,
-      "w": 48,
-      "h": 32,
-      "title": "Sonic",
-      "game": "Sonic Adventure"
-    }
-  ]
-}
-```
-
-A 48×32 box is used as is. Any other box is trimmed to its lit pixels and
-centred on a 48×32 screen, so boxes can be loose. Re-running a sheet is safe;
-the sheet stays in `inbox/` until every crop imports cleanly.
+   Set `"region"` only on a screen that belongs to one release, `"unused"` on
+   one the game's code never shows. For frames that last different times, give
+   `"frameDelaysMs"` instead: one delay per frame. Back-to-back copies of a
+   frame are merged into one frame held for their combined delay.
+2. Run `pnpm icons:import <folder>` (`--dry-run` to preview). Each piece
+   becomes `content/icons/<game>-<title>.json` (a readable id, chosen once and
+   kept if the title changes; pieces with the same title get -2, -3… in import
+   order). Pixel-identical art is skipped.
+3. Commit the new JSON files.
 
 ### Animations and fixing existing art
 
-To add frames to a piece that's already in the archive, import the **full**
-animation with a sidecar naming the entry to replace:
+To change a piece that's already in the archive (swap one made from a
+screenshot for the disc's version, or add the frames it was missing), import
+the **full** art with a sidecar naming the entry to replace:
 
 ```json
 { "replaces": "crazy-taxi-title-screen", "frameDelayMs": 400 }

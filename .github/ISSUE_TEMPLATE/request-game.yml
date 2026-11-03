@@ -1,0 +1,22 @@
+name: Request a game
+description: Ask for a Dreamcast game whose VMU screens aren't in the archive yet.
+title: '[Request] '
+labels: [request]
+body:
+  - type: input
+    id: game
+    attributes:
+      label: Game
+    validations:
+      required: true
+  - type: input
+    id: release
+    attributes:
+      label: Region or release
+      description: Only if it matters, e.g. the Japanese release has different screens.
+      placeholder: e.g. JP, US, EU
+  - type: textarea
+    id: screens
+    attributes:
+      label: VMU screens you remember
+      description: Optional. Where they appear (save menu, mini-game, boot…), so they can be checked once the game is added.

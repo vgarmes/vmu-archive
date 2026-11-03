@@ -3,19 +3,16 @@ import type { Metadata } from 'next'
 export const metadata: Metadata = {
 	title: 'About',
 	description:
-		'What the VMU Archive is, and how to send in VMU screen art that is missing.'
+		'What the VMU Archive is, and how to ask for a game that is missing.'
 }
 
-/** Where submissions go. */
+/** Where requests go. */
 const CONTACT_EMAIL = 'vgmestre@gmail.com'
 
-const SUBJECT = 'VMU Archive submission'
+const SUBJECT = 'VMU Archive game request'
 const BODY = `Game:
-Region (JP / US / EU):
-Where the screen appears (save menu, mini-game, boot…):
-Animated? (yes / no):
-
-Screenshots attached.`
+Region or release, if it matters (JP / US / EU):
+VMU screens you remember (optional):`
 
 const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(SUBJECT)}&body=${encodeURIComponent(BODY)}`
 
@@ -36,34 +33,24 @@ export default function About() {
 			</section>
 
 			<section className="flex flex-col gap-3">
-				<h2 className="font-bold tracking-[0.2em] uppercase">Contribute</h2>
+				<h2 className="font-bold tracking-[0.2em] uppercase">Request a game</h2>
 				<p className="text-muted-foreground">
-					Missing a screen you remember? Email a screenshot and it will be added
-					to the archive.
+					New screens come straight from each game&apos;s disc, with the order
+					and timing its own code uses, so the archive grows a game at a time.
+					Missing one you remember? Ask for it.
 				</p>
 				<ol className="text-muted-foreground flex list-decimal flex-col gap-2 pl-5">
+					<li>Name the game, and the region or release if it matters.</li>
 					<li>
-						Capture the VMU screen in an emulator such as Flycast, or take a
-						sharp, straight-on photo of a real VMU.
-					</li>
-					<li>
-						Crop to the VMU display if you can. A full window is fine too. PNG
-						is best.
-					</li>
-					<li>
-						For animations, send one screenshot per frame, or a short screen
-						recording.
-					</li>
-					<li>
-						Say which game it&apos;s from, the region, and where the screen
-						appears (save menu, mini-game, boot…).
+						If you remember particular VMU screens (save menu, mini-game,
+						boot…), mention them, so they can be checked once it&apos;s added.
 					</li>
 				</ol>
 				<a
 					href={mailto}
 					className="border-primary bg-primary text-primary-foreground hover:bg-primary/90 mt-2 self-start border px-4 py-2 uppercase"
 				>
-					Email a submission
+					Request a game
 				</a>
 			</section>
 		</article>
