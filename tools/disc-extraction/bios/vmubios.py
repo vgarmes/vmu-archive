@@ -41,13 +41,25 @@ ANIMALS = ['dog', 'fish', 'bird']
 
 
 def parse(src):
-    """label -> bytes of the .byte lines after it, and the addresses comments give."""
+    """label -> bytes of the .byte lines after it, and the addresses comments give.
+
+    An .org inside a label's data jumps ahead: waterbear fills the gap with
+    zeros, so it's padded the same way here. FontAscii6x8 needs it: its data
+    stops at $EF08, 8 bytes into the last plane, and an .org $EFF8 follows.
+    """
     data, said, cur = {}, {}, None
     for line in Path(src).read_text().splitlines():
         m = re.match(r'^;;\s*([A-Za-z_]\w*)\s+\(\$([0-9A-Fa-f]{4})\)', line)
         if m:
             said[m.group(1)] = int(m.group(2), 16)
         code = line.split(';')[0].rstrip()
+        m = re.match(r'^\s*\.org\s+\$([0-9A-Fa-f]+)', code)
+        if m and cur in LABELS:
+            to = int(m.group(1), 16) - LABELS[cur]
+            if to < len(data[cur]):
+                sys.exit(f'.org ${m.group(1)} lands inside {cur}\'s data')
+            data[cur] += bytes(to - len(data[cur]))
+            continue
         m = re.match(r'^([A-Za-z_]\w*):', code)
         if m:
             cur = m.group(1)
