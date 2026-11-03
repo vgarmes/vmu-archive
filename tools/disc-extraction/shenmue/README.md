@@ -23,6 +23,18 @@ pnpm icons:import $OUT/inbox
 
 Run the Python scripts from this folder.
 
+## Passport disc
+
+The Goodies viewer, `/PASSPORT/ATU/SYEN.BIN`, is on disc 4:
+`Shenmue - Isshou Yokosuka v1.007 (1999)(Sega)(JP)(Disc 4 of 4)[!][30M2][Passport v1.010]`.
+
+```sh
+DUMP4="path/to/Shenmue - Isshou Yokosuka v1.007 (1999)(Sega)(JP)(Disc 4 of 4)[!][30M2][Passport v1.010]"
+python3 -E ../common/disc.py "$DUMP4" $OUT/files4 /PASSPORT/ATU/SYEN.BIN
+python3 -E passport.py $OUT/files4/PASSPORT/ATU/SYEN.BIN $OUT/passport-inbox
+pnpm icons:import $OUT/passport-inbox
+```
+
 ## Goodies
 
 The downloadable characters aren't on any disc. `goodies.py` reads Neoseeker's

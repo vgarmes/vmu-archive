@@ -68,7 +68,8 @@ exactly, and whether any screen animates, wasn't traced.
 
 Shenmue Goodies was part of Shenmue Passport's online service: Winning Cans won
 in the game bought VMU animations of its characters, until the service closed on
-1 April 2002. They were downloads, so they're on no disc. The archive's come from
+1 April 2002. Most were downloads, so they're on no disc (only the four the
+viewer comes with are; see [The Passport disc](#the-passport-disc)). The archive's come from
 the Neoseeker Shenmue wiki's
 [Shenmue Goodies](https://shenmue.neoseeker.com/wiki/Shenmue_Goodies) list,
 imported with `tools/disc-extraction/shenmue/goodies.py` from a saved copy of
@@ -87,8 +88,40 @@ Second Screen Archive's
 holds 207 of these characters, and its pictures are the same: every one of its
 animations frame for frame, and 205 of its portraits pixel for pixel (Masaru Aoi
 and Toki Aida differ by 5 pixels). It names Ling Sha Hua (Shenhua) and Ren the
-other way round from the wiki; the wiki's names agree with the poses.
+other way round from the wiki; the wiki's names agree with the poses, and with
+the viewer on the Passport disc, which stores Ren second and Shenhua third.
 
 The archive's Ryo Hazuki entry was made earlier from the collection's preview
 GIF, played at its 300 ms inspection pace; it now has the wiki's frames and
 timing.
+
+### The Passport disc
+
+Disc 4, `(Disc 4 of 4)[!][30M2][Passport v1.010]`, carries the game's VMU chunk
+again as `/MISC/LCD.BIN`: the same pixels as disc 1's, without the four `RSM_*`
+screens.
+
+`/PASSPORT/ATU/SYEN.BIN` is the Goodies viewer, the VMU program Passport
+installs. Its pictures are plain 1-bit screens, 192 bytes each, back to back
+from `0x5445`, read by `tools/disc-extraction/shenmue/passport.py`:
+
+| Offset   | Shows                                                     | Archive title             |
+| -------- | --------------------------------------------------------- | ------------------------- |
+| `0x5445` | A brush stroke                                            | Goodies brush stroke      |
+| `0x5505` | The Dreamcast logo                                        | Goodies Dreamcast logo    |
+| `0x55c5` | あつめて シェンムー, white on black                       | Goodies title             |
+| `0x5685` | Ryo, Ren, Shenhua, Niao Sun: portraits, then 3 poses each | (the wiki's, same pixels) |
+
+So the four built-in characters are confirmed from the disc, pixel for pixel.
+Which screen the viewer shows when wasn't traced.
+
+From `0x4380` to `0x4c80` is the viewer's font: one byte per row, 8 pixels wide,
+digits, Latin letters, half-width katakana and symbols, plus a bold set that
+spells SEGA. Its glyphs aren't all the same height, and where each starts
+wasn't decoded, so it's kept as stored: one 8-pixel-wide sprite, "Goodies viewer
+font". The dither patterns and frame pieces after it aren't kept yet.
+
+`/PASSPORT/ATU/039.VM` and `040.VM` are two Goodies handed out at the autumn
+1999 Tokyo Game Show (their description reads あつめてシェンムー '99 AUTUMN
+東京ゲームショウ): Yukawa, the former managing director, and a cat. Each holds one
+pose, already in the archive, and a 16-colour file icon.
