@@ -2,6 +2,7 @@
 
 import { ArrowLeftRightIcon } from 'lucide-react'
 import { useEffect, useMemo, useState } from 'react'
+import RegionFlag from '@/components/RegionFlag'
 import { Badge } from '@/components/ui/badge'
 import { Checkbox } from '@/components/ui/checkbox'
 import {
@@ -374,6 +375,10 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 					<DrawerTitle className="text-sm">
 						{entry.title}{' '}
 						<span className="text-muted-foreground">{entry.game}</span>
+						<RegionFlag
+							region={entry.region}
+							className="ml-1.5 align-baseline"
+						/>
 					</DrawerTitle>
 					{(entry.publisher || entry.year) && (
 						<DrawerDescription className="text-xs">

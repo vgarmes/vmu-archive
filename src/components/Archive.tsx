@@ -5,6 +5,7 @@ import { cn } from 'cn'
 import Fuse from 'fuse.js'
 import { XIcon } from 'lucide-react'
 import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
+import RegionFlag from '@/components/RegionFlag'
 import SpriteDrawer from '@/components/SpriteDrawer'
 import {
 	Combobox,
@@ -389,8 +390,13 @@ function Card({
 				<div className="border-border flex flex-col gap-0.5 border-t px-3 py-2 text-xs">
 					<span className="flex items-baseline justify-between gap-2">
 						<span className="truncate">{icon.title}</span>
-						{icon.unused && (
-							<span className="text-muted-foreground shrink-0">Unused</span>
+						{(icon.unused || icon.region) && (
+							<span className="flex shrink-0 items-center gap-1.5 self-center">
+								{icon.unused && (
+									<span className="text-muted-foreground">Unused</span>
+								)}
+								<RegionFlag region={icon.region} />
+							</span>
 						)}
 					</span>
 					<span className="text-muted-foreground truncate">

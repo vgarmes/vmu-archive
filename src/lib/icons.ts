@@ -70,6 +70,8 @@ export interface IndexEntry {
 	publisher?: string
 	year?: number
 	tags: string[]
+	/** Only when the screen belongs to one region's release. */
+	region?: IconData['region']
 	/** Only when the game's code never shows the screen. */
 	unused?: true
 	/** Only on animations: how many frames their thumbnail strip holds. */
@@ -124,6 +126,7 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 	publisher: data.publisher,
 	year: data.year,
 	tags: data.tags,
+	...(data.region && { region: data.region }),
 	...(data.unused && { unused: true as const }),
 	...(data.frames.length > 1 && {
 		frames: data.frames.length,
