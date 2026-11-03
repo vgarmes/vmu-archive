@@ -1,0 +1,25 @@
+{
+	"title": "70 Man Battle digits, small",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"region": "JP",
+	"width": 50,
+	"height": 10,
+	"bpp": 1,
+	"frames": [
+		"709ce37ddf73a268c4d0886318b821542028c6220855080a318884697bc274622206418922f88901f862488622804418922188a11106248c5c2fb85e711ce0"
+	],
+	"source": {
+		"file": "/MISC/COLD.BIN",
+		"entry": "BT_S?",
+		"offset": 1834452
+	},
+	"tags": [
+		"battle",
+		"digits",
+		"sheet"
+	],
+	"hash": "b5b7c3b3f4edfe36db32f4f43a1819b28b381a06",
+	"added": "2026-11-03"
+}
