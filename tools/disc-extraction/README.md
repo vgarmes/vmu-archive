@@ -62,6 +62,9 @@ Every game so far did it differently. What has turned up:
 - In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
   `TYPE_E.EXE` (a PE file; map addresses through its section table).
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
+- In a system ROM, not a disc: the VMU's own BIOS (fonts and clock sprites,
+  from which it builds every screen) and the Dreamcast's `dc_boot.bin` (its
+  memory card icons). See [`bios/`](bios/).
 - As a chunk inside a bigger file: Shenmue II's `IWAD` chunk in `MISC/COLD.BIN`.
 - As small blocks in many files: Sakura Taisen 3's `LCD1` blocks, in its own
   `.LC1` files and inside minigame and battle files.
@@ -127,3 +130,4 @@ The code also says what the game never shows: screens nothing calls are marked
 | Crazy Taxi 2                     | US v1.004 (2001, Sega)                     | [`crazytaxi2/`](crazytaxi2/)   | [crazy-taxi-2](../../content/games/crazy-taxi-2.md)                                                                       |
 | Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                   | [`eva-typing/`](eva-typing/)   | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
+| Visual Memory Unit, Dreamcast    | US VMU BIOS v1.05, `dc_boot.bin` (Sega)    | [`bios/`](bios/)               | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |
