@@ -1,5 +1,5 @@
 import type { Metadata } from 'next'
-import { getChangelog } from '@/lib/changelog'
+import { getChangelogByDay } from '@/lib/changelog'
 
 export const metadata: Metadata = {
 	title: 'Changelog',
@@ -20,22 +20,25 @@ export default function Changelog() {
 			<h1 className="text-sm font-normal tracking-[0.2em] uppercase">
 				Changelog
 			</h1>
-			<ol className="flex flex-col gap-10">
-				{getChangelog().map(entry => (
-					<li
-						key={`${entry.date}-${entry.title}`}
-						className="flex flex-col gap-2"
-					>
+			<ol className="flex flex-col gap-12">
+				{getChangelogByDay().map(day => (
+					<li key={day.date} className="flex flex-col gap-6">
 						<time
-							dateTime={entry.date}
+							dateTime={day.date}
 							className="text-muted-foreground text-xs tracking-[0.2em] uppercase"
 						>
-							{formatDate(entry.date)}
+							{formatDate(day.date)}
 						</time>
-						<h2 className="font-normal">{entry.title}</h2>
-						{entry.body && (
-							<p className="text-muted-foreground">{entry.body}</p>
-						)}
+						<ul className="flex flex-col gap-6">
+							{day.entries.map(entry => (
+								<li key={entry.title} className="flex flex-col gap-2">
+									<h2 className="font-normal">{entry.title}</h2>
+									{entry.body && (
+										<p className="text-muted-foreground">{entry.body}</p>
+									)}
+								</li>
+							))}
+						</ul>
 					</li>
 				))}
 			</ol>

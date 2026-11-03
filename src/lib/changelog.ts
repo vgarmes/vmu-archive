@@ -23,3 +23,22 @@ export function getChangelog(): ChangelogEntry[] {
 		throw new Error(`content/changelog.json: ${parsed.error.message}`)
 	return parsed.data.sort((a, b) => b.date.localeCompare(a.date))
 }
+
+export interface ChangelogDay {
+	date: string
+	entries: ChangelogEntry[]
+}
+
+/**
+ * The entries grouped by date, newest day first; within a day they keep the
+ * file's order (newest at the top).
+ */
+export function getChangelogByDay(): ChangelogDay[] {
+	const days: ChangelogDay[] = []
+	for (const entry of getChangelog()) {
+		const last = days.at(-1)
+		if (last?.date === entry.date) last.entries.push(entry)
+		else days.push({ date: entry.date, entries: [entry] })
+	}
+	return days
+}

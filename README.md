@@ -102,7 +102,8 @@ Add an entry to the top of `content/changelog.json`; it shows on
 }
 ```
 
-`body` is optional; entries are sorted by date.
+`body` is optional. Entries are sorted by date, and entries on the same date
+show under one heading, newest first (so add yours at the top).
 
 ## How it works
 
