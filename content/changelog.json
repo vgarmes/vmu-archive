@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-03",
+		"title": "Crazy Taxi 2",
+		"body": "Every VMU screen in the US Crazy Taxi 2: its title screen, flames dancing over the logo, and the Now Loading and Now Saving screens. The title plays at 267 ms a frame, which assumes the game runs at 60 Hz, until a capture confirms it."
+	},
+	{
+		"date": "2026-11-03",
 		"title": "The rest of Ikaruga",
 		"body": "Every other VMU screen from the Japanese Ikaruga disc: the blinking Save screen, Load, OK and NG, and the chain counter, drawn from a set of digits over a CHAIN panel. Also a second Load screen, with the bird in another pose, that the game never shows. The Save blink's speed is read from the game's code and not yet measured."
 	},
