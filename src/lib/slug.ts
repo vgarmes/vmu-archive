@@ -1,6 +1,6 @@
 /**
  * A URL-safe slug ("Tony Hawk's Pro Skater" → "tony-hawks-pro-skater"), used
- * for icon ids by the importer and for ?game= in the archive's URL.
+ * for icon ids by the importer and for game pages (/games/<slug>).
  *
  * Run by Node directly from the importer, like pixels.ts: keep it free of
  * imports and non-erasable TypeScript.

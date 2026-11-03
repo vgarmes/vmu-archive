@@ -87,3 +87,53 @@
 @utility pixelated {
 	image-rendering: pixelated;
 }
+
+/* A game's extraction notes (content/games/<slug>.md), rendered at build time. */
+@layer components {
+	.notes {
+		@apply text-muted-foreground text-sm leading-6;
+	}
+	.notes > * + * {
+		@apply mt-4;
+	}
+	.notes h2 {
+		@apply text-foreground mt-8 text-xs tracking-[0.2em] uppercase;
+	}
+	.notes h3 {
+		@apply text-foreground mt-6;
+	}
+	.notes strong,
+	.notes a {
+		@apply text-foreground;
+	}
+	.notes a {
+		@apply underline underline-offset-4;
+	}
+	.notes code {
+		@apply bg-muted text-foreground px-1 text-[0.8125rem];
+	}
+	.notes pre {
+		@apply bg-muted overflow-x-auto p-3;
+	}
+	.notes pre code {
+		@apply bg-transparent p-0;
+	}
+	.notes ul {
+		@apply list-disc pl-5;
+	}
+	.notes ol {
+		@apply list-decimal pl-5;
+	}
+	/* Wide tables scroll on their own instead of the page. */
+	.notes table {
+		@apply block max-w-full overflow-x-auto text-xs;
+		border-collapse: collapse;
+	}
+	.notes th,
+	.notes td {
+		@apply border-border border px-2 py-1 text-left align-top;
+	}
+	.notes th {
+		@apply text-foreground font-normal;
+	}
+}
