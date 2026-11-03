@@ -1,0 +1,20 @@
+{
+	"title": "Lobelia",
+	"game": "Sakura Taisen 3: Paris wa Moete Iru ka",
+	"publisher": "Sega",
+	"year": 2001,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fe600ff800effda07ff80037fb21fff000170403ffe00248ea07c4600128ec0f8fc50093100c7049007c1608009a0000da08016600030410079b800008be0fe3800108b317c350121527a7f3a80c157fe9a25d660ae6a1c3239c0063a082b0c000611986900000230604a002003d000120260020000040270010f003c0270010e007002c002800020178ffa800042347006400071480001e00049880ffd70005577fffe0fc05afff000039fc0000ffff3ffeffffffff47fefffffffec7ff3fff"
+	],
+	"tags": [
+		"character",
+		"portrait",
+		"lobelia"
+	],
+	"hash": "2c7ac9a575bc15db22e2518d3515e63d7a7cc6fa",
+	"added": "2026-11-03"
+}

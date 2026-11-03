@@ -1,0 +1,20 @@
+{
+	"title": "Hanabi",
+	"game": "Sakura Taisen 3: Paris wa Moete Iru ka",
+	"publisher": "Sega",
+	"year": 2001,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffbfffffbfffff7fffffdffffedfffff2ff0008fffff100ffd9fffec17fffd35ffe0fbf001745c67f800037d3cfef80ffbfffffefdf003ffffdf7c0003fff7df7c0007fdf7df740007fdf7dff00007fdffdee00007ef9fdf800007ee7c0fe00007eefe1ee00007ee340de00007ee0001e00007ee0001e00007f70003f00007f70003700007f70047700ff6f7018fb7f002fb801fb00002f9e077b00ffafdb9f3affffc7fde91aff0003c60c1000fff3fffe0fffffc7f367cfffffbff127f3ff"
+	],
+	"tags": [
+		"character",
+		"portrait",
+		"hanabi"
+	],
+	"hash": "926f5ed56b924308f67d4a1bf46fb71828ed8521",
+	"added": "2026-11-03"
+}

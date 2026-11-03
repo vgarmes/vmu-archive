@@ -1,0 +1,20 @@
+{
+	"title": "Ogami",
+	"game": "Sakura Taisen 3: Paris wa Moete Iru ka",
+	"publisher": "Sega",
+	"year": 2001,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff7ffffff7ffff7ffffff5ffff7fffffedff007ffffffc00ff7ffffffdffff7ffffffdff003d77dd7c00003c0ba07800ff3c00007bff001c00007800001c00007800001be01fb000001818303000001fec4ff000002ab01aa8000058682c34000058e00e3400005400805400002c00806800001400c05000000e00c0600000020080c000000200008000fffd0000bfff000107e10000000180010000fffdc0037ffffffbe005bfff000570094000fff4bc3b5fffffc84ff423ffffb827e83dff"
+	],
+	"tags": [
+		"character",
+		"portrait",
+		"ogami"
+	],
+	"hash": "4994c8d10d0deebc026525e6957f6b20b1264a63",
+	"added": "2026-11-03"
+}

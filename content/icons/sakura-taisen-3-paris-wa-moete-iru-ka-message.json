@@ -1,0 +1,16 @@
+{
+	"title": "Message",
+	"game": "Sakura Taisen 3: Paris wa Moete Iru ka",
+	"publisher": "Sega",
+	"year": 2001,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000ffffffffffffffffffffffffe7e7fffffffff7effffffffff3cffffffffff3cffffffffff5affffffffff5affffffffff66e718cf2cff66daf7f6db7f7ec339c6d87f7edfdeb73bfe3c6631ca3cfffffffffedfffffffffff3ffffffffffffff000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	],
+	"tags": [],
+	"hash": "3ba6d9fba9871243d25e507fa64392d4c0c89597",
+	"added": "2026-11-03"
+}
