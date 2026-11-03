@@ -1,0 +1,18 @@
+{
+	"title": "Title screen",
+	"game": "Bangai-O",
+	"publisher": "Treasure",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"7ffffffffffeeebb7ff7ffdfe81a2863c107eed74fb7fbef6eef2fa77706e8f76fa7af8fea7a6f676f7ff4fb76f8f18f7ffffffffffe0780000001e0044a0000012004550000012008aa00000f3808940000080808800000080811e000140f38112703aa722011148ed4943e2294b83b183222932814113222884ed4333e444892d7ad20444b2c90a120444a4920a1207c7b8ec0e1e00000000000000dce4bdccc601dad6b1ada703dcd7b5ada781daf7bdeda700dcd69dacc60000000000000"
+	],
+	"tags": [
+		"logo"
+	],
+	"hash": "efd9f8a590b7e77016a485ff3a5af8e363046f4c",
+	"added": "2026-11-03"
+}
