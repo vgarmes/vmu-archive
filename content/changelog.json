@@ -1,6 +1,16 @@
 [
 	{
 		"date": "2026-11-03",
+		"title": "Shenmue's Goodies characters",
+		"body": "213 Shenmue characters animated on the VMU, from Ryo and Lan Di to the neighbourhood cats, the Goodies that Shenmue Passport's online service traded for Winning Cans until 2002. They come from the Neoseeker Shenmue wiki, with the four built-in characters' portraits. Ryo Hazuki now plays the wiki's version. Their timing is the wiki's and hasn't been checked against the game."
+	},
+	{
+		"date": "2026-11-03",
+		"title": "Shenmue, straight from the disc",
+		"body": "Shenmue's own VMU screens from the Japanese disc: the 莎木 title logo, the start, count and cleared screens of the 70 Man Battle, and its English Please Wait. Its loading, saving, OK, NG and PK screens are the same pictures Shenmue II uses, so they stay filed there."
+	},
+	{
+		"date": "2026-11-03",
 		"title": "The VMU's own main menu",
 		"body": "The screen the Visual Memory Unit shows by itself, with no game: the SEGA logo over \"Visual Memory Unit\", drawn by the US VMU BIOS every time it returns to its menu. Read from a commented disassembly of that BIOS, which also gave up the dog, fish and bird of its clock animation and both of its fonts, kept behind the scenes with the Dreamcast BIOS's 129 memory card icons."
 	},
