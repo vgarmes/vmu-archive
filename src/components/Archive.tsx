@@ -4,14 +4,7 @@ import { Input } from '@base-ui/react/input'
 import { cn } from 'cn'
 import Fuse from 'fuse.js'
 import { XIcon } from 'lucide-react'
-import {
-	type CSSProperties,
-	useCallback,
-	useEffect,
-	useMemo,
-	useRef,
-	useState
-} from 'react'
+import { useCallback, useEffect, useMemo, useRef, useState } from 'react'
 import SpriteDrawer from '@/components/SpriteDrawer'
 import {
 	Combobox,
@@ -22,11 +15,7 @@ import {
 	ComboboxList
 } from '@/components/ui/combobox'
 import type { Game, IndexEntry } from '@/lib/icons'
-import {
-	DEFAULT_FRAME_DELAY_MS,
-	stripEasing,
-	stripPosition
-} from '@/lib/pixels'
+import { stripPosition } from '@/lib/pixels'
 
 /**
  * Search box, game picker and the icon grid.
@@ -41,8 +30,9 @@ import {
  * ?game=<slug> to the URL, so a game's sprites can be linked to.
  *
  * Clicking a card opens the sprite drawer and adds ?screen=<id> to the URL
- * (Back closes it, and a shared link opens it). Animated cards play on hover
- * or keyboard focus, in CSS alone (see `animate-frames`).
+ * (Back closes it, and a shared link opens it). Animated cards show a still
+ * and play their GIF on hover or keyboard focus (see `useHoverGif`), unless
+ * the visitor asks for reduced motion.
  */
 
 const BATCH = 60
@@ -281,6 +271,61 @@ function GamePicker({
 	)
 }
 
+/** Each animation's GIF, fetched the first time its card is hovered. */
+const gifs = new Map<string, Promise<Blob>>()
+function gifBlob(id: string) {
+	let blob = gifs.get(id)
+	if (!blob) {
+		blob = fetch(`/thumbs/${id}.gif`).then(r =>
+			r.ok ? r.blob() : Promise.reject(new Error(r.statusText))
+		)
+		blob.catch(() => gifs.delete(id))
+		gifs.set(id, blob)
+	}
+	return blob
+}
+
+/**
+ * Plays an animated card's GIF while it's hovered or keyboard-focused, and
+ * shows its PNG still (the poster frame) otherwise. Each play gets a fresh
+ * blob URL, so it starts from the first frame rather than wherever the GIF's
+ * clock had got to, and the still stays up until the GIF has decoded.
+ */
+function useHoverGif(icon: IndexEntry) {
+	const [src, setSrc] = useState<string | null>(null)
+	const play = useRef(0)
+	const url = useRef<string | null>(null)
+
+	const stop = useCallback(() => {
+		play.current++
+		if (url.current) URL.revokeObjectURL(url.current)
+		url.current = null
+		setSrc(null)
+	}, [])
+
+	const start = useCallback(async () => {
+		if (!icon.frames || url.current) return
+		if (matchMedia('(prefers-reduced-motion: reduce)').matches) return
+		const id = ++play.current
+		const blob = await gifBlob(icon.id).catch(() => null)
+		if (!blob || id !== play.current) return
+		const next = URL.createObjectURL(blob)
+		// Load it before swapping, so the still stays up until the GIF can show.
+		// (`decode()` sometimes never settled for these in Chrome.)
+		await new Promise(resolve => {
+			const img = new Image()
+			img.onload = img.onerror = resolve
+			img.src = next
+		})
+		if (id !== play.current) return URL.revokeObjectURL(next)
+		url.current = next
+		setSrc(next)
+	}, [icon])
+
+	useEffect(() => stop, [stop])
+	return { src, start, stop }
+}
+
 function Card({
 	icon,
 	onOpen
@@ -288,6 +333,7 @@ function Card({
 	icon: IndexEntry
 	onOpen: (id: string) => void
 }) {
+	const gif = useHoverGif(icon)
 	return (
 		<li className="[contain-intrinsic-size:auto_200px] [content-visibility:auto]">
 			{/* A real link, so new-tab and copy-link still work; a plain click opens the drawer. */}
@@ -305,6 +351,10 @@ function Card({
 					e.preventDefault()
 					onOpen(icon.id)
 				}}
+				onPointerEnter={e => e.pointerType === 'mouse' && gif.start()}
+				onPointerLeave={gif.stop}
+				onFocus={e => e.currentTarget.matches(':focus-visible') && gif.start()}
+				onBlur={gif.stop}
 				className="group border-border bg-card hover:border-foreground focus-visible:ring-ring flex h-full flex-col border outline-none focus-visible:ring-2"
 			>
 				{/*
@@ -313,38 +363,24 @@ function Card({
 				*/}
 				<div className="relative aspect-[3/2]">
 					<img
-						src={`/thumbs/${icon.id}.png`}
+						src={gif.src ?? `/thumbs/${icon.id}.png`}
 						alt=""
 						width={48}
 						height={32}
 						loading="lazy"
 						decoding="async"
 						// The art is near-black; flip it for dark mode. An animation's
-						// thumbnail is a strip of frames: show the first, play on hover.
+						// PNG is a strip of its frames, cropped to the poster frame; its
+						// GIF (on hover) is one frame tall, so the crop shows all of it.
 						className={cn(
 							'pixelated absolute inset-0 m-auto size-4/5 dark:invert',
-							icon.frames
-								? 'motion-safe:group-hover:animate-frames motion-safe:group-focus-visible:animate-frames object-cover object-top'
-								: 'object-contain'
+							icon.frames ? 'object-cover object-top' : 'object-contain'
 						)}
 						style={
-							icon.frames
-								? ({
-										'--frames': icon.frames,
-										'--frame-delay': `${icon.frameDelayMs ?? DEFAULT_FRAME_DELAY_MS}ms`,
-										// Frames that last different times: their own cycle and steps.
-										...(icon.frameDelaysMs && {
-											'--frame-cycle': `${icon.frameDelaysMs.reduce((a, b) => a + b, 0)}ms`,
-											'--frame-easing': stripEasing(icon.frameDelaysMs)
-										}),
-										// At rest, the poster frame; the hover animation overrides it.
-										...(icon.posterFrame && {
-											objectPosition: stripPosition(
-												icon.frames,
-												icon.posterFrame
-											)
-										})
-									} as CSSProperties)
+							icon.frames && icon.posterFrame && !gif.src
+								? {
+										objectPosition: stripPosition(icon.frames, icon.posterFrame)
+									}
 								: undefined
 						}
 					/>

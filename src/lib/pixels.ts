@@ -101,27 +101,6 @@ export const frameDelays = (art: {
 	)
 
 /**
- * A CSS timing function that steps a thumbnail strip's object-position from
- * frame to frame, holding each for its own share of `delays` (the strip's
- * keyframes run from the first frame at 0% to the last at 100%). For uneven
- * delays; even ones are plain `steps(n, jump-none)`.
- */
-export function stripEasing(delays: number[]) {
-	const n = delays.length
-	const total = delays.reduce((a, b) => a + b, 0)
-	const points: string[] = []
-	let at = 0
-	delays.forEach((d, k) => {
-		const value = +(k / (n - 1)).toFixed(4)
-		const from = +((at / total) * 100).toFixed(4)
-		at += d
-		const to = +((at / total) * 100).toFixed(4)
-		points.push(`${value} ${from}% ${to}%`)
-	})
-	return `linear(${points.join(', ')})`
-}
-
-/**
  * Transparent rows between the frames of a thumbnail strip. Scaled up by a
  * non-integer factor, a frame's edge can land part-way through a screen pixel
  * and show a sliver of the next frame; with a gap, that sliver is empty.

@@ -1,29 +1,49 @@
+import { GIFEncoder } from 'gifenc'
 import { PNG } from 'pngjs'
 import { getIcon, getIcons } from '@/lib/icons'
-import { STRIP_GAP, toRgba } from '@/lib/pixels'
+import {
+	colorsOf,
+	decodeFrame,
+	frameDelays,
+	STRIP_GAP,
+	toRgba
+} from '@/lib/pixels'
 
 /**
- * A native-size PNG of each icon, a few hundred bytes each, at
- * /thumbs/<id>.png. The grid scales them up with `image-rendering: pixelated`.
- * The art is near-black on transparent; the page inverts it in dark mode.
- * Animations are a vertical strip of their frames (48x32 per frame, with
- * STRIP_GAP transparent rows between them), which the grid steps through on
- * hover and the drawer reads back.
+ * Native-size thumbnails of each icon, a few hundred bytes each, which the
+ * grid scales up with `image-rendering: pixelated`. The art is near-black on
+ * transparent; the page inverts it in dark mode.
+ * - /thumbs/<id>.png: the icon, or for an animation a vertical strip of its
+ *   frames (48x32 each, with STRIP_GAP transparent rows between them). The
+ *   grid shows it cropped to the poster frame; the drawer reads it back.
+ * - /thumbs/<id>.gif: animations only, played in the grid on hover. Every
+ *   frame is the whole image, so it can be scaled to any size without art
+ *   that stays put between frames shifting by a pixel (stepping through the
+ *   strip instead made it jump).
  */
 export const dynamic = 'force-static'
 export const dynamicParams = false
 
 export function generateStaticParams() {
-	return getIcons().map(icon => ({ file: `${icon.id}.png` }))
+	return getIcons().flatMap(icon => [
+		{ file: `${icon.id}.png` },
+		...(icon.data.frames.length > 1 ? [{ file: `${icon.id}.gif` }] : [])
+	])
 }
 
 export async function GET(
 	_req: Request,
 	{ params }: RouteContext<'/thumbs/[file]'>
 ) {
-	const icon = getIcon((await params).file.replace(/\.png$/, ''))
+	const file = (await params).file
+	const icon = getIcon(file.replace(/\.(png|gif)$/, ''))
 	if (!icon) return new Response('Not found', { status: 404 })
 	const { data } = icon
+	if (file.endsWith('.gif'))
+		return new Response(new Uint8Array(toGif(data)), {
+			headers: { 'Content-Type': 'image/gif' }
+		})
+
 	const n = data.frames.length
 	const pitch = data.height + STRIP_GAP
 	const png = new PNG({
@@ -37,4 +57,24 @@ export async function GET(
 	return new Response(new Uint8Array(PNG.sync.write(png)), {
 		headers: { 'Content-Type': 'image/png' }
 	})
+}
+
+/** The frames are already palette indices, so the GIF needs no quantising. */
+function toGif(art: NonNullable<ReturnType<typeof getIcon>>['data']) {
+	const { width: w, height: h, bpp } = art
+	const colors = colorsOf(art)
+	const palette = colors.map(([r, g, b]) => [r, g, b])
+	const transparentIndex = colors.findIndex(c => c[3] === 0)
+	const delays = frameDelays(art)
+	const gif = GIFEncoder()
+	art.frames.forEach((hex, f) =>
+		gif.writeFrame(decodeFrame(hex, w, h, bpp), w, h, {
+			palette,
+			delay: delays[f],
+			transparent: transparentIndex >= 0,
+			transparentIndex: Math.max(0, transparentIndex)
+		})
+	)
+	gif.finish()
+	return gif.bytes()
 }
