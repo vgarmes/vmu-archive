@@ -6,6 +6,9 @@ Dump: `Shenmue II v1.003 (2001)(Sega)(JP)(Disc 1 of 4)[!][3MM1]` (`.gdi`). The
 VMU art is on disc 1. Every entry from it has region `JP`, the English screens
 included.
 
+The first game stores its art the same way, under the same names, and twelve of
+the screens are pixel for pixel the same; see [Shenmue](shenmue.md).
+
 ## What's on the disc
 
 The `/SPRITE/VM_*.GZ` files are not VMU art: they're 512×512 colour textures.

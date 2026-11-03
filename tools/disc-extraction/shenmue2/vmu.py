@@ -2,6 +2,9 @@
 
     python3 vmu.py <COLD.BIN> <out dir>
 
+Shenmue (the first game) stores its art the same way and reads unchanged; see
+../shenmue/. The code addresses below are Shenmue II's.
+
 COLD.BIN (a PAKS pack the game loads at boot) holds one IWAD chunk with every
 piece of VMU art:
 

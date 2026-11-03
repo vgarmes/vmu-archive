@@ -1,0 +1,36 @@
+# Shenmue
+
+Dump: `Shenmue - Isshou Yokosuka v1.007 (1999)(Sega)(JP)(Disc 1 of 4)[!][1MB3, 1MB4, 1MB5, 1MM1]`
+(`.gdi`). Every entry from it has region `JP`, the English screens included.
+
+The art is stored the way Shenmue II stores it, so Shenmue II's
+[`vmu.py`](../shenmue2/vmu.py) decodes it unchanged; only `prep.py` is this
+game's own.
+
+What the scripts found is written up in the game's notes,
+[`content/games/shenmue.md`](../../../content/games/shenmue.md).
+
+## Run
+
+```sh
+DUMP="path/to/Shenmue - Isshou Yokosuka v1.007 (1999)(Sega)(JP)(Disc 1 of 4)[!][1MB3, 1MB4, 1MB5, 1MM1]"
+OUT=/tmp/shenmue
+python3 -E ../common/disc.py "$DUMP" $OUT/files /MISC/COLD.BIN
+python3 -E ../shenmue2/vmu.py $OUT/files/MISC/COLD.BIN $OUT/out   # screens, sprites, manifest, contact sheet
+python3 -E prep.py $OUT/out $OUT/inbox                            # anything new, ready to import
+pnpm icons:import $OUT/inbox
+```
+
+Run the Python scripts from this folder.
+
+## Goodies
+
+The downloadable characters aren't on any disc. `goodies.py` reads Neoseeker's
+[Shenmue Goodies](https://shenmue.neoseeker.com/wiki/Shenmue_Goodies) page,
+saved from a browser as "Webpage, Complete" (the `.html` and its `_files`
+folder):
+
+```sh
+python3 -E goodies.py "path/to/Shenmue Goodies - Shenmue Wiki - Neoseeker.html" $OUT/goodies-inbox
+pnpm icons:import $OUT/goodies-inbox
+```
