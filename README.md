@@ -30,7 +30,13 @@ pnpm typecheck
 Art comes from disc dumps, through a per-game folder in
 [`tools/disc-extraction/`](tools/disc-extraction/) (its README has the method).
 What each game's scripts found is written up in its notes,
-`content/games/<game slug>.md`.
+`content/games/<game slug>.md`, shown on the game's page.
+
+A game's English and romanized Japanese titles, when they differ, go in
+`content/games.json`, keyed by the `game` its screens use (which also gives
+its URL, `/games/<game slug>`). Set `en` when that name is the Japanese one,
+`ja` when it's the English one. `cover` picks the screen its card shows (an
+icon id); by default that's its title screen, else its logo.
 
 1. Run the game's scripts. They write one `.png` per piece, 48 pixels wide and
    32 tall per frame with frames stacked top to bottom (dark pixels are lit),
@@ -100,15 +106,17 @@ Add an entry to the top of `content/changelog.json`; it shows on
 
 ## How it works
 
-| Piece                                              | Where                                |
-| -------------------------------------------------- | ------------------------------------ |
-| Frame encoding, SVG / RGBA / C export, trimming    | `src/lib/pixels.ts`                  |
-| Reading + validating entries at build time         | `src/lib/icons.ts`                   |
-| Search index (metadata only, fetched once)         | `src/app/search-index.json/route.ts` |
-| Native-size PNG thumbnails                         | `src/app/thumbs/[file]/route.ts`     |
-| Search, filter, grid (batches of 60 as you scroll) | `src/components/Archive.tsx`         |
-| Preview, trim option, download menu (Base UI)      | `src/components/IconDetail.tsx`      |
-| Importer                                           | `scripts/import.ts`                  |
+| Piece                                           | Where                             |
+| ----------------------------------------------- | --------------------------------- |
+| Frame encoding, SVG / RGBA / C export, trimming | `src/lib/pixels.ts`               |
+| Reading + validating entries at build time      | `src/lib/icons.ts`                |
+| Games: titles, covers, notes (Markdown → HTML)  | `src/lib/games.ts`                |
+| Native-size PNG thumbnails                      | `src/app/thumbs/[file]/route.ts`  |
+| Home: game grid and title search                | `src/components/GameIndex.tsx`    |
+| Game page: notes, screen search and grid        | `src/app/games/[slug]/page.tsx`   |
+| Screen grid (batches of 60 as you scroll)       | `src/components/IconGrid.tsx`     |
+| Preview, trim option, download menu (Base UI)   | `src/components/SpriteDrawer.tsx` |
+| Importer                                        | `scripts/import.ts`               |
 
 Everything is prerendered by `next build` into `out/`; downloads are generated
 in the browser from the frame data.

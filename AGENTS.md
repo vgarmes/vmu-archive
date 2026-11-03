@@ -22,6 +22,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 - Findings about a game (format, timing, unused screens) go in its notes,
   `content/games/<game slug>.md`; its README in `tools/disc-extraction/<game>/`
   only names the dump and how to run the scripts.
+- A game's English/Japanese (romanized) titles and card cover live in
+  `content/games.json`, keyed by the icons' `game` (see `src/lib/games.ts`).
+  The site has one page per game, `/games/<game slug>`, which shows its notes.
 - `src/lib/pixels.ts` is run by Node directly from the importer: keep it free
   of imports and non-erasable TypeScript.
 - The site is a static export (`output: 'export'`): every dynamic route needs
