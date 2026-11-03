@@ -45,3 +45,4 @@ shows what it did.
 | --- | --- | --- |
 | Sword of the Berserk: Guts' Rage | US v1.000 (2000, Eidos) | [`berserk/`](berserk/) |
 | Bakuretsu Muteki Bangaioh | JP v1.003 (1999, ESP) | [`bangaioh/`](bangaioh/) |
+| Moero! Justice Gakuen | JP v1.004 (2000, Capcom) | [`justice/`](justice/) |
