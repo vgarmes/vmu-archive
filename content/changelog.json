@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-03",
+		"title": "Street Fighter III: 3rd Strike, straight from the disc",
+		"body": "Every VMU screen in the Japanese Street Fighter III 3rd Strike: the title screen, and the Access, OK and Error screens it shows while saving and loading. Nothing on its VMU animates."
+	},
+	{
+		"date": "2026-11-03",
 		"title": "Browse by game",
 		"body": "The archive now opens on a grid of its games, searchable by their English or Japanese titles. Each game has its own page with its screens, a search within them, and notes on how they were extracted from the disc. Old links still work."
 	},
