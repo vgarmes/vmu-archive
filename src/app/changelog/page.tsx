@@ -16,16 +16,19 @@ const formatDate = (date: string) =>
 
 export default function Changelog() {
 	return (
-		<article className="flex max-w-2xl flex-col gap-10 text-sm leading-6">
+		<article className="flex max-w-3xl flex-col gap-10 text-sm leading-6">
 			<h1 className="text-sm font-normal tracking-[0.2em] uppercase">
 				Changelog
 			</h1>
 			<ol className="flex flex-col gap-12">
 				{getChangelogByDay().map(day => (
-					<li key={day.date} className="flex flex-col gap-6">
+					<li
+						key={day.date}
+						className="grid gap-6 md:grid-cols-[11rem_1fr] md:gap-x-10"
+					>
 						<time
 							dateTime={day.date}
-							className="text-muted-foreground text-xs tracking-[0.2em] uppercase"
+							className="text-muted-foreground text-xs leading-6 tracking-[0.2em] uppercase"
 						>
 							{formatDate(day.date)}
 						</time>
