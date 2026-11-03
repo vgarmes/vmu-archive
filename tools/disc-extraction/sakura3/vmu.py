@@ -40,6 +40,9 @@ SOURCES = [
         'BOSS_CROW', 'BOSS_LION', 'BOSS_RABBIT', 'BOSS_SCORPION', 'BOSS_SNAKE',
         'COQUELICOT_F1', 'ERICA_F1', 'GLYCINE_F1', 'HANABI_F1', 'LOBELIA_F1',
         'OGAMI_F1A', 'OGAMI_F1B', 'OGAMI_F1C')],
+    # Strategy map: two 48x32 map frames and a 96x48 sheet of battle screen parts.
+    # All six SLG/G0x/SMAP0x.ESM files carry the same three entries.
+    'SLG/G01/SMAP01.ESM',
 ]
 FW, FH = 48, 32
 
@@ -52,7 +55,7 @@ def lcd1(b, base):
         for x in b[base + 8 + off:base + 8 + off + size]:
             px += bytes([x & 15]) * (x >> 4)
         assert len(px) == h * w, f'entry {k}: {len(px)} bytes for {w}x{h}'
-        yield k, w, h, bytes(px)
+        yield k, w, h, bytes(px), base + 8 + off
 
 
 def frames(w, h, px):
@@ -80,7 +83,7 @@ def main(files, out):
         base = b.find(b'LCD1')
         assert base >= 0, f'no LCD1 block in {src}'
         stem = Path(src).stem.lower()
-        for k, w, h, px in lcd1(b, base):
+        for k, w, h, px, offset in lcd1(b, base):
             name = f'{stem}-{k:02d}'
             values = sorted(set(px))
             # A unit's entries are banners the game scrolls, even when 48 divides
@@ -94,7 +97,7 @@ def main(files, out):
                 im.putdata([v * 17 for v in px])
             im.save(out / 'lcd' / f'{name}.png')
             manifest.append(dict(
-                name=name, source=src, entry=k, width=w, height=h, frames=len(fs), values=values,
+                name=name, source=src, entry=k, offset=offset, width=w, height=h, frames=len(fs), values=values,
                 grey=any(v not in (0, 15) for v in values), unverified=8 in values,
                 frame_hex=[frame_hex(f) for f in fs] if screen else None))
             images.append((name, im))

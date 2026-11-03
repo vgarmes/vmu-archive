@@ -22,9 +22,10 @@ python3 -E ../common/disc.py "$DUMP" $OUT/files /ADVDATA/SYSTEM.LC1 \
   /SLG/UNITS/BOSS_SCORPION_N.BC /SLG/UNITS/BOSS_SNAKE_N.BC \
   /SLG/UNITS/COQUELICOT_F1_N.BC /SLG/UNITS/ERICA_F1_N.BC /SLG/UNITS/GLYCINE_F1_N.BC \
   /SLG/UNITS/HANABI_F1_N.BC /SLG/UNITS/LOBELIA_F1_N.BC \
-  /SLG/UNITS/OGAMI_F1A_N.BC /SLG/UNITS/OGAMI_F1B_N.BC /SLG/UNITS/OGAMI_F1C_N.BC
+  /SLG/UNITS/OGAMI_F1A_N.BC /SLG/UNITS/OGAMI_F1B_N.BC /SLG/UNITS/OGAMI_F1C_N.BC \
+  /SLG/G01/SMAP01.ESM
 python3 -E vmu.py $OUT/files $OUT/out     # every entry, manifest, contact sheet
-python3 -E prep.py $OUT/out $OUT/inbox    # the stills in PICKS, the banners in BANNERS
+python3 -E prep.py $OUT/out $OUT/inbox    # PICKS, ANIMS, BLINKS, BANNERS and SPRITES
 pnpm icons:import $OUT/inbox
 ```
 
