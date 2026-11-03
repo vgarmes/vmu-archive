@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-03",
+		"title": "The rest of Ikaruga",
+		"body": "Every other VMU screen from the Japanese Ikaruga disc: the blinking Save screen, Load, OK and NG, and the chain counter, drawn from a set of digits over a CHAIN panel. Also a second Load screen, with the bird in another pose, that the game never shows. The Save blink's speed is read from the game's code and not yet measured."
+	},
+	{
+		"date": "2026-11-03",
 		"title": "Street Fighter III: 3rd Strike, straight from the disc",
 		"body": "Every VMU screen in the Japanese Street Fighter III 3rd Strike: the title screen, and the Access, OK and Error screens it shows while saving and loading. Nothing on its VMU animates."
 	},
