@@ -248,17 +248,33 @@ function readScreenshot(img: Image, invert = false): number[] | null {
 	if (!box) return null
 	const { x0, y0, w, h } = box
 
-	// Lit is whichever side of the mid-grey has fewer pixels.
-	let lo = Infinity,
-		hi = -Infinity,
-		light = 0
+	// Split the screen's two colours where they separate best (Otsu), not
+	// halfway between the extremes: a photographed or filmed screen has glare
+	// and vignetting that would drag a halfway split into the background.
+	// Lit is whichever side has fewer pixels.
+	const hist = new Array<number>(256).fill(0)
 	for (let y = y0; y < y0 + h; y++)
-		for (let x = x0; x < x0 + w; x++) {
-			const l = lumaOf(img, x, y)
-			lo = Math.min(lo, l)
-			hi = Math.max(hi, l)
+		for (let x = x0; x < x0 + w; x++) hist[Math.round(lumaOf(img, x, y))]++
+	const total = w * h
+	let sumAll = 0
+	for (let i = 0; i < 256; i++) sumAll += i * hist[i]
+	let mid = 0,
+		bestVar = -1,
+		countLo = 0,
+		sumLo = 0
+	for (let t = 0; t < 255; t++) {
+		countLo += hist[t]
+		sumLo += t * hist[t]
+		const countHi = total - countLo
+		if (!countLo || !countHi) continue
+		const diff = sumLo / countLo - (sumAll - sumLo) / countHi
+		const between = countLo * countHi * diff * diff
+		if (between > bestVar) {
+			bestVar = between
+			mid = t + 0.5
 		}
-	const mid = (lo + hi) / 2
+	}
+	let light = 0
 	for (let y = y0; y < y0 + h; y++)
 		for (let x = x0; x < x0 + w; x++) if (lumaOf(img, x, y) > mid) light++
 	const litIsLight = light * 2 < w * h
