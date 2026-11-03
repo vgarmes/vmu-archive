@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-03",
+		"title": "Browse by game",
+		"body": "The archive now opens on a grid of its games, searchable by their English or Japanese titles. Each game has its own page with its screens, a search within them, and notes on how they were extracted from the disc. Old links still work."
+	},
+	{
+		"date": "2026-11-03",
 		"title": "The rest of Sakura Taisen 3",
 		"body": "Everything else on the Sakura Taisen 3 disc: the power-on animation, the logo intros of the three Kajino Taisen minigames, the second crest and the strategy map, and the faces now blink. Their timing is a best guess until it's measured."
 	},
