@@ -1,0 +1,19 @@
+{
+	"title": "Nanako Shinohara face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001fff00037ff3e00ffc3db819ffdedc3fffeede67c1fffa5e7ffff7fdfffbdf8f8fab6dfcfea927fbfd29279f9c0003fffdf01bfffa0827be3804435c90f01b7dc1a82a3d60e0761c6000440c2000240e80002205400022054001c20540000206e00d84036001040070070800d8001001cc002007e700c01ff1e1e03ff83ffe"
+	],
+	"tags": [
+		"character",
+		"nanako-shinohara",
+		"face"
+	],
+	"hash": "08f05e1398d85f51f19142da52224e533f7722a3",
+	"added": "2026-11-03"
+}

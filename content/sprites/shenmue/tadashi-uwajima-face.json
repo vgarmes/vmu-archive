@@ -1,0 +1,19 @@
+{
+	"title": "Tadashi Uwajima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"355555546aaabeacd55ff3f4aae02d1cd5802508aa0ffff8d43ffffca8fc003ed1e0001e73df00fc271fd1f02f20e3103e002210260f81d0421b43b05b0082104b0702c84900020849004208240081082001c11018023e900604ff10070981a007027ea0050082200d803c203ec01840ee604070ab3838ec6d8e01d7aac3ff6b"
+	],
+	"tags": [
+		"character",
+		"tadashi-uwajima",
+		"face"
+	],
+	"hash": "13db6ecce3ba6e791c045c83e8f88eb5f23b3800",
+	"added": "2026-11-03"
+}

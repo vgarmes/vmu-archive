@@ -1,0 +1,19 @@
+{
+	"title": "Lu Tang Chen face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0eddbee00bfffdf00d001fb80e00077c060006fc040003ee040003de040001be080001f6080001ee0f03f0de09ce00fc0f87f0e419fe3fc217cdf8da1fcff8da1fcff8520f47f0140880002408880008090400700904064004f818400400004002fc0040028200c0023001400200026001000cf8070031cf3d80c380e37f0700"
+	],
+	"tags": [
+		"character",
+		"lu-tang-chen",
+		"face"
+	],
+	"hash": "03066cae58f05a280d4a1c04bb97e0c93ee54579",
+	"added": "2026-11-03"
+}

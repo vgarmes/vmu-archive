@@ -1,0 +1,19 @@
+{
+	"title": "Dog (brown) face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000f800001b07c000e6002003010018020000070400000385f0080046f0100020c00000308e0b87111d1003921e0783d2d80ec1530003c4a1000182c22380016247c009b2cfa229916fe0051167e117a0a2c19740be00de011f87bec01cffbf8019237e00192ed5103d7fa030357f40503bffa03035ff40502bfea2b"
+	],
+	"tags": [
+		"character",
+		"dog-brown",
+		"face"
+	],
+	"hash": "13d4aa3951e5acf98abb2a72058b53fa939ec168",
+	"added": "2026-11-03"
+}

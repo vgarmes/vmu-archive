@@ -1,0 +1,19 @@
+{
+	"title": "Kentaro Sekizaki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 33,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"3f9ffff03fbc1e2e1ff9f6fb1ed3fffecefbc007676b8001d37d80006db7800036bec0001b75c0000dbbe5c01ddbf0383bedf80631f5f87c0febec7b0ef5ea00043ce508c31e7903816f3c000087db000443ede001e1f5f80041fafc0200fcff00ecfef680007d76601e3e8318063f01c6001f00618017e018600b1c061c09000183fd80"
+	],
+	"tags": [
+		"character",
+		"kentaro-sekizaki",
+		"face"
+	],
+	"hash": "d6063d2cfe221a0fc129c72538956eaf253b73c7",
+	"added": "2026-11-03"
+}

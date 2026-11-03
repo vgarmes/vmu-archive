@@ -1,0 +1,19 @@
+{
+	"title": "Keizo Oishi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01aaca8003150540060002c0040005600c000aa008000570098382d00a183170180002b01383e17016c6b1f01c641d981be5eb880ac0f5680c4012680cc224a8098150c808800398088406b00dfe1ee006f3fdc005c175800290ab00037cab00024217800230afc007013af03d80f75ceac3eab755ffa76aaaff26aa55dc4d55"
+	],
+	"tags": [
+		"character",
+		"keizo-oishi",
+		"face"
+	],
+	"hash": "895165499d4290edf1970648634ce9983b672b45",
+	"added": "2026-11-03"
+}

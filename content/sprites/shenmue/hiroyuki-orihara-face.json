@@ -1,0 +1,19 @@
+{
+	"title": "Hiroyuki Orihara face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ffe0000ffff0003ffff8007fc3ec00ff00c401ff000201fe000203fe000103fe000107fc000107fcf40b07fd012107f8fe1f07f98331863f3dee859b6f3685c1192c8540821304007c0e0280010902400209011001f101e0000200e00412007003e200300004002800c40064000800d3000c0188c016030630378f018fe3f"
+	],
+	"tags": [
+		"character",
+		"hiroyuki-orihara",
+		"face"
+	],
+	"hash": "90358f8dac851194f949fe09f3550ce896b25dcd",
+	"added": "2026-11-03"
+}

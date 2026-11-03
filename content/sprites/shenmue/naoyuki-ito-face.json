@@ -1,0 +1,19 @@
+{
+	"title": "Naoyuki Ito face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01dffe000671bf800dae6dc00bffb6e01fffdb6016306ff03c201db02c100ff038000eb818000bf81b00f3f80fc3f9f8086601980be5f1c805c0e9e8084501a80840c0c808c0009008840020088000c0047c0080040001800466030002000780063c0ec00d181a6039807638f2c1e43fe37f8c3fc53e583fc481b03f8442607f"
+	],
+	"tags": [
+		"character",
+		"naoyuki-ito",
+		"face"
+	],
+	"hash": "a6b9da9ad88140c6d1f8c5450a400688ca2a1376",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Kiminari Misawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 33,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fff0000ffffe000fffff800fffffe00ffffff807bdbffc0752977f03000bc681000074c080001fe0f0038ff0440623f8218c01fc0f81f4fe04e23c310290a0124208000ba1080011508400104844400048221000240af20004041080040100401c009bc01c004000170013c01280080033700e00338f3d80738d6a7fe38d5a9fc78d5"
+	],
+	"tags": [
+		"character",
+		"kiminari-misawa",
+		"face"
+	],
+	"hash": "0fc49b3c36eb31f58378b3ed75dc5e62f2063d9e",
+	"added": "2026-11-03"
+}

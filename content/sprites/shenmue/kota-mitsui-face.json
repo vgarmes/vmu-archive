@@ -1,0 +1,19 @@
+{
+	"title": "Kota Mitsui face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ffe00007fff8001effdc00387f4e0077a22700fff9b380fbfffb81f76efdc1f6e77fc1ecc73fc3ecc33fe3dec7dfe3df6fdfe3c30c1fe1cc078ee1da0d4c60ae072b4020800a4022800a40210000802100070020c00e0021001c0010f01000100060000800b80036032e00e70e3783adfc32ef4cf062ff4c00c6ffa6038df"
+	],
+	"tags": [
+		"character",
+		"kota-mitsui",
+		"face"
+	],
+	"hash": "10a40e641fe37c92a9a2b858f6fed1e5647d190a",
+	"added": "2026-11-03"
+}

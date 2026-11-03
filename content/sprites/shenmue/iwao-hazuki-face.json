@@ -1,0 +1,19 @@
+{
+	"title": "Iwao Hazuki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"7ffffff557fffffdd7f0fffbdbe01ffeefc007ffffc703ffffc080f3ff000001fe0e0001ce1f82018401e10194007903b007fe4f90033c3ec080ecfac88004cce84008b4d8602088c8700088887c1c8888301088a8318d1028220490242400a02409fca0920a0240930038409380788049c001c041e003e020f003f0907c07f8"
+	],
+	"tags": [
+		"character",
+		"iwao-hazuki",
+		"face"
+	],
+	"hash": "2f906110d09bbdb434bf7847c2576253893acca9",
+	"added": "2026-11-03"
+}

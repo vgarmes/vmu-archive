@@ -1,0 +1,19 @@
+{
+	"title": "Shoichi Tezuka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0eaaaaa0155555502aaabeb0355ff3f06af02110578ffffc6c30000658fffffa33e0003c268000202d9700d03b00c1101d002210130781d02119c2e02d00001024084310241182d022001110102021100910611007009e90030104a0028400200e843f201a44c06037200070eb100c5cd58800eeaac600d7d563816aaab0fe75"
+	],
+	"tags": [
+		"character",
+		"shoichi-tezuka",
+		"face"
+	],
+	"hash": "b1552d975e817e2ee1b569d809a568e771af553e",
+	"added": "2026-11-03"
+}

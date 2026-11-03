@@ -1,0 +1,19 @@
+{
+	"title": "Eiji Tonomura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ffff001ffbb6803fbbb6803f776dc07f7fffc07f7800e07f6000607fc000207fc000207f8000207f8701a07f00e6207f002420660f81c0421343405a0004204a0004204a0002202000022020000220180022200c001c20040100400600f740020002401f007e8066803cc3c24000bc433001a0211c01a0218f032010e3fe4"
+	],
+	"tags": [
+		"character",
+		"eiji-tonomura",
+		"face"
+	],
+	"hash": "03b98f55079a46b0ecd03cc99557e2252dc1de49",
+	"added": "2026-11-03"
+}

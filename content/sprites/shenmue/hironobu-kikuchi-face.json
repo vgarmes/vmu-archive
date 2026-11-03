@@ -1,0 +1,19 @@
+{
+	"title": "Hironobu Kikuchi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007ffc0001ffff0003ffff8007ffe7c004ffc3e0043c03e0040003f0080003f0080001f0088100f0174278f017ebfcf00cc70cf00bc7f4c80d86c884104730b41645022410c482641146442408c748480881201004c38060057c408004ff008005818180057e8180024102c0023c04e0063808f81f8031fe7ec1e1fe7e7f83fe"
+	],
+	"tags": [
+		"character",
+		"hironobu-kikuchi",
+		"face"
+	],
+	"hash": "3b023b77c0de123ecc78755da712db9700d13865",
+	"added": "2026-11-03"
+}

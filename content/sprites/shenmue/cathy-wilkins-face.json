@@ -1,0 +1,19 @@
+{
+	"title": "Cathy Wilkins face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ffe0000e311000318ffc00467003009984908122024841441042421c52492248a4a9249108aab5111152b52522949a2a7f279aaa4088db5abe07dd64f90ea56d3c17c2ab0010c2a80008a4a00004a5300004a55c0038a3540000a356019941ab000180eb8073003ec006003b700e01e19e1dc701c7f43800e0e6000060020"
+	],
+	"tags": [
+		"character",
+		"cathy-wilkins",
+		"face"
+	],
+	"hash": "9471e95d3977b396dce7f381c805b101c07f0121",
+	"added": "2026-11-03"
+}

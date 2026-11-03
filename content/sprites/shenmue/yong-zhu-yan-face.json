@@ -1,0 +1,19 @@
+{
+	"title": "Yong Zhu Yan face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ffc0000ffff8003ffffe00ffffff01ffdfff01ff8fff83ff0fffc3fc07ffc3e001ffe780007fe700003fe6f83f3fe304409fe300005fe0f43e0fe164198ce108220b62c81c09621100014210800242304000822fc0010244200e0240100c02401018011fc0180100002c0087002e01c0004f0fe001dffdb00f9f7b9fff3ef"
+	],
+	"tags": [
+		"character",
+		"yong-zhu-yan",
+		"face"
+	],
+	"hash": "d3e0553412b511d590656f65d736ccf5a213a56f",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Kosaku Shirono face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffffc003dad76007bf7bf00feddeb00fffebf01bf83e301eb000101fe00008376000083ac000083fcf00682fdfd2f835b061083f0780e81f4dc17813384084250081142c070164240060842600c0c81001c0c808013f6807020428012200280180fb9803a800100dc23f1039641e38e93080acd99c2a67a88700e55cc1ffa6"
+	],
+	"tags": [
+		"character",
+		"kosaku-shirono",
+		"face"
+	],
+	"hash": "e80cdef31950f7a52b7e9df89f21c21568bf4729",
+	"added": "2026-11-03"
+}

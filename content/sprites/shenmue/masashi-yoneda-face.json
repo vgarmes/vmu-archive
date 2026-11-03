@@ -1,0 +1,19 @@
+{
+	"title": "Masashi Yoneda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff8003d555e006aaaab00d5555580aaaaaa81d5555581aaaaaac3ffffffc2aaaaa943ffffffc2aaaaa942aabfffc1ffe1988238c0f0c59fff9fc540ff9fc5c07f0f8580000444c00084420401028102050280c1f0fc8020000100200001003003fd0068000a01e400f30ff30003eff1c007fff87ffdfffc1ff9ffff000bf"
+	],
+	"tags": [
+		"character",
+		"masashi-yoneda",
+		"face"
+	],
+	"hash": "b34b359711f03722e1b33683493641abeeb79b33",
+	"added": "2026-11-03"
+}

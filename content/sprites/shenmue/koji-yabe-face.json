@@ -1,0 +1,19 @@
+{
+	"title": "Koji Yabe face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007ffff001ff2e9803fdfbec07fbfff60fffc8fa0ff7085a1ff6104e1ffe000e1ffc00063fed000a3febe03c3ff878743fd808843ff3c01c3ff270f43db0f0bc3ab000823b200042792800427c0808227e0408227f83c7d47fc0800c7fc08ec8ffe09008ffa00090ffb00710ff180010ff0c0010fe060038e703806703807fc0"
+	],
+	"tags": [
+		"character",
+		"koji-yabe",
+		"face"
+	],
+	"hash": "939e165592d246ecff972a646e4f298484eb2b45",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Ryozo Yada face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"060000400c000020180000101000001030000008207cbb6827fd9b783f80000c7800000460000002407ffffe47ff94fc5f8fc1f0730063102d5f93f02989c2d02d4703302510b110311761d01b2840b00f8071900b41ff3005f71df007aefed007fd817002d77ef007df81a01d75fff8f1bdb6ee20dfffeb206edb481037ff90"
+	],
+	"tags": [
+		"character",
+		"ryozo-yada",
+		"face"
+	],
+	"hash": "417f7372679075e8f34b07b96c8905db76d02493",
+	"added": "2026-11-03"
+}

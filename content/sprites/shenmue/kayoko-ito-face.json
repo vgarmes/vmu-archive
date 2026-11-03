@@ -1,0 +1,19 @@
+{
+	"title": "Kayoko Ito face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000003f7e0000ffff8003fffec0077fff600cfefb3009e3fe70198ffff8183f03f83c7c00f83ff0003c3fe0003c7fc7019c7f98825c7fa0001c7f0f01dc7f1d82f8772f83b873870198398004183e000c101f8000100780642001c00020006030400038018001ee03c00f4b87783ac4fd2e55420235aae1fc2ad5704875"
+	],
+	"tags": [
+		"character",
+		"kayoko-ito",
+		"face"
+	],
+	"hash": "a1e109277f59c8152819be68fc9d771e5c46cd45",
+	"added": "2026-11-03"
+}

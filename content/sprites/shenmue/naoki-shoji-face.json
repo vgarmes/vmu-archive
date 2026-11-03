@@ -1,0 +1,19 @@
+{
+	"title": "Naoki Shoji face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ff80000600700018000c00200002004000010040c0010080c0008083f000817bf7f041f8c7fe41c0c00fc3000001e27ffff023ffffffe1c0001fe0fe0f9cc05d0ecd4041000d4081000f4082000e4082100c8044080f0043f00c0040000800237018002000180010e02c0018004e003c008f81fe071e7ebbfe1e4139f83c4"
+	],
+	"tags": [
+		"character",
+		"naoki-shoji",
+		"face"
+	],
+	"hash": "04defec3e5aac57147ecaa645ef93e03125507f6",
+	"added": "2026-11-03"
+}

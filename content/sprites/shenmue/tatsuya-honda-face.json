@@ -1,0 +1,19 @@
+{
+	"title": "Tatsuya Honda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03664de0075ad6f007664ef8077ad6f81ffffefc60000afc9ffffefc7e000f7c3c0003bc1e001fdc0980e1ec08c301fc0f40f0f40d8138c80bc07084084000b4104002241080042410800044111000081108009008f000e0080001c004dd01400401027004820258047804ec0a2008d7360011abeb0063555681c6abae7f0d55"
+	],
+	"tags": [
+		"character",
+		"tatsuya-honda",
+		"face"
+	],
+	"hash": "ea4b4123bf8f16ca71fd47e9b7f672edd41668a0",
+	"added": "2026-11-03"
+}

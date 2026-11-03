@@ -1,0 +1,19 @@
+{
+	"title": "Norihiko Kazuhara face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffc00003aff80002ab3e0007aef38007ffefc005fc7fc005521ee005490de008490f20084004f00f07e7f01f8ff39010881270108423f00f97e3f80d138188110001241100057421200844221000682210004821e000102000002021b000c0120c018011f003801004038008f016f00a024cc81c013984368ae307e3ff860f"
+	],
+	"tags": [
+		"character",
+		"norihiko-kazuhara",
+		"face"
+	],
+	"hash": "6e8e8b2cbb10a2d8fcab5fd117c6d62fd23598be",
+	"added": "2026-11-03"
+}

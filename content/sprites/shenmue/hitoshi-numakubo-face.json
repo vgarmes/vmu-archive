@@ -1,0 +1,19 @@
+{
+	"title": "Hitoshi Numakubo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0007f800007d560001eaab80035d55c006aaaaa00d5d55e01aaaaab0155d55d02abffff0356aaab02ad5555c37fffffa2fe780df3fd8413e3fc000103387c1d02d818390258002102480011014801110128020900880209006801f100340001003403b1002c0402006601e203a300c40c5180070050f00ac0283dda30140ff40"
+	],
+	"tags": [
+		"character",
+		"hitoshi-numakubo",
+		"face"
+	],
+	"hash": "d2e5b703a8a0bdbc7db750f3ff68f8c5d8dbb4e9",
+	"added": "2026-11-03"
+}

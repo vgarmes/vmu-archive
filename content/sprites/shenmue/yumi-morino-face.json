@@ -1,0 +1,19 @@
+{
+	"title": "Yumi Morino face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07fffff81ffffffc1ffffffe3ff7fffe3fef1ffe7fdc07ff7ff803ff7fb0037ffffc037fff83077ffffc865fff2e0cdfff7e1e9fff3c019eff000e5efe000b3efe000fbcfe0006bcfe00007cfe0020ecff0800e8ff0301d8fe8041d0f68603d0aa4007c056601fc0aa30ffc0553febc0ab1fb57055873adcaac0156f55601ad5"
+	],
+	"tags": [
+		"character",
+		"yumi-morino",
+		"face"
+	],
+	"hash": "7ac52736dd4212aa1840dc57c4dd6dec1e75d59a",
+	"added": "2026-11-03"
+}

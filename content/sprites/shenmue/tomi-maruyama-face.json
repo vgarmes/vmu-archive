@@ -1,0 +1,19 @@
+{
+	"title": "Tomi Maruyama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ffc0000e00380030000600400001008ff008813ffe0481700f8242c001c1428000e123000070a3783f38a284409c9200001c91701e0e91b82f0f11300ecc8288220b42681c8142108045422040064211e000922f14011224120621200a04411fca09c0880a1e2087002d10400056f040019301b00722fe5ffe44024ff8880"
+	],
+	"tags": [
+		"character",
+		"tomi-maruyama",
+		"face"
+	],
+	"hash": "aed66c0936149d80a7163de695021a41c8e9b75d",
+	"added": "2026-11-03"
+}

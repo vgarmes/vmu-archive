@@ -1,0 +1,19 @@
+{
+	"title": "Mario Grianni face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"052108a0052108a0052108a0052108a0057fe89005801e900600019004000050040000300400001004ffe01007001c100400031005c1f1d0062209f005c0f1f00ba1db900c2005a809c0e1a8108000c81101009011010020108e004011ff80400bd7c0e00a0020d004410190063e03381a9c2667eb803cc009e0f1800cffa300"
+	],
+	"tags": [
+		"character",
+		"mario-grianni",
+		"face"
+	],
+	"hash": "3d6c8328345173c49f2be3656ba7a336cfdb5902",
+	"added": "2026-11-03"
+}

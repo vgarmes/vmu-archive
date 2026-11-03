@@ -1,0 +1,19 @@
+{
+	"title": "Haru Hirata face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"002d9f0000db79c001fff7e001803e7002000df00261c398050c1378040001ec040000bc09e1f0fc081200cc0fe1f8740833047c15dee26417a3dbc215e2f25a082104120fc0f8220841000408230038085c8068048843d0040018b002a121e0029e03e001400580030c0940068031201cc0e33868bf8616d8de1c1ba860f015"
+	],
+	"tags": [
+		"character",
+		"haru-hirata",
+		"face"
+	],
+	"hash": "32d57bf6c1bfb44cea386f456d33636690a768df",
+	"added": "2026-11-03"
+}

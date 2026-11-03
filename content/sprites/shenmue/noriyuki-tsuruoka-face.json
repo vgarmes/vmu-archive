@@ -1,0 +1,19 @@
+{
+	"title": "Noriyuki Tsuruoka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ff800007b6e0000adb580015000400367ffa0069d86d00b3303500a6201680ce201281dc0023819ce00d81bdf01f817a083181f804408131f85e8211346d8290783c82d000208260001082400410832003e08180000080d0055080700809001803e100180411003c01c2006e008701d7808d8eaae09ec0553ff7702a87cea"
+	],
+	"tags": [
+		"character",
+		"noriyuki-tsuruoka",
+		"face"
+	],
+	"hash": "ce85538acfefbdf819a252748ddcd965c1f0f3de",
+	"added": "2026-11-03"
+}

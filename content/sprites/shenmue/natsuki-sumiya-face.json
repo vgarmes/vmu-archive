@@ -1,0 +1,19 @@
+{
+	"title": "Natsuki Sumiya face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0007f80001ffff0007ffffc01fffffe01ffffff03f8bfff03e0dbff87c05fff87c02dffc78006dfc78003efcf0000f7edf03e7beb08413fee779effeedcafbfff3c9c97ff08808bf708410bf7f03e13f6102043f6187087f26fce1fe323041fe120043fc08ee83fc084007f804300bf0020012e0010064f00fc3989e7b3e2123"
+	],
+	"tags": [
+		"character",
+		"natsuki-sumiya",
+		"face"
+	],
+	"hash": "1455ee532f89f72055ed7cc53c59a3a74c0c5706",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Hideki Tajima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ffc0000ffff0001ffff8001ffff8003ffcfc003ff87c007ff87e007ffffe007f0006007c000201f4f03a07e918660fd00c4200e8f03a01116874014800440160008201200042008004420040038200300002000807840004084400040008000d00100034803800e470fe03223fd58c210f146010c06410083f88000400100"
+	],
+	"tags": [
+		"character",
+		"hideki-tajima",
+		"face"
+	],
+	"hash": "e49966f977714e306bc974bf985fc4360721159f",
+	"added": "2026-11-03"
+}

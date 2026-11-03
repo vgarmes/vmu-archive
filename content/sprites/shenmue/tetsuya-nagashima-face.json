@@ -1,0 +1,19 @@
+{
+	"title": "Tetsuya Nagashima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffe0000fb7f8001d6efe003b6dff003b6dff803db6ffc02fffffc03ffe1fe019f80ef018e00f7008000fb010000ef81601c778110607f8168dc7381b8722180b0b42d8088000980a8300b8110001301108007011f003e0100003e0120407c009fe07b038000e70fcf00cf0fc6019f07a0037f07a0077f03d01e7f83effcffe"
+	],
+	"tags": [
+		"character",
+		"tetsuya-nagashima",
+		"face"
+	],
+	"hash": "a514a2be85a6800f956d91007581522a9e5cf15b",
+	"added": "2026-11-03"
+}

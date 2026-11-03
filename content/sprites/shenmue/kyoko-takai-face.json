@@ -1,0 +1,19 @@
+{
+	"title": "Kyoko Takai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff0003ffffc007ffffe00ffffff01ffffb301feffc181fcf9e183f4e8fbc3f4487fc3d4487fc354203fc3d20f3fc330303fc108401fc1701e19c1f83d1080b81c1680880002810800048110000101100002010e000c0080200c008bc02c0044004c0023809c0010011600180637002c1c6df1eff8dadeb7e3b5655b0e6ad"
+	],
+	"tags": [
+		"character",
+		"kyoko-takai",
+		"face"
+	],
+	"hash": "b97262f24671c5cce46506328486008454d17556",
+	"added": "2026-11-03"
+}

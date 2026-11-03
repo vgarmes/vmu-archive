@@ -1,0 +1,19 @@
+{
+	"title": "Yuka Komine face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0003e000003ffc0000ffff0001ffff8003f801c007e000600fc7ff200f8e01b01fb000701f6000381f4703b81fc884581f8000181f8000183f8f01983d9d82d83caf03903e8b03b03a8601303c0000107f0000107f8018107f8024307fc000307fe000707ff801f07ffe03f87f7b86f87aa87b58756001ac6ab00354755c06ac"
+	],
+	"tags": [
+		"character",
+		"yuka-komine",
+		"face"
+	],
+	"hash": "100ab36d7cb3c1764be0a435cd09593f8b02c66e",
+	"added": "2026-11-03"
+}

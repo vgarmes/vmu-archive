@@ -1,0 +1,19 @@
+{
+	"title": "Akihisa Shigematsu face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00edbe0003db77e006b6ef7006b6edf807db7ff807efe3d8027f81bc041c01f4040003ec040001bc080001ec080000b8080000f80b01e8c808c700840981c0b40ec2f82404000024094088440a40400808800090088600e0048500c00478818004000180023c0280024304e0013008d0070011a81b8063547681c6abae7f0d55"
+	],
+	"tags": [
+		"character",
+		"akihisa-shigematsu",
+		"face"
+	],
+	"hash": "4e107127c1228379a7d7f22b87aa8ca1906d9efb",
+	"added": "2026-11-03"
+}

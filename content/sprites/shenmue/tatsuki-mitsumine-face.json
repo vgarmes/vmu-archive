@@ -1,0 +1,19 @@
+{
+	"title": "Tatsuki Mitsumine face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01eaab000355558006aaaa8007deabc00d43ab601a806a2015001c302a800010350000102a000010350000102a000010350312503e0fd2f0621033104903c1d05c0421304401c1c84c0011084400208820002088100011100c000e100800001008003b100c004110160082a033003e20e9c00070567000dca99fff6b5463fe55"
+	],
+	"tags": [
+		"character",
+		"tatsuki-mitsumine",
+		"face"
+	],
+	"hash": "039eba861d263c70af11ed65b35d4c6617f5426c",
+	"added": "2026-11-03"
+}

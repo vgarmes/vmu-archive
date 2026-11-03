@@ -1,0 +1,19 @@
+{
+	"title": "Yohei Kondo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffff8007ffffe00ffffff01ffffff81ffffffc3fdbfffc3f5abffe7f5abffe7d6adffe7d2b57ff7fa7f5ff74951dff740006ff7701e2ff3b82fcff108000ff1680e0ff108000df108000bf1108005f1104005f10f8001f1000003e080000fe08de00f4080001f4040001600478027002000cfc070039d73f80e3aaf5ffc755"
+	],
+	"tags": [
+		"character",
+		"yohei-kondo",
+		"face"
+	],
+	"hash": "4ef6d8bcd8748daff74d7173cfda8e29a75d798b",
+	"added": "2026-11-03"
+}

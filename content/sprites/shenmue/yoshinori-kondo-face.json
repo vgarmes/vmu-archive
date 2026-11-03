@@ -1,0 +1,19 @@
+{
+	"title": "Yoshinori Kondo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"06dbef400db68a2018bfd5e01ae1ff3017c0b0103fc0001039c00008378000083f80000839000008372108883f1faa783f20e388260f81e8420b43a858008308480102884800020824004208200081101000c1100e003e100600ff100401819005027ea0048082200cc03c2036601840d7304070ab9c38bc95ef0377daf3feeb"
+	],
+	"tags": [
+		"character",
+		"yoshinori-kondo",
+		"face"
+	],
+	"hash": "dbc0888b3f11d3b768cc855a545a40f46c6540fe",
+	"added": "2026-11-03"
+}

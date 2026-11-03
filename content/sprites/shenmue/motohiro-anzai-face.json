@@ -1,0 +1,19 @@
+{
+	"title": "Motohiro Anzai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"019b2d0006edb5800d7ed7c01ac3fc60158000302b000030350000106b000010578000086d40000856cfd1e87b40630866802208438fc1e85a9623904b004208491c8368490003082400010820002110180041100e0071100b001e100d00001007803710068042203ec01c202e6008707730007cdb9c00d66dc701aab6e1fff4"
+	],
+	"tags": [
+		"character",
+		"motohiro-anzai",
+		"face"
+	],
+	"hash": "06da2c79213fa24f371a38d49bbb04a157b1076e",
+	"added": "2026-11-03"
+}

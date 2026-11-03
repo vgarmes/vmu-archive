@@ -1,0 +1,19 @@
+{
+	"title": "Manabu Takimoto face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff00001fffe000e9e4f801dedfbc01e7bfde03b80cfe0370036f03e001bf02e001ef87c000ff85c000778580007f87b81e7f86fc3fbb86c4209b87bc1e1f83da0d1f8282001d8286000d80860009808400038084400f8083801f8040001e8046e03e0020007e002180fc007001ac019803230e9c0e60f11bf8c0810de1810"
+	],
+	"tags": [
+		"character",
+		"manabu-takimoto",
+		"face"
+	],
+	"hash": "df2818675089f2a095211c0a6651742f0414560d",
+	"added": "2026-11-03"
+}

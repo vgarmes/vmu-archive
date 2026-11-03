@@ -1,0 +1,19 @@
+{
+	"title": "Ryo Hazuki (Childhood) face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00dffc0002bfff8003b7ffe00ab77ff00edb7ff80b7fbff80be4fffc0d402ffc0e000ffe0e0007fe0c0007fe0c0003fe07001ffe04c271fe05e1f9ce06c03d8604c039b604c03924041000240430000804200030041000e0020000c0021e01a001000310008c079801401d880220788e067fe0891cdf8118748e0230c4f0fc60"
+	],
+	"tags": [
+		"character",
+		"ryo-hazuki-childhood",
+		"face"
+	],
+	"hash": "f8353ac1e390f0d55cb636f9cef12384d39f036a",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Yoshio Yamagata face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff00035555c00eaaaaa0155555502aaabeb0555ff3d0aaf02170d7802130ac0ffff8f0fffffe43f000104f87e0f07f18311047000010b203e0f0a80ce170b8000110b000008898001088c08020486040a048383e1f880c0000100c0000101e007f903e0001206f001e20d7c00078abb800d6d5cfffebaae3ff555570016a"
+	],
+	"tags": [
+		"character",
+		"yoshio-yamagata",
+		"face"
+	],
+	"hash": "dfadaee92db4f1ad6be2329ec1a05156a9b789ac",
+	"added": "2026-11-03"
+}

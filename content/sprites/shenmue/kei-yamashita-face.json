@@ -1,0 +1,19 @@
+{
+	"title": "Kei Yamashita face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01bdb60007ffff800eeeeec01ffff5c01f43bf2035806a203e801c102f8000103d000010370000102d0000103f305090370602303f01d2d063103310490fc1f05c0301b0440021104c01d1d04400209020002090100011100c000e100400001004003b100200411005001e203d800c20f0c00070f870005cfc3e01dfff07ffbf"
+	],
+	"tags": [
+		"character",
+		"kei-yamashita",
+		"face"
+	],
+	"hash": "ede39d87cdd94818e7647ca7e9d6474c0d45d75c",
+	"added": "2026-11-03"
+}

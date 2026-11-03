@@ -1,0 +1,19 @@
+{
+	"title": "Yasuo Ito face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000007ffc0001ffff00073fffc00e7ffee01c2ffc601d44f5703bcfffb03fffbff83fffbff83fff2ff87ff646f87fe402f87fde07787fa000b07f9e0730733b0db02d4e07602500106025001820100008200c003020030108400080f0400060008001f00100075c06c01ec70e7074c3ff5cd460f72ab630066d5b1c0cda"
+	],
+	"tags": [
+		"character",
+		"yasuo-ito",
+		"face"
+	],
+	"hash": "e48f1d8ae335bcb0cef95fd65f71a01eaf4c83d2",
+	"added": "2026-11-03"
+}

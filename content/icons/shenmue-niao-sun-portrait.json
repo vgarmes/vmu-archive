@@ -1,0 +1,19 @@
+{
+	"title": "Niao Sun portrait",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003fffffffff007fffffffff00fffdf7ffff01fffde3ffff01fff9e1ffff03fff9c1ffff03ffd9c1bfff02ffccc0bfff04ffe2e09fff04ffdc609fff04ff87613dff04ff83b03dff047f7ed87bff027f2d04e6ff025f8f8101ff003f970001ff03ffc00003ff0fffc00007ff19ffc0084ffd33ffe10c3ffd27fffe0003fb4ffffc0007f70f7ff0804bff0ffff86f87ff1f7ffc1e060f1f7fce000bf31fbf9f8013f91fffbfc063f9ffc7bfe0c3f9f803ffff81fbf803ffbf007b7c01ff7c0017"
+	],
+	"tags": [
+		"character",
+		"niao-sun",
+		"portrait"
+	],
+	"hash": "b8bbb11a3d9f2d0c6add410514c7380111d4ff06",
+	"added": "2026-11-03"
+}

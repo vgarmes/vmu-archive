@@ -1,0 +1,19 @@
+{
+	"title": "Wang Guang Ji face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007bfc0001ffff0007f53fc01fefcfe03afff6f037c07b706f001db87e000df86c0007b87c0005f8780003f87b81f3f02fc3fdf01866079813fdf30815e56b68186205a80fc1f8c81001009010420020103c04c00a5b198008808180043e034002000740061c0f400b001a6039aa7458c9ddc88704ff30800440c10002210600"
+	],
+	"tags": [
+		"character",
+		"wang-guang-ji",
+		"face"
+	],
+	"hash": "04d938394d56bd807a13911e508f21692afac94a",
+	"added": "2026-11-03"
+}

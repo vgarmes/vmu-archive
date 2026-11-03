@@ -1,0 +1,19 @@
+{
+	"title": "Genzo Todaka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff80001c06e0002001b80040005400800c2a018002160100009b02c4744f0200020b020000ad02e0f81703b1ac490211020f02e0704c8150a8884110012b4190404242603c0242210004822080008273c001014e604e01801c8c0120081400bfe00400800024004f004c004000cb00200199c0600731f1d81c63ffcff0c7f"
+	],
+	"tags": [
+		"character",
+		"genzo-todaka",
+		"face"
+	],
+	"hash": "d627011132bd0769f0ac16a2f9c3d1689f174aab",
+	"added": "2026-11-03"
+}

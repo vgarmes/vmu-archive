@@ -1,0 +1,19 @@
+{
+	"title": "Shinobu Mita face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00d56b8001aab56001555ab002aaad5803555aa806aaad5407fffeac1d5555566aaaaaaaffffffd6fe03e3fa790419fe080000fe0f03e07e0685b0621703c04d11000055110000151218001d1204000911f90012084000040800001809de00200400002004000020067800a00e0003383b001c2febfff05a5affc0b5ad00036a"
+	],
+	"tags": [
+		"character",
+		"shinobu-mita",
+		"face"
+	],
+	"hash": "d64ae71ecdcce3d00a447a9ddda2f679856113e3",
+	"added": "2026-11-03"
+}

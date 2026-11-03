@@ -1,0 +1,19 @@
+{
+	"title": "Takeo Narumi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffffc003ffffe00ffffff00ffffff81ec36ffc1c8127fc348123fc288121fc288101fc2e001cfc0980e0fc086304e407c0fcc205e174da0860809a09a070ba084000320840002408400004084000180844003004380060040000e0047700c002200140023e0140021c0260070006783e800c7ffec038fffe7fe1ffff3fc7ff"
+	],
+	"tags": [
+		"character",
+		"takeo-narumi",
+		"face"
+	],
+	"hash": "053bc64a8a221a4a009cd8931fb94525082e18f9",
+	"added": "2026-11-03"
+}

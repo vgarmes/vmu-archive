@@ -1,0 +1,19 @@
+{
+	"title": "Akimichi Kunieda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"045edb680bdadb6c08eab77c1e6dfeec117701dc1ea00038136000383d60001026a000103ac000103d400008238b00681da0aa982280e9902907c3d02d002210240022082640020812200108101001080800211006001f10030000100380002002801e2002c0212006601e401e300c78ff1800bf178e00b217c3813913f0fe79"
+	],
+	"tags": [
+		"character",
+		"akimichi-kunieda",
+		"face"
+	],
+	"hash": "b3235417445bea37d1578e91b31cc4f21739f768",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Yoshie Aoi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fe00001801c000600038008000060107e00101000600817ff10082888e1043008388430101c5220000e4a2c07072a3e0fc7a6211023d62e0793f6370bc3322f07a21a2100025a2f1340de2208109e220c083c23f60078248201d0240103a0159c82c01000852008610e20040037a00200eec00583cd603bff1abcd4fc756b"
+	],
+	"tags": [
+		"character",
+		"yoshie-aoi",
+		"face"
+	],
+	"hash": "91092a599756c41dd68dd6c05be0de02ebfbf841",
+	"added": "2026-11-03"
+}

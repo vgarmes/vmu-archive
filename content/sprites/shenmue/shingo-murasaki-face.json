@@ -1,0 +1,19 @@
+{
+	"title": "Shingo Murasaki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffffe003fffff807fffffc07fffffe0ffff03e0ffb801f1ff70fcf1fee70373fd9800f3fb600073fed800b3fdbe01f71fc393370e3f57e76e1785af5400042f1400041f2400021f9000021fc000321ff900413ffce0617fcc001e7fb400007fb400767f7200009ef1803ce2f8c001fdf87001fdfc3801fbfe0e03fbff01fff"
+	],
+	"tags": [
+		"character",
+		"shingo-murasaki",
+		"face"
+	],
+	"hash": "98cad137f849f8a3f3610135fbebc9094ca91b60",
+	"added": "2026-11-03"
+}

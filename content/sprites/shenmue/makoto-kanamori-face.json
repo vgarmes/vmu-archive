@@ -1,0 +1,19 @@
+{
+	"title": "Makoto Kanamori face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003fff0001ffffc003fffff0040007f8040003f8080001fc080001fc100001fe1c0039fe1600e4fe134b80fe14ce107e1748f03e1583c8320a4810390981e02d1080000d110800091104001a11fc00020800000408de00780901807004000060047c00e0063001b00e00033c3f000e7ffd807c7ffcfff0fff83fc1fff80003ff"
+	],
+	"tags": [
+		"character",
+		"makoto-kanamori",
+		"face"
+	],
+	"hash": "871529708cf9947af3702e6700e47780aeac9d46",
+	"added": "2026-11-03"
+}

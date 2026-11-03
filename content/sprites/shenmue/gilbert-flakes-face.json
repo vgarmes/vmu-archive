@@ -1,0 +1,19 @@
+{
+	"title": "Gilbert Flakes face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007ffe0001d6ab8002d6ab4006d6ab600556aaa00f6ad6f009aad5900e0000700c0000300a0000500c0000300a0000500df81fb00bfc3fd00e06607014fa5f28295c3a942cf42f342c00003414042028140420280808101006166860050180a0020000400297e940070000e00d83c1b038d18b1cf0ea570ff875ae1ffc3ffc3f"
+	],
+	"tags": [
+		"character",
+		"gilbert-flakes",
+		"face"
+	],
+	"hash": "c22cd01793917e75745468f1ec23fb8dde320315",
+	"added": "2026-11-03"
+}

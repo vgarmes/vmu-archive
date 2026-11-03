@@ -1,0 +1,19 @@
+{
+	"title": "Seiya Kumagai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000001ffc00007fff0001ffffc003ffffe007fffff007fffff00ffffbf80fffdb780ffe00381ff800181ff000081fe000081fc3c0e809c021081083c0e8168581c812000008120001080800008804000088030003080080000800401a1000c0001001a00c20079000403bcc00e07de701f8fef1ff7eff787cff"
+	],
+	"tags": [
+		"character",
+		"seiya-kumagai",
+		"face"
+	],
+	"hash": "cfbb80d5e70a75cf4409fb6b0101ff3934a7cdef",
+	"added": "2026-11-03"
+}

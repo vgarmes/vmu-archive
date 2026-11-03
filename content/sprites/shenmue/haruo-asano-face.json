@@ -1,0 +1,19 @@
+{
+	"title": "Haruo Asano face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff80000d5560001aaab80035555c006babb40055555e00aaaaaa00d755d500ffffaf03aaaaf58555555a8aaaaabd87fffffe8f707e7f8198c17f81707c718138302c8088442c8110002481100009012180010120c002011f600c00801018009bc0180080202e004e002b0044004d81c0019af6a006156d70382adadfe0556"
+	],
+	"tags": [
+		"character",
+		"haruo-asano",
+		"face"
+	],
+	"hash": "9f7381c2fae5fc5de41cfbc96592f7008a1787fd",
+	"added": "2026-11-03"
+}

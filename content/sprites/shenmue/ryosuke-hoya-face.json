@@ -1,0 +1,19 @@
+{
+	"title": "Ryosuke Hoya face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0aaaaaa0155555582aaaaaac357d55562fcffaab38b4075510a401ab1ffff0553ffffc2b7c003f157800078b3f00fbce180005e4100000f41381f0fc1500c8cc104000841040003410800074108400240884004808780010080000a0090080c004ff00a00400012004000130023c0278060004ec1f0019d6758063abeaff8f55"
+	],
+	"tags": [
+		"character",
+		"ryosuke-hoya",
+		"face"
+	],
+	"hash": "db33aa2fba3b57cdcb6cec27cc69da566527f786",
+	"added": "2026-11-03"
+}

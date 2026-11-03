@@ -1,0 +1,19 @@
+{
+	"title": "Mayumi Mishima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0a08893012444498304222882222224c22211c446911ff86490e07e248b03ff24440c1fb54813eff510177ff4a005eff6ae05c7f2580007f3560007f16d0003f1ef0003f0ea8003f0700003f0384403f0383983f03c0207f03c1805f01e010ff01f041de01fc03dc01ff079a01fdfe1401f4f84403e6008c0ec206183aa30070"
+	],
+	"tags": [
+		"character",
+		"mayumi-mishima",
+		"face"
+	],
+	"hash": "fcb72f00d6baaa18a6e37562686a2dc470bf2b2f",
+	"added": "2026-11-03"
+}

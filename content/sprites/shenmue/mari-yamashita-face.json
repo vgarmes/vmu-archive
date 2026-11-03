@@ -1,0 +1,19 @@
+{
+	"title": "Mari Yamashita face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03f6ff800d6f97e01add7ff01edbe5782d24dfdc380036f470001fbe60000bee600006fe400007b73c07f2df220c037b411001ef5d07e2bf360db1f72d0741df230001fb4100016f420001ef420001ab41c003af600003af61b007ab73cc07af51000f6b58f01f6b54003ffa4600eeba1d83880e62fe141691f0200341805005"
+	],
+	"tags": [
+		"character",
+		"mari-yamashita",
+		"face"
+	],
+	"hash": "de6005908b0f5a058b67d3071f8da45d5ce1b6a4",
+	"added": "2026-11-03"
+}

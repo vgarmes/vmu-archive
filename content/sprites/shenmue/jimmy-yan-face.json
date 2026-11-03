@@ -1,0 +1,19 @@
+{
+	"title": "Jimmy Yan face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007ffe0001ffff8003ffffc007ffffe007ffffe00ffffff00ff7fff01ff7fff81fe7fff81f67bffc1c0003fc1b80f9fc18c381fe184201be0be7f91e0ea69d5e0a4130dc084000dc08820158088101380dc70370077f8de00210fbc002802300027fa70007000d800f382de01b7e39b8378071bef6c1e37d737f86bef9be1d7d"
+	],
+	"tags": [
+		"character",
+		"jimmy-yan",
+		"face"
+	],
+	"hash": "5c1e0c199685c34f2ccd2680b209ee7a255333b2",
+	"added": "2026-11-03"
+}

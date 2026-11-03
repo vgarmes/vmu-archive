@@ -1,0 +1,19 @@
+{
+	"title": "Katsutoshi Busujima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00fffe0003ffff8007ffffe007fffff00fddfff00f557ff81d555ff81d151ff8180017fc1e03e3fc198c01fc170780fc0d8cc0fc09e9dfe40f8fc0da070780ca0908005a0a0400121204002411f9000c110100381200807810780070108600f8090100e4187801a22400036244000662c2001cc2c300f182c2ffc306e17f0e0e"
+	],
+	"tags": [
+		"character",
+		"katsutoshi-busujima",
+		"face"
+	],
+	"hash": "e3ead9a7c400983f6f57fdbd33d92c53e2ce8c61",
+	"added": "2026-11-03"
+}

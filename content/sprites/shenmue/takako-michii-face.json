@@ -1,0 +1,19 @@
+{
+	"title": "Takako Michii face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00fffe0007ffffc01fffffe03eff7ff03bff9ff87e03efd86c01f3c87800f81cd8007e1cf0003ffcb0001ffeaf07dffef0002ffeee039ffeff07effe6b82dffe76818ffe70800ffe61800ffe61000ffe61000ffe60c00ffe50000ffe50d80ffe584417fe9c3017fa1e0037fa1b00ebfd33839bfd65ff31ee197c60f3e081c03c"
+	],
+	"tags": [
+		"character",
+		"takako-michii",
+		"face"
+	],
+	"hash": "fa6c6ad5b5eb2c58a1f852db39f07cd63c5733bd",
+	"added": "2026-11-03"
+}

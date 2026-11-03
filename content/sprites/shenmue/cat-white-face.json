@@ -1,0 +1,19 @@
+{
+	"title": "Cat (white) face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"1e00000033000000258000002ec000002d4000002a60003e2d2780e32e9873892f000e552f4004a926000155240002ad300005fd200003f9300000792000013323a000222ec0000a27c0e0026fc1b4225b83fa02e607f8063804f0926688052af8f03f962ef0c1cc39e37e6c2ef1c7bc663c79d84302bef8c5a5d7788affabb8"
+	],
+	"tags": [
+		"character",
+		"cat-white",
+		"face"
+	],
+	"hash": "97d60e13ee6d06ab4cead92c03018df7d77a74ac",
+	"added": "2026-11-03"
+}

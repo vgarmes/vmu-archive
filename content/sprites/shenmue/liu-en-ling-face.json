@@ -1,0 +1,19 @@
+{
+	"title": "Liu En Ling face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff00000ff3e0003c7ef00079c77800e7fde401bffe9c01f81f7e03c002fb038001fd078000ed878000f687603c768310407b8300007b81703c3f81e8733981703a108280011682681c04821002048210400101198003012f100e0104081d0098e8378080006d804700fd002001ae0030037000680efc01f639e78733e7c0f"
+	],
+	"tags": [
+		"character",
+		"liu-en-ling",
+		"face"
+	],
+	"hash": "23b16b8398804d5f2212c4bf96cec6506425f902",
+	"added": "2026-11-03"
+}

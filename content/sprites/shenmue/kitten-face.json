@@ -1,0 +1,19 @@
+{
+	"title": "Kitten face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"1e00000033000000258000002ec000002f4000002f60003e2fb000e33fbf83992d95fe7d3a9b34fd2d36d9fd3ab5b2bd342b655d282ac8bb62b5905b542900b7cb9ab027a6d4040d8bc8f217c7c1b94ba181f43ec443f516a200e88ad488005668e0a02efa704114b4c420bcbfe086d4eebc03787f002d58d7a157f0fdffffe0"
+	],
+	"tags": [
+		"character",
+		"kitten",
+		"face"
+	],
+	"hash": "cfb86fe128287404e7f6e7a48fb57ca079df118e",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Sadam Daei face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"02aab56007555ab006aaad580d555aa80eaaad541ffffaac60001f569fffe3aafffffcd63800073a1787f1ce09ce0cfe0f4bf0fe0e83c862088000491380e05d1100005513080019120400191204001211f8000208f800040904001808df006009000060090100a004fc01381c38022ff6000c241300304c12ffc09809000330"
+	],
+	"tags": [
+		"character",
+		"sadam-daei",
+		"face"
+	],
+	"hash": "e04b064a05a5a4def10842cb2cf5eb5bd13a3b4e",
+	"added": "2026-11-03"
+}

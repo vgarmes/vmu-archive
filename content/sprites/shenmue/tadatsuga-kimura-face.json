@@ -1,0 +1,19 @@
+{
+	"title": "Tadatsuga Kimura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01fffc00076eff000eddbfc01dbb7fe01ffffff03000fff020007ff820003ff840001ff840001ff840000ff858070ff86c5c8ff8426007f85c1f03885a2da328641041684a0e0148420000284200004844100010441000204a2003c021c0030020000280277804801200048011e0044018c0183828006007c603800701fe000f"
+	],
+	"tags": [
+		"character",
+		"tadatsuga-kimura",
+		"face"
+	],
+	"hash": "497977bbbb3ab8269a0a2e52e0a382ba56961ad5",
+	"added": "2026-11-03"
+}

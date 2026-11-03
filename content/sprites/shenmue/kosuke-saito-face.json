@@ -1,0 +1,19 @@
+{
+	"title": "Kosuke Saito face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00e00300010000c0020c1860040f24d0080ca550080c9950100f00d01000031010001c901001e050100e003010f000081e0000c611c01ff12c3ff9fe2a02d1502e01c1d02c000088260008481010104808080f8807060010020000100300002003807fa002c0012004601e401c380040fe1e00f0ff07fffeffc1fffffff001ff"
+	],
+	"tags": [
+		"character",
+		"kosuke-saito",
+		"face"
+	],
+	"hash": "967c1a40a049477f55b6ed414a6aa607a8c52488",
+	"added": "2026-11-03"
+}

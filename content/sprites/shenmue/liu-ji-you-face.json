@@ -1,0 +1,19 @@
+{
+	"title": "Liu Ji You face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000fc00000fffc0003ffff0007b6df800cfffbc00bfffde00f001fe00c0007f00c0002f0080003f00b80fb700c6305f0082200f009c0f0f00ae16890082000a81140c068104200281081005008c70410073cb820048040c0046f818004004180023f0380021c074003000e401d803c7ce4c0f84304fff080023f810002000600"
+	],
+	"tags": [
+		"character",
+		"liu-ji-you",
+		"face"
+	],
+	"hash": "47792e00caaa954edd2c203fe56cefb269640a37",
+	"added": "2026-11-03"
+}

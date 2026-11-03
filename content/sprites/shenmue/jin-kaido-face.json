@@ -1,0 +1,19 @@
+{
+	"title": "Jin Kaido face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ffc0000ffff8003ffffe007e3fff00fddfff81fa2fffc1ffffffc380001fe25a2fe3e5da2ffde7da2ffe77da2ffeb7da2ffeb7b45ffeb7b45ffeb7b45ffeb7b45ffeb7b45ffeb768bffeb768bffeb568bffe65689ff3c6689f8fc328887f838007ff01fffffe01a95ffc00b6dff300f6ffe7c37fff9fffbffe3fffc000fff"
+	],
+	"tags": [
+		"character",
+		"jin-kaido",
+		"face"
+	],
+	"hash": "9ff4307413192cd8f666f89bfdea4db713e0515f",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Tomo Uemoto face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07fffff00fe6e5f81ff19ff81e7bfffc39fffffc33fe0f9c3778000c3cf000043bf000043be7801c3fe065643fc1f8f43fc2088838c1f078364bc8e8374400841101e0b4130000441100004408000844040007840740000403401f880120204801200708079002083d88001cfec4001fff43003ffea1c077ff507febffac1fd7"
+	],
+	"tags": [
+		"character",
+		"tomo-uemoto",
+		"face"
+	],
+	"hash": "ff76bd686d836cb2cc8f69aad8f74f9fe045d715",
+	"added": "2026-11-03"
+}

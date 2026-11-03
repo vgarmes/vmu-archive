@@ -1,0 +1,19 @@
+{
+	"title": "Isao Terashima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"080a55a811e5aa54205555ac273ff7f648bffffa47707f1a49e0001e5ec0000a43c0000e7d80000e4787803c5b90d56c7f8074c87183e1f83486d168368111982400010826000088120008881000108808000f080600001003001d90038060d002809f1006c020a00a601f3031300e2cc1180053008e0050004380900020ff20"
+	],
+	"tags": [
+		"character",
+		"isao-terashima",
+		"face"
+	],
+	"hash": "1124c8170c7fd50e69ac8d440ba0af6a737e3a5d",
+	"added": "2026-11-03"
+}

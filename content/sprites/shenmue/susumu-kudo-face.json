@@ -1,0 +1,19 @@
+{
+	"title": "Susumu Kudo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"006abf8001d555e002aaaab00555555806aaaaa80d7ff55c0bd55fac1eaaaaf41555555c1aafeaae15783f561fe783ea3fefe0763fc0701a7ec001ec59c7807cb94bc00c780003cc7c0005dcde00041c9e0006143a008210370062204f001c201f800040fb418040b74078807b200180b5b003c05b9806f0bdce1d6c5ac7fad7"
+	],
+	"tags": [
+		"character",
+		"susumu-kudo",
+		"face"
+	],
+	"hash": "416ef41e69c26f1d6d974b2dccaecd9c0d00ff58",
+	"added": "2026-11-03"
+}

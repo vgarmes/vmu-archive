@@ -1,0 +1,19 @@
+{
+	"title": "Kazuomi Narasaki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000003fff0001ffffc007fffff00ffffff81ffffffc3ffffffc3fffdcde7ffed86e7ffcd86f7ffc4c47ffec0087ffedf077fff6088dfff9e075fff3d0ecfff18066fff00086ffd00046fd480046fcc80025fe0000257f0003cc7bc0000c3fc00ed83d800098169007140b0800200f0600203b81c040fdc0fff8fef039bf"
+	],
+	"tags": [
+		"character",
+		"kazuomi-narasaki",
+		"face"
+	],
+	"hash": "b5afcb73dfafa221dc7fc722d51c02541ff1ce37",
+	"added": "2026-11-03"
+}

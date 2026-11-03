@@ -1,0 +1,19 @@
+{
+	"title": "Osamu Ushio face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03fffff007fffff80ffffffc0fe03ffc1f800ffc1f0007fe1f0003fe1e0001fe1c0001fe0f0078fe0f80fcfe0c4102fe0c0000fe0422007e03c2f86605a264420442805a05a07012042000220441000404630008043c80300400006004000060027780c0020000c0021c016001000250010004ac078018df1dc071affaffc35f"
+	],
+	"tags": [
+		"character",
+		"osamu-ushio",
+		"face"
+	],
+	"hash": "7866d7a24d4719b7d37b4a4bb951de3a43490835",
+	"added": "2026-11-03"
+}

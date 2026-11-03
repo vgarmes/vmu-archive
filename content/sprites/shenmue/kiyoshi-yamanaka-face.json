@@ -1,0 +1,19 @@
+{
+	"title": "Kiyoshi Yamanaka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0060018001800040020000200400002008000010080000101000ff10100f00d01038003010e0001011c0001013cf00d01791c33019806610138fa7d0179703a01580221013000210090001100400411003003e10010c0c600180002000c0622001e0004003703860065810b01c66019cfc23824ffc30fc47fc1c00e3fe0fffe3"
+	],
+	"tags": [
+		"character",
+		"kiyoshi-yamanaka",
+		"face"
+	],
+	"hash": "354c37e6b74d405a0f9e20ac6ab9f43f9a8dbc32",
+	"added": "2026-11-03"
+}

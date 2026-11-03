@@ -1,0 +1,19 @@
+{
+	"title": "Michiko Miyoshi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff80000ffff0003ffffc007ffffe00ffffff01feffff81f4dfff83ecdfffc3e86fffc3c82bffc7c415ffc7b83cbfe744433fe700009fe7301c1fe75c2f0fe704000fe704000fe704000fe708202fe318904fe727098fe700081ff78fc01ff780203fd3c7003ee3c2007f41e000df803003be00f80eba03affaf5cd6b5beab"
+	],
+	"tags": [
+		"character",
+		"michiko-miyoshi",
+		"face"
+	],
+	"hash": "1c90d546d172d32d3b6fb854132951b579e6e8b8",
+	"added": "2026-11-03"
+}

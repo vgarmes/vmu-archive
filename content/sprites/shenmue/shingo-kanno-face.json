@@ -1,0 +1,19 @@
+{
+	"title": "Shingo Kanno face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"055555700aaaaaa80d7d55540fcffaac08840f563ffff1ea60000c365fffff1a3c0007cc0781f9e4084601f40fc3f8fc18240cf813a9e7c815eaf484102804b418e608240f43f024088800440884040808860890097900e0052080c00400214004fe217006ab22580e7e02ec3a0004d7773809abeb0013555680e6abae7f8d55"
+	],
+	"tags": [
+		"character",
+		"shingo-kanno",
+		"face"
+	],
+	"hash": "39ea00ebd86c20b3e2f10acc6fc332a85a0db684",
+	"added": "2026-11-03"
+}

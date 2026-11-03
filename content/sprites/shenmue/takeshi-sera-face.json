@@ -1,0 +1,19 @@
+{
+	"title": "Takeshi Sera face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00d5755803abeaac0d5fd5541aeaaaac355555582aaaaff835557bf81aabc1fc0d5e00fc06f000fc1b8200fc2ef3ea7c3c12027c05c0fc6406e168420820005a0821001208408012084401220882020408830048057c807005004060020008e0023c08dc054389663b00127ac718147b3f8018fb7f8030fbbf40e1fdde3f83fd"
+	],
+	"tags": [
+		"character",
+		"takeshi-sera",
+		"face"
+	],
+	"hash": "d5293aba783718e1ae6c2d90e9d315c5011c6f3f",
+	"added": "2026-11-03"
+}

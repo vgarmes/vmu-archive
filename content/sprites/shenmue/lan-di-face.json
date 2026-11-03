@@ -1,0 +1,19 @@
+{
+	"title": "Lan Di face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"36ffffc0fbf03fe03fc00ff0fb0007383001c3d8200e233c603c03dc70f7e1ec7e69c0be7f1f00de7e2008fe7c0009ff7400119f6640210f4700406f4e00004f2fc0000f3ff8009f3e0401ff3f8001fe1fe003fe1c0004fc18001cfc1800f8f8180ff0700c7fe078cfffc078ffff00ecfffc0354ffc01eacff81f556ff82aaad"
+	],
+	"tags": [
+		"character",
+		"lan-di",
+		"face"
+	],
+	"hash": "899e39743f45d242e254e33a962b2231b77014c4",
+	"added": "2026-11-03"
+}

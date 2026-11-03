@@ -1,0 +1,19 @@
+{
+	"title": "Mitsugu Nomura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0003f800003fff0000ff6fc001fbfee003dfffa007bc01f00e7000700fe139380c4000181bcf81f81f90c3181c8f41f81b1682d01f0002080b0fa16415104084140080441641b144121a7fa8090400280904002807087f880109804801083f0800801c100080001001c0003002f800600dcf01b03be3ff3cf7b07e7fefce00cf"
+	],
+	"tags": [
+		"character",
+		"mitsugu-nomura",
+		"face"
+	],
+	"hash": "2034637aa8785ef0764959c45578c5e597b1abf2",
+	"added": "2026-11-03"
+}

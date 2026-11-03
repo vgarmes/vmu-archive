@@ -1,0 +1,19 @@
+{
+	"title": "Kiyoshi Nishida face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00fff00003efef000f5fbfc01aff7de01ffffbf037ffff703c001ef838000fd830000fbc1000076c200003dc200003be2f03e36e10841bde1701c1fe1b82f19c1781e12c2882114c2501a048210402e8220204c822020810151d302010e020c012010100099e03000400050004700980020012e0070064f81d8189fefafe33fe"
+	],
+	"tags": [
+		"character",
+		"kiyoshi-nishida",
+		"face"
+	],
+	"hash": "8d178ef5312961c3e10b3d427ea95f200db5346a",
+	"added": "2026-11-03"
+}

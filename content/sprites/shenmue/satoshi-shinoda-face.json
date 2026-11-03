@@ -1,0 +1,19 @@
+{
+	"title": "Satoshi Shinoda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"016d800003fffc0002dbff0006db7f80076db7c007fffbe004003fe004000ef00800077008000370100003b81703e3f8198611b8108409f81703c0fc0b81b0cc108200b41701c0141110005412180064120c0208160a0c100bf110e00a4081c00904018008f88280048086c004700ce0060018f81f0031fffd80e1fff8ff83ff"
+	],
+	"tags": [
+		"character",
+		"satoshi-shinoda",
+		"face"
+	],
+	"hash": "be4630717bcf2bcdd3543c268ecc8562fd485711",
+	"added": "2026-11-03"
+}

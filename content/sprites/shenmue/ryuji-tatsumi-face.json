@@ -1,0 +1,19 @@
+{
+	"title": "Ryuji Tatsumi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00d5aa00016aab0002ffd5800301d58004007fc008002aa008000020100000101000001010000010200f8070201052902007e1f03c0cf338221bfef859fff3f85c1ff3f8540fe1f04407c0e02c00109020802050126020500c181f900600002006003f200f0041201e800c40064000400c3000c03e0c0160ff030278ffc0fcff"
+	],
+	"tags": [
+		"character",
+		"ryuji-tatsumi",
+		"face"
+	],
+	"hash": "802e9f1ac51d0d2ae333a7cc066d74afe0d4f25d",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Naomichi Tsukamoto face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0f6fdf001dfdff801fb6eec01dbfffe00edbdfa00fffeff007fffff006307ff004001cb804000ff804000fe808000678080007d80e01f7e80fa7e33810781e18104812d810c810980f87e0b80880013009000070090403e008fe05e005010bd0047896b00e8404f03e300df07f0019f03f0031f03f0063f01e81c3f8187f83fe"
+	],
+	"tags": [
+		"character",
+		"naomichi-tsukamoto",
+		"face"
+	],
+	"hash": "f72e6cc7f4ac2f32014117e17f00a25a2fa7821d",
+	"added": "2026-11-03"
+}

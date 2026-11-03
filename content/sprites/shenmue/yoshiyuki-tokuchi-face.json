@@ -1,0 +1,19 @@
+{
+	"title": "Yoshiyuki Tokuchi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01cfffe00387fff00782fff80772afe80fffeffc0ffffdf40feefe740f6ab7040d4a13cc0f0279fc0cc185fc042200fc05c0f06406a1a84205e0f01a0620083a09c07012084000140880002408840008047800300410006002000040026f00c0020080c0013c014001000278030004e40d8019c238c07383c8bfe70408df8e08"
+	],
+	"tags": [
+		"character",
+		"yoshiyuki-tokuchi",
+		"face"
+	],
+	"hash": "4074f00efb6071570058cfe17a08a91696c7cc9f",
+	"added": "2026-11-03"
+}

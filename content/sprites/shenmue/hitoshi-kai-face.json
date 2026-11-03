@@ -1,0 +1,19 @@
+{
+	"title": "Hitoshi Kai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"04000010083000080830000810fc000410fc00042631ff02383000e22000001a4ffffe06580007c33f01fbf11703e1fd088430ff17f9fff21b4ad0ea104810ca18c420d20f83c0d2118400c4110600c8110300f010fc00c0080000c008ce008005010180047c8140024202400238067807180cf71f0018e1e38071e3e3ffc3c5"
+	],
+	"tags": [
+		"character",
+		"hitoshi-kai",
+		"face"
+	],
+	"hash": "ab5f7609c7ecbd6ac79d63bb3a1c998051db5ed8",
+	"added": "2026-11-03"
+}

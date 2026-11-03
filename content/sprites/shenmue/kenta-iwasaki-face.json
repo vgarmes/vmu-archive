@@ -1,0 +1,19 @@
+{
+	"title": "Kenta Iwasaki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000003ff3c000fffff001fff77803ff6ed807feddb807ffff680fffffd80fff80f01ffc00601ff000201fe000201fc3c0e01fc421201f83c0e0138561602d01c1c02500022025000120100001200c0006200300004001801c4000c0008001e00180035802c00e2606703211fe4cc20c7a23010302200080c420"
+	],
+	"tags": [
+		"character",
+		"kenta-iwasaki",
+		"face"
+	],
+	"hash": "17732da0f2baf469d196907683b3cb712a99a7b8",
+	"added": "2026-11-03"
+}

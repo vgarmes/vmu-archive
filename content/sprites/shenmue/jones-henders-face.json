@@ -1,0 +1,19 @@
+{
+	"title": "Jones Henders face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0007fc00003a4f8000d5b86001000710020002e804000114040061cc08008136080081ca080001260a4001d20fdf011e0e7fd8f30e6de0a5041e116d0c088149084f0149102001221020312c0fc3c23807f805480d5c08c80aa714480ffae2c8040d5588c7e6ad9e3e1b53e20555ff0206aa80030fff80003ff90008ff830040"
+	],
+	"tags": [
+		"character",
+		"jones-henders",
+		"face"
+	],
+	"hash": "572eeac5dc833eb23e42669589ad46827b2dd1ac",
+	"added": "2026-11-03"
+}

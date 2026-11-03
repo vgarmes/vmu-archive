@@ -1,0 +1,19 @@
+{
+	"title": "Akihito Anzai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffff8007ffffe00ffffff00ffffff80e060ff8060807fc040003fc040001fe080001fe0b8be1fe0c4413fe08200bfe0ba1e1fe05a2d0e6082000c21341c0da104000921080001410800024110800080904007008fa0040050100c0057c00c0048301c0047c01600e0003701a30065832000ccce30038874700e18486ff8304"
+	],
+	"tags": [
+		"character",
+		"akihito-anzai",
+		"face"
+	],
+	"hash": "fd95cb32b8ad6137483f03472865850e53ab19a4",
+	"added": "2026-11-03"
+}

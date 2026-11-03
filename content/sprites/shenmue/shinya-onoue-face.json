@@ -1,0 +1,19 @@
+{
+	"title": "Shinya Onoue face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07fffe0007ffff800fffffc00fcfffe00f87fff006843ff004480ff807ffc3f81ffff1fc3c00387c08000e3c0b0707180c88c390080023f00787c3e00a8336200b01c490091031500a0801500a0900d009f881a00400404004f021c0050c2380020243800270470002200d800f0019e03700f3dfef81c3dfdcff07dfbc7c0fbf"
+	],
+	"tags": [
+		"character",
+		"shinya-onoue",
+		"face"
+	],
+	"hash": "fbe7feab0aa9d0cfa808eac3d64d37a8de14bcbc",
+	"added": "2026-11-03"
+}

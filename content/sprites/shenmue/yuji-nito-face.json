@@ -1,0 +1,19 @@
+{
+	"title": "Yuji Nito face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00fffe0001ffff8001a53fc0020007e0020001f004c301f0042400f80b81f0f80fc3f878084204781461107817e1f2781942444814c112541380e8342902043421010064218d802423ffc04c25ff61181301b23016fedc6015ab604009ff20c00a0001e0190041502cff82c84c3c05874a001b048b00760485ffcc0884003008"
+	],
+	"tags": [
+		"character",
+		"yuji-nito",
+		"face"
+	],
+	"hash": "d7149c675a76b85df2f10e2a773d6b5c14f89b62",
+	"added": "2026-11-03"
+}

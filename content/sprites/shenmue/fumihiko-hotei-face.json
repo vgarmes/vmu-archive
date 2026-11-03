@@ -1,0 +1,19 @@
+{
+	"title": "Fumihiko Hotei face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003d5e0000eab78001d56ac003555560057fd6b00780fd58040006a80800015c080000b4080000ec100000541086006c1748f05c1183807c1703f8660984d0420882001a1381c01a108000321088002211040204118e040808f10070080080d00480009004fc0190024203180138061f07000c3b1b8038777b61e0eeffbf83fd"
+	],
+	"tags": [
+		"character",
+		"fumihiko-hotei",
+		"face"
+	],
+	"hash": "c193e29a2dce7f332851785cfe4fccb0f9d1bf48",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Makoto Ogishima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fae8001eabac003aeabc006aafec00efdabc01b8f56a01d00ff20350000103b0000102a0000102e000008361e00382a2380e83e00c190261fa0f04a16e1d058004110480081102c01011024001090100020900800719006000f100600002005003f200500c1200c800e403c400040fe2000e0ff1800f8ff86017effe1fe7f"
+	],
+	"tags": [
+		"character",
+		"makoto-ogishima",
+		"face"
+	],
+	"hash": "f252fe928280488fc470d183bc13f0bb17c301c9",
+	"added": "2026-11-03"
+}

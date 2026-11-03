@@ -1,0 +1,19 @@
+{
+	"title": "Takayoshi Hanazawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"016db60002db6f8007fffdc006001be00c000f60080006f0180007f0100003f01783f1f818c609f8104401f81701e0f82b82f0f82701e6c8288110843680e8b42084003421040064210202242103024812fc840814007010110040e008df008008008180088001c0087c03f01c3806fc3c000cfffe0039ffff00e1fffdffc3ff"
+	],
+	"tags": [
+		"character",
+		"takayoshi-hanazawa",
+		"face"
+	],
+	"hash": "e8e5c1a566e43806f659fbdf98ce944eebd0cd03",
+	"added": "2026-11-03"
+}

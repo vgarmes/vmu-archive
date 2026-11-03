@@ -1,0 +1,19 @@
+{
+	"title": "Man in Black A face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07fffac00ffffd600f1eabf00efc05d01d3800081efc00081d7900081ff100081fe200081fc000840fc0fe9c09c11ffc1080fff8148296b012a004d012a008a8121000880808004808000848060013d0078020100380002001401fe001600020012007c0031023c00d0810403c860c40fc838070fe41f0bcfe20ff1fff183e1f"
+	],
+	"tags": [
+		"character",
+		"man-in-black-a",
+		"face"
+	],
+	"hash": "098362f6a2e1a0f63816c892df3c8766e57dc50f",
+	"added": "2026-11-03"
+}

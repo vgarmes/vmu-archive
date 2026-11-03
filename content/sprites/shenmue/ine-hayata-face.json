@@ -1,0 +1,19 @@
+{
+	"title": "Ine Hayata face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07ef7fc01fddffe01ddbfff03efffff83ffdfffc7c303fdc78000c3e700007f66180070e607c03ff200003fb2703c98f280021ff2000011e2303c00e3708e8ce2084009c2481cc9e1100003f1100017b08e0c1fd0a0061ef0e0221f7066c25f7020005ff011859de008062f800c0c55e01ff0ab107b835401d58ea9071ab5720"
+	],
+	"tags": [
+		"character",
+		"ine-hayata",
+		"face"
+	],
+	"hash": "6909261ce86ce333a6f3cb7da454ac669a10492c",
+	"added": "2026-11-03"
+}

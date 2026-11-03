@@ -1,0 +1,19 @@
+{
+	"title": "Atsushi Sayama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"036abaa006b55d50056aaaa80ad55d580d6aaaa80ad55d541ffffeac755555d4affffaec78001f54f600fbec790385f4108401fc100000c61402009a1b85e8a2088210b21701e09211000024120c02041206040815f9d8300c004860080028c009be28c0080121e004f82170047043781c0006fffe001cfffb00f1fffdff83ff"
+	],
+	"tags": [
+		"character",
+		"atsushi-sayama",
+		"face"
+	],
+	"hash": "2b3ecd8fdca933833930977b25bf3da1e45fc1f9",
+	"added": "2026-11-03"
+}

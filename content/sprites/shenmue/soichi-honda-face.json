@@ -1,0 +1,19 @@
+{
+	"title": "Soichi Honda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001f800000fff00003a6fb0006ff6fc00dffdce01bffbbf01b801f903e0004782c0003b82c0003c83400017c38c0e19c3be9f8e41e290cfc0dc4e69c0ba1d80c05d0746c042180680961502808208048084080100843803008be40e004802080043e24800441a500021c0b8007000f600b801d1833c07d06c2ffea0101bfac00"
+	],
+	"tags": [
+		"character",
+		"soichi-honda",
+		"face"
+	],
+	"hash": "9317abc0f7c82deffb0e97073debb3d2b156acf8",
+	"added": "2026-11-03"
+}

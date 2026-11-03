@@ -1,0 +1,19 @@
+{
+	"title": "Motoyuki Aoki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000003ff80000c00600010801800208084002100540041004a0040002a00cffc2a00b0038500c0006500b00e3900c8113d0084209e805c1e19806c0d1c8042001e8084001a8088000c80880809008f84020090020c00480a080047f0180040003000618070002000dc0050018781c8070fffe7fc3e03f000fc07fffffc0"
+	],
+	"tags": [
+		"character",
+		"motoyuki-aoki",
+		"face"
+	],
+	"hash": "b8de2bc35c5010664d6ebb56eab934e3bc22bd8d",
+	"added": "2026-11-03"
+}

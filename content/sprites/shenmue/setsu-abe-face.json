@@ -1,0 +1,19 @@
+{
+	"title": "Setsu Abe face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01cc9f00037ff3c002fffde007c93f70067fe7b005c079d80f001ef80eccc76c0d2113bc080009f409c0f1dc0a2108ec0c0004bc09d2e0b406e178dc05e2f0ac04210a28094060480a41109808230068085c80c80480439004211930029e21e8024003a4010c06d201000b4a078033e41ae0c6dc63bf0d4682de3ac10160e580"
+	],
+	"tags": [
+		"character",
+		"setsu-abe",
+		"face"
+	],
+	"hash": "483d029b4e8d1407e9650c08e1257e76f4a92494",
+	"added": "2026-11-03"
+}

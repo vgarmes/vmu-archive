@@ -1,0 +1,19 @@
+{
+	"title": "Harue Okuno face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00fff80003ffff000fffff801fffffe01fffdff03ff7eff07ff7e7b87f63f398fa61f8dcfa61fc7cf821fffcfe0ffffcf1107ffc70003ffc7607bffc3d0afffc3703affc32002ffc31000bfc330013f8120001f811c003f0100003f008f007f0080007e004601be002003ae00300ebc00787eee07affac1c92febc1323aaf810"
+	],
+	"tags": [
+		"character",
+		"harue-okuno",
+		"face"
+	],
+	"hash": "87f098a5816b8974ee2c83c54e545510f8eb39d9",
+	"added": "2026-11-03"
+}

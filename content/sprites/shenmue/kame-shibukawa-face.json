@@ -1,0 +1,19 @@
+{
+	"title": "Kame Shibukawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ffe0000663180019846c0026188a00486ffb00519c0d00a2732300cec0010095969901a70000815a1e0c815661128174800182cc1c0c82a4361702915c9d0290211281411c0c81a0010880b103f88058852900687a9501b41205035c05e2023e0416049d09d4053f800c077ee01c02ff783e037f9fef0cbfc7cfc35ff01f3"
+	],
+	"tags": [
+		"character",
+		"kame-shibukawa",
+		"face"
+	],
+	"hash": "c332f5f28b776ee0815f31e3dea98e9acf4af806",
+	"added": "2026-11-03"
+}

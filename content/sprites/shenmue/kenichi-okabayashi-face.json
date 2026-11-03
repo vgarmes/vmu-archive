@@ -1,0 +1,19 @@
+{
+	"title": "Kenichi Okabayashi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0ffffff01ff6fff83fbedf7c3edfdafc3f79fbdc7fb87f9c7ff80e187ef000187f6011187fe011087fc708387fc0e8c87b8039887187f1f87482d178368181d832000190190000901c0000900f0000900f8010a006800fa00680034006407e40044082400c2018801e1000807e1801c0fe0e03f0ff07fefcff81f8ffffc001ff"
+	],
+	"tags": [
+		"character",
+		"kenichi-okabayashi",
+		"face"
+	],
+	"hash": "5d8299ba3e9aa378396b5b87e041f2e6373aae7f",
+	"added": "2026-11-03"
+}

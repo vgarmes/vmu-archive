@@ -1,0 +1,19 @@
+{
+	"title": "Yoshihiro Horiuchi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffff8007ffede007ffdbf007ffdb7807fffef8057d42dc080001bc080001be100000fa160070e61b29c8fa10c700e61044007e0f20f8660ba368420820001a10400032104400121082002410820004087c00080800007008ff0060090180c0097c80c0044201e0043c0370060006df1e000d9fff001b3fff80767ffeffdcff"
+	],
+	"tags": [
+		"character",
+		"yoshihiro-horiuchi",
+		"face"
+	],
+	"hash": "4a3309a65b8c9279646533b93a07f56d0014dba7",
+	"added": "2026-11-03"
+}

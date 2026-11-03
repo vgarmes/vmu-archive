@@ -1,0 +1,19 @@
+{
+	"title": "Shinkichi Noda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ff80001ffff8007ffffe00ffffff01ffffff81f1554f81e0000781c0000381c2c34381c03c0381dc003b81bf81fd80a0c30500cf42f301d7a5eb826e817645c03c03a59bc3d9a484002122a43c254293c3c94188811180c8811300416682006299460021ff840030420c00383c1c00ed5ab703ce2473cfcb5ad3f3c5ffa3c"
+	],
+	"tags": [
+		"character",
+		"shinkichi-noda",
+		"face"
+	],
+	"hash": "a18cceaaccecf4e82af2c1ab09876d4fdc2c0db2",
+	"added": "2026-11-03"
+}

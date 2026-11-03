@@ -1,0 +1,19 @@
+{
+	"title": "Naomi Koshiba face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"002c610000f39ec0014c61e002939e30066461c805aa9e380800058c08000374080002cc080001b40b81f14c0fc3fcb4084200cc080008b40781f0dc05c0e0a2044000aa0840004a0880001a08800012088400040878000c080000700400004004de00c0040100c0027c014002180370010006bc06801cbf1ec0717ffcbfc2ff"
+	],
+	"tags": [
+		"character",
+		"naomi-koshiba",
+		"face"
+	],
+	"hash": "abb52788b8e35392168afab77d491899b569e2fb",
+	"added": "2026-11-03"
+}

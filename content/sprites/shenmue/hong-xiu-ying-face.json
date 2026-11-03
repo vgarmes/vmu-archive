@@ -1,0 +1,19 @@
+{
+	"title": "Hong Xiu Ying face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0f3ffffc1ffffffe3ffffffe3ffffffe7fffffff7f7fffffff3fffffff1dfffbff8f307bfe816030fec09e38fe717c18ff027618ff86fc13ffc09812ffe02016fff10037ffe30027fffe0005ff800001ffc00001ffe20003db8200126d93001607f0003400e0582c00700068000e00b0000701b40000c7e300003ff600000e74"
+	],
+	"tags": [
+		"character",
+		"hong-xiu-ying",
+		"face"
+	],
+	"hash": "636992dc17aacbeb09137b5571647c0c465b15c8",
+	"added": "2026-11-03"
+}

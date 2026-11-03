@@ -1,0 +1,19 @@
+{
+	"title": "Miho Sagawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffffc007fffff00ffffff81ffffffc1ffffffc3ffffffe3ffffffe3edbfffe7d5b7ffe7d6dbfff7a36cfff3b8be5ff3c4416bf3b81e35f1dc2f3ef1980e2f7188000bf0880009f0900003f090000ff08c000ff080001fe0c5803fe040005fc0618099803001168018063f000c1c77000ff0eb007bc3d5c3d71faaaeab3d555"
+	],
+	"tags": [
+		"character",
+		"miho-sagawa",
+		"face"
+	],
+	"hash": "5adac8781fe7bffde1db1dd3d0b9757054b09424",
+	"added": "2026-11-03"
+}

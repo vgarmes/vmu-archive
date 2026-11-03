@@ -1,0 +1,19 @@
+{
+	"title": "Satoru Tsukakoshi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0100018002000040040000200800001011800010120fffe82430001828e0000851c00008538f80785311e1c8670061884f0000087f03c0e8460f2198920381c4ba000104a800008490000084480000444800104420000f84300040084e00c0488700bb889f000010ee801e101e4000207f300020ff980070ffce00fcffe3ffff"
+	],
+	"tags": [
+		"character",
+		"satoru-tsukakoshi",
+		"face"
+	],
+	"hash": "337aa21c593916dd0cde1694405d9f51cf4d8692",
+	"added": "2026-11-03"
+}

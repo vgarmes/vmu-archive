@@ -1,0 +1,19 @@
+{
+	"title": "Noboru Nakatani face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00dd5dc001baaaa003555d5006baaab0055555580abaaea80d5ffffc0ab55556157aaaab1bfffffd17f3fdfe1fe422101fcb93c80fcd5ea80f8812080b846210098381f0088041100400be100401191003000010018000100080762000c0802000c0182001a000400390004007cc00603f6700f8ffb9ff7fff5c00dfffaf01af"
+	],
+	"tags": [
+		"character",
+		"noboru-nakatani",
+		"face"
+	],
+	"hash": "02fdd3650d13c9ce2118affb15a12be96adf0c7c",
+	"added": "2026-11-03"
+}

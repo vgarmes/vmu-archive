@@ -1,0 +1,19 @@
+{
+	"title": "Sachiko Okae face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ffc0000ffff0003ffffc007ffffe00ffffff01ffffff81ffdc3f83ffb017c3fea013c7fde027c7fda00bc7fd8003c7ff7c1fcfff8221cfff780dcffefc1f8feeb82d8fd400118fd400110fc800090fe000090ff800710ff8000307fc02d307de002707ff00c603ee800a0375601e01b9b83300f4cfd5c75270397c083ffa0"
+	],
+	"tags": [
+		"character",
+		"sachiko-okae",
+		"face"
+	],
+	"hash": "3753ce615351aeed676c0b787c8251e42a15aae1",
+	"added": "2026-11-03"
+}

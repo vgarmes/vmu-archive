@@ -1,0 +1,19 @@
+{
+	"title": "Yutaka Koizumi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffffc007fffbe00fff9fe01bf8fff02507ff302fbf8c703ffc0ff871f007b870000278600003f8200001f8200411c82109e084288f90941787f0340f84d0240dc220240bc1000808c0000808c2001008c10060044600a0047f00a0027f80b00140c198011f031600a00612009f0e3201cc9c62026038e00c5ff1c0384fe380"
+	],
+	"tags": [
+		"character",
+		"yutaka-koizumi",
+		"face"
+	],
+	"hash": "77d8f617b07d486ad4368ff8499c8168faf00231",
+	"added": "2026-11-03"
+}

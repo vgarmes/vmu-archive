@@ -1,0 +1,19 @@
+{
+	"title": "Satoshi Nagata face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07effc000d326f001fefb7803274dfc02faf6de05b4bb7e07401fef0e800ef70f000bbf8e0001db8b821efdcaf2f0ffc611826f47e07c3fc2d0b61bc3314c3ec4d1303bc4100037c431002dc42080498461c003845e40078288203f0280103f0237907b8140407e811f00ac418e01260180026702c00c4ffee038cd5e7ff19aa"
+	],
+	"tags": [
+		"character",
+		"satoshi-nagata",
+		"face"
+	],
+	"hash": "7407b428be78f042b13e58091f240c4447ac6380",
+	"added": "2026-11-03"
+}

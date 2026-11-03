@@ -1,0 +1,19 @@
+{
+	"title": "Yoko Minato face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ff1f000fffef803f6efb807df77dc0edb56fc1eedaefc377ffde836badbe87b681f706da00ef06e8007f0740063987c018368380201683802394818c0d0281b2170080c004118086001380db0023806e8003002881830030844300109803001870050008828500049c0980021108f0010610d001c031a007f0e1501d7fc2a"
+	],
+	"tags": [
+		"character",
+		"yoko-minato",
+		"face"
+	],
+	"hash": "4bd86952b9368c5b56be90ca49e93b9ee17dd8d0",
+	"added": "2026-11-03"
+}

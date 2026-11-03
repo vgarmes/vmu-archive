@@ -1,0 +1,19 @@
+{
+	"title": "Wooden Man face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00c018000300060004154100082b508008aa948011aab440114aa940156aaa2022aaaaa022aaaa202aaaaaa022aaaaa02aaaaaa02aaaaaa02aaaaaa02aaaaaa02aeaaaa02aeaaaa02aeaaaa02aeaaaa02be2aaa015faaac0157eaa80157eaa800d2aab800d2aab8005aad38006ab578002d557700755575e3f2abed4df957daa"
+	],
+	"tags": [
+		"character",
+		"wooden-man",
+		"face"
+	],
+	"hash": "95b701983d85c7838610418377e4cae6ab7fe699",
+	"added": "2026-11-03"
+}

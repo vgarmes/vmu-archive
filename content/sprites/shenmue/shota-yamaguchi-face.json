@@ -1,0 +1,19 @@
+{
+	"title": "Shota Yamaguchi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003fff0000eb6ac0035db54006afffa00df0006016e000301b4000102dc00010368000083b8000082d8c00103b03c0683d00318822101108490fc0f05d0ba1d8540601244e0000842600008420000044100008440e001788060021080500001805001f90048060901c809f3036400e38e220006ce3180067e18e00e3e0c3ffa1"
+	],
+	"tags": [
+		"character",
+		"shota-yamaguchi",
+		"face"
+	],
+	"hash": "ead62daf89d9979ee451e9720be61223aea42b52",
+	"added": "2026-11-03"
+}

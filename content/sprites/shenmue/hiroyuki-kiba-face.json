@@ -1,0 +1,19 @@
+{
+	"title": "Hiroyuki Kiba face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"015557e003aaad7006aaad5007fffab80eaabf680d56abdc15554af4155556bc15ff55ae1701fd2a1800074a1e00fdd6138381f610c601fe1fc3fdfe1584c8ec128530d4104800a41040008c08480008088400180884007004780040040000c0047c00c004838160023c03700218067803000cec0f8039d7fbc0e3aa557f8755"
+	],
+	"tags": [
+		"character",
+		"hiroyuki-kiba",
+		"face"
+	],
+	"hash": "f466674da882199771d79aa333ad6ad0304bc80a",
+	"added": "2026-11-03"
+}

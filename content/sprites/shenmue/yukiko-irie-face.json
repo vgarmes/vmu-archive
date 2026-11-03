@@ -1,0 +1,19 @@
+{
+	"title": "Yukiko Irie face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff80000ffff0003ffffc007ffffe00cfffff019ff7ff81bdf9fd83f9fe5ec3f9dfa5c7e8dbe0e7c8c9f1e7c064ffe7f83effe784407fe2b01e3fe2d83b37e2b81c23e080002be088002be0900053c0900007c08e001fc040001f804b403f8024007f002300ff0010015e0038064e00cc1c49838bf8887d11e084021001040"
+	],
+	"tags": [
+		"character",
+		"yukiko-irie",
+		"face"
+	],
+	"hash": "8754bc0f5cc848f325e9cba9cf5a367bf01df0da",
+	"added": "2026-11-03"
+}

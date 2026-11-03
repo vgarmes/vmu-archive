@@ -1,0 +1,19 @@
+{
+	"title": "Yayoi Arisugawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007ffe0003abff800ffdffc01df07fe033e01ef027c00ff06fc007787fc00738fec00398f680039cf68003dcff03ebdcf08401fcf701e1fcff83f19c5581490c5f01e16c1000004c108000481080001811000038110000f010f001f0080001e008dc03c0046006e004300b70020012f0070066780d81cd4c7affb947067fc580"
+	],
+	"tags": [
+		"character",
+		"yayoi-arisugawa",
+		"face"
+	],
+	"hash": "026849fe309d1bcba8c17a6e0fd0464dfa65dc8f",
+	"added": "2026-11-03"
+}

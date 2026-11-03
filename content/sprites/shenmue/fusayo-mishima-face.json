@@ -1,0 +1,19 @@
+{
+	"title": "Fusayo Mishima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffff0007ffffc01fffffe01ffffff03f83eff03e01f5b87c01f0d87c00f97c7800fdac78007ffcf0003ffeff03effef08417fee701e3feeb82d3fff380c17ff48020bf708000bf710001bf6102013f6103007f62f881ff200043fe300003fe30ee47fe184007fe18300bfe0c001bfe060032fe0300e47c07c3983c78be2023"
+	],
+	"tags": [
+		"character",
+		"fusayo-mishima",
+		"face"
+	],
+	"hash": "c39a96b3e36648fec6c8a6cfd29df3ce6acd98bc",
+	"added": "2026-11-03"
+}

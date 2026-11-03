@@ -1,0 +1,19 @@
+{
+	"title": "Noriko Nakamura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffffe007fffff00ffffffe1fffffff1fffffff6fffdefff7ddce7ff7df8e7ff7bb8dfff7f70c1ffffe08cfffdb91cfff27c35effcec39e7fdf03ac0cd701880b4300080880060808c002080c4000100400001003200c2001e01060003400c0001301800011c3800018ff8000347ff800dbfbff03cc1cff1fe3f8ffffe0007f"
+	],
+	"tags": [
+		"character",
+		"noriko-nakamura",
+		"face"
+	],
+	"hash": "4067ec98b2dca848fe920dfab44b8700150725b2",
+	"added": "2026-11-03"
+}

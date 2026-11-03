@@ -1,0 +1,19 @@
+{
+	"title": "Ichiro Maeda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00767f0001ade7c002ebdce005807bf005000a30060005f00c0003180c0002f80ce78388083c03780b81e1f80fc3f9980c401d080bc1c3680fc3f1e80cc01aa8088100c80b80e198090003b80d0246f0098fb2d00afc4ab00c3025e00cff15e0058195b00d7e8d8c3e814b03ea7e1a008b0036001380fc4011fff08010ff0300"
+	],
+	"tags": [
+		"character",
+		"ichiro-maeda",
+		"face"
+	],
+	"hash": "e889ad16c1ce322d87050c572c6b71ccd2cee27d",
+	"added": "2026-11-03"
+}

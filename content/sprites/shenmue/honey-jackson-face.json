@@ -1,0 +1,19 @@
+{
+	"title": "Honey Jackson face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000ff000003e7e0000fbe78001efbdc00382e7e003007cb006001fd805800ff80440033c082007ec0b2001f60d8003be13c381ee134060f6218011be230388ee2606c1f65409e3be4401a1de4600e3f44bd004fc4c1002584608477e43818c77c86000ed6c0023d66700bf3b300336ccbc0c67779ff1cfdb47ff19ee"
+	],
+	"tags": [
+		"character",
+		"honey-jackson",
+		"face"
+	],
+	"hash": "35366c3829ad429e18adcf4206ce292ed3109af7",
+	"added": "2026-11-03"
+}

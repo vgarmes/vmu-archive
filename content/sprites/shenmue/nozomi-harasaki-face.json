@@ -1,0 +1,19 @@
+{
+	"title": "Nozomi Harasaki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff0003ffffc007fffff00ffffff81ffeffd81bf9fbec3967fff43a1fdb767e7ffb3e7ffdb61f7ffb261ffff7cc0ffff829efbfe7921fcf6ec0eed8db41bef3cf015cffc781dcffc000f8ff80001cff80021cff80061cffc0001cffc0243cffe008387fb01878771800f03f0c01f01b8703600d41cf201e207c306100004c"
+	],
+	"tags": [
+		"character",
+		"nozomi-harasaki",
+		"face"
+	],
+	"hash": "c85fd1d8fd64f881d091ee4806fda30500d2f214",
+	"added": "2026-11-03"
+}

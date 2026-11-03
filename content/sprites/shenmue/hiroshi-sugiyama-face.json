@@ -1,0 +1,19 @@
+{
+	"title": "Hiroshi Sugiyama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000ff80000700700018000800200006004000070040000f8080000f8080001fc100001fc100001fc1703f1fc18840dfc100000fc1f03f0fc1380e8621048004a1040005a208000122088001a210400142104000420f800081000003011fe00300a018070080000d8047801ac0e00022ffb000c4809c07090047fc320"
+	],
+	"tags": [
+		"character",
+		"hiroshi-sugiyama",
+		"face"
+	],
+	"hash": "beaa5e3873c75809cc9cc9b9416c433742634c72",
+	"added": "2026-11-03"
+}

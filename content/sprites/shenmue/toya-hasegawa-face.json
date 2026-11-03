@@ -1,0 +1,19 @@
+{
+	"title": "Toya Hasegawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07ddb6e00f8edb701f3ffff01ff800703df000303ce0002039e0001039c000103d800008738e226879bf84f87f0fe5f87f183f0c7ff7f2fc671ff3fc431ff3fc5b0fe1f84900011025001088240020883000608818009f480e00805007003f100300411007800c201d800c3033c000386360006cc3300046819c00c380c7ff81"
+	],
+	"tags": [
+		"character",
+		"toya-hasegawa",
+		"face"
+	],
+	"hash": "85271596cd5397b311b5925910b7840c13079230",
+	"added": "2026-11-03"
+}

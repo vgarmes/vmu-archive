@@ -1,0 +1,19 @@
+{
+	"title": "Hiroaki Takeuchi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03fffc000fffff801fffffe03ffffff03ffffff87f03fffc7c007ffc78003ffef0001ffef0000ffee0000ffeff07e7ffe08807ff6f8bc3ff2d03a3ff308401cf208401862d03c1b6211001242208004c2208000c21f00018200000f8200000f010f001e0110c01c01002028008f004c0040009b01e00335ef700c6abadff0d55"
+	],
+	"tags": [
+		"character",
+		"hiroaki-takeuchi",
+		"face"
+	],
+	"hash": "ab1490fe52bbec9a23c73411eb82901466fc79df",
+	"added": "2026-11-03"
+}

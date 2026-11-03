@@ -1,0 +1,19 @@
+{
+	"title": "Toshihito Takii face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffffe007fffff007a47ff80f002ff80e0027fc0e0003fc040003fc040001fc0781e9fc08c381fc084200fc0b81f0fc0580c8e60440004a0880005a0880001a090000320908000408f000080840003808000030040000b004dc00a00503013c04008122027803210230066107000c41190018c2f380718424ffe308247f8630"
+	],
+	"tags": [
+		"character",
+		"toshihito-takii",
+		"face"
+	],
+	"hash": "ce702631e98b5f7723cd359b9b4560d8850d4275",
+	"added": "2026-11-03"
+}

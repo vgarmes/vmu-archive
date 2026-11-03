@@ -1,0 +1,19 @@
+{
+	"title": "Shiro Kurita face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00db560001679b80026e39c0023973e004702b600dff0e703787e130de01fc307c001f10fe0077f0ed81c7f008c707d81be3e38826a0b3280c420128084001480880004809020418098c087004f110e0050781c00478818002824380023c86e001180db00100395c0740f3a61eabe65372ffc4e9e67d8d7cbc7c1bb6dc203700"
+	],
+	"tags": [
+		"character",
+		"shiro-kurita",
+		"face"
+	],
+	"hash": "d5ba8fc663a4f26860a1fcd4e4bd5c4bf1319e3a",
+	"added": "2026-11-03"
+}

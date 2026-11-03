@@ -1,0 +1,19 @@
+{
+	"title": "Yoshikazu Takahashi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ffc0000356b8000ead6e0012a81b0020000f0020000d8040000b8040000740800006c0800005c080c00740bc07c6c0c2182540800007c09c0f26406e16cc20420005a05a07012084000220841000408230008085c8030048041400400264002b7908002801180014023c0030c05600e8009783ec0123ffca0643ffc5f883f"
+	],
+	"tags": [
+		"character",
+		"yoshikazu-takahashi",
+		"face"
+	],
+	"hash": "a43445e5d79a0b806ac57073ff26884aa7f3b751",
+	"added": "2026-11-03"
+}

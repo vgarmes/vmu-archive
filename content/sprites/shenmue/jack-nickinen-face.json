@@ -1,0 +1,19 @@
+{
+	"title": "Jack Nickinen face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01fffe0003ffffc007ffffe007fffff00ffebff80ffc17f80ffc03fc1ff800be1fe0002e1fc0001e2787000e4388c0065b0364045304f8045201e88c4a0011c8280001f8200003701000c3f0080702700c0102201c00c220b4006640f6061c40fa00cc80b9003880bd80f100bcc0e200de602400df300e00ef9c3b80f7e3f7e0"
+	],
+	"tags": [
+		"character",
+		"jack-nickinen",
+		"face"
+	],
+	"hash": "b575f1dcaf602a78e8bc10ef235ed2d3b31cff7c",
+	"added": "2026-11-03"
+}

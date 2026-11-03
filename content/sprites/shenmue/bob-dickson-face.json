@@ -1,0 +1,19 @@
+{
+	"title": "Bob Dickson face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff00012aaae002d5559002aaba68054005d806800234068002ec048001140840016a080001960b80f96a0fc3fc96046600ba03e5e96405a2d1c208c1815a084400920880001208810024087e0004089280080800203008ef802009004020083c003008180068040000f41c0009aa36802737ed2a9c6a54d57857ae7fe0ae"
+	],
+	"tags": [
+		"character",
+		"bob-dickson",
+		"face"
+	],
+	"hash": "ee564062ac0995ca444084acb521c44788abbdb6",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Ichiro Sakurada face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ffc0001ffff0007ffff800fffffc00fffffc01fbbbfe01db31fe019111fe018000fe018000fe01b00e3e00f83f9f0084601c80b84f1a80dc169e8084480a8138860c8110400901104002008f802c004100c800480018004ff0300048083c01e3c07f03e180df87f0039fc7dc1f1fff8ff43fcf89c83fcf2c327fcf66e4ff8"
+	],
+	"tags": [
+		"character",
+		"ichiro-sakurada",
+		"face"
+	],
+	"hash": "bf6b53ca30b6aada0289e58b14b529faa62c73a5",
+	"added": "2026-11-03"
+}

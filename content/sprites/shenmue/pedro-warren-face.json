@@ -1,0 +1,19 @@
+{
+	"title": "Pedro Warren face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"7ffffffefffff3fffffffafffffffe4fff800a5ffc7fff7e73f0ffdc6fcc1ffc7fe3f3fc3fe03c7e3fe3ef1f3fc6727c3f80f8f4238210dc4981807e4d80003e4580003a6580007261801ee432c07cf41d00c07c1e003f381f0040f8158001f02d440f900ca9003018da472078768260ec3d20a0541f4060ae0fa8c05703fff0"
+	],
+	"tags": [
+		"character",
+		"pedro-warren",
+		"face"
+	],
+	"hash": "48fc76edf9e11a5420aa9f196c1ab0ecac3911ca",
+	"added": "2026-11-03"
+}

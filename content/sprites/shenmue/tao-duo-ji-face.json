@@ -1,0 +1,19 @@
+{
+	"title": "Tao Duo Ji face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00e00180018000c003000060020000200603ff20041e00a00461ff60049f01a00570006005c0006007a000301d5f81d00fa04230194f85d00ab347b01b140230092302900c804110068081100780e3b00383bee00687006005c4ff200545826005e07c7004b418501cdc00d0766e01dcc23783d70119fe91008e7d9000438120"
+	],
+	"tags": [
+		"character",
+		"tao-duo-ji",
+		"face"
+	],
+	"hash": "fb7a333708f9ba2578ae3d6c1f2884d4a8c749e0",
+	"added": "2026-11-03"
+}

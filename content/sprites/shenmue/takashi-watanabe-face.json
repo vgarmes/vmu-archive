@@ -1,0 +1,19 @@
+{
+	"title": "Takashi Watanabe face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003fff0000ffffc003fffff007fffff80ffffff81ffffffc3ffffbfc3ffffffe7f7000067feffffaffd8000effb3c01cff643868ff4bfff8ff473cdcff7effbcff47fcfcff47fcfcff43f8787f41f0507fa000583dd0085c3fe8079c1fe8003c0fe88fb807d0903803d8863001f4406001e300600ef1c0a0ff3c7f6cffcf00df"
+	],
+	"tags": [
+		"character",
+		"takashi-watanabe",
+		"face"
+	],
+	"hash": "1b0b638ef03d2c59186eb5eb17cf97fa1d940468",
+	"added": "2026-11-03"
+}

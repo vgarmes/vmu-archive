@@ -1,0 +1,19 @@
+{
+	"title": "Zhu Yuan Da face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"26946882267426eb276a87292732c3f90ffe61fd1b8fb12d1be1188725387e67a50efe07e503870f68038f8e20417f5ab06139a4f8218368f820a478f0107970981001e0081000a008000c1000019250000e1010921c0810891846109991461051d0033043e3ffe066e40cc024f1f800a3f860009ffff0001fff98007fce0c00"
+	],
+	"tags": [
+		"character",
+		"zhu-yuan-da",
+		"face"
+	],
+	"hash": "a8c526611182bb2e6f395146d6bb9242721be20c",
+	"added": "2026-11-03"
+}

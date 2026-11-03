@@ -1,0 +1,19 @@
+{
+	"title": "Atsushi Kuwata face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffff00038fffc00753ffe007abfff00f5bfff00f73fff00f87fff80ffffff80aabfff815555ff86aaaabf89fff55f8fb4bff88778df13419cac85408800074108000341080006411000008110800100af200e0080100400904004004f800c0040001a0047803200230063002001c5c0700786b7dffe0d5a8ff83aa54000d55"
+	],
+	"tags": [
+		"character",
+		"atsushi-kuwata",
+		"face"
+	],
+	"hash": "d7320c218408b8ce1095723c957910ec57a358da",
+	"added": "2026-11-03"
+}

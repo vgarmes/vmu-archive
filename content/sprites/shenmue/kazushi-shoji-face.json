@@ -1,0 +1,19 @@
+{
+	"title": "Kazushi Shoji face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fc00001fffc0003777f0007bbb780054c6fc006001de004000b60080007f00c00f6b00f03f3d0178f03f0118c0ab0110413d01f03c3701685a1f811000188110001242200007422200444241008682410004823e8001024080020240400c011f2008012080180300401e068f002bcd80004d6ac0019ab5700e355afff86ab"
+	],
+	"tags": [
+		"character",
+		"kazushi-shoji",
+		"face"
+	],
+	"hash": "6efa961a0e2420656188ac487356458c9b5bc1d1",
+	"added": "2026-11-03"
+}

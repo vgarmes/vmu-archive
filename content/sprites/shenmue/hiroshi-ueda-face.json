@@ -1,0 +1,19 @@
+{
+	"title": "Hiroshi Ueda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00d5d78001aaaac00355556002bfaab0057fd55006ffeab00555555807ffffa8060001f8040000f807001c780fe1fe38141e033c15f2f9e61453215a1412011a082102320fe0fc14084040240860c00808bf2030080010200400002004378040064040c0020c01e0010002d007800dff3ee033dffddfc5bffea01b7ffdd076bf"
+	],
+	"tags": [
+		"character",
+		"hiroshi-ueda",
+		"face"
+	],
+	"hash": "53ec334d313af4230a63309b2a492875c31069e0",
+	"added": "2026-11-03"
+}

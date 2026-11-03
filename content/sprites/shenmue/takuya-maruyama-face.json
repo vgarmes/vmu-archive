@@ -1,0 +1,19 @@
+{
+	"title": "Takuya Maruyama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00007fe0003ffff000fffdb803fffdb807fffb6807fff6d80f3ffff81effc1f01dfc00701bf000203ce000103be000103fc0001039c54050308029103681e9d0320723a03a000220190181201c0001a00f0000a00f8010a007800f301ac0063c1e40007f1f003c7e1f2040fe1f1019fc3f8803fcef8c03f8f78707fefb87ffff"
+	],
+	"tags": [
+		"character",
+		"takuya-maruyama",
+		"face"
+	],
+	"hash": "9fe84552450f393e5eb2cf14c5728fdb653bf842",
+	"added": "2026-11-03"
+}

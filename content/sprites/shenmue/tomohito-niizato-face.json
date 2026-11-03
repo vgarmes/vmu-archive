@@ -1,0 +1,19 @@
+{
+	"title": "Tomohito Niizato face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"1000002020000010200000084000000847fff00458000e046000018487ff8064bc00f812f0000e0aec00e706f30313c2608401f22603c1c92f03aca5388010b62681e8b4410000944100002441000004420c02082206047035fb1840244100c02001008013be0180110403c008f80560080009303c00332ceb00c65759ff18aa"
+	],
+	"tags": [
+		"character",
+		"tomohito-niizato",
+		"face"
+	],
+	"hash": "9fc231e9f2153836d638e49419909216f0a28e0f",
+	"added": "2026-11-03"
+}

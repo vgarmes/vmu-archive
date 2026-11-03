@@ -1,0 +1,19 @@
+{
+	"title": "Hiroshi Sakiyama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01fffe0003ffff8003ffffc0037f7fe003d5fff005fff1f804ff00f8080000fc080000fc0800007c1000007c1c00787c1601847c1186007c1700f8640b8168520882001a10810012108080341108002411040008098e001008f000600400006004fc00a0048300a0027001300200023c0700047f1f0018ff7e8061fffe7f87ff"
+	],
+	"tags": [
+		"character",
+		"hiroshi-sakiyama",
+		"face"
+	],
+	"hash": "2419fec8980e92ec0906d0d761c65d50a1b52d6c",
+	"added": "2026-11-03"
+}

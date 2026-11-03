@@ -1,0 +1,19 @@
+{
+	"title": "Sumio Kosuge face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03000180040000400800002008000020100030101000301020fefde827fefdf83ffe31f87f00300c70000004400000047ffffff83f800038331f07f02a260b202a0008202e00082026000820120004200e000420020104200300f820010204400181d8400180004003407080076001801f3001c0e79e07f8278fffd723c3fdc8"
+	],
+	"tags": [
+		"character",
+		"sumio-kosuge",
+		"face"
+	],
+	"hash": "d444da2537514abf5f024ede5f25a709f243d58b",
+	"added": "2026-11-03"
+}

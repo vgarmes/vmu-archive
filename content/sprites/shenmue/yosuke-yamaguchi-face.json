@@ -1,0 +1,19 @@
+{
+	"title": "Yosuke Yamaguchi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000007ffe0003ffff800fffffc01fffffe03fffffe03ff800607fe000207fc000207f8000207f8000107f0fc0f07f1fe1f07f2021107e0fd9e0465b0190b2000008aa001108aa006088b000a08858031f48200400501c083b100208849002007f20030000200f801e7031c0004860f000c4e05fffc7a027ff8650180185"
+	],
+	"tags": [
+		"character",
+		"yosuke-yamaguchi",
+		"face"
+	],
+	"hash": "2c1879adc7b4f26c9ecb589e22c6ea811d05449f",
+	"added": "2026-11-03"
+}

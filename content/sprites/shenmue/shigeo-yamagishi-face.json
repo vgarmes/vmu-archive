@@ -1,0 +1,19 @@
+{
+	"title": "Shigeo Yamagishi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ffc000038070000e00180058000c00b000060168000200b40003016a041100d40221016c780d00f9fc1f019b8633010d3b6d01625d7f01441a2d013206210190381d00d0001100720211001107fa00198dee0018f80a003c57fa006c480a00ce0007038b10cd8f8d881cef0ce03c7e467ff47e479fe43c62e3cc1c231c1c1"
+	],
+	"tags": [
+		"character",
+		"shigeo-yamagishi",
+		"face"
+	],
+	"hash": "a5aa4be9882db5a957f26a4e85f5190523a61312",
+	"added": "2026-11-03"
+}

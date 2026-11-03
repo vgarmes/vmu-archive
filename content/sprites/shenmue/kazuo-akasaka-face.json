@@ -1,0 +1,19 @@
+{
+	"title": "Kazuo Akasaka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01fffe0003ffff0007fc1f800ff00fc00b800fc0100007e0102007e011c00fe010000fe0100387e0100c03e016100320110002200803c2a008859aa005c0002006c00260044000e0024403600243c530024c23180170850e01430a07009c56060040ac0700555806002ab00f0075600e00ff801d01f7001e03fb803d03f7c07b"
+	],
+	"tags": [
+		"character",
+		"kazuo-akasaka",
+		"face"
+	],
+	"hash": "7a812671867897f93210c1702e8c359286331dfe",
+	"added": "2026-11-03"
+}

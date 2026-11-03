@@ -1,0 +1,19 @@
+{
+	"title": "Shinji Yamatani face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0180030002000080040000400803802010038010100fe01023efef882c03806830038018200000082000000843ffff045ffffff47ff03ffc660820cc4cf83e6455682d5454f01e544c044064240440481c0440700407c04004038040040000400207c080020820800f0001e0f180031f61c3870463600dc4e33839c7e19ff347"
+	],
+	"tags": [
+		"character",
+		"shinji-yamatani",
+		"face"
+	],
+	"hash": "7b84bcee88cc5162ca64909b528f1ec4577fb147",
+	"added": "2026-11-03"
+}

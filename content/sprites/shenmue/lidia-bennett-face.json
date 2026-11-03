@@ -1,0 +1,19 @@
+{
+	"title": "Lidia Bennett face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00e6780003980600066001800c81eec0190e01a012303e503041c1b060920068c1240f3c824878c40091c0321123001a2127c019224c300d424f880d4416e40d8453b00d845180cd88a0402908a00193114003e621800748c30005d80d8004d03c811cb0fec0c9a0be4073605f20c640afb01cc05fd87b80afffef0057ffd500"
+	],
+	"tags": [
+		"character",
+		"lidia-bennett",
+		"face"
+	],
+	"hash": "85dbc1ea8b155efc3d98b923a2a49abf3bf3d498",
+	"added": "2026-11-03"
+}

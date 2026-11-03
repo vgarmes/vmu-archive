@@ -1,0 +1,19 @@
+{
+	"title": "Kaname Honjo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fffc000fffff001fffff801d16ffc03556bfc035169fc03ffe9fe0ffffdfe7ffffffefffffffefffffffe7e60c3fe3ce17cf20561f26106b1a02d0260d80d06e0600d05a03019044000020440000404bf003804000010047780100440403002000068021e0048010c008c0380031f1fc01e1fff7ff83fff1fe0ffff8003ff"
+	],
+	"tags": [
+		"character",
+		"kaname-honjo",
+		"face"
+	],
+	"hash": "1355913cb87b8de465a981975847b9b683936578",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Yoshihide Hatanaka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fe00003aab8000d555600155555002aaaaa802aaaaa807fffd5404924f56052491ea0924927d0bfffa1d0e000d4705003bd10480c1f5046300fd05c1f0e304e2c859022100590440804904400013048200060482000e02fc001c02000038013700300100805c00800056009e009b01cc01958340072bc6e03e357dbff86ba"
+	],
+	"tags": [
+		"character",
+		"yoshihide-hatanaka",
+		"face"
+	],
+	"hash": "6da07588de2c29581baab6150465784060a3ec22",
+	"added": "2026-11-03"
+}

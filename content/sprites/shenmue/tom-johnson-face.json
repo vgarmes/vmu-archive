@@ -1,0 +1,19 @@
+{
+	"title": "Tom Johnson face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03f7fc000feedf001eddff803edbffc037b41ce06300c7206000cff040002ff840402c7ef09e0ff7c82003bbfb7f03fefcf9fef7767fc2dafe7fc0dffc3f00fec4800477c8401c73f9a611fdf601917d900e813bb3f6817c7984063f78f80c2efc8038377e70f27fee03e278f7ffc4f0e1be05f0ef700be0fc7817c0c03fff80"
+	],
+	"tags": [
+		"character",
+		"tom-johnson",
+		"face"
+	],
+	"hash": "0028c21f8cb1803492fff199ac78973b0de53aa2",
+	"added": "2026-11-03"
+}

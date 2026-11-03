@@ -1,0 +1,19 @@
+{
+	"title": "Shuichiro Ida face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01aebe00075d55800abaaac0157557602aaaaaa0357557506aaaaab0557557586aabffe8d57eaabeaab55555d5fffffeaff7807fffc0618cff801208e30fe2f85907c2f84d000110450381684c0000882000008830400f081c2000081c0000080e003b080d00001005001e100c800c203e600020ff380070bf9e00fcdfe7ff7f"
+	],
+	"tags": [
+		"character",
+		"shuichiro-ida",
+		"face"
+	],
+	"hash": "bbfed43c67c3ab395268ea3ad3bd5519f6be9ab5",
+	"added": "2026-11-03"
+}

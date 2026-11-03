@@ -1,0 +1,19 @@
+{
+	"title": "Wu Li Xian face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ff800007fff8001ffffe003fffff0063e0ff8040007f80c0003fc080003fc080001fc080001fc098381fc0bc7e1fc0c4418fc0b01c4720d83a0610840002d0b41e0251044000d108300091181800212ff40061200201e0a00203e097f203e0900a87e043c287c041808d4020011700300065806c0388c397fe107f13f020f"
+	],
+	"tags": [
+		"character",
+		"wu-li-xian",
+		"face"
+	],
+	"hash": "435f300dcc6b26aa3c3f8593c5d1b1bdfc10f69b",
+	"added": "2026-11-03"
+}

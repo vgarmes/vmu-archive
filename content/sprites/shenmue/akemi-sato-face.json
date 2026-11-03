@@ -1,0 +1,19 @@
+{
+	"title": "Akemi Sato face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffffe00ffffff01ffffff83ffffff83ffffffc7ffffffc7ffffffefffffffeffdbffffff4cfffffe627ffffa37fffffb0c1fffed9bcffff4b7e7fff205c7ffff0083ffdb0003ffef8001ff358001ff070001ff028000ff028000ff038001ff076181ff078e02ff0dc702ff0be004ff0bf00cff17fc19ff17ff31ff07ffe3ff"
+	],
+	"tags": [
+		"character",
+		"akemi-sato",
+		"face"
+	],
+	"hash": "73311c079d76a88666e49eedc721f7c7aed63849",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Hiroshi Kawamoto face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0180030002000080040000400800002010000010100000102000000822400488280000284000000441ffff048e0000e2bef83efafd04417e6400004c48f01e2459783d345800003448e00e2428044028180820301c1830700b27c9a00c0000600c17d0600a0820a00a07c0a005000140058383403ec006f8ff701dfffd9ff37f"
+	],
+	"tags": [
+		"character",
+		"hiroshi-kawamoto",
+		"face"
+	],
+	"hash": "b2bc811001bd68164dc33ed6964edf9a41265b8a",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Kenta Shimizu face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffff0003ffffc007ffffe007b6fff00e925ff00e495ff80d002ff8080007f8080007f80f03e3f80f87f3f818cc19f8137bcdf815cdabe410ca08c2138988da188410921703e0141100002410f000081044001009008060087c00c0048300c0047801c00430014002000360021006580f281c4633927881c2ffe083047f0104"
+	],
+	"tags": [
+		"character",
+		"kenta-shimizu",
+		"face"
+	],
+	"hash": "6ffc26cb486ac3704ab84b1720a6a23baac4239f",
+	"added": "2026-11-03"
+}

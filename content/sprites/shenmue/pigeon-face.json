@@ -1,0 +1,19 @@
+{
+	"title": "Pigeon face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000003c000000ff80000181c00002007000041c180004000c00085c0600082c0180103d2060123a1218102400071140416331c000882b1182e227bf05784cf959df41f7e7bd47ff7d7b5c3e7ffa700fafb56007777a0003dfd800033bb00001ef6f0003dbdf000335ff0007effc00059eb60007f76e0007fbdf0003cef6"
+	],
+	"tags": [
+		"character",
+		"pigeon",
+		"face"
+	],
+	"hash": "5ce6f9083aa9d879c0d2df22dd59dae9485e8c0e",
+	"added": "2026-11-03"
+}

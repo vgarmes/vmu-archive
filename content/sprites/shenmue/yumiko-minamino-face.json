@@ -1,0 +1,19 @@
+{
+	"title": "Yumiko Minamino face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffe78003f6fff00fbffcf817fedb9c3deff7f63fbbfe7b76ff4fbdffb813edfde005b6dff800def6c600abffc1013d6d908017ffbe4015fb1b001dbf0c8797f682007dfe800717d6400dbffe00067d6e01116fdb00907aff0060debb0b00d6f68041bc7e83036c344006d8ec600db0d6387f20aa1fed80570fdae0ab039570"
+	],
+	"tags": [
+		"character",
+		"yumiko-minamino",
+		"face"
+	],
+	"hash": "2d9ef21d3371aa35e3e3cf5e5aae62c955e398e6",
+	"added": "2026-11-03"
+}

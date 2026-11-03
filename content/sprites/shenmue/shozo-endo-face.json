@@ -1,0 +1,19 @@
+{
+	"title": "Shozo Endo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007aab0001d5558002aabac005755d6006aaaab00d755d500aaaaaa80ffffd581d5557e86aaaaab8ffffff58088303f8084401f80b01e0c80582d084040000b408c2002408418024088800440884000808860090057900e0052000c00400014002fc01600203025002300468070008d40d0011af3b806356d5ff86adbac00d5a"
+	],
+	"tags": [
+		"character",
+		"shozo-endo",
+		"face"
+	],
+	"hash": "3fe41f77fbd8f65c13904bb167048c30f5c80789",
+	"added": "2026-11-03"
+}

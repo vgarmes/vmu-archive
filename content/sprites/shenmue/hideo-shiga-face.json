@@ -1,0 +1,19 @@
+{
+	"title": "Hideo Shiga face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ded78001b56ac0036ab56002b55ab0036ab55006d55ab0056ab5580fffffa83d5555f86aaaaab8d5555578fffffff81bb6fbf8141c01fc15f4f9e616d5655a1414011a0822023207e1fc14044080240441800804be407004804040060000c002378180030003c0010c02e0038005b006801b5c1dfff6af6e9fcd6dd5c01eda"
+	],
+	"tags": [
+		"character",
+		"hideo-shiga",
+		"face"
+	],
+	"hash": "f6ac5d618adef1c4e7dc4090b388bab08d76539c",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Tomoaki Tange face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07afd7c00f5fffe00f5f83e01f5f01f01f41ff303f3fffd03cf0003033e000106fe00010dfc00010bfdfd1f0ff802210df9f81f03f0b43a0230000105b000210490002102800011024000110100010900e00209002001f100300002003003f200380c0200e800e2016c00c602e60005057300068eb1c0057558700eaaac1fff5"
+	],
+	"tags": [
+		"character",
+		"tomoaki-tange",
+		"face"
+	],
+	"hash": "62d27639f57b4b4b832f26a69fb767a6641e2c47",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Fusako Kondo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ffc00007fff0001ffffc003fffff007fffff80ffffffc1fffe1fc1ffb007e3ff6003e3fac001f3f78001f3ef0000f3de3e0ef3fe4111f3fe9c0ef3fc7a1df7fcb40af7f90001fff80000eff800106ff002086ff006086ff839f6c7b81004c6fc100987dc0bb1036a441301b940c2001ca004007e600803bf983e0c1fcfedc"
+	],
+	"tags": [
+		"character",
+		"fusako-kondo",
+		"face"
+	],
+	"hash": "9cb4ae2310304231fb2c156c717de57a2b56f822",
+	"added": "2026-11-03"
+}

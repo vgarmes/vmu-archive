@@ -1,0 +1,19 @@
+{
+	"title": "Eri Tajima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffffc007807ff00c000ff8180007f811ff03fc36abe1fc2a00f9fc78007cfc70002efe70002efe60000f7e6e01eb7e7106137f608809ff6601e1ff6f03f1ff7682d97f330071bf3781e1bf3080013f3100117f310000ff30e001ff380003ff38d803ff1c4007ff1c300fff1e003aff0f80f2fe05c3e4f40fffc850397f904c"
+	],
+	"tags": [
+		"character",
+		"eri-tajima",
+		"face"
+	],
+	"hash": "e05b50e25b3729964f94b2fffee1b2853bc78361",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,21 @@
+{
+	"title": "Hiroshi Sugiyama",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0b4687f868d0fb7efc0668d04b4688ff68d0db6ed1ff68d04b56b1ffe8d0db7efcffe8d04b7ef0ffe8d0db6ef83fe8d04b56a03fe8d0db6ee03fe8d04b56a0ff68d0db6ee0ff68d04b56b0fe68d0db6ed9fe68d04b56af3fe8d0db6efffff8d04b56dffff8d0db6eeffff8d04b56ec0004d0db6efb7ff4d04b56fb7ff4d0db6efb7ff4d04b5efb7ff4d0db7efb7ff4d04b7efb7ff4d0db7efb7ff4d04b7ebb7ff4d0fb7ebb7ff4d00b7efb7ff4d0fb7efb7ffcd00ffffffffff80fffe0000008",
+		"0b4687f068d00b46880c68d00b4690fe68d00b4691fe68d00b46a1ff68d00b46bdff68d00b46a0ff68d0fb7ef89f68d04b46c09f68d0db6ec01f68d04b56c07f68d0db7ee07e68d04b7ec0fe68d0db56e1fc68d04b6ebf3f68d0db56efffe8d04b6ef7ffe8d0db56f7fff8d04b6efc0004d0db5efb7ff4d04b7efb7ff4d0db5efb7ff4d04b7efb7ff4d0db7efb7ff4d04b7efb7ff4d0db7efb7ff4d04b7ebb7ff4d0db5ebb7ff4d04b6efb7ff4d0db7efb7ffcd04ffffffffff8dfffe0000008",
+		"0b46bfe068d00b46e01868d00b46c03c68d00b46807e68d00b46807e68d00b46f3be68d00b46803e68d00b46f3a668d00b46802668d00b46800668d00b46801c68d00b468c1c68d00b468c3868d00b46c07068d00b46bf9868d00b46f1fc68d00b46befe68d0fb7eff7ff8d04b46fc0004d0db6efb7ff4d04b5efb7ff4d0db7efb7ff4d04b7efb7ff4d0db5efb7ff4d04b7efb7ff4d0db5efb7ff4d04b6efb7ff4d0db5ebb7ff4d04b6afb7ff4d0db7efb7ffcd04ffffffffff8dfffe0000008"
+	],
+	"frameDelayMs": 400,
+	"tags": [
+		"character",
+		"hiroshi-sugiyama"
+	],
+	"hash": "089d7632ccd203d8e21d84e3c1b335e3b2abca77",
+	"added": "2026-11-03"
+}

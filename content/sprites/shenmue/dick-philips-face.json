@@ -1,0 +1,19 @@
+{
+	"title": "Dick Philips face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01be0780012a03c0022a01e0023601e0021c01f01f8001f07fff81f8fffffcf83c01fff8080019f80b83c4780c4422b80b8382980dc5d24c088022340982114a1309016a110800aa1208024a120404140b1618a40bfd01c80a6101b0040083c004f887c0050445600e7049b87a001b5fd60032adaf00e7565d01c6adb9ff0d56"
+	],
+	"tags": [
+		"character",
+		"dick-philips",
+		"face"
+	],
+	"hash": "1beebb571a7f419fe618b5920b73036462cf8188",
+	"added": "2026-11-03"
+}

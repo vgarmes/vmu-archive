@@ -1,0 +1,19 @@
+{
+	"title": "Ryo Hazuki portrait",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"023edffff800017adffffa0001fadffffc8001eaeffffd0000eb7fffff0000fd7fffff0000ffbfffff0000fffffffe0000fffffffe0000e7fc07fe0000e1c003fe0000400003fe0000400001fe0000700079fe00007c01c1fe00002e27e19e00003718f10e00002600e16c00002600e04c00002000004c00002080101c00002180283e0000210050fe0000108021fe0000100001ef0000087803f70000088406f9000004300ce480000200389200000700f18100000f83e39dc0003fffc7e120"
+	],
+	"tags": [
+		"character",
+		"ryo-hazuki",
+		"portrait"
+	],
+	"hash": "982b73e637131d08fc09a3def7152f2d788a3959",
+	"added": "2026-11-03"
+}

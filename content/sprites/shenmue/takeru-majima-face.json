@@ -1,0 +1,19 @@
+{
+	"title": "Takeru Majima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"006aab0001d55580036aaa8006beab800dc1fec01b0000401400004020000020200000202000002020000020202e00e0200181203c004220620f81d0491703505c000210440002104c0021104400409020004090100061200e001e200a00002009007e400901814018801c407c400080fe2000c0ff1801e0ff860378ffe1fefe"
+	],
+	"tags": [
+		"character",
+		"takeru-majima",
+		"face"
+	],
+	"hash": "94c591d5d49ba0ec7094d1e4576e350590b0ca42",
+	"added": "2026-11-03"
+}

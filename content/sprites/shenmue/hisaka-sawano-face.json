@@ -1,0 +1,19 @@
+{
+	"title": "Hisaka Sawano face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffbf8007ffdfc00fffefe01ffff7e01fbbfff83f67fffc3edfdafe7fbe007e7e7c003f7ffc003f7ff8001f7ff8001f7ff0001f7fef81ff7f80429e630f01fe493783dc4d2f81dc4c060198240e0018200000101a0004100e0004203f001c207f000078fe808646fc407481fc2001c0c61839352306031a22818c8d11407044"
+	],
+	"tags": [
+		"character",
+		"hisaka-sawano",
+		"face"
+	],
+	"hash": "8e2c736bcdcecdb7e7704804e65f797ed4322d82",
+	"added": "2026-11-03"
+}

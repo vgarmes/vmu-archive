@@ -1,0 +1,19 @@
+{
+	"title": "Tatsuhito Yamaoka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00fffc0003ffff800fffffc01ef7bfe03ffffff077777bf07bfff7f83c781ff818000df81000077c100007fc1601f6fc19060bbc088801fc0b01e1cc058ad1840b89c0b4080000a4088000ac0900000809000818051810f004e001e00400216002dc03a0060007a00b380d200b001a3839807427c9c1c84004ff30800478c100"
+	],
+	"tags": [
+		"character",
+		"tatsuhito-yamaoka",
+		"face"
+	],
+	"hash": "586ee99dad5a904acecf469b30b4f3133aba09bc",
+	"added": "2026-11-03"
+}

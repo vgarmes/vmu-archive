@@ -1,0 +1,19 @@
+{
+	"title": "Yuriko Kikuchi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff8001fffbc003ffede007fff7e00fc17bf00f812ff00f00aff01f0097f81e0057f81e000bf81ff07ff81c0881f81ce03cfc1d705afc1c6018fc0c0000fc0c0000fc0c0400fc0e0400fc060300fc060001fc070021bc070bc3bc078787bc07c00f7c07e01f7c07f02efc05fccff40df307f409f007a813f00fac0ff87f5e"
+	],
+	"tags": [
+		"character",
+		"yuriko-kikuchi",
+		"face"
+	],
+	"hash": "93f3f86836cd967b57d1d9e0674135f0f2538302",
+	"added": "2026-11-03"
+}

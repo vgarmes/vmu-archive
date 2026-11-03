@@ -1,0 +1,19 @@
+{
+	"title": "Izumi Sunaga face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03fffff00ffffff81ffffff83fffffdc7fffdfec7f77efe6fe23f386fe03780efa037c3ffa037cfff1063eff7c04ffff73031eff30840fff3701efff3d8357ff3b81c7ff5880077f5080053f910005bd110005fd30e005fe280000fe28bc02f6444004f60238087b0100107d0180609b0341c10c1e7f8207fc7e0c0ff830301f"
+	],
+	"tags": [
+		"character",
+		"izumi-sunaga",
+		"face"
+	],
+	"hash": "22db553abe93d06e4bb2525c3b752fd9b1aa5d76",
+	"added": "2026-11-03"
+}

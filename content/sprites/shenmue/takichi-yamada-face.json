@@ -1,0 +1,19 @@
+{
+	"title": "Takichi Yamada face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"015557c003aaad6006aaaad0040002b00ffffc680fffff181c0003cc1bfffcf41fffff3e1f01ffce180007f63e007efa332182be38a609ae37c3f9ae55ccd0aa50c900ba5348e1aa504801aa684c016b2886016d2885015514780155140000d5147c00d50c8301560a3c037c0218067803000cec0f8039d7fbc0e3aa557f8755"
+	],
+	"tags": [
+		"character",
+		"takichi-yamada",
+		"face"
+	],
+	"hash": "259868deee11287abbd2ab854e9213035d8d71a7",
+	"added": "2026-11-03"
+}

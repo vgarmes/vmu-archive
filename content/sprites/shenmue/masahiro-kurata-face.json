@@ -1,0 +1,19 @@
+{
+	"title": "Masahiro Kurata face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000fdff0003ffffc007ffffe007fffff00fe03ff00f800bf80f0005b80f0006dc0e0002cc0c00036c0f80f96c0c4101fc0c2201fc0d80f0fe0ec148fe042000fe042000fe044000fe044000fe04c200fe04c500fe04b900fe028000ee026e01fa020003e8011807a803001dc00d8039f03ac0e3fff7ffc5efef7f1bef"
+	],
+	"tags": [
+		"character",
+		"masahiro-kurata",
+		"face"
+	],
+	"hash": "586e691afd1065a795ef8f6037f71126c611191e",
+	"added": "2026-11-03"
+}

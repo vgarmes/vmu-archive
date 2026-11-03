@@ -1,0 +1,19 @@
+{
+	"title": "Takayuki Shibata face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"183bfdb837c7fede6fffff6e5fffffef5c7c0fb7780003fdb80001d7b00001dbf00000fbb8000cdff64470ff77c7f8557847047f7fb5fa3ff5c3603bf042003ff381e13df040022fd044043ff842000f5846005f783c009f7c0000bf3c7f013e3e20813f363c021d1718020e0d00040f3980081ff880303ffcc0e0fffe7fc1ff"
+	],
+	"tags": [
+		"character",
+		"takayuki-shibata",
+		"face"
+	],
+	"hash": "621ddf2fd09d725f55da67472ccef8693a104cb0",
+	"added": "2026-11-03"
+}

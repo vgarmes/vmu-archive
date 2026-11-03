@@ -1,0 +1,19 @@
+{
+	"title": "Tsuyoshi Murakami face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07fffff00ffffff80ffffff81ffffffc1ffffffc1dffdffc1dbd9ffe1cb917fe189b05fe181205fe0f00f1fe08c309fe0b85e0fe0dc2d0cc0d80d08408000094104000a4104000241080002810880408110408100904002008f80040040000c004fc00c00400014002300240020004e0020008b8070031573b80c2aad57f0555"
+	],
+	"tags": [
+		"character",
+		"tsuyoshi-murakami",
+		"face"
+	],
+	"hash": "68c247a7e733006e4ce94e46ffd571773716e35c",
+	"added": "2026-11-03"
+}

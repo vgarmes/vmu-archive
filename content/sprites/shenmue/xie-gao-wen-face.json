@@ -1,0 +1,19 @@
+{
+	"title": "Xie Gao Wen face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff00001fffe0007ffff800ff9bfc01defff601b1fffa0307fb7f038fd35f07ffd25707fea40307fe000307fc003b07fcf043073900060618083a06d8f0740291e83a0240f082010000c200800042006001820030000400180044001c03880072001001f9802007fc70fc0ffe3fbf0ffd0f3fcbfec07f6dff78defe3fafbdf"
+	],
+	"tags": [
+		"character",
+		"xie-gao-wen",
+		"face"
+	],
+	"hash": "387b49e4e1550b20ceedcb1af4c355f3f9893abd",
+	"added": "2026-11-03"
+}

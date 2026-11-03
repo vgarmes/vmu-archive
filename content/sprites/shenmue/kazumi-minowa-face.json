@@ -1,0 +1,19 @@
+{
+	"title": "Kazumi Minowa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001fff80007fffe001fffff003fffff807fffffc0ffffffc1fff01fe1ff8fe7e3fe7079e3fdce3ee7fb819967e78040e7c31c0eaf9b26016f9f0e00cf8e040c4fca0016cfc0001e8fe4010887f8020887f8019883fc00f180ec04210f9c03810f3600630f22030205210182059180060090c00c00c8701e00443c678a621fc1e"
+	],
+	"tags": [
+		"character",
+		"kazumi-minowa",
+		"face"
+	],
+	"hash": "fec5eb25b41be5b087eb3904025112017ea0f2e1",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Yuji Hirano face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0007f00003dffe000fff7f800e7fdfc01dffede01b81eef03700eef03600def02e00ddf82c009ff82c001bf81c0013f8180003f80b81f1f8084201f805e5e19806c0d1a8082101a80840c0c80840009008800820048430c00478008004000180026e030002000780073c0bc00b1813b0378063deefc1c7dfdf7f07efbe000fef"
+	],
+	"tags": [
+		"character",
+		"yuji-hirano",
+		"face"
+	],
+	"hash": "a6ad76f72e7f3327710c65abdb8fa5e54a0a1346",
+	"added": "2026-11-03"
+}

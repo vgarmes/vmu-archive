@@ -1,0 +1,19 @@
+{
+	"title": "Fukuhara Masayuki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07fffff80ffffffc1fc17d1c1f80000e3f00000e3f0000063f0000023e1c00663e3f01f63c41831c1c00400c1c1f05e4382686d6486624de48002406500004024200020a2200000a2980821218007c04080000040400000804007e080201810803007e1002801c10066000201a180070740e01bea407ff994421ff4642107e21"
+	],
+	"tags": [
+		"character",
+		"fukuhara-masayuki",
+		"face"
+	],
+	"hash": "d9de8797c77905d1ca277bcb6d5609b4ee955025",
+	"added": "2026-11-03"
+}

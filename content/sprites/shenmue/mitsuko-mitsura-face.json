@@ -1,0 +1,19 @@
+{
+	"title": "Mitsuko Mitsura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00fffc0003ffff000fffffc01fffffe01ffffff03ffffff03fddfff87ed57ff87ad55ffc7a955ffc729057fc7e17e7fc60000bfc6e03cbfc7b06b3fc768383fc308002fc308000fc310000fc310000f810e001f8100001f8100003f0099e03f0080007e004780fc002001fe003007f581d81cc36e9ff1a2b92f8304110c0e8c2"
+	],
+	"tags": [
+		"character",
+		"mitsuko-mitsura",
+		"face"
+	],
+	"hash": "dc8db89ef8374b4b6d10e12fce0ff4586048ce5d",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Santa Maeno face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffff000fffff801fffffc03ff803c07f8000e07e000030fc01fc10f83e0390f0e00050a3cf03b024b08450294f03b039308050250f43d04d7386f0551f03d0552062304c9c8148648081083441f3e8183e3e981010000820204148208092a8214aa91878150006c82000058c0000020c0000028600000187000001c3800001"
+	],
+	"tags": [
+		"character",
+		"santa-maeno",
+		"face"
+	],
+	"hash": "1c02db5a6ec09265a8bff440bb3242daf69b3267",
+	"added": "2026-11-03"
+}

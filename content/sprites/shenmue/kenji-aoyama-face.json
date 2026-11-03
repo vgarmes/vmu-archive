@@ -1,0 +1,19 @@
+{
+	"title": "Kenji Aoyama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ffc00007fff8001ffffc003ffffe007fffff007fffff80ffffff80ffffffc0f6edffc1f6edbfc1e66dbfe1e2649fe1ff2fdfe0c0001fe0c0000fe05e078ce02d0b496020800b4040800a40410000804100030040d00e0040000f00e0e01b01b1103283384056824c019482470f1c834dfc38ef2cf058ff2a0190ffa98621f"
+	],
+	"tags": [
+		"character",
+		"kenji-aoyama",
+		"face"
+	],
+	"hash": "b495e6324925855f902e692c9ac2b26e4ed24619",
+	"added": "2026-11-03"
+}

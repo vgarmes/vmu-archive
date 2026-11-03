@@ -1,0 +1,19 @@
+{
+	"title": "Yoshihiko Tashiro face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0003f00000f7fe0003ffff8007ffffe00ff7fff00fe3fff01f4177f81d4157f8180003fc1b81f9fc144205fc102000fc0ba1f0fc0d42c87c08000074084100621384e02a1102000a2103001220fc8002200000042000001820ef00102100801010000010103c002008180070080000e8140001af26000347e5801e43c4fff883"
+	],
+	"tags": [
+		"character",
+		"yoshihiko-tashiro",
+		"face"
+	],
+	"hash": "35aaa5da769888e610fcb64ca648a36638be42a0",
+	"added": "2026-11-03"
+}

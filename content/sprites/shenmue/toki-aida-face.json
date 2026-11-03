@@ -1,0 +1,19 @@
+{
+	"title": "Toki Aida face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 33,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000003ff800007fff80006a4ff0004a48fc004ff99f00294717802800d3e01b0c36f008208c7c040002de05c0f1cf0330c45bc1000133e0ba1e17f06e178e78218c22181383a16c12420936084080320431c013021fb00280980847804943468011f927800800178002380680010007e000400ee800701e6e00effc6ff1a9f8eebf"
+	],
+	"tags": [
+		"character",
+		"toki-aida",
+		"face"
+	],
+	"hash": "0e9f1edb9932d357ac07337cd932fdb56419958b",
+	"added": "2026-11-03"
+}

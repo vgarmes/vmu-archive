@@ -1,0 +1,19 @@
+{
+	"title": "Takeshi Hirai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01f6af0001efff0003fe0f0003f8030003e0018007c0008007c00080078f83400790c4c0072040400f0f07401b1e8fc0110c0ec0140084401401044016000240120002401940e6400c207c40071000c0010000800180fe8001c1058002e0790004b083801c5802e0342e0678f417fc3ef419f9bff43e77dff27fdfdffa7fafdf"
+	],
+	"tags": [
+		"character",
+		"takeshi-hirai",
+		"face"
+	],
+	"hash": "4ee323b2860ae31ac7048031f011a77a4613f877",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Takafumi Mitsuzuka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ff80000f7760007bbbb800ddddd401feeeee01f7400503fb0003037c000303f4000103d8000103e8380d02f0fc1f03f1022103b2781d03d0f43b02e100210560782d05220220858004108480041082001fe081002ff100c058190060b7e90020a00a003003c20030018400e8000401a600080311c01c0e0c3ff7cf030fc3f"
+	],
+	"tags": [
+		"character",
+		"takafumi-mitsuzuka",
+		"face"
+	],
+	"hash": "85b59ccb1aed12fd7568256a89f1bf2ec9057ada",
+	"added": "2026-11-03"
+}

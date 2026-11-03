@@ -1,0 +1,19 @@
+{
+	"title": "Akira Fujiwara face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fff8001ffffc003ffffe007fffff00cff0ff0087807f0100003f8100003f8100007f82e89e3fc338f13fc218801fc1703d1c41385a192148000ba1281802a110000121100002411100024120800081208001011f000e0084000c0080000c009bc0180050202c004f00460040018f00e0031dc3700e3b3d5ff876014fe0ed0"
+	],
+	"tags": [
+		"character",
+		"akira-fujiwara",
+		"face"
+	],
+	"hash": "3868c85c76c95f9f3f841cf26f4aa232b2783173",
+	"added": "2026-11-03"
+}

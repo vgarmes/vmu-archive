@@ -1,0 +1,19 @@
+{
+	"title": "Shingo Mochizuki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"10000008100000442000006420000734200003d22c0000ea5000063263ff81ca4c0078265000079b2000f3ed1c07ffb73b1e7f1b3ffffb4e3ffff24e1f9fc28f088f0a9d1080021d1100103e110020fb190841ee09f001eb0cc003fd047e02f7068104fd027c0875033810580310205e069860bf1dffc0bf7d7f817ffa3f02ff"
+	],
+	"tags": [
+		"character",
+		"shingo-mochizuki",
+		"face"
+	],
+	"hash": "8e530384c801e4cacba1c028de8c648ee711f12d",
+	"added": "2026-11-03"
+}

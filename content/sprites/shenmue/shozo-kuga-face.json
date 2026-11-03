@@ -1,0 +1,19 @@
+{
+	"title": "Shozo Kuga face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff0003aaaac0055555700aaaaaa80d7d55540fcffaaa08840f55388401eb67fff03558001f0f3f07c7c2088831320e038c9e080000f20f03c0ad0b85eced088010ad1301c84511080019120400031206000613f9001c0a0080300800803009fe007004800078047800d60e0003af3b001f5df7fff6aebb7fcd5d75801aba"
+	],
+	"tags": [
+		"character",
+		"shozo-kuga",
+		"face"
+	],
+	"hash": "dde01fcfcd1fb787bfb09c897e5794e6ae802175",
+	"added": "2026-11-03"
+}

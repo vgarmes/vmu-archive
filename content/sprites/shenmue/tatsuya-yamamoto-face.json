@@ -1,0 +1,19 @@
+{
+	"title": "Tatsuya Yamamoto face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000001ff800006aae0000d5558001aaaac00100154002000aa002000560020002b00400015005c0f2b007213950040000f005c0f19002e161280220016804080048041c00480422001004000020040000c00436008002000180021c03000100078003c01ae00f70f6783adfcc6ed6cf18d5aa4030aa57206155"
+	],
+	"tags": [
+		"character",
+		"tatsuya-yamamoto",
+		"face"
+	],
+	"hash": "d51245ba85084e8bfff799d8814f48ce9023078c",
+	"added": "2026-11-03"
+}

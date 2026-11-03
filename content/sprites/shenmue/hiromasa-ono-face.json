@@ -1,0 +1,19 @@
+{
+	"title": "Hiromasa Ono face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fff0001ffffc007ffffe007fffff00e003ff80c001ffc0c001ffc0c000ffe080007fe0c00e7fe0e03f3fe09040bfe080001fe0f07c1fe0a8321e6088001c21100019a110000b211000096121000241208000c11f0001808000070080200e009fc00c0048001c0047806800c000cf03e0039fcff00e7fffdff9bfffcfe67ff"
+	],
+	"tags": [
+		"character",
+		"hiromasa-ono",
+		"face"
+	],
+	"hash": "a365869715a63a5675235cde5eeaa4bd74863dde",
+	"added": "2026-11-03"
+}

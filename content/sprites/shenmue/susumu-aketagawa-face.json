@@ -1,0 +1,19 @@
+{
+	"title": "Susumu Aketagawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00c0030003000080040000400800004010000020100000202001fe20203e01a020c00060238f03a0253f87e02b4000203e000420660f47904a16835058400230583002604a00e12062018110320163101c01fe100c821320064485200238214003498640072afd401f8200e07ad038f8f26505bee330919fe11d238fe187fe87"
+	],
+	"tags": [
+		"character",
+		"susumu-aketagawa",
+		"face"
+	],
+	"hash": "7ccd86f6f0ad253fc65a9635f43616631bdf24ad",
+	"added": "2026-11-03"
+}

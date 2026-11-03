@@ -1,0 +1,19 @@
+{
+	"title": "Shoko Usui face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001fff00187fffe026fffff823fffffc437ffffe46febffe8ce1ffff8c47ffff5e9fbb77dfffbb37fffb3b33fffb3223fff3e07bfff61087fce80003fa61e03bfa46d0dafb438076f94040966c0000847e000044778000443fc003841dc000041ee00d880f6001080e3007100618001002120020007180c001f0e1e00ff83ffc"
+	],
+	"tags": [
+		"character",
+		"shoko-usui",
+		"face"
+	],
+	"hash": "a67bc07177421608b259023e6dff21bfda2e6f18",
+	"added": "2026-11-03"
+}

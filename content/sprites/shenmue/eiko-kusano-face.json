@@ -1,0 +1,19 @@
+{
+	"title": "Eiko Kusano face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007ffe0001ffff8003ffffe00674fff005dfcff80ffff7f80b807bfc1e001ffc1c000dfc1c0007fe380003fe3f81f3fe384209fe3b81e1fe1dc2f1ff1fc1e1ff1c0001ff184001ff188001ff188001ff186001ff180001df1c5c03df0c2005ff0e180dbf0d001bbf058073ff02c1e77f047f9aff0c3e716f3a8fc6c7f9403901"
+	],
+	"tags": [
+		"character",
+		"eiko-kusano",
+		"face"
+	],
+	"hash": "64c1089f106847e9699f6eec1b190fe5e4c514ae",
+	"added": "2026-11-03"
+}

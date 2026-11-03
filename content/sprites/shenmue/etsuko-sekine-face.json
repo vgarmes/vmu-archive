@@ -1,0 +1,19 @@
+{
+	"title": "Etsuko Sekine face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0ff9ffc01ffefff037ff7f782fe3adbc5dc0f6dc5c007b5efc007b7ef6003dfeea0fddfee51c0ffe702007fe6cc787fe7e0fc3fe7e1383ff7e0701ff2c0000f7240000f7280000fb280000eb260001ed100000ef11f000f7087805f708f009fb0c00117f0e00717f0f01e27f0f87e27f0bffc25f0aef815715f7012b17f600ab"
+	],
+	"tags": [
+		"character",
+		"etsuko-sekine",
+		"face"
+	],
+	"hash": "cca3300e80b84ed9b75c1cfbfc2c1de706e9f27b",
+	"added": "2026-11-03"
+}

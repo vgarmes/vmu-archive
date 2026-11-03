@@ -1,0 +1,19 @@
+{
+	"title": "Mamoru Hattori face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00d5aa0003ab57000756aac00556abe00dffd43016003bf014000e0819c1e5f81a1c130c100002f41300e10c17c3f9c418fe05bc107c03e41745e3da0bc6f24a1044041a188608121783f0041101000811030230118e8c400a7880400a00408008814080047e01800c00076036380e7cd7003c57b3fff06d59ffc0d6a8ff01ad"
+	],
+	"tags": [
+		"character",
+		"mamoru-hattori",
+		"face"
+	],
+	"hash": "bd9ec4cb16335d202d5a8d01a4313a6dd0dceae8",
+	"added": "2026-11-03"
+}

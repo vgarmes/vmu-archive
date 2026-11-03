@@ -1,0 +1,19 @@
+{
+	"title": "Shozo Mizuki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00621400008001800100004002000020040000100400001008000028080000080b01e0080f83f0280c420818084400380bc5c24c0f83f12408800a340c8110340b8ce0a40902018c098e009808ff00f009b882d0091045a0051039e0048125c0057ea9600e0083581f3817cc16414eb673121cb7db8979e59afff2cf9abba6df"
+	],
+	"tags": [
+		"character",
+		"shozo-mizuki",
+		"face"
+	],
+	"hash": "e360e8df028cf98901e84f0e3e9aebbf17900021",
+	"added": "2026-11-03"
+}

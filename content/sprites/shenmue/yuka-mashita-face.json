@@ -1,0 +1,19 @@
+{
+	"title": "Yuka Mashita face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff00000f87e0003f3ff000fc1f3801e7fc6e03bffec703f81f8f07c002df878001ff8f8000ff8f80007fcf603c7fcf10407fcf00003fcff03e3fcfb84f19cf300e10c7040016c7040004c70c0004c7180009c7180003c70e000fc780001ec78ec01ec7cc003ec7c7007aa5e000ba0570033000380e7e00fe38e7c7fbe38ff"
+	],
+	"tags": [
+		"character",
+		"yuka-mashita",
+		"face"
+	],
+	"hash": "1c3b2bbf4a069ee84fd949c201049ded71311af6",
+	"added": "2026-11-03"
+}

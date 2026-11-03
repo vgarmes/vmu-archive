@@ -1,0 +1,19 @@
+{
+	"title": "Koichi Tsuda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01fbff0007ffffc00e2c0fe00dfbfbf01ffffff81c003ef818001f7c19860ffc103007fe1f03f3fe10840bfe108401fe200000fe2701f0e22b82e8491080024d1701c85921000051220c00122206020225f9040c24000830240008301201006011fe0060080000a008f000a004600120040006381e001c7ffb0070fff9ffe1ff"
+	],
+	"tags": [
+		"character",
+		"koichi-tsuda",
+		"face"
+	],
+	"hash": "5fda948818c5fabe1dc27f1c6f594c220fd05592",
+	"added": "2026-11-03"
+}

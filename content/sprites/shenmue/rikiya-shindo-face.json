@@ -1,0 +1,19 @@
+{
+	"title": "Rikiya Shindo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffff0003ffff8007ffffc007ffffe00fffffe01fffffe011f83ff020000ff8200007f8200007f83e0fc3f8231823f8211003f82e0703c81b0c8184110001b41d07812422004128221000482218001025f4006014e200c0140201c011b901401000024008f002400860044004000c300400181c0200703f1f81c077fdff01cd"
+	],
+	"tags": [
+		"character",
+		"rikiya-shindo",
+		"face"
+	],
+	"hash": "1e0b7056f8f83161405b4f977533810dbfe7aa0d",
+	"added": "2026-11-03"
+}

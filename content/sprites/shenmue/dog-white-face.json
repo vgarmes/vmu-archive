@@ -1,0 +1,19 @@
+{
+	"title": "Dog (white) face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000001e01c000330370006d029800dd02cc019d02e7ff3d02e3123982e425bc82c842dd8352482c83a60e11c1520d1b41800006c19c0f0863340b84b21e1f82231807409625102104080440860380014515c000840fc001c21780008293024583578d03219ffe0601d87e5c00ae1d380093f2f000801fc000c20a04005040480"
+	],
+	"tags": [
+		"character",
+		"dog-white",
+		"face"
+	],
+	"hash": "c2d2d334f80363b34997e62ce56ae0fdbd646693",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Ryoko Nishizawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000ff000007ffe0001ffff8003ffffc007ffffe00efdfbf019bbfdf81361f65836c0bb1c3c805b0c7c804d9c780007fe7bc0f3fe74210bfe7380f1fe77c1f9fe3d415cfe19c078fe19a070fe184000fe184000fc183001fc180001fc0c3e03f80c1007f806080ff0038037e003c0e58006bf88c01c5e30702820402c"
+	],
+	"tags": [
+		"character",
+		"ryoko-nishizawa",
+		"face"
+	],
+	"hash": "7ab00a6b20d96cff65bc72dfb5d060138f4d40ce",
+	"added": "2026-11-03"
+}

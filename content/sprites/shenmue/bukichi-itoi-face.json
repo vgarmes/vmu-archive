@@ -1,0 +1,19 @@
+{
+	"title": "Bukichi Itoi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ff800006aae0001bf55800340aa40068054200d0e00d00b20da10154600681a10dd18352000082a8f2268351f94f83b30d59865000008430791e85a6cd330521002085863a1c8480c6128601040983800f1880c011e48044204480622004803127e10068080100fc018203f600478efb800ff5fdf01baafe7ff7d57f1fefa"
+	],
+	"tags": [
+		"character",
+		"bukichi-itoi",
+		"face"
+	],
+	"hash": "5d08db444c907cce7d67c3b5251b4c982113f658",
+	"added": "2026-11-03"
+}

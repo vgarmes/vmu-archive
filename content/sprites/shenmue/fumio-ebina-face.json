@@ -1,0 +1,19 @@
+{
+	"title": "Fumio Ebina face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"18fbffb43797fede6fefff6a5fffff6f5c7c0fb5580003b5d80001d5d80001dbd90090dad80000daee44e8fa79c70055784400565f81f852bdc3706ab840003adbc3e03d5840002d5840002d5844006d787800552c1000552c0000b5166e00ae160101350a3c013d0b18023f0f00067f3e800c7ffe8038fffe40e1ffff7fc3ff"
+	],
+	"tags": [
+		"character",
+		"fumio-ebina",
+		"face"
+	],
+	"hash": "c7890ca10ec7867eb2d8c752a6364f1bf6eec03c",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Chen Gui Zhang face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"3ffffffc7ffffffe7fc9effeff80efffff80f7ffff8077ffff803bff7f001dff7f000fff7e0007ff3800fffe3c070f7e371bf71e1f87224e1e8382ce1b80028c0980089c0900101809003038090060f0050821f005f001e002c001e0023e02e0020000e001180470010008580380184e06c070871d60e0877d33c107f89f820f"
+	],
+	"tags": [
+		"character",
+		"chen-gui-zhang",
+		"face"
+	],
+	"hash": "25334f1862456508a3564907565ea71702fe4057",
+	"added": "2026-11-03"
+}

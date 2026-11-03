@@ -1,0 +1,19 @@
+{
+	"title": "Ichiro Tano face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 33,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"006aab0000eaaac000dd6ab000fbd57400d7aeea00de7ddf007603fc806e0000202b0000101b8000040be0000206e1f00702a00e0c81f0018840983f83e0840b81a85800008424000042110000210480021882040204408103862038023e100c02001005001f0802c03044033003c4068c00020e2300038218e00171061c01ae80c3ffa0"
+	],
+	"tags": [
+		"character",
+		"ichiro-tano",
+		"face"
+	],
+	"hash": "a052dacd0a31ffb2d3687b3860e03308670c0ed7",
+	"added": "2026-11-03"
+}

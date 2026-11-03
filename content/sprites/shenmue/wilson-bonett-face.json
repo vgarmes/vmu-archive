@@ -1,0 +1,19 @@
+{
+	"title": "Wilson Bonett face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"018000c0020000200400001004000008080000080800000408000004100000041f07f00410000c343f07f04c73fe7f846f8df8b47f8ff8343f07f0241080002c1100004811080018120400281204005013fb005017ffd0d00e03ea900dfcfd900e03b7900c01dd100f076f1807febe3f3efb7c77dbfff0efd9ffc39fecff1e7f"
+	],
+	"tags": [
+		"character",
+		"wilson-bonett",
+		"face"
+	],
+	"hash": "53eb20f9fd51a39dcce09d093817bca409936784",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Toshiki Kagawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01fff8000fffff001fffffc03fffffe03fffffe033ffd7e029ff03f010aa05f0100003f0100003f02e0013f03187e7f0200807f0270387c82b85e384208013b44c826034410900444108004842040808231c111020f021e011fc0180120203000af903000800060008600b001c0013c03c0023f0fe00c78c3b03878379fe0f00"
+	],
+	"tags": [
+		"character",
+		"toshiki-kagawa",
+		"face"
+	],
+	"hash": "d7c5d251de5dd5275dd5a10dbb782315095b8b56",
+	"added": "2026-11-03"
+}

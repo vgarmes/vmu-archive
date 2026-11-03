@@ -1,0 +1,19 @@
+{
+	"title": "Tadashi Akita face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"06aaaae00d5555581afaaaac15cd55561bb7eaab14a43d550c4806aa07ffc1d51ffff06a3c003c1518000f0b0c0063c60b0383e2088401f20f03e1fa0b8580c60880009a108000ba1110002212080012120c001413f6002c0a0200180a02007008fa009004020090047001180200022c0600044e0f00188f3e80611ffe7f863f"
+	],
+	"tags": [
+		"character",
+		"tadashi-akita",
+		"face"
+	],
+	"hash": "9345e388e50d45798594af11f9c3bdc4b503b6b8",
+	"added": "2026-11-03"
+}

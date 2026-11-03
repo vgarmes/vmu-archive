@@ -1,0 +1,19 @@
+{
+	"title": "Takahiro Iwami face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ffc0000f8070003fe01c007ff00600ff00e101f00718818000a0820000404201ffffc41fffffc47fffffc5ff800387fefc0f07fdaa1587ff55ea87f9ab3583f1552a83f0aa1503f07d1e01f0020901f0020900f001f100f80002007801e2007c0612003c01e4003a00c4007b000800d9800c015cc01e02ae70378ead9febf"
+	],
+	"tags": [
+		"character",
+		"takahiro-iwami",
+		"face"
+	],
+	"hash": "238c8134ae5360fbdf079240583e749f16df0a2a",
+	"added": "2026-11-03"
+}

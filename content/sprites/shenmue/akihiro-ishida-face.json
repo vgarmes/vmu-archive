@@ -1,0 +1,19 @@
+{
+	"title": "Akihiro Ishida face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007ffe0003ffffc00fffffe01ff1fff03ec7fff83b1ffffc3c07fffc1fff077e17fff0fe10007ffe10000e661c0380ce1e0fe3e6131011f61e0f03fe1303b1ce16074186210021b62e0300a6243000262418000c23e4001c220000381000007011f80060080000e004e001f00d0003b81c000f6ef7007cd6abfff3ac55ffcf5a"
+	],
+	"tags": [
+		"character",
+		"akihiro-ishida",
+		"face"
+	],
+	"hash": "358253f2e6e9b67443854448a9885d630e49fb4a",
+	"added": "2026-11-03"
+}

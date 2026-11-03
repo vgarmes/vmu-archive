@@ -1,0 +1,19 @@
+{
+	"title": "Master Chen face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0200010004e1f0c00b1e0c200c00022008000110180000901000008811c0f04816210c4819d2f24816210d481821025817c0f86c15a16844282004142340702420400034208200242081008c11c7c118167e3c301200102012804820107f88600a000070092010cc3c1c01766c00027a5e000ce7ef80339ff3fffc7fdc7f03ff"
+	],
+	"tags": [
+		"character",
+		"master-chen",
+		"face"
+	],
+	"hash": "57c2d2b7a26d0e978cd83434e10d379c0eba7049",
+	"added": "2026-11-03"
+}

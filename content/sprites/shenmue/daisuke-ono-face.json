@@ -1,0 +1,19 @@
+{
+	"title": "Daisuke Ono face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 33,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fff8001f99ff001fbbffc01f7f81f01f7600380f76000e07b6000303bb000183db8088e1fd9701b0ffc063187f40000c77e5e0763f7168771bf800418dbc0114c7dc1908637e000231d7000118fb800f0c77d0020e3be800070dd003e687790213c3fcc071a1fe3001d0ff0e00b87783c0f475e07fbe55780f9dd55f00075557c0035"
+	],
+	"tags": [
+		"character",
+		"daisuke-ono",
+		"face"
+	],
+	"hash": "43f7850733fb1b4e2dfa82edb30763eb04ceed62",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Harry Thompson face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000fff80007895e001876ab00238955805d6545c0a23f0140cfc40041b07800614f90002190e000232b600022c1c780239e4ce823339ff922f584f3a3250243c3e80182c3e9000182e2001081700020c15d0060c1ae00d8c0ad01afc0de834781bd05f383d68a0f06f744670d67a87e0ab3543c0d5baa1e06a9d55d0b54eabac"
+	],
+	"tags": [
+		"character",
+		"harry-thompson",
+		"face"
+	],
+	"hash": "a910c3faf51b8253a76305118dd0f2d7f7eb0b24",
+	"added": "2026-11-03"
+}

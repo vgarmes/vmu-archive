@@ -1,0 +1,19 @@
+{
+	"title": "Charlie Grant face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03fe03c007f800a007f000100fe1c0081fe3f0081fc678141fc89c3c3fc13e2c3fc77e783f89ffcc3f91fe5c7fa0fcfe7fc0787e7d80003c788008347e001fe4721013e4300c20e43080006839c01fa81fe020481fa002480f9001c80f880390070e0110030780200f83e0601b81fff035c07fbceae00f2f55700015aab8001a"
+	],
+	"tags": [
+		"character",
+		"charlie-grant",
+		"face"
+	],
+	"hash": "099e340de06961fa2f005842442aaf7333585fea",
+	"added": "2026-11-03"
+}

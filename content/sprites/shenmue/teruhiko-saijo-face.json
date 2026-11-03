@@ -1,0 +1,19 @@
+{
+	"title": "Teruhiko Saijo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03def6e007ff7b700f6ffff00dffbbd01fe0fe70174000301dc000301ec6e3501bc01c181d8000181faf81e81bd0c32811a0121815bfd3f0175633301508925011471390194033100d20811007b8e330079f3fe0038c7ee00780e3400d419d60194020707120004cf1301cc6e0980083e0460181c033ff8fc30c7f3fcfe30e67"
+	],
+	"tags": [
+		"character",
+		"teruhiko-saijo",
+		"face"
+	],
+	"hash": "358c843abe94651879d41be84c03ee61a0cd971d",
+	"added": "2026-11-03"
+}

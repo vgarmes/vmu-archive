@@ -1,0 +1,19 @@
+{
+	"title": "Daisuke Joujima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01d5570002aaaac0055555600eaaeab009ff155018000aa810000558100006ac10000554200006ac201005542f17e6bc218c034c2f8fe2842b05d3b4108801a42184012423820124258000081100000811000070110800e010f001a00800016009b803c0090402c004f006e004600cb00e0019d8370073afeb81c7565fff0ead"
+	],
+	"tags": [
+		"character",
+		"daisuke-joujima",
+		"face"
+	],
+	"hash": "5682872f12fe7e81a104823f6418cf49b50b38aa",
+	"added": "2026-11-03"
+}

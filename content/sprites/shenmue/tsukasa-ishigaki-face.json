@@ -1,0 +1,19 @@
+{
+	"title": "Tsukasa Ishigaki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001fff00006aaac000d5556001bfaab00360ffe802b000080558000406a800040550000406a000040565e03c07a018c408c7f8fc107e7fce174df8be1107f0fc130000840900008408000084040000840380088800c0078800c01d8800a0204803a01d90079000100f180f10370c0638f78e003eef87005def87c0dedfc3ff9e"
+	],
+	"tags": [
+		"character",
+		"tsukasa-ishigaki",
+		"face"
+	],
+	"hash": "6f5cd5b731850b85501ad9869c781f5af66d9504",
+	"added": "2026-11-03"
+}

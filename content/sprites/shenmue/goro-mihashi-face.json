@@ -1,0 +1,19 @@
+{
+	"title": "Goro Mihashi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000001f000000ffc00003ffe0003ffff01fffff707ffffef8dafffdbcdaffff7edb7ffedeedffffbeeeffefff77ff8fff3ffe079f1ff033af001940af0009b80f000c613f000601310004021000044210000430100603c800090314111483e43332c2006669c1c0ed662081da5f21c3b549e1ffea3063ffd5"
+	],
+	"tags": [
+		"character",
+		"goro-mihashi",
+		"face"
+	],
+	"hash": "921cff5de3c4a71321183f4fa9420af59ecd0704",
+	"added": "2026-11-03"
+}

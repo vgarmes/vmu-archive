@@ -1,0 +1,19 @@
+{
+	"title": "Jake Lambert face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"060080400c080420084120901089200812aa948826aaf42429ad0d24287005043000035430000344385079b41fdf81a4118e09f41f87f14c1b84f184178be1b4118400a416830024118000041190000811080070110c004008f200c0080000c008f801c004040170047803580e30066e36000cd7eb0038aa5780e155abff82aa"
+	],
+	"tags": [
+		"character",
+		"jake-lambert",
+		"face"
+	],
+	"hash": "2415da0ba03e1084f1c7b6f796a69d41f270ad83",
+	"added": "2026-11-03"
+}

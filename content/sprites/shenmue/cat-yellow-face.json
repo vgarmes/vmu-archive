@@ -1,0 +1,19 @@
+{
+	"title": "Cat (yellow) face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000078000001c400000334000006f47c000574c7007cb491cf8d74ae7ce4b4972336f4ab99ca6c97dd6dacaff6b6dcd7dad6f44e334aac64d990362d9d85ca372803762ac703ee31ad83f6285fc1da351fe0672a8f201c344011661afc0f1f1f830f741e7ec79c0de38f7f0b9e3c7e077d40f706eba5af0dd5ff57"
+	],
+	"tags": [
+		"character",
+		"cat-yellow",
+		"face"
+	],
+	"hash": "705c92f8f484e486bc79a2f2077ccb531d7f48c2",
+	"added": "2026-11-03"
+}

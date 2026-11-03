@@ -1,0 +1,19 @@
+{
+	"title": "Minoru Asada face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fff8001ffffe003fd4af007f000300fc000180f807e081f8600c81f003c081f0f81e81f1fc3f81f38c3381f202218130f83e8211622d82d6043082c0f02e82614414424208094220080843001e1c41c027f240604e388021980c803037f480f80809036801c1c6a402216d720003bab980075d5ce00fa6ae3ffdd3578009a"
+	],
+	"tags": [
+		"character",
+		"minoru-asada",
+		"face"
+	],
+	"hash": "1032fbbd5683b407aae56bea8310855368e8c3e8",
+	"added": "2026-11-03"
+}

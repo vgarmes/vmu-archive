@@ -1,0 +1,19 @@
+{
+	"title": "Tokumasa Kogo face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0aaaaae0155555581aaaaaac157d55561fcffaaa08b41f550ba783ab0ccc78f513ff863b2ffff98d3e01ee660f87f7940b8e03ec088803f40f03d1fc0b85a18c0c4211a41381c174110000241108004412f60008124100100a0080e008fc80a0080200a004700120040002380200046c0e0018dffb00f1bbabffc776557c1eed"
+	],
+	"tags": [
+		"character",
+		"tokumasa-kogo",
+		"face"
+	],
+	"hash": "8a0c3471bd5a0fc7f3dde7acc8a01c9dbaf23f37",
+	"added": "2026-11-03"
+}

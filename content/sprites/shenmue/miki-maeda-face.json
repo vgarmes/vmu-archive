@@ -1,0 +1,19 @@
+{
+	"title": "Miki Maeda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0f9819181f3e1f083e7fff8c7cff23fe7dfffdfefbfff6fffffffafffff03bfffbc0071ef780000cef000008ef1c0008ff030008ff0080e8e71e4110eb2d0390eb0c0760e3800b20f3800820ffc00820ff400820ef200860ef003060ee8200e0de41d0e0dd20e1a0be900290fd7804c0faac0840fd573020aeabfc005755ff80"
+	],
+	"tags": [
+		"character",
+		"miki-maeda",
+		"face"
+	],
+	"hash": "8efdb595bedd74614873a61fb225ab510b4c6c68",
+	"added": "2026-11-03"
+}

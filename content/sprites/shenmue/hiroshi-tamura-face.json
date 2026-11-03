@@ -1,0 +1,19 @@
+{
+	"title": "Hiroshi Tamura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07fffffc0ffffffe1fffffff1fbfffff367effff2cd9ffff59a37fff1204ffff3001ffff29803fff21f00fff129c07ff08e20fff18d80fc710600793200006b94000083d420000192100003319000063268000072000001f180000ff2600007f2100003e1800001c100004081000083e100030e73800c39c6f030e70d7fc39e0"
+	],
+	"tags": [
+		"character",
+		"hiroshi-tamura",
+		"face"
+	],
+	"hash": "a224a89dfadf14c4fbf39b78de1832e58c5b22a7",
+	"added": "2026-11-03"
+}

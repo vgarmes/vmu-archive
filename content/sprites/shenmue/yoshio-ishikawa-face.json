@@ -1,0 +1,19 @@
+{
+	"title": "Yoshio Ishikawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffb70003bf4b800f7eb5c01ebd7ae01d5afd601a75b6b037ebb7502fd7cfb03faefdd03f5cecf03ebff7f03d753e503aefe1f04718ff18b3f3f378a81ff1f8b80fe1f0b000008898001088408020482040a048183e1f90040000100400002006007fa00d0001403c801e40fe600078fe3800feff0fffbfff83ff3fffe0017f"
+	],
+	"tags": [
+		"character",
+		"yoshio-ishikawa",
+		"face"
+	],
+	"hash": "611346b43901e7d77907c9c91481bb6ac50d2359",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Cat (black) face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"1e000000350000003e8000003f4000003dc000003aa0003e3fee00e33ebbf3bd3fef7ef72fffedab3efffbf737fffead3ffffffd3ffffbff3fffff7b74ffffbf7bbffff76eff1fef77deebff7fffb7ff7bbbfdfee77ffbfe39f5f7fe668a8ffef9f57ffc2efac1fc39e77e7cfff1c7bc7ebe79d8ff57fef8ffa9ff78ffffffb8"
+	],
+	"tags": [
+		"character",
+		"cat-black",
+		"face"
+	],
+	"hash": "aa35e63d290e1b5befdf74717d4d49ce8cfea1ec",
+	"added": "2026-11-03"
+}

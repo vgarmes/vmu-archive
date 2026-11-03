@@ -1,0 +1,19 @@
+{
+	"title": "Tsuyoshi Takashima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000007fff0001b72fc002fdfff007fffd7807dbffdc067e1ffc0200063e040003ce040001f60800014a0e00e0f60f87f0ba08cc10ee0783e07e0a8196621300e84d11080415120400151205000d09f8f81a0800220404dc11180521512004fe4160020020e0067f21d00e00038c1b001d0633fff309c17fc60809800c18"
+	],
+	"tags": [
+		"character",
+		"tsuyoshi-takashima",
+		"face"
+	],
+	"hash": "ef23da60f72e44d488c3c49ccbc2311d673eca7b",
+	"added": "2026-11-03"
+}

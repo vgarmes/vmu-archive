@@ -1,0 +1,19 @@
+{
+	"title": "Saki Shirakura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003fff0001ffffc003ffffe007fd55700feaaab01fd5ffd01faffff83f5ffdfc3ebedddc7d7eccde7efc448e7dfbc43efafc304efdf8088cfbf9e06cf53350b8fad3c0e876d1e0487a50008c3e5000cc3d18004a1fc8038a0ec8000a07e40f1201e200100048062001c4004003e300800d71e1e03abc7fb8dd5f1f56aeabfebb"
+	],
+	"tags": [
+		"character",
+		"saki-shirakura",
+		"face"
+	],
+	"hash": "5fdeeddc48c68d011d26549257566c7eabc23b23",
+	"added": "2026-11-03"
+}

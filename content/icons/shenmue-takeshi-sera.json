@@ -1,0 +1,21 @@
+{
+	"title": "Takeshi Sera",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff8000000000ff801c000000ff8022000000ff805d000000ff805f07f000ff80bf3aac00ff80bed55600ff817eaaaa00ff817d555700ff817daaab00ff81f9555e00ff8239fafe00ff84bb57fe00ff876ebfde00ff88ad7f0900ff8bcff1f500ff8a918ac500ff8923900200ff847c920c00ff87f8697400ff87f8401600ff87f3ce2fe0ff87ffe07df0ff87ffb0fdf8ff87ffbf5dfcff87ffb85dfcff87ffa86bfeff87ff98ebfeff87ffbcf7ffff83fffeffffff81fbffffffff8003ffffbf",
+		"1dc0005400006d86050000007646300000006fc4c00000009be1009ffc00fde2066aaa00fed018d55500ffd020aaaa809fc838d555806fccd0aaaf806b8721fd7f009d8042abff00ff00835f8f00fc0081f8fc80e001005d3280fc0100440280ff0080480100fe1880490600fe7e4034ba00fcfd20200b00fdd2d0f717f0fb3263d02ef8ff1203d8defcff9e07dfbefcff7307dc2efeff0907d435feff9b8fcc75feff6fefde7bffff1fffff7fffffffffff7fffff9fffffffffff87ffffffbf",
+		"ff8000000000ff8000000000ff8000000000ff800003fc00ff80000eaf00ff8000155580ff80002aaac0ff8000355540ff80002aaac0ff80001ffd80ff42002abf80ff760055f180ff5f003f9f40fec700234c40fedf80208040fdbf80109080feffc00d6b00feffc0090100ff7fc0080900ffffc01cf380ffbff07e6778ffbfc8ed0f7cff9fcdedff7eff8467ee1f7eff89b7ea377fff8a3fe6397fff8457ef7effff829fff7fffff833fff7fffff81ffff7fffff80ffffffffff807fdfffdf"
+	],
+	"frameDelayMs": 400,
+	"tags": [
+		"character",
+		"takeshi-sera"
+	],
+	"hash": "749c1b1fb922550e5a54771a5c1e5328d802cb75",
+	"added": "2026-11-03"
+}

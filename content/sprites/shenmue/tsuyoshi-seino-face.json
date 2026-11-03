@@ -1,0 +1,19 @@
+{
+	"title": "Tsuyoshi Seino face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0003ff00001ed5c0007ed5e001ef55b003f7ffb007be00700fd800200ff000200c7000100be3c0700fe460d00cc010880bc000080fc3c0781f85a8b0118048d0248010882e802048220004441600082412000824080007c40400000403000d840180204801401f880140205003200f100f100020118c007860c700cca061ff87"
+	],
+	"tags": [
+		"character",
+		"tsuyoshi-seino",
+		"face"
+	],
+	"hash": "b14408739c3ebc5570652f25f90e1eecc9b507ab",
+	"added": "2026-11-03"
+}

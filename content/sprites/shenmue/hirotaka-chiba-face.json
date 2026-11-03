@@ -1,0 +1,19 @@
+{
+	"title": "Hirotaka Chiba face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0aaaaaa0155555582aaaaaac357d55562fcffaab38b4075510a401ab1ffff0553ffffc2b78003f157000078b300003ce1783f1e410c601f41385e0fc150298c61040009a1080003a11800022110400121306001412f9002c120100181000007008fe00a0080000a00878012004040220060004581d0018ccfd806187feff870f"
+	],
+	"tags": [
+		"character",
+		"hirotaka-chiba",
+		"face"
+	],
+	"hash": "a2f379bfe156dd62ef215b2d141fccfe0909ff43",
+	"added": "2026-11-03"
+}

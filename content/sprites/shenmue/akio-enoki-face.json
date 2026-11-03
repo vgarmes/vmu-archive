@@ -1,0 +1,19 @@
+{
+	"title": "Akio Enoki face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003fff80007fffe000ffe7f0009f81f8010e00f80100007c3a00007c4a00027c4c04017c940401fce61b037e87f5fe728373bba143a1f22d44e041a52461382d2440806b1440805e0c63c0ad06fe641b1b7832373da0492f7ec0205ffefff05ffe8010dffe40515f7e3fa2bf7e0e01bf3f0003bf3f000f7f5dc03d7fd87ff97f"
+	],
+	"tags": [
+		"character",
+		"akio-enoki",
+		"face"
+	],
+	"hash": "57e156bffd0c1b543e9f565f2593a302883e62b4",
+	"added": "2026-11-03"
+}

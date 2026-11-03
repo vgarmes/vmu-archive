@@ -1,0 +1,19 @@
+{
+	"title": "Junko Yamamoto face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0007fe000038018001c00060060000100800000810003f841081eae421078032220e001a421c000a44b8000a4530e0348973104c8af400048fe1e0748cf770bc9852e1749a440104bb200082f90000823c0000421e0008440b80178415c000042b40998822a001084470061048fc002070b60060019b80b0064ce35c18273e93"
+	],
+	"tags": [
+		"character",
+		"junko-yamamoto",
+		"face"
+	],
+	"hash": "9a682e09b6f064a996246575b5a01ac4b1cdd055",
+	"added": "2026-11-03"
+}

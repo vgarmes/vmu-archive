@@ -1,0 +1,19 @@
+{
+	"title": "Suguru Hirano face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ffc0000fffb8007ffe7e00fffdff01fffbff01fff7ff83ff03ffc3f801ffc3c000ffe700007fe700003fe600003fe2b01d1fe318305fe10c600fe0f43e4ce168190b6108208142d01c0542110006422080008120c001011f200e00a4100c00a00008005fc81800480824002700460060018f81b0060fff9ffc1fbf0ff03fb"
+	],
+	"tags": [
+		"character",
+		"suguru-hirano",
+		"face"
+	],
+	"hash": "946788169a3f391d35cd419273b4913472a6d9b1",
+	"added": "2026-11-03"
+}

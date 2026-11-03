@@ -1,0 +1,19 @@
+{
+	"title": "Robert Wells face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01edb78003bffdc007ffffe00ff00ff00d8001b01b0000d81f0000f8170000e83e0000f83e02407c2c7e7e343dfc1fbc3b8241dc78fa5f1e79b42d9e7c42423e6cb24d36650420a63018180c38366c1c1c23c4380c4ff2300c5ffa300e500a701a4002582203c04441018082818001810140028011b00d883898191cfccff33f"
+	],
+	"tags": [
+		"character",
+		"robert-wells",
+		"face"
+	],
+	"hash": "3ca130023aa2a5091055d895036fb8ff753ece84",
+	"added": "2026-11-03"
+}

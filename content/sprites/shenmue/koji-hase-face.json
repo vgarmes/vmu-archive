@@ -1,0 +1,19 @@
+{
+	"title": "Koji Hase face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03fbfc0007f7ff800fffffe01fffffb81eaabfdc1c001fdc3c001adc38001ade38001b6e3c401b6e2a5fdb6e1e3faf6e327ccd6f3bff7d6f3e7fcbb71c3f8bb714000bb724000bbb28000bbf280003df278003df200003ef33c003ef302007f7380007bf39800bff3c0013df1c00276f1200c7ff0e038dbf3fff1bdffff83667"
+	],
+	"tags": [
+		"character",
+		"koji-hase",
+		"face"
+	],
+	"hash": "6b972a4457677100f245cca86245eb04371bbe93",
+	"added": "2026-11-03"
+}

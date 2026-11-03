@@ -1,0 +1,19 @@
+{
+	"title": "Kim Shihan face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffff8003ffffc007ffffe007ffffe00ffffff00ffffff01ffffff81ffffff81ffffff81ffffff81fddbdf83effffbc77e007eefbfa5fdf180c301829f81f94535c3aca58f42f1a480000122804201424081024140810280e166870058181a0020000400217e840070000e01e83c1787a41825efb2004dffdb00dbffe5ffa7f"
+	],
+	"tags": [
+		"character",
+		"kim-shihan",
+		"face"
+	],
+	"hash": "d9e7e23dc4fe6578d1170d28d9c93269790bfd29",
+	"added": "2026-11-03"
+}

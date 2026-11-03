@@ -1,0 +1,19 @@
+{
+	"title": "Akiim Chant face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffffe007dedf700ff7b6d00afbfff01fb54eb81fc0250837e000083dc000042ec000043b87f0743f9ff8fc253a38cc430ff8fc5b04d0a8490821c44901c1f4480000e4440000c4240000442000104410002fc40e0043e407009fe806807df8028080780e403dd01a6000d837300f9ceb380736b59e003b5acf8075ad63fffa"
+	],
+	"tags": [
+		"character",
+		"akiim-chant",
+		"face"
+	],
+	"hash": "a96473054a37ee9208540106b26666770d285b98",
+	"added": "2026-11-03"
+}

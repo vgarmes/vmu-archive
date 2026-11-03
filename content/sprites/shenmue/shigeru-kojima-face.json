@@ -1,0 +1,19 @@
+{
+	"title": "Shigeru Kojima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ebbc0006d757000daeaa801b5d5d4036aaaec02d5d556036aaaea06fffffe07daaaab86ad555565feaaaab7f7fffff7f0fc0f07f0821107e07c1e04669a150b21700c8a8201088a8002048b000a0285803183020041ff018080020340880a026007f30650000586c801e4c7c60006c763800bcfb0f017c7dc3fefbbe70f9f5"
+	],
+	"tags": [
+		"character",
+		"shigeru-kojima",
+		"face"
+	],
+	"hash": "5d3b0aa2d13a2e38e7bf00193871f33512741f40",
+	"added": "2026-11-03"
+}

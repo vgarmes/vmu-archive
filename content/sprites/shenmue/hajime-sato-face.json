@@ -1,0 +1,19 @@
+{
+	"title": "Hajime Sato face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0ad52808152ad3c416d555023d552a722baafa892c7f0571340002c9280001bd28000161280000db1600d0bd135504c5099600bb0fc3e0450b45b0960c8440b61080002411000064111000481108000810f000101000006011b800c00b0601c008f901400904034004f806601c700c78fa0018fffa0071fff901c3fffcff07ff"
+	],
+	"tags": [
+		"character",
+		"hajime-sato",
+		"face"
+	],
+	"hash": "50b025a3b3d60225583f655e47a58996d7d8791d",
+	"added": "2026-11-03"
+}

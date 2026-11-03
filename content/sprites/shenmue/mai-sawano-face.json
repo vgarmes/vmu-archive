@@ -1,0 +1,19 @@
+{
+	"title": "Mai Sawano face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffff3807fffffe0fffffdf1fffffef3fffffff3ffffff77ffffff7fffffff7ffdffff7ff8efff7fd8f7e7bfd87bdbbfdc1cd3beec3ecbbee6c16bbf713e63bf3a7b27bfc05e2f7db01c0efef8200ee7d4000761dc00074044000700240012c0230013b02018315010e021a0180063500e30c2a00781c7500dc386a01b7f0d5"
+	],
+	"tags": [
+		"character",
+		"mai-sawano",
+		"face"
+	],
+	"hash": "3d2786f0d019e133b888cbbd30b1439dc5ae98d8",
+	"added": "2026-11-03"
+}

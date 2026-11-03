@@ -1,0 +1,19 @@
+{
+	"title": "Yoshihito Nishii face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01ffffc007feffe00c7f9ff019ffe3b817dbb89c3eccdc0c3e662f1c7c6217fe7c310ffe781003fe5e01e1fe5f87f9fe08000cfe0703c0fe0b84f0620f81e0491080005d1100001511080009120500121204801211f80004080000080901007008dc00e0040000e0047801700200027802000cfe070019ff3f8073ffffffc7ff"
+	],
+	"tags": [
+		"character",
+		"yoshihito-nishii",
+		"face"
+	],
+	"hash": "8be50f58545099a446e8fe551e33cf4b1b0c5df4",
+	"added": "2026-11-03"
+}

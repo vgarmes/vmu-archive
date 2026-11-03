@@ -1,0 +1,19 @@
+{
+	"title": "Giichi Imaichi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ad77c0075ebde006bf5af00d6dae780aedd7b815f3eb7c1bfff5dc17b77aec1d6bad7c1cddcebc1fbeff5e1ffffffe1b038ffe0f81f1fe088200fe138180d417804094130000841100000c11000014110000340904005409fa00540a00005a04fc00ea04c200ac0270013402380234060004380f00187f3d8070fffcffc3ff"
+	],
+	"tags": [
+		"character",
+		"giichi-imaichi",
+		"face"
+	],
+	"hash": "dcc1e594d32cbd278e7ecaffb5a063d236759e48",
+	"added": "2026-11-03"
+}

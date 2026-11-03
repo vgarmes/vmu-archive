@@ -1,0 +1,19 @@
+{
+	"title": "Yoshifumi Hato face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0007ffe0001ffff8003ffffc0038fffe00701ffe006007fe00c003ff008001ff016000ff011000ff018900ff016a007f033a787f02b8ce7f02d9c17f0231b2ff06639ce704c15ac304806092048000b2046402a4043e050c04823d180c6019703c1803e0f4c805c0ec600980f4400100bc0023805e00c3c0bf8386f0ffff0d7c"
+	],
+	"tags": [
+		"character",
+		"yoshifumi-hato",
+		"face"
+	],
+	"hash": "bcbdb5401106b1f5a57384e8c334fba8f9e1fcf6",
+	"added": "2026-11-03"
+}

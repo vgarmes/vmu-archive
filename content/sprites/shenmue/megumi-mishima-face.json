@@ -1,0 +1,19 @@
+{
+	"title": "Megumi Mishima face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0003fc001e1fffb87d7ffffef8ffaf7efdfdffeffbfbfffffb7ffffbf6fbfbfff667f1fdf70f60dfef9ee0edeffee0efeffcc067efffe0f74ff8110d0673c0e4053761b405ab41a804a580d4022000040180010400c002040060210800301e0800080010000e0c60003580c000c4e13003023e8c050181030a807e0211400805"
+	],
+	"tags": [
+		"character",
+		"megumi-mishima",
+		"face"
+	],
+	"hash": "cb2d4842d5b13e7e9cd7e1b143cdaedbc8caa608",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Masaru Aoi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fff0001ffffc003eefde007bbf7f00f755f180c2a0ee80c000df81983c78c103803741e0079fc1f01fcfc199386fc100802661781f05a09c2784a1781e05a108400521386c0461502206c188f107811ff80701338c0e012ff60e00901a1c019fe83f03d012bd86fff56afdababdd6a9fffbad5cffc556b20019ad5180635a"
+	],
+	"tags": [
+		"character",
+		"masaru-aoi",
+		"face"
+	],
+	"hash": "2324a1b94001fdff6d0b62eb5180ebdc08bb687b",
+	"added": "2026-11-03"
+}

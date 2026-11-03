@@ -1,0 +1,19 @@
+{
+	"title": "Junichiro Nemoto face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ff8000075570001aaaac002aaaab005555558055555540aaabff41aafd24e157924922b927ff93d27c005297e00034bf8701a5ff1f83e3fe2044231c0783a26c1b45a26c0082422a11052342200221a0000221c000c620f0043d2070080140380801403809ec801c0400803600790073803103f8e0020efc3c0e0f7f0ff9c"
+	],
+	"tags": [
+		"character",
+		"junichiro-nemoto",
+		"face"
+	],
+	"hash": "9b55ea774f9a0bddb56004c35ab55ff6718e03ee",
+	"added": "2026-11-03"
+}

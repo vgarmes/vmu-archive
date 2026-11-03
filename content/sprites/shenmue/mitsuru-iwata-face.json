@@ -1,0 +1,19 @@
+{
+	"title": "Mitsuru Iwata face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007fff0007f9b5c00f0edaf019f35ab8379dffd83c6f6b5c33b000346fe000145c40001c73c0000c6f8000085c81c0c8738fe1f46eb02d0453838068612f41d82c17d0f8242851142e0588a422002084100040440800c0440701bfa80381042802807f080280d59002c07f100560002019b80e50f0de00ccf06781c7f831ff47"
+	],
+	"tags": [
+		"character",
+		"mitsuru-iwata",
+		"face"
+	],
+	"hash": "c49074b37cf29bbdac1d919db89a600bf315c162",
+	"added": "2026-11-03"
+}

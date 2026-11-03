@@ -1,0 +1,19 @@
+{
+	"title": "Masamune Tokuda face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ffe0001ffffc003ffffe007fffff00ffedef01ffe52b81ffa00183ffa00083fe000083fc000083fc000083f8580283f8060c83f883998230fe0f84902d1c85d00212454400084482000842400044420000844100027a80f0042080700401003000d100380309006c00f200e6006201f3000706f1c006c878700e303c1ffe0"
+	],
+	"tags": [
+		"character",
+		"masamune-tokuda",
+		"face"
+	],
+	"hash": "8e79c082756bee72c7dbd2076cd20b5b20885d2e",
+	"added": "2026-11-03"
+}

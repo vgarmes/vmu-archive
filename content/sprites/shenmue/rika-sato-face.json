@@ -1,0 +1,19 @@
+{
+	"title": "Rika Sato face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0001f800001fff00007fffe000fffff001ff127803fcff9803fbffec07efeffc07df6dbe0fdf6dbe0ffb6dbe0ffb6db60ff36db60ff7edf60ff02a160e6780e40d39c1780da9c1680ca380c80ca00408060002080700020803c00c0807e0001007e01e100fd000200f8800401f3e00e01fd583d83f267d267c4303117081fe08"
+	],
+	"tags": [
+		"character",
+		"rika-sato",
+		"face"
+	],
+	"hash": "7082f0eeca9de237202986436a416844c1b2b9c2",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Kirino Matsuyama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff00000fffe0003afff800efb7fc019ffdfe037ffeff02fc1f7f86f00fff85e007bfcfe003ffcf8002fbcbc01efbeb3061fdef0880bdef7038bde7b85c3de7502e3fe708003fe608003fe610003fe610003fe70e0037e700007ee38d8076c38000efc3c701edc1e002df81b00dbb80b8393f0057e26e0093820b830804107"
+	],
+	"tags": [
+		"character",
+		"kirino-matsuyama",
+		"face"
+	],
+	"hash": "cf8235ecd73f21f0145b1bc206d46e0c126caab7",
+	"added": "2026-11-03"
+}

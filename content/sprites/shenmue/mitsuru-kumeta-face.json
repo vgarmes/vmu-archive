@@ -1,0 +1,19 @@
+{
+	"title": "Mitsuru Kumeta face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001fe00000641c0000840300010000c001080020010800100208000802000008023fc00405c038040600060407e0fb840471c5c4063180fc03e0f0cc02e168b40440041406401834048200240481008c04818098047ec070045060c00480208002be11c002419160070012700d1e02783d0004f6ce8009f00e8033e00e7fe7c0"
+	],
+	"tags": [
+		"character",
+		"mitsuru-kumeta",
+		"face"
+	],
+	"hash": "f7e74544a4c0d3c1ff4ea86a79feac50aa4da677",
+	"added": "2026-11-03"
+}

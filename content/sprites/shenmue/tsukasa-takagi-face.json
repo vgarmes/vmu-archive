@@ -1,0 +1,19 @@
+{
+	"title": "Tsukasa Takagi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01babac003755d6006aaaab005755d5806aaaaa80d755d540aaaaaac1ffffd54755556acaaaaabf4fffffffc0f03e3fc1787f1fc188408c41779e7821fcbf4b21b4ad49a1048048a18c408b20f83f004110400081104003010fa0040100000c0087c01c0048201c0043003c0020006e003000cb0070010d81d8061afeaff835d"
+	],
+	"tags": [
+		"character",
+		"tsukasa-takagi",
+		"face"
+	],
+	"hash": "4dd77cef2fa1202033675439ebc36023b202380a",
+	"added": "2026-11-03"
+}

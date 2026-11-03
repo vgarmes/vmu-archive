@@ -1,0 +1,19 @@
+{
+	"title": "Kyosuke Hatanaka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"06aaaa800d755d401aaaaac015755d602abfffe035eaaab02b55554836bffff42dfffffc1f80003c1f7f87f03ec07828679f4fa85286cb28528048284a4084102a3f87f020010220208102201083c6200c44392004000020040000200601ec40060202400f0030401a800080fb4000f0fd30017cfe8e077ffd43febffea0017f"
+	],
+	"tags": [
+		"character",
+		"kyosuke-hatanaka",
+		"face"
+	],
+	"hash": "d90ae20fa064395749710ffc6c5d192cf4eae442",
+	"added": "2026-11-03"
+}

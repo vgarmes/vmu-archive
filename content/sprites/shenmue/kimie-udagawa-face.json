@@ -1,0 +1,19 @@
+{
+	"title": "Kimie Udagawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"07ffffe01ffffff01ffffff83ffffff83e3ffffc7c3ffffc781ffffc781ffffe700ffffe7007fffe7000fffe7f07fffe70881e7e7603ccbe3f07a5be3b01853e1800013e1880007e098000fe098003fe08e003fe040007fe044c07fc02000ffc021815f8010026f00280c56005c386f01aff0d7c75bc0ab7bb00156a75002ad5"
+	],
+	"tags": [
+		"character",
+		"kimie-udagawa",
+		"face"
+	],
+	"hash": "ab07f742ded859d369969bba995faeaf011bee3d",
+	"added": "2026-11-03"
+}

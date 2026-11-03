@@ -1,0 +1,19 @@
+{
+	"title": "Ling Sha Hua portrait",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"006900041800008040000c0001d513f9440001804c003200015533ff8a0001acfff7f6000359ffb2ffc002b3f7b17f200367f3b07f9002afe3903f88035fff91ffc802dfe18a3fc003779e41dec002e33f23dec0016a7a06bec001e45e079e8000e41c071d0060e44c035c00c0700000380ce07800087012f07e00181022f07e00003024f0ff00082024e1ff81906324c3e3c000c52402cf700384b43fcf3807c476ffc71e0de2feff818ff93303fe1047fa3d01fc1833f03ff9fc0e1fe87f85"
+	],
+	"tags": [
+		"character",
+		"ling-sha-hua",
+		"portrait"
+	],
+	"hash": "251ff556adb569772bcb6a5a0fba02a042cf024a",
+	"added": "2026-11-03"
+}

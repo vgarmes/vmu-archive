@@ -1,0 +1,19 @@
+{
+	"title": "Yukio Satake face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00aaaa00015555000ffaaa801fffd5403fffeac07ffff560ffabfaa0ff557d50feaa9eb07c000f503b00e7b01cc312d0082403700b80ebc80dc5d184084400b410c000a4118000a81304000812028090111a44e00acd31c00a70818008008300047883c0048487e00e700de01e001bf01f0077deef81cfbfeeff1f7ff6783cff"
+	],
+	"tags": [
+		"character",
+		"yukio-satake",
+		"face"
+	],
+	"hash": "e66091859e44acae5e09b403f8733b107730a1d3",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Shigeki Murayama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00d5578001aaaac00155556003557be007d5c2b004d60158083800a8080000540800002c080000540848002c080000540e48f02c09cf083c08cc00460f83f0820c84081a1383e012108800321084002211060004088900080870003008dc0020090200200479006004400060063800d00e00039c3b000e0ff1fff80ff0ffc01f"
+	],
+	"tags": [
+		"character",
+		"shigeki-murayama",
+		"face"
+	],
+	"hash": "fd029baa7f56ae57416be4a3514ed94242cc4d06",
+	"added": "2026-11-03"
+}

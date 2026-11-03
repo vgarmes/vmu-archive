@@ -1,0 +1,19 @@
+{
+	"title": "Taeko Nomura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff00000fffe0003ffff8007ffffc00fffffe01ffffff01ffffff01ffe09703ff804be3fe0051f3fc0081b3f80000b7f8f81ea7f9042187f000008790781d0721b41b03200021033000108190081081c0180880f02318817840e103b8000107ec4e7207ec00420fea01840fcb00080ff980100fd4e03c06aa38570d558faa8"
+	],
+	"tags": [
+		"character",
+		"taeko-nomura",
+		"face"
+	],
+	"hash": "63a7a493cdf7ae1bce1c782d9e101e1ab1d8b383",
+	"added": "2026-11-03"
+}

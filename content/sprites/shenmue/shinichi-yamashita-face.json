@@ -1,0 +1,19 @@
+{
+	"title": "Shinichi Yamashita face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00600300018000c00200002004000010080000100800000810000008100e2cf810700004218ffffc2278003821e7c1d426c82234288781d4308b43b4208002142180221423800118168041181c80be100e81191007c1011003c0002001e074200060002000f03c4001a818c0079601a03f1383b8ff09fe9fff067d1ffe01820f"
+	],
+	"tags": [
+		"character",
+		"shinichi-yamashita",
+		"face"
+	],
+	"hash": "6b91f59f8c600c06c4ad3bdcf9d8b1712bbdaeb4",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Kinuyo Sawano face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ffc00007fff0001ffffc003fffff007fffff80ffffffc1dffb5fc1bfda53e31fb6d1e356ac91f28e8121f68d1c06f7de6209f7de8110f7fc1c0cf7fc7a9ef7f8b48af7f8010077f8001077f8000877f8020877f8079863fc08f4e3bc1000e3fe0409e1de03b1e1ed0003c0b480c7c01e400c807f301803ef8c6e0e37c7cfc"
+	],
+	"tags": [
+		"character",
+		"kinuyo-sawano",
+		"face"
+	],
+	"hash": "6a0ebaad02478879e41f2c6bd5bbe30653fd3d85",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Smith Bradley face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01fffe0003ffff0007f8ff0007f01e800fe000800fc000800fc001c00f8020401b8fc0c011b0f340138fffc0151376c0150787c012000240080001400e4041400680fe8007401c800a8008800b01fd00090603001180c30010c03e0030f00400707e27e0a85fff5c640ffeeab303bb7558e072aaac1fe55557800abaaafff555"
+	],
+	"tags": [
+		"character",
+		"smith-bradley",
+		"face"
+	],
+	"hash": "c3ad88fea95723e5fa8c8f0756e0f95b7b9b4f83",
+	"added": "2026-11-03"
+}

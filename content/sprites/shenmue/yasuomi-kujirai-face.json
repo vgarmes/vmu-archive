@@ -1,0 +1,19 @@
+{
+	"title": "Yasuomi Kujirai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0155556002baaeb00355555806baaea807fffd540d5557ac12aaaad42ffffd6c3fb6bfb40ea2abfc0c2202fc07c0f8fc042104e405c0f04206e1685a0420005a0820001208400032084000140880002408820008047c00300400006004000060026f00a0020000a0021801300100023c0300047f1f80187fffc060ffffbf81ff"
+	],
+	"tags": [
+		"character",
+		"yasuomi-kujirai",
+		"face"
+	],
+	"hash": "30f4c81a98230b14cf81ad4977e752aef9f03aad",
+	"added": "2026-11-03"
+}

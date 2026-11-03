@@ -1,0 +1,19 @@
+{
+	"title": "Arihiro Sato face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 33,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000fef80001e3bf8003c3ee70038f7ef803fe7bce0380efdf03bfcfffc3fc1d07e3bffd80fbbfe1803f3b87001ffb800006e7c000027fc2f81d1fe002110f903c0683806705c0d8480450281381c812100084040000220100001100600175001801008004010440030034400340012007b007101fa6001c7dc8e015fee31ffafdf863f8b"
+	],
+	"tags": [
+		"character",
+		"arihiro-sato",
+		"face"
+	],
+	"hash": "ced17e08d83d1760f17b0d0ab68ba56655988ee5",
+	"added": "2026-11-03"
+}

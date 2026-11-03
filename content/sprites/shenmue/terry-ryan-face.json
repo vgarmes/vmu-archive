@@ -1,0 +1,19 @@
+{
+	"title": "Terry Ryan face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ff00000ffff0003f80fc007f003e00fe001900fe001081fc000081fc3c0043fc039043fc7ef443fe276743f81f8fc330310b82120c0782d300848241c102424021e2420007fc41200c0681e00ffb80f0180f80f8183b007430f2007670020033f07a0031e0340020f03400e07c7403c03ffc0ff00fff0ffc03f7cfff800ff"
+	],
+	"tags": [
+		"character",
+		"terry-ryan",
+		"face"
+	],
+	"hash": "71009f5b2f5a40e0d672c5a187bbd4d6eed0e258",
+	"added": "2026-11-03"
+}

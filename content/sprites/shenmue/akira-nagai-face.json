@@ -1,0 +1,19 @@
+{
+	"title": "Akira Nagai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffff8007ffffc00f0ba1c00e0000e01c0000601c0000701c0000701c0000701e0000f01c04477019e29fb01bfab1b01b0c2eb01af45d281d781d082d742e882ae420282a0812242850092448966ca444bff4a8242106301d6002a0054772a0055c1c600db83a401eeff2e07747e1b0c7c003dc02e0076603780f33019ffe11"
+	],
+	"tags": [
+		"character",
+		"akira-nagai",
+		"face"
+	],
+	"hash": "be697087b97a664bf2ed182f67252f1b124ef392",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Mark Kimberly face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"3ffffffc7ffffffefffdfffeffdefc3ffff7700ffffdc007fffe8003ff3f8003ffef0611fffa01e1fffc700dfe3c0c93fc1c0322fdc8f83afce84e6efca0bc3afea0011afe64060eff041806ff923006fff1f70e7ff4dffe3fb48e6c1fb2b8040712e3fe031ade03031af001020e7c030e0e7ffe3f073ffeff839ffcffc1c7f8"
+	],
+	"tags": [
+		"character",
+		"mark-kimberly",
+		"face"
+	],
+	"hash": "5e0ee2decbeafbb39c46d72c414770471aedb6d6",
+	"added": "2026-11-03"
+}

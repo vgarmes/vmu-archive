@@ -1,0 +1,19 @@
+{
+	"title": "Kaoru Takahashi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"007ff80001bbbe0007ffef000ffffb801ffffdc01fffffe03fddfee03f557ff03b555ff07a5557707b95f7f074d757f0749107f03300e7f8368173781b83eab81781f2b8104002b810400078308001f8308001f8306003f8380003f0185807f01c200fe00e003f800700eb0005c3b5801afc2b606580559c8ac1aa820d7f5581"
+	],
+	"tags": [
+		"character",
+		"kaoru-takahashi",
+		"face"
+	],
+	"hash": "f575443d3680393d0c7d884acef122f3c067157d",
+	"added": "2026-11-03"
+}

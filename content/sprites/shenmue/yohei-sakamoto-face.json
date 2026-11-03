@@ -1,0 +1,19 @@
+{
+	"title": "Yohei Sakamoto face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"030001800400004008000020100000101000000826eec0082eeee0042c006004400000044fffc002b800fc02f0001f027e03cec231040ef1200006c92f0785a5168345b6108005b410800594210005242200050822000590218a02f010f102d0100002a008dc0240080002c00470058002000ac0070034b83b80c907c9ff3200"
+	],
+	"tags": [
+		"character",
+		"yohei-sakamoto",
+		"face"
+	],
+	"hash": "3de5d11afc396540413887051748e419dc31dfa4",
+	"added": "2026-11-03"
+}

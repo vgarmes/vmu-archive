@@ -1,0 +1,21 @@
+{
+	"title": "Seiji Uchishiro",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ada6aad60000bdad55760000adbffeb60000bda61f760000ada407b60000bda739f60000adaa11d60000bda801d60000ada901360000bdaa00b60000adabc0360000bda400d60000ada5c1960000bda407f60000bda61d760000a5bfe7b60000a5bfffb60000a5bfffb60000a5bfffb60000a5bfffb60000a5a7ff760000bff803760000a01fff760000bddaab760000bdd555760000bddaab060000bdd555ff0000bddaffff0000bdd5ffff0000bddaffff0000bdd5ffff0000bddaffff0000",
+		"8dada6aad6008dbdad5576008dadbffeb6008dbda61f76008dada407b6008dbda739f6008dadaa11d6008dbda801d6008dada90136008dbdaa00b6008dadabc03600fdbda400d60005ada5c19600a5bda407f60055bda61d7600a5a5bfe7b600d5a5bfffb600a5a5bfffb600d5a5bfffb600a5a5bfffb600d5a5a7ff7600a5bff8037600d5a01fff7600a5bddaab7600d5bdd5557600a5bddaab0600d5bdd555ff00a5bddaffff00d5bdd5ffff00a5bddaffff0055bdd5ffff00a5bddaffff00",
+		"018dada6aad6018dbdad5576018dadbffeb6018dbda61f76018dada407b6018dbda739f6018dadaa11d6018dbda801d6018dada90136018dbdaa00b6018dadabc036fffdbda400d60005ada5c196aaa5bda407f65555bda61d76ffa5a5bfe7b6ffd5a5bfffb6aaa5a5bfffb6ddd5a5bfffb6aaa5a5bfffb6ddd5a5a7ff76aaa5bff80376ddd5a01fff76aaa5bddaab76ddd5bdd55576aaa5bddaab06ddd5bdd555ffaaa5bddaffffffd5bdd5ffffffa5bddaffff0055bdd5ffffaaa5bddaffff"
+	],
+	"frameDelayMs": 400,
+	"tags": [
+		"character",
+		"seiji-uchishiro"
+	],
+	"hash": "4db2849b037ce18198ef501d3ed35b6bd5fe47d2",
+	"added": "2026-11-03"
+}

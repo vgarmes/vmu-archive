@@ -1,0 +1,19 @@
+{
+	"title": "Hiroko Tahashi face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001ff80000ffff0003ffffc007ffffe00ffffff01fff87f81bfe01f837f800fc37f000bc63e000be61e0003e6bfc007e6be381befbc0423cff80001cff9f81fcff83c2f8ff8781d8ff800018ff800218ff800118ff800118ff800e18ff800018ffc02438ffc042387fe03c7077d018703be800e01fe603e0767387f0fb39ff9c"
+	],
+	"tags": [
+		"character",
+		"hiroko-tahashi",
+		"face"
+	],
+	"hash": "4f2d02ea51797ff3fed1664e97a97ca93268c297",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Roy Miller face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01aaaaa00355555006aaaaa805fff5580b000aa80e0005540a0002ac0c0003540c0001ac080000d4080800ac0ac9a8d4042204bc07c1f86406c260420421001a08a08012086000120840002408c20004088300080486803004fc404002804040027e00c002410140013c03700718063c3d000c3ffc80383ffe40f07fff3fc1ff"
+	],
+	"tags": [
+		"character",
+		"roy-miller",
+		"face"
+	],
+	"hash": "26c25462cf366d603d71fa1b26df33e0aa459a18",
+	"added": "2026-11-03"
+}

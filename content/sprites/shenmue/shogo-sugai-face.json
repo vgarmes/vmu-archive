@@ -1,0 +1,19 @@
+{
+	"title": "Shogo Sugai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"01aaacc0035d576006baaaa00d5557600abaaab01557ffd01abd557815eaaaac1f5fffd61afc007a1fef81ee1fc0e210138f83d0213341a02d0c4260241382102400021022003110100041900900c1900700bea0030104a0028100200e807f401ac0804016400c4037600060eb3000d0b59800b06ace01dfb563ffaa5ab1ff5d"
+	],
+	"tags": [
+		"character",
+		"shogo-sugai",
+		"face"
+	],
+	"hash": "6601b67bb7c152e4d082f9d8b7d3a9e5784814e1",
+	"added": "2026-11-03"
+}

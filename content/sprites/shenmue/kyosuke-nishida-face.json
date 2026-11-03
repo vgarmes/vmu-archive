@@ -1,0 +1,19 @@
+{
+	"title": "Kyosuke Nishida face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000003ffc0000ffff0003bfffc0067fece00cbd3e600d03ffb01f1ffff01effadf03ffdad783fe485383fc042383f8381983f8c00703f1181b02707c3d0520ac2b04a0381d048000430200002101c000c100200001001001c200180222000c0004000b0008007cc03803ae3fef8d578fdd7aaae03aa5557ff55"
+	],
+	"tags": [
+		"character",
+		"kyosuke-nishida",
+		"face"
+	],
+	"hash": "a7ccf240977e6bc32cd4eb7f8f7dbe0b3d1a9767",
+	"added": "2026-11-03"
+}

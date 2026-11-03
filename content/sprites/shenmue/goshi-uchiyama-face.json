@@ -1,0 +1,19 @@
+{
+	"title": "Goshi Uchiyama face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003fff0000ffffc001ffffe003fffff003fffff807ff3ff807fe49fc0df7517c0e7ffd5c1f9ffe5c27f7ff9c23f3fffc4981fff8480e3ffc5807cffc480b33fe40044cfe2103831f190f01e7188021fd300041fee0004160e40031a04403cec0c606f040460838c0c30108806140e980a1a8c3c070d40760a86a8eb0563ffd58"
+	],
+	"tags": [
+		"character",
+		"goshi-uchiyama",
+		"face"
+	],
+	"hash": "7574dd47478b0accc707b870ef29bca10e37cf0b",
+	"added": "2026-11-03"
+}

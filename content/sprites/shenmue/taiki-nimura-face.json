@@ -1,0 +1,19 @@
+{
+	"title": "Taiki Nimura face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 33,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"040000040400000104000000820000004200ffffd1038000188e00000458000000501ffffe20ffffffa3f7f83f97f6f63767fa0110539f3ffbe8968747d45a48221a2d33a176148fe07e8940042042280410209207f41038c000080c0365080623004403117fc202c8000103640820869903e08ecb0000c2b2e000d2b8bc01ceaa27ffc6"
+	],
+	"tags": [
+		"character",
+		"taiki-nimura",
+		"face"
+	],
+	"hash": "08fe15fa003a426a23911d5a801d2ae6b4664032",
+	"added": "2026-11-03"
+}

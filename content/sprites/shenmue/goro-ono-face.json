@@ -1,0 +1,19 @@
+{
+	"title": "Goro Ono face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"015248800291244006084240042b5b200c55b6a00ab000600d6000500aa800300d4800500ac014300d9f10f00ebfe7f019a0661017cfa7d017b703a01548827013234390194003100d602110075031907f887f304581d5a043c300b825d47e6f22e0005161f43c69f2d95aa3f16e25d3f8e78b47fc31ffaffe18fe9fff8c073f"
+	],
+	"tags": [
+		"character",
+		"goro-ono",
+		"face"
+	],
+	"hash": "4431bcdac8b48c85ef012cea268d10c682e145ba",
+	"added": "2026-11-03"
+}

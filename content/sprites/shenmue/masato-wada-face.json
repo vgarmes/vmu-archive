@@ -1,0 +1,19 @@
+{
+	"title": "Masato Wada face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03fffc000eaaab001d5555c01aaaaaa0355555503aaaaab03f5555503ffeaae03fffffe03a0000101ffffff01fe14a601f5f03a0272c8760420004205a1d0590480004104800021044802210204041101200c1200e003e200600002005007c40058182400cc03c403c6018c0de3000f8be1c01f75f07fe7aaf80f83d57e0201e"
+	],
+	"tags": [
+		"character",
+		"masato-wada",
+		"face"
+	],
+	"hash": "b9ea51ccc21e441d26cb25ccd335646bd22e1018",
+	"added": "2026-11-03"
+}

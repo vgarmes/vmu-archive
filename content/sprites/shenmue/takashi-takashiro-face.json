@@ -1,0 +1,19 @@
+{
+	"title": "Takashi Takashiro face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"100000f820000f0c2000f0fc3fff003c3a8000c43f40700c3bff00343d5001f43eaa9ef43bffe07f3000002830000070380800541f0800091fc5f00a0be6fe0a0cf064070831001d0830021904700461046003817e607c01ff7030039f18d8070b80680b01cde416e0e00c2831701e400cf03c003e787887ff7ff30cff3f8670"
+	],
+	"tags": [
+		"character",
+		"takashi-takashiro",
+		"face"
+	],
+	"hash": "c5f89d8d55f39d6f5c7d5a5f8a553b19391d1c27",
+	"added": "2026-11-03"
+}

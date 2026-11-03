@@ -1,0 +1,19 @@
+{
+	"title": "Tetsu Shimizu face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03ffffc00efdaff01daf55f81b5afb781cbd06dc080001bc100000fe100000ce100000be1600f0fe130384ce108600be08ce00fe0b4bc0620f82f8490800005d1380e05510880019110400191106001212f90002120100041000001810de00600981006008f800a0080001381c38032ff6000e2413003c4c13fff898097fe330"
+	],
+	"tags": [
+		"character",
+		"tetsu-shimizu",
+		"face"
+	],
+	"hash": "bb55405ab20b76c36e00a33204938d118a24d504",
+	"added": "2026-11-03"
+}

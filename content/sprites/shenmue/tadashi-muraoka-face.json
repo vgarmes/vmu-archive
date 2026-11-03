@@ -1,0 +1,19 @@
+{
+	"title": "Tadashi Muraoka face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ffc0001cf820002307fc0044f00300a10ffc809c700081438ff34139700cc2050ffe42f300018209000083e6000082120e1c838e700382640000829dbe1e8108580c8168821141203c0e412040104080020840400998403010f480102004800827b5001c2005003a11ea01f900060fbcc00e0fbe701fcfbf1ff7ffdf87cff"
+	],
+	"tags": [
+		"character",
+		"tadashi-muraoka",
+		"face"
+	],
+	"hash": "dd78fb9f3d78b2a023c60ef5376e4235bb4008f1",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,19 @@
+{
+	"title": "Saburo Yoshino face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0155560002aaab800555aac005556d6005555eb007d5f35804ff01b8080000ec080000d40800006c100000541c00f86c130304541084007c1f03f8660b81d0520880001a10800012108000321088002211040204118e040808f100700800805004fc0090048300900270011802000236070004671f0018cd6a80619ad67f8735"
+	],
+	"tags": [
+		"character",
+		"saburo-yoshino",
+		"face"
+	],
+	"hash": "2877206fd26c9fad2e6a671c59f1f92edf5ee1ce",
+	"added": "2026-11-03"
+}

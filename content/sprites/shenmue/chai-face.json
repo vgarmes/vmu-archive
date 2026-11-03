@@ -1,0 +1,19 @@
+{
+	"title": "Chai face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"80000820810009200804052002000490000009100000021040000018001c00240020004602402052c201f412e90e4222f9b44232fc618204d41e6408e641c43f7e8f88bf5e80049f6e30e29f7608128b34380a8f1f7060cb0e0360cf0e1fc1cb1ffb81cf3fcf038a7efe07857f380fa6ff821f5dffdc3faaffc07f5dffe1ffba"
+	],
+	"tags": [
+		"character",
+		"chai",
+		"face"
+	],
+	"hash": "c60cb0e99c69605d14f12d6f9cadd86a7625c993",
+	"added": "2026-11-03"
+}

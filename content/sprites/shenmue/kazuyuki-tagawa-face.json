@@ -1,0 +1,19 @@
+{
+	"title": "Kazuyuki Tagawa face",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000fff800013f96000240930002ff9380048123c004ff27c00ffff7e070000fe087fff3e06c001ce01b00e7700f81fbf0084201f00bc1e1900da0d16808600168104000481080008811020010090300e008fc818009000100046f030004000780021c0d600d00193039803118d3c0e30f137fc208233f0608"
+	],
+	"tags": [
+		"character",
+		"kazuyuki-tagawa",
+		"face"
+	],
+	"hash": "ee24b04e0d66ce7982fb94228848c5e151ae3f08",
+	"added": "2026-11-03"
+}
