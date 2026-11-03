@@ -1,0 +1,26 @@
+{
+	"title": "Diamond lattice",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"367367360d25870dcb8e9acba78f2da7632632635870d258bcf9edbc5870d25863263263a78f2da7cb8e9acb0d25870d367367365870d258e9acb8e9f2da78f2632632630d25870d9edbcf9e0d25870d63263263f2da78f2e9acb8e95870d258367367360d25870dcb8e9acba78f2da7632632635870d258bcf9edbc5870d258"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 128,
+		"offset": 1584976
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"pattern"
+	],
+	"hash": "dd757bff71ea7f82c74a6606529c800585ccde33",
+	"added": "2026-11-03"
+}

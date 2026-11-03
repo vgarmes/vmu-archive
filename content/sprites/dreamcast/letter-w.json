@@ -1,0 +1,26 @@
+{
+	"title": "Letter W",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007f1ff8fe7f9ff9fe7f9ff9fe7f9ff9fe7f9ff9fe7f9ff9fe7f9ff9fe3f9ff9fc3fdffbfc3fdffbfc3fdffbfc3ffffffc3ffffffc3ffffffc3ffffffc3ffffffc1ffffff81ffffff81ffffff81ffffff81ffe7ff81ffe7ff81ffe7ff81ffe7ff81ffe7ff80ffc3ff00ffc3ff00ffc3ff00ffc3ff00ffc3ff000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 118,
+		"offset": 1583696
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "6924ec16c518c9682b057904828686d1ee191177",
+	"added": "2026-11-03"
+}

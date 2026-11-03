@@ -1,0 +1,26 @@
+{
+	"title": "Octopus",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffff801fffff000ffffc0007fffc0003fff80001fff00001ffe00000ffe00000ffc000e0ffc000e0f1c000e005c000c005c000e005c0000005e00000f1e00000fff00001fff80003fffd0001fffd4054fffd4a5679fd4a5373fd4a5907f34a49ff824a4cffce4a660ff8da630fff9233fffe131fffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 25,
+		"offset": 1571792
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "03980892e3dc26cb0edc1fe0dfc49d5ae9d31328",
+	"added": "2026-11-03"
+}

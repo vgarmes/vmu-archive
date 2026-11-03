@@ -1,0 +1,26 @@
+{
+	"title": "Digit 8",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000007ffffe01ffffff83ffffffc7ffffffe7ff81ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe3ff00ffc1ff81ff80ffffff003ffffc00ffffff01ffffff83ffffffc7ff81ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff81ffe3ffffffc3ffffffc1ffffff80ffffff003ffffc000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 94,
+		"offset": 1580624
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "87d341d39e52c6668bd812a24158a3f3a16d5855",
+	"added": "2026-11-03"
+}

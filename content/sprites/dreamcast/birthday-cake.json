@@ -1,0 +1,25 @@
+{
+	"title": "Birthday cake",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000001000000818080018180c0018000c000018000018180c0019ffcc001e98bc003998ce005998cd0098000c810180c0410180c0410180c0428180c0a24180c122300006220e00382201ffc0220000002220000222208082237182c763f982cfe1fbe7efc1ffffffc0ffffff807fffff003ffffe000ffff8000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 59,
+		"offset": 1576144
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "77f9886aa173f25d3ea31740072d7868333ac5ea",
+	"added": "2026-11-03"
+}

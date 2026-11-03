@@ -1,0 +1,26 @@
+{
+	"title": "Dog",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffc000000380000001830000c186000061840000218dc003b189c0039189c0039189c7e391f807e01ff003c00ff003c00ff001800ff000000ff800001ff820041ff83ffc1ffc00003ffc00003ffe00007fff0000ffff8001ffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 23,
+		"offset": 1571536
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "2f839e24aef184ff24b8d06c5deb09f2eafd99d4",
+	"added": "2026-11-03"
+}

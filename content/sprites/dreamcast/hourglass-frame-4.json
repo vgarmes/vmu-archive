@@ -1,0 +1,25 @@
+{
+	"title": "Hourglass, frame 4",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000001ffffc001015fc00102bfc001ffffc0003ffe00006003000040010000400100004001000040010000555500006aab0000355600001aac00000f78000003e000000e380000180c00003086000060030000408100004141000042a10000455100006aab00003ffe0001ffffc001015fc00102bfc001ffffc000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 4,
+		"offset": 1569104
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "1d190cede76f7d7a995cff1f448b9e454c36686a",
+	"added": "2026-11-03"
+}

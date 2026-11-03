@@ -1,0 +1,25 @@
+{
+	"title": "Clock fish",
+	"game": "Visual Memory Unit",
+	"publisher": "Sega",
+	"year": 1999,
+	"region": "US",
+	"width": 8,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"3018bcfafebc3060"
+	],
+	"source": {
+		"file": "american_v1.05.bin",
+		"entry": "AnimSprites",
+		"offset": 6367
+	},
+	"tags": [
+		"bios",
+		"clock",
+		"animal"
+	],
+	"hash": "39061d82b45488d6a7e8b4127a23a1fc38b5492c",
+	"added": "2026-11-03"
+}

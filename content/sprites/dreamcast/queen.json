@@ -1,0 +1,26 @@
+{
+	"title": "Queen",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"7ffffffe9494bc8599225e0992493e899c949e0993224f519c412f1191809f51be004f11b181e7a9b2423f89b10107a5b1c1c783b0c0c3d1b8c0c3c1b8c0c3d3b80003c5b80001e5fc0007f9fc0009f9fc2209fdfa1c14fff200127ff500293fe4c0c49fc9231a43929c6131a641878dcf3e1fe39f807ff9bfffffff7ffffffe"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 82,
+		"offset": 1579088
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"cards"
+	],
+	"hash": "c06dcf975a1f9d7232f74d63e6d22b03c9895a96",
+	"added": "2026-11-03"
+}

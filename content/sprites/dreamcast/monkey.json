@@ -1,0 +1,26 @@
+{
+	"title": "Monkey",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fcffff3ffde007bffdc003bfe1800187dd8001bbb7bc3dede1a42587c1800183c19819838198198181981981c31818c3e6000067bc00003dd800001bd800000db01c3807e0142803c0000003c0000003c0000003c4000023dc00003bd70000ebc1c00383c07ffe03e0000007f000000ff800001ffe00007fbffffffdffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 19,
+		"offset": 1571024
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "f8c343443737f6c88cb3d74f1f2a92e6b91d5520",
+	"added": "2026-11-03"
+}

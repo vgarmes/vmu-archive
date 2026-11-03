@@ -1,0 +1,26 @@
+{
+	"title": "Blank face",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000000000000000000000000000000000000000000000078001e00fc003f00fc003f00fc003f00fc003f00fc003f00fc003f00fc003f00fc003f00fc003f0078001e000000000000000000000000000000000000000000ffffff00ffffff00ffffff0000000000000000000000000000000000000000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 11,
+		"offset": 1570000
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"face"
+	],
+	"hash": "5f6bb37b4cc18c142d5ae3907b7c8e643a3e777d",
+	"added": "2026-11-03"
+}

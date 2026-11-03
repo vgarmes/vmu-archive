@@ -1,0 +1,26 @@
+{
+	"title": "Letter M",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007fc003fe7fe007fe7ff00ffe7ff00ffe7ff81ffe7ff81ffe7ffc3ffe7ffc3ffe7ffe7ffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7fdffbfe7fdffbfe7fdffbfe7fcff3fe7fcff3fe7fcff3fe7fc7e3fe7fc7e3fe7fc3e3fe7fc3c3fe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 108,
+		"offset": 1582416
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "28a997953822ebb2d83b0834557f231cc1877331",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,25 @@
+{
+	"title": "Book",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007e00007ec1e0078380100801800810018004200180042001bf03c0fde1e007871e300c79ffd81bffffeff7fffff00ffffff7effffff7effffff42ffffff7effffff42ffffff7effffff7effffff7effffff7effffff7effffff7effffff7effffff7effffff7effff077ee0fe037ec070017e80000100800000ff000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 61,
+		"offset": 1576400
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "3f5f1387f946438c396a017040afd50c1d528517",
+	"added": "2026-11-03"
+}

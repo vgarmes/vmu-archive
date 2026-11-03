@@ -1,0 +1,26 @@
+{
+	"title": "Piano",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000003fe00000fff80001fffc0003fffc0003fffe0007fffe0007fffe0007ffff0007ffffe007ffffff07ffffff87ffffffc7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe000000007ffffffe4cc999924cc999924cc999924cc999924cc999924cc999924889111248891112488911127ffffffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 40,
+		"offset": 1573712
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"music"
+	],
+	"hash": "7f3eb0de1e086163008f383b05cb3eafff252bdb",
+	"added": "2026-11-03"
+}

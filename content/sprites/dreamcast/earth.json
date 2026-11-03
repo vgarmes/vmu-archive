@@ -1,0 +1,25 @@
+{
+	"title": "Earth",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffe3fffffe003ffff038ffffe03bffffc1f7fbff8ff3fbff3fc7efff71af27ffe48cfdffe007fefffa0cfe7ff91fff7f3f3fffff3ffffffff3fffffffe3fffffce3ffffee701fffc7fe1cdfe67218dfe7305c0ff0803f9ff00037fff800067ffc20003ffe0000ffff0000ffffc001ffffe007ffffffffffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 6,
+		"offset": 1569360
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "be79161c8548b8302dc1e0c9ed7bef1c47fcf47c",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,25 @@
+{
+	"title": "Bow and arrow",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007ffe000047ffc0fc401ff80c4001ff1c40007fb440003fe440001fc4400007e0400003f0400007f040000cf8400018784000307c4000603c4000c01e4001801e407f000e4086000e410e000e43fa0006443200064872000650d200067f94000643180002471000024d20000259400002718000027ffffffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 67,
+		"offset": 1577168
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "6196f580e8c70a4da865bf2a4314b4db9e11d0b5",
+	"added": "2026-11-03"
+}

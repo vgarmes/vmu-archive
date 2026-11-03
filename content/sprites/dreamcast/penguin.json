@@ -1,0 +1,26 @@
+{
+	"title": "Penguin",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000000003e000000ff801003ffc03003ffc04c071fe0461e0fe053b68fe050e68fe052060ff0467f1fe8c483ffe9a081ffe92271ffed021fffc500023fd54ffe1eff4aaa16d6455616ec8aaa16f88ffe16c0000216e0000215e183021bf000821ff800031ffc001ffffe00301ff8003ffe0007000001c00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 32,
+		"offset": 1572688
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "e5f161e070a05db579b78bd92ececc312d7ee924",
+	"added": "2026-11-03"
+}

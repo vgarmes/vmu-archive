@@ -1,0 +1,26 @@
+{
+	"title": "Umbrella",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000018000000180000007e000003ffc0000ffff0001ffff8003ffffc007ffffe00ffffff01ffffff81ffffff83ffffffc3ffffffc3ffffffc3ffffffc30799e0c20318c0400018000000180000001800000018000000180000001800000018000000180000001800000338000003f0000001e00000000000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 72,
+		"offset": 1577808
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"weather"
+	],
+	"hash": "56baef921c8bcdce26f5d45e93c37b15d669c7c1",
+	"added": "2026-11-03"
+}

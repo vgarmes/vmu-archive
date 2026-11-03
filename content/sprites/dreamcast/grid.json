@@ -1,0 +1,26 @@
+{
+	"title": "Grid",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7f0000000000000000fe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7f0000000000000000fe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7f0000000000000000fe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7ffe7e7e7f"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 123,
+		"offset": 1584336
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"pattern"
+	],
+	"hash": "5f9a1dcb6ebb25aab67ff2cdac1c05fbccb2c042",
+	"added": "2026-11-03"
+}

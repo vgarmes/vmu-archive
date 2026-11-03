@@ -1,0 +1,25 @@
+{
+	"title": "Helmet",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000003ffe00007fff8003ffffe007fffff00fffff701fffffb81ffffffc1ffffffc3fffffec3ffffff63ffffff63ffffff63ffffff63ffffff62ffffff627ffc7fe200003fe200003fe200003fe200003fe200003fe200003fe300007fc38000ffc3ffffff83ffffff81fffffe01fffffc01fffff0003fff00000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 46,
+		"offset": 1574480
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "a3f700b7d44d9c5da2caba1e5f67927ffae6fc7e",
+	"added": "2026-11-03"
+}

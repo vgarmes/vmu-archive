@@ -1,0 +1,26 @@
+{
+	"title": "Panda",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffff07fff07cf9ffcfbbfeff9fd7ff7fbfe7ff7fbfe7ff003fe7fc001fe7f00007e7c00000eb800000590300603e0780f03e0f80f81c0f80f81c1980cc1c7680b71c7f007f1c7effbf1c7cff9f1c307f063c003e003c0008003e0008003e003e007e0163407f00c1807fc00001fff00007fffc001ffffffffffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 20,
+		"offset": 1571152
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "fb014695783f12d3365bf5c5d918ba0f66e9ce46",
+	"added": "2026-11-03"
+}

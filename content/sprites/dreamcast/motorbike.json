@@ -1,0 +1,26 @@
+{
+	"title": "Motorbike",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000000000000000000000000000000000000000000000000000000000001fe000003020000023e0000076ff807e5c80c0c35780438351007e0151f8fe3f700ffe60300181f81e00c1fc7f00431ec100420e818063e6ff802426c8c03fe6c1fffe0ee3c0071e7f8007fc3f0003f0ffffffffffffffff00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 47,
+		"offset": 1574608
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"vehicle"
+	],
+	"hash": "602a766daf4ef676b960839d367217b33013276f",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Four stars",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"008000800080008001c001c001c001c003e003e03ffe3ffe1ffc1ffc0ff80ff807f007f003e003e007f007f007f007f00f780f780c380c38180c180c00000000008000800080008001c001c001c001c003e003e03ffe3ffe1ffc1ffc0ff80ff807f007f003e003e007f007f007f007f00f780f780c380c38180c180c00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 76,
+		"offset": 1578320
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"star"
+	],
+	"hash": "cb9558b2ceb6aca07e295763b4343e86ff9fb62c",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Car",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000007f800001fff80003fffe00360fdf003c018f0038010f00fe011e01ffe13e07fffbec0ffffffc1fffffbc3ffffefc7fffffec7fffffe0fffff9c0bffff6809fffef809fffed009fffed00dfffed007f83ef007f07cf003e0f86001fff000007fe00000000000000000000000000000000000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 45,
+		"offset": 1574352
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"vehicle"
+	],
+	"hash": "f87414003e882a7efb549e6c48697b07cb646bac",
+	"added": "2026-11-03"
+}

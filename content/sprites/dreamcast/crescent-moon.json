@@ -1,0 +1,25 @@
+{
+	"title": "Crescent moon",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffeffffffff7fffffff3fffffff9fffffff8fffffff87ffffffc7ffffffc3ffffffc3ffffffc3ffffffc1ffffffc1ffffffc1ffffffc1ffffff81ffffff81ffffff81ffffff01ffffff03fffffe03fffffc03fffff807fffff007ffffe00fffff801ff3fc003ff800007ffc0000ffff0003ffffe01fffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 8,
+		"offset": 1569616
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "65f9fc05fa8a772a9c2e3229d2cfdd05cd7b3060",
+	"added": "2026-11-03"
+}

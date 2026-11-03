@@ -1,0 +1,26 @@
+{
+	"title": "Lightning",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffc0000fffc0003fff8000ffff8003ffff000ffffe003ffffe00fffffc03fffffc003ffff80001fffe00001fffc0003ffff800fffffc03fffff80ffffff03fffffc0ffffff81fffffe00fffffc003fffff000fffffc007fffff01fffffe07fffffc1ffffff07fffffe1ffffff87ffffff1ffffffe7ffffffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 69,
+		"offset": 1577424
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"weather"
+	],
+	"hash": "ba783b74062e8a0bf69340affd7c48955049bde1",
+	"added": "2026-11-03"
+}

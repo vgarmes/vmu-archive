@@ -1,0 +1,25 @@
+{
+	"title": "Crown",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"8003c001c003c003e0066007e0066007f00e700ff00db00fd81ff81bdc1a583bec3e7c37e6342c6fd7783eebcb6816d3cff31ff365d30ba662e387466126848661c6c3866004400661fc7f8660c0060620701c043018380c3018300c3018300c301bb00c3036d80c303c780c3030180c18600c181ffffff8180000181ffffff8"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 57,
+		"offset": 1575888
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "90cd682de5c91f6979039132101190a6041509b8",
+	"added": "2026-11-03"
+}

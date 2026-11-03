@@ -1,0 +1,26 @@
+{
+	"title": "Digit 3",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000007ffffe01ffffff83ffffffc7ffffffe7fe03ffe7fc01ffe7fc01ffe7fc01ffe7fc01ffe00001ffe00003ffc003ffff0003fffc0003ffff0003ffff8003ffffc00003ffc00001ffe7fc01ffe7fc01ffe7fc01ffe7fc01ffe7fc01ffe7fc01ffe7fe03ffe7ffffffc3ffffffc1ffffff80ffffff001ffffc000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 89,
+		"offset": 1579984
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "86ce0f71887557fad6c0dc1c2194007227aea13a",
+	"added": "2026-11-03"
+}

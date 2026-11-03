@@ -1,0 +1,25 @@
+{
+	"title": "Cactus",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000210000009e4000007380000052800000d2c0004a5280003cd2c0006e5280002ad2c0006a5280002ad2c0006a5285402bd2d7a060528cc03852da602fd28a400a52da6000d28a400052aa6000d2fa400052826000d2fec00052818000d2ff000052950000d2c0000052800000d2ffff0061ffff003ffffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 39,
+		"offset": 1573584
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "b296ed5dfa2931a1b049f5d83a871683e34c340b",
+	"added": "2026-11-03"
+}

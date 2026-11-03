@@ -1,0 +1,26 @@
+{
+	"title": "Digit 9",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000003ffffc00ffffff01ffffff83ffffffc3ff87ffc7ff03ffe7ff03ffe7ff03ffe7ff03ffe7ff03ffe7ff03ffe7ff03ffe7ff03ffe7ff03ffe7ff87ffe7ffffffe3ffffffe3ffffffe0ffffffe07fffffe00003ffe00003ffe7fc03ffe7fc03ffe7fe07ffe7ffffffc3ffffffc1ffffff80ffffff003ffff8000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 95,
+		"offset": 1580752
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "4893aaebf67940ba873e68f94df8e20c8991d85e",
+	"added": "2026-11-03"
+}

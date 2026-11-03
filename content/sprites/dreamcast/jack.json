@@ -1,0 +1,26 @@
+{
+	"title": "Jack",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"7ffffffebdbb76f9bdbb76f99dbb76f19dbb76f19dbb76f18c3870e18fffffe18fffffe19200049197002c5194e3c5519400055194e1c55194e1c5519460c55194e1c55194000551b4000559d4000565b4000595c4410455c23e0459c6000261b9000d8182c031018620c3818f1f05e19e801df9bee07efdfdffff7f7ffffffe"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 81,
+		"offset": 1578960
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"cards"
+	],
+	"hash": "0526d0c9ab615ca04c37da0ebff0674907d07da7",
+	"added": "2026-11-03"
+}

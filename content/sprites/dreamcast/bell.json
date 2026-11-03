@@ -1,0 +1,25 @@
+{
+	"title": "Bell",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0003c00000024000000fe0000038380000e00e0001c0070001800300030001800300018003000180060000c0060000c0060000c0060000c0060000c0063ffcc007e007c0070000c00c0000600c00006018000030387ffc383fc407fc7a0c003ce398000ec0f00006c00000066000000c380000380f8003e000fffe0000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 56,
+		"offset": 1575760
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "b340e810b53751d73f3d44e01e5ad1dc58c74ace",
+	"added": "2026-11-03"
+}

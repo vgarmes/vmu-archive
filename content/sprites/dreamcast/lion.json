@@ -1,0 +1,26 @@
+{
+	"title": "Lion",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffff81ff81ff000000fe1800187c38001c3c2bffd43c2600643c2000043c20000438600006184381c2184381c2184381c2184381c2184000021840000218407e0218407e0218403c0218461862184418221867ffe61830000c181e00781b03c3c0df007e00ff000000ff000000ff100008ff900009ffd8001bfffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 18,
+		"offset": 1570896
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "2de666d9ba88c732e2bfaaf8e8a91efee0973999",
+	"added": "2026-11-03"
+}

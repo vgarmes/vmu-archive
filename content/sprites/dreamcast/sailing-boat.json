@@ -1,0 +1,26 @@
+{
+	"title": "Sailing boat",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"001c00000016000000130000001180000010c0000010600000103000001ff800001adc00001ffe000010030000100180001000c00010006000100030001000180010000800100038001003e0001ffe0000100000001000001ffffffe0ffffffe079ffffc1ffffffc607ff838cf3ff39ebfcfcfe37fe01ff8ffffffffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 44,
+		"offset": 1574224
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"vehicle"
+	],
+	"hash": "1ae275e7a09692b8daeefc791af0dd73e4efe791",
+	"added": "2026-11-03"
+}

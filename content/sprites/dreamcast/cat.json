@@ -1,0 +1,26 @@
+{
+	"title": "Cat",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffeffffff7e3ffffc7ebffffd7e9ffff97edffffb7ecffff37ee000077effffff7effffff7effffff7ef3ffcf7cf5ffaf3de4ff27bde4ff27bdc4ff23b9847e219b043c20db041820db843c21dbc47e23dbe47e27dbe4ff27d9f3c3cf9cffe7ff3e7ffffe7f3f7efcff9f00f9ffc3ffc3fff9ff9ffffc003ffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 16,
+		"offset": 1570640
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "68325234c1c41f80761aff2d1e6012fd23079d39",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Crab",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000022000044670000e6670000e6670000e6677c3ee6674422e667542ae67f4422fe7f6c36fe7f381cfe7f1008fe3f1008fc3f3ffcfc3ffffffc1f3ffcf80e3ffc700037ec001ffbdff83ffbdffc303dbc0c203e7c041ffffff83ffffffc303ffc0c07ffffe01c1ff83810000008000000000000000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 28,
+		"offset": 1572176
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "db6af051da267a006c68773f24510812c0375257",
+	"added": "2026-11-03"
+}

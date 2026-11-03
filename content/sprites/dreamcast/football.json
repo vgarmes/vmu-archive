@@ -1,0 +1,25 @@
+{
+	"title": "Football",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000007f000001ffc00007ffe00018ff9800300004006000030080000081000000c1c00003e3c00003e3c00801f7c01c01f7c07e01f780ff00f701ff80f701ff807600ff803600ff0016007f0012007e0012000000230000002100000021e0000041f8001fc0fc003f807e007f003f00fe000f007c000380780000ffc00"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 63,
+		"offset": 1576656
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "d461fabaab3d891874a01323cd40b9927b8cbbe1",
+	"added": "2026-11-03"
+}

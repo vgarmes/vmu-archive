@@ -1,0 +1,26 @@
+{
+	"title": "Letter Y",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007ff00ffe7ff00ffe3ff81ffc3ff81ffc1ffc3ff81ffc3ff80ffe7ff00ffe7ff007ffffe007ffffe003ffffc003ffffc003ffffc001ffff8001ffff8000ffff0000ffff00007ffe00007ffe00003ffc00003ffc00003ffc00003ffc00003ffc00003ffc00003ffc00003ffc00003ffc00003ffc00003ffc0000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 120,
+		"offset": 1583952
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "84beea9eff5a7e83df1772ea904ab4f8f6fc016d",
+	"added": "2026-11-03"
+}

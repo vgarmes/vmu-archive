@@ -1,0 +1,25 @@
+{
+	"title": "Bat and ball",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"3c0001e07f0007f87f800ffc7fc01ffc7fc01ffc7fe03ffc3fe07ffc1ff07ff80ff8fff007fdffe001fdffc000fbff00007fffe00037f030000fc01c001fe036003f2062003e3043007e104100fe104100fc104101f4104103e4104107c410410f8410413f0410423e0410663e7e30341eff201c0effa030007fffe000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 62,
+		"offset": 1576528
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "37c2dc96c368fbd29f1916714e90cab9bc45f2a9",
+	"added": "2026-11-03"
+}

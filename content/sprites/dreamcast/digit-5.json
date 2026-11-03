@@ -1,0 +1,26 @@
+{
+	"title": "Digit 5",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ff800007ff800007ff800007fffffc07ffffff07ffffffc7ffffffc7ffffffe7ffc3ffe7ff81ffe7ff81ffe00001ffe00001ffe00001ffe7f801ffe7f801ffe7f801ffe7f801ffe7f801ffe7fc03ffe3ffffffc3ffffffc1ffffff807fffff001ffffc000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 91,
+		"offset": 1580240
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "63538cbbb8a65900e64735a9a20b4308a45b42fe",
+	"added": "2026-11-03"
+}

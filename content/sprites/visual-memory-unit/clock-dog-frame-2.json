@@ -1,0 +1,25 @@
+{
+	"title": "Clock dog, frame 2",
+	"game": "Visual Memory Unit",
+	"publisher": "Sega",
+	"year": 1999,
+	"region": "US",
+	"width": 8,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"00088e8e78784850"
+	],
+	"source": {
+		"file": "american_v1.05.bin",
+		"entry": "AnimSprites",
+		"offset": 6359
+	},
+	"tags": [
+		"bios",
+		"clock",
+		"animal"
+	],
+	"hash": "969ceec53e97102011a28bed6992814eb9ca4ff7",
+	"added": "2026-11-03"
+}

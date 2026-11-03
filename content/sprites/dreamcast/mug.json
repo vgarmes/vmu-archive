@@ -1,0 +1,25 @@
+{
+	"title": "Mug",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000007fff0000c00180019ffcc0033ffe60027fff20027fff3fc31ffc60638ff9e022e0032e223ffe3b2200002122000021220000212200002122000021220000212200003b220000262200002062000020c200003f820000200200002002000060030000c00180018000c00300007ffe0000000000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 53,
+		"offset": 1575376
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "0754fdec1f435bc63512340c177659de5f5c88f7",
+	"added": "2026-11-03"
+}

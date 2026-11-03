@@ -1,0 +1,26 @@
+{
+	"title": "Musical note",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000fe000001ff000001ff800001ffc00001ffc00001ffe00001ffe00001ffe0000183e0000180e0000180600001806000018020000180000001800000018000000180000001800003f980000fff80003fff80007fff8001ffff0001ffff0003fffe0003fffe0003fffc0003fff80003ffe00001ff8000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 42,
+		"offset": 1573968
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"music"
+	],
+	"hash": "1658a5056a4b1f96bba0d09efa83e3a81842d8e2",
+	"added": "2026-11-03"
+}

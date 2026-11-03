@@ -1,0 +1,25 @@
+{
+	"title": "House",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000007e0001fcff000105ff800107ffc00107ffe0010ffff0011ffff8013ffffc017ffffe01ffc3ff01ff81ff83ff00ffc7fe007feffc003ffff8001ffff0000fffe00007ffc00003ffcfc7fbf748444ae048444a004847fa0048444a004c47fa004c4002004840020048400200484002004840020ffffffff00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 55,
+		"offset": 1575632
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "76535d78ff73517f4d5f0842b3ef6364188b2b6c",
+	"added": "2026-11-03"
+}

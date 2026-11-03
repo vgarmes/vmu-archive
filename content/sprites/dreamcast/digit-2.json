@@ -1,0 +1,26 @@
+{
+	"title": "Digit 2",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000ffff8007ffffe01ffffff83ffffffc3ffffffe7fc03ffe7f801ffe7f801ffe7f801ffe7f803ffe7f807ffe0000fffe0001fffe0003fffc0007fff8000ffff0001fffe0003fffc0007fff8000ffff0001fffe0003fffc0007fff8000ffff0001fffe0003ffffffe7ffffffe7ffffffe7ffffffe7ffffffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 88,
+		"offset": 1579856
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "ac6be2c4c92b49ce4277bbc0134b1b0befe86505",
+	"added": "2026-11-03"
+}

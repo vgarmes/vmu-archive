@@ -1,0 +1,26 @@
+{
+	"title": "Rabbit",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffff8ffff1fe03ffc07c01ff803c00ff003c00ff003c00ff003e00ff007b10ff08ddf0ff0fbfd0ff0bfdf0ff0fbf70ff0efff0ff0ff7d0ff0beff0ff0ffdf0ff0fbfb0ff0dffe00007ffc00003fd800001bf860061ff060060ff060060fe0600607f003c00ff800801ffc08903fff0ff0ffffc003ffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 15,
+		"offset": 1570512
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "54f8a4c88266e98982770cd0ae98e7fff814fa39",
+	"added": "2026-11-03"
+}

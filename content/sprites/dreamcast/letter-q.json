@@ -1,0 +1,26 @@
+{
+	"title": "Letter Q",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000fffe0003ffffc00ffffff01ffffff83ffffffc3ff00ffc7fe007fe7fc003feffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ff7fc003ff7fe007fe3ff3fffe3ffffffc1ffffff81ffffff007ffffc001ffff0000007f8000003fc000001fe000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 112,
+		"offset": 1582928
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "4c32c04ed3497b34cd82516ae33f1ddc76f5c584",
+	"added": "2026-11-03"
+}

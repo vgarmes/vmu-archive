@@ -1,0 +1,26 @@
+{
+	"title": "Fish",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffff813ffff0013fffc0013fff00013ffe00013ffe00013ffc00013ff800013ff000013fe180013fe180013fe000393fc00007bfc000007fc0000003fe0000038200000382000007fe00000f8200003ffe003fffc000013fe000013fe000013ff000013ff800013ffc00013fff80013fffe0013ffffc013fffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 24,
+		"offset": 1571664
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "69291c97b83b3059089a555601a9e0684930861e",
+	"added": "2026-11-03"
+}

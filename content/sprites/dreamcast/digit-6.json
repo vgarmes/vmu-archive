@@ -1,0 +1,26 @@
+{
+	"title": "Digit 6",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000003ffffc00ffffff01ffffff81ffffffc3ffffffc3ffc07fe3ff803fe7ff803fe7ff800007ff800007fffffe07ffffff07ffffffc7ffffffc7ffffffe7ffc1ffe7ff80ffe7ff80ffe7ff80ffe7ff80ffe7ff80ffe7ff80ffe7ff80ffe7ff80ffe7ffc1ffe3ffffffc3ffffffc1ffffff80ffffff003ffffc000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 92,
+		"offset": 1580368
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "814bd465f4fde6a1f84fb93fdd7d7ad34750d63c",
+	"added": "2026-11-03"
+}

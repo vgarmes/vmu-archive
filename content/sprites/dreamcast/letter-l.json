@@ -1,0 +1,26 @@
+{
+	"title": "Letter L",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000fff00000ffffff00ffffff00ffffff00ffffff00ffffff00ffffff000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 107,
+		"offset": 1582288
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "fecac9499d54b1a73da1a614e8dc0bca7e551cb9",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,25 @@
+{
+	"title": "Circled cross",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ff000007ffe0001ffff8003f00fc007c003e00f0000f01f8001f83fc003fc3be007dc79f00f9e70f81f0e707c3e0ee03e7c07e01ff807c00ff003c007e003c007e003c00ff003e01ff807e03e7c07707c3e0e70f81f0e79f00f9e3be007dc3fc003fc1f8001f80f0000f007c003e003f00fc001ffff80007ffe00000ff000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 0,
+		"offset": 1568592
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "220a509e767d2e62a1b908443d1a6fa1e787f274",
+	"added": "2026-11-03"
+}

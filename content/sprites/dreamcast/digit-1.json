@@ -1,0 +1,26 @@
+{
+	"title": "Digit 1",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000003fff00007fff0000ffff0001ffff0003ffff0007ffff000fffff000fffff000fffff00007fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff00003fff0000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 87,
+		"offset": 1579728
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "2e50921c5bbb928e0e7ce107c20480ba9c065669",
+	"added": "2026-11-03"
+}

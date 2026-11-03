@@ -1,0 +1,26 @@
+{
+	"title": "Letter J",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00000ffe00001ffe0001fffe0001fffe0001fffe0001fffe0001fffc0001fffc0001fff80001fff00000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 105,
+		"offset": 1582032
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "ee10bc31fe321e1176ccdd9eaa5e80fc0541c9e3",
+	"added": "2026-11-03"
+}

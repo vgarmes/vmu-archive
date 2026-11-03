@@ -1,0 +1,26 @@
+{
+	"title": "Letter R",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007ffffe007fffffc07ffffff07ffffff87ffffffc7ffffffe7ff01ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff01ffc7ffffff87ffffff07fffffe07ffffff87ffffffc7ffffffe7ff01ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 113,
+		"offset": 1583056
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "dd7b57229e9a908174c98a7bb323e735a1d468a7",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Nested squares",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ebaff5d788881111aaaa555508000010ffffffff08000010aaaa555588881111ebaff5d708000010aaaa555508000010ebaff5d788881111aaaa55558888111188881111aaaa555588881111ebaff5d708000010aaaa555508000010ebaff5d788881111aaaa555508000010ffffffff08000010aaaa555588881111ebaff5d7"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 126,
+		"offset": 1584720
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"pattern"
+	],
+	"hash": "dcc75c64a86341a4e97271d367e9091e229ba63f",
+	"added": "2026-11-03"
+}

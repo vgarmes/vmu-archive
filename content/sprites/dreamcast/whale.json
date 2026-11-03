@@ -1,0 +1,26 @@
+{
+	"title": "Whale",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000400002f00800091bf000220e15000804000000040240480400000004000010ff80900180600001003000260018500c000c0018e0060010e0020030000300200001033ff801072aa8010d2aa801092aa801992aa800f12aa80001ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 27,
+		"offset": 1572048
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "4bffe11a1bce8ec7cdb8e8ed40548f4aecc7d2d3",
+	"added": "2026-11-03"
+}

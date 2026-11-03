@@ -1,0 +1,25 @@
+{
+	"title": "Palm tree",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000f80000038e0007fe3bffe418810024303fe02467e1f0245d8e1c2473300e2406c07b240c03c924181fc5a430ffe4a427e4f2a47cc452a4618ed8a403cb89a403180d24079007240c3006240c2004241f20002418300024383e0024ffe38027fc00ffe5e000302780001827ffffffe000000000000000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 85,
+		"offset": 1579472
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "245f526173905e9046113744fdb6bf28e86bf08c",
+	"added": "2026-11-03"
+}

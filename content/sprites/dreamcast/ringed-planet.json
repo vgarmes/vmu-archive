@@ -1,0 +1,25 @@
+{
+	"title": "Ringed planet",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffc3ffffffc07fffffe03c7ffff1d00ffff9e007fffcc003fffe4001ffff2001ffff9000ffffc800ffff8400ffff8200ffff8080bfffc0219fffe003cffff00807fffc1e03ffffff81ffffffe1ffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 7,
+		"offset": 1569488
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "ca694acc1307bc2b843fa7b851043efdcd38d93d",
+	"added": "2026-11-03"
+}

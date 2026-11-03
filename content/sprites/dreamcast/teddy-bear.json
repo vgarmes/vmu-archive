@@ -1,0 +1,25 @@
+{
+	"title": "Teddy bear",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"03f00fc006100860041ff82006700e6003c003c0010000800118188001181880010000800103c080010180800180018000c7e30003b00dc01e1ff878700bd00ec0381c038068160180c81301c1981983631008c63e100c7c00781f0003c811e03e08103c600c300640042002c00ff0038018180180300c01c06006037fc003fe"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 65,
+		"offset": 1576912
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "a92544398cf1b9104cc0105b73f9c0ae3c256d75",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Letter E",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007ffffff87ffffff87ffffff87ffffff87ffffff87ffffff87ff800007ff800007ff800007ff800007ff800007ff800007ffffff87ffffff87ffffff87ffffff87ffffff87ffffff87ff800007ff800007ff800007ff800007ff800007ff800007ffffffc7ffffffc7ffffffc7ffffffc7ffffffc7ffffffc00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 100,
+		"offset": 1581392
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "023de65856ac7115b095d9bfb4b1cbacdfd21853",
+	"added": "2026-11-03"
+}

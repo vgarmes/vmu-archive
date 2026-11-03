@@ -1,0 +1,25 @@
+{
+	"title": "Telephone",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000000000000000000007ffffe00ffffff01ffffff83ffffff83ffffffc7ffffffe7fc423fe7fc423fe0007e0007fc003fe7fc003fe0207e040021c38400613c86004342c2004281420042814200c2814300828141008342c101813c818101c38081007e00810000008180000180ffffff00000000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 51,
+		"offset": 1575120
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "ca08c37ba52a04ab74524388b4a1bd77e471405d",
+	"added": "2026-11-03"
+}

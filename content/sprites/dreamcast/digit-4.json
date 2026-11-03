@@ -1,0 +1,26 @@
+{
+	"title": "Digit 4",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000007fff8000ffff8001ffff8001ffff8003fbff8003fbff8007f3ff800ff3ff800fe3ff801fe3ff801fc3ff803fc3ff807f83ff807f03ff80ff03ff80fe03ff81fe03ff83fc03ff83f803ff87ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe00003ff800003ff800003ff800003ff800003ff800000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 90,
+		"offset": 1580112
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "5e65580e0344dfe93b419e12379b52c0aedb3277",
+	"added": "2026-11-03"
+}

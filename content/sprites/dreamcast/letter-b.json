@@ -1,0 +1,26 @@
+{
+	"title": "Letter B",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007fffff807fffffe07ffffff07ffffff87ffffffc7fc03ffc7fc01ffc7fc01ffc7fc01ffc7fc01ff87fc01ff87fc03ff07fffffe07fffff807fffffe07ffffff87ffffffc7ffffffc7fc01ffe7fc00ffe7fc00ffe7fc00ffe7fc00ffe7fc00ffe7fc01ffe7ffffffc7ffffffc7ffffff87fffffe07fffff8000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 97,
+		"offset": 1581008
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "1acf4dacf18ea1b03967357f60be31ae2fd597aa",
+	"added": "2026-11-03"
+}

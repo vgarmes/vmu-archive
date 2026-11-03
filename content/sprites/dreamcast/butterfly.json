@@ -1,0 +1,26 @@
+{
+	"title": "Butterfly",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"7e00007ec30810c38994299182ca5341a062460588324c1180b24d01801a5801800a5001800a5001800660014003c0024003c00230ffff0c1f83c1f80c7ffe3003ffffc00fdffbf00faff5f00fdffbf00efe7f70057c3ea006f81f6007f00fe007f00fe007e007e00fc003f01e0000787c00003e7800001ef800001ff000000f"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 29,
+		"offset": 1572304
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "bad59ae377549dfa83930c2412f188ab3a2a1b7c",
+	"added": "2026-11-03"
+}

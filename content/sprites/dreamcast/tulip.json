@@ -1,0 +1,25 @@
+{
+	"title": "Tulip",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000703c0e00d8661b00884211018cc33183048120c2068160420381c04601008064000000240000002400000024000000240000002400000024000000260000006200000043800001c0c000030c70000e3e1e00787f83ffc1f7c03c03e7f03c0fe3fc3c3fc3fe3c7fc1ff3cff80ffbdff007fbdfe001ffff800003c000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 34,
+		"offset": 1572944
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "525152853447ffa60a5aa9583a4daf2fb1efad92",
+	"added": "2026-11-03"
+}

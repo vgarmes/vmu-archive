@@ -1,0 +1,25 @@
+{
+	"title": "Cherry blossom",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000084000000c6000001ef000001ff000001ff000001ff030001ff0f0001ff1e01e1ff3f21fdff7fe0feff7fe5ff7effc7fff7ffc7ffffff87ffffff07ff7efc03ffe7f000ffe7c00003fff00007bdfc000ffffe001ff7ff003ff7ff003fe3ff807fe3ff807fe3fd80ffc1f800df80f8000f003c001e0000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 36,
+		"offset": 1573200
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "358d433af235dbccb03b214552254904c2f62f1c",
+	"added": "2026-11-03"
+}

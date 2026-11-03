@@ -1,0 +1,26 @@
+{
+	"title": "Horse",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffbffffffb8ffffff987f81ff88303fff880c61ffc80007fffe0005ffe38009ffe00001ffc00003ff800001ff800001ff030001ff078001ff048081fe000081fe000081fc000081fc000081f8000181f0000101f0000301e0001e01c0007c0180007c0190107e01b010fe01a010fe018031ff01c0e3ff01f187ff81ffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 14,
+		"offset": 1570384
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "d28f3d5c4c70d1a936f936015c4ea600496498af",
+	"added": "2026-11-03"
+}

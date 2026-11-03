@@ -1,0 +1,26 @@
+{
+	"title": "King",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffff9ffffffd9777777597777775880000098ffffff98ffffff988c01e09930001259580069594707855940000559470385594703855943018559470385594000055b48fc25fd51fe15195303155a4e01e4d84020041c60d80e3bd327b5d84c49481a92494e1ba4925f9bfb6daf7ee2008f7f71010f7f71011efffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 83,
+		"offset": 1579216
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"cards"
+	],
+	"hash": "729cdd82911eda9221cc0cefad4723b12b6cfa12",
+	"added": "2026-11-03"
+}

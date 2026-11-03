@@ -1,0 +1,26 @@
+{
+	"title": "Letter D",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007fffff807fffffe07ffffff07ffffff87ffffffc7ff01ffc7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffc7ff01ffc7ffffff87ffffff87ffffff07fffffe07fffff8000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 99,
+		"offset": 1581264
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "742e2fb378ecf996b89b82413c774ca2c826578c",
+	"added": "2026-11-03"
+}

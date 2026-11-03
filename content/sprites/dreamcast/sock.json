@@ -1,0 +1,25 @@
+{
+	"title": "Sock",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000003fff0000200100003fff00003fff00003fff00003fff000020010000200100003fff00003fff00003fff00003fff000020010000200100003fff00003fff0001ffff000fffff007cf00100fcf00101bcf3ff033cf3ff033cf3ff033cf3ff033cf3fe033cf3fe033cf3fc01bcf3f800fcf3e0003fff80000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 58,
+		"offset": 1576016
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "99cef05eac2aacdf75cd84b2a72773fe3feaf46d",
+	"added": "2026-11-03"
+}

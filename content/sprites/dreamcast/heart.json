@@ -1,0 +1,26 @@
+{
+	"title": "Heart",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000000380038007f01fc01ff83ff01ffc7ff03ffc7ff83ffefff87ffffffc7ffffffc7ffffffe7ffffffe7ffffffe7ffffffc7ffffffc3ffffff83ffffff81ffffff00fffffe007ffffc003ffff8003ffff8001ffff0000fffe00007ffc00003ff800001ff000001ff000000fe0000007c0000003800000010000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 77,
+		"offset": 1578448
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"cards"
+	],
+	"hash": "ea0ecd3d30d801451992fedc61b7bf02b7088088",
+	"added": "2026-11-03"
+}

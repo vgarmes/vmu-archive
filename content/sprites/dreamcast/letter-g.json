@@ -1,0 +1,26 @@
+{
+	"title": "Letter G",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000001ffff8007ffffe00ffffff01ffffff83ffffffc3ffffffc7ffc1ffe7ff80ffe7ff80ffe7ff80ffe7ff800007ff800007ff800007ff800007ff87ffe7ff87ffe7ff87ffe7ff87ffe7ff87ffe7ff80ffe7ff80ffe7ff80ffe7ffc1ffe7ffffffe3ffffffe3ffffffe1ffffffe0ffffffe07fff3fe01ffe3fe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 102,
+		"offset": 1581648
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "2ae6922e71c3eb2a174a228efda7c9afb032e66e",
+	"added": "2026-11-03"
+}

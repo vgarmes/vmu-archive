@@ -1,0 +1,26 @@
+{
+	"title": "Diamond",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000180000003c0000007e000000ff000001ff800003ffc00007ffe0000ffff0001ffff8003ffffc007ffffe00ffffff01ffffff83ffffffc7ffffffeffffffffffffffff7ffffffe3ffffffc1ffffff80ffffff007ffffe003ffffc001ffff8000ffff00007ffe00003ffc00001ff800000ff0000007e0000003c00000018000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 78,
+		"offset": 1578576
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"cards"
+	],
+	"hash": "d7e1aff077f1768683b57b814a5031761a0fe098",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Digit 7",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007ffffffe7ffffffe7ffffffe7ffffffe7ffffffc7fc03ffc7f807ff87f807ff80000fff80000fff00001fff00001ffe00003ffe00003ffe00007ffc00007ffc0000fff80000fff80000fff00001fff00001fff00003ffe00003ffe00007ffc00007ffc0000fffc0000fff80001fff80001fff00003fff00000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 93,
+		"offset": 1580496
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"digits"
+	],
+	"hash": "f260e44c97577b7b73d40e6b4838f56ec66df2cb",
+	"added": "2026-11-03"
+}

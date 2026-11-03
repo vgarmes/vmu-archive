@@ -1,0 +1,26 @@
+{
+	"title": "Club",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0007e000001ff800003ffc00003ffe00007ffe0000ffff0000ffff0000ffff0000ffff0000ffff00007ffe0007bffde01fdffbf83ff7effc7ffbdffe7ffbdffeffffffffffffffffffffffffffffffffffffffffffffffff7ffbdffe7ff3cffe3ff3cffc1fe7e7f80787e1e00007e000000ff000001ff800003ffc0000ffff00"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 80,
+		"offset": 1578832
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"cards"
+	],
+	"hash": "3c46431a0297a20bc34056f3e8625ab78383dad9",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Two stars",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0100000001000000038000000380000007c000007ffc00003ff800001ff008000fe0080007c01c000fe01c000fe03e001ef03e0018703e0030187f0000007f00007fffff001ffffe000ffff80007ffe00003ffc00001ff800001ff800003ffc00003ffc00007e7e00007c3e0000f81f0000f00f0001e0078001800180030000c"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 74,
+		"offset": 1578064
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"star"
+	],
+	"hash": "bb1ca7a06b86bdd373f3f69a7eefa6478cb3d669",
+	"added": "2026-11-03"
+}

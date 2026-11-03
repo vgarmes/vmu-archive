@@ -1,0 +1,26 @@
+{
+	"title": "Letter K",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007fe003fe7fe007fe7fe00ffe7fe01ffc7fe03ff87fe07ff07fe0ffe07fe1ffc07fe3ff807fe7ff007feffe007ffffc007ffff8007ffff0007ffff0007ffff8007ffff8007ffffc007ffffe007fefff007fe7ff007fe7ff807fe3ffc07fe1ffe07fe0ffe07fe0fff07fe07ff87fe03ffc7fe03ffe7fe01ffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 106,
+		"offset": 1582160
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "0ddb5f110900f2e08953ff059180deda920ae529",
+	"added": "2026-11-03"
+}

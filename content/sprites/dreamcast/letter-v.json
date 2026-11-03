@@ -1,0 +1,26 @@
+{
+	"title": "Letter V",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000003fe007fc3fe007fc3fe007fc3fe007fc3fe007fc1ff00ff81ff00ff81ff00ff81ff00ff81ff00ff80ff81ff00ff81ff00ff81ff007fc3ff007fc3ff007fc3ff007fc3fe003fe7fe003fe7fe003fe7fe003fe7fe003ffffc001ffffc001ffffc001ffffc000ffff8000ffff8000ffff80007fff00007fff0000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 117,
+		"offset": 1583568
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "74cc7d5ce358d79c641ac3f95ee67014ca0e7bbd",
+	"added": "2026-11-03"
+}

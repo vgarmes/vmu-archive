@@ -1,0 +1,26 @@
+{
+	"title": "Laughing face",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000000000000000000000000003e003e007f007f00e380e381c1c1c1c180c180c180c180c180c180c00000000000000000000000000000000000000003ffffffc3ffffffc3ffffffc3ffffffc1ffffff81ffffff81ffffff80ffffff007ffffe003ffffc001ffff80007ffe00001ff0000000000000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 9,
+		"offset": 1569744
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"face"
+	],
+	"hash": "29bff2e2b5e11b6e6699015a11ac9590e0e73648",
+	"added": "2026-11-03"
+}

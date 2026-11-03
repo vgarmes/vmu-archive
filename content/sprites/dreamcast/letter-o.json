@@ -1,0 +1,26 @@
+{
+	"title": "Letter O",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000ffff0003ffffc00ffffff01ffffff83ffffffc3ffffffc7ff00ffe7fe007feffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ffffc003ff7fe007fe7ff00ffe3ffffffc3ffffffc1ffffff80ffffff003ffffe000ffff0000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 110,
+		"offset": 1582672
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "a434b5d88a7c94341bc0d345c2bc96d638c80aa9",
+	"added": "2026-11-03"
+}

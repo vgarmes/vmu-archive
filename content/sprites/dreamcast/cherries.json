@@ -1,0 +1,25 @@
+{
+	"title": "Cherries",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000001ff80001f00e00006fe30000300e00002ff80000300000002c0000002600000023000000218000006080000040c0000040400000c040000180600079002000ff002001fa002003ff002003ff01fe03ff038f03fe07ff81fc07ff80f807ff800007ff800007ff800007ff800007ff000007ff000003fc000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 33,
+		"offset": 1572816
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "aa626327129c18190f0d2c65a5c5ce3d28c8192d",
+	"added": "2026-11-03"
+}

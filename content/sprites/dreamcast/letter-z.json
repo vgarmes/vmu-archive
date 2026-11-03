@@ -1,0 +1,26 @@
+{
+	"title": "Letter Z",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000003ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe0001fffc0003fff80007fff00007fff0000fffe0001fffc0001fffc0003fff80007fff0000fffe0000fffe0001fffc0003fff80007fff00007fff0000fffe0001fffc0003ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 121,
+		"offset": 1584080
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "7dc6945c808d650e988f6539c453a56edda56b6b",
+	"added": "2026-11-03"
+}

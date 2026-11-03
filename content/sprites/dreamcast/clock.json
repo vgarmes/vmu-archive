@@ -1,0 +1,25 @@
+{
+	"title": "Clock",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ff000007ffe0001f00f80038001c0060000600c000030180000183000008c3000010c600002066040060660600c06ce381873ca1c3013ca1e7073ce07e013c207c013ce03c073c0018003c00000036000000660000006600000063000000c3000000c180000180c00003006000060038001c001f00f80007ffe00000ff000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 50,
+		"offset": 1574992
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "a52ada6d01b99b42414dc169a370eb8b4ad061d8",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Bear",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffffbffffdfc3ffffc781ffff8180ffff01807fff01838000c18c00003190000009d000000be0600607c067e603c0642603c0042003c0042003c00c3003c00bd003c00bd003c00bd003c0089003e0189807e0108807f010880ffc13c83ffe12487fff1668ffff1008ffff9ff9ffffe007fffff81fffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 21,
+		"offset": 1571280
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "e309e512fb8b4ac3fec78c4636d7f94f24107606",
+	"added": "2026-11-03"
+}

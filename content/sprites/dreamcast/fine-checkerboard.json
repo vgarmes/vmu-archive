@@ -1,0 +1,26 @@
+{
+	"title": "Fine checkerboard",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555aaaaaaaa55555555"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 127,
+		"offset": 1584848
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"pattern"
+	],
+	"hash": "428e88fd9e738d82e0620ca091cfc91d3973619b",
+	"added": "2026-11-03"
+}

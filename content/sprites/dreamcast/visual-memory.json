@@ -1,0 +1,25 @@
+{
+	"title": "Visual Memory",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff00038001c0060000600c000030087ffe1008ffff1008ffff1008ffff1008ffff1008ffff1008ffff1008ffff1008ffff1008ffff1008ffff1008ffff1008ffff1008ffff10087ffe10080000100800001008006c1008306c100830001008fc3b9008fc3b9008303b90083000100c00003006000060038001c000ffff00"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 5,
+		"offset": 1569232
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "7b68c83f3e97023da0ed06e3e3e3acd74b5e9c9c",
+	"added": "2026-11-03"
+}

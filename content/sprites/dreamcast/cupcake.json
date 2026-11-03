@@ -1,0 +1,25 @@
+{
+	"title": "Cupcake",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000070000000d0001fff9ff83fff1ffc3ffc0ffc3ff00ffc3fe01ffc3fc071fc3ff1c0fc3f0000fc3e0001fc3c00037c3c000e3c3f00f81c3800001c3000003c3000007c380003fc3f007f7c3dc7e57c3c4c257c3e6824fc3f3821fc3fc007fc3f7ffdfc3f0001fc3f4825fc3f4825fc3f8823fc1f8003f800c00600007ffc00"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 38,
+		"offset": 1573456
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "1badc72931eea9bf30225be411dc56dfccfccb6e",
+	"added": "2026-11-03"
+}

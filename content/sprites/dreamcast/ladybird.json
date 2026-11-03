@@ -1,0 +1,26 @@
+{
+	"title": "Ladybird",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000f0000f019e0079830381c0c600e7006400240020007e000001ff8000077ee000077ee0001ffff8001ffff80100000082bffffd447d24be202724e40127e7e482bce73d447ca53e202fe7f4013f24fc82b324cd4473e7ce203fe7fc002ca534003ce73c000fe7f0000f24f0000f24f00007e7e00000ff00000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 30,
+		"offset": 1572432
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "195dbb60561f07bb12247ab7ba943cb9a6de8413",
+	"added": "2026-11-03"
+}

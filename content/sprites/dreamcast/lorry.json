@@ -1,0 +1,26 @@
+{
+	"title": "Lorry",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000000000000000000000000000000000000000000000000000000000000001fffffe010000020100000201000002010000027f000002410000025d0000025d0000025d00000241000002410000024100000241000002410000024f0000e27ffffffe1f0001f01f0001f00e0000e0ffffffffffffffff00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 49,
+		"offset": 1574864
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"vehicle"
+	],
+	"hash": "e4fa296a9753d0e2b7d653b83d13d7c210417172",
+	"added": "2026-11-03"
+}

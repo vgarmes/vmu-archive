@@ -1,0 +1,25 @@
+{
+	"title": "Snowman",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff87ff7fbf32effdec79fffff1fcfddbe7ff7fffaff81ffde7e00fd7f7c047d7fb884757ed0843c5fe0903dfae0002dfae0007df8e07cfddef001f9fefc000bfef80007fef00403fee00401fe200200ffc00200ffc00100ffc00100ffc00000ffc00000ffc00001ffc00001ffc00001ffe00003fff00007fffc000ffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 68,
+		"offset": 1577296
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "4af3711447c35b45f02d24b23f662fa64564e158",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Letter S",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000001ffff8007ffffe01ffffff01ffffff83ffe1ff83ffc0ffc7ffc0ffc7ffc0ffc7ffe0ffc7fff0ffc3fffc0003ffff8001ffffe001fffff8007ffffe001fffff8007ffffc000ffffc00007ffe3ff83ffe3ff83ffe3ff83ffe3ff83ffe3ff83ffe3ffc7ffe1ffffffe1ffffffc0ffffff807fffff001ffffc000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 114,
+		"offset": 1583184
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "4100936bba58b3c115e28bb10adcc6218fee9083",
+	"added": "2026-11-03"
+}

@@ -1,0 +1,26 @@
+{
+	"title": "Letter A",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000001ffff8001ffff8001ffff8001ffffc003ffffc003ffffc003fe7fc003fe7fc003fe7fe007fc3fe007fc3fe007fc3fe007fc3fe007fc3fe00ff81ff00ff81ff00ff81ff00ffffff01ffffff81ffffff81ffffff81ffffff81ffffff83ff00ffc3ff00ffc3ff00ffc3ff00ffc7fe007fe7fe007fe7fe007fe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 96,
+		"offset": 1580880
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "89f2f7216348d639d39e8b57ab7840e83fad31a6",
+	"added": "2026-11-03"
+}

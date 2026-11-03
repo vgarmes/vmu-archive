@@ -1,0 +1,26 @@
+{
+	"title": "Checkerboard",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff0000ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ffff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff0000ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff00ff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 122,
+		"offset": 1584208
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"pattern"
+	],
+	"hash": "aceaff758b082e54b03afc123f087f59335ea5c8",
+	"added": "2026-11-03"
+}

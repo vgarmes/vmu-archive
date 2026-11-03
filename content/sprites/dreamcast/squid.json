@@ -1,0 +1,26 @@
+{
+	"title": "Squid",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffff07fc001c01fc0038007c01f81c3c00fc7f3c007fff3c001fff9c0007ff9c0000ff9c40001f9c40000f9cc0180f9de0180f1fe00e1f3ff1863e7df1806058f0e0e1d8f861bf98f8038f98f8068038f00e6038f03e3ff9ffe50fd9fd650019f965c018f924fff801260ffc0323079ffe39c01f8061f01ffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 26,
+		"offset": 1571920
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "69b04acca154a43d5665975ec03f82efd069a651",
+	"added": "2026-11-03"
+}

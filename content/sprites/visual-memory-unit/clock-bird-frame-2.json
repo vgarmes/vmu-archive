@@ -1,0 +1,25 @@
+{
+	"title": "Clock bird, frame 2",
+	"game": "Visual Memory Unit",
+	"publisher": "Sega",
+	"year": 1999,
+	"region": "US",
+	"width": 8,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"061dfe7c3c4e0200"
+	],
+	"source": {
+		"file": "american_v1.05.bin",
+		"entry": "AnimSprites",
+		"offset": 6391
+	},
+	"tags": [
+		"bios",
+		"clock",
+		"animal"
+	],
+	"hash": "9ec5ef951246263745cf7e6ab45fb030120f2312",
+	"added": "2026-11-03"
+}

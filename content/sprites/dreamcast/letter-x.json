@@ -1,0 +1,26 @@
+{
+	"title": "Letter X",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007ff00ffe7ff81ffe3ff81ffc3ffc3ffc1ffc3ff81ffe7ff81ffffff80ffffff00ffffff00ffffff007ffffe007ffffe003ffffc003ffffc003ffffc007ffffe007ffffe007ffffe00ffffff00ffffff00ffffff01ffffff81ffffff81ffffff83ffe7ffc3ffe7ffc3ffc3ffc7ffc3ffe7ff81ffe7ff81ffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 119,
+		"offset": 1583824
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "40e84fe8e25cf0bc7182b647f03b29c933b39f79",
+	"added": "2026-11-03"
+}

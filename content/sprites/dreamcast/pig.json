@@ -1,0 +1,26 @@
+{
+	"title": "Pig",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffeffffff7effffff7c3ffffc3c0ffff03c38001c3c6000063e8000017f000000fe0000007c1c00383c1c00383c1c00383c007e003c01c3803c0300c03c0600603c0c00303c1842183c1042083c1042083c1842183e0c00307e0600607f03ffc0ff808101ffe07e07fff0000ffffffffffffffffffffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 22,
+		"offset": 1571408
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "97a07c67a98396009788942b98c263a55cf196fb",
+	"added": "2026-11-03"
+}

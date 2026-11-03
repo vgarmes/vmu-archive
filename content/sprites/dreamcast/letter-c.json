@@ -1,0 +1,26 @@
+{
+	"title": "Letter C",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000001ffffc003fffff00ffffff81ffffffc3ffffffc3ff81ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff000007ff000007ff000007ff000007ff000007ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe7ff00ffe3ff81ffe3ffffffe3ffffffc1ffffff80ffffff007ffffc000000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 98,
+		"offset": 1581136
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "3ad6281235c36be7258f0041f255ead7e5a0ebc9",
+	"added": "2026-11-03"
+}

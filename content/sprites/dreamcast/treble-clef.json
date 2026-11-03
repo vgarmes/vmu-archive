@@ -1,0 +1,26 @@
+{
+	"title": "Treble clef",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000fc000001ff000003df8000038fc0000387c0000387c000038fc00003bf800003ff00000ff800003fc00000ff800001fb800003e3fe0007c7ff000f8fff800f1b87c01e3ba3c01e3bb1c01e3ff1c01e1ff1c01e0fe3c00f0387800fc39f8007ffff0003ffff0003fffc00007fe00000038000001b8000003f8000003f8000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 43,
+		"offset": 1574096
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"music"
+	],
+	"hash": "fbbbf4fe87a19e0421c17c7f9458b4763a15358e",
+	"added": "2026-11-03"
+}

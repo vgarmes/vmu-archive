@@ -1,0 +1,26 @@
+{
+	"title": "Spade",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000180000003c0000007e000000ff000001ff800003ffc00007ffe0000ffff0001ffff8003ffffc007ffffe00ffffff01ffffff83ffffffc7ffffffeffffffffffffffffffffffffffffffffffffffffffffffff7ffbdffe7ff3cffe3ff3cffc1fe3c7f80783c1e00007e0000007e000000ff000001ff800003ffc0000ffff00"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 79,
+		"offset": 1578704
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"cards"
+	],
+	"hash": "7686968bc869c244630e7e5d83782c26c6d3e6a1",
+	"added": "2026-11-03"
+}

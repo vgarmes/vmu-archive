@@ -1,0 +1,26 @@
+{
+	"title": "Van",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000007ffffe00fffffe0087c01e0087c01e0087c01e0087c01e0187c01e0107c01e0107c01e0107c01e0107c01e0307c01e0207c01e0207c01e0207c01e3ffffffe7fc7fffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe783ffe0e739ffce627cff9f207c001f007c001f0038000e0ffffffffffffffff00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 48,
+		"offset": 1574736
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"vehicle"
+	],
+	"hash": "1e6495183e29da9b756c2aea63552468574ae733",
+	"added": "2026-11-03"
+}

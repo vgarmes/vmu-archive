@@ -1,0 +1,25 @@
+{
+	"title": "Pencil",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00ffff00038001c00c0ff030081ff810081ff8100c0ff0300c0000300b0000d008ffff1008100810081008100810081008100810081008100810081008100810081008100810081008100810081008100e1008700b9009d004ffff200400002002000040010000800080010000400200003ffc00001ff800000ff0000003c000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 52,
+		"offset": 1575248
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon"
+	],
+	"hash": "3cfa0e282acee7ddef2d5316432bcce6cfa4e0c1",
+	"added": "2026-11-03"
+}

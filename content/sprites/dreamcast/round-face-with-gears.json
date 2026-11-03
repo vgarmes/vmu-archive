@@ -1,0 +1,26 @@
+{
+	"title": "Round face with gears",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"003ff80000781e00006f038000ccfcc000859e600407063004f6071845980708230c058c060405841de6058654020d869c021b820102f702288bfc02483a030200e20082738200025f00031fd980f1f19681988fb68168c1f981685f6f59986140d8f07b4000004e67fff0d8640011b037fff3e01a0047000fffdc0007fff000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 31,
+		"offset": 1572560
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"unidentified"
+	],
+	"hash": "ecd1e6f7318a28081f64e8baf552797758b84aeb",
+	"added": "2026-11-03"
+}

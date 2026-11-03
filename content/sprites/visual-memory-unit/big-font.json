@@ -1,0 +1,26 @@
+{
+	"title": "Big font",
+	"game": "Visual Memory Unit",
+	"publisher": "Sega",
+	"year": 1999,
+	"region": "US",
+	"width": 336,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"7c187c7cc0fe7c7e7c7c00000002020238fc7cfcfcfc7cc67806ccc0c6c638fc38fc7c7ec6c6c6c6ccfec638c6c6d8c0c6c6c6c630fe000404046cc6c6c6c0c0c6c63006ccc0eee66cc66cc6c618c6c6c6c6cc06c618c6c6d8fcc0c6c6c6307c10080808c6c6c6c6c0c0c6c63006d8c0fef6c6c6c6c6c018c6c6d66ccc0cc6181c1cd806fc067c7e003838101010c6fcc0c6f8f8c0fe3006f0c0d6dec6fcc6fc7c18c66cd6387838c61870c6fec6c606c60630107c202020fec6c6c6c0c0dec63066d8c0c6cec6c0d6c60618c66cfe6c3060c618c0c618c6c606c6c63000fe404040c6c6c6c6c0c0c6c63066ccc0c6c66cc06cc6c618c638eec630c07c3cfe7c3c7c7c067c7c000000808080c6fc7cfcfcc07ec6783cccfcc6c638c036c67c187c10c6c630fe000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	],
+	"source": {
+		"file": "american_v1.05.bin",
+		"entry": "FontGlyphs8x8",
+		"offset": 1139
+	},
+	"tags": [
+		"bios",
+		"font",
+		"digits",
+		"sheet"
+	],
+	"hash": "110f88771a15318f45a4e7b106349013d3db2e54",
+	"added": "2026-11-03"
+}

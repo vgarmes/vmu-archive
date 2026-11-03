@@ -1,0 +1,26 @@
+{
+	"title": "Joker",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"7ffffffe8000000187000fe19fe01ff9bff83ff9bff87ffdfffffffffffffffffffffffffffffffff7ffffeff78fc7e5b70701e593e37dcfbb1281c5930000c1833030c1833030c1811010c1813030818130308181000081810000818110116183901131848fe3d18560045186583a618e6fe5798ea924fd8f3649fd7ffffffe"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 84,
+		"offset": 1579344
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"cards"
+	],
+	"hash": "82442fa48166ff96988764c71506a631528775b5",
+	"added": "2026-11-03"
+}

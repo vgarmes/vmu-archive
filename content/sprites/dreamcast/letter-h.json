@@ -1,0 +1,26 @@
+{
+	"title": "Letter H",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000003ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ffffffe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe3ff007fe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 103,
+		"offset": 1581776
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "20fbc496c86068704315a2d0860f4c08892d9acc",
+	"added": "2026-11-03"
+}

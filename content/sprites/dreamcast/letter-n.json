@@ -1,0 +1,26 @@
+{
+	"title": "Letter N",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000007ff00ffe7ff80ffe7ffc0ffe7ffc0ffe7ffe0ffe7fff0ffe7fff0ffe7fff8ffe7fffcffe7fffeffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ffffffe7ff7fffe7ff3fffe7ff1fffe7ff0fffe7ff0fffe7ff07ffe7ff03ffe7ff01ffe7ff00ffe00000000"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 109,
+		"offset": 1582544
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"letters"
+	],
+	"hash": "52e92ae93d2ced1550c2efb07f297b53fc905cf8",
+	"added": "2026-11-03"
+}

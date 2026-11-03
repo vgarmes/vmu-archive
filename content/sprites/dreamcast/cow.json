@@ -1,0 +1,26 @@
+{
+	"title": "Cow",
+	"game": "Dreamcast",
+	"publisher": "Sega",
+	"year": 1998,
+	"region": "WW",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"1fe7ff9f5fd7ff7f6f97febe7790013c798ffe327e4c034e7ff001fe7ff003fe7ff801fe7ffe00fe7fff007ebfe7003ddfc3802be3d98077fdbd8077fda4c077fdbee02ffb9cf037fbc1f01bf7fff80df7fffc07f7fffe03f7ffe001fbffc005fbff830dfdff8381fefe0001ff0c2003fff72002fff9bffefffe8005ffffffff"
+	],
+	"source": {
+		"file": "dc_boot.bin",
+		"entry": 13,
+		"offset": 1570256
+	},
+	"tags": [
+		"bios",
+		"memory-card",
+		"icon",
+		"animal"
+	],
+	"hash": "db92758cda2b82ba34978858e1cbaeb47bf142f8",
+	"added": "2026-11-03"
+}
