@@ -1,0 +1,22 @@
+{
+	"title": "NG",
+	"game": "Berserk: Millennium Falcon-hen – Wasurebana no Shō",
+	"publisher": "ASCII",
+	"year": 1999,
+	"region": "US",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000001c38000000001428000400001228000a000015280015000016a8006ac00015680095200014a801001000144802001000142804c388001c380724680000000c241f00000034c310f007f04b00e010080878000f1013e409ff04e014140a00840014140a00880015fc1e008800150422f9100014142186e00013e4213fc00008083200400007f00a01800000001c0e80000000240040000000240040000000183040000000080c4000000008028000000004010000000003118000",
+		"ffffffffffffe3c7ffffffffebd7ffffffffedd7fffbffffead7fff5ffffe957ffeaffffea97ff953fffeb57ff001fffebb7fe001fffebd7fcc38fffe3c7ff246ffffffffc241ffffffff4c310fff80fcb00e01ff7f7f8000f1fec1bf9ff07ffebebfa0087ffebebfa008fffea03fe008fffeafbe2f91fffea0be186ffffec1be13ffffff7f7f2007ffff80ffa01fffffffffc0effffffffe4007fffffffe4007ffffffff8307ffffffff80c7ffffffff802fffffffffc01ffffffffff11ffff"
+	],
+	"frameDelayMs": 133,
+	"tags": [
+		"character",
+		"puck",
+		"memory-card"
+	],
+	"hash": "dd345ddb8b305f56b947d2504930037f20db046d",
+	"added": "2026-11-03"
+}
