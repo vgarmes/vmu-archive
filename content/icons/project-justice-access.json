@@ -1,0 +1,19 @@
+{
+	"title": "Access",
+	"game": "Project Justice",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000000000000000000000000000c0000c00004e780039f20067ff00fee60063a68086c6007195b9ec8e007320a79dce0ffffffffffff0000000000001c3878f3e71c227cfdfbef3c496ccd9b0c30497cc183ef3c41fec183e79e49c6cd9b018622c6fdfbefbe1cc678f3ef3c000000000000ffffffffffff386927498c1c307ffffffc0c71f000001f8e7f8f8003e1fefffe0000fffffff800001fff0fc0000003f00300000000c0000000000000000000000000000000000000"
+	],
+	"tags": [
+		"logo",
+		"memory-card"
+	],
+	"hash": "ed46d7b8309b1234b04f09af2b0c2c3d5b2aa0fd",
+	"added": "2026-11-03"
+}
