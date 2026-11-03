@@ -57,7 +57,7 @@ Every game so far did it differently. What has turned up:
 **Where it lives.**
 
 - In the program itself, `1ST_READ.BIN`, with no file of its own: Bangaioh,
-  Moero! Justice Gakuen, Power Stone 1 and 2.
+  Moero! Justice Gakuen, Power Stone 1 and 2, Street Fighter III 3rd Strike.
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
 - As a chunk inside a bigger file: Shenmue II's `IWAD` chunk in `MISC/COLD.BIN`.
 - As small blocks in many files: Sakura Taisen 3's `LCD1` blocks, in its own
@@ -117,4 +117,5 @@ The code also says what the game never shows: screens nothing calls are marked
 | Power Stone, Power Stone 2       | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/) | [power-stone](../../content/games/power-stone.md), [power-stone-2](../../content/games/power-stone-2.md)                  |
 | Shenmue II                       | JP v1.003 disc 1 (2001, Sega)              | [`shenmue2/`](shenmue2/)       | [shenmue-ii](../../content/games/shenmue-ii.md)                                                                           |
 | Sakura Taisen 3                  | JP v1.003 disc 1 (2001, Sega)              | [`sakura3/`](sakura3/)         | [sakura-taisen-3-paris-wa-moete-iru-ka](../../content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md)                     |
+| Street Fighter III 3rd Strike    | JP v1.003 (2000, Capcom)                   | [`sf3/`](sf3/)                 | [street-fighter-iii-3rd-strike](../../content/games/street-fighter-iii-3rd-strike.md)                                     |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
