@@ -47,3 +47,4 @@ shows what it did.
 | Bakuretsu Muteki Bangaioh | JP v1.003 (1999, ESP) | [`bangaioh/`](bangaioh/) |
 | Moero! Justice Gakuen | JP v1.004 (2000, Capcom) | [`justice/`](justice/) |
 | Power Stone, Power Stone 2 | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/) |
+| Shenmue II | JP v1.003 disc 1 (2001, Sega) | [`shenmue2/`](shenmue2/) |
