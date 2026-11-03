@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-03",
+		"title": "Shinseiki Evangelion: Typing E-Keikaku",
+		"body": "Every VMU screen in Gainax's Evangelion typing game: its title logo, and the Access, Save OK, Save NG, Load OK and Load NG screens it shows while saving and loading. The first Windows CE game in the archive. Nothing on its VMU animates."
+	},
+	{
+		"date": "2026-11-03",
 		"title": "Crazy Taxi 2",
 		"body": "Every VMU screen in the US Crazy Taxi 2: its title screen, flames dancing over the logo, and the Now Loading and Now Saving screens. The title plays at 267 ms a frame, which assumes the game runs at 60 Hz, until a capture confirms it."
 	},
