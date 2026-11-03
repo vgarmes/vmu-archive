@@ -19,8 +19,11 @@ Python loads modules.
   - `find_code.py` finds the code that drives the VMU screen: `seq` searches for
     a known frame sequence loaded as literals, `refs` finds every caller of a
     routine.
-- One folder per game, with its own README naming the exact dump it was run on.
-  Code addresses only hold for that release.
+- One folder per game, with its own README naming the exact dump it was run on
+  and how to run its scripts. Code addresses only hold for that release.
+- What the scripts found is not here: each game's notes are in
+  `content/games/<game slug>.md` (the slug of the archive's `game` name, as in
+  `content/sprites/`), so the site can show them.
 
 ## Method
 
@@ -40,7 +43,9 @@ Python loads modules.
    sidecar, and the importer stores it at its own size in `content/sprites/`.
    The site never shows sprites; `pnpm content:check` validates them.
 7. Write the findings (format, timing, unused screens, sprites) in the game's
-   README here: it's the game's notes as well as how to run its scripts.
+   notes, `content/games/<game slug>.md`, one file per game in the archive. The
+   game's README here keeps the dump and how to run its scripts, and links to
+   the notes.
 
 Captures stay the ground truth: a game's code says what it can play, a capture
 shows what it did.
@@ -104,12 +109,12 @@ The code also says what the game never shows: screens nothing calls are marked
 
 ## Games
 
-| Game                              | Dump                                       | Folder                         |
-| --------------------------------- | ------------------------------------------ | ------------------------------ |
-| Sword of the Berserk: Guts' Rage  | US v1.000 (2000, Eidos)                    | [`berserk/`](berserk/)         |
-| Bakuretsu Muteki Bangaioh         | JP v1.003 (1999, ESP)                      | [`bangaioh/`](bangaioh/)       |
-| Moero! Justice Gakuen             | JP v1.004 (2000, Capcom)                   | [`justice/`](justice/)         |
-| Power Stone, Power Stone 2        | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/) |
-| Shenmue II                        | JP v1.003 disc 1 (2001, Sega)              | [`shenmue2/`](shenmue2/)       |
-| Sakura Taisen 3 (partly imported) | JP v1.003 disc 1 (2001, Sega)              | [`sakura3/`](sakura3/)         |
-| Soul Calibur (partly imported)    | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) |
+| Game                              | Dump                                       | Folder                         | Notes                                                                                                                     |
+| --------------------------------- | ------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Sword of the Berserk: Guts' Rage  | US v1.000 (2000, Eidos)                    | [`berserk/`](berserk/)         | [berserk-millennium-falcon-hen-wasurebana-no-sho](../../content/games/berserk-millennium-falcon-hen-wasurebana-no-sho.md) |
+| Bakuretsu Muteki Bangaioh         | JP v1.003 (1999, ESP)                      | [`bangaioh/`](bangaioh/)       | [bangai-o](../../content/games/bangai-o.md)                                                                               |
+| Moero! Justice Gakuen             | JP v1.004 (2000, Capcom)                   | [`justice/`](justice/)         | [project-justice](../../content/games/project-justice.md)                                                                 |
+| Power Stone, Power Stone 2        | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/) | [power-stone](../../content/games/power-stone.md), [power-stone-2](../../content/games/power-stone-2.md)                  |
+| Shenmue II                        | JP v1.003 disc 1 (2001, Sega)              | [`shenmue2/`](shenmue2/)       | [shenmue-ii](../../content/games/shenmue-ii.md)                                                                           |
+| Sakura Taisen 3 (partly imported) | JP v1.003 disc 1 (2001, Sega)              | [`sakura3/`](sakura3/)         | [sakura-taisen-3-paris-wa-moete-iru-ka](../../content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md)                     |
+| Soul Calibur (partly imported)    | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |

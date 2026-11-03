@@ -29,6 +29,8 @@ pnpm typecheck
 
 Art comes from disc dumps, through a per-game folder in
 [`tools/disc-extraction/`](tools/disc-extraction/) (its README has the method).
+What each game's scripts found is written up in its notes,
+`content/games/<game slug>.md`.
 
 1. Run the game's scripts. They write one `.png` per piece, 48 pixels wide and
    32 tall per frame with frames stacked top to bottom (dark pixels are lit),

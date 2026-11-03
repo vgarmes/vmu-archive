@@ -19,7 +19,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   sprite: `content/sprites/<game slug>/*.json` at its own size, imported with
   `"sprite": true` (see `scripts/sprites.ts`). They're kept for preservation;
   the site never reads them, so `pnpm content:check` is what validates them.
-  Findings about a game go in its README in `tools/disc-extraction/<game>/`.
+- Findings about a game (format, timing, unused screens) go in its notes,
+  `content/games/<game slug>.md`; its README in `tools/disc-extraction/<game>/`
+  only names the dump and how to run the scripts.
 - `src/lib/pixels.ts` is run by Node directly from the importer: keep it free
   of imports and non-erasable TypeScript.
 - The site is a static export (`output: 'export'`): every dynamic route needs
