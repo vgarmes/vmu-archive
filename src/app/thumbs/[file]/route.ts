@@ -5,8 +5,10 @@ import {
 	colorsOf,
 	decodeFrame,
 	frameDelays,
+	gifFrames,
 	STRIP_GAP,
-	toRgba
+	toRgba,
+	type PixelArt
 } from '@/lib/pixels'
 
 /**
@@ -15,7 +17,9 @@ import {
  * transparent; the page inverts it in dark mode.
  * - /thumbs/<id>.png: the icon, or for an animation a vertical strip of its
  *   frames (48x32 each, with STRIP_GAP transparent rows between them). The
- *   grid shows it cropped to the poster frame; the drawer reads it back.
+ *   grid shows it cropped to the poster frame; the drawer reads it back. For a
+ *   scroll it's the stored strip itself: the grid shows its left end, and the
+ *   drawer cuts the frames from it.
  * - /thumbs/<id>.gif: animations only, played in the grid on hover. Every
  *   frame is the whole image, so it can be scaled to any size without art
  *   that stays put between frames shifting by a pixel (stepping through the
@@ -40,9 +44,22 @@ export async function GET(
 	if (!icon) return new Response('Not found', { status: 404 })
 	const { data } = icon
 	if (file.endsWith('.gif'))
-		return new Response(new Uint8Array(toGif(data)), {
+		return new Response(new Uint8Array(toGif(gifFrames(data, !!data.scroll))), {
 			headers: { 'Content-Type': 'image/gif' }
 		})
+
+	if (data.scroll) {
+		const strip = {
+			...data,
+			width: data.scroll.width,
+			frames: [data.scroll.strip]
+		}
+		const png = new PNG({ width: strip.width, height: strip.height })
+		png.data = Buffer.from(toRgba(strip, 0))
+		return new Response(new Uint8Array(PNG.sync.write(png)), {
+			headers: { 'Content-Type': 'image/png' }
+		})
+	}
 
 	const n = data.frames.length
 	const pitch = data.height + STRIP_GAP
@@ -60,7 +77,7 @@ export async function GET(
 }
 
 /** The frames are already palette indices, so the GIF needs no quantising. */
-function toGif(art: NonNullable<ReturnType<typeof getIcon>>['data']) {
+function toGif(art: PixelArt) {
 	const { width: w, height: h, bpp } = art
 	const colors = colorsOf(art)
 	const palette = colors.map(([r, g, b]) => [r, g, b])

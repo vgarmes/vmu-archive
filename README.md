@@ -53,6 +53,22 @@ Art comes from disc dumps, through a per-game folder in
    order). Pixel-identical art is skipped.
 3. Commit the new JSON files.
 
+### Scrolling banners
+
+Some games slide one wide image through the screen instead of showing frames
+(Sakura Taisen 3's attack names). Import the image as it is, 32 pixels tall and
+as wide as the art, with the window's movement in the sidecar:
+
+```json
+{ "title": "Gigantesque ciseau", "scroll": { "stepPx": 1, "delayMs": 17 } }
+```
+
+`stepPx` is how far the window moves per update and `delayMs` how often. The
+entry stores the strip once; the site cuts it into 48×32 frames when it loads,
+entering from the right edge and leaving past the left one, and rests on the
+frame where the strip starts. Downloads give the strip itself (or the
+animation, as a GIF or an animated SVG), never its frames one by one.
+
 ### Animations and fixing existing art
 
 To change a piece that's already in the archive (swap one made from a

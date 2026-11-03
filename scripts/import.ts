@@ -21,6 +21,12 @@
  * To change an existing piece — e.g. add the missing frames of an animation —
  * import the full art with `"replaces": "<existing id>"` in its sidecar. The
  * id, added date and unchanged metadata carry over.
+ *
+ * A banner the game scrolls through the screen is imported as one strip: a
+ * .png 32 pixels tall and as wide as the art, with
+ * `"scroll": { "stepPx": 1, "delayMs": 17 }` in its sidecar (how far the
+ * window moves per update, and how often). It's stored once and cut into
+ * frames when the site loads it; see `scrollFrames` in src/lib/pixels.ts.
  */
 import { createHash } from 'node:crypto'
 import fs from 'node:fs'
@@ -51,6 +57,8 @@ interface Meta {
 	posterFrame?: number
 	/** Id of an existing entry to replace (e.g. to add animation frames). */
 	replaces?: string
+	/** The art is a strip the window scrolls through, not stacked frames. */
+	scroll?: { stepPx: number; delayMs: number }
 }
 
 // ---------------------------------------------------------------- reading
@@ -76,6 +84,23 @@ function readPng(buf: Buffer): number[][] {
 		frames.push(bits)
 	}
 	return frames
+}
+
+/** A strip for a scroll: 32 tall, at least a screen wide, encoded like a frame. */
+function readStrip(buf: Buffer): { width: number; strip: string } {
+	const img = pngjs.PNG.sync.read(buf)
+	if (img.height !== H || img.width < W)
+		throw new Error(
+			`is ${img.width}x${img.height}; a scroll strip is ${H} tall and at least ${W} wide`
+		)
+	const bits: number[] = []
+	for (let y = 0; y < H; y++)
+		for (let x = 0; x < img.width; x++) {
+			const i = (y * img.width + x) * 4
+			const [r, g, b, a] = img.data.subarray(i, i + 4)
+			bits.push(a >= 128 && 0.299 * r + 0.587 * g + 0.114 * b < 128 ? 1 : 0)
+		}
+	return { width: img.width, strip: encodeFrame(bits, 1) }
 }
 
 // ---------------------------------------------------------------- main
@@ -197,7 +222,6 @@ function main() {
 			const meta: Meta = sidecar
 				? JSON.parse(fs.readFileSync(sidecar, 'utf8'))
 				: {}
-			const read = readPng(fs.readFileSync(file)).map(f => encodeFrame(f, 1))
 
 			// Replacing keeps the id (so URLs don't change), the added date and
 			// any metadata the sidecar doesn't override.
@@ -210,6 +234,63 @@ function main() {
 			}
 			const pick = <K extends keyof Meta>(k: K) =>
 				meta[k] ?? (prev[k] as Meta[K] | undefined)
+			const addedDate = () =>
+				(prev.added as string | undefined) ??
+				new Date().toISOString().slice(0, 10)
+
+			if (meta.scroll) {
+				const { stepPx, delayMs } = meta.scroll
+				if (![stepPx, delayMs].every(v => Number.isInteger(v) && v > 0))
+					throw new Error('"scroll" needs whole, positive stepPx and delayMs')
+				if (meta.frameDelayMs !== undefined || meta.frameDelaysMs !== undefined)
+					throw new Error('a scroll times itself with scroll.delayMs')
+				const { width, strip } = readStrip(fs.readFileSync(file))
+				const hash = createHash('sha1')
+					.update(['scroll', width, H, 1, stepPx, strip].join('|'))
+					.digest('hex')
+				const dupe = hashes.get(hash)
+				if (dupe && dupe !== `${meta.replaces}.json`) {
+					console.log(`  skip  ${label}: same strip as ${dupe}`)
+					skipped++
+					continue
+				}
+				if (meta.replaces) hashes.delete(prev.hash as string)
+				const title = pick('title') || path.basename(base)
+				const id =
+					meta.replaces ??
+					newId(pick('game') || title, title, pick('tags') ?? [], taken)
+				const entry = {
+					title,
+					game: pick('game') || title,
+					publisher: pick('publisher'),
+					year: pick('year'),
+					region: pick('region'),
+					width: W,
+					height: H,
+					bpp: 1,
+					scroll: { width, stepPx, delayMs, strip },
+					posterFrame: meta.posterFrame,
+					tags: pick('tags') ?? [],
+					unused: pick('unused') || undefined,
+					hash,
+					added: addedDate()
+				}
+				if (!dryRun)
+					fs.writeFileSync(
+						path.join(OUT_DIR, `${id}.json`),
+						JSON.stringify(entry, null, '\t') + '\n'
+					)
+				hashes.set(hash, `${id}.json`)
+				const frames = Math.ceil((width + W) / stepPx)
+				console.log(
+					`  ${meta.replaces ? 'update' : 'add  '} ${label} → ${id}.json (scroll, ${width}px strip, ${frames} frames)`
+				)
+				if (meta.replaces) updated++
+				else added++
+				continue
+			}
+
+			const read = readPng(fs.readFileSync(file)).map(f => encodeFrame(f, 1))
 
 			// Timing: the new art's, else the replaced entry's while it still
 			// fits.
@@ -307,9 +388,7 @@ function main() {
 				tags: pick('tags') ?? [],
 				unused: pick('unused') || undefined,
 				hash,
-				added:
-					(prev.added as string | undefined) ??
-					new Date().toISOString().slice(0, 10)
+				added: addedDate()
 			}
 			if (!dryRun)
 				fs.writeFileSync(

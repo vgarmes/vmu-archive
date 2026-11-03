@@ -2,15 +2,32 @@ import 'server-only'
 import fs from 'node:fs'
 import path from 'node:path'
 import { z } from 'zod'
-import { frameHexLength } from './pixels'
+import { frameHexLength, scrollFrames, scrollPosterFrame } from './pixels'
 import { slug } from './slug'
 
 /**
  * One JSON file per VMU screen in content/icons/, written by
  * `pnpm icons:import` (scripts/import.ts) and read at build time. Every screen
  * is the VMU's 48x32 1-bit LCD; see src/lib/pixels.ts for the frame encoding.
+ *
+ * An entry stores its frames, or a `scroll`: one wide strip the game slides
+ * through the screen. A scroll is cut into frames here, on load, so everything
+ * after this (thumbnails, the grid, the drawer, downloads) only sees frames.
  */
 const DIR = path.join(process.cwd(), 'content/icons')
+
+const hex = z.string().regex(/^[0-9a-f]+$/)
+
+const scrollSchema = z.object({
+	/** Width of the strip, wider than the screen; its height is the screen's. */
+	width: z.number().int().min(48),
+	/** The strip, encoded like a frame. */
+	strip: hex,
+	/** Pixels the window moves each update. */
+	stepPx: z.number().int().positive(),
+	/** Time between updates. */
+	delayMs: z.number().int().positive()
+})
 
 const schema = z
 	.object({
@@ -22,7 +39,9 @@ const schema = z
 		width: z.literal(48),
 		height: z.literal(32),
 		bpp: z.literal(1),
-		frames: z.array(z.string().regex(/^[0-9a-f]+$/)).min(1),
+		/** The frames; absent on a scroll entry, which stores `scroll` instead. */
+		frames: z.array(hex).min(1).optional(),
+		scroll: scrollSchema.optional(),
 		frameDelayMs: z.number().int().positive().optional(),
 		/** Delay of each frame, one per frame, for animations whose frames differ. */
 		frameDelaysMs: z.array(z.number().int().positive()).optional(),
@@ -39,6 +58,28 @@ const schema = z
 		hash: z.string(),
 		added: z.string()
 	})
+	.refine(a => !a.frames !== !a.scroll, {
+		message: 'set frames or scroll, not both'
+	})
+	.refine(
+		a =>
+			!a.scroll ||
+			a.scroll.strip.length === frameHexLength(a.scroll.width, a.height, a.bpp),
+		{ message: 'scroll strip length does not match its width x height x bpp' }
+	)
+	.refine(a => !(a.scroll && (a.frameDelayMs || a.frameDelaysMs)), {
+		message: 'a scroll times itself with scroll.delayMs'
+	})
+	.transform(({ frames, ...a }) => ({
+		...a,
+		...(a.scroll
+			? {
+					frames: scrollFrames(a.scroll, a.width, a.height, a.bpp),
+					frameDelayMs: a.scroll.delayMs,
+					posterFrame: a.posterFrame ?? scrollPosterFrame(a.scroll, a.width)
+				}
+			: { frames: frames as string[] })
+	}))
 	.refine(
 		a =>
 			a.frames.every(
@@ -82,6 +123,8 @@ export interface IndexEntry {
 	frameDelaysMs?: number[]
 	/** Only on animations: the frame shown at rest, when not the first. */
 	posterFrame?: number
+	/** Only on scrolls: the thumbnail is the strip, cut into frames in the browser. */
+	scroll?: { width: number; stepPx: number }
 }
 
 let cache: Icon[] | undefined
@@ -133,6 +176,9 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 		frameDelayMs: data.frameDelayMs,
 		frameDelaysMs: data.frameDelaysMs,
 		posterFrame: data.posterFrame
+	}),
+	...(data.scroll && {
+		scroll: { width: data.scroll.width, stepPx: data.scroll.stepPx }
 	})
 })
 

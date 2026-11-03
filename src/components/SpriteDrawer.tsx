@@ -26,10 +26,12 @@ import {
 	DEFAULT_FRAME_DELAY_MS,
 	encodeFrame,
 	frameDelays,
+	gifFrames,
 	LCD_INK,
 	parseColor,
+	scrollFrames,
 	STRIP_GAP,
-	stripPosition,
+	thumbPosition,
 	distinctFrames,
 	toHexColor,
 	toRgba,
@@ -55,7 +57,8 @@ import {
  * in the browser from them. Animations always play in the preview, unless the
  * visitor asks for reduced motion or picks a single frame to export. PNG and
  * SVG export an animation as a sprite sheet (frames side by side) or one frame;
- * GIF always holds every frame.
+ * GIF always holds every frame. A scroll's thumbnail is its strip, which is what
+ * PNG and SVG export (or, in SVG, the scroll playing); it has no single frames.
  */
 
 const SCALES = [1, 4, 8, 16]
@@ -136,7 +139,12 @@ function Swatch({
 }
 
 /** Sprites already read from their thumbnails this visit, by icon id. */
-const artCache = new Map<string, PixelArt>()
+/** A sprite's frames, and for a scroll the strip they're cut from. */
+interface Loaded {
+	art: PixelArt
+	strip?: PixelArt
+}
+const artCache = new Map<string, Loaded>()
 
 function useIsDesktop() {
 	const [desktop, setDesktop] = useState(false)
@@ -150,16 +158,54 @@ function useIsDesktop() {
 	return desktop
 }
 
-/** The sprite's pixels, read from its (already cached) thumbnail. */
-function useThumbnailArt(entry: IndexEntry) {
+/**
+ * The sprite's pixels, read from its (already cached) thumbnail. A scroll's
+ * thumbnail is its strip: the frames are cut from it here, as on the server.
+ */
+function useThumbnailArt(entry: IndexEntry): Loaded | null {
 	const { id, frameDelayMs, frameDelaysMs } = entry
-	const [read, setRead] = useState<{ id: string; art: PixelArt } | null>(null)
+	const stripWidth = entry.scroll?.width
+	const stepPx = entry.scroll?.stepPx
+	const [read, setRead] = useState<({ id: string } & Loaded) | null>(null)
 	useEffect(() => {
 		const cached = artCache.get(id)
-		if (cached) return setRead({ id, art: cached })
+		if (cached) return setRead({ id, ...cached })
 		let cancelled = false
 		const img = new Image()
 		img.onload = () => {
+			if (stripWidth && stepPx) {
+				const canvas = document.createElement('canvas')
+				canvas.width = stripWidth
+				canvas.height = 32
+				const ctx = canvas.getContext('2d')!
+				ctx.drawImage(img, 0, 0)
+				const { data } = ctx.getImageData(0, 0, stripWidth, 32)
+				const hex = encodeFrame(
+					Array.from({ length: stripWidth * 32 }, (_, i) =>
+						data[i * 4 + 3] >= 128 ? 1 : 0
+					),
+					1
+				)
+				const delayMs = frameDelayMs ?? DEFAULT_FRAME_DELAY_MS
+				const loaded: Loaded = {
+					art: {
+						width: 48,
+						height: 32,
+						bpp: 1,
+						frames: scrollFrames(
+							{ width: stripWidth, strip: hex, stepPx, delayMs },
+							48,
+							32,
+							1
+						),
+						frameDelayMs: delayMs
+					},
+					strip: { width: stripWidth, height: 32, bpp: 1, frames: [hex] }
+				}
+				artCache.set(id, loaded)
+				if (!cancelled) setRead({ id, ...loaded })
+				return
+			}
 			// One 48x32 frame every 32 + STRIP_GAP rows of the strip.
 			const pitch = 32 + STRIP_GAP
 			const count = Math.max(
@@ -185,15 +231,15 @@ function useThumbnailArt(entry: IndexEntry) {
 				art.frameDelayMs = frameDelayMs
 				art.frameDelaysMs = frameDelaysMs
 			}
-			artCache.set(id, art)
+			artCache.set(id, { art })
 			if (!cancelled) setRead({ id, art })
 		}
 		img.src = `/thumbs/${id}.png`
 		return () => {
 			cancelled = true
 		}
-	}, [id, frameDelayMs, frameDelaysMs])
-	return read && read.id === id ? read.art : null
+	}, [id, frameDelayMs, frameDelaysMs, stripWidth, stepPx])
+	return read && read.id === id ? read : null
 }
 
 interface Props {
@@ -227,7 +273,10 @@ export default function SpriteDrawer({ entry, onClose }: Props) {
 }
 
 function SpritePanel({ entry }: { entry: IndexEntry }) {
-	const art = useThumbnailArt(entry)
+	const loaded = useThumbnailArt(entry)
+	const art = loaded?.art ?? null
+	// A scroll exports as the strip it's cut from, not as its many frames.
+	const strip = loaded?.strip
 	const [scale, setScale] = useState<number>(8)
 	const [trim, setTrim] = useState(false)
 	const [format, setFormat] = useState<Format>('png')
@@ -299,16 +348,19 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	// one so they stay aligned.
 	const still = useMemo(() => {
 		if (!out || !animated || format === 'gif') return out
-		if (pick === 'all') return toSheet(out)
+		if (pick === 'all')
+			return strip ? (trim ? trimArt(strip) : strip) : toSheet(out)
 		const one = withFrame(art!, pick)
 		return trim ? trimArt(one) : one
-	}, [out, art, animated, format, pick, trim])
+	}, [out, art, strip, animated, format, pick, trim])
 	const name =
 		(trim ? `${entry.id}-trimmed` : entry.id) +
 		(selfPlaying
 			? '-animated'
 			: sheet
-				? `-sheet-${out?.frames.length}f-${delay}ms`
+				? strip
+					? '-strip'
+					: `-sheet-${out?.frames.length}f-${delay}ms`
 				: animated && pick !== 'all'
 					? `-frame-${poseNumber}`
 					: '')
@@ -316,15 +368,18 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	const sized = format === 'gif' ? out : still
 	const outW = sized?.width ?? 48
 	const outH = sized?.height ?? 32
+	// A scroll offers its strip and the animation, not hundreds of 1-pixel steps.
 	const frameOptions: { value: FramesChoice; label: string }[] = [
-		{ value: 'all', label: 'All frames · sheet' },
+		{ value: 'all', label: strip ? 'Whole strip' : 'All frames · sheet' },
 		...(vector
 			? [{ value: 'animated' as const, label: 'All frames · animated' }]
 			: []),
-		...poses.map(f => ({
-			value: `${f}` as const,
-			label: `Frame ${poses.indexOf(f) + 1}`
-		}))
+		...(strip
+			? []
+			: poses.map(f => ({
+					value: `${f}` as const,
+					label: `Frame ${poses.indexOf(f) + 1}`
+				})))
 	]
 
 	const formats: { value: Format; label: string }[] = [
@@ -345,13 +400,16 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 		const svg = (opts: Parameters<typeof toSvg>[1]) =>
 			selfPlaying
 				? toAnimatedSvg(out, opts)
-				: sheet
+				: sheet && !strip
 					? toSvgSheet(out, opts)
 					: toSvg(still, opts)
 		if (format === 'png')
 			save(await toPng(still, scale, inkRgba), `${name}@${scale}x.png`)
 		else if (format === 'gif')
-			save(await toGif(out, scale, inkRgba), `${name}@${scale}x.gif`)
+			save(
+				await toGif(gifFrames(out, !!strip), scale, inkRgba),
+				`${name}@${scale}x.gif`
+			)
 		else if (format === 'svg') save(svgBlob(svg({ on: ink })), `${name}.svg`)
 		else
 			save(
@@ -411,13 +469,8 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 								// An animation's strip shows one frame: its poster, as in the grid.
 								className="pixelated aspect-[3/2] h-auto w-full object-cover object-top dark:invert"
 								style={
-									entry.frames && entry.posterFrame
-										? {
-												objectPosition: stripPosition(
-													entry.frames,
-													entry.posterFrame
-												)
-											}
+									thumbPosition(entry)
+										? { objectPosition: thumbPosition(entry) }
 										: undefined
 								}
 							/>
@@ -488,7 +541,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 							</button>
 						</div>
 
-						{animated && format !== 'gif' && (
+						{animated && format !== 'gif' && frameOptions.length > 1 && (
 							<>
 								<span className="text-muted-foreground">Frames</span>
 								<Select

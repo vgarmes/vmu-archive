@@ -16,7 +16,7 @@ import {
 	ComboboxList
 } from '@/components/ui/combobox'
 import type { Game, IndexEntry } from '@/lib/icons'
-import { stripPosition } from '@/lib/pixels'
+import { thumbPosition } from '@/lib/pixels'
 
 /**
  * Search box, game picker and the icon grid.
@@ -393,10 +393,8 @@ function Card({
 							icon.frames ? 'object-cover object-top' : 'object-contain'
 						)}
 						style={
-							icon.frames && icon.posterFrame && !gif.src
-								? {
-										objectPosition: stripPosition(icon.frames, icon.posterFrame)
-									}
+							thumbPosition(icon) && !gif.src
+								? { objectPosition: thumbPosition(icon) }
 								: undefined
 						}
 					/>

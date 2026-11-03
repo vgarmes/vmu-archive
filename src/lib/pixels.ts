@@ -101,6 +101,72 @@ export const frameDelays = (art: {
 	)
 
 /**
+ * A wide image the VMU shows through a moving 48-pixel window, the way some
+ * games scroll banners across the screen: stored once, cut into frames on load.
+ */
+export interface Scroll {
+	/** Width of the strip; its height is the screen's. */
+	width: number
+	/** The strip, encoded like a frame (row-major, padded to whole bytes). */
+	strip: string
+	/** Pixels the window moves each update. */
+	stepPx: number
+	/** Time between updates. */
+	delayMs: number
+}
+
+/**
+ * The frames of a scroll: the strip enters from the right edge and leaves past
+ * the left one, so the first frame is blank and the last shows its final
+ * column. Looping returns to the blank frame, as if the strip ran again.
+ */
+export function scrollFrames(
+	scroll: Scroll,
+	screenWidth: number,
+	height: number,
+	bpp: Bpp
+): string[] {
+	const strip = decodeFrame(scroll.strip, scroll.width, height, bpp)
+	const frames: string[] = []
+	for (let x = -screenWidth; x < scroll.width; x += scroll.stepPx) {
+		const px = new Uint8Array(screenWidth * height)
+		for (let y = 0; y < height; y++)
+			for (let c = 0; c < screenWidth; c++) {
+				const sx = x + c
+				if (sx >= 0 && sx < scroll.width)
+					px[y * screenWidth + c] = strip[y * scroll.width + sx]
+			}
+		frames.push(encodeFrame(px, bpp))
+	}
+	return frames
+}
+
+/**
+ * The frames a GIF of this art plays. GIF delays are whole hundredths of a
+ * second, so a scroll's short step (17 ms) would round to 20 ms and play slow.
+ * For a scroll, every k-th frame is kept instead, where k steps last a whole
+ * hundredth (within 1 ms): 3 steps of 17 ms become one of 50 ms, the same speed
+ * in a third of the frames. Other art is returned as it is.
+ */
+export function gifFrames(art: PixelArt, scroll: boolean): PixelArt {
+	const d = art.frameDelayMs
+	if (!scroll || !d || art.frames.length < 2) return art
+	const whole = (ms: number) => Math.round(ms / 10) * 10
+	let k = 1
+	while (k < 10 && Math.abs(k * d - whole(k * d)) > 1) k++
+	return {
+		...art,
+		frames: art.frames.filter((_, i) => i % k === 0),
+		frameDelayMs: whole(k * d),
+		frameDelaysMs: undefined
+	}
+}
+
+/** The frame a scroll rests on in the grid: the strip's start at the left edge. */
+export const scrollPosterFrame = (scroll: Scroll, screenWidth: number) =>
+	Math.ceil(screenWidth / scroll.stepPx)
+
+/**
  * Transparent rows between the frames of a thumbnail strip. Scaled up by a
  * non-integer factor, a frame's edge can land part-way through a screen pixel
  * and show a sliver of the next frame; with a gap, that sliver is empty.
@@ -114,6 +180,22 @@ export const STRIP_GAP = 2
  */
 export const stripPosition = (frames: number, frame = 0) =>
 	`50% ${frames > 1 ? (frame / (frames - 1)) * 100 : 0}%`
+
+/**
+ * Where a thumbnail rests: an animation's poster frame on its vertical strip,
+ * or a scroll's left end (its thumbnail is the strip itself, which is the
+ * scroll's poster frame: the strip starting at the screen's left edge).
+ */
+export const thumbPosition = (entry: {
+	frames?: number
+	posterFrame?: number
+	scroll?: unknown
+}): string | undefined =>
+	entry.scroll
+		? '0% 50%'
+		: entry.frames && entry.posterFrame
+			? stripPosition(entry.frames, entry.posterFrame)
+			: undefined
 
 export interface SvgOptions {
 	frame?: number

@@ -11,7 +11,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
 ## Project notes
 
 - Every entry in `content/icons/*.json` is a 48x32 1-bit VMU screen (the
-  schema in `src/lib/icons.ts` enforces it). Add art with `pnpm icons:import`;
+  schema in `src/lib/icons.ts` enforces it). An entry stores its `frames`, or a
+  `scroll`: one wider strip that `getIcons()` cuts into 48x32 frames on load,
+  so code after that only sees frames. Add art with `pnpm icons:import`;
   don't hand-write frames.
 - `src/lib/pixels.ts` is run by Node directly from the importer: keep it free
   of imports and non-erasable TypeScript.
