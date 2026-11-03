@@ -8,13 +8,19 @@
 	"height": 32,
 	"bpp": 1,
 	"frames": [
-		"ff57fff8dbfffe81accc0dfffeb0985826ff01edbdef3600fdffffffff7ffdffffffff7f03f77fdfff0003f77befff80fbef3beef7bf02efb9f7778002efbdfb3b8002ef1ff0fb8002fa13b9fb8002b701e1fb80007e81f0fd8000738000dd8000730000ce8000780000ee8000780000cf0000f82001db0000fc0201dd8000dc1001dd8001de0003bec0fdbf000bbedf01bf80137ee001bfe067ff60fdbff9fd9f6ffd9deff01f5f009e9e11dec0fece287fe4bfff50ffdffc7fffb7c91fff7f"
+		"ff57fff8dbfffe81accc0dfffeb0985826ff01edbdef3600fdffffffff7ffdffffffff7f03f77fdfff0003f77befff80fbef3beef7bf02efb9f7778002efbdfb3b8002ef1ff0fb8002fa13b9fb8002b701e1fb80007e81f0fd8000738000dd8000730000ce8000780000ee8000780000cf0000f82001db0000fc0201dd8000dc1001dd8001de0003bec0fdbf000bbedf01bf80137ee001bfe067ff60fdbff9fd9f6ffd9deff01f5f009e9e11dec0fece287fe4bfff50ffdffc7fffb7c91fff7f",
+		"ff57fff8dbfffe81accc0dfffeb0985826ff01edbdef3600fdffffffff7ffdffffffff7f03f77fdfff0003f77befff80fbef3beef7bf02efb9f7778002efbdfb3b8002ef1fc0fb8002fa1001fb8002b00019fb80007003f0fd8000718000dd8000770000ce8000780000ee8000780000cf0000f82001db0000fc0201dd8000dc1001dd8001de0003bec0fdbf000bbedf01bf80137ee001bfe067ff60fdbff9fd9f6ffd9deff01f5f009e9e11dec0fece287fe4bfff50ffdffc7fffb7c91fff7f"
 	],
+	"frameDelaysMs": [
+		3000,
+		150
+	],
+	"posterFrame": 0,
 	"tags": [
 		"character",
 		"portrait",
 		"hanabi"
 	],
-	"hash": "60e92f73ad26b94398a6d6e0311713b45a1160f2",
+	"hash": "ae6cd9f8d2647502333ff3c5707d8bb8307836a6",
 	"added": "2026-11-03"
 }
