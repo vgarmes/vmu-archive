@@ -57,7 +57,8 @@ Every game so far did it differently. What has turned up:
 **Where it lives.**
 
 - In the program itself, `1ST_READ.BIN`, with no file of its own: Bangaioh,
-  Moero! Justice Gakuen, Power Stone 1 and 2, Street Fighter III 3rd Strike.
+  Ikaruga, Moero! Justice Gakuen, Power Stone 1 and 2, Street Fighter III 3rd
+  Strike.
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
 - As a chunk inside a bigger file: Shenmue II's `IWAD` chunk in `MISC/COLD.BIN`.
 - As small blocks in many files: Sakura Taisen 3's `LCD1` blocks, in its own
@@ -69,14 +70,14 @@ colour textures; the real art was found by following the code that loads it.
 
 **How the dots are stored.**
 
-| Encoding                 | Example                                                          |
-| ------------------------ | ---------------------------------------------------------------- |
-| 1 bit per dot, as shown  | Moero! Justice Gakuen, Shenmue II (with a width and height byte) |
-| 1 bit per dot, rotated   | Bangaioh: turned 180°, the way the VMU's LCD takes it            |
-| 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)   |
-| 1 byte per dot, mirrored | Berserk                                                          |
-| Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                  |
-| Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)    |
+| Encoding                 | Example                                                                   |
+| ------------------------ | ------------------------------------------------------------------------- |
+| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue II (with a width and height byte) |
+| 1 bit per dot, rotated   | Bangaioh: turned 180°, the way the VMU's LCD takes it                     |
+| 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)            |
+| 1 byte per dot, mirrored | Berserk                                                                   |
+| Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                           |
+| Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)             |
 
 So try every packing, every flip and mirror, and inverted bits before
 concluding the art isn't there.
@@ -98,14 +99,15 @@ files and look for the screen in what comes out.
 **Order and timing.**
 
 - From code tables: Berserk (frames held 4 or 8 ticks of 60 Hz) and Bangaioh
-  (animation scripts).
+  (animation scripts). Ikaruga's SAVE holds each frame while a counter runs to
+  15, which gives at least 17 steps, but what paces a step wasn't traced.
 - From captures: Sakura Taisen 3's title (100 ms a frame) and its scrolling
   banners (1 px per tick, stored as one strip; see the main README).
 - Unknown yet: Soul Calibur's fighters play at the site's default until someone
   captures them.
 
 The code also says what the game never shows: screens nothing calls are marked
-`unused` (Berserk, Bangaioh).
+`unused` (Berserk, Bangaioh, Ikaruga's second LOAD pose).
 
 ## Games
 
@@ -118,4 +120,5 @@ The code also says what the game never shows: screens nothing calls are marked
 | Shenmue II                       | JP v1.003 disc 1 (2001, Sega)              | [`shenmue2/`](shenmue2/)       | [shenmue-ii](../../content/games/shenmue-ii.md)                                                                           |
 | Sakura Taisen 3                  | JP v1.003 disc 1 (2001, Sega)              | [`sakura3/`](sakura3/)         | [sakura-taisen-3-paris-wa-moete-iru-ka](../../content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md)                     |
 | Street Fighter III 3rd Strike    | JP v1.003 (2000, Capcom)                   | [`sf3/`](sf3/)                 | [street-fighter-iii-3rd-strike](../../content/games/street-fighter-iii-3rd-strike.md)                                     |
+| Ikaruga                          | JP v1.002 (2002, ESP)                      | [`ikaruga/`](ikaruga/)         | [ikaruga](../../content/games/ikaruga.md)                                                                                 |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
