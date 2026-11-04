@@ -24,6 +24,8 @@ Writes:
                         sprites (sheets of frames side by side, masks as their
                         own sprite, lit where the sprite is opaque)
   contact-sheet.png     everything, for checking
+  notes/                the portraits' sequences as GIFs, for the game's notes
+                        (public/notes/power-stone/; see portrait_sequences)
 """
 import json
 import shutil
@@ -218,6 +220,81 @@ def sprites(prog):
     return out
 
 
+def portrait_sequences(prog):
+    """How the game shows each character's two portraits, one screen a tick.
+
+    Not archive entries (the portraits are kept as stills): reconstructions
+    from the code for the notes, which describe each step and its address.
+    Falcon's and Ayame's slide in over the game screen, drawn blank here, and
+    Gunrock's payout label, blinking over his portraits, is left out.
+    """
+    def rows(addr, n=32):
+        return [prog[addr + 6 * r:addr + 6 * r + 6] for r in range(n)]
+
+    def screen(rws, invert=False):
+        # invert: the screen as 0x3CE1 sends it, every dot flipped.
+        out = bytearray(192)
+        for y, row in enumerate(rws):
+            out[6 * y:6 * y + 6] = row
+        return bytes(b ^ 0xFF for b in out) if invert else bytes(out)
+
+    def slide_in(addr):
+        # Each tick 2 more rows: the portrait's top c rows at the screen's bottom.
+        return [screen([bytes(6)] * (32 - c) + rows(addr, c)) for c in range(2, 33, 2)]
+
+    falcon1, falcon2 = rows(0xAA74), rows(0xAB34)
+    ayame1, ayame2 = rows(0xCCE3), rows(0xCDA3)
+    gunrock1, gunrock2 = rows(0x8591), rows(0x8651)
+    return {
+        # 0x319E slide; 0x3205 counts 15 ticks, inverted while bit 1 is set;
+        # 0x3212 the second portrait, held by 0x3229.
+        'falcon': slide_in(0xAA74)
+        + [screen(falcon1, bool(k & 2)) for k in range(15, 0, -1)]
+        + [screen(falcon2)] * 33,
+        # 0x4505 slide; 0x456C swaps for 31 ticks (first while bit 1 is set);
+        # 0x4592 the second, held by 0x45A9.
+        'ayame': slide_in(0xCCE3)
+        + [screen(ayame1 if k & 2 else ayame2) for k in range(31, 0, -1)]
+        + [screen(ayame2)] * 65,
+        # The flash win: 0x6964 draws the first; state 0x39 (0x6B9B) flashes,
+        # inverted while 0x94 is even as 0x93 counts ticks to 4; then the second
+        # (0x6BD6), held by state 0x3C (0x6BF3) before the next spin.
+        'gunrock': [screen(gunrock1)]
+        + [screen(gunrock1, True)] * 3 + [screen(gunrock1)] * 4 + [screen(gunrock1, True)] * 4
+        + [screen(gunrock1)] * 4 + [screen(gunrock1, True)] * 4
+        + [screen(gunrock2)] * 48,
+    }
+
+
+NOTE_TICK_MS = 16  # estimated, as COURSE_STEP_MS
+NOTE_PAUSE_MS = 1000  # blank before each replay; the game plays them once
+INK = (23, 23, 23)  # the site's thumbnails' ink (LCD_INK); unlit dots transparent
+
+
+def write_gif(screens, path):
+    """Native-size GIF: frames merged where they repeat, delays in whole
+    hundredths (GIF's unit; at least 20 ms, as browsers slow shorter ones)."""
+    runs = []
+    for s in [bytes(192)] + screens:
+        if runs and runs[-1][0] == s:
+            runs[-1][1] += NOTE_TICK_MS
+        else:
+            runs.append([s, NOTE_TICK_MS])
+    runs[0][1] = NOTE_PAUSE_MS
+    frames = []
+    for s, _ in runs:
+        im = Image.new('P', (48, 32), 0)
+        im.putpalette([255, 255, 255, *INK])
+        px = im.load()
+        for i in range(48 * 32):
+            if s[i // 8] >> (7 - i % 8) & 1:
+                px[i % 48, i // 48] = 1
+        frames.append(im)
+    frames[0].save(path, save_all=True, append_images=frames[1:], loop=0,
+                   duration=[max(20, round(ms / 10) * 10) for _, ms in runs],
+                   transparency=0, disposal=2, optimize=False)
+
+
 COURSE_SECTIONS = 0x34CA  # 18 big-endian pointers: each section's bottom screen
 SECTION_ROWS = 128
 # Estimated, not measured: timer 0 is set up at 0x1677 (t0prr 0xF5, t0hr 0xF8),
@@ -279,6 +356,10 @@ def main(src, out):
         frames = [bits(prog, a, 48, 32) for a in addrs]
         meta = dict(title=title, **BASE, **({'region': 'JP'} if jp else {}), tags=tags)
         pieces.append((stem, stack(frames), meta, frames[0]))
+    notes = out / 'notes'
+    notes.mkdir(exist_ok=True)
+    for name, screens in portrait_sequences(prog).items():
+        write_gif(screens, notes / f'{name}.gif')
     lap = course_lap(prog)
     meta = dict(title="Falcon's Aerial Adventure course", **BASE, tags=['minigame', 'falcon', 'map'],
                 scroll=dict(stepPx=1, delayMs=COURSE_STEP_MS, direction='down'))

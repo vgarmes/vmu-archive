@@ -38,8 +38,9 @@ offsets, byte for byte.
 ```sh
 PS1="path/to/Power Stone (Japan)"
 python3 -E ../common/disc.py "$PS1" $OUT/ps1 /1ST_READ.BIN
-python3 -E mini.py $OUT/ps1/1ST_READ.BIN $OUT/mini   # PSMINI.VMS, inbox/, contact sheet
+python3 -E mini.py $OUT/ps1/1ST_READ.BIN $OUT/mini   # PSMINI.VMS, inbox/, notes/, contact sheet
 pnpm icons:import $OUT/mini/inbox
+cp $OUT/mini/notes/*.gif ../../../public/notes/power-stone/   # the notes' portrait GIFs
 ```
 
 To read the VMU program's code: `python3 -E ../common/lc86k.py $OUT/mini/PSMINI.VMS <hex address>`.
