@@ -1,6 +1,6 @@
 /**
- * Checks the sprites, which the site never reads, so nothing else would catch
- * a mistake in them:
+ * Checks the sprites, which the site only shows as a sheet, so nothing else
+ * would catch a mistake in them:
  *
  *   pnpm content:check
  *

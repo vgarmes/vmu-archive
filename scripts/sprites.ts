@@ -2,7 +2,8 @@
  * Sprites: art a game draws onto part of the VMU screen at run time (digits,
  * buttons, counters), as opposed to a whole 48x32 screen. They're kept for
  * preservation, at their own size, in content/sprites/<game slug>/<id>.json,
- * and the site never reads them: content/icons/ stays whole screens only.
+ * and kept out of content/icons/, which stays whole screens only. The site
+ * shows them only as a game's Sprites card (src/lib/sprites.ts).
  *
  * Written by `pnpm icons:import` (a sidecar with "sprite": true) and checked by
  * `pnpm content:check`. Run by Node directly, like pixels.ts: keep the imports

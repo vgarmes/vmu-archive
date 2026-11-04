@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import IconGrid from '@/components/IconGrid'
+import SpriteSheet from '@/components/SpriteSheet'
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -12,6 +13,7 @@ import {
 } from '@/components/ui/breadcrumb'
 import { getGame, getGames } from '@/lib/games'
 import { toIndexEntry } from '@/lib/icons'
+import { getSpriteSheet } from '@/lib/sprites'
 
 export const dynamicParams = false
 
@@ -35,6 +37,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 	const found = getGame((await params).slug)
 	if (!found) notFound()
 	const { game, icons, notes } = found
+	const sheet = getSpriteSheet(game.slug)
 	const meta = [game.publisher, game.year].filter(Boolean).join(' · ')
 
 	return (
@@ -64,6 +67,18 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 			</header>
 
 			<IconGrid icons={icons.map(toIndexEntry)} />
+
+			{sheet && (
+				<SpriteSheet
+					gameSlug={game.slug}
+					sheet={{
+						width: sheet.width,
+						height: sheet.height,
+						cells: sheet.cells,
+						count: sheet.count
+					}}
+				/>
+			)}
 
 			{notes && (
 				<details className="group border-border bg-card/50 border">

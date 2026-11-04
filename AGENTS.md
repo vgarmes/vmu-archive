@@ -17,8 +17,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   don't hand-write frames.
 - Smaller art a game draws onto part of a screen (digits, buttons) is a
   sprite: `content/sprites/<game slug>/*.json` at its own size, imported with
-  `"sprite": true` (see `scripts/sprites.ts`). They're kept for preservation;
-  the site never reads them, so `pnpm content:check` is what validates them.
+  `"sprite": true` (see `scripts/sprites.ts`). They're kept for preservation
+  and `pnpm content:check` validates them. The site only shows them: the build
+  packs each game's into `/sprites/<game slug>.png` (`src/lib/sprites.ts`),
+  shown in a Sprites card on its page; that sheet is never committed.
 - Findings about a game (format, timing, unused screens) go in its notes,
   `content/games/<game slug>.md`; its README in `tools/disc-extraction/<game>/`
   only names the dump and how to run the scripts.
