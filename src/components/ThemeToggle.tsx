@@ -23,8 +23,10 @@ function apply(theme: Theme) {
 	document.documentElement.classList.toggle('dark', dark)
 }
 
-/** auto/light/dark menu; the initial class is set by a script in the layout. */
-export default function ThemeToggle() {
+const PICK = 'themepick'
+
+/** The saved theme (null until mounted) and a setter that saves and applies it. */
+function useTheme() {
 	// Unknown until mounted: the server can't read localStorage.
 	const [theme, setTheme] = useState<Theme | null>(null)
 
@@ -42,16 +44,29 @@ export default function ThemeToggle() {
 			} catch {}
 		}
 		media.addEventListener('change', onChange)
-		return () => media.removeEventListener('change', onChange)
+		// The header mounts two of these (row and mobile menu); keep them agreeing.
+		const onPick = (e: Event) => setTheme((e as CustomEvent<Theme>).detail)
+		window.addEventListener(PICK, onPick)
+		return () => {
+			media.removeEventListener('change', onChange)
+			window.removeEventListener(PICK, onPick)
+		}
 	}, [])
 
 	const choose = (next: Theme) => {
 		try {
 			localStorage.setItem('theme', next)
 		} catch {}
-		setTheme(next)
 		apply(next)
+		window.dispatchEvent(new CustomEvent(PICK, { detail: next }))
 	}
+
+	return [theme, choose] as const
+}
+
+/** auto/light/dark menu; the initial class is set by a script in the layout. */
+export default function ThemeToggle() {
+	const [theme, choose] = useTheme()
 
 	return (
 		<Select items={THEMES} value={theme} onValueChange={v => v && choose(v)}>
@@ -75,5 +90,27 @@ export default function ThemeToggle() {
 				))}
 			</SelectContent>
 		</Select>
+	)
+}
+
+/** The same choice as a row of buttons, for the mobile menu. */
+export function ThemeButtons() {
+	const [theme, choose] = useTheme()
+
+	return (
+		<div role="radiogroup" aria-label="Theme" className="flex gap-1">
+			{THEMES.map(({ value, label }) => (
+				<button
+					key={value}
+					type="button"
+					role="radio"
+					aria-checked={theme === value}
+					onClick={() => choose(value)}
+					className="text-muted-foreground hover:text-foreground focus-visible:ring-ring/50 aria-checked:bg-foreground aria-checked:text-background flex h-6 items-center px-2 text-xs tracking-[0.2em] uppercase outline-none focus-visible:ring-3"
+				>
+					{label}
+				</button>
+			))}
+		</div>
 	)
 }
