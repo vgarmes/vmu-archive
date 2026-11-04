@@ -68,8 +68,8 @@ inverted (`xor #0xff`) at `0x4BAE`, a flash.
 
 ### Screens
 
-36 entries are whole 48×32 screens, all stills except the portraits, and one
-is the Falcon course, a scroll (see [Falcon's course](#falcons-course)):
+39 entries are whole 48×32 screens, all stills, and one is the Falcon course,
+a scroll (see [Falcon's course](#falcons-course)):
 
 | Address                             | Archive title                                                             |
 | ----------------------------------- | ------------------------------------------------------------------------- |
@@ -77,9 +77,9 @@ is the Falcon course, a scroll (see [Falcon's course](#falcons-course)):
 | `0xAE40`, `0xAF00`                  | Capcom logo, Copyright (©1999)                                            |
 | `0xCAA3`                            | Caution: replace the battery (JP)                                         |
 | `0xA9B4`                            | Menu (JP)                                                                 |
-| `0xAA74`+`0xAB34`                   | Falcon (intro, see [Portraits](#portraits))                               |
-| `0xCCE3`+`0xCDA3`                   | Ayame (intro)                                                             |
-| `0x8591`+`0x8651`                   | Gunrock (win)                                                             |
+| `0xAA74`, `0xAB34`                  | Falcon, Falcon (second) (see [Portraits](#portraits))                     |
+| `0xCCE3`, `0xCDA3`                  | Ayame, Ayame (second)                                                     |
+| `0x8591`, `0x8651`                  | Gunrock, Gunrock (second)                                                 |
 | `0xCB63`, `0xCC23`                  | Ayame's Shuriken Training stage, and (second)                             |
 | `0x81DD`–`0x84D1`, `0x8C11`         | Gun-Gun Slots: medal get, quit?, double up?, match to double, great! (JP) |
 | `0x8CD1`, `0x8D91`                  | Art museum opened, Music hall opened (JP)                                 |
@@ -92,31 +92,34 @@ addresses, so they aren't marked unused.
 
 ### Portraits
 
-Each character has two stored portraits, and the code plays them as a short
-sequence, not a loop of two frames. The entries are those sequences, one frame
-per tick of the game, at the same estimated 16 ms tick as
-[Falcon's course](#falcons-course); each rests on the whole first portrait.
+Each character has two portraits, kept as separate stills. The game shows them
+in short sequences, read from the code below; those aren't kept as animations.
+The ticks they count weren't timed (an estimated 16 ms; see
+[Falcon's course](#falcons-course)). The six addresses are loaded only where
+listed here, and no pointer table holds them.
 
-- **Falcon** (before his game): the portrait slides up from the bottom, two
-  rows a tick (state 1 at `0x319E`: the top _c_ rows of `0xAA74` drawn at the
-  bottom of the screen). It then flashes for 15 ticks (`0x3205`: a counter from
-  16, and the screen sent inverted by `0x3CE1` while its bit 1 is set: 2 ticks
-  inverted, 2 normal). Then the second portrait (`0x3212`, with a sound), held
-  33 ticks (`0x3229`) before the game starts.
-- **Ayame** (before her game): the same slide. Then for 31 ticks the two
-  portraits swap every 2 ticks (`0x456C`: the first while the counter's bit 1
-  is set), then the second, held 65 ticks (`0x4592`, `0x45A9`).
-- **Gunrock** (when the slots pay): the first portrait for 24 ticks
-  (`0x6B6E`), then it flashes (`0x6B9B`: inverted 3 ticks, then 4 normal, 4
-  inverted, 4 normal, 4 inverted), then the second, with a sound, for 48 ticks
-  (`0x6BD6`, `0x6BF3`). The game then goes back to the flash and repeats until
-  the player moves on; the entry loops back to the first portrait instead. Over
-  both, the win's payout label (`+50`, `×2`…) blinks at rows 12–18, 8 ticks on
-  and 8 off (`0x7B28`); it depends on the win, so it's left out.
+- **Falcon**, during his game, each time a counter (`0xA9`) reaches 3
+  (`0x2660`), likely three Power Stones: the first portrait slides up from the
+  bottom of the screen, two rows a tick, over the game (`0x319E`), flashes
+  inverted for 15 ticks (`0x3205`; `0x3CE1` sends the screen inverted), then
+  the second appears with a sound and stays 33 ticks (`0x3212`, `0x3229`).
+  Play resumes in a timed powered-up state that redraws the course.
+- **Ayame**, during her game, each time a counter (`0x8C`) reaches 3
+  (`0x441E`, `0x4867`): the same slide, then the two swap every 2 ticks for 31
+  ticks, then the second stays 65 ticks (`0x456C`–`0x45A9`). It ends by adding
+  a flower shuriken (花シュリケン) to her stock (`0xD4` bits 5–7, `0x45B5`),
+  which her rules page ties to Power Stones.
+- **Gunrock** is the slot game's host. The first portrait shows on a win for
+  24 ticks with the payout label (`+50`, `×2`…) blinking over it (state
+  `0x36`, `0x6B6E`; the label at `0x7B28`), and during Bonus Time it alternates
+  with the Bonus Time screen before each spin (`0x6235`). On the other kind of
+  win (state `0x39`, entered at `0x6970` and `0x6A97`) it flashes, inverted 3
+  ticks, then 4 normal, 4 inverted, 4 normal, 4 inverted (`0x6B9B`); then the
+  second portrait appears with a sound and stays 48 ticks with the label
+  blinking (`0x6BF3`) before the next spin.
 
-The slide-in draws over what was on screen before, which is taken as blank.
-The intros are one-offs in the game, so their entries start with a second of
-blank screen before each replay; the second is the archive's, not the game's.
+None of them loops: each sequence runs once per trigger, and the game draws
+over the second portrait when it ends.
 
 ### Falcon's course
 
