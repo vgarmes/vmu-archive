@@ -21,6 +21,8 @@
 	--accent: oklch(0.97 0 0);
 	--accent-foreground: oklch(0.205 0 0);
 	--destructive: oklch(0.577 0.245 27.325);
+	/* The orange-amber of the Japanese Dreamcast swirl; reads on both themes. */
+	--dreamcast: #f39800;
 	/* Corner radius scale (shadcn Lyra), set to 0 for square corners. */
 	--radius: 0;
 }
@@ -61,6 +63,7 @@
 	--color-accent: var(--accent);
 	--color-accent-foreground: var(--accent-foreground);
 	--color-destructive: var(--destructive);
+	--color-dreamcast: var(--dreamcast);
 	--radius-sm: calc(var(--radius) * 0.6);
 	--radius-md: calc(var(--radius) * 0.8);
 	--radius-lg: var(--radius);
