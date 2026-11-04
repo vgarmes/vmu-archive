@@ -20,7 +20,7 @@ export default function About() {
 	return (
 		<article className="flex max-w-2xl flex-col gap-10 text-sm leading-6">
 			<section className="flex flex-col gap-3">
-				<h1 className="text-base font-bold tracking-[0.2em] uppercase">
+				<h1 className="text-sm font-normal tracking-[0.2em] uppercase">
 					About
 				</h1>
 				<p className="text-muted-foreground">
