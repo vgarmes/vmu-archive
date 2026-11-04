@@ -144,6 +144,31 @@ rows that start `position % 128` rows above the bottom screen of section
 times, `0xD3A3`. So a lap is three stretches of road, each repeated five times,
 joined by three transitions: 2,304 rows, whose end meets its start.
 
+The course isn't built from tiles: it's one stored picture, 48×896, kept as the
+"Aerial Adventure: course" sprite, and a lap replays parts of it in that order.
+A part covers the 128 rows the window climbs through plus the 32-row screen it
+ends on, counted in the stored picture from its top (`0xCE63`, 6 bytes a row):
+
+| Part of the lap  | Section  | Stored rows | Times |
+| ---------------- | -------- | ----------- | ----- |
+| Road 1           | `0xE2A3` | 737–895     | 5     |
+| Into road 2      | `0xDFA3` | 609–767     | 1     |
+| Road 2           | `0xDCA3` | 481–639     | 5     |
+| Into road 3      | `0xD9A3` | 353–511     | 1     |
+| Road 3           | `0xD6A3` | 225–383     | 5     |
+| Back into road 1 | `0xD3A3` | 97–255      | 1     |
+
+Each section sits 128 rows above the one before, so moving on to the next part
+just keeps climbing the picture. A road's repeats jump back down 128 rows, and
+show no seam because each road repeats every 128 rows; the lap wraps cleanly
+because stored rows 96–127 are the same as road 1's bottom screen (864–895).
+All three are checked against the stored rows.
+
+For example, at position 300 the game is in part 300 / 128 = 2 (the third of
+road 1's five), 300 % 128 = 44 rows into it: it draws stored rows 820–851, the
+32 rows that start 44 above that part's bottom screen (rows 864–895). The
+course scroll in the grid plays this lap.
+
 It's in the archive as a downward scroll of one lap: a 48×2,335 strip whose
 windows are exactly what the game draws at each of the 2,304 positions
 (checked for every one). It moves 1 row a step, the cruising speed, every 16
