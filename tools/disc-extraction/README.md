@@ -60,14 +60,15 @@ Every game so far did it differently. What has turned up:
 **Where it lives.**
 
 - In the program itself, `1ST_READ.BIN`, with no file of its own: Bangaioh,
-  Crazy Taxi 2, Ikaruga, Moero! Justice Gakuen, Power Stone 1 and 2, Street
-  Fighter III 3rd Strike.
+  Crazy Taxi 2, Ikaruga, Jet Set Radio, Moero! Justice Gakuen, Power Stone 1
+  and 2, Street Fighter III 3rd Strike.
 - In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
   `TYPE_E.EXE` (a PE file; map addresses through its section table).
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
 - In a VMU program the game carries for the VMU to run, with its own code:
-  Shenmue Passport's Goodies viewer (`SYEN.BIN`), and Power Stone Mini, a whole
-  VMS image inside Power Stone's `1ST_READ.BIN`. Find one by its VMS header
+  Shenmue Passport's Goodies viewer (`SYEN.BIN`), Power Stone Mini, a whole
+  VMS image inside Power Stone's `1ST_READ.BIN`, and Jet Set Radio's graffiti
+  viewer, the first member of `JETRADIO/SYSOPTION.AFS`. Find one by its VMS header
   (a 16-byte description at `+0x200`); read its code with `lc86k.py`.
 - In a system ROM, not a disc: the VMU's own BIOS (fonts and clock sprites,
   from which it builds every screen) and the Dreamcast's `dc_boot.bin` (its
@@ -83,15 +84,15 @@ colour textures; the real art was found by following the code that loads it.
 
 **How the dots are stored.**
 
-| Encoding                 | Example                                                                        |
-| ------------------------ | ------------------------------------------------------------------------------ |
-| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue 1 and 2 (with a width and height byte) |
-| 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Typing E-Keikaku: turned 180°, as the LCD takes it     |
-| 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                 |
-| 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's               |
-| 1 byte per dot, mirrored | Berserk                                                                        |
-| Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                |
-| Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                  |
+| Encoding                 | Example                                                                                   |
+| ------------------------ | ----------------------------------------------------------------------------------------- |
+| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue 1 and 2 (with a width and height byte)            |
+| 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Jet Set Radio, Typing E-Keikaku: turned 180°, as the LCD takes it |
+| 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                            |
+| 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's                          |
+| 1 byte per dot, mirrored | Berserk                                                                                   |
+| Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                           |
+| Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                             |
 
 So try every packing, every flip and mirror, and inverted bits before
 concluding the art isn't there. A sprite can also be stored eight times, shifted
@@ -120,7 +121,12 @@ files and look for the screen in what comes out.
   gives at least 17 steps, but what paces a step wasn't traced. Power Stone
   Mini's Falcon course: the order of its sections and the speed from code, the
   tick estimated from a timer's setup. It scrolls down the screen, so it's a
-  `"direction": "down"` scroll (see the main README).
+  `"direction": "down"` scroll (see the main README). Jet Set Radio's radio:
+  a null-terminated list of screens stepped every 6 ticks, assuming 60 Hz.
+- Rebuilt from drawing code: Jet Set Radio's graffiti viewer composes its
+  screens from bitmaps, sprites and font strings, so they were redrawn from
+  what its code places where. Its ticks come from the VMU's base timer at a
+  rate it never sets, so they play at the site's default.
 - From captures: Sakura Taisen 3's title (100 ms a frame) and its scrolling
   banners (1 px per tick, stored as one strip; see the main README).
 - Unknown yet: Soul Calibur's fighters play at the site's default until someone
@@ -144,5 +150,6 @@ The code also says what the game never shows: screens nothing calls are marked
 | Ikaruga                          | JP v1.002 (2002, ESP)                      | [`ikaruga/`](ikaruga/)         | [ikaruga](../../content/games/ikaruga.md)                                                                                 |
 | Crazy Taxi 2                     | US v1.004 (2001, Sega)                     | [`crazytaxi2/`](crazytaxi2/)   | [crazy-taxi-2](../../content/games/crazy-taxi-2.md)                                                                       |
 | Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                   | [`eva-typing/`](eva-typing/)   | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
+| Jet Set Radio                    | JP (2000, Sega), Redump                    | [`jsr/`](jsr/)                 | [jet-set-radio](../../content/games/jet-set-radio.md)                                                                     |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
 | Visual Memory Unit, Dreamcast    | US VMU BIOS v1.05, `dc_boot.bin` (Sega)    | [`bios/`](bios/)               | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

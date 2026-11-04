@@ -1,0 +1,17 @@
+{
+	"title": "NG",
+	"game": "Jet Set Radio",
+	"publisher": "Sega",
+	"year": 2000,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007ffffffffe00ffffffffff00ffffffffff00ffcf9c03ff00ffcf9c03ff00ffc79cffff00ffc39cffff00ffc99cc3ff00ffcc9cc3ff00ffce1cf3ff00ffcf1cf3ff00ffcf9c03ff00ffcf9c03ff00ffffffffff00ffffffffff007ffffffffe0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	],
+	"tags": [
+		"memory-card"
+	],
+	"hash": "88d0ad7193a5b004236b7c3f7eadebf6055af328",
+	"added": "2026-11-04"
+}

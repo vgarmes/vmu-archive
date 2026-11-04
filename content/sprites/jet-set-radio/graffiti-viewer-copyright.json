@@ -1,0 +1,29 @@
+{
+	"title": "Graffiti viewer: copyright",
+	"game": "Jet Set Radio",
+	"publisher": "Sega",
+	"year": 2000,
+	"width": 48,
+	"height": 20,
+	"bpp": 1,
+	"frames": [
+		"001321dddc00002491111400002411d95c00002490515400001321ddd4000000000000001d5ddddd777011c91555444019c99ddd767011c9191914101d49d5157776000000000004011d801dddc00109400555400109401d554001094011554001c9931dddc0000002000000000000000000000000000000"
+	],
+	"source": {
+		"file": "/JETRADIO/SYSOPTION.AFS",
+		"entry": 0,
+		"offset": 537564
+	},
+	"drawnAt": [
+		{
+			"screen": "jet-set-radio-graffiti-viewer-startup",
+			"x": 0,
+			"y": 6
+		}
+	],
+	"tags": [
+		"graffiti-viewer"
+	],
+	"hash": "fa9023e5e62e9d146690222493d56640a0cd0265",
+	"added": "2026-11-04"
+}

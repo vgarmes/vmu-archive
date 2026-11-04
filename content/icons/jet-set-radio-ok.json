@@ -1,0 +1,17 @@
+{
+	"title": "OK",
+	"game": "Jet Set Radio",
+	"publisher": "Sega",
+	"year": 2000,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000007ffffffffe00ffffffffff00ffffffffff00ffc03cf3ff00ffc03ce7ff00ffcf3ccfff00ffcf3c9fff00ffcf3c3fff00ffcf3c3fff00ffcf3c9fff00ffcf3ccfff00ffc03ce7ff00ffc03cf3ff00ffffffffff00ffffffffff007ffffffffe0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	],
+	"tags": [
+		"memory-card"
+	],
+	"hash": "8076d7d0097dfafa6d2c26b617a66ddc30ef1fd9",
+	"added": "2026-11-04"
+}

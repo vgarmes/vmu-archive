@@ -1,0 +1,18 @@
+{
+	"title": "Logo",
+	"game": "Jet Set Radio",
+	"publisher": "Sega",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffafffdfffffffafff9fffffffffff9ffffff0c82a87ffffffcefe9ffffff0c8219f7fffffcfffbe7fffffcc7ffe7fefe01800aa0fcffffc79fa7f8ffffc7b867f8ffffe7ffecb8fffff0107ff8ffffffffc4003fffffe07cf8fffffffe4480fffffffcfcf0ffffffe181e8ffffffffffd8ffffffffffb8ffffff000078fffffe0000f9fffffc0001fbfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": [
+		"logo"
+	],
+	"hash": "dbf7529639643b04eb52ec0cc40bc1fbc8fb83e5",
+	"added": "2026-11-04"
+}
