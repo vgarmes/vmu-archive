@@ -11,9 +11,10 @@ pixel for pixel Shenmue II's and are already filed there. Every screen gets
 region JP, the English ones included: they come from the Japanese release,
 which carries both languages.
 
-Also writes the sprites as three sheets with "sprite": true, one glyph after
-another left to right in the order below, which the importer keeps at their own
-size in content/sprites/.
+Also writes three sprites with "sprite": true, each a set of named entries the
+game looks up together, one under the next in the order below with their size
+in "glyphs": the two digit sets, as fonts (the counter fills the digit into the
+name), and the QTE buttons.
 """
 import json
 import shutil
@@ -52,9 +53,11 @@ DIGITS = [str(n) for n in range(10)]
 BUTTONS = ['KB', 'KF', 'BA', 'BB', 'BX', 'BY', 'BL', 'BR', 'BP']
 # (stem, title, the name the game looks up, entry names, tags)
 SHEETS = [
-    ('digits-large', '70 Man Battle digits, large', 'BT_L?', [f'BT_L{d}' for d in DIGITS], ['battle', 'digits', 'sheet']),
-    ('digits-small', '70 Man Battle digits, small', 'BT_S?', [f'BT_S{d}' for d in DIGITS], ['battle', 'digits', 'sheet']),
-    ('qte-buttons', 'QTE buttons', 'WAZA_*', [f'WAZA_{b}' for b in BUTTONS], ['qte', 'sheet']),
+    ('digits-large', '70 Man Battle digits, large', 'BT_L?', [f'BT_L{d}' for d in DIGITS],
+     ['battle', 'font', 'digits']),
+    ('digits-small', '70 Man Battle digits, small', 'BT_S?', [f'BT_S{d}' for d in DIGITS],
+     ['battle', 'font', 'digits']),
+    ('qte-buttons', 'QTE buttons', 'WAZA_*', [f'WAZA_{b}' for b in BUTTONS], ['qte']),
 ]
 
 
@@ -86,11 +89,11 @@ def main(out, inbox):
         parts = [manifest[n] for n in names]
         w, h = parts[0]['width'], parts[0]['height']
         assert all((p['width'], p['height']) == (w, h) for p in parts), f'{stem}: mixed sizes'
-        sheet = Image.new('1', (w * len(parts), h), 1)
+        sheet = Image.new('1', (w, h * len(parts)), 1)
         for k, n in enumerate(names):
-            sheet.paste(Image.open(out / 'lcd' / f'{n}.png'), (w * k, 0))
+            sheet.paste(Image.open(out / 'lcd' / f'{n}.png'), (0, h * k))
         sheet.save(inbox / f'shenmue-sprite-{stem}.png')
-        meta = dict(title=title, **BASE, tags=tags, sprite=True,
+        meta = dict(title=title, **BASE, tags=tags, sprite=True, glyphs={'height': h},
                     source={'file': '/MISC/COLD.BIN', 'entry': lookup, 'offset': parts[0]['offset']})
         (inbox / f'shenmue-sprite-{stem}.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1))
         written += 1

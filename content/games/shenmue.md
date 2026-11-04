@@ -50,11 +50,13 @@ European source and isn't in this chunk.
 
 ## Sprites
 
-The other 29 entries are art the game draws onto a screen at run time. They're
-kept as three sheets, each glyph after the next, left to right:
+The other 29 entries are art the game draws onto a screen at run time, each a
+named entry of its own. They're kept as three sprites, one per set the game
+looks up together, the entries one under the next with their size in `glyphs`:
 
-- `BT_L0`–`BT_L9` (9×22 each): large digits, 0 to 9.
-- `BT_S0`–`BT_S9` (5×10 each): small digits, 0 to 9.
+- `BT_L0`–`BT_L9` (9×22 each): large digits, 0 to 9, and `BT_S0`–`BT_S9` (5×10
+  each): small digits. The counter fills the digit into the name it looks up
+  (`BT_L?`, `BT_S?`), so each set is a font.
 - `WAZA_*` (10×14 each): the QTE buttons, in the game's list order: ←, →, A, B,
   X, Y, L, R and the d-pad.
 

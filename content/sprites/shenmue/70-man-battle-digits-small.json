@@ -4,12 +4,15 @@
 	"publisher": "Sega",
 	"year": 1999,
 	"region": "JP",
-	"width": 50,
-	"height": 10,
+	"width": 5,
+	"height": 100,
 	"bpp": 1,
 	"frames": [
-		"709ce37ddf73a268c4d0886318b821542028c6220855080a318884697bc274622206418922f88901f862488622804418922188a11106248c5c2fb85e711ce0"
+		"746318c6318b8467084210842744211111087dd1084c10862e3194a94be210bf0843c10843e74610f46318bbe1108442108474631746318b9d18c62f0862e0"
 	],
+	"glyphs": {
+		"height": 10
+	},
 	"source": {
 		"file": "/MISC/COLD.BIN",
 		"entry": "BT_S?",
@@ -17,9 +20,9 @@
 	},
 	"tags": [
 		"battle",
-		"digits",
-		"sheet"
+		"font",
+		"digits"
 	],
-	"hash": "b5b7c3b3f4edfe36db32f4f43a1819b28b381a06",
+	"hash": "fbb80a0803149980d429f228f925ffcaed2a9c27",
 	"added": "2026-11-03"
 }
