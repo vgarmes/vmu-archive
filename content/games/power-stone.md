@@ -159,14 +159,23 @@ rather than guessing which combinations appear.
 
 ### Sprites
 
-38 sprites in `content/sprites/power-stone/`: the slot reels (48 symbols of
+40 sprites in `content/sprites/power-stone/`: the slot reels (48 symbols of
 16×10, 16 per reel, a column per reel) with the payline the game ORs over them,
-the payouts, coin, digits, 1000/2000 labels and BONUS TIME banner; a small 8×6
-font with BET and $; Ayame's ninjas, shuriken, score popups and other sprites;
+the payouts, coin, digits, BET, $, 1000/2000 labels and BONUS TIME banner; a
+small 8×6 font; Ayame's ninjas, shuriken, score popups and other sprites;
 Falcon in eight flight poses, the CHECK banner, items, and the course as stored
 (48×896); the READY/START/GAME OVER banners; and the menu headers,
 items, arrows and high-score parts. Falcon's 16×8 item at `0x9FEA` is the same
 pixels as Shuriken Training's `0x8F9D`, so it's kept once.
+
+The small font is 27 characters of 8×6 at `0x8E7B`, 6 bytes each, kept as
+stored: one under the next. It runs from the end of BONUS TIME to the start of
+the sight's table. The code reads glyphs 0–2 directly, blank and three dot marks
+(3–6) at `0x8E8D` + 6n, and the digits twice: in the right half of the byte at
+`0x8EA5` + 6n (7–16) and in the left half at `0x8EE1` + 6n (17–26), so two can
+be ORed into one byte. BET (`0x813D`) and $ (`0x8149`) are separate sprites,
+read on their own by the slots. An earlier import laid all of these side by
+side in 8-pixel slots, which cut BET to its left half under the $.
 
 Not imported: the VMS file's own save icon (colour, for the Dreamcast's file
 screen), the reel strip's order table, and the table after the course

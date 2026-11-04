@@ -38,6 +38,8 @@ HEADER = 'ﾊﾟﾜｰｽﾄｰﾝﾐﾆ'.encode('shift_jis')  # VMS description
 SIZE = 0x10000
 BASE = dict(game='Power Stone', publisher='Capcom', year=1999)
 FILE = '/1ST_READ.BIN'
+FONT = 0x8E7B  # the small font's 27 characters
+FONT_GLYPHS = {'font': 6}  # fonts among the sprites: stem -> character height
 
 
 def bits(prog, addr, w, h, masked=False, plane='image', invert=False):
@@ -167,9 +169,19 @@ def sprites(prog):
     add('slots-1000-2000', 'Gun-Gun Slots 1000 and 2000', sheet([bits(prog, 0x8BD1, 32, 8), bits(prog, 0x8BF1, 32, 8)]),
         ['minigame', 'gunrock', 'sheet'], False, 0x8BD1)
     add('bonus-time', 'Bonus time', bits(prog, 0x8E51, 48, 7), ['minigame', 'banner'], True, 0x8E51)
-    font = [bits(prog, 0x8E7B + 6 * i, 8, 6) for i in range(27)]
-    add('font', 'Small font', sheet(font + [bits(prog, 0x813D, 16, 6), bits(prog, 0x8149, 8, 6)]),
-        ['minigame', 'font', 'digits', 'sheet'], True, 0x8E7B)
+    # The small font: 27 characters of 8x6, 6 bytes each, kept as stored, one
+    # under the next (FONT_GLYPHS gives their height). Glyphs 0-2 are read
+    # directly; 3-6 at 0x8E8D + 6n; the digits twice, at 0x8EA5 + 6n in the
+    # right half of the byte and at 0x8EE1 + 6n in the left, so two can be
+    # ORed into one byte. It starts where BONUS TIME ends and ends where the
+    # sight's table starts.
+    assert 0x8E51 + 6 * 7 == FONT and FONT + 6 * 27 == 0x8F1D
+    add('font', 'Small font', bits(prog, FONT, 8, 6 * 27), ['minigame', 'font', 'digits'], True, FONT)
+    # BET and $, read on their own by the slots (0x70C3, 0x75E3), not part
+    # of the font.
+    add('slots-bet', 'Gun-Gun Slots BET', bits(prog, 0x813D, 16, 6), ['minigame', 'gunrock'], False, 0x813D)
+    add('slots-dollar', 'Gun-Gun Slots dollar sign', bits(prog, 0x8149, 8, 6), ['minigame', 'gunrock'],
+        False, 0x8149)
 
     # Ayame's Shuriken Training
     # Ayame's Shuriken Training. Titles say what a sprite plainly is; the
@@ -373,6 +385,8 @@ def main(src, out):
     for stem, title, im, tags, jp, addr in sprites(prog):
         meta = dict(title=title, **BASE, **({'region': 'JP'} if jp else {}), tags=tags, sprite=True,
                     source={'file': FILE, 'offset': at + addr})
+        if stem in FONT_GLYPHS:
+            meta['glyphs'] = {'height': FONT_GLYPHS[stem]}
         pieces.append((stem, im, meta, im))
 
     stems = [p[0] for p in pieces]

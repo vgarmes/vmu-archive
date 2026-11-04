@@ -1,0 +1,22 @@
+{
+	"title": "Gun-Gun Slots BET",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 16,
+	"height": 6,
+	"bpp": 1,
+	"frames": [
+		"19982a3033102a1033900000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1457365
+	},
+	"tags": [
+		"minigame",
+		"gunrock"
+	],
+	"hash": "6f5fb59bcc29f00408ba793cbaa34906443f6175",
+	"added": "2026-11-04"
+}

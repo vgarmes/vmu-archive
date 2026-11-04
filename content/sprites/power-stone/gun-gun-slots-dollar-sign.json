@@ -1,0 +1,22 @@
+{
+	"title": "Gun-Gun Slots dollar sign",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 8,
+	"height": 6,
+	"bpp": 1,
+	"frames": [
+		"1c3038143850"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1457377
+	},
+	"tags": [
+		"minigame",
+		"gunrock"
+	],
+	"hash": "56844f72eb9f05366f45320a797cff3ae9346f68",
+	"added": "2026-11-04"
+}
