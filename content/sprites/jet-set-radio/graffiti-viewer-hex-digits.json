@@ -1,0 +1,28 @@
+{
+	"title": "Graffiti viewer: hex digits",
+	"game": "Jet Set Radio",
+	"publisher": "Sega",
+	"year": 2000,
+	"width": 8,
+	"height": 85,
+	"bpp": 1,
+	"frames": [
+		"e0a0a0a0e0c0404040e0e020e080e0e0206020e0a0a0e02020e080e020e0e080e0a0e0e0a0204040e0a0e0a0e0e0a0e020e040a0e0a0a0c0a0c0a0c040a080a040c0a0a0a0c0e080c080e0e080c080800000000000"
+	],
+	"glyphs": {
+		"height": 5,
+		"width": 3
+	},
+	"source": {
+		"file": "/JETRADIO/SYSOPTION.AFS",
+		"entry": 0,
+		"offset": 527512
+	},
+	"tags": [
+		"graffiti-viewer",
+		"font",
+		"digits"
+	],
+	"hash": "af87f8fc3358267ecb2b0b6c1f31ce20c88c88dd",
+	"added": "2026-11-04"
+}

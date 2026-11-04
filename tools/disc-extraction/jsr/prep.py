@@ -40,12 +40,12 @@ APP_SPRITES = {
     'radio-1': ('radio, left', []),
     'radio-2': ('radio, middle', []),
     'radio-3': ('radio, right', []),
-    'font-title': ('title font', ['font', 'sheet']),
-    'font-narrow': ('narrow font', ['font', 'sheet']),
-    'font-wide': ('wide font', ['font', 'sheet']),
-    'font-kana': ('kana font', ['font', 'sheet']),
-    'font-small': ('small font', ['font', 'sheet']),
-    'font-hex': ('hex digits', ['font', 'digits', 'sheet']),
+    'font-title': ('title font', ['font']),
+    'font-narrow': ('narrow font', ['font']),
+    'font-wide': ('wide font', ['font']),
+    'font-kana': ('kana font', ['font']),
+    'font-small': ('small font', ['font']),
+    'font-hex': ('hex digits', ['font', 'digits']),
 }
 
 
@@ -113,6 +113,8 @@ def main(game_out, app_out, inbox):
                     source=dict(file=APP_FILE, entry=app['member'], offset=app['member_offset'] + s['offset']))
         if s['drawn_at']:
             meta['drawnAt'] = [dict(screen=screen_id(n), x=x, y=y) for n, x, y in s['drawn_at']]
+        if s.get('glyphs'):
+            meta['glyphs'] = s['glyphs']
         write(inbox, f'jsr-2-app-sprite-{s["name"]}', Image.open(app_out / 'sprites' / f'{s["name"]}.png'), meta)
         written += 1
     print(written, 'pieces to import ->', inbox)

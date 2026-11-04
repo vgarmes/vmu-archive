@@ -34,8 +34,7 @@ FONTS = {
     2: ('wide', 0x27A1, 123),  # symbols, digits, Latin
     3: ('kana', 0x2C6F, 161),  # katakana and hiragana
 }
-# Fixed-width fonts with no header: one byte a row, left-aligned. Their sheets
-# leave a 1-pixel gap between cells, as the glyphs fill them.
+# Fixed-width fonts with no header: one byte a row, left-aligned.
 PLAIN_FONTS = {
     'small': (0x0DEE, 256, 5, 7),  # base read at 0x0DA4
     'hex': (0x0C98, 17, 3, 5),
@@ -176,15 +175,42 @@ def screens(d):
     ]
 
 
-def font_sheet(cells, w, h, cols=16):
-    rows = -(-len(cells) // cols)
-    im = Image.new('1', (cols * w, rows * h), 1)
-    for n, (gw, bits) in enumerate(cells):
-        for r, b in enumerate(bits):
-            for k in range(gw):
-                if b >> (7 - k) & 1:
-                    im.putpixel(((n % cols) * w + k, (n // cols) * h + r), 0)
-    return im
+def one_or_list(values):
+    return values[0] if len(set(values)) == 1 else values
+
+
+def header_font(d, base, count):
+    """A font of 10-byte glyphs as (row bytes, glyphs): the 8 rows of each, in
+    table order, and the width and height bytes in their place in `glyphs`."""
+    rows, widths, heights = b'', [], []
+    for n in range(count):
+        a = base + 10 * n
+        widths.append(d[a])
+        heights.append(d[a + 1])
+        rows += d[a + 2:a + 10]
+    if any(h != 8 for h in heights):
+        sys.exit(f'{base:#x}: a glyph is not 8 rows tall; its rows would need a height of their own')
+    # Rebuild the table from what is kept, and check it against the disc.
+    rebuilt = b''.join(bytes([widths[n], heights[n]]) + rows[8 * n:8 * n + 8] for n in range(count))
+    if rebuilt != d[base:base + 10 * count]:
+        sys.exit(f'{base:#x}: the kept font does not rebuild the table')
+    glyphs = dict(height=8)
+    if any(w != 8 for w in widths):
+        glyphs['width'] = one_or_list(widths)
+    return rows, glyphs
+
+
+def plain_font(d, base, count, w, h):
+    """A font with no header: h bytes a glyph, w pixels used of each."""
+    rows = d[base:base + h * count]
+    if any(b & (0xFF >> w) for b in rows):
+        sys.exit(f'{base:#x}: a glyph has pixels past its {w}-pixel width')
+    return rows, dict(height=h, width=w)
+
+
+def strip_image(rows):
+    """One byte a row, 8 pixels wide, top to bottom: the font as stored."""
+    return sprite_image(8, len(rows), rows)
 
 
 def sprite_image(w, h, rows):
@@ -215,10 +241,10 @@ def main(src, out):
         manifest['screens'].append(dict(name=name, frames=[s.hex() for s in frames],
                                         ticks=ticks))
 
-    def add_sprite(name, im, offset, drawn_at=None):
+    def add_sprite(name, im, offset, drawn_at=None, glyphs=None):
         im.save(out / 'sprites' / f'{name}.png')
         manifest['sprites'].append(dict(name=name, offset=offset, width=im.width, height=im.height,
-                                        drawn_at=drawn_at or []))
+                                        drawn_at=drawn_at or [], glyphs=glyphs))
         previews.append((name, im))
 
     # The SEGA and © bitmaps aren't kept as sprites: each fills its own screen
@@ -226,12 +252,14 @@ def main(src, out):
     for k, (a, x) in enumerate(zip(SLICES, SLICE_X)):
         add_sprite(f'radio-{k + 1}', sprite_image(d[a], d[a + 1], d[a + 2:a + 2 + d[a + 1]]), a + 2,
                    [('title', x, 0)])
+    # Each font as stored: its glyphs' rows stacked in table order, 8 pixels
+    # wide (a byte a row), with each glyph's size in `glyphs`.
     for font, (name, base, count) in FONTS.items():
-        cells = [(d[base + 10 * n], d[base + 10 * n + 2:base + 10 * n + 10]) for n in range(count)]
-        add_sprite(f'font-{name}', font_sheet(cells, 8, 8), base)
+        rows, glyphs = header_font(d, base, count)
+        add_sprite(f'font-{name}', strip_image(rows), base, glyphs=glyphs)
     for name, (base, count, w, h) in PLAIN_FONTS.items():
-        cells = [(w, d[base + h * n:base + h * (n + 1)]) for n in range(count)]
-        add_sprite(f'font-{name}', font_sheet(cells, w + 1, h + 1), base)
+        rows, glyphs = plain_font(d, base, count, w, h)
+        add_sprite(f'font-{name}', strip_image(rows), base, glyphs=glyphs)
 
     (out / 'manifest.json').write_text(json.dumps(manifest, indent=1))
 

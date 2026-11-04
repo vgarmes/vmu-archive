@@ -60,20 +60,27 @@ It draws four ways:
   and `FF FF` ends it. The strings are at `0x32CA`–`0x34FF`.
 - `0x1DD5`: a line across the screen.
 
-Its fonts, kept as sprite sheets:
+Its fonts are tables of characters, one after the next, numbered from 0:
 
-| Font          | Address  | Glyphs | Size | Notes                                                                     |
-| ------------- | -------- | ------ | ---- | ------------------------------------------------------------------------- |
-| Title (`E0`)  | `0x19F1` | 13     | 8×8  | JET SET RADIO and Press A+B                                               |
-| Narrow (`01`) | `0x21BB` | 151    | ≤8×8 | ASCII from `0x20`, then half-width kana; each character advances 4 pixels |
-| Wide (`02`)   | `0x27A1` | 123    | ≤8×8 | symbols, digits, Latin                                                    |
-| Kana (`03`)   | `0x2C6F` | 161    | ≤8×8 | katakana, then hiragana                                                   |
-| Small         | `0x0DEE` | 256    | 5×7  | a full character set, 7 bytes a glyph, no header; read at `0x0DA4`        |
-| Hex digits    | `0x0C98` | 17     | 3×5  | 0–9, A–F and a blank, 5 bytes a glyph                                     |
+| Font          | Address  | Glyphs | Size                     | Notes                                                              |
+| ------------- | -------- | ------ | ------------------------ | ------------------------------------------------------------------ |
+| Title (`E0`)  | `0x19F1` | 13     | 8×8; glyph 0, a gap, 4×8 | JET SET RADIO and Press A+B                                        |
+| Narrow (`01`) | `0x21BB` | 151    | 4×8                      | ASCII from `0x20`, then half-width kana                            |
+| Wide (`02`)   | `0x27A1` | 123    | 8×8                      | symbols, digits, Latin                                             |
+| Kana (`03`)   | `0x2C6F` | 161    | 8×8                      | katakana, then hiragana                                            |
+| Small         | `0x0DEE` | 256    | 5×7                      | a full character set, 7 bytes a glyph, no header; read at `0x0DA4` |
+| Hex digits    | `0x0C98` | 17     | 3×5                      | 0–9, A–F and a blank, 5 bytes a glyph                              |
 
-Glyphs in the first four are 10 bytes: width, height, 8 rows. The narrow,
-wide and kana sheets have 16 glyphs a row in 8×8 cells; the small font and
-hex digits leave a pixel between cells.
+A glyph in the first four is 10 bytes: its width, its height, then 8 rows of
+a byte each. The sprite drawer keeps only the pixels inside the width, so the
+narrow font's `Q` (glyph 49) is drawn without the end of its tail, the one
+pixel stored past its 4.
+
+Each font is kept as one sprite, as the game stores it: the rows of every
+glyph in table order, a byte (8 pixels) wide, with each glyph's width and
+height in its `glyphs`. `app.py` rebuilds every table from that and checks it
+against the disc byte for byte. The Sprites card shows each glyph as its own
+cell, as wide as the game draws it.
 
 ### The screens
 
