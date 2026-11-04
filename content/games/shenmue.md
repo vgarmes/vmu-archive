@@ -19,11 +19,8 @@ a list of 12-byte slots at `0x8C273078`, and the digits through the patterns
 `BT_S?` and `BT_L?` at `0x8C28CCE8`. Nothing in the chunk goes unnamed, so none
 of it is marked unused.
 
-All 46 bitmaps match, pixel for pixel, the retail art in Second Screen Archive's
-[Shenmue VMU collection](https://second-screen-archive.neocities.org/shenmue-vmu),
-which reports the same set on all four discs (the `RSM_*` screens on discs 1–3
-only). Disc 2 (`(Disc 2 of 4)[!][1M2, 1MB4]`) was checked too: its `COLD.BIN`
-decodes to the same 46 entries.
+Disc 2 (`(Disc 2 of 4)[!][1M2, 1MB4]`) was checked too: its `COLD.BIN` decodes
+to the same 46 entries.
 
 None of the Goodies characters (see [Goodies](#goodies)) are on discs 1 or 2: a
 search of every file, gzip members unpacked, for each pose and portrait
@@ -83,17 +80,8 @@ the page.
   a 48×32 canvas; the canvas is the wiki's, so they're cut back to the drawn
   columns (32, or 33 for seven drawn a column to the left).
 
-Second Screen Archive's
-[Shenmue VMU collection](https://second-screen-archive.neocities.org/shenmue-vmu)
-holds 207 of these characters, and its pictures are the same: every one of its
-animations frame for frame, and 205 of its portraits pixel for pixel (Masaru Aoi
-and Toki Aida differ by 5 pixels). It names Ling Sha Hua (Shenhua) and Ren the
-other way round from the wiki; the wiki's names agree with the poses, and with
-the viewer on the Passport disc, which stores Ren second and Shenhua third.
-
-The archive's Ryo Hazuki entry was made earlier from the collection's preview
-GIF, played at its 300 ms inspection pace; it now has the wiki's frames and
-timing.
+The wiki's names for Ling Sha Hua (Shenhua) and Ren agree with their poses, and
+with the viewer on the Passport disc, which stores Ren second and Shenhua third.
 
 ### The Passport disc
 
