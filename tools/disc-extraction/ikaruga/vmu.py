@@ -29,7 +29,8 @@ and 32 with leading zeros left blank. The digits are 0-9 at 0x8C0D0270, 32 bytes
 each, 2 bytes per row.
 
 Writes lcd/NN.png (dark = lit, as `pnpm icons:import` reads it), digits.png (the
-ten digits side by side, 160x16), manifest.json and contact-sheet.png.
+ten digits as stored, one under the next, 16x160), manifest.json and
+contact-sheet.png.
 """
 import json
 import sys
@@ -85,13 +86,16 @@ def main(src, out):
         images.append((f'#{n:02d}', im))
         print(n, f'{addr:#x}', what, '' if drawn else '(never drawn)')
 
+    # The digits as stored: 0 to 9 one under the next, 2 bytes a row, so the
+    # sprite is the 320 bytes at DIGITS as they are.
+    off = DIGITS - LOAD
+    bitmap(b[off:off + 32 * 10], DIGIT_W, 10 * DIGIT_H).save(out / 'digits.png')
+    manifest.append(dict(name='digits', kind='sprite', what='Chain digits 0-9', width=DIGIT_W,
+                         height=10 * DIGIT_H, address=f'{DIGITS:#x}', offset=off))
+    # Side by side, for the contact sheet only.
     digits = Image.new('1', (10 * DIGIT_W, DIGIT_H), 1)
     for d in range(10):
-        off = DIGITS - LOAD + 32 * d
-        digits.paste(bitmap(b[off:off + 32], DIGIT_W, DIGIT_H), (d * DIGIT_W, 0))
-    digits.save(out / 'digits.png')
-    manifest.append(dict(name='digits', kind='sprite', what='Chain digits 0-9', width=10 * DIGIT_W,
-                         height=DIGIT_H, address=f'{DIGITS:#x}', offset=DIGITS - LOAD))
+        digits.paste(bitmap(b[off + 32 * d:off + 32 * (d + 1)], DIGIT_W, DIGIT_H), (d * DIGIT_W, 0))
     (out / 'manifest.json').write_text(json.dumps(manifest, indent=1))
 
     images += [('chain 7', chain(b, 7)), ('chain 42', chain(b, 42)), ('chain 123', chain(b, 123))]

@@ -65,8 +65,9 @@ def main(out, inbox):
 
     d = manifest['digits']
     shutil.copy(out / 'digits.png', inbox / 'ikaruga-sprite-digits.png')
-    meta = dict(title='Chain counter digits', **BASE, tags=['digits', 'sheet'], sprite=True,
-                source={'file': '/1ST_READ.BIN', 'offset': d['offset']})
+    # A font of ten 16x16 digits, stored one under the next.
+    meta = dict(title='Chain counter digits', **BASE, tags=['font', 'digits'], sprite=True,
+                glyphs={'height': 16}, source={'file': '/1ST_READ.BIN', 'offset': d['offset']})
     (inbox / 'ikaruga-sprite-digits.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1))
     written += 1
     print(written, 'pieces to import ->', inbox)

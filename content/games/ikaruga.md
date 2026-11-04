@@ -57,6 +57,9 @@ imported with, until someone measures it.
 value at `0x8C1D13E8 + 60 + 2 * VMU`) as up to three digits over its top half:
 right-aligned, hundreds at x 0, tens at x 16 and ones at x 32, all at y 0, with
 leading zeros left blank. So the background alone never shows; a chain of 0
-reads `0`. The digits are kept as one sprite, 0 to 9 left to right, stored as
-32 bytes each (2 bytes per row). `vmu.py`'s contact sheet draws a few values the
-way the game does.
+reads `0`. The digits are 32 bytes each (2 bytes per row), 0 to 9 one after
+the next, and are kept that way: one 16×160 sprite of the 320 bytes as stored,
+with `glyphs` 16 tall, so the site shows them as a font. The table is complete:
+the screen before it (`0x8C0D01B0`) ends where digit 0 starts, the CHAIN
+background follows digit 9, and the code reads only the base. `vmu.py`'s contact
+sheet draws a few values the way the game does.
