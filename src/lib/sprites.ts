@@ -82,8 +82,9 @@ function readPieces(dir: string): { pieces: Piece[]; count: number } {
 		const px = decodeFrame(s.frames[0], s.width, s.height, 1)
 		// A font: each character its own piece, as wide as the game draws it,
 		// titled with its number in the game's table (from 0). Characters drawn
-		// on a screen are left out, and so are blank ones once nothing else is
-		// left (a lone empty box isn't worth showing).
+		// on a screen are left out, and so are blank ones: spaces and the empty
+		// slots a font keeps so codes line up. The JSON keeps them all, and the
+		// gaps in the numbering show where they are.
 		if (s.glyphs) {
 			const drawnGlyphs = new Set(drawn.map(at => at.glyph))
 			const glyphs = glyphBoxes(s.glyphs, s.width, s.height)
@@ -104,8 +105,8 @@ function readPieces(dir: string): { pieces: Piece[]; count: number } {
 						pixels
 					}
 				})
-				.filter((_, i) => !drawnGlyphs.has(i))
-			return glyphs.some(g => g.pixels.includes(1)) ? glyphs : []
+				.filter((g, i) => !drawnGlyphs.has(i) && g.pixels.includes(1))
+			return glyphs
 		}
 		const whole = { title: s.title, width: s.width, height: s.height }
 		// Only tall, narrow strips; a parts sheet stays whole.

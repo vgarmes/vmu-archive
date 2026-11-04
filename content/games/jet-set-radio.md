@@ -83,6 +83,12 @@ height in its `glyphs`. `app.py` rebuilds every table from that and checks it
 against the disc byte for byte. The Sprites card shows each glyph as its own
 cell, as wide as the game draws it.
 
+50 of the 721 glyphs are blank, and the card leaves them out. Most are slots
+for characters the viewer never prints, kept so the codes line up: the narrow
+font's blanks are its space and the ASCII slots of `+ / : ; < = > ? @ [ \ ] ^`
+`` ` `` `{ | } ~` and DEL. The wide font has 26 blank, the hex digits one
+after F, and the other fonts one each.
+
 The radio's three pieces and the title font's tiles 1–12 are all drawn on the
 title screen, and their sprites say where (`drawnAt`, per tile for the font),
 so the Sprites card leaves them out: the title screen shows them. The title
