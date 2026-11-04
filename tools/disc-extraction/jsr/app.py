@@ -42,6 +42,7 @@ PLAIN_FONTS = {
 BITMAPS = {'sega': 0x3454, 'copyright': 0x33DA, 'channel': 0x1A73}
 SLICES = [0x19A3, 0x19BD, 0x19D7]  # the radio, drawn by 0x1DAD at x = 12, 20, 28
 SLICE_X = [12, 20, 28]
+TITLE_STRINGS = (0x3382, 0x3372)  # JET SET RADIO, Press A+B, under the radio
 CURSOR = (1, 0x2A)  # 0x1B75 draws font 1 glyph 0x2A at (0, 8 x choice)
 
 
@@ -88,20 +89,8 @@ class Screen:
         self.put(x, y, w, rows)
 
     def string(self, addr):
-        x, y = self.d[addr], self.d[addr + 1]
-        p = addr + 2
-        while True:
-            font, code = self.d[p], self.d[p + 1]
-            p += 2
-            if font == 0 or code in (0xFF, 0x00):
-                return
-            if code == 0xFE:
-                x, y = 0, y + 8
-            elif code == 0xFD:
-                x += 4
-            else:
-                self.glyph(font, code, x, y)
-                x += 4 if font == 1 else 8  # 0x1CEB
+        for font, code, x, y in string_layout(self.d, addr):
+            self.glyph(font, code, x, y)
 
     def hex(self):
         """Encoded like an archive frame: 1 = lit, rows top down, bit 7 leftmost."""
@@ -112,6 +101,30 @@ class Screen:
         im = Image.new('1', (48, 32), 1)
         im.putdata([0 if v else 1 for row in self.px for v in row])
         return im
+
+
+def string_layout(d, addr):
+    """Each character of the string at addr as 0x1C94 places it:
+    (font, code, x, y)."""
+    x, y = d[addr], d[addr + 1]
+    p = addr + 2
+    while True:
+        font, code = d[p], d[p + 1]
+        p += 2
+        if font == 0 or code in (0xFF, 0x00):
+            return
+        if code == 0xFE:
+            x, y = 0, y + 8
+        elif code == 0xFD:
+            x += 4
+        else:
+            yield font, code, x, y
+            x += 4 if font == 1 else 8  # 0x1CEB
+
+
+def glyph_index(font, code):
+    """The glyph's number in its font's table (0x1D4C)."""
+    return code - 0x20 if font == 1 else code
 
 
 def glyph(d, font, code):
@@ -136,7 +149,7 @@ def screens(d):
     # 0x152E: the radio (0x1DAD) over "JET SET RADIO" (0x3382) for 0x10
     # ticks, then over "Press A+B" (0x3372), until A or B.
     title = []
-    for text in (0x3382, 0x3372):
+    for text in TITLE_STRINGS:
         s = new()
         for a, x in zip(SLICES, SLICE_X):
             s.sprite(a, x, 0)
@@ -254,9 +267,15 @@ def main(src, out):
                    [('title', x, 0)])
     # Each font as stored: its glyphs' rows stacked in table order, 8 pixels
     # wide (a byte a row), with each glyph's size in `glyphs`.
+    # Where the title's strings put each tile, so the title font's tiles are
+    # known to be shown on the title screen (the radio pieces likewise above).
+    title_chars = [(font, code, x, y) for text in TITLE_STRINGS
+                   for font, code, x, y in string_layout(d, text)]
     for font, (name, base, count) in FONTS.items():
         rows, glyphs = header_font(d, base, count)
-        add_sprite(f'font-{name}', strip_image(rows), base, glyphs=glyphs)
+        drawn = [('title', x, y, glyph_index(f, c)) for f, c, x, y in title_chars
+                 if FONTS.get(f, FONTS[0xE0]) == FONTS[font]]
+        add_sprite(f'font-{name}', strip_image(rows), base, drawn, glyphs=glyphs)
     for name, (base, count, w, h) in PLAIN_FONTS.items():
         rows, glyphs = plain_font(d, base, count, w, h)
         add_sprite(f'font-{name}', strip_image(rows), base, glyphs=glyphs)

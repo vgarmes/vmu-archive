@@ -15,6 +15,10 @@ import { decodeFrame } from './pixels'
  * each sprite is in the PNG; the page arranges them itself. A font whose
  * character sizes are known (`glyphs`, see ./glyphs) becomes one cell per
  * character, in the game's order.
+ *
+ * Whatever the game draws onto a screen the archive has (`drawnAt`, for a
+ * font per character) is left out: that screen already shows it. A game whose
+ * sprites are all drawn that way gets no sheet, and no Sprites card.
  */
 
 const DIR = path.join(process.cwd(), 'content/sprites')
@@ -45,7 +49,7 @@ export interface SpriteSheet {
 	cells: SpriteCell[]
 	/** Lit pixels as 0/1, row-major, width x height. */
 	pixels: Uint8Array
-	/** Sprite files, before folding. */
+	/** Sprite files with anything shown, before folding into cells. */
 	count: number
 }
 
@@ -63,32 +67,46 @@ function readPieces(dir: string): { pieces: Piece[]; count: number } {
 		.readdirSync(dir)
 		.filter(f => f.endsWith('.json'))
 		.sort(byName.compare)
-	const pieces = files.flatMap(file => {
+	const perFile = files.map((file): Piece[] => {
 		const s = JSON.parse(fs.readFileSync(path.join(dir, file), 'utf8')) as {
 			title: string
 			width: number
 			height: number
 			frames: string[]
 			glyphs?: Glyphs
+			drawnAt?: { glyph?: number }[]
 		}
+		// Drawn onto a screen the archive has: that screen already shows it.
+		const drawn = s.drawnAt ?? []
+		if (drawn.some(at => at.glyph === undefined)) return []
 		const px = decodeFrame(s.frames[0], s.width, s.height, 1)
 		// A font: each character its own piece, as wide as the game draws it,
-		// titled with its number in the game's table (from 0).
-		if (s.glyphs)
-			return glyphBoxes(s.glyphs, s.width, s.height).map((g, i) => {
-				const pixels = new Uint8Array(g.width * g.height)
-				for (let row = 0; row < g.height; row++)
-					pixels.set(
-						px.subarray((g.y + row) * s.width, (g.y + row) * s.width + g.width),
-						row * g.width
-					)
-				return {
-					title: `${s.title}, glyph ${i}`,
-					width: g.width,
-					height: g.height,
-					pixels
-				}
-			})
+		// titled with its number in the game's table (from 0). Characters drawn
+		// on a screen are left out, and so are blank ones once nothing else is
+		// left (a lone empty box isn't worth showing).
+		if (s.glyphs) {
+			const drawnGlyphs = new Set(drawn.map(at => at.glyph))
+			const glyphs = glyphBoxes(s.glyphs, s.width, s.height)
+				.map((g, i) => {
+					const pixels = new Uint8Array(g.width * g.height)
+					for (let row = 0; row < g.height; row++)
+						pixels.set(
+							px.subarray(
+								(g.y + row) * s.width,
+								(g.y + row) * s.width + g.width
+							),
+							row * g.width
+						)
+					return {
+						title: `${s.title}, glyph ${i}`,
+						width: g.width,
+						height: g.height,
+						pixels
+					}
+				})
+				.filter((_, i) => !drawnGlyphs.has(i))
+			return glyphs.some(g => g.pixels.includes(1)) ? glyphs : []
+		}
 		const whole = { title: s.title, width: s.width, height: s.height }
 		// Only tall, narrow strips; a parts sheet stays whole.
 		if (s.height <= FOLD_HEIGHT || s.height < 4 * s.width)
@@ -104,9 +122,11 @@ function readPieces(dir: string): { pieces: Piece[]; count: number } {
 		}
 		return parts
 	})
+	const pieces = perFile.flat()
 	// Stable: file order stays within a height.
 	pieces.sort((a, b) => b.height - a.height)
-	return { pieces, count: files.length }
+	// Sprites with something still shown.
+	return { pieces, count: perFile.filter(p => p.length).length }
 }
 
 function pack(pieces: Piece[], count: number): SpriteSheet {

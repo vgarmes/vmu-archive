@@ -38,7 +38,9 @@
  * from, `"source": { "file": "/LCDIMG.BIN", "entry": 11 }`, and where the game
  * draws it, `"drawnAt": [{ "screen": "<icon id>", "x": 30, "y": 2 }]`. A font
  * is one sprite, its characters stacked in the game's order, with their sizes
- * in `"glyphs": { "height": 8, "width": 4 }` (see src/lib/glyphs.ts).
+ * in `"glyphs": { "height": 8, "width": 4 }` (see src/lib/glyphs.ts); its
+ * `"drawnAt"` entries name the character with `"glyph"`. The Sprites card
+ * leaves out whatever is drawn on a screen, since the screen shows it.
  */
 import { createHash } from 'node:crypto'
 import fs from 'node:fs'

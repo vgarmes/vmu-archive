@@ -112,7 +112,10 @@ def main(game_out, app_out, inbox):
         meta = dict(title=f'{VIEWER}: {title}', **BASE, tags=['graffiti-viewer'] + tags, sprite=True,
                     source=dict(file=APP_FILE, entry=app['member'], offset=app['member_offset'] + s['offset']))
         if s['drawn_at']:
-            meta['drawnAt'] = [dict(screen=screen_id(n), x=x, y=y) for n, x, y in s['drawn_at']]
+            # (screen, x, y), or (screen, x, y, glyph) for a font's character.
+            meta['drawnAt'] = [dict(screen=screen_id(at[0]), x=at[1], y=at[2],
+                                    **({'glyph': at[3]} if len(at) > 3 else {}))
+                               for at in s['drawn_at']]
         if s.get('glyphs'):
             meta['glyphs'] = s['glyphs']
         write(inbox, f'jsr-2-app-sprite-{s["name"]}', Image.open(app_out / 'sprites' / f'{s["name"]}.png'), meta)

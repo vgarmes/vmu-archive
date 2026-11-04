@@ -11,7 +11,7 @@
  */
 import { createHash } from 'node:crypto'
 import path from 'node:path'
-import { type Glyphs, glyphProblems } from '../src/lib/glyphs.ts'
+import { type Glyphs, glyphBoxes, glyphProblems } from '../src/lib/glyphs.ts'
 import { frameHexLength } from '../src/lib/pixels.ts'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
@@ -48,9 +48,11 @@ export interface Sprite {
 	}
 	/**
 	 * Where the game draws it, when that was read from the code: the archive
-	 * screen it goes on and its top-left corner there.
+	 * screen it goes on and its top-left corner there. For a font, `glyph`
+	 * names the character (from 0) drawn there. The Sprites card leaves out
+	 * whatever is drawn on a screen, as the screen already shows it.
 	 */
-	drawnAt?: { screen: string; x: number; y: number }[]
+	drawnAt?: { screen: string; x: number; y: number; glyph?: number }[]
 	tags: string[]
 	/** Content hash of the pixels; the importer uses it to skip duplicates. */
 	hash: string
@@ -94,14 +96,32 @@ export function spriteProblems(s: Sprite, screens: Set<string>): string[] {
 		out.push(...glyphProblems(s.glyphs, s.width, s.height))
 	if (s.source && typeof s.source.file !== 'string')
 		out.push('"source" needs a "file"')
+	const boxes =
+		s.glyphs && glyphProblems(s.glyphs, s.width, s.height).length === 0
+			? glyphBoxes(s.glyphs, s.width, s.height)
+			: null
 	for (const at of s.drawnAt ?? []) {
 		if (!screens.has(at.screen))
 			out.push(`"drawnAt": no screen ${at.screen} in content/icons/`)
+		let { width, height } = s
+		if (at.glyph !== undefined) {
+			if (!boxes) {
+				out.push('"drawnAt" names a glyph, but the sprite has no "glyphs"')
+				continue
+			}
+			if (!isInt(at.glyph, 0) || at.glyph >= boxes.length) {
+				out.push(
+					`"drawnAt" glyph ${at.glyph} is not one of 0-${boxes.length - 1}`
+				)
+				continue
+			}
+			;({ width, height } = boxes[at.glyph])
+		}
 		if (
 			!isInt(at.x, 0) ||
 			!isInt(at.y, 0) ||
-			at.x + s.width > SCREEN_W ||
-			at.y + s.height > SCREEN_H
+			at.x + width > SCREEN_W ||
+			at.y + height > SCREEN_H
 		)
 			out.push(
 				`"drawnAt" ${at.screen} (${at.x}, ${at.y}) puts it off the 48x32 screen`

@@ -32,6 +32,80 @@
 		"entry": 0,
 		"offset": 530929
 	},
+	"drawnAt": [
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 0,
+			"y": 24,
+			"glyph": 1
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 8,
+			"y": 24,
+			"glyph": 2
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 16,
+			"y": 24,
+			"glyph": 3
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 24,
+			"y": 24,
+			"glyph": 4
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 32,
+			"y": 24,
+			"glyph": 5
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 40,
+			"y": 24,
+			"glyph": 6
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 0,
+			"y": 24,
+			"glyph": 7
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 8,
+			"y": 24,
+			"glyph": 8
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 16,
+			"y": 24,
+			"glyph": 9
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 24,
+			"y": 24,
+			"glyph": 10
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 32,
+			"y": 24,
+			"glyph": 11
+		},
+		{
+			"screen": "jet-set-radio-graffiti-viewer-title",
+			"x": 40,
+			"y": 24,
+			"glyph": 12
+		}
+	],
 	"tags": [
 		"graffiti-viewer",
 		"font"

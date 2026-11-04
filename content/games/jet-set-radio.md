@@ -54,7 +54,8 @@ It draws four ways:
   the SEGA logo (48×20, at `0x33DA` and `0x3454`).
 - `0x0C38`: a sprite up to 8 pixels wide: width, height, a byte a row. It
   replaces the pixels in its box. The radio is three of them (`0x19A3`,
-  `0x19BD`, `0x19D7`).
+  `0x19BD`, `0x19D7`), the game's first radio pose (in `1ST_READ.BIN`) stored a
+  second time, cut into 8-pixel columns for this drawer.
 - `0x1C94`: a string, an x and y, then two bytes a character: a font and a
   glyph. `FE FE` starts a new line 8 pixels down, `FD` adds a 4-pixel space,
   and `FF FF` ends it. The strings are at `0x32CA`–`0x34FF`.
@@ -81,6 +82,11 @@ glyph in table order, a byte (8 pixels) wide, with each glyph's width and
 height in its `glyphs`. `app.py` rebuilds every table from that and checks it
 against the disc byte for byte. The Sprites card shows each glyph as its own
 cell, as wide as the game draws it.
+
+The radio's three pieces and the title font's tiles 1–12 are all drawn on the
+title screen, and their sprites say where (`drawnAt`, per tile for the font),
+so the Sprites card leaves them out: the title screen shows them. The title
+font's glyph 0, a blank 4×8, is drawn nowhere.
 
 ### The screens
 
