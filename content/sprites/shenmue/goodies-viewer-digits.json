@@ -1,0 +1,25 @@
+{
+	"title": "Goodies viewer digits",
+	"game": "Shenmue",
+	"publisher": "Sega",
+	"year": 1999,
+	"region": "JP",
+	"width": 8,
+	"height": 88,
+	"bpp": 1,
+	"frames": [
+		"90d0b09038283800708898a8c88870002060202020207000708808102040f800f81020100888700010305090f8101000f880f00808887000304080f088887000f80810204040400070888870888870007088887808087000"
+	],
+	"glyphs": {
+		"height": 8
+	},
+	"source": {
+		"file": "/PASSPORT/ATU/SYEN.BIN",
+		"offset": 17280
+	},
+	"tags": [
+		"font"
+	],
+	"hash": "c5f027121b9b9c5a59cb0f61345579db779313b9",
+	"added": "2026-11-04"
+}

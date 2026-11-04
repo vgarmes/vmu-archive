@@ -103,11 +103,25 @@ from `0x5445`, read by `tools/disc-extraction/shenmue/passport.py`:
 So the four built-in characters are confirmed from the disc, pixel for pixel.
 Which screen the viewer shows when wasn't traced.
 
-From `0x4380` to `0x4c80` is the viewer's font: one byte per row, 8 pixels wide,
-digits, Latin letters, half-width katakana and symbols, plus a bold set that
-spells SEGA. Its glyphs aren't all the same height, and where each starts
-wasn't decoded, so it's kept as stored: one 8-pixel-wide sprite, "Goodies viewer
-font". The dither patterns and frame pieces after it aren't kept yet.
+Before the screens are the viewer's two fonts, one byte per row, 8 pixels wide.
+The code reaches each glyph through a table of big-endian pointers: `0x0EE6`
+looks a code up, and `0x26D0` draws 8 rows from where it points, in 8×8 blocks.
+
+- `0x4380`–`0x43D7`, "Goodies viewer digits": № and 0–9, 11 glyphs of 8 bytes.
+  № is drawn straight from `0x4380` (`0x1A72`), the digits through a table of
+  10 pointers at `0x2874`.
+- `0x43D8`–`0x4CD7`, "Goodies viewer font": 256 glyphs of 9 bytes, through a
+  table of 256 pointers at `0x4CD8`–`0x4ED7`, each 9 bytes after the last.
+  Digits, Latin letters, half-width katakana and symbols, plus a bold set that
+  spells SEGA. The drawer takes 8 rows of each; the 9th byte is never drawn and
+  is 0 in every glyph, so the sprite keeps the 8 drawn rows. The 8th row is
+  blank in every glyph too: the gap between lines.
+
+`passport.py` checks every pointer in both tables and every 9th byte before
+writing them. An earlier import kept `0x4380`–`0x4C80` as one strip, which
+mixed the digits into the font, cut off its last 10 glyphs, and couldn't be
+split into characters, since the 9-byte spacing wasn't known. What comes after
+the pointer table isn't kept yet.
 
 `/PASSPORT/ATU/039.VM` and `040.VM` are two Goodies handed out at the autumn
 1999 Tokyo Game Show (their description reads あつめてシェンムー '99 AUTUMN

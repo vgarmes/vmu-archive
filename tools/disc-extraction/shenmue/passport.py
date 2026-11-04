@@ -12,11 +12,18 @@ each (6 bytes a row, high bit first, 1 = lit), back to back:
     0x5685  the four built-in characters: portraits, then three poses each
             (already in the archive from the Goodies import)
 
-Before them, from 0x4380 to 0x4c80, is the viewer's font: one byte per row,
-8 pixels wide, glyphs of more than one height. It's kept as stored, as one
-8-pixel-wide strip, since where each glyph starts wasn't decoded.
+Before them are the viewer's two fonts, a byte a row, 8 pixels wide, each
+reached through a table of big-endian pointers that 0x0EE6 looks up and
+0x26D0 draws 8 rows from:
 
-Writes the three screens and the font strip (as a sprite).
+    0x4380  digits: № then 0-9, 11 glyphs of 8 bytes. № is drawn straight
+            from 0x4380, the digits through the table at 0x2874.
+    0x43D8  the font: 256 glyphs of 9 bytes, through the table at 0x4CD8.
+            The drawer takes 8 rows; the 9th byte is never drawn, and it's
+            0 in every glyph.
+
+Writes the three screens and the two fonts (as sprites), each glyph's 8
+drawn rows in table order, after checking every pointer and every 9th byte.
 """
 import json
 import shutil
@@ -33,7 +40,8 @@ SCREENS = [
     (0x5505, 'dreamcast-logo', 'Goodies Dreamcast logo', ['logo']),
     (0x55c5, 'title', 'Goodies title', ['logo']),
 ]
-FONT = (0x4380, 0x4C80)
+DIGITS, DIGIT_TABLE = 0x4380, 0x2874  # № at DIGITS, then 0-9 through the table
+FONT, FONT_TABLE, FONT_COUNT, FONT_STRIDE = 0x43D8, 0x4CD8, 256, 9
 CHARACTERS = 0x5685  # first of the four built-in characters' pictures
 
 
@@ -58,12 +66,43 @@ def main(src, inbox):
         bitmap(data, offset, 48, 32).save(inbox / f'passport-{stem}.png')
         (inbox / f'passport-{stem}.json').write_text(
             json.dumps(dict(title=title, **BASE, tags=tags), ensure_ascii=False, indent=1))
-    start, end = FONT
-    bitmap(data, start, 8, end - start).save(inbox / 'passport-sprite-font.png')
-    (inbox / 'passport-sprite-font.json').write_text(json.dumps(
-        dict(title='Goodies viewer font', **BASE, tags=['font', 'sheet'], sprite=True,
-             source={'file': SOURCE, 'offset': start}), ensure_ascii=False, indent=1))
-    print(len(SCREENS), 'screens and the font ->', inbox)
+    for stem, title, offset, rows in (('digits', 'Goodies viewer digits', DIGITS, digit_rows(data)),
+                                      ('font', 'Goodies viewer font', FONT, font_rows(data))):
+        bitmap(rows, 0, 8, len(rows)).save(inbox / f'passport-sprite-{stem}.png')
+        (inbox / f'passport-sprite-{stem}.json').write_text(json.dumps(
+            dict(title=title, **BASE, tags=['font'], sprite=True, glyphs={'height': 8},
+                 source={'file': SOURCE, 'offset': offset}), ensure_ascii=False, indent=1))
+    print(len(SCREENS), 'screens and the two fonts ->', inbox)
+
+
+def pointer(data, table, n):
+    return data[table + 2 * n] << 8 | data[table + 2 * n + 1]
+
+
+def digit_rows(data):
+    """№ and 0-9, 8 rows each, as the digit table lays them out."""
+    for n in range(10):
+        if pointer(data, DIGIT_TABLE, n) != DIGITS + 8 * (n + 1):
+            sys.exit(f'digit table entry {n} does not point at digit {n}')
+    if pointer(data, DIGIT_TABLE, 10) != 0xFFFF:
+        sys.exit('the digit table has more than 10 entries')
+    return data[DIGITS:DIGITS + 8 * 11]
+
+
+def font_rows(data):
+    """The 8 rows 0x26D0 draws of each glyph, in table order. The 9th byte of
+    each record must be 0, so leaving it out loses nothing."""
+    rows = b''
+    for n in range(FONT_COUNT):
+        at = pointer(data, FONT_TABLE, n)
+        if at != FONT + FONT_STRIDE * n:
+            sys.exit(f'font table entry {n} points at {at:#x}, not {FONT + FONT_STRIDE * n:#x}')
+        if data[at + 8]:
+            sys.exit(f'glyph {n}: its 9th byte is {data[at + 8]:#04x}, not 0')
+        rows += data[at:at + 8]
+    if FONT + FONT_STRIDE * FONT_COUNT != FONT_TABLE:
+        sys.exit('the font does not end where its table starts')
+    return rows
 
 
 if __name__ == '__main__':
