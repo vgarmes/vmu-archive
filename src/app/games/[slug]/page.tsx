@@ -2,7 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import IconGrid from '@/components/IconGrid'
-import SpriteSheet from '@/components/SpriteSheet'
+import SpriteSheet, { FontSheet } from '@/components/SpriteSheet'
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -68,7 +68,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 
 			<IconGrid icons={icons.map(toIndexEntry)} />
 
-			{sheet && (
+			{sheet && sheet.cells.length > 0 && (
 				<SpriteSheet
 					gameSlug={game.slug}
 					sheet={{
@@ -76,6 +76,17 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 						height: sheet.height,
 						cells: sheet.cells,
 						count: sheet.count
+					}}
+				/>
+			)}
+
+			{sheet && sheet.fonts.length > 0 && (
+				<FontSheet
+					gameSlug={game.slug}
+					sheet={{
+						width: sheet.width,
+						height: sheet.height,
+						fonts: sheet.fonts
 					}}
 				/>
 			)}
