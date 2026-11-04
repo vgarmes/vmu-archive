@@ -165,7 +165,9 @@ function useIsDesktop() {
 function useThumbnailArt(entry: IndexEntry): Loaded | null {
 	const { id, frameDelayMs, frameDelaysMs } = entry
 	const stripWidth = entry.scroll?.width
+	const stripHeight = entry.scroll?.height ?? 32
 	const stepPx = entry.scroll?.stepPx
+	const direction = entry.scroll?.direction
 	const [read, setRead] = useState<({ id: string } & Loaded) | null>(null)
 	useEffect(() => {
 		const cached = artCache.get(id)
@@ -176,12 +178,12 @@ function useThumbnailArt(entry: IndexEntry): Loaded | null {
 			if (stripWidth && stepPx) {
 				const canvas = document.createElement('canvas')
 				canvas.width = stripWidth
-				canvas.height = 32
+				canvas.height = stripHeight
 				const ctx = canvas.getContext('2d')!
 				ctx.drawImage(img, 0, 0)
-				const { data } = ctx.getImageData(0, 0, stripWidth, 32)
+				const { data } = ctx.getImageData(0, 0, stripWidth, stripHeight)
 				const hex = encodeFrame(
-					Array.from({ length: stripWidth * 32 }, (_, i) =>
+					Array.from({ length: stripWidth * stripHeight }, (_, i) =>
 						data[i * 4 + 3] >= 128 ? 1 : 0
 					),
 					1
@@ -193,14 +195,26 @@ function useThumbnailArt(entry: IndexEntry): Loaded | null {
 						height: 32,
 						bpp: 1,
 						frames: scrollFrames(
-							{ width: stripWidth, strip: hex, stepPx, delayMs },
+							{
+								width: stripWidth,
+								height: stripHeight,
+								strip: hex,
+								stepPx,
+								delayMs,
+								direction
+							},
 							48,
 							32,
 							1
 						),
 						frameDelayMs: delayMs
 					},
-					strip: { width: stripWidth, height: 32, bpp: 1, frames: [hex] }
+					strip: {
+						width: stripWidth,
+						height: stripHeight,
+						bpp: 1,
+						frames: [hex]
+					}
 				}
 				artCache.set(id, loaded)
 				if (!cancelled) setRead({ id, ...loaded })
@@ -238,7 +252,15 @@ function useThumbnailArt(entry: IndexEntry): Loaded | null {
 		return () => {
 			cancelled = true
 		}
-	}, [id, frameDelayMs, frameDelaysMs, stripWidth, stepPx])
+	}, [
+		id,
+		frameDelayMs,
+		frameDelaysMs,
+		stripWidth,
+		stripHeight,
+		stepPx,
+		direction
+	])
 	return read && read.id === id ? read : null
 }
 

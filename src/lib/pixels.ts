@@ -101,24 +101,45 @@ export const frameDelays = (art: {
 	)
 
 /**
- * A wide image the VMU shows through a moving 48-pixel window, the way some
- * games scroll banners across the screen: stored once, cut into frames on load.
+ * An image larger than the screen that the VMU shows through a moving window,
+ * the way some games scroll banners across the screen or a course down it:
+ * stored once, cut into frames on load.
  */
 export interface Scroll {
-	/** Width of the strip; its height is the screen's. */
+	/** Width of the strip; for a sideways scroll its height is the screen's. */
 	width: number
+	/** Only on a "down" scroll: the strip's height (it's the screen's width wide). */
+	height?: number
 	/** The strip, encoded like a frame (row-major, padded to whole bytes). */
 	strip: string
 	/** Pixels the window moves each update. */
 	stepPx: number
 	/** Time between updates. */
 	delayMs: number
+	/**
+	 * Which way the art moves. "left" (the default): it enters from the right
+	 * edge. "down": it enters from the top edge, as the window climbs the strip
+	 * from its bottom, the way a vertical scroller's course moves.
+	 */
+	direction?: 'left' | 'down'
 }
 
+/** The strip's size: as wide as the art and screen-tall, or the reverse. */
+export const scrollStripSize = (
+	scroll: Pick<Scroll, 'width' | 'height' | 'direction'>,
+	screenWidth: number,
+	screenHeight: number
+) =>
+	scroll.direction === 'down'
+		? { width: screenWidth, height: scroll.height ?? screenHeight }
+		: { width: scroll.width, height: screenHeight }
+
 /**
- * The frames of a scroll: the strip enters from the right edge and leaves past
- * the left one, so the first frame is blank and the last shows its final
- * column. Looping returns to the blank frame, as if the strip ran again.
+ * The frames of a scroll. Sideways, the strip enters from the right edge and
+ * leaves past the left one; down, its bottom row enters from the top edge and
+ * its top row leaves past the bottom. Either way the first frame is blank and
+ * the last shows the strip's far end; looping returns to the blank frame, as
+ * if the strip ran again.
  */
 export function scrollFrames(
 	scroll: Scroll,
@@ -126,15 +147,25 @@ export function scrollFrames(
 	height: number,
 	bpp: Bpp
 ): string[] {
-	const strip = decodeFrame(scroll.strip, scroll.width, height, bpp)
+	const size = scrollStripSize(scroll, screenWidth, height)
+	const strip = decodeFrame(scroll.strip, size.width, size.height, bpp)
 	const frames: string[] = []
-	for (let x = -screenWidth; x < scroll.width; x += scroll.stepPx) {
+	// The window's top-left corner in the strip, one position per frame.
+	const positions: [number, number][] = []
+	if (scroll.direction === 'down')
+		for (let y = size.height; y > -height; y -= scroll.stepPx)
+			positions.push([0, y])
+	else
+		for (let x = -screenWidth; x < size.width; x += scroll.stepPx)
+			positions.push([x, 0])
+	for (const [x, top] of positions) {
 		const px = new Uint8Array(screenWidth * height)
 		for (let y = 0; y < height; y++)
 			for (let c = 0; c < screenWidth; c++) {
 				const sx = x + c
-				if (sx >= 0 && sx < scroll.width)
-					px[y * screenWidth + c] = strip[y * scroll.width + sx]
+				const sy = top + y
+				if (sx >= 0 && sx < size.width && sy >= 0 && sy < size.height)
+					px[y * screenWidth + c] = strip[sy * size.width + sx]
 			}
 		frames.push(encodeFrame(px, bpp))
 	}
@@ -162,9 +193,18 @@ export function gifFrames(art: PixelArt, scroll: boolean): PixelArt {
 	}
 }
 
-/** The frame a scroll rests on in the grid: the strip's start at the left edge. */
-export const scrollPosterFrame = (scroll: Scroll, screenWidth: number) =>
-	Math.ceil(screenWidth / scroll.stepPx)
+/**
+ * The frame a scroll rests on in the grid: the strip's start filling the
+ * screen (its left end sideways, its bottom end for a "down" scroll).
+ */
+export const scrollPosterFrame = (
+	scroll: Scroll,
+	screenWidth: number,
+	screenHeight: number
+) =>
+	Math.ceil(
+		(scroll.direction === 'down' ? screenHeight : screenWidth) / scroll.stepPx
+	)
 
 /**
  * Transparent rows between the frames of a thumbnail strip. Scaled up by a
@@ -183,16 +223,18 @@ export const stripPosition = (frames: number, frame = 0) =>
 
 /**
  * Where a thumbnail rests: an animation's poster frame on its vertical strip,
- * or a scroll's left end (its thumbnail is the strip itself, which is the
- * scroll's poster frame: the strip starting at the screen's left edge).
+ * or a scroll's start (its thumbnail is the strip itself, so the scroll's
+ * poster frame is its left end, or its bottom end for a "down" scroll).
  */
 export const thumbPosition = (entry: {
 	frames?: number
 	posterFrame?: number
-	scroll?: unknown
+	scroll?: { direction?: Scroll['direction'] }
 }): string | undefined =>
 	entry.scroll
-		? '0% 50%'
+		? entry.scroll.direction === 'down'
+			? '50% 100%'
+			: '0% 50%'
 		: entry.frames && entry.posterFrame
 			? stripPosition(entry.frames, entry.posterFrame)
 			: undefined

@@ -2,7 +2,12 @@ import 'server-only'
 import fs from 'node:fs'
 import path from 'node:path'
 import { z } from 'zod'
-import { frameHexLength, scrollFrames, scrollPosterFrame } from './pixels'
+import {
+	frameHexLength,
+	scrollFrames,
+	scrollPosterFrame,
+	scrollStripSize
+} from './pixels'
 
 /**
  * One JSON file per VMU screen in content/icons/, written by
@@ -17,16 +22,30 @@ const DIR = path.join(process.cwd(), 'content/icons')
 
 const hex = z.string().regex(/^[0-9a-f]+$/)
 
-const scrollSchema = z.object({
-	/** Width of the strip, wider than the screen; its height is the screen's. */
-	width: z.number().int().min(48),
-	/** The strip, encoded like a frame. */
-	strip: hex,
-	/** Pixels the window moves each update. */
-	stepPx: z.number().int().positive(),
-	/** Time between updates. */
-	delayMs: z.number().int().positive()
-})
+const scrollSchema = z
+	.object({
+		/**
+		 * Width of the strip, wider than the screen; its height is the screen's.
+		 * A "down" scroll is the screen's width (48) and sets `height` instead.
+		 */
+		width: z.number().int().min(48),
+		/** Only on a "down" scroll: the strip's height, taller than the screen. */
+		height: z.number().int().min(32).optional(),
+		/** The strip, encoded like a frame. */
+		strip: hex,
+		/** Pixels the window moves each update. */
+		stepPx: z.number().int().positive(),
+		/** Time between updates. */
+		delayMs: z.number().int().positive(),
+		/** Which way the art moves; see `Scroll` in src/lib/pixels.ts. */
+		direction: z.enum(['left', 'down']).optional()
+	})
+	.refine(s => (s.direction === 'down') === (s.height !== undefined), {
+		message: 'a "down" scroll sets height; a sideways one does not'
+	})
+	.refine(s => s.direction !== 'down' || s.width === 48, {
+		message: 'a "down" scroll is the screen\'s width, 48'
+	})
 
 const schema = z
 	.object({
@@ -61,9 +80,13 @@ const schema = z
 		message: 'set frames or scroll, not both'
 	})
 	.refine(
-		a =>
-			!a.scroll ||
-			a.scroll.strip.length === frameHexLength(a.scroll.width, a.height, a.bpp),
+		a => {
+			if (!a.scroll) return true
+			const size = scrollStripSize(a.scroll, a.width, a.height)
+			return (
+				a.scroll.strip.length === frameHexLength(size.width, size.height, a.bpp)
+			)
+		},
 		{ message: 'scroll strip length does not match its width x height x bpp' }
 	)
 	.refine(a => !(a.scroll && (a.frameDelayMs || a.frameDelaysMs)), {
@@ -75,7 +98,8 @@ const schema = z
 			? {
 					frames: scrollFrames(a.scroll, a.width, a.height, a.bpp),
 					frameDelayMs: a.scroll.delayMs,
-					posterFrame: a.posterFrame ?? scrollPosterFrame(a.scroll, a.width)
+					posterFrame:
+						a.posterFrame ?? scrollPosterFrame(a.scroll, a.width, a.height)
 				}
 			: { frames: frames as string[] })
 	}))
@@ -122,8 +146,16 @@ export interface IndexEntry {
 	frameDelaysMs?: number[]
 	/** Only on animations: the frame shown at rest, when not the first. */
 	posterFrame?: number
-	/** Only on scrolls: the thumbnail is the strip, cut into frames in the browser. */
-	scroll?: { width: number; stepPx: number }
+	/**
+	 * Only on scrolls: the thumbnail is the strip (width x height), cut into
+	 * frames in the browser. `direction` only when it isn't sideways.
+	 */
+	scroll?: {
+		width: number
+		height: number
+		stepPx: number
+		direction?: 'down'
+	}
 }
 
 let cache: Icon[] | undefined
@@ -177,6 +209,10 @@ export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 		posterFrame: data.posterFrame
 	}),
 	...(data.scroll && {
-		scroll: { width: data.scroll.width, stepPx: data.scroll.stepPx }
+		scroll: {
+			...scrollStripSize(data.scroll, data.width, data.height),
+			stepPx: data.scroll.stepPx,
+			...(data.scroll.direction === 'down' && { direction: 'down' as const })
+		}
 	})
 })

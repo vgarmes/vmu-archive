@@ -6,6 +6,7 @@ import {
 	decodeFrame,
 	frameDelays,
 	gifFrames,
+	scrollStripSize,
 	STRIP_GAP,
 	toRgba,
 	type PixelArt
@@ -18,8 +19,8 @@ import {
  * - /thumbs/<id>.png: the icon, or for an animation a vertical strip of its
  *   frames (48x32 each, with STRIP_GAP transparent rows between them). The
  *   grid shows it cropped to the poster frame; the drawer reads it back. For a
- *   scroll it's the stored strip itself: the grid shows its left end, and the
- *   drawer cuts the frames from it.
+ *   scroll it's the stored strip itself: the grid shows its start (left end,
+ *   or bottom end for a "down" scroll), and the drawer cuts the frames from it.
  * - /thumbs/<id>.gif: animations only, played in the grid on hover. Every
  *   frame is the whole image, so it can be scaled to any size without art
  *   that stays put between frames shifting by a pixel (stepping through the
@@ -51,7 +52,7 @@ export async function GET(
 	if (data.scroll) {
 		const strip = {
 			...data,
-			width: data.scroll.width,
+			...scrollStripSize(data.scroll, data.width, data.height),
 			frames: [data.scroll.strip]
 		}
 		const png = new PNG({ width: strip.width, height: strip.height })

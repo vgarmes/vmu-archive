@@ -27,6 +27,9 @@
  * `"scroll": { "stepPx": 1, "delayMs": 17 }` in its sidecar (how far the
  * window moves per update, and how often). It's stored once and cut into
  * frames when the site loads it; see `scrollFrames` in src/lib/pixels.ts.
+ * Art that moves down the screen instead (a vertical scroller's course) is a
+ * .png 48 pixels wide and as tall as the art, with `"direction": "down"` added
+ * to its "scroll": the window climbs it from the bottom.
  *
  * A sprite — art the game draws onto part of a screen, like the digits of a
  * counter — is imported at its own size with `"sprite": true` in its sidecar.
@@ -72,7 +75,7 @@ interface Meta {
 	/** Id of an existing entry to replace (e.g. to add animation frames). */
 	replaces?: string
 	/** The art is a strip the window scrolls through, not stacked frames. */
-	scroll?: { stepPx: number; delayMs: number }
+	scroll?: { stepPx: number; delayMs: number; direction?: 'left' | 'down' }
 	/** Art drawn onto part of a screen, kept at its own size in content/sprites/. */
 	sprite?: boolean
 	/** Sprites only: where on the disc it came from. */
@@ -106,21 +109,31 @@ function readPng(buf: Buffer): number[][] {
 	return frames
 }
 
-/** A strip for a scroll: 32 tall, at least a screen wide, encoded like a frame. */
-function readStrip(buf: Buffer): { width: number; strip: string } {
+/**
+ * A strip for a scroll, encoded like a frame: 32 tall and at least a screen
+ * wide, or for a "down" scroll 48 wide and at least a screen tall.
+ */
+function readStrip(
+	buf: Buffer,
+	down: boolean
+): { width: number; height: number; strip: string } {
 	const img = pngjs.PNG.sync.read(buf)
-	if (img.height !== H || img.width < W)
+	if (
+		down ? img.width !== W || img.height < H : img.height !== H || img.width < W
+	)
 		throw new Error(
-			`is ${img.width}x${img.height}; a scroll strip is ${H} tall and at least ${W} wide`
+			down
+				? `is ${img.width}x${img.height}; a "down" scroll strip is ${W} wide and at least ${H} tall`
+				: `is ${img.width}x${img.height}; a scroll strip is ${H} tall and at least ${W} wide`
 		)
 	const bits: number[] = []
-	for (let y = 0; y < H; y++)
+	for (let y = 0; y < img.height; y++)
 		for (let x = 0; x < img.width; x++) {
 			const i = (y * img.width + x) * 4
 			const [r, g, b, a] = img.data.subarray(i, i + 4)
 			bits.push(a >= 128 && 0.299 * r + 0.587 * g + 0.114 * b < 128 ? 1 : 0)
 		}
-	return { width: img.width, strip: encodeFrame(bits, 1) }
+	return { width: img.width, height: img.height, strip: encodeFrame(bits, 1) }
 }
 
 /** One frame at the PNG's own size, for a sprite. */
@@ -358,14 +371,29 @@ function main() {
 			}
 
 			if (meta.scroll) {
-				const { stepPx, delayMs } = meta.scroll
+				const { stepPx, delayMs, direction } = meta.scroll
 				if (![stepPx, delayMs].every(v => Number.isInteger(v) && v > 0))
 					throw new Error('"scroll" needs whole, positive stepPx and delayMs')
+				if (
+					direction !== undefined &&
+					direction !== 'left' &&
+					direction !== 'down'
+				)
+					throw new Error(
+						'"scroll.direction" is "left" (the default) or "down"'
+					)
 				if (meta.frameDelayMs !== undefined || meta.frameDelaysMs !== undefined)
 					throw new Error('a scroll times itself with scroll.delayMs')
-				const { width, strip } = readStrip(fs.readFileSync(file))
+				const down = direction === 'down'
+				const { width, height, strip } = readStrip(fs.readFileSync(file), down)
+				// Sideways strips keep the hash they always had.
 				const hash = createHash('sha1')
-					.update(['scroll', width, H, 1, stepPx, strip].join('|'))
+					.update(
+						(down
+							? ['scroll', 'down', width, height, 1, stepPx, strip]
+							: ['scroll', width, H, 1, stepPx, strip]
+						).join('|')
+					)
 					.digest('hex')
 				const dupe = hashes.get(hash)
 				if (dupe && dupe !== `${meta.replaces}.json`) {
@@ -387,7 +415,9 @@ function main() {
 					width: W,
 					height: H,
 					bpp: 1,
-					scroll: { width, stepPx, delayMs, strip },
+					scroll: down
+						? { width, height, direction, stepPx, delayMs, strip }
+						: { width, stepPx, delayMs, strip },
 					posterFrame: meta.posterFrame,
 					tags: pick('tags') ?? [],
 					unused: pick('unused') || undefined,
@@ -400,9 +430,11 @@ function main() {
 						JSON.stringify(entry, null, '\t') + '\n'
 					)
 				hashes.set(hash, `${id}.json`)
-				const frames = Math.ceil((width + W) / stepPx)
+				const frames = Math.ceil(
+					down ? (height + H) / stepPx : (width + W) / stepPx
+				)
 				console.log(
-					`  ${meta.replaces ? 'update' : 'add  '} ${label} → ${id}.json (scroll, ${width}px strip, ${frames} frames)`
+					`  ${meta.replaces ? 'update' : 'add  '} ${label} → ${id}.json (scroll${down ? ' down' : ''}, ${down ? height : width}px strip, ${frames} frames)`
 				)
 				if (meta.replaces) updated++
 				else added++

@@ -77,6 +77,11 @@ entering from the right edge and leaving past the left one, and rests on the
 frame where the strip starts. Downloads give the strip itself (or the
 animation, as a GIF or an animated SVG), never its frames one by one.
 
+Art that moves down the screen instead, like the course of Power Stone Mini's
+Falcon game, is a strip 48 pixels wide and as tall as the art, with
+`"direction": "down"` in its `scroll`. The window climbs it from the bottom: the
+art enters from the top edge, and the entry rests on the strip's bottom screen.
+
 ### Animations and fixing existing art
 
 To change a piece that's already in the archive (swap one made from a
