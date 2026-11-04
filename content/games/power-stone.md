@@ -5,8 +5,9 @@ Scripts: `tools/disc-extraction/power-stone/` (release `ps1`), shared with
 
 Dump: `Power Stone v1.020 (1999)(Capcom)(JP)[!][1MB1]` (`.gdi`).
 
-The name and logo are the same in every release, so nothing from this disc gets
-a region.
+The name and logo are the same in every release, so the game's own screens get
+no region. Power Stone Mini's screens with Japanese text get `JP` (see
+[Power Stone Mini](#power-stone-mini)).
 
 ## What's on the disc
 
@@ -30,3 +31,100 @@ The archive's Power Stone title came from a screenshot, through an older version
 of the importer that read a screenshot's majority colour as unlit. It got this
 one right: the disc stores the title inverted, and the game inverts it again
 before sending it, so the entry matches the disc exactly.
+
+## Power Stone Mini
+
+Power Stone carries a whole VMU game, パワーストーン ミニ (Power Stone Mini),
+for the player to download to a VMU: Falcon's Aerial Adventure, Ayame's
+Shuriken Training and Gunrock's Gun-Gun Slots. Its reward screens announce the
+art museum and music hall opening in the main game's Omake mode. It has no file of its own: it's a
+64 KiB VMS image inside `1ST_READ.BIN`, at offset `0x15BB98`, found by its
+header (the description at `+0x200` is `ﾊﾟﾜｰｽﾄｰﾝﾐﾆ`). Its code runs to
+`0x7FD0`; the art fills `0x7FDB`–`0xE363`, and a table (likely the Falcon
+course's layout) runs on to `0xEA70`. Addresses here are offsets into that
+image.
+
+Extracted by `tools/disc-extraction/power-stone/mini.py` from the Redump dump
+`Power Stone (Japan)`, the same build as v1.020: the title and ACCESS screens
+above sit at the same offsets.
+
+**Format.** Plain 1 bit per dot, high bit first, upright, whole bytes per row.
+The program reads it with `LDC` through TRH/TRL, so most addresses come straight
+from `mov #hi,trh` / `mov #lo,trl` in the code, with the row count and bytes
+per row loaded next to them (`common/lc86k.py` reads it). Two twists:
+
+- **Masked sprites.** Sprites drawn over a background store each row as the
+  mask's bytes, then the image's; the game does `and mask` then `or image`, so a
+  mask bit of 0 is the sprite's area. Each is kept as two sprites, the image and
+  its mask (shown lit where the sprite is opaque).
+- **Pre-shifted copies.** A sprite that moves sideways has a table of eight
+  pointers, the art shifted right by 0–7 dots, picked with `x & 7` (at
+  `0x4A7B` for Ayame's score popups). Copy k is copy 0 shifted by k in all 29
+  tables (copy 7 of a masked 16-dot sprite is stored 24 dots wide, read by its
+  own routine at `0x4ADA`), so only copy 0 is kept.
+
+The Ayame stage background (`0xCB63`) is drawn as stored at `0x4BE6`, and
+inverted (`xor #0xff`) at `0x4BAE`, a flash.
+
+### Screens
+
+36 entries are whole 48×32 screens, all stills except the portraits:
+
+| Address                             | Archive title                                                             |
+| ----------------------------------- | ------------------------------------------------------------------------- |
+| `0xAD80`                            | Power Stone Mini title screen                                             |
+| `0xAE40`, `0xAF00`                  | Capcom logo, Copyright (©1999)                                            |
+| `0xCAA3`                            | Caution: replace the battery (JP)                                         |
+| `0xA9B4`                            | Menu (JP)                                                                 |
+| `0xAA74`+`0xAB34`                   | Falcon (2 frames)                                                         |
+| `0xCCE3`+`0xCDA3`                   | Ayame (2 frames)                                                          |
+| `0x8591`+`0x8651`                   | Gunrock (2 frames)                                                        |
+| `0xCB63`, `0xCC23`                  | Ayame's Shuriken Training stage, and (second)                             |
+| `0x81DD`–`0x84D1`, `0x8C11`         | Gun-Gun Slots: medal get, quit?, double up?, match to double, great! (JP) |
+| `0x8CD1`, `0x8D91`                  | Art museum opened, Music hall opened (JP)                                 |
+| `0xB980`, `0xBA40`, `0xBB00`        | High score, one per game (JP)                                             |
+| tables `0xBE80`, `0xC189`, `0xC492` | Rules: 4 pages Falcon, 4 Ayame, 8 Gun-Gun Slots (JP)                      |
+
+The portraits' two frames alternate, but the tick wasn't measured, so they
+play at the site's default. The stored menu (`0xA9B4`), the second stage
+screen (`0xCC23`) and the Falcon course have no direct address load in the
+code; they may be reached through computed addresses (the course must be, as
+it scrolls), so they aren't marked unused.
+
+The menus the game shows are composed at run time: a 48×8 header, a 40×24 item
+at (0, 8) and an 8×24 arrow column at (40, 8). Their parts are kept as sprites
+rather than guessing which combinations appear.
+
+### Sprites
+
+38 sprites in `content/sprites/power-stone/`: the slot reels (48 symbols of
+16×10, 16 per reel, a column per reel) with the payline the game ORs over them,
+the payouts, coin, digits, 1000/2000 labels and BONUS TIME banner; a small 8×6
+font with BET and $; Ayame's ninjas, shuriken, score popups and other sprites;
+Falcon in eight flight poses, the CHECK banner, items, and the course, a
+48×896 strip that scrolls up the screen (kept as a sprite, since the site only
+scrolls sideways); the READY/START/GAME OVER banners; and the menu headers,
+items, arrows and high-score parts. Falcon's 16×8 item at `0x9FEA` is the same
+pixels as Shuriken Training's `0x8F9D`, so it's kept once.
+
+Not imported: the VMS file's own save icon (colour, for the Dreamcast's file
+screen), and the reel strip's order table and course table, which are data.
+
+### Compared with Second Screen Archive
+
+Second Screen Archive's
+[Power Stone collection](https://second-screen-archive.neocities.org/power-stone-vmu-artwork-2)
+(231 images) names each picture by its address in the same program, and the
+layout is the same here. 141 of its images match this disc's bytes at their
+address exactly. The rest:
+
+- Its text screens (rules, slot prompts and rewards, menus, high scores,
+  CAUTION, the copyright) are in English; this disc's are Japanese at the same
+  addresses. Its copy looks to be from a Western release, whose English
+  screens aren't in the archive yet.
+- 23 Ayame and Falcon sprites are exactly the image bytes of this disc's masked
+  rows, without the mask (checked for all 23).
+- 22 are screens it assembled (slot reels, menus), not stored art.
+
+Its coin starts at `0x815F`, a row after where the code's pointer table puts it
+(`0x815D`, whose first row is blank).
