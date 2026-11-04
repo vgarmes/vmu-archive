@@ -12,7 +12,7 @@ const CONTACT_EMAIL = 'vgmestre@gmail.com'
 const SUBJECT = 'VMU Archive game request'
 const BODY = `Game:
 Region or release, if it matters (JP / US / EU):
-VMU screens you remember (optional):`
+VMU screens you remember (optional, screenshots welcome):`
 
 const mailto = `mailto:${CONTACT_EMAIL}?subject=${encodeURIComponent(SUBJECT)}&body=${encodeURIComponent(BODY)}`
 
@@ -78,6 +78,7 @@ export default function About() {
 					<li>
 						If you remember particular VMU screens (save menu, mini-game,
 						boot…), mention them, so they can be checked once it&apos;s added.
+						Screenshots or photos of them help too: attach them to the email.
 					</li>
 				</ol>
 				<a
