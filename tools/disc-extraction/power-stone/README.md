@@ -27,3 +27,19 @@ pnpm icons:import $OUT/inbox
 ```
 
 Run the Python scripts from this folder.
+
+## Power Stone Mini
+
+`mini.py` extracts the VMU game Power Stone carries in its `1ST_READ.BIN`, and
+its art. It was run on the Redump dump `Power Stone (Japan)` (`.cue`), which is
+the same build as v1.020 above: the title and ACCESS screens sit at the same
+offsets, byte for byte.
+
+```sh
+PS1="path/to/Power Stone (Japan)"
+python3 -E ../common/disc.py "$PS1" $OUT/ps1 /1ST_READ.BIN
+python3 -E mini.py $OUT/ps1/1ST_READ.BIN $OUT/mini   # PSMINI.VMS, inbox/, contact sheet
+pnpm icons:import $OUT/mini/inbox
+```
+
+To read the VMU program's code: `python3 -E ../common/lc86k.py $OUT/mini/PSMINI.VMS <hex address>`.

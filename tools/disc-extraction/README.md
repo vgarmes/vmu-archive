@@ -12,10 +12,13 @@ Python loads modules.
 ## Layout
 
 - `common/` works for any game.
-  - `disc.py` lists or copies files from a `.gdi` dump (the folder holding the
-    `.gdi` and its tracks).
+  - `disc.py` lists or copies files from a dump: the folder holding a `.gdi`
+    or a Redump `.cue`, and its tracks.
   - `sh4.py` is a small disassembler for the main CPU (SH-4), enough to read
     control flow and constants. `1ST_READ.BIN` loads at `0x8C010000`.
+  - `lc86k.py` is the same for the VMU's own CPU (LC86K), for VMU programs a
+    game carries. `refs` finds where the code loads an address into TRH/TRL,
+    the pointer its `LDC` reads art through.
   - `find_code.py` finds the code that drives the VMU screen: `seq` searches for
     a known frame sequence loaded as literals, `refs` finds every caller of a
     routine.
@@ -62,6 +65,10 @@ Every game so far did it differently. What has turned up:
 - In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
   `TYPE_E.EXE` (a PE file; map addresses through its section table).
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
+- In a VMU program the game carries for the VMU to run, with its own code:
+  Shenmue Passport's Goodies viewer (`SYEN.BIN`), and Power Stone Mini, a whole
+  VMS image inside Power Stone's `1ST_READ.BIN`. Find one by its VMS header
+  (a 16-byte description at `+0x200`); read its code with `lc86k.py`.
 - In a system ROM, not a disc: the VMU's own BIOS (fonts and clock sprites,
   from which it builds every screen) and the Dreamcast's `dc_boot.bin` (its
   memory card icons). See [`bios/`](bios/).
@@ -81,12 +88,15 @@ colour textures; the real art was found by following the code that loads it.
 | 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue 1 and 2 (with a width and height byte) |
 | 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Typing E-Keikaku: turned 180°, as the LCD takes it     |
 | 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                 |
+| 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's               |
 | 1 byte per dot, mirrored | Berserk                                                                        |
 | Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                |
 | Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                  |
 
 So try every packing, every flip and mirror, and inverted bits before
-concluding the art isn't there.
+concluding the art isn't there. A sprite can also be stored eight times, shifted
+right 0–7 dots so the VMU never shifts at run time (Power Stone Mini); copy 0
+is the art.
 
 **Compression.** Most games store their art plainly, which is why searching the
 disc for an entry already in the archive usually works. Two don't:

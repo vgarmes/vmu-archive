@@ -1,4 +1,4 @@
-"""Read files from a Dreamcast GD-ROM dump in .gdi form (a folder with the .gdi and its tracks).
+"""Read files from a Dreamcast GD-ROM dump: a folder with a .gdi or a Redump .cue, and its tracks.
 
     python3 disc.py <dump folder> <inventory.json>    list every file on the disc
     python3 disc.py <dump folder> <out dir> <path>…   copy files off the disc
@@ -17,13 +17,36 @@ class Disc:
     def __init__(self, folder):
         self.folder = Path(folder)
         self.tracks = []
-        gdi = next(self.folder.glob('*.gdi'))
+        gdi = next(self.folder.glob('*.gdi'), None)
+        if gdi is None:
+            self.read_cue(next(self.folder.glob('*.cue')))
+            return
         for line in gdi.read_text().splitlines()[1:]:
             if not line.strip():
                 continue
             _, lba, kind, sector, name, offset = shlex.split(line)
             if kind == '4':  # data track
                 self.tracks.append((int(lba), int(sector), int(offset), (self.folder / name).open('rb')))
+
+    def read_cue(self, cue):
+        # Redump splits a GD-ROM into a single-density area (tracks 1 and 2)
+        # and a high-density area from LBA 45000, each track a raw 2352-byte
+        # .bin. Tracks in an area run back to back.
+        lba = 0
+        name = None
+        for line in cue.read_text().splitlines():
+            words = shlex.split(line)
+            if not words:
+                continue
+            if line.strip() == 'REM HIGH-DENSITY AREA':
+                lba = 45000
+            elif words[0] == 'FILE':
+                name = words[1]
+            elif words[0] == 'TRACK':
+                path = self.folder / name
+                if words[2].startswith('MODE1'):
+                    self.tracks.append((lba, 2352, 0, path.open('rb')))
+                lba += path.stat().st_size // 2352
 
     def read(self, lba, size):
         out = bytearray()
