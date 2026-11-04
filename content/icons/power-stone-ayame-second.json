@@ -1,0 +1,19 @@
+{
+	"title": "Ayame (second)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0016000000000016000001fe002600000fff002600003fff002e0000e7ff002e0003cfff004e000fbf07005e003ffcf9005e0067fbfe005600c3ff9f009201c3fe3f00b802447cff00bc04383fff013604283fff017a0efe7fff017d0f11ffff027e0e10ffffffe78f39ffe7ffc3fefe3fc37fc3fc39cf819f81fcc347804f81ffe3cf802781f2119f00138de3807f0009d3c3ffff3e04e383fffe7f03e701fffeff02e101fffd3802e100fffbc706f0807fe7ff0df8403f9fff09f0401e7ff8"
+	],
+	"tags": [
+		"character",
+		"portrait",
+		"ayame"
+	],
+	"hash": "50255994072eb7adbd07d3c7a9753c439d0c9437",
+	"added": "2026-11-04"
+}

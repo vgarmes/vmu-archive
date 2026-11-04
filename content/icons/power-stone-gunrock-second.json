@@ -1,0 +1,19 @@
+{
+	"title": "Gunrock (second)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff8fffffe7ffffefe00feff0c7f78003dfc0a3fd00017f81a1c9800323cea085400541b1d043301980c7c8418fe3007fe441e00f067ef371bffb197c78c9838320f91f85c7c740f7fe037ffd80bff401000100cfcc1f1831f087846300018c84848180030287bf03e00f81c7e2027ffc80bf860413907d8f0a040921cb7f3704c9270b1ccc84f11e0a383844010c0a3cf8360398127bbfdffef015fc60008060240f44c0e0404e47c910ffc09125c910ff812126c913ef826126ffffcf84ffff"
+	],
+	"tags": [
+		"character",
+		"portrait",
+		"gunrock"
+	],
+	"hash": "a1778bb25f2336a5bfa90046aec465e8520c9f7a",
+	"added": "2026-11-04"
+}
