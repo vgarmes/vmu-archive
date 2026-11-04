@@ -12,6 +12,9 @@ const geistMono = Geist_Mono({
 
 const SITE = 'VMU Archive'
 
+const NAV_LINK =
+	'text-muted-foreground hover:bg-foreground hover:text-background focus-visible:bg-foreground focus-visible:text-background flex h-6 items-center px-2 text-xs tracking-[0.2em] uppercase outline-none'
+
 export const metadata: Metadata = {
 	title: { default: SITE, template: `%s · ${SITE}` },
 	description:
@@ -46,10 +49,10 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 						{SITE}
 					</Link>
 					<nav className="flex items-center gap-4">
-						<Link
-							href="/changelog"
-							className="text-muted-foreground hover:bg-foreground hover:text-background focus-visible:bg-foreground focus-visible:text-background flex h-6 items-center px-2 text-xs tracking-[0.2em] uppercase outline-none"
-						>
+						<Link href="/about" className={NAV_LINK}>
+							About
+						</Link>
+						<Link href="/changelog" className={NAV_LINK}>
 							Changelog
 						</Link>
 						<ThemeToggle />
