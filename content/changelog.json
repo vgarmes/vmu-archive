@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-04",
+		"title": "Falcon's course, scrolling down",
+		"body": "Screens can now scroll down as well as sideways. The first is the course of Power Stone Mini's Falcon game: one whole lap, frame for frame as the game draws it, moving at Falcon's cruising speed. That speed comes from the code, but the length of a tick is still an estimate."
+	},
+	{
+		"date": "2026-11-04",
 		"title": "Power Stone Mini",
 		"body": "The VMU game hidden in Power Stone's program: its title, the Capcom and copyright screens, Falcon, Ayame and Gunrock's portraits, and the Japanese rules, slot prompts, high scores and rewards of Falcon's Aerial Adventure, Ayame's Shuriken Training and Gun-Gun Slots. Its sprites, reels and the whole Falcon course are kept too. The portraits play at the default speed until someone times them."
 	},
