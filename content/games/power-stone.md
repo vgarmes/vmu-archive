@@ -121,6 +121,17 @@ listed here, and no pointer table holds them.
 None of them loops: each sequence runs once per trigger, and the game draws
 over the second portrait when it ends.
 
+![Falcon's sequence](../../public/notes/power-stone/falcon.gif 'Falcon')
+![Ayame's sequence](../../public/notes/power-stone/ayame.gif 'Ayame')
+![Gunrock's flash win](../../public/notes/power-stone/gunrock.gif 'Gunrock, flash win')
+
+_Rebuilt from the code above, not captured: Falcon, Ayame, and Gunrock's flash
+win. Each step's length is counted in ticks at the estimated 16 ms, rounded to
+GIF's hundredths of a second. The slide-ins start from a blank screen, where
+the game has its own screen behind them; Gunrock's blinking payout label is
+left out; and the second of blank before each replay is ours, since the game
+plays them once. `mini.py` writes them._
+
 ### Falcon's course
 
 Falcon's Aerial Adventure scrolls its course down the screen as Falcon flies
