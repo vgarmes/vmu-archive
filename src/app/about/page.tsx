@@ -33,7 +33,9 @@ export default function About() {
 			</section>
 
 			<section className="flex flex-col gap-3">
-				<h2 className="font-bold tracking-[0.2em] uppercase">Why it exists</h2>
+				<h2 className="font-normal tracking-[0.2em] uppercase">
+					Why it exists
+				</h2>
 				<p className="text-muted-foreground">
 					Playing a Dreamcast for the first time, at my cousin&apos;s place in
 					1999, is one of the highlights of my life as a gamer, and the
@@ -63,7 +65,9 @@ export default function About() {
 			</section>
 
 			<section className="flex flex-col gap-3">
-				<h2 className="font-bold tracking-[0.2em] uppercase">Request a game</h2>
+				<h2 className="font-normal tracking-[0.2em] uppercase">
+					Request a game
+				</h2>
 				<p className="text-muted-foreground">
 					New screens come straight from each game&apos;s disc, with the order
 					and timing its own code uses, so the archive grows a game at a time.
