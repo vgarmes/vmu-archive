@@ -11,6 +11,7 @@
  */
 import { createHash } from 'node:crypto'
 import path from 'node:path'
+import { type Glyphs, glyphProblems } from '../src/lib/glyphs.ts'
 import { frameHexLength } from '../src/lib/pixels.ts'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
@@ -31,6 +32,11 @@ export interface Sprite {
 	bpp: 1
 	/** One frame for now; encoded like a screen's (src/lib/pixels.ts). */
 	frames: string[]
+	/**
+	 * A font: its characters stacked in the game's order, and their sizes
+	 * (src/lib/glyphs.ts), so the site can show each as its own cell.
+	 */
+	glyphs?: Glyphs
 	/** Where on the disc it came from, so it can be found again. */
 	source?: {
 		/** Path on the disc, e.g. "/LCDIMG.BIN". */
@@ -84,6 +90,8 @@ export function spriteProblems(s: Sprite, screens: Set<string>): string[] {
 		out.push('the frame does not match width x height')
 	else if (s.hash !== spriteHash(s.width, s.height, s.frames))
 		out.push('"hash" does not match the pixels')
+	if (s.glyphs !== undefined && isInt(s.width, 1) && isInt(s.height, 1))
+		out.push(...glyphProblems(s.glyphs, s.width, s.height))
 	if (s.source && typeof s.source.file !== 'string')
 		out.push('"source" needs a "file"')
 	for (const at of s.drawnAt ?? []) {

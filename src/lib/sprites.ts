@@ -1,6 +1,7 @@
 import 'server-only'
 import fs from 'node:fs'
 import path from 'node:path'
+import { type Glyphs, glyphBoxes } from './glyphs'
 import { decodeFrame } from './pixels'
 
 /**
@@ -11,7 +12,9 @@ import { decodeFrame } from './pixels'
  *
  * Packed in rows, tallest first and in file order within a height, so a game's
  * like-sized sprites (Shenmue's faces) sit together. The layout is only where
- * each sprite is in the PNG; the page arranges them itself.
+ * each sprite is in the PNG; the page arranges them itself. A font whose
+ * character sizes are known (`glyphs`, see ./glyphs) becomes one cell per
+ * character, in the game's order.
  */
 
 const DIR = path.join(process.cwd(), 'content/sprites')
@@ -21,9 +24,9 @@ const SHEET_WIDTH = 512
 /** Transparent pixels between sprites, so a cell never bleeds into the next. */
 const GAP = 1
 /**
- * A font stored as one tall strip (Shenmue's is 8x2304) is cut into
- * FOLD_HEIGHT-row pieces, a multiple of 8 and 16 so square glyphs aren't
- * split, that wrap like any other sprite.
+ * A tall strip without `glyphs` (Shenmue's font, 8x2304, whose character
+ * sizes aren't decoded) is cut into FOLD_HEIGHT-row pieces that wrap like any
+ * other sprite. The cuts can fall inside a character.
  */
 const FOLD_HEIGHT = 32
 
@@ -66,8 +69,26 @@ function readPieces(dir: string): { pieces: Piece[]; count: number } {
 			width: number
 			height: number
 			frames: string[]
+			glyphs?: Glyphs
 		}
 		const px = decodeFrame(s.frames[0], s.width, s.height, 1)
+		// A font: each character its own piece, as wide as the game draws it,
+		// titled with its number in the game's table (from 0).
+		if (s.glyphs)
+			return glyphBoxes(s.glyphs, s.width, s.height).map((g, i) => {
+				const pixels = new Uint8Array(g.width * g.height)
+				for (let row = 0; row < g.height; row++)
+					pixels.set(
+						px.subarray((g.y + row) * s.width, (g.y + row) * s.width + g.width),
+						row * g.width
+					)
+				return {
+					title: `${s.title}, glyph ${i}`,
+					width: g.width,
+					height: g.height,
+					pixels
+				}
+			})
 		const whole = { title: s.title, width: s.width, height: s.height }
 		// Only tall, narrow strips; a parts sheet stays whole.
 		if (s.height <= FOLD_HEIGHT || s.height < 4 * s.width)

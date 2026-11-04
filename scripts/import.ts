@@ -36,7 +36,9 @@
  * It goes to content/sprites/<game slug>/ for preservation; the site never
  * shows it (see scripts/sprites.ts). Its sidecar can also say where it came
  * from, `"source": { "file": "/LCDIMG.BIN", "entry": 11 }`, and where the game
- * draws it, `"drawnAt": [{ "screen": "<icon id>", "x": 30, "y": 2 }]`.
+ * draws it, `"drawnAt": [{ "screen": "<icon id>", "x": 30, "y": 2 }]`. A font
+ * is one sprite, its characters stacked in the game's order, with their sizes
+ * in `"glyphs": { "height": 8, "width": 4 }` (see src/lib/glyphs.ts).
  */
 import { createHash } from 'node:crypto'
 import fs from 'node:fs'
@@ -82,6 +84,8 @@ interface Meta {
 	source?: Sprite['source']
 	/** Sprites only: where the game draws it. */
 	drawnAt?: Sprite['drawnAt']
+	/** Sprites only: a font's character sizes. */
+	glyphs?: Sprite['glyphs']
 }
 
 // ---------------------------------------------------------------- reading
@@ -347,6 +351,7 @@ function main() {
 					height,
 					bpp: 1,
 					frames,
+					glyphs: meta.glyphs,
 					source: meta.source,
 					drawnAt: meta.drawnAt,
 					tags: meta.tags ?? [],
