@@ -1,0 +1,25 @@
+{
+	"title": "Small font",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 232,
+	"height": 6,
+	"bpp": 1,
+	"frames": [
+		"3048800018181806040e0e020e060e06066040e0e020e060e06060191cf292a0001818180a0c0202060808020a0aa0c0202060808020a0a02a30d8d0de000000000a0404040a0c0e04040ea0404040a0c0e04040e033387a52d5000060660a0408020e020a040a02a0408020e020a040a0202a146098b5000060660c040e0c020c0c040c04c040e0c020c0c040c04033380000000000000000000000000000000000000000000000000000000050"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1460755
+	},
+	"tags": [
+		"minigame",
+		"font",
+		"digits",
+		"sheet"
+	],
+	"hash": "22453e51bd8cfd83a9da63cf9a624fef7e90f4eb",
+	"added": "2026-11-04"
+}

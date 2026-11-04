@@ -1,0 +1,22 @@
+{
+	"title": "Shuriken Training: ninja",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 8,
+	"height": 16,
+	"bpp": 1,
+	"frames": [
+		"3c247e7ea5ffff3c7effff7e3c3c3c7e"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1461657
+	},
+	"tags": [
+		"minigame",
+		"ayame"
+	],
+	"hash": "1e3349e2c2dd979aeaebdccddf016e77fc9eba4d",
+	"added": "2026-11-04"
+}

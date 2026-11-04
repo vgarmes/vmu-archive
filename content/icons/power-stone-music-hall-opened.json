@@ -1,0 +1,18 @@
+{
+	"title": "Music hall opened",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00e00000000071b1ff1fc000df1f619570008bba37f55f00dd1b6113d180c7bb77f5df809b1b77f7d780932ef997d980ffffff9e7f807fff8f9e3f801dc682f70000107dfec187c03ae44d5dfd6020383823d5603ff45d6b8be018fefc67d5e008e00de3d5800afc7d6bb78008d294a3ef800fdfffff7e000fffffff1c0008c77b8000000ad760e3b8e008c6aeb6edb808c411b46d0c0a16b5b6edbe0b5633b46ca30a06f1beefbf0b56b5b46daf0ad651ccb3b30fffffffffff07ffffbfff7f"
+	],
+	"tags": [
+		"minigame"
+	],
+	"hash": "7e2edd059187c7c2455d37f1ceb757e5d69e8f46",
+	"added": "2026-11-04"
+}

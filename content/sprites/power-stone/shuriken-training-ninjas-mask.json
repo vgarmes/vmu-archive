@@ -1,0 +1,23 @@
+{
+	"title": "Shuriken Training: ninjas (mask)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 64,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"0c004400220030001e00ee00770078003c00fe007f003c007c007c003e003e007c007c003e003e00fe003c003c007f00ee001e007800770044000c0030002200"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1461801
+	},
+	"tags": [
+		"minigame",
+		"ayame",
+		"sheet"
+	],
+	"hash": "3680b5ce67d9e17bcc7cd0385a2387490ff8cf79",
+	"added": "2026-11-04"
+}

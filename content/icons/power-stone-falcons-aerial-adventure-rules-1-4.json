@@ -1,0 +1,20 @@
+{
+	"title": "Falcon's Aerial Adventure rules (1/4)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffebfebfffffffebfebfffffffea86afffffffeafeafffffffd9fd9ffffffffffffffff000000000000000000000000203bc11dc2003aaa43955fc052abdd1dd2407ab257d5524012ab9c9fd5507cab57d558d754b39c97505054a28295505455a2619750d30000000000000000000000000000000000000000002800000000003c00000000016800001408153ca714939cf03ce212609c21a9b738400840bdd094801c41815694739a307ca728000000000000000000000000"
+	],
+	"tags": [
+		"minigame",
+		"letters",
+		"falcon"
+	],
+	"hash": "b62ece2a243841e37e14dbdc65401fa4c63d020f",
+	"added": "2026-11-04"
+}

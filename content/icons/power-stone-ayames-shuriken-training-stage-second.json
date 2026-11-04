@@ -1,0 +1,18 @@
+{
+	"title": "Ayame's Shuriken Training stage (second)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff800ffe00ffff880ffe00ffff300ffe00ffff6007ff007fffc007ff007fff8007ff807fff0027ff807fff002ffdc07ffe003ffce07ffe007ffc707ffe00f7fc387ffe01e7fc7e7ffe03c7fc0ffffc0787fc07fffc0f07fc03fffc1e07fc01fffc7f07fc00fffdffc7fc00fffff9f7fc01fffff0fffc03ffffc07ffc0effff801ffc1cffff000ffc3efffe000ffcf8fffe000fffe1fffe001fffc1fffe001fff01fffe001ffe01ffff003ffe01ffff003ffe03ffff807fff03ffff807fff03ff"
+	],
+	"tags": [
+		"minigame",
+		"ayame"
+	],
+	"hash": "7041de88a25f57b21c47a2fefbede09d2cd1a63a",
+	"added": "2026-11-04"
+}

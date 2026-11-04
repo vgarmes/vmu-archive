@@ -1,0 +1,23 @@
+{
+	"title": "Gun-Gun Slots 1000 and 2000",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 64,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000183c3c3c3c3c3c3c3876767666767676186666660e666666186666663c666666186e6e6e706e6e6e183c3c3c7e3c3c3c0000000000000000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1460073
+	},
+	"tags": [
+		"minigame",
+		"gunrock",
+		"sheet"
+	],
+	"hash": "bb4510e3a5f5cb8a856d2a41427bf01e2b0ff029",
+	"added": "2026-11-04"
+}

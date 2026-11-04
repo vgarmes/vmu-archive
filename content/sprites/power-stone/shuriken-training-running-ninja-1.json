@@ -1,0 +1,22 @@
+{
+	"title": "Shuriken Training: running ninja 1",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 24,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"3800004800003fc000fe60000f00003f800031c0001cf000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1461173
+	},
+	"tags": [
+		"minigame",
+		"ayame"
+	],
+	"hash": "e6b0dd9727b4433495c9b788f9201c01412cf183",
+	"added": "2026-11-04"
+}

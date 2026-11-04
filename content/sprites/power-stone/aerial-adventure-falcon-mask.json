@@ -1,0 +1,24 @@
+{
+	"title": "Aerial Adventure: Falcon (mask)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 128,
+	"height": 9,
+	"bpp": 1,
+	"frames": [
+		"f8000f801e001c0000001e003e003c00f8000f80ffc03e003e001e003e003c00ff007f80ffc03e00ff80ff003e007f80ff80ff80ffc03e00ff80ff00ff807f80ff80ff80ffc07f00ff80ff00ff807f80ff80ff80ffc0ff80ff80ff00ff807f80fe003f807f80ff803e00ff00ff807f80fc001f803f00ff803e001e003e003c00700007003f003e003e001e0000003c00"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1465242
+	},
+	"tags": [
+		"minigame",
+		"falcon",
+		"character",
+		"sheet"
+	],
+	"hash": "cba87a551f989c6d795b878d57f9d0b92a7c01a0",
+	"added": "2026-11-04"
+}

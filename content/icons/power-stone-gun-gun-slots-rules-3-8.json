@@ -1,0 +1,20 @@
+{
+	"title": "Gun-Gun Slots rules (3/8)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffdddebdf7c7ffed041041f7fffd76bdddeffffbf7b57ddffff78e7563c7fffffffffffff0010000000003fbb8400000020903f8200002ebba4af00002ab924a200002e923fa2000020ba842e00003f97440d000000000000000000700e01c00000d81b02605001dc3586b3c001043586708001dc3186b10000d81502610000710e21c0800000000000000000000080000000008085381ef021c0e710029020a28db80495b8c28e840c90a5028ab412f320e7f4b8000000000000"
+	],
+	"tags": [
+		"minigame",
+		"letters",
+		"gunrock"
+	],
+	"hash": "38f77b4d4ddafe926de69bd6c562e65602d9ebd1",
+	"added": "2026-11-04"
+}

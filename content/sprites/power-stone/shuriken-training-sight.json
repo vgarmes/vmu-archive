@@ -1,0 +1,22 @@
+{
+	"title": "Shuriken Training: sight",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 16,
+	"height": 6,
+	"bpp": 1,
+	"frames": [
+		"20002000f800200020000000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1460917
+	},
+	"tags": [
+		"minigame",
+		"ayame"
+	],
+	"hash": "04cf723db3c8be8e6440fdec3a438bb5d4882b0b",
+	"added": "2026-11-04"
+}

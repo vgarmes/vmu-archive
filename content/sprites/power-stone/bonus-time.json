@@ -1,0 +1,23 @@
+{
+	"title": "Bonus time",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 7,
+	"bpp": 1,
+	"frames": [
+		"7ffffffffffe3ecfb830fb7c183e0f76f7780ee3bee88ef01abfbd7dedb83abf7bbbec5c7ffffffffffe"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1460713
+	},
+	"tags": [
+		"minigame",
+		"banner"
+	],
+	"hash": "a356c45b4e807179b3e4883a515f2d92d65ea363",
+	"added": "2026-11-04"
+}

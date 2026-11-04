@@ -1,0 +1,22 @@
+{
+	"title": "Aerial Adventure: sprite 24x18",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 24,
+	"height": 18,
+	"bpp": 1,
+	"frames": [
+		"000000001e0003a3800678c00cc46009022008d0300581500701100a83300ad6600960e00c02300c4c300638600399c001e700000000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1468300
+	},
+	"tags": [
+		"minigame",
+		"falcon"
+	],
+	"hash": "4b9647d673d416d37599406547131cf9b9f7d397",
+	"added": "2026-11-04"
+}

@@ -1,0 +1,22 @@
+{
+	"title": "Shuriken Training: sprite 16x7",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 16,
+	"height": 7,
+	"bpp": 1,
+	"frames": [
+		"3c0024007e007e00a500ff00ff00"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1461673
+	},
+	"tags": [
+		"minigame",
+		"ayame"
+	],
+	"hash": "662b4be20c67cf7a216523363a94c01805d5dfe8",
+	"added": "2026-11-04"
+}

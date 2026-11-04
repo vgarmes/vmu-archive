@@ -1,0 +1,22 @@
+{
+	"title": "Shuriken Training: figure 8x14 (mask)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 8,
+	"height": 14,
+	"bpp": 1,
+	"frames": [
+		"183c7e3c7eff7e3c3c3c3c3c7e3c"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1461589
+	},
+	"tags": [
+		"minigame",
+		"ayame"
+	],
+	"hash": "fb33166283c95b283b645bd63bb3753864dbd32b",
+	"added": "2026-11-04"
+}

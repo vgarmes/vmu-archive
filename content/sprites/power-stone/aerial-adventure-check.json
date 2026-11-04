@@ -1,0 +1,23 @@
+{
+	"title": "Aerial Adventure: check",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 48,
+	"height": 7,
+	"bpp": 1,
+	"frames": [
+		"000000000000000e6bce640055596b196955aa987bd870aa55596b197955000e6bce6c00000000000000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1467682
+	},
+	"tags": [
+		"minigame",
+		"falcon",
+		"banner"
+	],
+	"hash": "dccde69537638bf588eecfcba90279ace849c8ad",
+	"added": "2026-11-04"
+}

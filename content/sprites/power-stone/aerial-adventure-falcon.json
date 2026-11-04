@@ -1,0 +1,24 @@
+{
+	"title": "Aerial Adventure: Falcon",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 128,
+	"height": 9,
+	"bpp": 1,
+	"frames": [
+		"00000000080000000000000000000000700007001c00080000000c001c0018003000060099001c001c000c000800180016003400cb001c007f004e00080039007f007f007e001c007f007e007f003f003c001e003c003e0008004e007f00390058000d0018007f0008000c001c00180020000200240014001c000c000000180000000000000000000000000000000000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1465242
+	},
+	"tags": [
+		"minigame",
+		"falcon",
+		"character",
+		"sheet"
+	],
+	"hash": "79fb33fffbe51ea8ca112f826e8bbeb31c1f7173",
+	"added": "2026-11-04"
+}

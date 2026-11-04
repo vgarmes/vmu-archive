@@ -1,0 +1,20 @@
+{
+	"title": "Ayame's Shuriken Training rules (4/4)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffef19ffffffffef5f97ffffffe2d0f7ffffffefddefffffffefbb9ffffffffffffffff0000000000000000000000001800000e00002800201900381f04603e82207c8e201d07300e04200a02081b00200400300d80000000000000000000000000001e00000000001200000000003f00000c00003f00001200005280000c00007f80001600701e19983304403f04441e0e607f88880c04103f00000c00601e08880c00001e00001e00001e00000000003f0000000000000000"
+	],
+	"tags": [
+		"minigame",
+		"letters",
+		"ayame"
+	],
+	"hash": "a8c85e6bea83223e5daacc9d4675ec746d0710aa",
+	"added": "2026-11-04"
+}

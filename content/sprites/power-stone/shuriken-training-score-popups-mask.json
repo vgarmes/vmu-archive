@@ -1,0 +1,24 @@
+{
+	"title": "Shuriken Training: score popups (mask)",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 80,
+	"height": 10,
+	"bpp": 1,
+	"frames": [
+		"3f003f003f003f003f007f807f807f807f807f80ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc07f807f807f807f807f803f003f003f003f003f00"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1463473
+	},
+	"tags": [
+		"minigame",
+		"ayame",
+		"digits",
+		"sheet"
+	],
+	"hash": "9b552121a05f881ea9790739ac2bbb018d337980",
+	"added": "2026-11-04"
+}

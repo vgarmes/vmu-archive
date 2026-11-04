@@ -1,0 +1,19 @@
+{
+	"title": "High score: Ayame's Shuriken Training",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000fcff8007e0e0b7aac004b0b8b0c9c007b18dad80c004b15f7bebc007bfde6480c0044abf7dc1c007eae75280c003c6fd59e3c0007efd5ed580003de371b6c00007ffffffc0001fbfffffc00015a8420c000015ef7bec000015df7b9c0000151eebbc000035dcfbb800002edb437000003ffffff000001dfffee00000000000000000000000000000000000000000000000600000000000a8c000000000cd800000000098c0000000008d90000000000000000000000000000000000000"
+	],
+	"tags": [
+		"menu",
+		"ayame"
+	],
+	"hash": "23e902e0b8b539eb1c8718b8df5206a1e3c309a9",
+	"added": "2026-11-04"
+}

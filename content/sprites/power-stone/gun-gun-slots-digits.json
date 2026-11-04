@@ -1,0 +1,24 @@
+{
+	"title": "Gun-Gun Slots digits",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 80,
+	"height": 14,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000000000000000000000000000000000000000000000003c18fcfc3cfe3efe3c3c422882822482428242429a48fafa44be9efa9a9aaa680a1254b8bc0ab2aaaa2812249484a21244b2aa282432b6f29a249a8aaa28480a820aaa28aa7ab2289ef2f6f2b228b20a8428828414848428840a7838fef81cf87838780c00000000000000000000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1457737
+	},
+	"tags": [
+		"minigame",
+		"gunrock",
+		"digits",
+		"sheet"
+	],
+	"hash": "69befd89a5fca7f01ed6187dacb67e4c1ffea4be",
+	"added": "2026-11-04"
+}

@@ -1,0 +1,18 @@
+{
+	"title": "Art museum opened",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00600000000071b1ff1fc000df1f611570008bba37f55f00dd1b6113d180c7bb77f5df809b1b77f7d780932ef997d980ffffef9e7f807fffe79e3f80177ebaf700001afacec187c010647d5dfd6038fa8823d5602026ed6b8be03df46c67d5e020346de3d5803af2ad6bb7802736cca3ef803fffffff7e001fffffff1c0008c77b8000000ad760e3f8e008c6aeb6edb808c411b46d0c0a16b5b6edbe0b5633b46ca30a06f1beefbf0b56b5b46daf0ad651ccb3b30fffffffffff07ffffbfff7f"
+	],
+	"tags": [
+		"minigame"
+	],
+	"hash": "00aa91da2e7d1177223d50a9aa022c485396d5ed",
+	"added": "2026-11-04"
+}

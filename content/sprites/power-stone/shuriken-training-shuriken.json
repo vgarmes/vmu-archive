@@ -1,0 +1,23 @@
+{
+	"title": "Shuriken Training: shuriken",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 32,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"00000800460018006c0010003800de001c007b00360008006200180000001000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1462929
+	},
+	"tags": [
+		"minigame",
+		"ayame",
+		"sheet"
+	],
+	"hash": "20c47bd06c3bb6c7eaf069c94b5909f484117ee5",
+	"added": "2026-11-04"
+}

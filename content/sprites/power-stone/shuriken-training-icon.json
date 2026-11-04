@@ -1,0 +1,22 @@
+{
+	"title": "Shuriken Training: icon",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 8,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"c3bd465a465a46bd"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1462889
+	},
+	"tags": [
+		"minigame",
+		"ayame"
+	],
+	"hash": "20ee6e9da8f33af845e2695ebedcd03720051390",
+	"added": "2026-11-04"
+}

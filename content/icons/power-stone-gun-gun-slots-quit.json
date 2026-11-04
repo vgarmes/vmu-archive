@@ -1,0 +1,19 @@
+{
+	"title": "Gun-Gun Slots: quit?",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"3ffffffffffc7fc47dc7fffefff54df7ffffffed4c47ffffffd575f7ffffffd46deffffffffffffffbfffffef62375fffffc37ba1dfffffea7b75bfffffef36b5ffffffeefaa9bffffffffffffff800000000001800000003801800000007c0180282000c60180284000d601802dc554c60180484000d601800000007c018000000038018000000000018000000038018008b8004c0180111000d60180771154ce0180113800d601800000004c018000000038014000000000023ffffffffffc"
+	],
+	"tags": [
+		"minigame",
+		"gunrock"
+	],
+	"hash": "79599ddbe38573a903682e7cf23c5b22a2e29904",
+	"added": "2026-11-04"
+}

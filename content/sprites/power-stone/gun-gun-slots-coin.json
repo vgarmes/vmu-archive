@@ -1,0 +1,23 @@
+{
+	"title": "Gun-Gun Slots coin",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 64,
+	"height": 13,
+	"bpp": 1,
+	"frames": [
+		"000000000000000007e007e003c007e01c380cf003c00f3011880b7003c00ed0366c1d7803c01eb8242414b803c01d28281414b803c01d28281414b803c01d28242414b803c01d28366c1d7803c01eb811880b7003c00ed01c380cf003c00f3007e007e003c007e0"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1457397
+	},
+	"tags": [
+		"minigame",
+		"gunrock",
+		"sheet"
+	],
+	"hash": "6950405a3914c70b3fa3afa104fd0dad90b1c1e7",
+	"added": "2026-11-04"
+}
