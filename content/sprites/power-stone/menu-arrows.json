@@ -3,20 +3,22 @@
 	"game": "Power Stone",
 	"publisher": "Capcom",
 	"year": 1999,
-	"width": 24,
-	"height": 24,
+	"width": 8,
+	"height": 72,
 	"bpp": 1,
 	"frames": [
-		"020202818181c1c1c9c1c9d5c9d5e3d5e3c1e3c180c180ff80ffffffff81ff8181818181ff818180ff81c180ffe3c180f7e3c1fdf7e3d9fdf7c1d9fdc1c1d9818181020202fcfcfc"
+		"0281c1c1c9d5e3c180ffff81ff80c1e3f7fdd9c1c18102fc0281c1c9d5e3c180ffff818181ff80c1e3f7fdd9c18102fc0281c9d5e3c180ffff8181818181ff80c1e3f7fdd98102fc"
 	],
+	"glyphs": {
+		"height": 24
+	},
 	"source": {
 		"file": "/1ST_READ.BIN",
 		"offset": 1469440
 	},
 	"tags": [
-		"menu",
-		"sheet"
+		"menu"
 	],
-	"hash": "b66a98b2941ffd0c5736bef257382c7812108548",
+	"hash": "ef970b672fbddb94280d3b4e2beeb92b1822cb65",
 	"added": "2026-11-04"
 }

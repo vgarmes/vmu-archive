@@ -1,0 +1,22 @@
+{
+	"title": "Menu header: high scores",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"7ffffffffffe9800000000c1b0282f3df061b029c1045061b02842046061b0444d3c80619800000000c17ffffffffffe"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1471720
+	},
+	"tags": [
+		"menu"
+	],
+	"hash": "137fd7a96015d78a3d3117acbf9070791b391ccc",
+	"added": "2026-11-04"
+}

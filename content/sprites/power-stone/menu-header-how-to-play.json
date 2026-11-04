@@ -1,0 +1,22 @@
+{
+	"title": "Menu header: how to play",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"007a5521c00000295e7a400000305029c00000209028800000410e590000000000000000000000000000000000000000"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1472952
+	},
+	"tags": [
+		"menu"
+	],
+	"hash": "b2e285638ed9a28139e4155c6822293a893f24c1",
+	"added": "2026-11-04"
+}

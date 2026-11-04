@@ -3,12 +3,15 @@
 	"game": "Power Stone",
 	"publisher": "Capcom",
 	"year": 1999,
-	"width": 80,
-	"height": 10,
+	"width": 16,
+	"height": 50,
 	"bpp": 1,
 	"frames": [
-		"3f003f003f003f003f007f807f807f807f807f80ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc0ffc07f807f807f807f807f803f003f003f003f003f00"
+		"3f007f80ffc0ffc0ffc0ffc0ffc0ffc07f803f003f007f80ffc0ffc0ffc0ffc0ffc0ffc07f803f003f007f80ffc0ffc0ffc0ffc0ffc0ffc07f803f003f007f80ffc0ffc0ffc0ffc0ffc0ffc07f803f003f007f80ffc0ffc0ffc0ffc0ffc0ffc07f803f00"
 	],
+	"glyphs": {
+		"height": 10
+	},
 	"source": {
 		"file": "/1ST_READ.BIN",
 		"offset": 1463473
@@ -16,9 +19,8 @@
 	"tags": [
 		"minigame",
 		"ayame",
-		"digits",
-		"sheet"
+		"digits"
 	],
-	"hash": "9b552121a05f881ea9790739ac2bbb018d337980",
+	"hash": "7efc835f28eca9c55483c549d781bd488af727a4",
 	"added": "2026-11-04"
 }

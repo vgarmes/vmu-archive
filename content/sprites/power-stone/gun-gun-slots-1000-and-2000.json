@@ -3,21 +3,23 @@
 	"game": "Power Stone",
 	"publisher": "Capcom",
 	"year": 1999,
-	"width": 64,
-	"height": 8,
+	"width": 32,
+	"height": 16,
 	"bpp": 1,
 	"frames": [
-		"0000000000000000183c3c3c3c3c3c3c3876767666767676186666660e666666186666663c666666186e6e6e706e6e6e183c3c3c7e3c3c3c0000000000000000"
+		"00000000183c3c3c387676761866666618666666186e6e6e183c3c3c00000000000000003c3c3c3c667676760e6666663c666666706e6e6e7e3c3c3c00000000"
 	],
+	"glyphs": {
+		"height": 8
+	},
 	"source": {
 		"file": "/1ST_READ.BIN",
 		"offset": 1460073
 	},
 	"tags": [
 		"minigame",
-		"gunrock",
-		"sheet"
+		"gunrock"
 	],
-	"hash": "bb4510e3a5f5cb8a856d2a41427bf01e2b0ff029",
+	"hash": "dd885e8ebb6bb8bf2d8216db813dd9dfc8804220",
 	"added": "2026-11-04"
 }

@@ -1,0 +1,22 @@
+{
+	"title": "Aerial Adventure: item 2",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 8,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"3864fa742810001c"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1465211
+	},
+	"tags": [
+		"minigame",
+		"falcon"
+	],
+	"hash": "0889e73150f56dbfed367826801defd7ebd2602d",
+	"added": "2026-11-04"
+}

@@ -1,0 +1,22 @@
+{
+	"title": "Menu header: minigames",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"region": "JP",
+	"width": 48,
+	"height": 8,
+	"bpp": 1,
+	"frames": [
+		"7ffffffffffe9800005000c1b1e592000861b15143ef9061b15554802261b15551003e619800000000c17ffffffffffe"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1469992
+	},
+	"tags": [
+		"menu"
+	],
+	"hash": "329375827804fdbde06a4fd31aefd2798d3ba8d5",
+	"added": "2026-11-04"
+}

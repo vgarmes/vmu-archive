@@ -9,14 +9,16 @@
 	"frames": [
 		"66ffffffff66337fe7e0fecc19bfe7ecfd980cdf81f9fb3019bfe7f3fd98337fe7f3fecc66ffffffff6666ffffffff66337f3e1c7ecc19bf3e793d980cdc0e193b3019bf3fc93d98337f3e1c7ecc66ffffffff6666ffffffff66337fe7e1fecc19bfe7e7fd980cdf81e1fb3019bfe7fcfd98337fe7e1fecc66ffffffff6666ffffffff66337f9f1c7ecc19bf9fc93d980cde07893b3019bf9fc93d98337f9f1c7ecc66ffffffff6666ffffffff66337f99f1fecc19bfc3ecfd980cdfe7f9fb3019bfc3f3fd98337f99e0fecc66ffffffff6666ffffffff66337cf9c71ecc19bcf1924d980cd039924b3019bcf9924d98337cf0c71ecc66ffffffff6666ffffffff66337f9f9c7ecc19bf9f193d980cde07993b3019bf9f993d98337f9f0c7ecc66ffffffff66"
 	],
+	"glyphs": {
+		"height": 7
+	},
 	"source": {
 		"file": "/1ST_READ.BIN",
 		"offset": 1457031
 	},
 	"tags": [
 		"minigame",
-		"gunrock",
-		"sheet"
+		"gunrock"
 	],
 	"hash": "cc7bb7b76995e9ad41a5f6fedd6268e6e53f8de3",
 	"added": "2026-11-04"

@@ -81,8 +81,16 @@ export function spriteProblems(s: Sprite, screens: Set<string>): string[] {
 	if (s.bpp !== 1) out.push('"bpp" must be 1')
 	if (!isInt(s.width, 1) || !isInt(s.height, 1))
 		out.push('"width" and "height" must be whole numbers above 0')
-	else if (s.width === SCREEN_W && s.height === SCREEN_H)
-		out.push('a 48x32 piece is a whole screen: import it to content/icons/')
+	// A 48x32 piece is a screen, unless it's an overlay the game draws over
+	// one (Power Stone Mini's slots payline), tagged so.
+	else if (
+		s.width === SCREEN_W &&
+		s.height === SCREEN_H &&
+		!s.tags?.includes('overlay')
+	)
+		out.push(
+			'a 48x32 piece is a whole screen: import it to content/icons/ (or tag an overlay "overlay")'
+		)
 	if (!Array.isArray(s.frames) || s.frames.length !== 1)
 		out.push('"frames" must hold exactly one frame')
 	else if (

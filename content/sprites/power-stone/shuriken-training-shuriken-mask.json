@@ -3,21 +3,23 @@
 	"game": "Power Stone",
 	"publisher": "Capcom",
 	"year": 1999,
-	"width": 32,
-	"height": 8,
+	"width": 16,
+	"height": 16,
 	"bpp": 1,
 	"frames": [
-		"46001c00ef003c00fe00fe007c00ff003e00ff007f007f00f7003c0062003800"
+		"4600ef00fe007c003e007f00f70062001c003c00fe00ff00ff007f003c003800"
 	],
+	"glyphs": {
+		"height": 8
+	},
 	"source": {
 		"file": "/1ST_READ.BIN",
 		"offset": 1462929
 	},
 	"tags": [
 		"minigame",
-		"ayame",
-		"sheet"
+		"ayame"
 	],
-	"hash": "4c67b5fc588d1ccb1d726a786ae56ae56e4033ac",
+	"hash": "181c12bd72a11d851720d74f13ecf79a944c1f62",
 	"added": "2026-11-04"
 }

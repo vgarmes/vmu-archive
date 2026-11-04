@@ -39,7 +39,6 @@ SIZE = 0x10000
 BASE = dict(game='Power Stone', publisher='Capcom', year=1999)
 FILE = '/1ST_READ.BIN'
 FONT = 0x8E7B  # the small font's 27 characters
-FONT_GLYPHS = {'font': 6}  # fonts among the sprites: stem -> character height
 
 
 def bits(prog, addr, w, h, masked=False, plane='image', invert=False):
@@ -124,26 +123,44 @@ RULES = [
 
 
 def sprites(prog):
-    """(stem, title, image, tags, Japanese text?, offset in the program)."""
+    """(stem, title, image, tags, Japanese text?, offset in the program, glyphs).
+
+    One sprite per stored bitmap, or per run of bitmaps stored back to back,
+    its frames one under the next in stored order with their sizes in
+    `glyphs` (None for a single bitmap). Nothing is laid out side by side.
+    """
     out = []
 
-    def add(stem, title, im, tags, jp, addr):
-        out.append((stem, title, im, tags, jp, addr))
+    def add(stem, title, im, tags, jp, addr, glyphs=None):
+        out.append((stem, title, im, tags, jp, addr, glyphs))
+
+    def run(stem, title, addr, w, heights, tags, jp=False, widths=None):
+        """Bitmaps stored back to back from addr: frame k is widths[k] x heights[k]."""
+        widths = widths or [w] * len(heights)
+        frames, a = [], addr
+        for fw, fh in zip(widths, heights):
+            frames.append(bits(prog, a, fw, fh))
+            a += (fw + 7) // 8 * fh
+        glyphs = {'height': heights[0] if len(set(heights)) == 1 else heights}
+        if len(set(widths)) > 1:
+            glyphs['width'] = widths
+        add(stem, title, stack(frames), tags, jp, addr, glyphs)
 
     # A sprite that moves sideways has a table of 8 pointers: copies of it
     # pre-shifted right by 0-7 dots (the game picks one with x & 7), so it
     # can be drawn at any x without shifting at run time. Copy k is copy 0
     # shifted by k (checked for every table; the masked ones store copy 7
-    # 24 dots wide), so only copy 0 is kept, one per table, side by side.
+    # 24 dots wide), so only copy 0 is kept.
     def shift0(t, w, h, masked, plane='image'):
         first = table(prog, t, 8)[0]
         return bits(prog, first, w, h, masked, plane)
 
     def masked_tables(stem, title, addrs, w, h, tags):
-        tags = tags + (['sheet'] if len(addrs) > 1 else [])
-        add(stem, title, sheet([shift0(t, w, h, True) for t in addrs]), tags, False, addrs[0])
-        add(stem + '-mask', title + ' (mask)', sheet([shift0(t, w, h, True, 'mask') for t in addrs]),
-            tags, False, addrs[0])
+        """One table per frame of an animation: copy 0 of each, stacked."""
+        glyphs = {'height': h} if len(addrs) > 1 else None
+        add(stem, title, stack([shift0(t, w, h, True) for t in addrs]), tags, False, addrs[0], glyphs)
+        add(stem + '-mask', title + ' (mask)', stack([shift0(t, w, h, True, 'mask') for t in addrs]),
+            tags, False, addrs[0], glyphs)
 
     def plain_table(stem, title, t, w, h, tags):
         add(stem, title, shift0(t, w, h, False), tags, False, t)
@@ -153,37 +170,39 @@ def sprites(prog):
         add(stem + '-mask', title + ' (mask)', bits(prog, a, w, h, True, 'mask'), tags, False, a)
 
     # Gun-Gun Slots
-    # 48 symbols of 16x10, 16 per reel: each reel is one column here, in
-    # stored order. Under them, the payline the game ORs over the reels.
-    reels = [bits(prog, 0x8811 + 20 * i, 16, 10) for i in range(48)]
-    columns = stack([sheet([reels[r * 16 + i] for r in range(3)]) for i in range(16)])
-    add('slots-reels', 'Gun-Gun Slots reels and payline', stack([columns, bits(prog, 0x8711, 48, 32)]),
-        ['minigame', 'gunrock', 'sheet'], False, 0x8811)
-    add('slots-payouts', 'Gun-Gun Slots payouts',
-        stack([bits(prog, a, 48, 7) for a in sorted(set(table(prog, 0x7FDB, 10)))]),
-        ['minigame', 'gunrock', 'sheet'], False, 0x7FEF)
-    add('slots-coin', 'Gun-Gun Slots coin', sheet([bits(prog, a, 16, 13) for a in table(prog, 0x8155, 4)]),
-        ['minigame', 'gunrock', 'sheet'], False, 0x815D)
-    add('slots-digits', 'Gun-Gun Slots digits', sheet([bits(prog, a, 8, 14) for a in table(prog, 0x829D, 10)]),
-        ['minigame', 'gunrock', 'digits', 'sheet'], False, 0x82B1)
-    add('slots-1000-2000', 'Gun-Gun Slots 1000 and 2000', sheet([bits(prog, 0x8BD1, 32, 8), bits(prog, 0x8BF1, 32, 8)]),
-        ['minigame', 'gunrock', 'sheet'], False, 0x8BD1)
+    gr = ['minigame', 'gunrock']
+    # 48 reel symbols of 16x10, 16 per reel, reel by reel.
+    run('slots-reels', 'Gun-Gun Slots reels', 0x8811, 16, [10] * 48, gr)
+    # The payline the game ORs over the reels: a whole 48x32 bitmap, but an
+    # overlay, not a screen.
+    add('slots-payline', 'Gun-Gun Slots payline', bits(prog, 0x8711, 48, 32), gr + ['overlay'], False, 0x8711)
+    # The payouts table (0x7FDB) points at 7 frames, some more than once;
+    # the frames are stored back to back from 0x7FEF.
+    payouts = sorted(set(table(prog, 0x7FDB, 10)))
+    if payouts != [0x7FEF + 42 * i for i in range(7)]:
+        sys.exit('payouts: the table does not point at 7 frames back to back')
+    run('slots-payouts', 'Gun-Gun Slots payouts', 0x7FEF, 48, [7] * 7, gr)
+    # The coin's 4 frames and the 10 digits, through tables, are stored 16
+    # rows tall (the last rows blank), back to back.
+    if table(prog, 0x8155, 4) != [0x815D + 32 * i for i in range(4)]:
+        sys.exit('coin: the table does not point at 4 frames back to back')
+    run('slots-coin', 'Gun-Gun Slots coin', 0x815D, 16, [16] * 4, gr)
+    if table(prog, 0x829D, 10) != [0x82B1 + 16 * i for i in range(10)]:
+        sys.exit('slots digits: the table does not point at 10 digits back to back')
+    run('slots-digits', 'Gun-Gun Slots digits', 0x82B1, 8, [16] * 10, gr + ['font', 'digits'])
+    run('slots-1000-2000', 'Gun-Gun Slots 1000 and 2000', 0x8BD1, 32, [8, 8], gr)
     add('bonus-time', 'Bonus time', bits(prog, 0x8E51, 48, 7), ['minigame', 'banner'], True, 0x8E51)
-    # The small font: 27 characters of 8x6, 6 bytes each, kept as stored, one
-    # under the next (FONT_GLYPHS gives their height). Glyphs 0-2 are read
+    # The small font: 27 characters of 8x6, 6 bytes each. Glyphs 0-2 are read
     # directly; 3-6 at 0x8E8D + 6n; the digits twice, at 0x8EA5 + 6n in the
     # right half of the byte and at 0x8EE1 + 6n in the left, so two can be
     # ORed into one byte. It starts where BONUS TIME ends and ends where the
     # sight's table starts.
     assert 0x8E51 + 6 * 7 == FONT and FONT + 6 * 27 == 0x8F1D
-    add('font', 'Small font', bits(prog, FONT, 8, 6 * 27), ['minigame', 'font', 'digits'], True, FONT)
-    # BET and $, read on their own by the slots (0x70C3, 0x75E3), not part
-    # of the font.
-    add('slots-bet', 'Gun-Gun Slots BET', bits(prog, 0x813D, 16, 6), ['minigame', 'gunrock'], False, 0x813D)
-    add('slots-dollar', 'Gun-Gun Slots dollar sign', bits(prog, 0x8149, 8, 6), ['minigame', 'gunrock'],
-        False, 0x8149)
+    run('font', 'Small font', FONT, 8, [6] * 27, ['minigame', 'font', 'digits'], jp=True)
+    # BET and $, read on their own by the slots (0x70C3, 0x75E3).
+    add('slots-bet', 'Gun-Gun Slots BET', bits(prog, 0x813D, 16, 6), gr, False, 0x813D)
+    add('slots-dollar', 'Gun-Gun Slots dollar sign', bits(prog, 0x8149, 8, 6), gr, False, 0x8149)
 
-    # Ayame's Shuriken Training
     # Ayame's Shuriken Training. Titles say what a sprite plainly is; the
     # rest go by size until someone matches them to play.
     st, ay = 'Shuriken Training', ['minigame', 'ayame']
@@ -204,12 +223,14 @@ def sprites(prog):
 
     # Falcon's Aerial Adventure
     aa, fa = 'Aerial Adventure', ['minigame', 'falcon']
-    add('falcon-items', f'{aa}: items', sheet([bits(prog, a, 8, 8) for a in (0x9FDB, 0x9FE3, 0x9FFA, 0xA5F2)]),
-        fa + ['sheet'], False, 0x9FDB)
-    # 0x9FEA, a 16x8 item, is the same pixels as Shuriken Training's 0x8F9D,
-    # so the importer keeps it once (as the Shuriken Training sprite).
-    masked_tables('falcon-flying', f'{aa}: Falcon', [0xA002, 0xA132, 0xA262, 0xA392, 0xA4C2, 0xA5FA, 0xA72A, 0xA85A],
-                  16, 9, fa + ['character'])
+    # Four items, each stored on its own. 0x9FEA, a 16x8 item, is the same
+    # pixels as Shuriken Training's 0x8F9D, so the importer keeps it once.
+    for k, a in enumerate((0x9FDB, 0x9FE3, 0x9FFA, 0xA5F2)):
+        add(f'falcon-item-{k + 1}', f'{aa}: item {k + 1}', bits(prog, a, 8, 8), fa, False, a)
+    # Eight flight poses, a table each (the item at 0xA5F2 sits between the
+    # fifth and the sixth).
+    masked_tables('falcon-flying', f'{aa}: Falcon', [0xA002, 0xA132, 0xA262, 0xA392, 0xA4C2, 0xA5FA, 0xA72A,
+                                                     0xA85A], 16, 9, fa + ['character'])
     masked('falcon-24x18', f'{aa}: sprite 24x18', 0xABF4, 24, 18, fa)
     add('falcon-check', f'{aa}: check', bits(prog, 0xA98A, 48, 7), fa + ['banner'], False, 0xA98A)
     # The course as stored, the unreached rows included. What the game shows
@@ -217,18 +238,18 @@ def sprites(prog):
     add('falcon-course', f'{aa}: course', bits(prog, 0xCE63, 48, 896), fa + ['map'], False, 0xCE63)
 
     # Shared interface
-    add('banners', 'Banners', stack([bits(prog, a, 48, 8) for a in (0xAC60, 0xAC96, 0xACCC, 0xACFC, 0xAD2C)]),
-        ['minigame', 'banner', 'sheet'], False, 0xAC60)
-    add('menu-headers', 'Menu headers',
-        stack([bits(prog, a, 48, 8) for a in (0xAFC0, 0xB290, 0xB950, 0xBBC0, 0xBDF0, 0xBE20, 0xBE50)]),
-        ['menu', 'sheet'], True, 0xAFC0)
-    items = [0xAFF0] + [0xB0B0 + 0x78 * i for i in range(4)] + [0xB2C0 + 0x78 * i for i in range(13)] + [0xBBF0, 0xBC68, 0xBCE0]
-    add('menu-items', 'Menu items', sheet([bits(prog, a, 40, 24) for a in items], 4), ['menu', 'sheet'], True, 0xAFF0)
-    add('menu-arrows', 'Menu arrows', sheet([bits(prog, a, 8, 24) for a in (0xB068, 0xB080, 0xB098)]),
-        ['menu', 'sheet'], False, 0xB068)
-    add('hiscore-parts', 'High score parts',
-        sheet([bits(prog, 0xBD58, 40, 19)] + [bits(prog, a, 8, 19) for a in (0xBDB7, 0xBDCA, 0xBDDD)]),
-        ['menu', 'sheet'], False, 0xBD58)
+    # Five banners back to back; the first two are stored 9 rows tall, with a
+    # line under them, though the code (0x3C5A, 0x53F4) draws 8 rows of each.
+    run('banners', 'Banners', 0xAC60, 48, [9, 9, 8, 8, 8], ['minigame', 'banner'])
+    for a, what in ((0xAFC0, 'menu'), (0xB290, 'minigames'), (0xB950, 'high scores'), (0xBBC0, 'sound'),
+                    (0xBDF0, 'start'), (0xBE20, 'how to play'), (0xBE50, 'start 2')):
+        add(f'menu-header-{a:x}', f'Menu header: {what}', bits(prog, a, 48, 8), ['menu'], True, a)
+    add('menu-item-frame', 'Menu item frame', bits(prog, 0xAFF0, 40, 24), ['menu'], False, 0xAFF0)
+    run('menu-items-main', 'Menu items: main menu', 0xB0B0, 40, [24] * 4, ['menu'], jp=True)
+    run('menu-items-minigames', 'Menu items: minigames', 0xB2C0, 40, [24] * 13, ['menu'], jp=True)
+    run('menu-items-sound', 'Menu items: sound', 0xBBF0, 40, [24] * 3, ['menu'])
+    run('menu-arrows', 'Menu arrows', 0xB068, 8, [24] * 3, ['menu'])
+    run('hiscore-parts', 'High score parts', 0xBD58, 40, [19] * 4, ['menu'], widths=[40, 8, 8, 8])
     return out
 
 
@@ -382,11 +403,11 @@ def main(src, out):
             meta = dict(title=f'{name} rules ({k + 1}/{n})', **BASE, region='JP',
                         tags=['minigame', 'letters', key])
             pieces.append((f'rules-{key}-{k + 1}', im, meta, im))
-    for stem, title, im, tags, jp, addr in sprites(prog):
+    for stem, title, im, tags, jp, addr, glyphs in sprites(prog):
         meta = dict(title=title, **BASE, **({'region': 'JP'} if jp else {}), tags=tags, sprite=True,
                     source={'file': FILE, 'offset': at + addr})
-        if stem in FONT_GLYPHS:
-            meta['glyphs'] = {'height': FONT_GLYPHS[stem]}
+        if glyphs:
+            meta['glyphs'] = glyphs
         pieces.append((stem, im, meta, im))
 
     stems = [p[0] for p in pieces]

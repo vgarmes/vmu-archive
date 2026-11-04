@@ -4,20 +4,28 @@
 	"publisher": "Capcom",
 	"year": 1999,
 	"width": 48,
-	"height": 40,
+	"height": 42,
 	"bpp": 1,
 	"frames": [
-		"ffffffffffff21821c106204f2cb2e594c9732cf2e79cf9cf1c71e38cf9f33cf2e79cf9cf3cb2e794d9f21823430630cffffffffffff534f8631860ab34f3ce69a7d534f1ce69a7ab0498ce6861d534fc4e69a7ab34fe4e69a7d534f0e319d0afffffffffffffe0e1c609e7fff3679324cff07361b3361e0070e783373e0ff267b3273ffff221320e1fffffffffffffffffbffffffffff820630607fff1a959b297f070f9d9b39e007c39c1879e0fe319d9b39ffff03098b10ffffffffffffffffffffffffffc39ba3c6c8879d0baf92ebdb9f6923bae8db91682fba4bc7990aad931b53c26aa1c7b851ffffffffffff"
+		"ffffffffffff21821c106204f2cb2e594c9732cf2e79cf9cf1c71e38cf9f33cf2e79cf9cf3cb2e794d9f21823430630cffffffffffffffffffffffff534f8631860ab34f3ce69a7d534f1ce69a7ab0498ce6861d534fc4e69a7ab34fe4e69a7d534f0e319d0afffffffffffffffffffffffffe0e1c609e7fff3679324cff07361b3361e0070e783373e0ff267b3273ffff221320e1fffffffffffffffffbffffffffff820630607fff1a959b297f070f9d9b39e007c39c1879e0fe319d9b39ffff03098b10ffffffffffffffffffffffffffc39ba3c6c8879d0baf92ebdb9f6923bae8db91682fba4bc7990aad931b53c26aa1c7b851ffffffffffff"
 	],
+	"glyphs": {
+		"height": [
+			9,
+			9,
+			8,
+			8,
+			8
+		]
+	},
 	"source": {
 		"file": "/1ST_READ.BIN",
 		"offset": 1468408
 	},
 	"tags": [
 		"minigame",
-		"banner",
-		"sheet"
+		"banner"
 	],
-	"hash": "7218b3daa8d8731e1a7819b42767e965cda4ff2a",
+	"hash": "f6b015ba0e90b460022fb74a3cbaf9047eac1d7c",
 	"added": "2026-11-04"
 }

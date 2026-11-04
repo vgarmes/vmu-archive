@@ -1,0 +1,21 @@
+{
+	"title": "Menu item frame",
+	"game": "Power Stone",
+	"publisher": "Capcom",
+	"year": 1999,
+	"width": 40,
+	"height": 24,
+	"bpp": 1,
+	"frames": [
+		"48000880019fffffffffb000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b000000000b0000000009fffffffff48000880013fffffffff"
+	],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1469320
+	},
+	"tags": [
+		"menu"
+	],
+	"hash": "85a01433be05689c0c3688e3bd029dd1aeae446b",
+	"added": "2026-11-04"
+}

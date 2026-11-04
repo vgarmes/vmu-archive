@@ -159,14 +159,38 @@ rather than guessing which combinations appear.
 
 ### Sprites
 
-40 sprites in `content/sprites/power-stone/`: the slot reels (48 symbols of
-16×10, 16 per reel, a column per reel) with the payline the game ORs over them,
-the payouts, coin, digits, BET, $, 1000/2000 labels and BONUS TIME banner; a
-small 8×6 font; Ayame's ninjas, shuriken, score popups and other sprites;
-Falcon in eight flight poses, the CHECK banner, items, and the course as stored
-(48×896); the READY/START/GAME OVER banners; and the menu headers,
-items, arrows and high-score parts. Falcon's 16×8 item at `0x9FEA` is the same
-pixels as Shuriken Training's `0x8F9D`, so it's kept once.
+52 sprites in `content/sprites/power-stone/`, one per bitmap the program
+stores, or per run of bitmaps stored back to back, their frames one under the
+next in stored order with each frame's size in `glyphs`. Nothing is laid out
+side by side; `mini.py` checks each table it follows, and every plain sprite is
+its bytes in the program.
+
+- Gun-Gun Slots: the 48 reel symbols (16×10, reel by reel, from `0x8811`); the
+  payline the game ORs over them (`0x8711`), a whole 48×32 bitmap kept as a
+  sprite tagged `overlay`; the 7 payouts (48×7 from `0x7FEF`, which the table
+  at `0x7FDB` points at, some more than once); the coin's 4 frames and the 10
+  digits, through tables at `0x8155` and `0x829D`, stored 16 rows tall with the
+  last rows blank; 1000 and 2000; BET, $ and the BONUS TIME banner.
+- The small font, below.
+- Shuriken Training: Ayame's ninjas, shuriken, score popups and other sprites.
+  Where the game keeps a sprite as a table of 8 copies pre-shifted 0–7 dots,
+  only copy 0 is kept; where an animation has a table per frame, copy 0 of
+  each is stacked. Masked sprites are an image and a mask.
+- Aerial Adventure: Falcon's 8 flight poses, the CHECK banner, four items
+  stored apart, a 24×18 sprite and the course as stored (48×896). Falcon's 16×8
+  item at `0x9FEA` is the same pixels as Shuriken Training's `0x8F9D`, so it's
+  kept once.
+- Shared interface: the 5 banners (READY, START and the rest, back to back from
+  `0xAC60`; the first two are stored 9 rows tall with a line under them, but
+  the code draws 8 rows of each); 7 menu headers, each stored on its own (the
+  two START headers are the same pixels, so one is kept); the menu items in
+  the runs they're stored in (an empty frame, the main menu's 4, the
+  minigames' 13, sound on/off's 3), the arrows, and the high-score parts (a
+  40×19 frame and three 8×19 pieces).
+
+An earlier import grouped many of these by theme and laid them side by side,
+which hid how they're stored, cut the coin and digits short, and lost the
+banners' bottom lines.
 
 The small font is 27 characters of 8×6 at `0x8E7B`, 6 bytes each, kept as
 stored: one under the next. It runs from the end of BONUS TIME to the start of
