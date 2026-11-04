@@ -29,15 +29,14 @@ GAME_SCREENS = {
 VIEWER = 'Graffiti viewer'
 APP_FILE = '/JETRADIO/SYSOPTION.AFS'
 APP_SCREENS = {
-    'startup': ('startup', ['logo'], None),
+    'sega': ('SEGA', ['logo'], None),
+    'copyright': ('copyright', [], None),
     'title': ('title', ['logo'], 'JP'),
     'channel': ('downloaded graffiti', ['menu'], 'JP'),
     'size-menu': ('size menu', ['menu'], 'JP'),
     'no-graffiti': ('no graffiti', ['menu'], 'JP'),
 }
 APP_SPRITES = {
-    'sega': ('SEGA', ['logo']),
-    'copyright': ('copyright', []),
     'radio-1': ('radio, left', []),
     'radio-2': ('radio, middle', []),
     'radio-3': ('radio, right', []),

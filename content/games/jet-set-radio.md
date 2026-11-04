@@ -80,8 +80,10 @@ hex digits leave a pixel between cells.
 The archive's viewer screens are rebuilt by drawing what the code draws, at
 the places it gives, rather than captured:
 
-- **Startup** (`0x14EE`): the SEGA logo at (0, 4) for 32 ticks, then the ©
-  text at (0, 6) for 32 ticks.
+- **SEGA** and **copyright** (`0x14EE`): when the viewer starts, the SEGA
+  logo at (0, 4) for 32 ticks, then the © text at (0, 6) for 32 ticks, each
+  shown once before the title. Each 48×20 bitmap fills its screen alone, so
+  neither is kept as a sprite.
 - **Title** (`0x152E`): the radio at x = 12, 20, 28 with JET SET RADIO under
   it (`0x3382`) for 16 ticks, then Press A+B (`0x3372`) for 16, until A or B
   is pressed. A third string, JET SET RADIO at the top (`0x3392`), is never

@@ -128,7 +128,8 @@ def screens(d):
     def new():
         return Screen(d)
 
-    # 0x14EE: clear, SEGA at (0, 4), wait 0x20 ticks; clear, © at (0, 6), 0x20.
+    # 0x14EE: clear, SEGA at (0, 4), wait 0x20 ticks; clear, © at (0, 6), wait
+    # 0x20; then the title. Shown once each, so two screens, not a loop.
     sega = new()
     sega.bitmap(BITMAPS['sega'], 0, 4)
     copy = new()
@@ -166,7 +167,8 @@ def screens(d):
     none.string(0x33A2)
     none.line(0x17)
     return [
-        ('startup', [sega, copy], 0x20),
+        ('sega', [sega], None),
+        ('copyright', [copy], None),
         ('title', title, 0x10),
         ('channel', [whole, blink], 0x10),
         ('size-menu', [menu], None),
@@ -191,18 +193,6 @@ def sprite_image(w, h, rows):
         for k in range(w):
             if b >> (7 - k) & 1:
                 im.putpixel((k, r), 0)
-    return im
-
-
-def bitmap_image(d, addr):
-    wb, h = d[addr], d[addr + 1]
-    rows = [d[addr + 2 + r * wb:addr + 2 + (r + 1) * wb] for r in range(h)]
-    im = Image.new('1', (8 * wb, h), 1)
-    for r, row in enumerate(rows):
-        for c, b in enumerate(row):
-            for k in range(8):
-                if b >> (7 - k) & 1:
-                    im.putpixel((8 * c + k, r), 0)
     return im
 
 
@@ -231,9 +221,8 @@ def main(src, out):
                                         drawn_at=drawn_at or []))
         previews.append((name, im))
 
-    add_sprite('sega', bitmap_image(d, BITMAPS['sega']), BITMAPS['sega'] + 2, [('startup', 0, 4)])
-    add_sprite('copyright', bitmap_image(d, BITMAPS['copyright']), BITMAPS['copyright'] + 2,
-               [('startup', 0, 6)])
+    # The SEGA and © bitmaps aren't kept as sprites: each fills its own screen
+    # alone, so its screen holds all of it.
     for k, (a, x) in enumerate(zip(SLICES, SLICE_X)):
         add_sprite(f'radio-{k + 1}', sprite_image(d[a], d[a + 1], d[a + 2:a + 2 + d[a + 1]]), a + 2,
                    [('title', x, 0)])
