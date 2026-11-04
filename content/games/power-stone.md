@@ -77,19 +77,46 @@ is the Falcon course, a scroll (see [Falcon's course](#falcons-course)):
 | `0xAE40`, `0xAF00`                  | Capcom logo, Copyright (©1999)                                            |
 | `0xCAA3`                            | Caution: replace the battery (JP)                                         |
 | `0xA9B4`                            | Menu (JP)                                                                 |
-| `0xAA74`+`0xAB34`                   | Falcon (2 frames)                                                         |
-| `0xCCE3`+`0xCDA3`                   | Ayame (2 frames)                                                          |
-| `0x8591`+`0x8651`                   | Gunrock (2 frames)                                                        |
+| `0xAA74`+`0xAB34`                   | Falcon (intro, see [Portraits](#portraits))                               |
+| `0xCCE3`+`0xCDA3`                   | Ayame (intro)                                                             |
+| `0x8591`+`0x8651`                   | Gunrock (win)                                                             |
 | `0xCB63`, `0xCC23`                  | Ayame's Shuriken Training stage, and (second)                             |
 | `0x81DD`–`0x84D1`, `0x8C11`         | Gun-Gun Slots: medal get, quit?, double up?, match to double, great! (JP) |
 | `0x8CD1`, `0x8D91`                  | Art museum opened, Music hall opened (JP)                                 |
 | `0xB980`, `0xBA40`, `0xBB00`        | High score, one per game (JP)                                             |
 | tables `0xBE80`, `0xC189`, `0xC492` | Rules: 4 pages Falcon, 4 Ayame, 8 Gun-Gun Slots (JP)                      |
 
-The portraits' two frames alternate, but the tick wasn't measured, so they
-play at the site's default. The stored menu (`0xA9B4`) and the second stage
-screen (`0xCC23`) have no direct address load in the code; they may be reached
-through computed addresses, so they aren't marked unused.
+The stored menu (`0xA9B4`) and the second stage screen (`0xCC23`) have no
+direct address load in the code; they may be reached through computed
+addresses, so they aren't marked unused.
+
+### Portraits
+
+Each character has two stored portraits, and the code plays them as a short
+sequence, not a loop of two frames. The entries are those sequences, one frame
+per tick of the game, at the same estimated 16 ms tick as
+[Falcon's course](#falcons-course); each rests on the whole first portrait.
+
+- **Falcon** (before his game): the portrait slides up from the bottom, two
+  rows a tick (state 1 at `0x319E`: the top _c_ rows of `0xAA74` drawn at the
+  bottom of the screen). It then flashes for 15 ticks (`0x3205`: a counter from
+  16, and the screen sent inverted by `0x3CE1` while its bit 1 is set: 2 ticks
+  inverted, 2 normal). Then the second portrait (`0x3212`, with a sound), held
+  33 ticks (`0x3229`) before the game starts.
+- **Ayame** (before her game): the same slide. Then for 31 ticks the two
+  portraits swap every 2 ticks (`0x456C`: the first while the counter's bit 1
+  is set), then the second, held 65 ticks (`0x4592`, `0x45A9`).
+- **Gunrock** (when the slots pay): the first portrait for 24 ticks
+  (`0x6B6E`), then it flashes (`0x6B9B`: inverted 3 ticks, then 4 normal, 4
+  inverted, 4 normal, 4 inverted), then the second, with a sound, for 48 ticks
+  (`0x6BD6`, `0x6BF3`). The game then goes back to the flash and repeats until
+  the player moves on; the entry loops back to the first portrait instead. Over
+  both, the win's payout label (`+50`, `×2`…) blinks at rows 12–18, 8 ticks on
+  and 8 off (`0x7B28`); it depends on the win, so it's left out.
+
+The slide-in draws over what was on screen before, which is taken as blank.
+The intros are one-offs in the game, so their entries start with a second of
+blank screen before each replay; the second is the archive's, not the game's.
 
 ### Falcon's course
 
