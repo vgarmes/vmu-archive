@@ -36,6 +36,7 @@ HEADER = 'ﾊﾟﾜｰｽﾄｰﾝﾐﾆ'.encode('shift_jis')  # VMS description
 SIZE = 0x10000
 BASE = dict(game='Power Stone', publisher='Capcom', year=1999)
 FILE = '/1ST_READ.BIN'
+REPO = Path(__file__).resolve().parents[3]
 
 
 def bits(prog, addr, w, h, masked=False, plane='image', invert=False):
@@ -83,18 +84,14 @@ def stack(images):
     return out
 
 
-# (stem, title, [screen addresses], tags, Japanese text?) — 48x32 screens.
-# More than one address is an animation, at the site's default timing: the
-# code alternates them, but its tick wasn't measured.
+# (stem, title, [screen addresses], tags, Japanese text?) — 48x32 stills.
+# The portraits are sequences of their own; see portraits().
 SCREENS = [
     ('title', 'Power Stone Mini title screen', [0xAD80], ['logo', 'minigame'], False),
     ('capcom', 'Capcom logo', [0xAE40], ['logo'], False),
     ('copyright', 'Copyright', [0xAF00], [], False),
     ('caution', 'Caution: replace the battery', [0xCAA3], ['system'], True),
     ('menu', 'Menu', [0xA9B4], ['menu'], True),
-    ('falcon', 'Falcon', [0xAA74, 0xAB34], ['character', 'portrait', 'falcon'], False),
-    ('ayame', 'Ayame', [0xCCE3, 0xCDA3], ['character', 'portrait', 'ayame'], False),
-    ('gunrock', 'Gunrock', [0x8591, 0x8651], ['character', 'portrait', 'gunrock'], False),
     ('ayame-stage', "Ayame's Shuriken Training stage", [0xCB63], ['minigame', 'ayame'], False),
     ('ayame-stage-2', "Ayame's Shuriken Training stage (second)", [0xCC23], ['minigame', 'ayame'], False),
     ('slots-medal-get', 'Gun-Gun Slots: medal get', [0x81DD], ['minigame', 'gunrock'], True),
@@ -215,12 +212,81 @@ def sprites(prog):
     return out
 
 
+TICK_MS = 16  # the game's tick, estimated; see COURSE_STEP_MS
+INTRO_PAUSE_MS = 1000  # blank before an intro replays: the site loops, the game doesn't
+
+
+def screen_rows(prog, addr, n=32):
+    return [prog[addr + 6 * r:addr + 6 * r + 6] for r in range(n)]
+
+
+def rows_image(rws, invert=False):
+    """32 rows of 6 bytes as a screen; `invert` as the game's inverted copy
+    to the LCD (0x3CE1, `xor #0xff`) shows it."""
+    im = Image.new('1', (48, 32), 1)
+    px = im.load()
+    for y, row in enumerate(rws):
+        for x in range(48):
+            if (row[x // 8] >> (7 - x % 8) & 1) ^ invert:
+                px[x, y] = 0
+    return im
+
+
+def portraits(prog):
+    """The three portraits as the code plays them, one frame per tick.
+
+    Returns (stem, title, tags, [frames], index of the full portrait). The
+    importer merges back-to-back copies into one longer frame.
+    """
+    blank = [bytes(6)] * 32
+
+    def slide_in(addr):
+        # State 1 (Falcon 0x319E, Ayame 0x4505): each tick 2 more rows; the top
+        # c rows of the portrait are drawn at the bottom of the screen.
+        # What was on screen before is taken as blank.
+        return [rows_image(blank[:32 - c] + screen_rows(prog, addr, c)) for c in range(2, 33, 2)]
+
+    out = []
+
+    # Falcon: slide in; state 2 (0x3205) counts 0x1A from 16: each tick it
+    # decrements, then shows the screen inverted when bit 1 is set; at 0 it
+    # draws frame 2 (0x3212), which state 3 (0x3229) holds 32 more ticks
+    # before the game starts.
+    f1, f2 = screen_rows(prog, 0xAA74), screen_rows(prog, 0xAB34)
+    seq = slide_in(0xAA74)
+    seq += [rows_image(f1, bool(k & 2)) for k in range(15, 0, -1)]
+    seq += [rows_image(f2)] * 33
+    out.append(('falcon', 'Falcon', ['character', 'portrait', 'falcon'], seq, 15))  # the slide-in's last step: the whole portrait
+
+    # Ayame: slide in; state 2 (0x456C) counts 0x1A from 32, drawing frame 1
+    # when bit 1 is set and frame 2 when it's clear; at 0 frame 2 (0x4592),
+    # held 64 more ticks by state 3 (0x45A9).
+    a1, a2 = screen_rows(prog, 0xCCE3), screen_rows(prog, 0xCDA3)
+    seq = slide_in(0xCCE3)
+    seq += [rows_image(a1 if k & 2 else a2) for k in range(31, 0, -1)]
+    seq += [rows_image(a2)] * 65
+    out.append(('ayame', 'Ayame', ['character', 'portrait', 'ayame'], seq, 15))  # the slide-in's last step: the whole portrait
+
+    # Gunrock, when the slots pay: frame 1 for 24 ticks (0x6B6E), then a loop
+    # of frame 1 flashing (0x6B9B: inverted while 0x94 is even, 0x93 counting
+    # ticks to 4) and frame 2 for 48 ticks (0x6BD6, 0x6BF3), which sets the
+    # flash's state again. The win's payout label, blinking over rows 12-18
+    # (0x7B28), is left out.
+    g1, g2 = screen_rows(prog, 0x8591), screen_rows(prog, 0x8651)
+    seq = [rows_image(g1)] * 24
+    seq += [rows_image(g1, True)] * 3 + [rows_image(g1)] * 4 + [rows_image(g1, True)] * 4
+    seq += [rows_image(g1)] * 4 + [rows_image(g1, True)] * 4
+    seq += [rows_image(g2)] * 48
+    out.append(('gunrock', 'Gunrock', ['character', 'portrait', 'gunrock'], seq, 0))
+    return out
+
+
 COURSE_SECTIONS = 0x34CA  # 18 big-endian pointers: each section's bottom screen
 SECTION_ROWS = 128
 # Estimated, not measured: timer 0 is set up at 0x1677 (t0prr 0xF5, t0hr 0xF8),
 # about 62 Hz if its input is the 32.768 kHz crystal's cycle clock; that it
 # paces the game loop wasn't traced. 1 row a tick is the cruising speed.
-COURSE_STEP_MS = 16
+COURSE_STEP_MS = TICK_MS
 
 
 def course_lap(prog):
@@ -276,6 +342,17 @@ def main(src, out):
         frames = [bits(prog, a, 48, 32) for a in addrs]
         meta = dict(title=title, **BASE, **({'region': 'JP'} if jp else {}), tags=tags)
         pieces.append((stem, stack(frames), meta, frames[0]))
+    for stem, title, tags, seq, full in portraits(prog):
+        delays = [TICK_MS] * len(seq)
+        if stem != 'gunrock':  # an intro: blank between plays (Gunrock's loops)
+            seq = [Image.new('1', (48, 32), 1)] + seq
+            delays = [INTRO_PAUSE_MS] + delays
+            full += 1
+        meta = dict(title=title, **BASE, tags=tags, frameDelaysMs=delays, posterFrame=full)
+        existing = f'power-stone-{stem}'
+        if (REPO / 'content/icons' / f'{existing}.json').exists():
+            meta['replaces'] = existing
+        pieces.append((stem, stack(seq), meta, seq[full]))
     lap = course_lap(prog)
     meta = dict(title="Falcon's Aerial Adventure course", **BASE, tags=['minigame', 'falcon', 'map'],
                 scroll=dict(stepPx=1, delayMs=COURSE_STEP_MS, direction='down'))
