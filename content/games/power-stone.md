@@ -171,22 +171,3 @@ pixels as Shuriken Training's `0x8F9D`, so it's kept once.
 Not imported: the VMS file's own save icon (colour, for the Dreamcast's file
 screen), the reel strip's order table, and the table after the course
 (`0xE363`–`0xEA70`), which are data.
-
-### Compared with Second Screen Archive
-
-Second Screen Archive's
-[Power Stone collection](https://second-screen-archive.neocities.org/power-stone-vmu-artwork-2)
-(231 images) names each picture by its address in the same program, and the
-layout is the same here. 141 of its images match this disc's bytes at their
-address exactly. The rest:
-
-- Its text screens (rules, slot prompts and rewards, menus, high scores,
-  CAUTION, the copyright) are in English; this disc's are Japanese at the same
-  addresses. Its copy looks to be from a Western release, whose English
-  screens aren't in the archive yet.
-- 23 Ayame and Falcon sprites are exactly the image bytes of this disc's masked
-  rows, without the mask (checked for all 23).
-- 22 are screens it assembled (slot reels, menus), not stored art.
-
-Its coin starts at `0x815F`, a row after where the code's pointer table puts it
-(`0x815D`, whose first row is blank).
