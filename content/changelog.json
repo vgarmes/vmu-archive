@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-04",
+		"title": "Sprites, out from behind the scenes",
+		"body": "The smaller art games draw onto part of a screen, like digits, buttons, fonts and faces, now has its own Sprites card on each game's page: all 341 of Shenmue's, the Dreamcast BIOS's 129 memory card icons, Power Stone Mini's, the VMU's fonts and clock animals, Ikaruga's chain digits and Sakura Taisen 3's battle parts. Hover one for its name."
+	},
+	{
+		"date": "2026-11-04",
 		"title": "Falcon's course, scrolling down",
 		"body": "Screens can now scroll down as well as sideways. The first is the course of Power Stone Mini's Falcon game: one whole lap, frame for frame as the game draws it, moving at Falcon's cruising speed. That speed comes from the code, but the length of a tick is still an estimate."
 	},
