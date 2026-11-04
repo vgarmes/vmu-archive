@@ -136,4 +136,12 @@
 	.notes th {
 		@apply text-foreground font-normal;
 	}
+	/*
+		Screens in the notes (public/notes/<game slug>/) are native-size art,
+		near-black on transparent like the grid's: scaled up 4x without
+		smoothing, side by side, and flipped for dark mode.
+	*/
+	.notes img {
+		@apply pixelated mr-4 mb-2 inline-block h-auto w-48 align-top dark:invert;
+	}
 }

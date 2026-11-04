@@ -128,13 +128,17 @@ function pickCover(name: string, icons: Icon[], id?: string) {
 
 const markdown = new Marked({
 	// Notes link to each other as files ("power-stone-2.md"); on the site
-	// they're game pages.
+	// they're game pages. Their images live in public/notes/<game slug>/,
+	// written relative to the notes file so they also show on GitHub
+	// ("../../public/notes/…"); on the site public/ is the root.
 	walkTokens(token) {
 		if (token.type === 'link')
 			token.href = token.href.replace(
 				/^(?:\.\/)?([a-z0-9-]+)\.md(#.*)?$/,
 				'/games/$1$2'
 			)
+		if (token.type === 'image')
+			token.href = token.href.replace(/^(?:\.\.\/)+public\//, '/')
 	},
 	renderer: {
 		// Ids for the notes' own #links ("see [Waiting](#waiting)").

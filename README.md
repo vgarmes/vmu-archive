@@ -82,6 +82,20 @@ Falcon game, is a strip 48 pixels wide and as tall as the art, with
 `"direction": "down"` in its `scroll`. The window climbs it from the bottom: the
 art enters from the top edge, and the entry rests on the strip's bottom screen.
 
+### Pictures in a game's notes
+
+A game's notes (`content/games/<game slug>.md`) can show pictures that explain
+something but aren't archive entries, like a sequence rebuilt from the code. Put
+them in `public/notes/<game slug>/` at native size, near-black on transparent
+like the thumbnails, and link them relative to the notes file:
+
+```md
+![Falcon's sequence](../../public/notes/power-stone/falcon.gif 'Falcon')
+```
+
+The site serves them from `/notes/…`, shows them 4× without smoothing, side by
+side, and inverts them in dark mode; on GitHub the relative link works as is.
+
 ### Animations and fixing existing art
 
 To change a piece that's already in the archive (swap one made from a
