@@ -19,7 +19,8 @@ sprite's frames.
 Writes:
   PSMINI.VMS            the program, as a VMU file image
   inbox/                a .png and sidecar per piece for `pnpm icons:import`:
-                        48x32 screens to content/icons/, everything else as
+                        48x32 screens and the Falcon course (a "down" scroll,
+                        see course_lap) to content/icons/, everything else as
                         sprites (sheets of frames side by side, masks as their
                         own sprite, lit where the sprite is opaque)
   contact-sheet.png     everything, for checking
@@ -194,8 +195,8 @@ def sprites(prog):
                   16, 9, fa + ['character'])
     masked('falcon-24x18', f'{aa}: sprite 24x18', 0xABF4, 24, 18, fa)
     add('falcon-check', f'{aa}: check', bits(prog, 0xA98A, 48, 7), fa + ['banner'], False, 0xA98A)
-    # Scrolled upward through the screen as Falcon flies; the site only
-    # scrolls sideways, so it's kept whole here.
+    # The course as stored, the unreached rows included. What the game shows
+    # of it is the "course" scroll (see course_lap).
     add('falcon-course', f'{aa}: course', bits(prog, 0xCE63, 48, 896), fa + ['map'], False, 0xCE63)
 
     # Shared interface
@@ -212,6 +213,48 @@ def sprites(prog):
         sheet([bits(prog, 0xBD58, 40, 19)] + [bits(prog, a, 8, 19) for a in (0xBDB7, 0xBDCA, 0xBDDD)]),
         ['menu', 'sheet'], False, 0xBD58)
     return out
+
+
+COURSE_SECTIONS = 0x34CA  # 18 big-endian pointers: each section's bottom screen
+SECTION_ROWS = 128
+# Estimated, not measured: timer 0 is set up at 0x1677 (t0prr 0xF5, t0hr 0xF8),
+# about 62 Hz if its input is the 32.768 kHz crystal's cycle clock; that it
+# paces the game loop wasn't traced. 1 row a tick is the cruising speed.
+COURSE_STEP_MS = 16
+
+
+def course_lap(prog):
+    """One lap of Falcon's course as the game shows it, as a 48-wide strip.
+
+    The routine at 0x34EE keeps a position (0x8D:0x8E:0x8F, in rows/256),
+    adds the speed (0x83:0x84: 1 row a tick cruising, 0.5-3 with the brake and
+    accelerator) and draws the 32 rows starting `position % 128` rows above
+    section `position / 128 % 18`'s bottom screen. So the window climbs the
+    course and the art moves down the screen. The table repeats three
+    stretches five times each, so a lap is 18 x 128 rows; every window of it
+    is a run of 32 rows of this strip (checked for all 2304 positions), and
+    the lap's end meets its start.
+    """
+    bases = table(prog, COURSE_SECTIONS, 18)
+
+    def window(p):
+        top = bases[p // SECTION_ROWS % 18] - 6 * (p % SECTION_ROWS)
+        return [prog[top + 6 * r:top + 6 * r + 6] for r in range(32)]
+
+    lap = 18 * SECTION_ROWS
+    rows = window(0)
+    for p in range(1, lap):
+        rows.insert(0, window(p)[0])
+    n = len(rows)
+    assert all(rows[n - 32 - p:n - p] == window(p) for p in range(lap)), 'course windows'
+    assert window(lap) == window(0), 'course loop'
+    im = Image.new('1', (48, n), 1)
+    px = im.load()
+    for y, row in enumerate(rows):
+        for x in range(48):
+            if row[x // 8] >> (7 - x % 8) & 1:
+                px[x, y] = 0
+    return im
 
 
 def main(src, out):
@@ -233,6 +276,10 @@ def main(src, out):
         frames = [bits(prog, a, 48, 32) for a in addrs]
         meta = dict(title=title, **BASE, **({'region': 'JP'} if jp else {}), tags=tags)
         pieces.append((stem, stack(frames), meta, frames[0]))
+    lap = course_lap(prog)
+    meta = dict(title="Falcon's Aerial Adventure course", **BASE, tags=['minigame', 'falcon', 'map'],
+                scroll=dict(stepPx=1, delayMs=COURSE_STEP_MS, direction='down'))
+    pieces.append(('course', lap, meta, lap.crop((0, lap.height - 32, 48, lap.height))))
     for key, name, t, n in RULES:
         for k, a in enumerate(table(prog, t, n)):
             im = bits(prog, a, 48, 32)

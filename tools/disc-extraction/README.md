@@ -117,7 +117,10 @@ files and look for the screen in what comes out.
 - From code tables: Berserk (frames held 4 or 8 ticks of 60 Hz), Bangaioh
   (animation scripts) and Crazy Taxi 2 (a frame counter, assuming a 60 Hz
   loop). Ikaruga's SAVE holds each frame while a counter runs to 15, which
-  gives at least 17 steps, but what paces a step wasn't traced.
+  gives at least 17 steps, but what paces a step wasn't traced. Power Stone
+  Mini's Falcon course: the order of its sections and the speed from code, the
+  tick estimated from a timer's setup. It scrolls down the screen, so it's a
+  `"direction": "down"` scroll (see the main README).
 - From captures: Sakura Taisen 3's title (100 ms a frame) and its scrolling
   banners (1 px per tick, stored as one strip; see the main README).
 - Unknown yet: Soul Calibur's fighters play at the site's default until someone
