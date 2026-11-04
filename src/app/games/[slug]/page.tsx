@@ -39,7 +39,12 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 
 	return (
 		<div className="flex flex-col gap-8">
-			<header className="flex flex-col gap-3">
+			<header>
+				{/* The breadcrumb shows the title; the heading is for screen readers. */}
+				<h1 className="sr-only">
+					{game.en}
+					{game.ja && ` (${game.ja})`}
+				</h1>
 				<Breadcrumb>
 					<BreadcrumbList className="text-xs tracking-[0.2em] uppercase">
 						<BreadcrumbItem>
@@ -47,17 +52,15 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 						</BreadcrumbItem>
 						<BreadcrumbSeparator />
 						<BreadcrumbItem className="min-w-0">
-							<BreadcrumbPage className="truncate">{game.en}</BreadcrumbPage>
+							<BreadcrumbPage className="truncate" title={game.ja}>
+								{game.en}
+							</BreadcrumbPage>
+							{meta && (
+								<span className="text-muted-foreground shrink-0">· {meta}</span>
+							)}
 						</BreadcrumbItem>
 					</BreadcrumbList>
 				</Breadcrumb>
-				<div className="flex flex-col gap-1">
-					<h1 className="text-base font-bold">{game.en}</h1>
-					{game.ja && (
-						<p className="text-muted-foreground text-sm">{game.ja}</p>
-					)}
-					{meta && <p className="text-muted-foreground text-xs">{meta}</p>}
-				</div>
 			</header>
 
 			<IconGrid icons={icons.map(toIndexEntry)} />
