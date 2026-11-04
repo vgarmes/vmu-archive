@@ -68,7 +68,8 @@ inverted (`xor #0xff`) at `0x4BAE`, a flash.
 
 ### Screens
 
-36 entries are whole 48×32 screens, all stills except the portraits:
+36 entries are whole 48×32 screens, all stills except the portraits, and one
+is the Falcon course, a scroll (see [Falcon's course](#falcons-course)):
 
 | Address                             | Archive title                                                             |
 | ----------------------------------- | ------------------------------------------------------------------------- |
@@ -86,10 +87,30 @@ inverted (`xor #0xff`) at `0x4BAE`, a flash.
 | tables `0xBE80`, `0xC189`, `0xC492` | Rules: 4 pages Falcon, 4 Ayame, 8 Gun-Gun Slots (JP)                      |
 
 The portraits' two frames alternate, but the tick wasn't measured, so they
-play at the site's default. The stored menu (`0xA9B4`), the second stage
-screen (`0xCC23`) and the Falcon course have no direct address load in the
-code; they may be reached through computed addresses (the course must be, as
-it scrolls), so they aren't marked unused.
+play at the site's default. The stored menu (`0xA9B4`) and the second stage
+screen (`0xCC23`) have no direct address load in the code; they may be reached
+through computed addresses, so they aren't marked unused.
+
+### Falcon's course
+
+Falcon's Aerial Adventure scrolls its course down the screen as Falcon flies
+up. The routine at `0x34EE` keeps a position (`0x8D:0x8E:0x8F`, in 1/256 rows)
+and adds the speed to it every tick (`0x83:0x84`: it starts and cruises at 1
+row, the accelerator takes it to 3 and the brake to 0.5). It then draws the 32
+rows that start `position % 128` rows above the bottom screen of section
+`position / 128 % 18`, whose addresses are a table at `0x34CA`:
+`0xE2A3` five times, `0xDFA3`, `0xDCA3` five times, `0xD9A3`, `0xD6A3` five
+times, `0xD3A3`. So a lap is three stretches of road, each repeated five times,
+joined by three transitions: 2,304 rows, whose end meets its start.
+
+It's in the archive as a downward scroll of one lap: a 48×2,335 strip whose
+windows are exactly what the game draws at each of the 2,304 positions
+(checked for every one). It moves 1 row a step, the cruising speed, every 16
+ms. That interval is an estimate: timer 0 is set up at `0x1677` (prescaler
+`0xF5`, reload `0xF8`), about 62 Hz if it counts the 32.768 kHz crystal's
+cycle clock, but that it paces the game loop wasn't traced. The table never
+reaches the course's first 97 stored rows (`0xCE63`–`0xD0A9`); the stored
+course, those rows included, is also kept as a sprite.
 
 The menus the game shows are composed at run time: a 48×8 header, a 40×24 item
 at (0, 8) and an 8×24 arrow column at (40, 8). Their parts are kept as sprites
@@ -101,14 +122,14 @@ rather than guessing which combinations appear.
 16×10, 16 per reel, a column per reel) with the payline the game ORs over them,
 the payouts, coin, digits, 1000/2000 labels and BONUS TIME banner; a small 8×6
 font with BET and $; Ayame's ninjas, shuriken, score popups and other sprites;
-Falcon in eight flight poses, the CHECK banner, items, and the course, a
-48×896 strip that scrolls up the screen (kept as a sprite, since the site only
-scrolls sideways); the READY/START/GAME OVER banners; and the menu headers,
+Falcon in eight flight poses, the CHECK banner, items, and the course as stored
+(48×896); the READY/START/GAME OVER banners; and the menu headers,
 items, arrows and high-score parts. Falcon's 16×8 item at `0x9FEA` is the same
 pixels as Shuriken Training's `0x8F9D`, so it's kept once.
 
 Not imported: the VMS file's own save icon (colour, for the Dreamcast's file
-screen), and the reel strip's order table and course table, which are data.
+screen), the reel strip's order table, and the table after the course
+(`0xE363`–`0xEA70`), which are data.
 
 ### Compared with Second Screen Archive
 
