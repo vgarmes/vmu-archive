@@ -18,9 +18,10 @@ address is checked against the one its comment header gives.
                            pixel row n), the top 6 bits of each byte used
 
 Writes main-menu.png (48x32, the screen MainMenu draws), the six clock
-sprites, both fonts as sheets in character order, the clock animation as the
-BIOS plays it (clock-<animal>.png, lower half only, for the contact sheet),
-manifest.json and contact-sheet.png.
+sprites, both fonts as columns of 8-row characters in character order (each
+checked to rebuild the ROM's bytes), the clock animation as the BIOS plays it
+(clock-<animal>.png, lower half only, for the contact sheet), manifest.json
+and contact-sheet.png.
 """
 import json
 import re
@@ -149,20 +150,33 @@ def main(src, out):
         manifest.append(dict(name=name, kind='sprite', what=f'Clock {ANIMALS[i // 2]}, frame {i % 2 + 1}',
                              label='AnimSprites', address=LABELS['AnimSprites'] + 8 * i, width=8, height=8))
 
-    g8 = data['FontGlyphs8x8']
+    # Both fonts in the archive's form: characters one under the next, in
+    # character order, each 8 rows. Each is checked to rebuild the ROM's bytes.
+    g8 = bytes(data['FontGlyphs8x8'])
+    png.save(out / 'font-8x8.png', png.bits(g8, 8, 42 * 8))  # stored this way: 8 bytes a glyph
+    manifest.append(dict(name='font-8x8', kind='sprite', what='Big 8x8 font', label='FontGlyphs8x8',
+                         address=LABELS['FontGlyphs8x8'], width=8, height=42 * 8, glyph_height=8))
+
+    # The ROM keeps this one in planes (plane n = row n of all 256 characters),
+    # 6 of each byte's 8 bits used. Restacked a character at a time; the low 2
+    # bits must be 0 in every byte, so 6 pixels a row keep everything.
+    planes = bytes(font6)
+    if any(b & 0x03 for b in planes):
+        sys.exit('FontAscii6x8: a byte uses its low 2 bits')
+    stacked = bytes(planes[p * 256 + c] for c in range(256) for p in range(8))
+    if bytes(stacked[c * 8 + p] for p in range(8) for c in range(256)) != planes:
+        sys.exit('FontAscii6x8: the stacked font does not rebuild the planes')
+    png.save(out / 'font-6x8.png', png.bits(stacked, 6, 256 * 8, row_bytes=1))
+    manifest.append(dict(name='font-6x8', kind='sprite', what='6x8 font', label='FontAscii6x8',
+                         address=LABELS['FontAscii6x8'], width=6, height=256 * 8, glyph_height=8))
+
+    # Side by side and in a grid, for the contact sheet only.
     big = png.blank(42 * 8, 8)
     for i in range(42):
         png.paste(big, png.bits(g8[i * 8:i * 8 + 8], 8, 8), i * 8, 0)
-    png.save(out / 'font-8x8.png', big)
-    manifest.append(dict(name='font-8x8', kind='sprite', what='Big 8x8 font', label='FontGlyphs8x8',
-                         address=LABELS['FontGlyphs8x8'], width=42 * 8, height=8))
-
     small = png.blank(32 * 6, 8 * 8)
     for c in range(256):
         png.paste(small, glyph6(font6, c), (c % 32) * 6, (c // 32) * 8)
-    png.save(out / 'font-6x8.png', small)
-    manifest.append(dict(name='font-6x8', kind='sprite', what='6x8 font', label='FontAscii6x8',
-                         address=LABELS['FontAscii6x8'], width=32 * 6, height=64))
 
     seq, seqs, i = data['AnimSequences'], [], 0
     while len(seqs) < 3:

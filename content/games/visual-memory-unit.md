@@ -59,5 +59,12 @@ names: it has no lower case, so its letters are found with ASCII minus `$31`. Th
 The small font draws all other text. Besides ASCII it has the half-width
 katakana, the SEGA logo, the A and B button icons (`$1A`, `$1B`), arrows, card
 suits, a "No." sign and eight frames of a spinner (`$F0`–`$F7`, which the
-disassembly ties to the connector). Both are kept as sheets in character order, the small one 32
-characters a row.
+disassembly ties to the connector).
+
+Both are kept the archive's way for fonts: the characters one under the next,
+in character order, 8 rows each. The big font is stored that way, 8 bytes a
+character, so its sprite is `FontGlyphs8x8`'s 336 bytes as they are. The small
+font is stored in planes instead: plane n holds row n of all 256 characters, and
+only the top 6 bits of each byte are used. `vmubios.py` restacks it a character
+at a time, 6 pixels wide, after checking that the low 2 bits are 0 in every
+byte and that the stack rebuilds the 2048 bytes of planes.

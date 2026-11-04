@@ -26,8 +26,8 @@ VMU_SPRITES = {
     'fish-1': ('Clock fish', ['clock', 'animal']),
     'bird-1': ('Clock bird, frame 1', ['clock', 'animal']),
     'bird-2': ('Clock bird, frame 2', ['clock', 'animal']),
-    'font-8x8': ('Big font', ['font', 'digits', 'sheet']),
-    'font-6x8': ('Small font', ['font', 'sheet']),
+    'font-8x8': ('Big font', ['font', 'digits']),
+    'font-6x8': ('Small font', ['font']),
 }
 
 
@@ -47,9 +47,11 @@ def main(vmu_out, dc_out, inbox):
           dict(title='Main menu', **VMU, tags=['bios', 'system', 'menu', 'logo']))
     for name, (title, tags) in VMU_SPRITES.items():
         m = vmu[name]
-        write(inbox, f'vmu-sprite-{name}', vmu_out / f'{name}.png',
-              dict(title=title, **VMU, tags=['bios'] + tags, sprite=True,
-                   source={'file': VMU_FILE, 'entry': m['label'], 'offset': m['address']}))
+        meta = dict(title=title, **VMU, tags=['bios'] + tags, sprite=True,
+                    source={'file': VMU_FILE, 'entry': m['label'], 'offset': m['address']})
+        if m.get('glyph_height'):  # a font, its characters stacked
+            meta['glyphs'] = {'height': m['glyph_height']}
+        write(inbox, f'vmu-sprite-{name}', vmu_out / f'{name}.png', meta)
 
     icons = json.loads((dc_out / 'manifest.json').read_text())
     for m in icons:

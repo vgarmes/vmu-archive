@@ -45,10 +45,13 @@ Python loads modules.
    screen, but keep it: have the script emit it with `"sprite": true` in its
    sidecar, and the importer stores it at its own size in `content/sprites/`.
    The site never shows sprites; `pnpm content:check` validates them.
-   Keep a font as the game stores it, not laid out as a sheet: one sprite of
-   its glyphs' rows in the game's order, with each glyph's size in
-   `"glyphs"` (see `src/lib/glyphs.ts`), and check that the table rebuilds
-   from it byte for byte (Jet Set Radio's `app.py` does both).
+   Keep a font in the archive's one form, whatever the disc's layout: one
+   sprite, upright, its characters one under the next in the game's order,
+   with each character's size in `"glyphs"` (see `src/lib/glyphs.ts`). Never
+   lay pieces out in a grid or side by side. Keep every stored pixel, dropping
+   only bytes shown to be empty padding, and have the script rebuild the
+   disc's bytes from what it keeps and compare them (Jet Set Radio's `app.py`,
+   with per-glyph headers, and the VMU BIOS's `vmubios.py`, with planes, do).
 7. Write the findings (format, timing, unused screens, sprites) in the game's
    notes, `content/games/<game slug>.md`, one file per game in the archive. The
    game's README here keeps the dump and how to run its scripts, and links to
