@@ -15,6 +15,8 @@ import { getSaveIcon, getSaveIcons } from '@/lib/save-icons'
  * /save-icons/<id>.gif: the same, animated, for icons with more frames. The
  * header's animation speed isn't mapped to time yet, so the GIF plays at the
  * site's default delay.
+ * /save-icons/<id>-vmu.png: a memory card icon's 1-bit VMU icon, near-black
+ * on transparent like the rest of the VMU art.
  */
 export const dynamic = 'force-static'
 export const dynamicParams = false
@@ -22,7 +24,8 @@ export const dynamicParams = false
 export function generateStaticParams() {
 	return getSaveIcons().flatMap(icon => [
 		{ file: `${icon.id}.png` },
-		...(icon.frames > 1 ? [{ file: `${icon.id}.gif` }] : [])
+		...(icon.frames > 1 ? [{ file: `${icon.id}.gif` }] : []),
+		...(icon.vmuArt ? [{ file: `${icon.id}-vmu.png` }] : [])
 	])
 }
 
@@ -31,6 +34,17 @@ export async function GET(
 	{ params }: RouteContext<'/save-icons/[file]'>
 ) {
 	const file = (await params).file
+	// A memory card icon's 1-bit VMU icon: near-black on transparent, like the
+	// rest of the VMU art, which the page inverts in dark mode.
+	if (file.endsWith('-vmu.png')) {
+		const icon = getSaveIcon(file.replace(/-vmu\.png$/, ''))
+		if (!icon?.vmuArt) return new Response('Not found', { status: 404 })
+		const png = new PNG({ width: 32, height: 32 })
+		png.data = Buffer.from(toRgba(icon.vmuArt, 0))
+		return new Response(new Uint8Array(PNG.sync.write(png)), {
+			headers: { 'Content-Type': 'image/png' }
+		})
+	}
 	const icon = getSaveIcon(file.replace(/\.(png|gif)$/, ''))
 	if (!icon) return new Response('Not found', { status: 404 })
 	if (file.endsWith('.gif'))

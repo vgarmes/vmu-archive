@@ -19,6 +19,14 @@ export const SAVE_ICONS_DIR = path.join(ROOT, 'content/save-icons')
 export const ICON_SIZE = 32
 
 export interface SaveIcon {
+	/**
+	 * "save": the icon in a save's header, which the game writes.
+	 * "memory-card": an ICONDATA_VMS file, a memory card's own icon: the
+	 * colour icon the Dreamcast's file menu shows, with a 1-bit one for the
+	 * VMU (`vmuIcon`). A game may write one, or a player may make it with a
+	 * tool, so `madeByGame` says which, once a disc has shown it.
+	 */
+	kind: 'save' | 'memory-card'
 	/** What the save is, in English ("System file", "Replay file"). */
 	title: string
 	game: string
@@ -37,6 +45,13 @@ export interface SaveIcon {
 	 * frame; how it maps to time isn't settled, so no delay is derived here.
 	 */
 	animationSpeed: number
+	/** Memory card icons only: the 1-bit 32x32 icon, 1 = dark, as stored. */
+	vmuIcon?: string
+	/**
+	 * Memory card icons only: true once the icon is found on the game's disc,
+	 * false if it's shown to be made elsewhere, null until checked.
+	 */
+	madeByGame?: boolean | null
 	/** The save's texts as the header gives them (Shift-JIS, decoded). */
 	vmuName: string
 	description: string
@@ -54,14 +69,26 @@ export interface SaveIcon {
 		offset?: number
 	}
 	tags: string[]
-	/** Content hash of the palette and frames; the importer skips duplicates. */
+	/** Content hash of the pixels; the importer skips duplicates. */
 	hash: string
 	added: string
 }
 
-export const saveIconHash = (palette: string[], frames: string[]) =>
+/** Content hash of the pixels; a memory card icon's 1-bit icon counts too. */
+export const saveIconHash = (
+	palette: string[],
+	frames: string[],
+	vmuIcon?: string
+) =>
 	createHash('sha1')
-		.update(['save-icon', palette.join(','), frames.join(',')].join('|'))
+		.update(
+			[
+				'save-icon',
+				palette.join(','),
+				frames.join(','),
+				...(vmuIcon ? [vmuIcon] : [])
+			].join('|')
+		)
 		.digest('hex')
 
 const REGIONS = ['JP', 'US', 'EU', 'WW']
@@ -69,6 +96,19 @@ const REGIONS = ['JP', 'US', 'EU', 'WW']
 /** What's wrong with a save icon entry, or nothing. */
 export function saveIconProblems(s: SaveIcon): string[] {
 	const out: string[] = []
+	if (s.kind !== 'save' && s.kind !== 'memory-card')
+		out.push('"kind" must be "save" or "memory-card"')
+	if (s.kind === 'memory-card') {
+		if (
+			typeof s.vmuIcon !== 'string' ||
+			!/^[0-9a-f]+$/.test(s.vmuIcon) ||
+			s.vmuIcon.length !== frameHexLength(ICON_SIZE, ICON_SIZE, 1)
+		)
+			out.push('a memory card icon needs "vmuIcon", 32x32 at 1 bit a pixel')
+		if (!(s.madeByGame === null || typeof s.madeByGame === 'boolean'))
+			out.push('"madeByGame" must be true, false or null (not checked yet)')
+	} else if (s.vmuIcon !== undefined || s.madeByGame !== undefined)
+		out.push('only a memory card icon has "vmuIcon" and "madeByGame"')
 	if (!s.title) out.push('no "title"')
 	if (!s.game) out.push('no "game"')
 	if (s.region !== undefined && !REGIONS.includes(s.region))
@@ -91,7 +131,7 @@ export function saveIconProblems(s: SaveIcon): string[] {
 		)
 	)
 		out.push('a frame is not 32x32 at 4 bits a pixel')
-	else if (s.hash !== saveIconHash(s.palette, s.frames))
+	else if (s.hash !== saveIconHash(s.palette, s.frames, s.vmuIcon))
 		out.push('"hash" does not match the pixels')
 	if (!Number.isInteger(s.animationSpeed) || s.animationSpeed < 0)
 		out.push('"animationSpeed" must be a whole number')

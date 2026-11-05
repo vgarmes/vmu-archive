@@ -109,8 +109,23 @@ function SaveIconCard({ icon }: { icon: SaveIconEntry }) {
 	)
 	return (
 		<li className="border-border bg-card hover:border-foreground flex flex-col border">
-			<div className="flex items-center justify-center p-4">
-				<SaveIconImage icon={icon} className="w-24" />
+			<div className="flex items-center justify-center gap-3 p-4">
+				{icon.hasVmuIcon ? (
+					<>
+						<SaveIconImage icon={icon} className="w-16" />
+						{/* The 1-bit icon the VMU shows, like the rest of the VMU art. */}
+						<img
+							src={`/save-icons/${icon.id}-vmu.png`}
+							alt={`${icon.game}: ${icon.title}, on the VMU`}
+							width={32}
+							height={32}
+							loading="lazy"
+							className="pixelated aspect-square h-auto w-16 dark:invert"
+						/>
+					</>
+				) : (
+					<SaveIconImage icon={icon} className="w-24" />
+				)}
 			</div>
 			<div className="border-border flex flex-col gap-0.5 border-t px-3 py-2 text-xs">
 				<span className="flex items-baseline justify-between gap-2">
@@ -132,6 +147,17 @@ function SaveIconCard({ icon }: { icon: SaveIconEntry }) {
 				>
 					{icon.vmuName}
 				</span>
+				{icon.kind === 'memory-card' && (
+					<span className="text-muted-foreground/70">
+						Memory card icon
+						{icon.madeByGame === null && (
+							<span title="Not yet found on the game's disc: it may be the game's, or made with a tool">
+								{' '}
+								· unverified
+							</span>
+						)}
+					</span>
+				)}
 			</div>
 		</li>
 	)
