@@ -7,6 +7,7 @@ import { cn } from 'cn'
 import ThemeToggle, { ThemeButtons } from '@/components/ThemeToggle'
 
 const LINKS = [
+	{ href: '/save-icons', label: 'Save icons' },
 	{ href: '/about', label: 'About' },
 	{ href: '/changelog', label: 'Changelog' }
 ] as const

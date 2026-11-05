@@ -21,6 +21,12 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   and `pnpm content:check` validates them. The site only shows them: the build
   packs each game's into `/sprites/<game slug>.png` (`src/lib/sprites.ts`),
   shown in a Sprites card on its page; that sheet is never committed.
+- Save icons (the colour icon the Dreamcast's file menu shows for a save) are
+  `content/save-icons/<game slug>/*.json`, 32x32 at 4 bits a pixel with their
+  palette (see `scripts/save-icons.ts`), one per distinct icon. Import them
+  from dumped saves with `pnpm saveicons:import <folder>` (`.VMS`/`.VMI` and a
+  `save-icons.json`, see `scripts/import-saves.ts`); they're shown on
+  `/save-icons` and on their game's page, never inverted in dark mode.
 - Findings about a game (format, timing, unused screens) go in its notes,
   `content/games/<game slug>.md`; its README in `tools/disc-extraction/<game>/`
   only names the dump and how to run the scripts.

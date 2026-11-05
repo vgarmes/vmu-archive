@@ -1,0 +1,53 @@
+{
+	"title": "Replay file",
+	"game": "Capcom vs. SNK 2",
+	"publisher": "Capcom",
+	"year": 2001,
+	"region": "JP",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#cc99ffff",
+		"#bb77ffff",
+		"#8855ffff",
+		"#6633ffff",
+		"#4422ffff",
+		"#ffff11ff",
+		"#ffff22ff",
+		"#ffff22ff",
+		"#ffdd11ff",
+		"#ffaa11ff",
+		"#774400ff",
+		"#442200ff",
+		"#aa6600ff",
+		"#ffffffff",
+		"#bbbbbbff",
+		"#000000ff"
+	],
+	"frames": [
+		"44444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444442c4444444444444444444444444444089b44444444444444444444444444085cbb4444444444444444444444441878bb44444444444444444444444439779bb4444444444444444444444441575cb444444ffffffff44ffffffffffffffffff4444fdddddeff4fddddddddffdddddeff444fdddddddfffddddddddffdddddddff44fddfffedeffddffffffffddfffddef44fddffffddffddffffffffddffffddf44fddffffddffddffffffffddffffddf44fddffffddffddffffffffddffffddf44fddfffedeffdddddddfffddfffddef44fdddddddfffdddddddfffdddddddff44fdddddfffffddffffffffdddddeff444fddfdddffffddffffffffddfffff4444fddffdddfffddffffffffddf44444444fddfffddeffddffffffffddf44444444fddf7ffdddfddddddddffddf44444444fddf77ffddfddddddddffddf44444444ffff777fffffffffffffffff4444444497777775acbc7775bb44444444444444a8777777cbb5775ab444444444444444497777775b9775cb44444444444444444b97777775759bb4444444444444444444ba9677778abb4444444444444444444444baccccbb44444444444444444444444444bbbb44444444444444444444444444444444444444444444444444444"
+	],
+	"animationSpeed": 5,
+	"vmuName": "CVS.S 2 REPLAY0",
+	"description": "CAPCOM VS. SNK 2 ﾘﾌﾟﾚｲﾌｧｲﾙ 00",
+	"source": {
+		"kind": "save",
+		"files": [
+			"cvs2rep1.VMS",
+			"cvs2rep2.VMS",
+			"cvs2rep3.VMS",
+			"cvs2rep4.VMS",
+			"cvs2rep5.VMS",
+			"cvs2rep6.VMS",
+			"cvs2rep7.VMS",
+			"cvs2rex1.VMS",
+			"cvs2rex2.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/73f6e86bd33d2806f2ab5512c4c02a699f3a1443/capcomsnk2",
+		"commit": "73f6e86bd33d2806f2ab5512c4c02a699f3a1443"
+	},
+	"tags": [],
+	"hash": "a116a456ed0c3dd4059dc923a7710ada3d878dd7",
+	"added": "2026-11-05"
+}

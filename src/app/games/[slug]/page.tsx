@@ -2,6 +2,7 @@ import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
 import IconGrid from '@/components/IconGrid'
+import SaveIconsCard from '@/components/SaveIconsCard'
 import SpriteSheet, { FontSheet } from '@/components/SpriteSheet'
 import {
 	Breadcrumb,
@@ -13,6 +14,7 @@ import {
 } from '@/components/ui/breadcrumb'
 import { getGame, getGames } from '@/lib/games'
 import { toIndexEntry } from '@/lib/icons'
+import { getGameSaveIcons, toEntry } from '@/lib/save-icons'
 import { getSpriteSheet } from '@/lib/sprites'
 
 export const dynamicParams = false
@@ -38,6 +40,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 	if (!found) notFound()
 	const { game, icons, notes } = found
 	const sheet = getSpriteSheet(game.slug)
+	const saveIcons = getGameSaveIcons(game.slug)
 	const meta = [game.publisher, game.year].filter(Boolean).join(' · ')
 
 	return (
@@ -89,6 +92,10 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 						fonts: sheet.fonts
 					}}
 				/>
+			)}
+
+			{saveIcons.length > 0 && (
+				<SaveIconsCard icons={saveIcons.map(toEntry)} game={game.en} />
 			)}
 
 			{notes && (

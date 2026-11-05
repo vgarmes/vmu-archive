@@ -8,6 +8,7 @@
     "build": "next build",
     "icons:import": "node scripts/import.ts",
     "content:check": "node scripts/check.ts",
+    "saveicons:import": "node scripts/import-saves.ts",
     "typecheck": "tsc --noEmit",
     "format": "prettier --write ."
   },
