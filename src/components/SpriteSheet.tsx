@@ -5,55 +5,38 @@ import { cn } from 'cn'
 type SheetProps = Pick<Sheet, 'width' | 'height'>
 
 /**
- * A game's sprites and fonts as cards under its screens: each piece its own
- * cell cut from /sprites/<game slug>.png by background offset, in wrapping
- * rows, so they rewrap as the window resizes instead of the sheet scaling.
- * Whole-number scales only, since anything else drops or doubles pixel rows.
- * Closed by default: inside a closed <details> the sheet isn't fetched.
+ * A game's sprites and fonts, each the content of a tab on its page: each
+ * piece its own cell cut from /sprites/<game slug>.png by background offset,
+ * in wrapping rows, so they rewrap as the window resizes instead of the sheet
+ * scaling. Whole-number scales only, since anything else drops or doubles
+ * pixel rows. In a hidden tab the sheet isn't fetched.
  */
-function Card({
-	label,
-	count,
+function Panel({
 	blurb,
 	gameSlug,
 	sheet,
 	children
 }: {
-	label: string
-	count: number
 	blurb: string
 	gameSlug: string
 	sheet: SheetProps
 	children: ReactNode
 }) {
 	return (
-		<details className="group border-border bg-card/50 border">
-			<summary className="hover:text-foreground text-muted-foreground focus-visible:ring-ring flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-3 text-xs tracking-[0.2em] uppercase outline-none focus-visible:ring-1 [&::-webkit-details-marker]:hidden">
-				<span>
-					{label} <span className="text-muted-foreground/70">({count})</span>
-				</span>
-				<span
-					aria-hidden="true"
-					className="transition-transform group-open:rotate-45"
-				>
-					+
-				</span>
-			</summary>
-			{/* The sheet is set once here; each cell only has its box. */}
-			<div
-				className="border-border flex flex-col gap-3 border-t px-4 py-4"
-				style={
-					{
-						'--sheet': `url(/sprites/${gameSlug}.png)`,
-						'--sheet-w': `${sheet.width}px`,
-						'--sheet-h': `${sheet.height}px`
-					} as CSSProperties
-				}
-			>
-				<p className="text-muted-foreground max-w-3xl text-xs">{blurb}</p>
-				{children}
-			</div>
-		</details>
+		// The sheet is set once here; each cell only has its box.
+		<div
+			className="flex flex-col gap-4"
+			style={
+				{
+					'--sheet': `url(/sprites/${gameSlug}.png)`,
+					'--sheet-w': `${sheet.width}px`,
+					'--sheet-h': `${sheet.height}px`
+				} as CSSProperties
+			}
+		>
+			<p className="text-muted-foreground max-w-3xl text-xs">{blurb}</p>
+			{children}
+		</div>
 	)
 }
 
@@ -102,23 +85,21 @@ function Cells({
 }
 
 /** The sprites that aren't fonts, one cell each, at 1x (2x from `sm`). */
-export default function SpriteSheet({
+export default function SpritesPanel({
 	gameSlug,
 	sheet
 }: {
 	gameSlug: string
-	sheet: SheetProps & Pick<Sheet, 'cells' | 'count'>
+	sheet: SheetProps & Pick<Sheet, 'cells'>
 }) {
 	return (
-		<Card
-			label="Sprites"
-			count={sheet.count}
+		<Panel
 			blurb="Smaller art the game draws onto part of a screen, kept for preservation. Hover one for its name."
 			gameSlug={gameSlug}
 			sheet={sheet}
 		>
 			<Cells cells={sheet.cells} className="gap-1 [--s:1] sm:[--s:2]" />
-		</Card>
+		</Panel>
 	)
 }
 
@@ -126,7 +107,7 @@ export default function SpriteSheet({
  * The fonts, each under its name: its characters in the game's order, a small
  * gap apart and on the page's background, at 2x (3x from `sm`).
  */
-export function FontSheet({
+export function FontsPanel({
 	gameSlug,
 	sheet
 }: {
@@ -134,9 +115,7 @@ export function FontSheet({
 	sheet: SheetProps & Pick<Sheet, 'fonts'>
 }) {
 	return (
-		<Card
-			label="Fonts"
-			count={sheet.fonts.length}
+		<Panel
 			blurb="The game's fonts, each character in the order the game stores them. Blank characters are left out. Hover one for its number."
 			gameSlug={gameSlug}
 			sheet={sheet}
@@ -159,6 +138,6 @@ export function FontSheet({
 					/>
 				</section>
 			))}
-		</Card>
+		</Panel>
 	)
 }

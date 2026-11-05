@@ -11,7 +11,7 @@ import { decodeFrame } from './pixels'
  * they rewrap with the window instead of the sheet scaling.
  *
  * Fonts (sprites tagged "font") are kept apart from the other sprites, for
- * the page's Fonts card: one group per font, in file order. A font whose
+ * the page's Fonts tab: one group per font, in file order. A font whose
  * character sizes are known (`glyphs`, see ./glyphs) becomes one cell per
  * character, in the game's order; any other is one cell.
  *

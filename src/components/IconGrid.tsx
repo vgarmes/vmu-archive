@@ -51,7 +51,10 @@ export default function IconGrid({ icons }: { icons: IndexEntry[] }) {
 
 	const urlFor = useCallback(
 		(screen: string | null) => {
-			const params = new URLSearchParams()
+			// Keep what else is in the URL (the game page's ?tab=).
+			const params = new URLSearchParams(location.search)
+			params.delete('q')
+			params.delete('screen')
 			if (query) params.set('q', query)
 			if (screen) params.set('screen', screen)
 			const qs = params.toString()

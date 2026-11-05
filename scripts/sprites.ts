@@ -3,7 +3,7 @@
  * buttons, counters), as opposed to a whole 48x32 screen. They're kept for
  * preservation, at their own size, in content/sprites/<game slug>/<id>.json,
  * and kept out of content/icons/, which stays whole screens only. The site
- * shows them only as a game's Sprites card (src/lib/sprites.ts).
+ * shows them only in a game's Sprites and Fonts tabs (src/lib/sprites.ts).
  *
  * Written by `pnpm icons:import` (a sidecar with "sprite": true) and checked by
  * `pnpm content:check`. Run by Node directly, like pixels.ts: keep the imports
@@ -49,7 +49,7 @@ export interface Sprite {
 	/**
 	 * Where the game draws it, when that was read from the code: the archive
 	 * screen it goes on and its top-left corner there. For a font, `glyph`
-	 * names the character (from 0) drawn there. The Sprites card leaves out
+	 * names the character (from 0) drawn there. The Sprites and Fonts tabs leave out
 	 * whatever is drawn on a screen, as the screen already shows it.
 	 */
 	drawnAt?: { screen: string; x: number; y: number; glyph?: number }[]

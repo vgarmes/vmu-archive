@@ -39,7 +39,7 @@
  * draws it, `"drawnAt": [{ "screen": "<icon id>", "x": 30, "y": 2 }]`. A font
  * is one sprite, its characters stacked in the game's order, with their sizes
  * in `"glyphs": { "height": 8, "width": 4 }` (see src/lib/glyphs.ts); its
- * `"drawnAt"` entries name the character with `"glyph"`. The Sprites card
+ * `"drawnAt"` entries name the character with `"glyph"`. The Sprites and Fonts tabs
  * leaves out whatever is drawn on a screen, since the screen shows it.
  */
 import { createHash } from 'node:crypto'

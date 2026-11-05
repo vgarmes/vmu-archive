@@ -1,9 +1,10 @@
 import type { Metadata } from 'next'
 import Link from 'next/link'
 import { notFound } from 'next/navigation'
+import GameTabs, { type GameTab } from '@/components/GameTabs'
 import IconGrid from '@/components/IconGrid'
-import SaveIconsCard from '@/components/SaveIconsCard'
-import SpriteSheet, { FontSheet } from '@/components/SpriteSheet'
+import SaveIconImage from '@/components/SaveIconImage'
+import SpritesPanel, { FontsPanel } from '@/components/SpriteSheet'
 import {
 	Breadcrumb,
 	BreadcrumbItem,
@@ -43,15 +44,68 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 	const saveIcons = getGameSaveIcons(game.slug)
 	const meta = [game.publisher, game.year].filter(Boolean).join(' · ')
 
+	// The page's sections as tabs, screens first; only those the game has.
+	const tabs: GameTab[] = [
+		{
+			id: 'screens',
+			label: 'Screens',
+			count: icons.length,
+			panel: <IconGrid icons={icons.map(toIndexEntry)} />
+		}
+	]
+	if (sheet && sheet.cells.length > 0)
+		tabs.push({
+			id: 'sprites',
+			label: 'Sprites',
+			count: sheet.count,
+			panel: (
+				<SpritesPanel
+					gameSlug={game.slug}
+					sheet={{
+						width: sheet.width,
+						height: sheet.height,
+						cells: sheet.cells
+					}}
+				/>
+			)
+		})
+	if (sheet && sheet.fonts.length > 0)
+		tabs.push({
+			id: 'fonts',
+			label: 'Fonts',
+			count: sheet.fonts.length,
+			panel: (
+				<FontsPanel
+					gameSlug={game.slug}
+					sheet={{
+						width: sheet.width,
+						height: sheet.height,
+						fonts: sheet.fonts
+					}}
+				/>
+			)
+		})
+	if (notes)
+		tabs.push({
+			id: 'notes',
+			label: 'Notes',
+			panel: (
+				<div
+					className="notes max-w-3xl"
+					dangerouslySetInnerHTML={{ __html: notes }}
+				/>
+			)
+		})
+
 	return (
 		<div className="flex flex-col gap-8">
-			<header>
+			<header className="flex items-center justify-between gap-4">
 				{/* The breadcrumb shows the title; the heading is for screen readers. */}
 				<h1 className="sr-only">
 					{game.en}
 					{game.ja && ` (${game.ja})`}
 				</h1>
-				<Breadcrumb>
+				<Breadcrumb className="min-w-0">
 					<BreadcrumbList className="text-xs tracking-[0.2em] uppercase">
 						<BreadcrumbItem>
 							<BreadcrumbLink render={<Link href="/" />}>Games</BreadcrumbLink>
@@ -67,53 +121,28 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 						</BreadcrumbItem>
 					</BreadcrumbList>
 				</Breadcrumb>
+				{/* The game's save icons, at their own size, as its emblem. */}
+				{saveIcons.length > 0 && (
+					<ul className="flex shrink-0 gap-2" aria-label="Save icons">
+						{saveIcons.map(icon => (
+							<li key={icon.id}>
+								<Link
+									href={`/save-icons?${new URLSearchParams({ q: game.en })}`}
+									title={`Save icon: ${icon.title}`}
+									className="focus-visible:ring-ring block outline-none focus-visible:ring-1"
+								>
+									<SaveIconImage icon={toEntry(icon)} className="w-8" />
+								</Link>
+							</li>
+						))}
+					</ul>
+				)}
 			</header>
 
-			<IconGrid icons={icons.map(toIndexEntry)} />
-
-			{sheet && sheet.cells.length > 0 && (
-				<SpriteSheet
-					gameSlug={game.slug}
-					sheet={{
-						width: sheet.width,
-						height: sheet.height,
-						cells: sheet.cells,
-						count: sheet.count
-					}}
-				/>
-			)}
-
-			{sheet && sheet.fonts.length > 0 && (
-				<FontSheet
-					gameSlug={game.slug}
-					sheet={{
-						width: sheet.width,
-						height: sheet.height,
-						fonts: sheet.fonts
-					}}
-				/>
-			)}
-
-			{saveIcons.length > 0 && (
-				<SaveIconsCard icons={saveIcons.map(toEntry)} game={game.en} />
-			)}
-
-			{notes && (
-				<details className="group border-border bg-card/50 border">
-					<summary className="hover:text-foreground text-muted-foreground focus-visible:ring-ring flex cursor-pointer list-none items-center justify-between gap-4 px-4 py-3 text-xs tracking-[0.2em] uppercase outline-none focus-visible:ring-1 [&::-webkit-details-marker]:hidden">
-						How these screens were extracted
-						<span
-							aria-hidden="true"
-							className="transition-transform group-open:rotate-45"
-						>
-							+
-						</span>
-					</summary>
-					<div
-						className="notes border-border max-w-3xl border-t px-4 py-4"
-						dangerouslySetInnerHTML={{ __html: notes }}
-					/>
-				</details>
+			{tabs.length > 1 ? (
+				<GameTabs tabs={tabs} label={`${game.en} sections`} />
+			) : (
+				tabs[0].panel
 			)}
 		</div>
 	)
