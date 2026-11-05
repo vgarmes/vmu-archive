@@ -87,6 +87,9 @@ export function getSaveIcons(): SaveIcon[] {
 				throw new Error(
 					`content/save-icons/${gameSlug}/${file}: its gameId is ${s.gameId}`
 				)
+			// Titles as on game pages: the English one first, the name as the
+			// Japanese one when the English differs.
+			const entry = getGameEntry(s.gameId)
 			const game = games.get(s.gameId)
 			cache.push({
 				id: `${gameSlug}-${file.replace(/\.json$/, '')}`,
@@ -94,9 +97,9 @@ export function getSaveIcons(): SaveIcon[] {
 				madeByGame: s.madeByGame,
 				hasVmuIcon: !!s.vmuIcon,
 				title: s.title,
-				game: game?.en ?? getGameEntry(s.gameId).name,
+				game: entry.en ?? entry.name,
 				gameSlug,
-				ja: game?.ja,
+				ja: entry.ja ?? (entry.en ? entry.name : undefined),
 				hasPage: !!game,
 				publisher: s.publisher,
 				year: s.year,
