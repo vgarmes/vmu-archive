@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "VMU game 2",
+	"gameId": "soul-calibur",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ee1133ff",
+		"#ff77bbff",
+		"#ddddeeff",
+		"#7799ffff",
+		"#2255eeff",
+		"#ffee11ff",
+		"#eeaa11ff",
+		"#775533ff",
+		"#ffddccff",
+		"#553322ff",
+		"#ffccaaff",
+		"#ffaa88ff",
+		"#ee7755ff",
+		"#882222ff",
+		"#221111ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"f2e977777222ffffff222779977722ff2ee99772ffff555ff555f2279e9777222e99972f55ff5ff555ff5f2279ee9777ee9992f5f5ffffff555ffff66799e999eee92f55fff556666666662262779ee9eee2ff55556999997779ed6662777799ee92fff559997999997779eec6299777ee265f557799779bbe9977999d699999ee26255777cb779aab99777e99deeee9e26625777dbb779a8ab9977e999e9eeee26669777cab779a88a9997ce997e9eee222d977dbab799a888b997bce977999c626999dcaab79ba888a997bce997e99656d999ccd9e7e7ba88ac97e9ee97eee656999dbbbbc7ccdaaabbc7cc9e97eeec6ce99cbc79eeebbaaabccee9de974ee4c9e99baacd9d2dbaabbcedc7ce9744343ee99ba8afedf2aaabbbd9fbce7e94343eee7ba8acdc2aa8abccfc2cde7494443eee77888a9dba888bdc9dbcde44e94443ee77a888aaa8888adcbbbcde44394443ee977a8888888888bdaabc7ee43e93443e9977a8888888a88cbabc79e43393e4333e997a88aa88ccdbbbbd79e43333e443333e977abcbaaabbbbc977944ee3ee4339dbbaaab01ff10bbc99779ee223ee44ee9cbaaaab0000bbc9999772fffeeeeeee9ccbaa88bccbbbdeee92fffff22eeeee9cccbaa88abbbdee2ffffff22fff22ee9cbcdcaa8abbde22fff222d99fffff229bbccddcbbcde22222dd99901fffff29dbbbcccddeee99ddd99569090"
+	],
+	"animationSpeed": 0,
+	"vmuName": "ｷｬﾘﾊﾞｰVM ADVｹﾞｰﾑ",
+	"description": "ソウルキャリバー／ＶＭゲーム　２",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SOUL2ADV.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+	},
+	"tags": [],
+	"hash": "20a414c0ddb138f5fad2ebdc43832f50b4d86856",
+	"added": "2026-11-05"
+}

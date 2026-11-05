@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "VMU game 1",
+	"gameId": "soul-calibur",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#7788ddff",
+		"#668899ff",
+		"#ccddeeff",
+		"#99ccccff",
+		"#eeff33ff",
+		"#555533ff",
+		"#bbbb99ff",
+		"#999911ff",
+		"#777755ff",
+		"#ddddccff",
+		"#ff9933ff",
+		"#cc9977ff",
+		"#881111ff",
+		"#dd2222ff",
+		"#ff6666ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"2f2f2f2f2f2f288cc47c8512f2f2f2f2f2f2f2f2f2f88ccd8668dc551f2f2f2f3f3f3f3f3f86edb9ff96bdc855f3f3f323232323289edb9fff996bed685232320202020389ddc6beeeeddbbed6512020202020289bcdeeeeeeeddddcdc850202030303869cdeeeddddddddddcd88103030303089bdeedc5558555cdddcc8530300000186cedc85558f85558cddc851000000086bddc6f65689865896cddc8500000008bcdcdff989595986f9dcdc8500000008cdcdd6968868688696edccc500110008cc8ed868deeeddc868ed8ccc00310008c86ed88deeeedddcc8ed685c0023100cc89edcdedddddcccccdd685c0022101c589edcdcc6ff968cccdd855510223188586edcc869688668cddc555850222165858edc86969968685ddc55855032216585cdec8669ff96885dcc55585032238585ccdd5866666885ddc5c58550f3228655c8cd585deedd55dcc5c58550f3221855c5c3c5cdccccd5dc85c85500f3223055cc121cdccccccdc885c51000ff322101cc3f3dcccccccd585c5100002f3223001c3f3ca4a7a47c555c1000003ff32210052f3af4fafa47555100000012f3221c052f144fa7a47a8550000000e3ff323dcc2f1afa7877a8785000cccce12f3221dc2f14784f48875850ccdeeede3ff321dc2f17a4f4a458855ccdeeee1d1ff3231c2f184ffa4485855cddeedd2312ff321c321a4f4a4a7855ccdddddd"
+	],
+	"animationSpeed": 0,
+	"vmuName": "SC VMU GAME PAK",
+	"description": "SOULCALIBUR / VMU GAME 1",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SCALIBU.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+	},
+	"tags": [],
+	"hash": "c4b095c5fc161f270914f6e13fd09576cedd2b60",
+	"added": "2026-11-05"
+}

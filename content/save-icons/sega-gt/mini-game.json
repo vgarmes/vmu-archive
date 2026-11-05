@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Mini-game",
+	"gameId": "sega-gt",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ff0000ff",
+		"#ff1111ff",
+		"#ff3333ff",
+		"#ff4444ff",
+		"#ff5555ff",
+		"#ff6666ff",
+		"#ff7777ff",
+		"#ff8888ff",
+		"#ff9999ff",
+		"#ffaaaaff",
+		"#ffbbbbff",
+		"#ffbbbbff",
+		"#ffddddff",
+		"#ffeeeeff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8afa77769d7bff89d76667be89ffa7ff14b014548b06ff12d555301d12ff41ff14b2138cfb07ff12efc7219e12ff41ff14fea5117b06ff12d6128dfe12ff41ff14b555203c313206b003546e303303ff7ac66667cfc8779de977768fd9779dfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 0,
+	"vmuName": "SegaGTﾐﾆｹﾞｰﾑ",
+	"description": "ＳｅｇａＧＴ　ミニゲーム",
+	"source": {
+		"kind": "save",
+		"files": [
+			"4004.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+	},
+	"tags": [],
+	"hash": "1c8e024305d31fc70ee240df687372282bd3a698",
+	"added": "2026-11-05"
+}

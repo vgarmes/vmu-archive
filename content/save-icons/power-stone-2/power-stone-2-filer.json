@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Power Stone 2 Filer",
+	"gameId": "power-stone-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#330033ff",
+		"#aaaaffff",
+		"#ffcc00ff",
+		"#663300ff",
+		"#cc9966ff",
+		"#ffcc99ff",
+		"#ff6633ff",
+		"#dd0000ff",
+		"#770000ff",
+		"#440000ff",
+		"#330000ff",
+		"#990000ff",
+		"#ee2222ff",
+		"#ff6666ff",
+		"#ff8888ff",
+		"#000000ff"
+	],
+	"frames": [
+		"111fffffffffffffffffffffff11111111ff303333333333333333333fff111111f3202222222222222222223f6fff1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202a2a222a222a2aa2a23f654f1111f3202a2aa2aa2aaa2222a23f654f1111f3202a2aa2aa222a22a2a23f654f1111f3202a2aa2aa2aaa2aa2a23f654f1111f3202a2aa2aa222a2aa2a23f654f1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202aaaaa8b7778aaaaa23f654f1111f3202aaaa8b7ded78aaaa23f654f1111f3202aaaab7ddedd7aaaa23f654f1111f3202aaaab7777777aaaa23f654f1111f3202aaaa9b7ded78aaaa23f654f1111f3202aaaaa9b7dc8aaaaa23f654f1111f3202aaaaaa9bb9aaaaaa23f654f1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202aa2222a22a222aaa23f654f1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202aaa222222222aaaa23f654f1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202aaaaaaaaaaaaaaaa23f654f1111f3202222222222222222223f654f1111f3303333333333333333333f654f1111ffffffffffffffffffffffff654f1111ff666666666666666666666ff54f11111ff644555555555555555555ff4f111111ffffffffffffffffffffffffff11"
+	],
+	"animationSpeed": 6,
+	"vmuName": "ﾊﾟﾜｰｽﾄｰﾝ2ﾌｧｲﾗｰ",
+	"description": "パワーストーン２  ファイラー",
+	"source": {
+		"kind": "save",
+		"files": [
+			"4008.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+	},
+	"tags": [],
+	"hash": "543f94adfa7a97a6970b63fe13edc079e323738a",
+	"added": "2026-11-05"
+}
