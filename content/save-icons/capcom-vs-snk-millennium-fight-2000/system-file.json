@@ -31,8 +31,7 @@
 	"description": "CAPCOM VS. SNK_ｼｽﾃﾑﾌｧｲﾙ",
 	"source": {
 		"kind": "save",
-		"file": "cvs1jp01.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/capcomsnk"
+		"file": "cvs1jp01.VMS"
 	},
 	"tags": [],
 	"hash": "069366f7c7297b7020192e649af96682ee6f93df",

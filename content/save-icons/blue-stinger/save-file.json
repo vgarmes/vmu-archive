@@ -33,8 +33,7 @@
 	"description": "ブルースティンガー  ＳＡＶＥ",
 	"source": {
 		"kind": "save",
-		"file": "00000391.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bsting"
+		"file": "00000391.VMS"
 	},
 	"tags": [],
 	"hash": "158a2d22a5b17c3ccd5eb15df0d72f820edab654",

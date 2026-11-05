@@ -34,8 +34,7 @@
 	"description": "ソニックアドベンチャー／メイン",
 	"source": {
 		"kind": "save",
-		"file": "sonicadv.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+		"file": "sonicadv.VMS"
 	},
 	"tags": [],
 	"hash": "f689952ebea50523dd0d81658a822337857198eb",

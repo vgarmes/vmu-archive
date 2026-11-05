@@ -33,8 +33,7 @@
 	"description": "MHPBMX Park HANGAR TW",
 	"source": {
 		"kind": "save",
-		"file": "v25249.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/matbmx"
+		"file": "v25249.VMS"
 	},
 	"tags": [],
 	"hash": "a84c603f3b1941260ca894d42a7cffb0dc038caf",

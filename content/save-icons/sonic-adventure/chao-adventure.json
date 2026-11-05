@@ -33,8 +33,7 @@
 	"description": "SONIC ADVENTURE / CHAO Adventure",
 	"source": {
 		"kind": "save",
-		"file": "VMFL_073.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+		"file": "VMFL_073.VMS"
 	},
 	"tags": [],
 	"hash": "46a4ce5f1d353b8e570f124182df7888ec87c048",

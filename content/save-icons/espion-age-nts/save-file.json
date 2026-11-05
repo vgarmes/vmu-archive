@@ -31,8 +31,7 @@
 	"description": "ＥＳＰＩＯＮ－ＡＧＥ－ＮＴＳ",
 	"source": {
 		"kind": "save",
-		"file": "ESPION.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/espion"
+		"file": "ESPION.VMS"
 	},
 	"tags": [],
 	"hash": "d5f925e07acc1cff27071d73ece1375fb046a5ba",

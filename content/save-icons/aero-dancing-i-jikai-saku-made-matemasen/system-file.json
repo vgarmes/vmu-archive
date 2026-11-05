@@ -31,8 +31,7 @@
 	"description": "Aero_iSD SYSTEM",
 	"source": {
 		"kind": "save",
-		"file": "aerocnem.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroif"
+		"file": "aerocnem.VMS"
 	},
 	"tags": [],
 	"hash": "30b825865f92eb24de1fdfd422c2ee1b4fadec86",

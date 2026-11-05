@@ -33,8 +33,7 @@
 	"description": "SONIC ADVENTURE / XMAS",
 	"source": {
 		"kind": "save",
-		"file": "00000114.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+		"file": "00000114.VMS"
 	},
 	"tags": [],
 	"hash": "7d9314d2fa20ebe6ac0aae0e061f1a3463c64ba8",

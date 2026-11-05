@@ -32,8 +32,7 @@
 	"description": "サイレントスコープ",
 	"source": {
 		"kind": "save",
-		"file": "sscopejp.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/silentscope"
+		"file": "sscopejp.VMS"
 	},
 	"tags": [],
 	"hash": "a7030bf71bec8c997cbb33becb336191f4c8ac6d",

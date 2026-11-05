@@ -33,8 +33,7 @@
 	"description": "ぷよぷよフィーバー",
 	"source": {
 		"kind": "save",
-		"file": "00001654.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/puyofever"
+		"file": "00001654.VMS"
 	},
 	"tags": [],
 	"hash": "3435c87f86b9a1fc7a57f352da10f309ff62812f",

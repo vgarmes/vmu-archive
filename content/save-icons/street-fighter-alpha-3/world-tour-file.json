@@ -31,8 +31,7 @@
 	"description": "SFALPHA3_WORLDTOUR_FILE",
 	"source": {
 		"kind": "save",
-		"file": "v14737.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfighter3"
+		"file": "v14737.VMS"
 	},
 	"tags": [],
 	"hash": "af1323200e9bcc3a6ed525b625bee04869c5d735",

@@ -33,8 +33,7 @@
 	"description": "首都高バトル",
 	"source": {
 		"kind": "save",
-		"file": "00000015.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tokyo"
+		"file": "00000015.VMS"
 	},
 	"tags": [],
 	"hash": "102ac74c61ed7a431632e635cc725d8b3ed0198c",

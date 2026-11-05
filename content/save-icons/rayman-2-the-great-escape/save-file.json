@@ -31,8 +31,7 @@
 	"description": "Rayman 2 The great escape",
 	"source": {
 		"kind": "save",
-		"file": "00000030.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rayman2"
+		"file": "00000030.VMS"
 	},
 	"tags": [],
 	"hash": "cd941d9d85737517bfbe9ca34ebc061900e8747a",

@@ -31,8 +31,7 @@
 	"description": "Buzz Lightyear of star command.",
 	"source": {
 		"kind": "save",
-		"file": "v15769.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/buzzlightyear"
+		"file": "v15769.VMS"
 	},
 	"tags": [],
 	"hash": "3fc73c8d7a3fdb6d006407ee77ef4c05291052a4",

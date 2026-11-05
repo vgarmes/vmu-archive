@@ -31,8 +31,7 @@
 	"description": "PHANTASY STAR 2",
 	"source": {
 		"kind": "save",
-		"file": "MDEMU001.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/smashpack"
+		"file": "MDEMU001.VMS"
 	},
 	"tags": [],
 	"hash": "85debfde6ccbb9f9d0a96775a214ddf006174f88",

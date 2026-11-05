@@ -31,8 +31,7 @@
 	"description": "NBA2K2",
 	"source": {
 		"kind": "save",
-		"file": "nba2k201.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nba2k2"
+		"file": "nba2k201.VMS"
 	},
 	"tags": [],
 	"hash": "2a53c1e360e055069fff511c44a8fe5dd27f261f",

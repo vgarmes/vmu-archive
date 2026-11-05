@@ -31,8 +31,7 @@
 	"description": "DINO/NORMAL/Facility 1F",
 	"source": {
 		"kind": "save",
-		"file": "DINO1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dinocrisis"
+		"file": "DINO1.VMS"
 	},
 	"tags": [],
 	"hash": "73e1ec9caa201e1e82deb231a6d7c12191f32884",

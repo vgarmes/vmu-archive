@@ -31,8 +31,7 @@
 	"description": "D2",
 	"source": {
 		"kind": "save",
-		"file": "D2END1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/d2"
+		"file": "D2END1.VMS"
 	},
 	"tags": [],
 	"hash": "e4359c956fa5d2b2791189447ac5cd2afd2c830f",

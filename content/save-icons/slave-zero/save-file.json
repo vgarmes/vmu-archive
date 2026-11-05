@@ -31,8 +31,7 @@
 	"description": "SLAVEZERO.04",
 	"source": {
 		"kind": "save",
-		"file": "v31826.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/slave_zero"
+		"file": "v31826.VMS"
 	},
 	"tags": [],
 	"hash": "88dcbf0e725176dcc9549166464d89117c7f79bc",

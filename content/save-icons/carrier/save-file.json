@@ -35,8 +35,7 @@
 	"description": "CARRIER",
 	"source": {
 		"kind": "save",
-		"file": "00000812.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/carrier"
+		"file": "00000812.VMS"
 	},
 	"tags": [],
 	"hash": "f8f71e6ee1c26c9ca155df973bf5d7490321d719",

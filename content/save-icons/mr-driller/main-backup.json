@@ -33,8 +33,7 @@
 	"description": "Mr.Driller/MainData",
 	"source": {
 		"kind": "save",
-		"file": "drilleru.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/driller"
+		"file": "drilleru.VMS"
 	},
 	"tags": [],
 	"hash": "36840cfc59caf837c830235f8feabe8e2257359c",

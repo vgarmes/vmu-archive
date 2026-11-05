@@ -31,8 +31,7 @@
 	"description": "18WHEELER AMERICAN_PRO_TRUCKER",
 	"source": {
 		"kind": "save",
-		"file": "18LUN.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/18wheeler"
+		"file": "18LUN.VMS"
 	},
 	"tags": [],
 	"hash": "368cd315294b65ac1363d6a8fd609247c4edc482",

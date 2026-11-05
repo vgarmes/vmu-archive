@@ -31,8 +31,7 @@
 	"description": "HARDCORE HEAT_AI data",
 	"source": {
 		"kind": "save",
-		"file": "v87901.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/hardcore"
+		"file": "v87901.VMS"
 	},
 	"tags": [],
 	"hash": "cf8ecd1cc68561f575b31f95fa9732cb24be052e",

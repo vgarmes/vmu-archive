@@ -35,8 +35,7 @@
 	"description": "SHENMUE",
 	"source": {
 		"kind": "save",
-		"file": "SM1E_EXR.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/shenmue"
+		"file": "SM1E_EXR.VMS"
 	},
 	"tags": [],
 	"hash": "d2d332ec9e3da369483a7ebc4b498fb402d4d982",

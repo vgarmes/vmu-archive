@@ -33,8 +33,7 @@
 	"description": "SONIC ADVENTURE 2 / Download",
 	"source": {
 		"kind": "save",
-		"file": "00005942.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
+		"file": "00005942.VMS"
 	},
 	"tags": [],
 	"hash": "c987aee10465d6ca93c237ddd5f917c1a4986903",

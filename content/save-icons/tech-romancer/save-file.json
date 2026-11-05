@@ -31,8 +31,7 @@
 	"description": "TECH ROMANCER SAVE DATA",
 	"source": {
 		"kind": "save",
-		"file": "v64763.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/techromancer"
+		"file": "v64763.VMS"
 	},
 	"tags": [],
 	"hash": "4e41cc72fe771799ba345b571d4c68f1195057e8",

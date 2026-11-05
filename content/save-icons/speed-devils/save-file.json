@@ -31,8 +31,7 @@
 	"description": "Speed Devils Data File",
 	"source": {
 		"kind": "save",
-		"file": "00000490.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/speeddevils"
+		"file": "00000490.VMS"
 	},
 	"tags": [],
 	"hash": "a9ba78ad968e32a13d09ed026cf4315a5e39559f",

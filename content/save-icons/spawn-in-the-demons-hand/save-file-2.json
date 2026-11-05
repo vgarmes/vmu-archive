@@ -31,8 +31,7 @@
 	"description": "SPAWN ANGEL TENERES",
 	"source": {
 		"kind": "save",
-		"file": "v51199.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spawn"
+		"file": "v51199.VMS"
 	},
 	"tags": [],
 	"hash": "2c91b4943c2ab3feb35d5ed20cdd100aa2030abb",

@@ -31,8 +31,7 @@
 	"description": "GRANDIA2 カーボ宿屋",
 	"source": {
 		"kind": "save",
-		"file": "gran2jp3.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+		"file": "gran2jp3.VMS"
 	},
 	"tags": [],
 	"hash": "07c70159336bcdb16d8c3b8a43dfac52f642940d",

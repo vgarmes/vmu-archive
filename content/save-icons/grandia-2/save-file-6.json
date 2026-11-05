@@ -31,8 +31,7 @@
 	"description": "GRANDIA2 LILIGUE INN",
 	"source": {
 		"kind": "save",
-		"file": "v2673.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+		"file": "v2673.VMS"
 	},
 	"tags": [],
 	"hash": "cb76d5e9e070fa34931371cad0bc31d56dc6cc53",

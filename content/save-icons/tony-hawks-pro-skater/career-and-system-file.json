@@ -33,8 +33,7 @@
 	"description": "Tony Hawk Career BUM",
 	"source": {
 		"kind": "save",
-		"file": "v10555.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tonyhawk"
+		"file": "v10555.VMS"
 	},
 	"tags": [],
 	"hash": "fc45c2cfca4ff313cb495852bc6462bb343bc645",

@@ -33,8 +33,7 @@
 	"description": "",
 	"source": {
 		"kind": "save",
-		"file": "GSHARK.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gscdx"
+		"file": "GSHARK.VMS"
 	},
 	"tags": [],
 	"hash": "653a8d526d72ed24dce3872cd1fcfe045e8314cf",

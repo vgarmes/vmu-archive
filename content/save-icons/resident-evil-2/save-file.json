@@ -31,8 +31,7 @@
 	"description": "ＢＨ２／ＡＥ裏／シナリオ　２ｎｄ",
 	"source": {
 		"kind": "save",
-		"file": "bio20001.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
+		"file": "bio20001.VMS"
 	},
 	"tags": [],
 	"hash": "227e8730273ed384c9301a18890cea82ba26565b",

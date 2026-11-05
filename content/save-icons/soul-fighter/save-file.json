@@ -33,8 +33,7 @@
 	"description": "SOULFIGHTER BY TOKA",
 	"source": {
 		"kind": "save",
-		"file": "v20176.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/soulfighter"
+		"file": "v20176.VMS"
 	},
 	"tags": [],
 	"hash": "6bcc5d5c38e0158ff9584e6d329b3380dbdf8caf",

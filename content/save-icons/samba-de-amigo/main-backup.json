@@ -31,8 +31,7 @@
 	"description": "SAMBADEAMIGO DOWNLOAD",
 	"source": {
 		"kind": "save",
-		"file": "MUSIC001.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/samba"
+		"file": "MUSIC001.VMS"
 	},
 	"tags": [],
 	"hash": "918d89c3c9bfb4b8ff5fd0e16874da1fe5a5bcd8",

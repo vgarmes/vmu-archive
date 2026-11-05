@@ -31,8 +31,7 @@
 	"description": "魔剣Ｘ",
 	"source": {
 		"kind": "save",
-		"file": "makenxjp.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/makenx"
+		"file": "makenxjp.VMS"
 	},
 	"tags": [],
 	"hash": "849078202d3139a027904d86369e25d78bf52988",

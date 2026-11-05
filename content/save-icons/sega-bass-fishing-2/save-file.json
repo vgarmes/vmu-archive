@@ -31,8 +31,7 @@
 	"description": "SEGABassFishing2",
 	"source": {
 		"kind": "save",
-		"file": "SBASSF2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bassfish2"
+		"file": "SBASSF2.VMS"
 	},
 	"tags": [],
 	"hash": "99a64cfc68881f66e8134aaee3c3ba88e37a553a",

@@ -31,8 +31,7 @@
 	"description": "DDR CLUB VER. システムファイル",
 	"source": {
 		"kind": "save",
-		"file": "DDRCLUB.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ddrclubmix"
+		"file": "DDRCLUB.VMS"
 	},
 	"tags": [],
 	"hash": "cdd2a9c017db5778bedf2045f72bba4cb560ef19",

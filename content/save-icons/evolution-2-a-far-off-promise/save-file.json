@@ -31,8 +31,7 @@
 	"description": "EVOLUTION2 Train Car 1",
 	"source": {
 		"kind": "save",
-		"file": "00000012.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evolution2"
+		"file": "00000012.VMS"
 	},
 	"tags": [],
 	"hash": "386ece57d6cbf66b9742e409d688779dc11a6c4e",

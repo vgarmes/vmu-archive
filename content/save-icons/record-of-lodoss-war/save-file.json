@@ -31,8 +31,7 @@
 	"description": "ロードス島戦記　邪神降臨",
 	"source": {
 		"kind": "save",
-		"file": "lodoss.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/reclodoss"
+		"file": "lodoss.VMS"
 	},
 	"tags": [],
 	"hash": "cf30ea55af2b77bef02617d59c3847772e7bb246",

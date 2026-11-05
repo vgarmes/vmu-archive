@@ -31,8 +31,7 @@
 	"description": "探偵紳士ＤＡＳＨ！",
 	"source": {
 		"kind": "save",
-		"file": "ZhenTan.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tanteidash"
+		"file": "ZhenTan.VMS"
 	},
 	"tags": [],
 	"hash": "727df8a9ea73485f384fdf6e059f0422efabffc0",

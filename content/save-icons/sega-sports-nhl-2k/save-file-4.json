@@ -31,8 +31,7 @@
 	"description": "NHL2K SAVED ROSTERS",
 	"source": {
 		"kind": "save",
-		"file": "v62214.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nhl2k"
+		"file": "v62214.VMS"
 	},
 	"tags": [],
 	"hash": "b2c901ae4a34a9024e84db1ccf3e667c42f1a279",

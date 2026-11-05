@@ -35,8 +35,7 @@
 	"description": "SHENMUE 2 EU",
 	"source": {
 		"kind": "save",
-		"file": "00000036.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/shenmue2"
+		"file": "00000036.VMS"
 	},
 	"tags": [],
 	"hash": "319e813172b034a59912f80dbaf8b0ac36b33c91",

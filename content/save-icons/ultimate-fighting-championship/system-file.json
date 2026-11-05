@@ -33,8 +33,7 @@
 	"description": "Ultimate Fighting Championship",
 	"source": {
 		"kind": "save",
-		"file": "v13438.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ufc"
+		"file": "v13438.VMS"
 	},
 	"tags": [],
 	"hash": "50727e6590e61fd912d9a70305c319e24af5718f",

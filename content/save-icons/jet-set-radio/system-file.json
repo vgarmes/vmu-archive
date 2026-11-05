@@ -33,8 +33,7 @@
 	"description": "JETGRINDRADIO SYSTEM",
 	"source": {
 		"kind": "save",
-		"file": "JETGR.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/jetgrindradio"
+		"file": "JETGR.VMS"
 	},
 	"tags": [],
 	"hash": "32fb537efb1e51fdaab7b9f0fd19c750370b0675",

@@ -33,8 +33,7 @@
 	"description": "SONIC ADVENTURE / AMY Voice",
 	"source": {
 		"kind": "save",
-		"file": "00000698.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+		"file": "00000698.VMS"
 	},
 	"tags": [],
 	"hash": "e5da9c3b473ed15f4e31c6846ecc0cb04d1125b3",

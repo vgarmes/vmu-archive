@@ -33,8 +33,7 @@
 	"description": "Gundam外伝 Rise from the ashes",
 	"source": {
 		"kind": "save",
-		"file": "GUNDAM3.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gundam"
+		"file": "GUNDAM3.VMS"
 	},
 	"tags": [],
 	"hash": "09268d22783f2e5e591d25c9cdd51932790e3b5e",

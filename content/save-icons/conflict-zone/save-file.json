@@ -31,8 +31,7 @@
 	"description": "CONFLICT ZONE",
 	"source": {
 		"kind": "save",
-		"file": "v30142.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/conflictzone"
+		"file": "v30142.VMS"
 	},
 	"tags": [],
 	"hash": "8ac67bab0d31158ffb623446da70f2069d26a5fb",

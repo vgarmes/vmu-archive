@@ -33,8 +33,7 @@
 	"description": "ファイティングバイパーズ２",
 	"source": {
 		"kind": "save",
-		"file": "f_snake2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/fightvip2"
+		"file": "f_snake2.VMS"
 	},
 	"tags": [],
 	"hash": "f2ae152397b68796fdc32fe8d6699e1c8d31863c",

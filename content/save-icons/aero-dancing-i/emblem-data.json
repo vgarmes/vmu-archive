@@ -31,8 +31,7 @@
 	"description": "AeroDancingI",
 	"source": {
 		"kind": "save",
-		"file": "aeroie00.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroi"
+		"file": "aeroie00.VMS"
 	},
 	"tags": [],
 	"hash": "82e211677ef37ff4a788ed3c07427b2afeabdab0",

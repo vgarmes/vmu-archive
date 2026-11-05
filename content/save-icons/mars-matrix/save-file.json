@@ -31,8 +31,7 @@
 	"description": "ＭａｒｓＭａｔｒｉｘセーブデータ",
 	"source": {
 		"kind": "save",
-		"file": "mars_m.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/marsmatrix"
+		"file": "mars_m.VMS"
 	},
 	"tags": [],
 	"hash": "afd1a8372174232e4060eacc89af8f455edb5f22",

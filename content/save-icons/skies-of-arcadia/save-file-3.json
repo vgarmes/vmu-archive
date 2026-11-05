@@ -31,8 +31,7 @@
 	"description": "Arcadia       Crescent Isle Port",
 	"source": {
 		"kind": "save",
-		"file": "v44119.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/arcadia"
+		"file": "v44119.VMS"
 	},
 	"tags": [],
 	"hash": "6c3fb4ba40581defb6bf03007e8a966463417602",

@@ -31,8 +31,7 @@
 	"description": "NFL Blitz 2000",
 	"source": {
 		"kind": "save",
-		"file": "v21453.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nflblitz"
+		"file": "v21453.VMS"
 	},
 	"tags": [],
 	"hash": "0cec3c052c2047b295f8e9d099632aee8caffd84",

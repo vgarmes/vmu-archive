@@ -31,8 +31,7 @@
 	"description": "Suzuki Alstare Extreme Racing",
 	"source": {
 		"kind": "save",
-		"file": "00000727.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/suzukirace"
+		"file": "00000727.VMS"
 	},
 	"tags": [],
 	"hash": "e67d0580b8e243360b32847dbdbce39184712890",

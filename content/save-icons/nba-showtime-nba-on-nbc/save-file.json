@@ -31,8 +31,7 @@
 	"description": "NBA ShowTime Saved Player",
 	"source": {
 		"kind": "save",
-		"file": "00000619.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nbashow"
+		"file": "00000619.VMS"
 	},
 	"tags": [],
 	"hash": "9d5b4db6060507258c6279f38bb8821c17907cb2",

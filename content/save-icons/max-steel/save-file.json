@@ -31,8 +31,7 @@
 	"description": "Max Steel PROTOX B",
 	"source": {
 		"kind": "save",
-		"file": "v18431.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/maxsteel"
+		"file": "v18431.VMS"
 	},
 	"tags": [],
 	"hash": "9a0a8b993f47c303ef05b05fba39799a98adbf8d",

@@ -33,8 +33,7 @@
 	"description": "ダビつく どっかの牧場　１年",
 	"source": {
 		"kind": "save",
-		"file": "DABI1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dabi1"
+		"file": "DABI1.VMS"
 	},
 	"tags": [],
 	"hash": "0229b4c41d10506d80d12da26ec620e007c449a5",

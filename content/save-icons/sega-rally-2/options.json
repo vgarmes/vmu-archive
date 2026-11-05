@@ -33,8 +33,7 @@
 	"description": "SEGA RALLY 2",
 	"source": {
 		"kind": "save",
-		"file": "SGRALLY2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/segarally"
+		"file": "SGRALLY2.VMS"
 	},
 	"tags": [],
 	"hash": "1b330ae547b822b9231fbf79e5d7b2bbdd10c872",

@@ -33,8 +33,7 @@
 	"description": "BUST_A_MOVE4",
 	"source": {
 		"kind": "save",
-		"file": "pb4us.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bustamove4"
+		"file": "pb4us.VMS"
 	},
 	"tags": [],
 	"hash": "2153c9045421dcea7bbfb028361e39c8c57ee558",

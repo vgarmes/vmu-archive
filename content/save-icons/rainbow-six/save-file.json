@@ -33,8 +33,7 @@
 	"description": "RAINBOW SIX",
 	"source": {
 		"kind": "save",
-		"file": "RAINBOW6.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rainbowsix"
+		"file": "RAINBOW6.VMS"
 	},
 	"tags": [],
 	"hash": "4477fdb290cbe14038c56c7dd51b8469b569b1a2",

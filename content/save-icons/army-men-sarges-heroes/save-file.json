@@ -31,8 +31,7 @@
 	"description": "ARMY_MEN_SARGES_HEROES",
 	"source": {
 		"kind": "save",
-		"file": "v14368.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/armymen"
+		"file": "v14368.VMS"
 	},
 	"tags": [],
 	"hash": "ab5ad3fb808eb39398c47579eeccee032110fda1",

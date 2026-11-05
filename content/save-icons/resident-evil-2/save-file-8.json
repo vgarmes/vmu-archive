@@ -31,8 +31,7 @@
 	"description": "RE2/E1 /Dark Room",
 	"source": {
 		"kind": "save",
-		"file": "v73184.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
+		"file": "v73184.VMS"
 	},
 	"tags": [],
 	"hash": "fcdbc04cede8cb67b38ad71b1a64c0ff80faee0c",

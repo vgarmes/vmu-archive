@@ -31,8 +31,7 @@
 	"description": "チューチュー！／キャラクター",
 	"source": {
 		"kind": "save",
-		"file": "00016477.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/chuchu"
+		"file": "00016477.VMS"
 	},
 	"tags": [],
 	"hash": "08302931243d8bc20b130db50045f0c7dd9b8a05",

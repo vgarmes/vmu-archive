@@ -33,8 +33,7 @@
 	"description": "Tomb Raider Chronicles Save",
 	"source": {
 		"kind": "save",
-		"file": "TOMBR5.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tombraider5"
+		"file": "TOMBR5.VMS"
 	},
 	"tags": [],
 	"hash": "acd8e6be623ba0591166002594ebf805a40c3b3e",

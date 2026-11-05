@@ -31,8 +31,7 @@
 	"description": "Prince of Persia 3D Save File",
 	"source": {
 		"kind": "save",
-		"file": "v18551.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/prince"
+		"file": "v18551.VMS"
 	},
 	"tags": [],
 	"hash": "cd82043b8134044a0dee4d3ac983797904799b83",

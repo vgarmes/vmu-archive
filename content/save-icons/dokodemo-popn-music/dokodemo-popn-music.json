@@ -33,8 +33,7 @@
 	"description": "どこでもポップンミュージック",
 	"source": {
 		"kind": "save",
-		"file": "POPMUSI1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+		"file": "POPMUSI1.VMS"
 	},
 	"tags": [],
 	"hash": "c162c99140f5303983aac9632fed02ce7307ebf5",

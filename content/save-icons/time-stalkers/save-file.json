@@ -33,8 +33,7 @@
 	"description": "TIME STALKERS",
 	"source": {
 		"kind": "save",
-		"file": "00001001.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/timestalkers"
+		"file": "00001001.VMS"
 	},
 	"tags": [],
 	"hash": "4df2973684d21faa896f01d315888371bff89b43",

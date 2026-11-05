@@ -31,8 +31,7 @@
 	"description": "サクラ大戦４",
 	"source": {
 		"kind": "save",
-		"file": "00000023.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakura4"
+		"file": "00000023.VMS"
 	},
 	"tags": [],
 	"hash": "abd198bf27c7087dad14b0321dcac59be6abf4b5",

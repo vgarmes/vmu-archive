@@ -33,8 +33,7 @@
 	"description": "ｴﾀｰﾅﾙ ｱﾙｶﾃﾞｨｱ     ﾀﾞｳﾝﾛｰﾄﾞﾌｧｲﾙ 3",
 	"source": {
 		"kind": "save",
-		"file": "ARCAEX03.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/arcadia"
+		"file": "ARCAEX03.VMS"
 	},
 	"tags": [],
 	"hash": "4a6884fae75ce377cab480984eab1acef3c064ce",

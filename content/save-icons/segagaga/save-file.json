@@ -31,8 +31,7 @@
 	"description": "セガガガ",
 	"source": {
 		"kind": "save",
-		"file": "SEGAGAG2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/segagaga"
+		"file": "SEGAGAG2.VMS"
 	},
 	"tags": [],
 	"hash": "9a74bee652793fa071a172e4c39f26fb6b6a01e4",

@@ -31,8 +31,7 @@
 	"description": "Ｄｒｅａｍ　Ｐａｓｓｐｏｒｔ",
 	"source": {
 		"kind": "save",
-		"file": "DP3__SBK.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dp3"
+		"file": "DP3__SBK.VMS"
 	},
 	"tags": [],
 	"hash": "037eba9577ebaf79e43e90873b294c5776a8a8d7",

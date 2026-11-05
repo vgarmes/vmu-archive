@@ -12,7 +12,6 @@
  *   {
  *     "game": "Capcom vs. SNK 2", "publisher": "Capcom", "year": 2001,
  *     "region": "JP",
- *     "url": "https://github.com/…/capcomsnk2", "commit": "73f6e86…",
  *     "titles": { "cvs2jp.VMS": "System file", "cvs2rep1.VMS": "Replay file" }
  *   }
  *
@@ -52,8 +51,6 @@ interface Sidecar {
 	publisher?: string
 	year?: number
 	region?: SaveIcon['region']
-	url?: string
-	commit?: string
 	tags?: string[]
 	titles: Record<string, string>
 }
@@ -243,9 +240,7 @@ function main() {
 			source: {
 				kind: 'save',
 				// The save that named it; the others carrying it add nothing.
-				file: files.find(f => sidecar.titles[f]) ?? files[0],
-				url: sidecar.url,
-				commit: sidecar.commit
+				file: files.find(f => sidecar.titles[f]) ?? files[0]
 			},
 			tags: sidecar.tags ?? [],
 			hash,

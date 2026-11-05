@@ -31,8 +31,7 @@
 	"description": "ｻｶﾄｸ2 応援 サクラ大戦",
 	"source": {
 		"kind": "save",
-		"file": "TEDAH2e1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakato2"
+		"file": "TEDAH2e1.VMS"
 	},
 	"tags": [],
 	"hash": "0673dc303ce28153da0721525310db9125087a12",

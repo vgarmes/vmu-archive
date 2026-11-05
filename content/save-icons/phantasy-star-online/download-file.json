@@ -31,8 +31,7 @@
 	"description": "PSO/イー・アクセスの夜明け",
 	"source": {
 		"kind": "save",
-		"file": "EASTER1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/pso"
+		"file": "EASTER1.VMS"
 	},
 	"tags": [],
 	"hash": "7c064e7274aeafd3450ae85aef3e8853d6d9612b",

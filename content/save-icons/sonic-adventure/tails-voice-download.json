@@ -33,8 +33,7 @@
 	"description": "SONIC ADVENTURE / TAILS Voice",
 	"source": {
 		"kind": "save",
-		"file": "SA1_V12.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+		"file": "SA1_V12.VMS"
 	},
 	"tags": [],
 	"hash": "62af20296fd0f71c3ed97dcd8076a18bec85ab2d",

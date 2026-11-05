@@ -33,8 +33,7 @@
 	"description": "Tony Hawk Replay SCHOOLCHAD",
 	"source": {
 		"kind": "save",
-		"file": "v32543.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tonyhawk"
+		"file": "v32543.VMS"
 	},
 	"tags": [],
 	"hash": "1737e8b1a18e82f80aef7cc140a6917ce4f4138e",

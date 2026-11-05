@@ -31,8 +31,7 @@
 	"description": "Urban Chaos",
 	"source": {
 		"kind": "save",
-		"file": "v17339.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/urbanchaos"
+		"file": "v17339.VMS"
 	},
 	"tags": [],
 	"hash": "338d665f6c073ad046e132c8966d43b1f23cdd78",

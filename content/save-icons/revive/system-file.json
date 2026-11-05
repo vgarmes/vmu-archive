@@ -33,8 +33,7 @@
 	"description": "ＲＥＶＩＶＥ～蘇生～",
 	"source": {
 		"kind": "save",
-		"file": "revive1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/revive"
+		"file": "revive1.VMS"
 	},
 	"tags": [],
 	"hash": "0394360bda6bfa5a8dec94a15996a71d238c154b",

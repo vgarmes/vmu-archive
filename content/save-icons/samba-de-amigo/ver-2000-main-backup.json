@@ -32,8 +32,7 @@
 	"description": "サンバＤＥアミーゴVer2000 メイン",
 	"source": {
 		"kind": "save",
-		"file": "SAMBAV2K.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/samba"
+		"file": "SAMBAV2K.VMS"
 	},
 	"tags": [],
 	"hash": "c56f8e0d4a7725b431072d85d291f012ddb9dd8b",

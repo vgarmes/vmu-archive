@@ -31,8 +31,7 @@
 	"description": "Walt Disney World Quest:MRT",
 	"source": {
 		"kind": "save",
-		"file": "v15203.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/disneymagical"
+		"file": "v15203.VMS"
 	},
 	"tags": [],
 	"hash": "f4eeff770349c0d0d354811de8e7427696afe706",

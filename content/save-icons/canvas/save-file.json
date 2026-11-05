@@ -31,8 +31,7 @@
 	"description": "Ｃａｎｖａｓ",
 	"source": {
 		"kind": "save",
-		"file": "CANVAS.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/canvas"
+		"file": "CANVAS.VMS"
 	},
 	"tags": [],
 	"hash": "ffcec84329bb7c567203290ebd63ca9652994c18",

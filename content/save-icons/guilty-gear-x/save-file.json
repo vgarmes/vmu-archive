@@ -32,8 +32,7 @@
 	"description": "ギルティギアゼクス for ＤＣ",
 	"source": {
 		"kind": "save",
-		"file": "guiltyx.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/guiltygearx"
+		"file": "guiltyx.VMS"
 	},
 	"tags": [],
 	"hash": "709f6305cfc656a347b5a3110085099bb777446e",

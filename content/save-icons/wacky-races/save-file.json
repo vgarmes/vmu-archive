@@ -31,8 +31,7 @@
 	"description": "PARTIDA A DE LOS AUTOS LOCOS",
 	"source": {
 		"kind": "save",
-		"file": "v12723.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wackyraces"
+		"file": "v12723.VMS"
 	},
 	"tags": [],
 	"hash": "87c0ed413aa0a239e64a8fdcbb8527036ed1fc74",

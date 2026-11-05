@@ -31,8 +31,7 @@
 	"description": "VIRTUA STRIKER2 ( DNK vs SCO )",
 	"source": {
 		"kind": "save",
-		"file": "v5248.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuastriker"
+		"file": "v5248.VMS"
 	},
 	"tags": [],
 	"hash": "a8c11b7f13edb47ab001d070268d42a557fd6eb2",

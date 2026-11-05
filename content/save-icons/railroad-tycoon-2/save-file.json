@@ -31,8 +31,7 @@
 	"description": "Railroad Tycoon II",
 	"source": {
 		"kind": "save",
-		"file": "RTYCOON2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/railroadtycoon2"
+		"file": "RTYCOON2.VMS"
 	},
 	"tags": [],
 	"hash": "6bc705d52dbfba30f47a9c25d55724930f320370",

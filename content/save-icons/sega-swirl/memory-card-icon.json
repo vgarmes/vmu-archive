@@ -33,8 +33,7 @@
 	"description": "",
 	"source": {
 		"kind": "save",
-		"file": "SWIRL.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sega_swirl"
+		"file": "SWIRL.VMS"
 	},
 	"tags": [],
 	"hash": "92f243438ab85516f860304c367989deb2cc3a64",

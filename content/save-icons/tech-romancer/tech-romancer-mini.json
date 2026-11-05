@@ -33,8 +33,7 @@
 	"description": "TECH ROMANCER MINI",
 	"source": {
 		"kind": "save",
-		"file": "VMFL_081.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+		"file": "VMFL_081.VMS"
 	},
 	"tags": [],
 	"hash": "38d6b6545c2bae0fb06bcdd73817fe23f3131d3c",

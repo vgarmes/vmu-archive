@@ -31,8 +31,7 @@
 	"description": "GRANDIA2 VALMAR'S BODY, POINT OF",
 	"source": {
 		"kind": "save",
-		"file": "v28630.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+		"file": "v28630.VMS"
 	},
 	"tags": [],
 	"hash": "3ba56d2bd8b70a975cf141a739d5384ccb560643",

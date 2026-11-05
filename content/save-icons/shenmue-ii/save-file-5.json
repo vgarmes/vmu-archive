@@ -35,8 +35,7 @@
 	"description": "シェンムー　２",
 	"source": {
 		"kind": "save",
-		"file": "SM2JPMAX.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/shenmue2"
+		"file": "SM2JPMAX.VMS"
 	},
 	"tags": [],
 	"hash": "2f0660224b1d98798b10856ab9ba75181ec282ff",

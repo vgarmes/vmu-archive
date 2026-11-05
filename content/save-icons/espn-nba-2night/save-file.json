@@ -31,8 +31,7 @@
 	"description": "NBA 2Night",
 	"source": {
 		"kind": "save",
-		"file": "v36243.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/espnnba"
+		"file": "v36243.VMS"
 	},
 	"tags": [],
 	"hash": "b863ade16d7b9547fcda137038a88f07fc243601",

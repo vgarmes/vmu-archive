@@ -32,8 +32,7 @@
 	"description": "ﾐﾙｷｨ･ｼｰｽﾞﾝ ｾｰﾌﾞﾃﾞｰﾀ",
 	"source": {
 		"kind": "save",
-		"file": "milkysea.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/milky"
+		"file": "milkysea.VMS"
 	},
 	"tags": [],
 	"hash": "389e74634dce5ba6cbc8cd4dc4145318cc76e65f",

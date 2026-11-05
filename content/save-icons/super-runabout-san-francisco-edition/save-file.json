@@ -33,8 +33,7 @@
 	"description": "SUPER RUNABOUT",
 	"source": {
 		"kind": "save",
-		"file": "SUPERRBT.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/superrun"
+		"file": "SUPERRBT.VMS"
 	},
 	"tags": [],
 	"hash": "d007261f9c3235ffdf8a4113632ec40844cf63c7",

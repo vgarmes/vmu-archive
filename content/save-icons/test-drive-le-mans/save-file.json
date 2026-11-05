@@ -31,8 +31,7 @@
 	"description": "Test Drive LeMans24 Save",
 	"source": {
 		"kind": "save",
-		"file": "v16699.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lemans"
+		"file": "v16699.VMS"
 	},
 	"tags": [],
 	"hash": "179208a8a03014e0e887c908b3829c053c625418",

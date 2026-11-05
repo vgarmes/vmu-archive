@@ -31,8 +31,7 @@
 	"description": "VIRTUA STRIKER2 ( KOR vs MOR )",
 	"source": {
 		"kind": "save",
-		"file": "VS2_REP1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuastriker"
+		"file": "VS2_REP1.VMS"
 	},
 	"tags": [],
 	"hash": "1bdc9a8a0aec84e31d8cde535bebab36ecb843cd",

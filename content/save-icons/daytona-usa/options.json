@@ -33,8 +33,7 @@
 	"description": "DAYTONA USA 2001",
 	"source": {
 		"kind": "save",
-		"file": "dusa2001.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/daytona"
+		"file": "dusa2001.VMS"
 	},
 	"tags": [],
 	"hash": "f0d5365c03f9298d15c05edad1226971fcf4611b",

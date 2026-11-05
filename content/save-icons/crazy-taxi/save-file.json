@@ -35,8 +35,7 @@
 	"description": "CRAZY TAXI",
 	"source": {
 		"kind": "save",
-		"file": "00000590.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/crazytaxi"
+		"file": "00000590.VMS"
 	},
 	"tags": [],
 	"hash": "0f3cc2df242d2db9b51f78183b5571b7f9546c9d",

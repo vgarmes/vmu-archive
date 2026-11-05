@@ -33,8 +33,7 @@
 	"description": "Tokyo Xtreme Racer 2",
 	"source": {
 		"kind": "save",
-		"file": "v12519.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tokyo2"
+		"file": "v12519.VMS"
 	},
 	"tags": [],
 	"hash": "bb3a6b1854c0ac71564ba29847c49bb76647f438",

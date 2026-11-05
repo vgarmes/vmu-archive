@@ -31,8 +31,7 @@
 	"description": "MONACO GP RACING SIMULATION 2",
 	"source": {
 		"kind": "save",
-		"file": "v15989.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/monacoprix"
+		"file": "v15989.VMS"
 	},
 	"tags": [],
 	"hash": "044d7e36391ec355042367d1bfd19996aff7ae72",

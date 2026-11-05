@@ -31,8 +31,7 @@
 	"description": "ECCO: Defender Of The Future",
 	"source": {
 		"kind": "save",
-		"file": "ecco.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ecco"
+		"file": "ecco.VMS"
 	},
 	"tags": [],
 	"hash": "be7ea845ecbd23906a322158b749bb84cc210782",

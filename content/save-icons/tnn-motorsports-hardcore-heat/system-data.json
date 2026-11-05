@@ -31,8 +31,7 @@
 	"description": "HARDCORE HEAT_System data",
 	"source": {
 		"kind": "save",
-		"file": "00000064.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/hardcore"
+		"file": "00000064.VMS"
 	},
 	"tags": [],
 	"hash": "c52cc4e15e07849db9ac499725549a3cdaaa879c",

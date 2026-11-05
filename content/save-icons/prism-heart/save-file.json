@@ -31,8 +31,7 @@
 	"description": "プリズム・ハート",
 	"source": {
 		"kind": "save",
-		"file": "prismhea.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/prism"
+		"file": "prismhea.VMS"
 	},
 	"tags": [],
 	"hash": "96c0603f427a9c0a27916568e27f30fa5ced006f",

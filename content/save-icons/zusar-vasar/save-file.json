@@ -33,8 +33,7 @@
 	"description": "ズサーヴァサー",
 	"source": {
 		"kind": "save",
-		"file": "00000945.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/zusarvasar"
+		"file": "00000945.VMS"
 	},
 	"tags": [],
 	"hash": "af50b950c438888bc369648645f93e23d453c066",

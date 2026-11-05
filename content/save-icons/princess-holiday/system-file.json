@@ -31,8 +31,7 @@
 	"description": "プリンセスホリデー",
 	"source": {
 		"kind": "save",
-		"file": "PRINCESS.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/princessh"
+		"file": "PRINCESS.VMS"
 	},
 	"tags": [],
 	"hash": "5ce71d04eec3cd8511e5cc1a27de20428de10dbd",

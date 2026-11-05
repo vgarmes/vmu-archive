@@ -33,8 +33,7 @@
 	"description": "花組対戦コラムス２／システム",
 	"source": {
 		"kind": "save",
-		"file": "sakurapz.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakurapz"
+		"file": "sakurapz.VMS"
 	},
 	"tags": [],
 	"hash": "a62d2620e3d1bb55914191dc62b02726100dbf08",

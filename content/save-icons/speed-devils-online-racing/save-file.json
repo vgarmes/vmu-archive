@@ -33,8 +33,7 @@
 	"description": "Speed Devils Online/Settings",
 	"source": {
 		"kind": "save",
-		"file": "v21477.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/speeddevilson"
+		"file": "v21477.VMS"
 	},
 	"tags": [],
 	"hash": "f47f70bfaa19a8fc016c4dc62100a215640b483d",

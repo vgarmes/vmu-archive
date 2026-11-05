@@ -31,8 +31,7 @@
 	"description": "VIRTUAL-ON ORATORIO TANGRAM",
 	"source": {
 		"kind": "save",
-		"file": "v39368.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtualon"
+		"file": "v39368.VMS"
 	},
 	"tags": [],
 	"hash": "399e300b9fe1a865dfa40cd4660c7d611ffd34a3",

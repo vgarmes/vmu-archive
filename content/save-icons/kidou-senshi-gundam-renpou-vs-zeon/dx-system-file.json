@@ -33,8 +33,7 @@
 	"description": "機動戦士ガンダムＤＸシステム",
 	"source": {
 		"kind": "save",
-		"file": "gundadx2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gundamrvz"
+		"file": "gundadx2.VMS"
 	},
 	"tags": [],
 	"hash": "136d49caf8f41d3ba9e75431ae6b450b588693fe",

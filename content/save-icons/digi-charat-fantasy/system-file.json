@@ -31,8 +31,7 @@
 	"description": "デ・ジ・キャラット　ファンタジー",
 	"source": {
 		"kind": "save",
-		"file": "DIGICHAR.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/digichar"
+		"file": "DIGICHAR.VMS"
 	},
 	"tags": [],
 	"hash": "78c3f2c5f88eae529d562244ce9c55af08450bf2",

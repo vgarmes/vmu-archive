@@ -30,7 +30,7 @@ interface File {
 	madeByGame?: boolean | null
 	vmuName: string
 	description: string
-	source: { kind: 'save' | 'disc'; file: string; url?: string }
+	source: { kind: 'save' | 'disc'; file: string }
 }
 
 export interface SaveIcon {
@@ -58,8 +58,6 @@ export interface SaveIcon {
 	vmuName: string
 	description: string
 	frames: number
-	/** Where the save it was read from came from. */
-	sourceUrl?: string
 	art: PixelArt
 	/** The 1-bit VMU icon of a memory card icon. */
 	vmuArt?: PixelArt
@@ -106,7 +104,6 @@ export function getSaveIcons(): SaveIcon[] {
 				vmuName: s.vmuName,
 				description: s.description,
 				frames: s.frames.length,
-				sourceUrl: s.source.url,
 				art: {
 					width: s.width,
 					height: s.height,

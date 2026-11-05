@@ -32,8 +32,7 @@
 	"description": "AITD4 CHR_ALINE LEV_069 SAV_005",
 	"source": {
 		"kind": "save",
-		"file": "AITDA1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/alonedark"
+		"file": "AITDA1.VMS"
 	},
 	"tags": [],
 	"hash": "0b032edf827edf3f0a25bc988c87d7cd0cc55bce",

@@ -32,8 +32,7 @@
 	"description": "Princess Maker 2",
 	"source": {
 		"kind": "save",
-		"file": "primake2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/princessmaker"
+		"file": "primake2.VMS"
 	},
 	"tags": [],
 	"hash": "8d8484e1b2a13051fcaffc4d93aa659874ce8991",

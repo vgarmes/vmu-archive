@@ -31,8 +31,7 @@
 	"description": "RING",
 	"source": {
 		"kind": "save",
-		"file": "THERING.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/thering"
+		"file": "THERING.VMS"
 	},
 	"tags": [],
 	"hash": "22a853d371d2e3e903a9a1aac634ec4825aa6ec0",

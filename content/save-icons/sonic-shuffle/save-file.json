@@ -33,8 +33,7 @@
 	"description": "SONIC SHUFFLE",
 	"source": {
 		"kind": "save",
-		"file": "SONICEX.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonicshuffle"
+		"file": "SONICEX.VMS"
 	},
 	"tags": [],
 	"hash": "5f777e56a8cf5bd31a0ea66a7c4ba50e5d8b0f0a",

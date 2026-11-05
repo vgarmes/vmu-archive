@@ -33,8 +33,7 @@
 	"description": "DEEP FIGHTER",
 	"source": {
 		"kind": "save",
-		"file": "v2644.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/deepfighter"
+		"file": "v2644.VMS"
 	},
 	"tags": [],
 	"hash": "30e218f8dd128dcebba10194b4ca0eba0b31a910",

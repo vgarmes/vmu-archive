@@ -31,8 +31,7 @@
 	"description": "MORTAL KOMBAT GOLD",
 	"source": {
 		"kind": "save",
-		"file": "v23409.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mkg"
+		"file": "v23409.VMS"
 	},
 	"tags": [],
 	"hash": "89884a6e2c4171feba4f5844f02f812beea0f115",

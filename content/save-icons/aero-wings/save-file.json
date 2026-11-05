@@ -33,8 +33,7 @@
 	"description": "AeroWings",
 	"source": {
 		"kind": "save",
-		"file": "v23956.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aerowings"
+		"file": "v23956.VMS"
 	},
 	"tags": [],
 	"hash": "9ad5553f990a95a32df65cc467481841c02c3b16",

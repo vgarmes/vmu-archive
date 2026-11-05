@@ -31,8 +31,7 @@
 	"description": "RE2/AEB/Scenario 2nd",
 	"source": {
 		"kind": "save",
-		"file": "v46465.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
+		"file": "v46465.VMS"
 	},
 	"tags": [],
 	"hash": "f7aab12d376878555abdc77e2d88adf37e5dfb4f",

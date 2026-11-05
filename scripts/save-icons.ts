@@ -62,10 +62,6 @@ export interface SaveIcon {
 		kind: 'save' | 'disc'
 		/** The save (or disc file) it was read from; other saves may carry it too. */
 		file: string
-		/** Where the files were taken from, e.g. a repository's folder. */
-		url?: string
-		/** The repository's commit the files were taken at. */
-		commit?: string
 		/** On a disc: the byte offset of the header in that file. */
 		offset?: number
 	}
@@ -145,6 +141,9 @@ export function saveIconProblems(s: SaveIcon): string[] {
 		!s.source.file
 	)
 		out.push('"source" needs a "kind" (save or disc) and its "file"')
+	for (const key of Object.keys(s.source ?? {}))
+		if (!['kind', 'file', 'offset'].includes(key))
+			out.push(`"source" has "${key}": it keeps only kind, file and offset`)
 	if (!Array.isArray(s.tags)) out.push('"tags" must be a list')
 	if (!/^\d{4}-\d{2}-\d{2}$/.test(s.added ?? ''))
 		out.push('"added" is not a date')

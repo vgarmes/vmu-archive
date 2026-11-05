@@ -31,8 +31,7 @@
 	"description": "THE NOMAD SOUL",
 	"source": {
 		"kind": "save",
-		"file": "OMIKRON.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/omikron"
+		"file": "OMIKRON.VMS"
 	},
 	"tags": [],
 	"hash": "fbd054710ae71257e3fda37b171a07dd239bcc2f",

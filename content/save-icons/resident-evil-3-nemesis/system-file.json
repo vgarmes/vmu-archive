@@ -33,8 +33,7 @@
 	"description": "ＢＨ３／システム／アップロード",
 	"source": {
 		"kind": "save",
-		"file": "bio3jpsy.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil3"
+		"file": "bio3jpsy.VMS"
 	},
 	"tags": [],
 	"hash": "1a87c2e8d7feb7851b8dc45dcb74fd545fe9506a",

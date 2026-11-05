@@ -35,8 +35,7 @@
 	"description": "CRAZY TAXI 2  SYSTEM DATA",
 	"source": {
 		"kind": "save",
-		"file": "c_taxi2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/crazytaxi2"
+		"file": "c_taxi2.VMS"
 	},
 	"tags": [],
 	"hash": "8058ee24c8bc2efea3c58d1164ea324d42a3ad27",

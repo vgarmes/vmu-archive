@@ -31,8 +31,7 @@
 	"description": "GRANDIA2 CYRUM CASTLE, DOWNSTAIR",
 	"source": {
 		"kind": "save",
-		"file": "v41894.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+		"file": "v41894.VMS"
 	},
 	"tags": [],
 	"hash": "315b86ee8a8e76977659570d92f47c0ff4da7638",

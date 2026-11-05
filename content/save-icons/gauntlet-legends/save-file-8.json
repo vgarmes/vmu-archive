@@ -31,8 +31,7 @@
 	"description": "GAUNTLET LEGENDS",
 	"source": {
 		"kind": "save",
-		"file": "v24515.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gauntletlegends"
+		"file": "v24515.VMS"
 	},
 	"tags": [],
 	"hash": "087e4452fcc7ef15a6f08bc61ec958ac133f5b72",

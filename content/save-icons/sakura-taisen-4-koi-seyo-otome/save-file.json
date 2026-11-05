@@ -33,8 +33,7 @@
 	"description": "サクラ大戦４　最終幕  05:31",
 	"source": {
 		"kind": "save",
-		"file": "sw4_001.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakura4"
+		"file": "sw4_001.VMS"
 	},
 	"tags": [],
 	"hash": "fa42a0186ce3071b179c2de5a0bf945ddb1d66aa",

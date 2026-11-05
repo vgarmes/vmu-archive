@@ -31,8 +31,7 @@
 	"description": "HEADHUNTER",
 	"source": {
 		"kind": "save",
-		"file": "head2nd.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/headhunt"
+		"file": "head2nd.VMS"
 	},
 	"tags": [],
 	"hash": "d961e412896e07d825ea4444944d91b32ff2e2d4",

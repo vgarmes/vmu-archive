@@ -35,8 +35,7 @@
 	"description": "SONIC ADVENTURE 2 / CHAO File",
 	"source": {
 		"kind": "save",
-		"file": "v14737.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
+		"file": "v14737.VMS"
 	},
 	"tags": [],
 	"hash": "0b4e3e8053ab74982d11bb7c9fb4b4601ab842f6",

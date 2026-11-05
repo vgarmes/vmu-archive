@@ -31,8 +31,7 @@
 	"description": "Extreme Sports Hiscores",
 	"source": {
 		"kind": "save",
-		"file": "EXTS1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/xsports"
+		"file": "EXTS1.VMS"
 	},
 	"tags": [],
 	"hash": "ab198bfe9b7561935d7adb658eae0adb2b5a7b1d",

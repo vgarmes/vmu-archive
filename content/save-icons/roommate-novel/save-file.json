@@ -33,8 +33,7 @@
 	"description": "ルームメイトノベル～佐藤由香～",
 	"source": {
 		"kind": "save",
-		"file": "ROOMMATE.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/roommate"
+		"file": "ROOMMATE.VMS"
 	},
 	"tags": [],
 	"hash": "aa1585da4e418d927c6a60cc1d340a6e7563c8bb",

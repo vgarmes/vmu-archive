@@ -33,8 +33,7 @@
 	"description": "ｻﾞｷﾝｸﾞｵﾌﾞﾌｧｲﾀｰｽﾞ'99 ｴﾎﾞﾘｭｰｼｮﾝ",
 	"source": {
 		"kind": "save",
-		"file": "KOF_1999.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kof99evo"
+		"file": "KOF_1999.VMS"
 	},
 	"tags": [],
 	"hash": "ff089ee03a9bb66fe65b57db950e8bdcc1baefdc",

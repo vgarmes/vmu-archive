@@ -31,8 +31,7 @@
 	"description": "Quake III Arena",
 	"source": {
 		"kind": "save",
-		"file": "QUAKE3.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/quake3"
+		"file": "QUAKE3.VMS"
 	},
 	"tags": [],
 	"hash": "68a31495955a678c205498abc7d9db37f7314aef",

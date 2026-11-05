@@ -33,8 +33,7 @@
 	"description": "",
 	"source": {
 		"kind": "save",
-		"file": "ATARI.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/atari"
+		"file": "ATARI.VMS"
 	},
 	"tags": [],
 	"hash": "1d2a2cceb8e69b59074f68c4f0cc78792d5e3761",

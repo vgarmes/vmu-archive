@@ -33,8 +33,7 @@
 	"description": "Iron Aces      GAME SIR OLSEN",
 	"source": {
 		"kind": "save",
-		"file": "v42319.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ironaces"
+		"file": "v42319.VMS"
 	},
 	"tags": [],
 	"hash": "ac6d02bd706dab017d167c1aa80ac1b80b16e684",

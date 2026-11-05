@@ -31,8 +31,7 @@
 	"description": "SOLDIER OF FORTUNE",
 	"source": {
 		"kind": "save",
-		"file": "v18388.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/soldierfortune"
+		"file": "v18388.VMS"
 	},
 	"tags": [],
 	"hash": "6fe5714f0dd5857f93df20e75a887f0fbfb3fda1",

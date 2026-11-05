@@ -33,8 +33,7 @@
 	"description": "大神一郎奮闘記　システムデータ",
 	"source": {
 		"kind": "save",
-		"file": "SWDASHEN.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakuraks"
+		"file": "SWDASHEN.VMS"
 	},
 	"tags": [],
 	"hash": "ddf74674e995d6b4629d507c5f8300b653f82105",

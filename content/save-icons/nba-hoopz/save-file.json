@@ -31,8 +31,7 @@
 	"description": "NBA HOOPZ",
 	"source": {
 		"kind": "save",
-		"file": "v13529.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nbahoopz"
+		"file": "v13529.VMS"
 	},
 	"tags": [],
 	"hash": "d63e970de2e7a2ca17732d50ed27bddf3a29fe4c",

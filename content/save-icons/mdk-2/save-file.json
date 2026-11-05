@@ -31,8 +31,7 @@
 	"description": "MDK2 Savegame",
 	"source": {
 		"kind": "save",
-		"file": "00001154.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mdk2"
+		"file": "00001154.VMS"
 	},
 	"tags": [],
 	"hash": "ba70827e80d2f3695c3ae2bcf5f798fa4d182047",

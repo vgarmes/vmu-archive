@@ -31,8 +31,7 @@
 	"description": "Starlancer",
 	"source": {
 		"kind": "save",
-		"file": "v16002.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/starlancer"
+		"file": "v16002.VMS"
 	},
 	"tags": [],
 	"hash": "2f69dbd5669b6dd5bf9b1f0429fef2457b85c112",

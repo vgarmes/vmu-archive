@@ -31,8 +31,7 @@
 	"description": "WETRIX PLUS",
 	"source": {
 		"kind": "save",
-		"file": "v39228.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wetrix"
+		"file": "v39228.VMS"
 	},
 	"tags": [],
 	"hash": "80a541c5d68943e78ca781717471b6d24f7634a2",

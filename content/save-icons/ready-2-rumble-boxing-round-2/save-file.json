@@ -32,8 +32,7 @@
 	"description": "READY 2 RUMBLE BOXING: ROUND 2",
 	"source": {
 		"kind": "save",
-		"file": "v15321.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ready_rumble2"
+		"file": "v15321.VMS"
 	},
 	"tags": [],
 	"hash": "81aed787a773af7ed27c980244fdae67dd39ac05",

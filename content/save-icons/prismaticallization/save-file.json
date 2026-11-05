@@ -31,8 +31,7 @@
 	"description": "プリズマティカリゼーション",
 	"source": {
 		"kind": "save",
-		"file": "PRISMATI.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/prismatic"
+		"file": "PRISMATI.VMS"
 	},
 	"tags": [],
 	"hash": "42a1e1a60fc2a16b8b14e6c841d8ce906dc2d493",

@@ -31,8 +31,7 @@
 	"description": "キャッスルファンタジア　聖魔大戦",
 	"source": {
 		"kind": "save",
-		"file": "CASTLEFA.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/castlefan"
+		"file": "CASTLEFA.VMS"
 	},
 	"tags": [],
 	"hash": "f40ea43a4209588f2612f4cbb34eb45f815fa288",

@@ -31,8 +31,7 @@
 	"description": "エヴァンゲリオン　綾波育成計画",
 	"source": {
 		"kind": "save",
-		"file": "vmfl_173.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evarei"
+		"file": "vmfl_173.VMS"
 	},
 	"tags": [],
 	"hash": "73687ba4bf109e2805fbd59257062388e3cd681b",

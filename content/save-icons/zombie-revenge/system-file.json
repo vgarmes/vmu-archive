@@ -31,8 +31,7 @@
 	"description": "ZOMBIE REVENGE SYSTEM FILE",
 	"source": {
 		"kind": "save",
-		"file": "ZOMBIERE.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/zombie"
+		"file": "ZOMBIERE.VMS"
 	},
 	"tags": [],
 	"hash": "54f1b8ee2ae49314537accf38dcab6f360692dbc",

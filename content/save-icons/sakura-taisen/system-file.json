@@ -33,8 +33,7 @@
 	"description": "サクラ大戦",
 	"source": {
 		"kind": "save",
-		"file": "sw1_sys.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakura1"
+		"file": "sw1_sys.VMS"
 	},
 	"tags": [],
 	"hash": "ff044361325ba9cadf91118e8f6eb69433b79188",

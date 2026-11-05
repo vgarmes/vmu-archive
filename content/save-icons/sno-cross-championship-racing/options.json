@@ -31,8 +31,7 @@
 	"description": "SNOCROSS CHAMPIONSHIP RACING",
 	"source": {
 		"kind": "save",
-		"file": "v24024.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/snocross"
+		"file": "v24024.VMS"
 	},
 	"tags": [],
 	"hash": "83c79626b410b75b33ec40dbd35de3139448bf1a",

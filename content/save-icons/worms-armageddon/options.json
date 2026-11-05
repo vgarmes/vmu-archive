@@ -33,8 +33,7 @@
 	"description": "WORMS ARMAGEDDON",
 	"source": {
 		"kind": "save",
-		"file": "00000585.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/worm"
+		"file": "00000585.VMS"
 	},
 	"tags": [],
 	"hash": "9d820043054be63f3bd90c40ad222f08a53b104a",

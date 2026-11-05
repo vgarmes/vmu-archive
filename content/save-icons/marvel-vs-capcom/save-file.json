@@ -33,8 +33,7 @@
 	"description": "MARVEL VS.CAPCOM",
 	"source": {
 		"kind": "save",
-		"file": "00000007.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/marvelcapcom"
+		"file": "00000007.VMS"
 	},
 	"tags": [],
 	"hash": "bc5e20e9e149e6dc373863dcf52e5e49e4435167",

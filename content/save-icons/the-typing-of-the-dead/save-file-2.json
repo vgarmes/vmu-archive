@@ -33,8 +33,7 @@
 	"description": "THE TYPING OF THE DEAD",
 	"source": {
 		"kind": "save",
-		"file": "TYPEDEAD.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/typingdead"
+		"file": "TYPEDEAD.VMS"
 	},
 	"tags": [],
 	"hash": "168275990c38a50888f79b930c4a5ddf07065709",

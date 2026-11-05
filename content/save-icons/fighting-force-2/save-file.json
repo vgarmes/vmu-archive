@@ -33,8 +33,7 @@
 	"description": "Fighting Force 2",
 	"source": {
 		"kind": "save",
-		"file": "v3810.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/fightforce2"
+		"file": "v3810.VMS"
 	},
 	"tags": [],
 	"hash": "a30b54edbd339a4c8645b064e2888973d50454be",

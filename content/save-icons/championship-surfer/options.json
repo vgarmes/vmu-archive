@@ -31,8 +31,7 @@
 	"description": "Championship Surfer",
 	"source": {
 		"kind": "save",
-		"file": "v20426.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/champsurfer"
+		"file": "v20426.VMS"
 	},
 	"tags": [],
 	"hash": "e24cb58f998263a85002846f5b7b0b2255da3b49",

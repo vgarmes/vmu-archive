@@ -33,8 +33,7 @@
 	"description": "スーパーランナバウト",
 	"source": {
 		"kind": "save",
-		"file": "v41776.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/superrun"
+		"file": "v41776.VMS"
 	},
 	"tags": [],
 	"hash": "227ba8cec1e468a2d0dd81c84a0697fb406a798e",

@@ -31,8 +31,7 @@
 	"description": "VirtuaAthlete2K",
 	"source": {
 		"kind": "save",
-		"file": "v14559.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuaathlete"
+		"file": "v14559.VMS"
 	},
 	"tags": [],
 	"hash": "0d9968cb8d92b851ed0fc7fc8f7802455950bfc6",

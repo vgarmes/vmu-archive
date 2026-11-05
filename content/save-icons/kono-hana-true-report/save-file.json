@@ -31,8 +31,7 @@
 	"description": "KONOHANA:TrueReport",
 	"source": {
 		"kind": "save",
-		"file": "00000004.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/truerep"
+		"file": "00000004.VMS"
 	},
 	"tags": [],
 	"hash": "a5381c9aedff069b28a11e346d07d7d9c4fd9f8d",

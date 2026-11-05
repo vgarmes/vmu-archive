@@ -35,8 +35,7 @@
 	"description": "サクラ大戦３　９話    15:14",
 	"source": {
 		"kind": "save",
-		"file": "sw3_001.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakura3"
+		"file": "sw3_001.VMS"
 	},
 	"tags": [],
 	"hash": "1219fa511f7597dd14905220b65b161a6685908a",

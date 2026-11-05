@@ -31,8 +31,7 @@
 	"description": "ソウルキャリバー／ＶＭゲーム　２",
 	"source": {
 		"kind": "save",
-		"file": "SOUL2ADV.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+		"file": "SOUL2ADV.VMS"
 	},
 	"tags": [],
 	"hash": "20a414c0ddb138f5fad2ebdc43832f50b4d86856",

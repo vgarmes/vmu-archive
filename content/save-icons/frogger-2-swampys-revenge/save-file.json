@@ -31,8 +31,7 @@
 	"description": "FROGGER2 SWAMPYS REVENGE",
 	"source": {
 		"kind": "save",
-		"file": "v13965.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/frogger2"
+		"file": "v13965.VMS"
 	},
 	"tags": [],
 	"hash": "440113f726262da5d598972ee0f226ac2a32e9ef",

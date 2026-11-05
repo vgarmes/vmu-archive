@@ -33,8 +33,7 @@
 	"description": "どこでもポップンミュージックVol3",
 	"source": {
 		"kind": "save",
-		"file": "POPMUSI3.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+		"file": "POPMUSI3.VMS"
 	},
 	"tags": [],
 	"hash": "2c08eef7be05aa0c9ef585e554ccaca9428ceea5",

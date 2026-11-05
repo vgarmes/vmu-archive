@@ -33,8 +33,7 @@
 	"description": "STREET FIGHTER 3 3rd STRIKE",
 	"source": {
 		"kind": "save",
-		"file": "sf33rd.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfight3rd"
+		"file": "sf33rd.VMS"
 	},
 	"tags": [],
 	"hash": "e87df99bf3d20854b9dce53171cf1ac8dfb429fd",

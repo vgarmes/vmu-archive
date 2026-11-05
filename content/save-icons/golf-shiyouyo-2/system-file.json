@@ -31,8 +31,7 @@
 	"description": "ゴルフしようよ２",
 	"source": {
 		"kind": "save",
-		"file": "SHIGOLF2.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/golfshiyo"
+		"file": "SHIGOLF2.VMS"
 	},
 	"tags": [],
 	"hash": "302c21f5a0622b09f9f369f2bffcf4e457eb73d4",

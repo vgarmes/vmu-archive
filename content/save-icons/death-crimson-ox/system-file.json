@@ -31,8 +31,7 @@
 	"description": "デスクリムゾンＯＸシステムデータ",
 	"source": {
 		"kind": "save",
-		"file": "deathcox.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/deathcrim"
+		"file": "deathcox.VMS"
 	},
 	"tags": [],
 	"hash": "81f5204190192a293151fb3a9520eabaca461124",

@@ -35,8 +35,7 @@
 	"description": "SOULCALIBUR/MainData",
 	"source": {
 		"kind": "save",
-		"file": "00000031.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/soulcalibur"
+		"file": "00000031.VMS"
 	},
 	"tags": [],
 	"hash": "4545cafe9a5a5da660c9cae94577db413deb403b",

@@ -31,8 +31,7 @@
 	"description": "EXPENDABLE",
 	"source": {
 		"kind": "save",
-		"file": "00000011.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/expendable"
+		"file": "00000011.VMS"
 	},
 	"tags": [],
 	"hash": "b2d27a29c40e1b016f82a5f0c9905598fee6b8c1",

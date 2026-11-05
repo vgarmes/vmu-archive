@@ -31,8 +31,7 @@
 	"description": "ブロックバスター ケロちゃん",
 	"source": {
 		"kind": "save",
-		"file": "SCCBRK.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
+		"file": "SCCBRK.VMS"
 	},
 	"tags": [],
 	"hash": "cb496c3ee3ef75a85bf1ed66aaacccefa243ff0d",

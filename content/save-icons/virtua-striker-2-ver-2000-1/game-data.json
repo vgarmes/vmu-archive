@@ -33,8 +33,7 @@
 	"description": "VIRTUA STRIKER2  2000.1",
 	"source": {
 		"kind": "save",
-		"file": "VS2_SYS1.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuastriker"
+		"file": "VS2_SYS1.VMS"
 	},
 	"tags": [],
 	"hash": "04abbaf40b9384758fba9cda1654b7a7f50f6a0a",

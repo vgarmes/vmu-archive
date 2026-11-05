@@ -31,8 +31,7 @@
 	"description": "Hidden and Dangerous Player File",
 	"source": {
 		"kind": "save",
-		"file": "v20234.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/hiddendangerous"
+		"file": "v20234.VMS"
 	},
 	"tags": [],
 	"hash": "e3620ae9d1f677b2fbc3f2fb61ab2c3e7f5120da",

@@ -31,8 +31,7 @@
 	"description": "SFALPHA3_SYSTEM_FILE",
 	"source": {
 		"kind": "save",
-		"file": "v27946.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfighter3"
+		"file": "v27946.VMS"
 	},
 	"tags": [],
 	"hash": "7494bddad6ed9d74e952bbbcb196c97cdf5420fa",

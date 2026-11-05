@@ -31,8 +31,7 @@
 	"description": "DUCATI WORLD",
 	"source": {
 		"kind": "save",
-		"file": "v12887.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ducati"
+		"file": "v12887.VMS"
 	},
 	"tags": [],
 	"hash": "712c36f4e9b1ec17583f59794aa71e7af2c8c947",

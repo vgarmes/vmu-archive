@@ -33,8 +33,7 @@
 	"description": "SONIC ADVENTURE / KNUCKLES Voice",
 	"source": {
 		"kind": "save",
-		"file": "SA1_V13.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+		"file": "SA1_V13.VMS"
 	},
 	"tags": [],
 	"hash": "726d53ca9756a2cacbfd293789443737158620b2",

@@ -31,8 +31,7 @@
 	"description": "TOY STORY 2 - SAVE GAME DATA",
 	"source": {
 		"kind": "save",
-		"file": "v14062.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/toystory"
+		"file": "v14062.VMS"
 	},
 	"tags": [],
 	"hash": "40acdcfe448167595f80fdd71199acce3d485951",

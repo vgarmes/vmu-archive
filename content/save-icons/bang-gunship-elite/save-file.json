@@ -31,8 +31,7 @@
 	"description": "Bang! Gunship Elite",
 	"source": {
 		"kind": "save",
-		"file": "v2523.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bang"
+		"file": "v2523.VMS"
 	},
 	"tags": [],
 	"hash": "a52eccec0e531bdf61544d4586f8b1d505215f07",

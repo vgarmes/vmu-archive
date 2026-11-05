@@ -31,8 +31,7 @@
 	"description": "Ready 2 Rumble Boxing",
 	"source": {
 		"kind": "save",
-		"file": "00000013.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ready_rumble"
+		"file": "00000013.VMS"
 	},
 	"tags": [],
 	"hash": "4f63c84975c4c47dc29b5488a4a8ba80d70b70dc",

@@ -31,8 +31,7 @@
 	"description": "Evangelion Typing-E",
 	"source": {
 		"kind": "save",
-		"file": "type_e01.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evaproe"
+		"file": "type_e01.VMS"
 	},
 	"tags": [],
 	"hash": "060d28094abe87a10f6acc0b67c20807cca75382",

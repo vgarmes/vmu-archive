@@ -31,8 +31,7 @@
 	"description": "VIRTUA STRIKER2 ( CHI vs MEX )",
 	"source": {
 		"kind": "save",
-		"file": "v61800.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuastriker"
+		"file": "v61800.VMS"
 	},
 	"tags": [],
 	"hash": "66353ae7f76af0899fa1c6f94f59eccab97e4c67",

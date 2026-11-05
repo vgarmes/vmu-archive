@@ -31,8 +31,7 @@
 	"description": "Large Revolution DDT",
 	"source": {
 		"kind": "save",
-		"file": "W57.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/fireprowd"
+		"file": "W57.VMS"
 	},
 	"tags": [],
 	"hash": "2b00a3c4b9a0a1b2ccbdcc10b32349e111ef353b",

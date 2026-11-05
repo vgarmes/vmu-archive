@@ -33,8 +33,7 @@
 	"description": "PROPELLER ARENA SYSTEM",
 	"source": {
 		"kind": "save",
-		"file": "PARENA.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/prop_arena"
+		"file": "PARENA.VMS"
 	},
 	"tags": [],
 	"hash": "80f05f1c7b30a79bc7af5ec2c72bcd5072d6619e",

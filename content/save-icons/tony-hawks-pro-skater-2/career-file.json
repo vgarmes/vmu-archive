@@ -32,8 +32,7 @@
 	"description": "TONY HAWKS PRO SKATER 2",
 	"source": {
 		"kind": "save",
-		"file": "v12364.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tonyhawk2"
+		"file": "v12364.VMS"
 	},
 	"tags": [],
 	"hash": "120ea4c9a15e1e335c4c5159381de3daba0d18ce",

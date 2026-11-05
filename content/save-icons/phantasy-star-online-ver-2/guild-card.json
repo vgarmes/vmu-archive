@@ -31,8 +31,7 @@
 	"description": "PSO/GUILD_CARD",
 	"source": {
 		"kind": "save",
-		"file": "v14517.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/pso2"
+		"file": "v14517.VMS"
 	},
 	"tags": [],
 	"hash": "e3356ac87180f7b20852c5a21ca8c572d2e743b5",

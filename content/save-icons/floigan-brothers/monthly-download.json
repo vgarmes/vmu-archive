@@ -31,8 +31,7 @@
 	"description": "FLOIGAN BROS MONTHLY DOWNLOAD",
 	"source": {
 		"kind": "save",
-		"file": "FBROSJ.VMS",
-		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/floiganbros"
+		"file": "FBROSJ.VMS"
 	},
 	"tags": [],
 	"hash": "3307d704cd3838e4a0f0ffcfb2a21740ff6edd66",
