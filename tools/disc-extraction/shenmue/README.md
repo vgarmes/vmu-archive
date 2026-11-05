@@ -1,7 +1,8 @@
 # Shenmue
 
 Dump: `Shenmue - Isshou Yokosuka v1.007 (1999)(Sega)(JP)(Disc 1 of 4)[!][1MB3, 1MB4, 1MB5, 1MM1]`
-(`.gdi`). Every entry from it has region `ntsc-j`, the English screens included.
+(`.gdi`). The entries in Japanese get region `ntsc-j`; the English ones get
+none, as they're taken to be in every release.
 
 The art is stored the way Shenmue II stores it, so Shenmue II's
 [`vmu.py`](../shenmue2/vmu.py) decodes it unchanged; only `prep.py` is this

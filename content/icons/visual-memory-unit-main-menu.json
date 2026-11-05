@@ -1,7 +1,6 @@
 {
 	"title": "Main menu",
 	"gameId": "visual-memory-unit",
-	"region": "ntsc-u",
 	"width": 48,
 	"height": 32,
 	"bpp": 1,

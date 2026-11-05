@@ -1,7 +1,8 @@
 # Bakuretsu Muteki Bangaioh
 
 Dump: `Bakuretsu Muteki Bangaioh v1.003 (1999)(ESP)(JP)[!]` (`.gdi`). The archive
-files these under `Bangai-O`, with region `ntsc-j` on what came from this disc.
+files these under `Bangai-O`. Only the katakana title screen gets region
+`ntsc-j`; the rest is English text or the Treasure logo, so it has none.
 
 What the scripts found is written up in the game's notes,
 [`content/games/bangai-o.md`](../../../content/games/bangai-o.md).

@@ -61,7 +61,8 @@ slug as id. Renaming a game only changes its `name`.
    }
    ```
    Set `"region"` (`"ntsc-j"`, `"ntsc-u"` or `"pal"`) only on a screen that's
-   in that region's release alone, `"unused"` on
+   in that region's release alone (`"ntsc-j"` for Japanese text; `"ntsc-u"` or
+   `"pal"` only with evidence the other lacks it), not by the disc it came from, `"unused"` on
    one the game's code never shows. For frames that last different times, give
    `"frameDelaysMs"` instead: one delay per frame. Back-to-back copies of a
    frame are merged into one frame held for their combined delay.

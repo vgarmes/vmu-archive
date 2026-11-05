@@ -7,9 +7,9 @@ II, under the same 46 names, so Shenmue II's decoder reads it unchanged.
 
 Writes one PNG and sidecar per 48x32 screen whose pixels the archive doesn't
 have yet, under any game: twelve of them (the save, load and PK screens) are
-pixel for pixel Shenmue II's and are already filed there. Every screen gets
-region JP, the English ones included: they come from the Japanese release,
-which carries both languages.
+pixel for pixel Shenmue II's and are already filed there. Only the screens
+in Japanese get region ntsc-j: the Japanese release carries both languages,
+and the English screens are taken to be in every release.
 
 Also writes three sprites with "sprite": true, each a set of named entries the
 game looks up together, one under the next in the order below with their size
@@ -25,7 +25,9 @@ from PIL import Image
 
 GAME = 'Shenmue'
 REPO = Path(__file__).resolve().parents[3]
-BASE = dict(game=GAME, publisher='Sega', year=1999, region='ntsc-j')
+BASE = dict(game=GAME, publisher='Sega', year=1999)
+# Region only on the screens in Japanese; the English ones are in every release.
+JAPANESE_TEXT = {'SHENMUE', 'BT_START', 'BT_COUNT', 'BT_END', 'LOAD_JP', 'SAVE_JP', 'OK_JP', 'NG_JP', 'RSM_JP', 'RSM_OK', 'RSM_NG'}
 CARD = ['memory-card']
 BATTLE = ['status']
 # name: (title, tags)
@@ -81,7 +83,7 @@ def main(out, inbox):
         title, tags = TITLES[name]
         stem = f'shenmue-{name.lower()}'
         shutil.copy(out / 'lcd' / f'{name}.png', inbox / f'{stem}.png')
-        meta = dict(title=title, **BASE, tags=tags)
+        meta = dict(title=title, **BASE, **({'region': 'ntsc-j'} if name in JAPANESE_TEXT else {}), tags=tags)
         (inbox / f'{stem}.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1))
         written += 1
 

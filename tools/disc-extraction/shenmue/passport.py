@@ -32,7 +32,9 @@ from pathlib import Path
 
 from PIL import Image
 
-BASE = dict(game='Shenmue', publisher='Sega', year=1999, region='ntsc-j')
+BASE = dict(game='Shenmue', publisher='Sega', year=1999)
+# Region only on what's in Japanese: the title and the font, which has katakana.
+JAPANESE_TEXT = {'title', 'font'}
 SOURCE = '/PASSPORT/ATU/SYEN.BIN'
 # (offset, stem, title, tags)
 SCREENS = [
@@ -65,12 +67,14 @@ def main(src, inbox):
     for offset, stem, title, tags in SCREENS:
         bitmap(data, offset, 48, 32).save(inbox / f'passport-{stem}.png')
         (inbox / f'passport-{stem}.json').write_text(
-            json.dumps(dict(title=title, **BASE, tags=tags), ensure_ascii=False, indent=1))
+            json.dumps(dict(title=title, **BASE, **({'region': 'ntsc-j'} if stem in JAPANESE_TEXT else {}), tags=tags),
+                       ensure_ascii=False, indent=1))
     for stem, title, offset, rows in (('digits', 'Goodies viewer digits', DIGITS, digit_rows(data)),
                                       ('font', 'Goodies viewer font', FONT, font_rows(data))):
         bitmap(rows, 0, 8, len(rows)).save(inbox / f'passport-sprite-{stem}.png')
         (inbox / f'passport-sprite-{stem}.json').write_text(json.dumps(
-            dict(title=title, **BASE, tags=['font'], sprite=True, glyphs={'height': 8},
+            dict(title=title, **BASE, **({'region': 'ntsc-j'} if stem in JAPANESE_TEXT else {}), tags=['font'], sprite=True,
+                 glyphs={'height': 8},
                  source={'file': SOURCE, 'offset': offset}), ensure_ascii=False, indent=1))
     print(len(SCREENS), 'screens and the two fonts ->', inbox)
 

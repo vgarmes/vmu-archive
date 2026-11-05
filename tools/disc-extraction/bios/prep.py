@@ -11,9 +11,9 @@ import shutil
 import sys
 from pathlib import Path
 
-# The US BIOS. Its text is English; the Japanese BIOS wasn't checked, so the
-# VMU's pieces get a region.
-VMU = dict(game='Visual Memory Unit', publisher='Sega', year=1999, region='ntsc-u')
+# The US BIOS. Its text is English, so the VMU's pieces get no region: the
+# Japanese BIOS wasn't checked, and nothing marks them as the US's alone.
+VMU = dict(game='Visual Memory Unit', publisher='Sega', year=1999)
 VMU_FILE = 'american_v1.05.bin'
 # Matches the entry already in the archive ("Menu smile").
 DC = dict(game='Dreamcast', publisher='Sega', year=1998)

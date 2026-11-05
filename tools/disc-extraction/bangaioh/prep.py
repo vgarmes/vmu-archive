@@ -16,7 +16,9 @@ from PIL import Image
 GAME = 'Bangai-O'
 GAME_ID = 'bangai-o'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
-BASE = dict(game=GAME, publisher='Treasure', year=1999, region='ntsc-j')
+BASE = dict(game=GAME, publisher='Treasure', year=1999)
+# Only the katakana title screen is Japan's alone; the rest is English text.
+JAPANESE_TEXT = {1}
 TITLES = {
     0: ('Treasure logo', ['logo']),
     1: ('Title screen', ['logo']),
@@ -55,7 +57,7 @@ def main(out, inbox):
         for k, n in enumerate(a['screens']):
             sheet.paste(Image.open(out / 'lcd' / f'{n:02d}.png').convert('1'), (0, 32 * k))
         sheet.save(inbox / f'{stem}.png')
-        meta = dict(title=title, **BASE, tags=tags)
+        meta = dict(title=title, **BASE, **({'region': 'ntsc-j'} if a['script'] in JAPANESE_TEXT else {}), tags=tags)
         delays = a.get('delays_ms')
         if delays:
             meta.update({'frameDelayMs': delays[0]} if len(set(delays)) == 1 else {'frameDelaysMs': delays})

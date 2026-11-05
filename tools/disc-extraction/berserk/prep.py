@@ -23,7 +23,8 @@ from PIL import Image
 from archive import GAME, archive_entries, load
 
 TITLES = {3: ('NG', ['memory-card']), 5: ('All OK', []), 7: ('Do not touch', []), 10: ('Title screen', None)}
-BASE = dict(game=GAME, publisher='ASCII', year=1999, region='ntsc-u')
+# No region: nothing here is known to be missing from the PAL release.
+BASE = dict(game=GAME, publisher='ASCII', year=1999)
 
 
 def main(out, inbox):

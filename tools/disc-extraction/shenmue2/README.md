@@ -1,8 +1,8 @@
 # Shenmue II
 
 Dump: `Shenmue II v1.003 (2001)(Sega)(JP)(Disc 1 of 4)[!][3MM1]` (`.gdi`). The
-VMU art is on disc 1. Every entry from it has region `ntsc-j`, the English screens
-included.
+VMU art is on disc 1. The entries in Japanese get region `ntsc-j`; the English
+ones get none, as they're taken to be in every release.
 
 What the scripts found is written up in the game's notes,
 [`content/games/shenmue-ii.md`](../../../content/games/shenmue-ii.md).

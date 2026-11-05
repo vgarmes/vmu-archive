@@ -4,8 +4,9 @@ Scripts: `tools/disc-extraction/berserk/`.
 
 Dump: `Sword of the Berserk - Guts' Rage v1.000 (2000)(Eidos)(US)[!]` (`.gdi`).
 The archive files these under the English title, with the Japanese release's,
-Berserk: Millennium Falcon-hen – Wasurebana no Shō, beneath it, and region
-`ntsc-u` on what came from this disc.
+Berserk: Millennium Falcon-hen – Wasurebana no Shō, beneath it. Nothing from
+this disc gets a region: it's English, and nothing shows it's missing from
+the PAL release.
 
 ## What's on the disc
 
@@ -21,21 +22,21 @@ Flycast captures of Puck, Puck 2 and All OK exactly. Computed calls overlay the
 ammo counter's three digits (screens 11–20). Three other routines show screen 7
 ("Do not touch") once before saving.
 
-| Screens | Hold (ms) | Archive entry |
-| --- | --- | --- |
-| 3, 4 | 133, 133 | NG |
-| 5, 6 | 133, 133 | All OK (captured) |
-| 7, 8, 9 | 67, 67, 133 | Do not touch |
-| 22, 21, 23 | 67, 67, 133 | Puck |
-| 24, 25, 26 | 67, 67, 133 | Puck |
-| 27, 28 | 133, 133 | Puck |
-| 29, 30, 31 | 67, 67, 133 | Puck |
-| 32, 33, 34 | 67, 67, 133 | Puck |
-| 35, 36, 37 | 67, 67, 133 | Puck (captured) |
-| 38, 39, 40 | 67, 67, 133 | Puck |
-| 41, 42, 43 | 67, 67, 133 | Puck 2 (captured) |
-| 47, 48, 49 | 67, 67, 133 | Puck |
-| 10 | still | Title screen (US logo) |
+| Screens    | Hold (ms)   | Archive entry          |
+| ---------- | ----------- | ---------------------- |
+| 3, 4       | 133, 133    | NG                     |
+| 5, 6       | 133, 133    | All OK (captured)      |
+| 7, 8, 9    | 67, 67, 133 | Do not touch           |
+| 22, 21, 23 | 67, 67, 133 | Puck                   |
+| 24, 25, 26 | 67, 67, 133 | Puck                   |
+| 27, 28     | 133, 133    | Puck                   |
+| 29, 30, 31 | 67, 67, 133 | Puck                   |
+| 32, 33, 34 | 67, 67, 133 | Puck                   |
+| 35, 36, 37 | 67, 67, 133 | Puck (captured)        |
+| 38, 39, 40 | 67, 67, 133 | Puck                   |
+| 41, 42, 43 | 67, 67, 133 | Puck 2 (captured)      |
+| 47, 48, 49 | 67, 67, 133 | Puck                   |
+| 10         | still       | Title screen (US logo) |
 
 Screens 0, 1, 2, 44, 45 and 46 are never drawn by any code that calls the draw
 routine (`0x8C03C89C` has four callers), so they're marked `unused`. The Japanese

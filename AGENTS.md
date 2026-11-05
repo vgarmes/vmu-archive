@@ -36,7 +36,10 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   names, which the search finds it by: "Jet Grind Radio") and card cover (see
   `scripts/registry.ts`). A piece's `region` (`ntsc-j`, `ntsc-u` or `pal`,
   from `src/lib/regions.ts`) is set only when it's in that region's release
-  alone. Content refers to a
+  alone: `ntsc-j` when it's Japan's only, which mostly means it has Japanese
+  text; `ntsc-u` or `pal` only with evidence the other release lacks it.
+  Without one, a piece is taken to be in every release, whichever disc it
+  came from. Content refers to a
   game by that id (`"gameId"`), never by name, and doesn't repeat its
   publisher or year (`pnpm content:check` fails if it does); a sidecar's
   `"publisher"`/`"year"` are written to the registry. Folders and the page route

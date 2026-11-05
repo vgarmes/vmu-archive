@@ -4,8 +4,8 @@
 
 Writes one PNG and sidecar per 48x32 screen the archive doesn't have yet. The
 sprites (digits and QTE buttons) are left out: the game draws them onto other
-screens at run time. Every screen gets region JP, the English ones included:
-they come from the Japanese release, which carries both languages.
+screens at run time. Only the screens in Japanese get region ntsc-j: the Japanese
+release carries both languages, and the English ones are in every release.
 """
 import json
 import shutil
@@ -15,7 +15,9 @@ from pathlib import Path
 GAME = 'Shenmue II'
 GAME_ID = 'shenmue-ii'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
-BASE = dict(game=GAME, publisher='Sega', year=2001, region='ntsc-j')
+BASE = dict(game=GAME, publisher='Sega', year=2001)
+# Region only on the screens in Japanese; the English ones are in every release.
+JAPANESE_TEXT = {'LOAD_JP', 'SAVE_JP', 'OK_JP', 'NG_JP', 'RSM_JP', 'RSM_OK', 'RSM_NG'}
 CARD = ['memory-card']
 # name: (title, tags)
 TITLES = {
@@ -59,7 +61,7 @@ def main(out, inbox):
         title, tags = TITLES[m['name']]
         stem = f'shenmue2-{m["name"].lower()}'
         shutil.copy(out / 'lcd' / f'{m["name"]}.png', inbox / f'{stem}.png')
-        meta = dict(title=title, **BASE, tags=tags)
+        meta = dict(title=title, **BASE, **({'region': 'ntsc-j'} if m['name'] in JAPANESE_TEXT else {}), tags=tags)
         (inbox / f'{stem}.json').write_text(json.dumps(meta, ensure_ascii=False, indent=1))
         written += 1
     print(written, 'pieces to import ->', inbox)
