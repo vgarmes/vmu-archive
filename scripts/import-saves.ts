@@ -37,7 +37,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { slug } from '../src/lib/slug.ts'
-import { gameIdFor, loadRegistry } from './registry.ts'
+import { findGame, gameIdFor, loadRegistry, saveRegistry } from './registry.ts'
 import {
 	ICON_SIZE,
 	SAVE_ICONS_DIR,
@@ -185,7 +185,11 @@ function main() {
 		groups.set(hash, [...(groups.get(hash) ?? []), s])
 	}
 
-	const gameId = gameIdFor(loadRegistry(), sidecar.game, { dryRun })
+	// A game the registry doesn't know yet joins it only once one of its icons
+	// is written: a folder whose icons are all elsewhere already adds nothing.
+	const registry = loadRegistry()
+	const isNew = !findGame(registry, sidecar.game)
+	const gameId = gameIdFor(registry, sidecar.game, { dryRun: true })
 	const have = existingHashes()
 	const dir = path.join(SAVE_ICONS_DIR, gameId)
 	const taken = new Set(
@@ -243,6 +247,7 @@ function main() {
 		const problems = saveIconProblems(icon)
 		if (problems.length) throw new Error(`${id}: ${problems.join('; ')}`)
 		if (!dryRun) {
+			if (isNew && !added) saveRegistry(registry)
 			fs.mkdirSync(dir, { recursive: true })
 			fs.writeFileSync(
 				path.join(dir, `${id}.json`),
