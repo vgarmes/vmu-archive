@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "grandia-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#112222ff",
+		"#663311ff",
+		"#445555ff",
+		"#994411ff",
+		"#447788ff",
+		"#996622ff",
+		"#779955ff",
+		"#bb8833ff",
+		"#55aaddff",
+		"#dd8822ff",
+		"#eeaa55ff",
+		"#eebb88ff",
+		"#ffcc22ff",
+		"#ffddaaff",
+		"#ffee77ff",
+		"#ffffddff"
+	],
+	"frames": [
+		"888844dffffeeeeeffeefeeeff6488888884affffffffffffffffffffffd24888846efeeffffeeffffffffffffffb528845ceecffeeceffeeefffffffffe72224959cccecccaeecccc79eceffffba748555ccccccc9ecc95a55cacfdeeed2a2824ccccccc7cc751777a7ccfbeece225447cccccc975555379755ce99eace68222cccccca75570013115cea55a9cc98845cccccc555900000031ca51157cca48895ac99955a000060779a750137c9a48872c977777a362002b5abb1001cc594888475a7579bdb202bb7ddb0601a7822888425a73a7bdda7bdddddd202156840888885aa5c79bdddddddabd24a426882888882595ca7addddddda5ddba8288888844022d6cc7abdddbddddddda488888887622284cc7aadddb555bddd548888888ca646427e59abdddaaaddda558888888ca246205c5579bdddbddb62c58888888cc911113a7a9559dddd6484a68888888cca1331157aaa7535624888558888888c731335359aaaaa302888884288888883111333757bbaaa5312488844888888811333333955ddbb11592888888888888311333339957ddb11393288888888888333533333995bda11395348888888888335795331599352215973148888888882115999931159524199317348888888862021133333137511531597288888888662665020011111399113312888888886666db46666413115731114288888888"
+	],
+	"animationSpeed": 1,
+	"vmuName": "GRANDIA2",
+	"description": "GRANDIA2 LILIGUE INN",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v2673.VMS",
+			"v42051.VMS",
+			"v78709.VMS",
+			"v89313.VMS",
+			"v9832.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+	},
+	"tags": [],
+	"hash": "cb76d5e9e070fa34931371cad0bc31d56dc6cc53",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "System data",
+	"gameId": "tnn-motorsports-hardcore-heat",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#000000ff",
+		"#111111ff",
+		"#111111ff",
+		"#222233ff",
+		"#444444ff",
+		"#443366ff",
+		"#555555ff",
+		"#5555aaff",
+		"#666666ff",
+		"#6655bbff",
+		"#6666bbff",
+		"#777777ff",
+		"#888888ff",
+		"#999999ff",
+		"#ddddddff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffff8aaaaaaaaaa86644668aaaaaaaaaa8ffabbbbbbba643332222236bbbbbbbbaffabbbbbb6575433332222226bbbbbbaffabbbb85dc532222222222223abbbbaffabbb87ec422111111122222228bbbaffabb87e9321117ccc9511222222abbaffabb5e93111dfd5559ee71122223bbaffab6c93114fe43333337dd3122216baffaa494214f9225dddd535cd322221baffa655212f72114dddd2224dc222216affa35321de42111ddd912237d522222bff834211f4397117dd313ec49c222218ff633217d24dd9229715eed45d422216ff43321c729ddd57ee57cdd74e522214ff42321c52ddd97fedc3700000022214ff42221c5355432edd90000000000214ff42221973111349cc0000ffff000014ff62221592314e732000ffffffff0006ff822221d349fec5200fff0000fff008ffa322219c47ddd9200fff0000fff00bffa622222d937cd5200ffff00000000affab222213d944732000fffffff000baffab6222213dd754440000ffffff000affabb32222227ddee000000000fff00affabba2222222245700fff00000ff00affabbb82222222222000ff0000fff00affabbbba212222222200ffffffff000affabbbbbb6112222220000ffff0000baffabbbbbbbb421111110000000000bbaff8aaaaaaaaab86444468000000aaaa8fffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "JOE-KOOL",
+	"description": "HARDCORE HEAT_System data",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000064.VMS",
+			"v49295.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/hardcore"
+	},
+	"tags": [],
+	"hash": "c52cc4e15e07849db9ac499725549a3cdaaa879c",
+	"added": "2026-11-05"
+}

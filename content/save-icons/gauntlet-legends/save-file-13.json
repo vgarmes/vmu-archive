@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "gauntlet-legends",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ffffffff",
+		"#554444ff",
+		"#331111ff",
+		"#aa7755ff",
+		"#dd9955ff",
+		"#885533ff",
+		"#553311ff",
+		"#ddccbbff",
+		"#ccaa88ff",
+		"#774411ff",
+		"#ffcc99ff",
+		"#aa7722ff",
+		"#eeeeddff",
+		"#000000ff",
+		"#00000000"
+	],
+	"frames": [
+		"000aacccacacccc777a594654c70000000aacacaaaaccc4ca7cc4666ccc7000000acc7caaa6ca77acaca77774cc700000acaa7caaac7aaa73ca766677ccc70002ccaaacaaca7a7733a76446676cc70006cccaaaa7ca77a7733a44546676c7000caccaaa7aaa66646aa645466676c710066caaaaaa7a664554645566466aaa70066ca7aacc7a6644554455644467ac7106ac77a7cc3444a76464665b6743aca00aaa7377c73449b5264445be32677ca007aa3367a373ee39b56755ee264779a007aa336a73a333e346337ee3324776c003a77aaae3c223eeeeccee7346463cc007a3aacaeec424e333bbc55bbb9e77c00a37acca7e44c555569dc5dbb96e77c00a37aca773455bbb564ba4bb546e77c00777cca377cc5555c64dac55aa6e7aa0077cc673377c46554440bbc5463e7ac00aaca73333e7a6555b554774563e7ac007cca73333e37655ae643e26563ea7a00cca733333e3765437e3244356e77aa00ca733333ee377643734772a46e777a00aa7773337ae777729d8dd9346e767a00aa77733e7ce37773499992767e7a7700ca767737c6eeea733aa7a6367e3a7700aaca777c4333e37337489763e377a700accaaaa463333e37551dd44ee37a6300acaaaacc77333eee755a4633e376c430caaaa44aa73333ee337a33ee33a4543077a454c6735777a3ee3ee333e3655c43a5555c677366a777733e376337499a43"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Lost Cave",
+	"description": "GAUNTLET LEGENDS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v56685.VMS",
+			"v59393.VMS",
+			"v83249.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gauntletlegends"
+	},
+	"tags": [],
+	"hash": "17f0983ce68e4b7552d6d77af203f58debe45645",
+	"added": "2026-11-05"
+}

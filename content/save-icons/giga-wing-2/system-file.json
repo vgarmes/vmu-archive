@@ -1,0 +1,47 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "giga-wing-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#880000ff",
+		"#333300ff",
+		"#444400ff",
+		"#665500ff",
+		"#cc1122ff",
+		"#776600ff",
+		"#887700ff",
+		"#ff3344ff",
+		"#aa9900ff",
+		"#ccaa00ff",
+		"#ff88aaff",
+		"#eebb00ff",
+		"#ffdd00ff",
+		"#ffff33ff",
+		"#ffff88ff",
+		"#ffffff00"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff8ffffffffffffffffffffffffffff8ff88ffffffffffffffffffffffffff8bffbb8ffffffffffffffffffffffffccbffbdb8ffffffffffffffffffffffcdcbff5ddd8ffffffffffffffffffffcddd5ff56dee8ffffff688886ffffffceed52ff356eee8fff8bddccbb86fffceee522fff356eeeb8bdd222222686cdeee522ffffd358eebde333322222286eee522bffffbd358eee555ffffff11156e521d8ffff8be56de86ffffa0ffff126351eb2ffff28be9d86ffffaa00ffff1562eb52fffff26bb66ffffa7a000ffff262b52ffffffb68b66fff477a0000fff258228ffffff6b955fff4777a00000fff681b5ffffff59935ff4777aa000000ff68152fffffff6923f47aaaaa0000000f6912ffffffff6823f00000004444444f6b11ffffffff6822ff000000444447ff6b12ffffffff5822fff0000044447fff8c12fffffffff5823fff00004447fff9b12ffffffffff5633ffff000447ffffbc12fffffffffff5633ffff0047ffffcd22ffffffffffff35535ffff04ffffcdd22fffffffffffff236566ffffffbbdd33fffffffffffffff22888899bbbcd233fffffffffffffffff211199bbcd2223ffffffffffffffffffff1111111112ffffffffffffffffffffffff111111fffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Giga2SaveData",
+	"description": "ギガウイング２システムファイル",
+	"source": {
+		"kind": "save",
+		"files": [
+			"GIGAWIN2.VMS",
+			"v29890.VMS",
+			"v36524.VMS",
+			"v499.VMS",
+			"v58396.VMS",
+			"v73350.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gigawing2"
+	},
+	"tags": [],
+	"hash": "7010b01564133879275bcbb06f5b2b0e382fc4de",
+	"added": "2026-11-05"
+}

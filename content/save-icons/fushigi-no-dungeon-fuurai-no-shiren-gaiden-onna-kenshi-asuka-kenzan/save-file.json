@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "fushigi-no-dungeon-fuurai-no-shiren-gaiden-onna-kenshi-asuka-kenzan",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000033ff",
+		"#110000ff",
+		"#660000ff",
+		"#002266ff",
+		"#444433ff",
+		"#334477ff",
+		"#ee0022ff",
+		"#776666ff",
+		"#998888ff",
+		"#ee66aaff",
+		"#bbaaaaff",
+		"#ff88eeff",
+		"#ff99ffff",
+		"#ddccbbff",
+		"#ffeeddff",
+		"#ffffffff"
+	],
+	"frames": [
+		"33333333303333333333333358aa8533333333000033330033000335dffffe8503000003030000000000035efeddeffe33333000330330030330038fa999bcef5533000330000000003003de79bbcbceee85300000000000003333ed79bbccccfffd500003333578887755ed9bbccccc9cefd300357aeeffffeedada9bbcccccbbbefa358dffffffffffedda89bbcccfccbbefadffffffffffffeeda879bcefeccbbcffffffffffffffffedaa878ed70cbbbcffffffffffffffffa7447874000cbbbefffffffffffffffa48a84771000bbbcfffddffffffffffe41ae78774003eecdfe7887dffffffffe41af41877100dddef8dea14ffffffffe711411878400357ddaddf81dfffffffed41111aad843335ead84a71affffeeffed7118eea874335dae811418fff741dfeedadeea8744335eead1114efff747efeedaeeda8774335dfefd44dffffffffffed8deda8744334dfffffffffffffffffea7afda8744334dffffffffffffeddeda74efd87744334defffffedfffd7444442aeda77440301adeffffea77742222229d887444100017aeefffffd722666667877774410003018addeeeeeed7666697777744400033300788aaaaaaaa89987477744400003330114778888aa88777777774440011300000114777888888777777777500100000000111477888888aaddddaa73000000000000014aaddefffffffeeea7000"
+	],
+	"animationSpeed": 100,
+	"vmuName": "ｵﾝﾅｹﾝｼｱｽｶｹﾝｻﾞﾝ",
+	"description": "女剣士アスカ見参　風来日記",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000013.VMS",
+			"asuka001.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/fushigi"
+	},
+	"tags": [],
+	"hash": "163c885ea107b4426876c215a04ba3bcb4a6407b",
+	"added": "2026-11-05"
+}

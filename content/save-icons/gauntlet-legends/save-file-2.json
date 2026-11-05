@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "gauntlet-legends",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#993300ff",
+		"#442211ff",
+		"#884422ff",
+		"#773311ff",
+		"#eeaa66ff",
+		"#aa7733ff",
+		"#996622ff",
+		"#dd9944ff",
+		"#bb7700ff",
+		"#eecc77ff",
+		"#ddccaaff",
+		"#dd9900ff",
+		"#ffee99ff",
+		"#ffffddff",
+		"#000000ff"
+	],
+	"frames": [
+		"0000000000dc9ccc99cc96cccb000000000000000bcccccc993c49acccb0000000000000bccccacccc999cc37c9b00000000000e8c9ccc9c669785ac9cc600000000000bc9cccaca55885a8ccc88000000000005c9c97c93711111134cccb000000000e999c91991111111297ccc5000000000e9c9c99441111414411ccca000000000e9c9c97299223276844ccca00000000059c79c7248a335b6f27cacce0000000089c99c67622232ff5679dc1e0000000089c9c964b568d356538cc99e000e6bbec9ccc43a5bb853bd6559cc9e00bb2f279cccc375888aea958537cc960e23434249999c3648423275622cc963b6342343323f9c9f48862668424cac932f46343274747cc45edaa5b5833ccc923223636f33449c96d5b52bb8d84cccc42474436223247c9ae3338337da4ccca82232274223634c98a938a737ad3ccc8c9f364242f36338cca97adacc8dc3ccccc455a6ff223437c8a988aa99cdc1cccccc585d84623443ccc4885d74cac9cccca28885b6633843acc35c8d92ac999cc9c2888658766649ccc98a8a64cccccc9c98868686658c7c9cc97ccc93cc869cccca88686785888cccc38c8999cc77c98c883366336688899c99c989999c6cc88888637324766899c99cccc99cc9655a5a55d63f24367999999c89ccc9c76585a555ba32224236cc9cccc9c9cc1366665558db6ff24276866cccc9ccc74377766686"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Castle Courtyard",
+	"description": "GAUNTLET LEGENDS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v13085.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gauntletlegends"
+	},
+	"tags": [],
+	"hash": "da8ca7ef8f4c6edf082f83a72579e22a6fa16977",
+	"added": "2026-11-05"
+}

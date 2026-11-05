@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Federation file",
+	"gameId": "gundam-blood-of-zeon",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ccaa99ff",
+		"#997766ff",
+		"#111100ff",
+		"#bbaa88ff",
+		"#bb9988ff",
+		"#332211ff",
+		"#000000ff",
+		"#776655ff",
+		"#666644ff",
+		"#443322ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"bb6688555555555555555555551122bbbb6688555555555555555555551122bbbb8855555555555555555555555544bbbb8855555555555555555555555544bbbb8855555555885555885555555588bbbb8855555555885555885555555588bbbb8811444444992255995544114499bbbb8811444444992255995544114499bb6699229955115522885511229922aa776699229955115522885511229922aa7788669966bb33881166aa33bb6699669988669966bb33881166aa33bb669966999966449999aabb99aabbaa99995566999966449999aabb99aabbaa9999556699aa664422aa66aa669988aaaa225566aaaa664422aa66aa669988aaaa225566aabbbbaa1111229966225511111188aa77bbbbaa1111229966225511111188aa77bbbb6699449966aa559999554466bbbbbbbb6699449966aa559999554466bbbbbbbb776699aa77bbbbbbaa992277bbbbbbbb776699aa77bbbbbbaa992277bbbbbbbb33aaaabb33333333bbaa99aabbbbbbbb33aaaabb33333333bbaa99aabbbbbbbbbbaabb338866668833bb8866bbbbbbbbbbaabb338866668833bb8866bbbbbbbbbb33bbaa11999911aabbaa77bbbbbbbbbb33bbaa11999911aabbaa77bbbbbbbb77bb77bb2299aa4477bbbb99bbbbbbbb77bb77bb2299aa4477bbbb99bbbbbbbbbb66bb77bbbbbbbb7777aaaabbbbbbbbbb66bb77bbbbbbbb7777aaaabbbb"
+	],
+	"animationSpeed": 1,
+	"vmuName": "GI4N1001",
+	"description": "BLOOD OF ZEON 連邦ファイル",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000006.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gundambz"
+	},
+	"tags": [],
+	"hash": "43fc043349f9d9c1ec0123a8cc80c509802fb820",
+	"added": "2026-11-05"
+}

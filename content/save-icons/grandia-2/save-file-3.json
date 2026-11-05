@@ -1,0 +1,54 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "grandia-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#331111ff",
+		"#222244ff",
+		"#880011ff",
+		"#663311ff",
+		"#334466ff",
+		"#665555ff",
+		"#447799ff",
+		"#886644ff",
+		"#888888ff",
+		"#cc7722ff",
+		"#55bbeeff",
+		"#bb9988ff",
+		"#ddbb99ff",
+		"#eecc88ff",
+		"#ffddbbff",
+		"#ffffeeff"
+	],
+	"frames": [
+		"aaaaaaaaaaaaaaaaaaa63de4aaaaaaaaaaaaaaaaaaaaaaaaaaaa07b5aaaaaaaaaaaaaaaaaaaaaaaaaaaa39c5aaaaaaaaaaaaaaaaaaaaaaaaaaa63cf7aaaaaaaaaaaaaaaaaaaaaaa6454439b76aaaaaaaaaaaaaaaaaaa66a44bf53dfbaaaaaaaaaaaaaaaaaaaaa00dbbf739d86666aaaaaaaaaaaaaaa65523335399cb1006aaaaaaaaaaaaa673022222009dfd021aaaaaaaaaaaaa4410000000223bcd701aaaaaaaaaaaaa66bc7398684000770534aaaaaaaaaaaa68c879986b8137dd5736aaaaaaaaaaa584cc33999973bdddfb96aaaaaaaaaa454bd730997339cddbdc36aaaaaaaaa6448ceb779303999cdcdd34aaaaaaaaa6488dffd73b7577979ddb16aaaaaaaaa45bbffff3bcdcc77937db4aaaaaaaaaa578ffffecedccccbb879c4aaaaaaaaa414ffefffffeccccdbbfcf4aaaaaaaa444eecefffffecccb88ffffd6aaaaaaaa6d75befffffecc888fffffff4aaaaaa6b5148ffeeffeccdecfffffdf81aaaaa45115ffdbbdedceffbfffffc7e5aaaa41111dec877cecfeffcffffffb356a6378418d81304d8cdcefffeffffc701a477884841110b75cccdfffdee8ec006a6375b1111111507d888effbcf71c50aa60738444441101b7511dff55db14706a11035bbbbb5103811115fe114718004a41103355530000111111db111158001a1111000001000011114685111481373a1411111111333441468854144664334a"
+	],
+	"animationSpeed": 1,
+	"vmuName": "GRANDIA2",
+	"description": "GRANDIA2 カーボ宿屋",
+	"source": {
+		"kind": "save",
+		"files": [
+			"gran2jp3.VMS",
+			"v19441.VMS",
+			"v24832.VMS",
+			"v31034.VMS",
+			"v36410.VMS",
+			"v40190.VMS",
+			"v44199.VMS",
+			"v50986.VMS",
+			"v62938.VMS",
+			"v81729.VMS",
+			"v81860.VMS",
+			"v96599.VMS",
+			"v96684.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+	},
+	"tags": [],
+	"hash": "07c70159336bcdb16d8c3b8a43dfac52f642940d",
+	"added": "2026-11-05"
+}

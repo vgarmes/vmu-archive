@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "grandia-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#332222ff",
+		"#880011ff",
+		"#663322ff",
+		"#445566ff",
+		"#776655ff",
+		"#aa6611ff",
+		"#668899ff",
+		"#bb7733ff",
+		"#999999ff",
+		"#55bbeeff",
+		"#dd9944ff",
+		"#aabbccff",
+		"#eebb77ff",
+		"#ddddddff",
+		"#ffeeccff",
+		"#ffffffff"
+	],
+	"frames": [
+		"9999996344dfffffffffffb64406999999999325dfffffffffffffb9d62069999999303dffffffffffffff86ddb40999999604ffefffffffffffeb369bb643999993b9bdffeffffffffffb699936f439993bf66dfefffffffffff86db936ee39634feb38fffffffb7444b66ddb38df66b8ffdd88fffdb842adc20449dd38df608bfddef6dd842525dee7257a366dd88888dddff6645a2525eee77527526fd3dbd3bdfff825a52022eee77202a75de38bdb4bffb752024022dee722007557884ddb54fd2a5222324eeeee400022506f6de874f6072200004eeeed00000252bb6ff8a4d820023407beeeeeb072002486dffba7742224ca44ceeeeec448248428ffffd4527a20aeeeeeeecceeec0745abfffff4527a207ceeeeec7ceeed22278fffd8457524504ceeeeeeeeeeec02558b8d22242754205cceeec77deee702a52222beff87a20227cceecaceee720226dffbfe88307250227cceeeeed425228effffd63003005555757ceeec2277736bd8df334300003442ccaa777a523330333336323211113963444accca439960300330111111110966b6634c4386393000022112222110396bfdd83338f499011111114ca75200663efede636ff86611124242efc1112e66efffdb422dff83844efa257a21111bf8ebded85717dbf8e427c51111111118fd8e84881118b8ddd21111111111114ffb6beeb8634b88dbf4111111"
+	],
+	"animationSpeed": 1,
+	"vmuName": "GRANDIA2",
+	"description": "GRANDIA2 新生ヴァルマー混沌の間",
+	"source": {
+		"kind": "save",
+		"files": [
+			"gran2jp1.VMS",
+			"v1695.VMS",
+			"v34801.VMS",
+			"v62636.VMS",
+			"v67500.VMS",
+			"v84193.VMS",
+			"v92017.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+	},
+	"tags": [],
+	"hash": "b2142a06ad7e811e1a2597ed2354eb7b75d3c8d6",
+	"added": "2026-11-05"
+}

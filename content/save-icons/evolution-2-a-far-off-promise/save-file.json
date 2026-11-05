@@ -1,0 +1,55 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "evolution-2-a-far-off-promise",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#442211ff",
+		"#774444ff",
+		"#996622ff",
+		"#446688ff",
+		"#bb3333ff",
+		"#dd9922ff",
+		"#aa8877ff",
+		"#ccaa44ff",
+		"#bb55aaff",
+		"#5599ddff",
+		"#ffcc33ff",
+		"#ffdd44ff",
+		"#ddbbaaff",
+		"#ffee99ff",
+		"#ffccaaff",
+		"#ffddccff"
+	],
+	"frames": [
+		"35aaabbbbbbddddddbddddddddddddb72aaaabbbaabdddddbbbddddddddddddbaaaabbbaaabdddddbbbdddddddddddddaaaabdbaaabdddddbbbbdddaddddddddaaabbdbaaabbdddbbabbdd77ddddddddaaabbdaaaabbdddbb577bd21ddddddddaaaabbaaaabbbdb7a5572200bbddddddaaa5bba5aaabbbb2a25dd7107bbdddddaa55bba5aaababb050abb6c2ba5bddddaa22aba55aab2b7020ab2cf2b25bddddaa20aba55aaa0a7012a70002215bdddbaa205ba50aa5072067514400002bdddba5200aaa05a50226f6144441c00bbddba55112aa20a5066ffc64441cf60b7ddb5aa26005a0252fcfffc14416cc057dbb25a5001022012ffffff144441f22abbb205a01441cfffffffff644441f10bbbba2000041fffffffffffc6611cf61bbbb2520014466fcfffffffffffffff1bbbb50501c4444f6fffffffffffffff1bbab50201f1416c6fffffffffffffff2bb5aa2200f66cffffffffffffffffff2ba57a5250cffffffffffc6ffffffffe2ba515a252cffffffffc6cfffffffff62b5281a5526fffffffffffffffffffc02a21835a551eeffffffffffffffffc017518891a5521eeeeffffffffffffc01170188815a55016eeeeeeeffffff6883320888881552281116eeeeeeeee6111392318888825028888111666610e62553939318318822088888880000011305a3999931993112188888881333339932a6999993"
+	],
+	"animationSpeed": 0,
+	"vmuName": "EVOLUTION2",
+	"description": "EVOLUTION2 Train Car 1",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000012.VMS",
+			"evo29999.VMS",
+			"v16778.VMS",
+			"v24181.VMS",
+			"v26039.VMS",
+			"v38455.VMS",
+			"v40993.VMS",
+			"v43489.VMS",
+			"v46154.VMS",
+			"v47913.VMS",
+			"v52518.VMS",
+			"v68067.VMS",
+			"v90202.VMS",
+			"v97753.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evolution2"
+	},
+	"tags": [],
+	"hash": "386ece57d6cbf66b9742e409d688779dc11a6c4e",
+	"added": "2026-11-05"
+}

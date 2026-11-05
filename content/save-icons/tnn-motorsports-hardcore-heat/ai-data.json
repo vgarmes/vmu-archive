@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "AI data",
+	"gameId": "tnn-motorsports-hardcore-heat",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#111111ff",
+		"#111111ff",
+		"#222222ff",
+		"#444444ff",
+		"#555555ff",
+		"#667700ff",
+		"#666666ff",
+		"#777777ff",
+		"#889911ff",
+		"#888888ff",
+		"#999999ff",
+		"#cccc00ff",
+		"#ccdd11ff",
+		"#ccee11ff",
+		"#ddddddff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffcccccccccccc996699ccccccccccccffccccccccc932221111239cccccccccffccccccc9454322221111119cccccccffcccccc4a8421111111111112ccccccffccccc5b831100000001111111cccccffcccc5b72100058887400111111ccccffccc4b72000afa4447bb50011112cccffcc9872003fb32222225aa2011109ccffcc373103f7114aaaa4248a211110ccffc944101f51003aaaa1113a8111109cffc24210ab31000aaa701125a411111cffd23100f3275005aa202b837811110cff922105a13aa7117504bba34a311109ff622108517aaa45bb458aa53b411106ff61210841aaa75fba82000000511106ff6111084244321baa70000000021106ff61110752000237883200fff0021106ff91110471203b52122000fff0001109ffd21110a237fb8411500fffff00110dffc511107835aaa711700ff0ff00101dffc911111a7258a411000ff0ff00009dffcd111102a733521100ff000ff000edffcc9111102aa5433300ff000ff009edffccc21111115aabb000fffffff000eeffcccc1111111134500fffffffff00eeffccccc111111111100ff00000ff00eeffcccccc10111111000ff00000ff000effccccccc900111100fff00000fff00effccccccccd610000000000e0000000effccccccccddcd96600000cce00000edfffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Alfred L23 Type1",
+	"description": "HARDCORE HEAT_AI data",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v87901.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/hardcore"
+	},
+	"tags": [],
+	"hash": "cf8ecd1cc68561f575b31f95fa9732cb24be052e",
+	"added": "2026-11-05"
+}

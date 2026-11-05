@@ -232,6 +232,111 @@
 	"evolution": {
 		"name": "Evolution"
 	},
+	"evolution-2-a-far-off-promise": {
+		"name": "Evolution 2: A Far Off Promise"
+	},
+	"expendable": {
+		"name": "Expendable"
+	},
+	"f1-world-grand-prix": {
+		"name": "F1 World Grand Prix"
+	},
+	"f1-world-grand-prix-ii": {
+		"name": "F1 World Grand Prix II"
+	},
+	"f355-challenge": {
+		"name": "F355 Challenge"
+	},
+	"fighting-force-2": {
+		"name": "Fighting Force 2"
+	},
+	"fighting-vipers-2": {
+		"name": "Fighting Vipers 2"
+	},
+	"fire-pro-wrestling-d": {
+		"name": "Fire Pro Wrestling D"
+	},
+	"flag-to-flag": {
+		"name": "Flag To Flag"
+	},
+	"floigan-brothers": {
+		"name": "Floigan Brothers"
+	},
+	"frame-gride": {
+		"name": "Frame Gride"
+	},
+	"frogger-2-swampys-revenge": {
+		"name": "Frogger 2: Swampy's Revenge"
+	},
+	"fur-fighters": {
+		"name": "Fur Fighters"
+	},
+	"fushigi-no-dungeon-fuurai-no-shiren-gaiden-onna-kenshi-asuka-kenzan": {
+		"name": "Fushigi no Dungeon: Fuurai no Shiren Gaiden: Onna Kenshi Asuka Kenzan!"
+	},
+	"gameshark-cdx": {
+		"name": "GameShark CDX"
+	},
+	"garou-mark-of-the-wolves": {
+		"name": "Garou: Mark of the Wolves"
+	},
+	"gauntlet-legends": {
+		"name": "Gauntlet Legends"
+	},
+	"giant-gram-2000": {
+		"name": "Giant Gram 2000"
+	},
+	"giga-wing": {
+		"name": "Giga Wing"
+	},
+	"giga-wing-2": {
+		"name": "Giga Wing 2"
+	},
+	"godzilla-generations": {
+		"name": "Godzilla Generations"
+	},
+	"golf-shiyouyo-2": {
+		"name": "Golf Shiyouyo 2"
+	},
+	"grand-theft-auto-2": {
+		"name": "Grand Theft Auto 2"
+	},
+	"grandia-2": {
+		"name": "Grandia 2"
+	},
+	"guilty-gear-x": {
+		"name": "Guilty Gear X"
+	},
+	"gunbird-2": {
+		"name": "Gunbird 2"
+	},
+	"gundam-battle-online": {
+		"name": "Gundam Battle Online"
+	},
+	"gundam-blood-of-zeon": {
+		"name": "Gundam: Blood Of Zeon"
+	},
+	"gundam-side-story-0079": {
+		"name": "Gundam Side Story 0079"
+	},
+	"half-life": {
+		"name": "Half-Life"
+	},
+	"head-hunter": {
+		"name": "Head Hunter"
+	},
+	"heavy-metal-geomatrix": {
+		"name": "Heavy Metal: Geomatrix"
+	},
+	"hidden-and-dangerous": {
+		"name": "Hidden and Dangerous"
+	},
+	"hoyle-casino": {
+		"name": "Hoyle Casino"
+	},
+	"hundred-swords": {
+		"name": "Hundred Swords"
+	},
 	"ikaruga": {
 		"name": "Ikaruga"
 	},
@@ -242,6 +347,9 @@
 			"De La Jet Set Radio",
 			"Jet Set Radio DX"
 		]
+	},
+	"kidou-senshi-gundam-renpou-vs-zeon": {
+		"name": "Kidou Senshi Gundam: Renpou vs. Zeon"
 	},
 	"legacy-of-kain-soul-reaver": {
 		"name": "Legacy of Kain: Soul Reaver"
@@ -321,6 +429,18 @@
 		"aliases": [
 			"Street Fighter 3rd Strike"
 		]
+	},
+	"super-hero-retsuden": {
+		"name": "Super Hero Retsuden"
+	},
+	"the-grinch": {
+		"name": "The Grinch"
+	},
+	"the-house-of-the-dead-2": {
+		"name": "The House of the Dead 2"
+	},
+	"tnn-motorsports-hardcore-heat": {
+		"name": "TNN Motorsports Hardcore Heat"
 	},
 	"tony-hawks-pro-skater": {
 		"name": "Tony Hawk's Pro Skater"

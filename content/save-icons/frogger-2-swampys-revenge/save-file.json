@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "frogger-2-swampys-revenge",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#111100ff",
+		"#007700ff",
+		"#007777ff",
+		"#662200ff",
+		"#667700ff",
+		"#555555ff",
+		"#33dd00ff",
+		"#993300ff",
+		"#996611ff",
+		"#cc3300ff",
+		"#dd6611ff",
+		"#eebb22ff",
+		"#eeeeddff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"2bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb23bbbbaba8888aaaaaa77778abbb8bbab0bbaaaa066660aaaa0666608bbbabbab0aaaaa01bcc617aa816ccc608aaaaaab0377701ccccc60aa06ccccc61799977a07aa36bcccccc0ba0bcccccc17aaaaab3aaa36ccccccc1506bcccccc1abbbbab3aaa36ccc55cc61166cc58cc1aaaaaab37aa36cc500cc66666cc055c17aaaaab2377066c00016666666c000c17aaaa9b2233066cc51666666666cccb60aa977227a81666c666666666666cb6617abbbb3a0166666666666666666666661aaabb3706666666666666666666666669aaab7866666666666666666666666667aaab3366666666116666666616666667aa9b3761661116666666666666111113aa923a6611666611111111111110aa437aab3b01666111111111111110bbbbbb48bb3a30111111111111111114bbbbbbb3ab377001111111111111110bbb004bb48b033300111111111111110bbb004bb4087bbbb00011111111111104bb40bbb3bb3aaaaa7300000000000000bb04bb43ab39aaaa9973000000000037333bbb09ab3779aaaaaaaaaaaaaaaaaa33bbb0037a27799999999a99999997730bbbbaa4392237799999aaaaaabbbbb3abbbbbb43a37777797999999aaaaaa8abbbbbbb37a377799aaaaaaaaaaaaaaa733333337ab3aaaaaaaaaaa7977777999999aaaaabb20000000000000000000333333000032"
+	],
+	"animationSpeed": 1,
+	"vmuName": "FROGGER2 DATA",
+	"description": "FROGGER2 SWAMPYS REVENGE",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v13965.VMS",
+			"v54472.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/frogger2"
+	},
+	"tags": [],
+	"hash": "440113f726262da5d598972ee0f226ac2a32e9ef",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Premium disc file",
+	"gameId": "gundam-side-story-0079",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ff9933ff",
+		"#ff7722ff",
+		"#ccddddff",
+		"#bbbb33ff",
+		"#aaaaaaff",
+		"#aaaa99ff",
+		"#995522ff",
+		"#88ff99ff",
+		"#777766ff",
+		"#666666ff",
+		"#555544ff",
+		"#445555ff",
+		"#442200ff",
+		"#222222ff",
+		"#000000ff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffcacfffffffffffffffffffffffffffe0ffb6fffffffffffffffffffffffff30ffffe3affffffffc5658ffffffffe00fffffff53effffffceee3fffffff600fffffffff938fffffefffaeffffe003fffffffffffc639fffefff9effe8003fffffffffffffca5568ffffc0580006fffffffffffffffc9955e1228580308fffffffffffffffffeccaa122183308fffffffffffffffffccecc9122103000ffffffffffffffffe88cec71122303633fffffffffffffffcaff8afd12f8aeff0afffffffffffffeccffeeffddfdeece30fffffffffffffcccccecfffddfe6ee306fffffffffffeccccccccffdf80066c80afffffffffebe9cecccccfd0000058ff3effffffffcefecefffece05ceffe0eb08ffffffffcceec8ffffffffffffe08600ffffffffcfffc3effffffffffec3ef00ffffffffceeecc8effeeeeffec30a830ffffffffcfffcc3eeccff388cc00ff90ffffffffceeeccc8ecccc338c3008535ffffffffcfffccc3eccff338c305ffb9ffffffffcfffccc3eeccc338c305ffc9ffffffffceeeccc3eeccc389c305fee9ffffffffcfffccc3eeeffea9c305ffe9ffffffffcceecccefee71ecfec03eeeefffffffffeeccccffff71ffffe80cceffffffffffffeeefffffddffffffffffffffffffffffffffffffddfffffffffffffffffffffffffffffffffffffffffffffff",
+		"fffffffffffffffffffffffffffffffcacfffffffffffffffffffffffffffe0ffb6fffffffffffffffffffffffff30ffffe3affffffffc5658ffffffffe00fffffff53effffffceee3fffffff600fffffffff938fffffed7daeffffe003fffffffffffc639fffe7079effe8003fffffffffffffca5568fd7dc0580006fffffffffffffffc9955e1228580308fffffffffffffffffeccaa122183308fffffffffffffffffccecc9122103000ffffffffffffffffe88cec71122303633fffffffffffffffcaff8afd12f8aeff0afffffffffffffeccffeeffddfdeece30fffffffffffffcccccecfffddfe6ee306fffffffffffeccccccccffdf80066c80afffffffffebe9cecccccfd0000058ff3effffffffcefecefffece05ceffe0eb08ffffffffcceec8fd04dffd04dfe08600ffffffffcfffc3efddffffddfec3ef00ffffffffceeecc8effeeeeffec30a830ffffffffcfffcc3eeccff388cc00ff90ffffffffceeeccc8ecccc338c3008535ffffffffcfffccc3eccff338c305ffb9ffffffffcfffccc3eeccc338c305ffc9ffffffffceeeccc3eeccc389c305fee9ffffffffcfffccc3eeeffea9c305ffe9ffffffffcceecccefee71ecfec03eeeefffffffffeeccccffff71ffffe80cceffffffffffffeeefffffddffffffffffffffffffffffffffffffddfffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 20,
+	"vmuName": "ｶﾞﾝﾀﾞﾑSS PD 01",
+	"description": "Gundam外伝 Premium Disc",
+	"source": {
+		"kind": "save",
+		"files": [
+			"GUNDAM1.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gundam"
+	},
+	"tags": [],
+	"hash": "adeda7093cc7967238523b4ae3499bc67946d597",
+	"added": "2026-11-05"
+}

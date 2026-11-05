@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "grandia-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#440000ff",
+		"#990000ff",
+		"#223355ff",
+		"#663311ff",
+		"#557766ff",
+		"#996611ff",
+		"#6688aaff",
+		"#888855ff",
+		"#dd8822ff",
+		"#66aaddff",
+		"#aaaa55ff",
+		"#ddbb55ff",
+		"#ffdd11ff",
+		"#eecc88ff",
+		"#ffeeaaff",
+		"#ffff99ff"
+	],
+	"frames": [
+		"99999996efffffffd7747efb699999999999964affffffffa223427fb499999999994bffffa7bffd4203e22efe7999999964afffffa46aa62000332afff79999944afffffda6666642000024bdfda699966fffff7699777aa420022664dd454996bfffff4addfdffffb33ba422af767467ccfffdbeffe7fefeffdfeeaa4be6967ccccffbaeda3ae7bab7bdbfffaadb69cccccca75b550855b885588bdefd7549cccccc5835335805885338858bb78456cccccb58355033038553383355855444cccccb585500240588db534355550499ccccc7855242292adeed0090335546998ccc88585362224eeeee42223696999967bc8b88c8d4247eeeee6224b499999999678885c8edddeeeedeb44dcb49999996645885c8beeeeeed8aeeeacc59999923333326cb8deeeeeebbeeeb85499999553330248b8beee7aa7deee749999999755585303a58dee5105eed3b49999999aa75588505888eeebdfeb30b32699999aaaa7888885888deefd7333535349999aaaaabda888355587700333333529999aaaaaaefd881002200011033585299997aaaaaeed88111022011100358d4999977aaaadfb8501110001110005bd49999a7777abfa8511001111101108ba49999aaa7757d78311100111010108bd46999aaaaa77a58300110000001015adf7499aaaaadeeb5811100022001113aeefa49aabdeeeeed511101222200113eeeefd4"
+	],
+	"animationSpeed": 1,
+	"vmuName": "GRANDIA2",
+	"description": "GRANDIA2 CYRUM CASTLE, DOWNSTAIR",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v41894.VMS",
+			"v41977.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+	},
+	"tags": [],
+	"hash": "315b86ee8a8e76977659570d92f47c0ff4da7638",
+	"added": "2026-11-05"
+}

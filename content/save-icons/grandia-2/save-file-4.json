@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "grandia-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#553322ff",
+		"#555544ff",
+		"#884422ff",
+		"#666655ff",
+		"#aa5511ff",
+		"#777766ff",
+		"#aa6633ff",
+		"#887777ff",
+		"#bb7755ff",
+		"#999999ff",
+		"#dd8855ff",
+		"#ee9955ff",
+		"#bbbbaaff",
+		"#ddccbbff",
+		"#ddddddff",
+		"#eeeeeeff"
+	],
+	"frames": [
+		"775313ec5117777779eeeec59d7ceeee536aa87eec31575779eeeed3999dded73aaa44439ee9357777eeeeec97ecee798666336217cec77777efeeee59fcd97d820059cc955cfc7777deffeecee35d79220000357777de9577cefffeeec1de8a2003799c97777dc7779fffeeee37f98b215997777553377575cedcceed9ed12831311135775124563797a69cdeee10000015777551126b8663abb88aeee717912137777730266abbbabbbaba9eece91115577755026bb8aaabbbaab8deee7003dc7777730248bbbe6468adf9deeede5095577750002202ab82bbbbbaceeec7d31557755002200702228644467eeed915157777500044222266207026ceeed9307777771282662426bd8866b87eeeee517775137122662228bda88bb46ceeeef97771131100222028bed248a859ceeeed575131220024442288846668de9cc9ee777710442202466666abba133955935e7577344244202222222668865c99cc19107732242444688aaaaa368a9cee1c3501753116224400179326ba68cc9e915517777777531015ceee16a8cdec97e51355557777773379eeff953ceeec57dc115137775775577ceeffe9eeeeee531e351055777777777ceefffcdeee9cc3099501577777777777deeefc7eee719711c531377777777777deeefd59ee9137c15773175377777777deeeee77de7313c33377155077777777ceeeee97cd7531d371"
+	],
+	"animationSpeed": 1,
+	"vmuName": "GRANDIA2",
+	"description": "GRANDIA2 CECEILE REEF 1",
+	"source": {
+		"kind": "save",
+		"files": [
+			"gran2us1.VMS",
+			"v43506.VMS",
+			"v75138.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
+	},
+	"tags": [],
+	"hash": "7c2241a872a8477773e02f8d92380009c2993cb3",
+	"added": "2026-11-05"
+}

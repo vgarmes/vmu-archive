@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "frame-gride",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#001144ff",
+		"#999900ff",
+		"#aabbbbff",
+		"#666600ff",
+		"#aaeeffff",
+		"#2255bbff",
+		"#ffff00ff",
+		"#ddddddff",
+		"#eeeeeeff",
+		"#888888ff",
+		"#5588ffff",
+		"#cccc55ff",
+		"#445566ff",
+		"#113388ff",
+		"#88bbffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"ffffffffffffffffffff82ea5c13fffffffffffffffffffffff8eea5c13ffffffffffffffffffffff87ea5dc19fffffffffffffffffffffff7ea5d319fffffffffffffffffffff1f7ea50339fffffffffffffffffffff6b1eb0d033fffffffffffffffffffff661eb61031ffffffffffffffffffffff6166666133b998fffffffffffffffff11ee6666636666b6fffffffffffffff8b4ee161116a6666618fffffffffff874eaaa0116111d166112ffffffffffff4eaaa5506b3113dd116238ffffffff84eaaa55d5533133cdd66263ffffffff4eaa55555d3d11133cd12663ffffff84eaa55c31ddddbb1133d516663fffff4eaad5ccd31dd55b13133511161fff84eaa555d3dc1cdd0bb3333551616ffffea5555dd3cd13d5ddd30333d1221fff4a5555ddc1c11c5d5dd3331133111ff7e59111333cc3c5555ddd111053111ffea533dcd555555ddd00d0000d03331fe55555ddddd50000000d00d000d33137a5555d0000ccc00055ddddd00d33333e5550000c9299c0055dddd000033333fffffff9077299c005dddd0d00000333ffffff450979990055ddd0000092003ffffff75000799c005ddd000d002ff0fffffff55d000c9c005dd00ddd0d2ffffffffff5ddd007cd05dd00ddddd07ffffffffff5dffd0c00d55000dddd0d97ffffffffffff7d000d0000d0ddddd002ffffffffffff200dd00ddd50ddddd009fffff"
+	],
+	"animationSpeed": 10,
+	"vmuName": "ﾏｯﾌﾟ_09_WIN_0009",
+	"description": "ＦＲＡＭＥ ＧＲＩＤＥ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"FRAMEGR.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/framegride"
+	},
+	"tags": [],
+	"hash": "854fb9addc5ed045ca57865565145e946d9ddf22",
+	"added": "2026-11-05"
+}

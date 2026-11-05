@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "gauntlet-legends",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#eeeeeeff",
+		"#eeeeeeff",
+		"#ffffffff",
+		"#ccbbbbff",
+		"#110000ff",
+		"#552200ff",
+		"#bb9988ff",
+		"#bb8844ff",
+		"#776644ff",
+		"#996600ff",
+		"#cc9900ff",
+		"#ffcc00ff",
+		"#ddddddff",
+		"#eeeeffff",
+		"#000000ff"
+	],
+	"frames": [
+		"000000ccb31ddd13331debb000000000000000ccbedddd133321e8b000000000000000ccc03ddd10333304bb00000000000000cca70ddd133330d5b800000000000000cb550ddd23330d55cbb000000000000cca555d1d13334555cbb000000000000cca55559dd23d5565cbbb0000000000ccca566659d3d56665bbbb0000000000ccca566665d1966665bcbb000000000ccbca5568866666a665bcbbb00000000ccbca55555a66586555accbb00000000bcbca5666656a666665accbba0000000bccca559666a7a66965accbba000000acbcca568717a7a788856ccbbba00000abbcca5a878aa7aa88a56ccbbbb0000abbbcca56aa88a8aaa6656ccbbab0000abbbcca56aaa888aa66656ccbbaa000abbbabca556a66686566655ccbaaaa00abbaabca556666655666655cbbaaaa00abbaabca5566556a6556655cbbaaa000aaaaabc6555559555966655ccbaaa000a5aabbc655555a666a56555ccba60000555abbba555555555555555bbbb6a000555abbba5655668aa655555bbbb6aaa0555abbaa55656aa66655555bbb6aaaa966555baba55a55666565555bbb6aaaab65565abcb55ab9555696655bb6aaabba6556a56aa6aaaa999996656a6aaaaabc666aaa566aaaa659449a6566aaaaaabc5a5cbcbaaaaaab855966666aaaaabbac5aa6cabbbbcba66aa6666aabbbabbbcbb66bcccbbb665bbaaaaaaacbbbcabcbc"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Fortified Towers",
+	"description": "GAUNTLET LEGENDS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v24088.VMS",
+			"v61508.VMS",
+			"v78855.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gauntletlegends"
+	},
+	"tags": [],
+	"hash": "390b9373e5b6e22f4eb9a5e09f2de3d3e7197eb2",
+	"added": "2026-11-05"
+}

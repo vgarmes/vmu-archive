@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Moigle file",
+	"gameId": "floigan-brothers",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#0000ffff",
+		"#000077ff",
+		"#3333ffff",
+		"#ffff00ff",
+		"#dddd00ff",
+		"#ffff88ff",
+		"#111111ff",
+		"#ee9977ff",
+		"#ffaa88ff",
+		"#ffbb99ff",
+		"#ffbbaaff",
+		"#ffccaaff",
+		"#ffddccff",
+		"#332222ff",
+		"#ffffffff",
+		"#000000ff"
+	],
+	"frames": [
+		"eeeeeeeeeeeeeeeeefffffeeeeeeeeeeeeeeeeeeeeeeeffff22222ffeeeeeeeeeeeeeeeeeeeff22220011111ffeeeeeeeeeeeeeefff220001111111111ffeeeeeeeeefff2220fffffffff1111111feeeeeeff222000f222020011f1111111feeeef2200000f22220200111f111fffeeeef22000000f22220200111f1ffeefeeeeefff00000ffffffffffffffeeeefeeeeeeeeff000f99999999977feeeeefeeeeeeeeeeffffbbfffb66677feeeeefeeeeeeeeeeeeefcfeee6eeef9feeeef3f4eeeeeeeeeeefcfefefefef9feeeefff4eeeeeeeeefffcfefefefef9fffeef4f4eeeeeeeefb9fcfeeefeeef9f89fef4f4eeeeeeeefb9fcfeeffeeef9f89fef4f4eeeeeeeeefffcbffbbfff99fffeeeeeeeeeeeeeeeefccbbfb9f99a98feeeeeeeeeeeeffffffcbbbfb9f9baa8ffffffeeeeeff5fdddfcbccbbbbbbbaa7fddf4ffeef555fddfccbcbbbbbbbbba7fddf444ff5533fddfcbccbbbbbbbbba7fddf544455334fddfcbcbbbbbbbbbbb97fdf555453334fdfccb6bbbbbbbbb6b97fdf335453344fdfcbbbfffffffffbaa7fddf35453344fdfcbbbbbbbbbbbbba97fddf3545334fddfccbbbbccccbbbaa77fddf3545334fdddf9bbbb99999baa97fdddf3545344fdddf9bbbbbbbbbaa997fdddf3545344fdddf79cbbbbbaa99777fdddf3545344fddddffccbbba99777ffddddf3545344fddddddff9999887ffddddddf354"
+	],
+	"animationSpeed": 59,
+	"vmuName": "MY MOIGLE",
+	"description": "FLOIGAN BROS MOIGLE",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v15577.VMS",
+			"v46904.VMS",
+			"v97809.VMS",
+			"v9875.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/floiganbros"
+	},
+	"tags": [],
+	"hash": "1df20fed828c19ccd723ebb1f52c03d42dea0255",
+	"added": "2026-11-05"
+}

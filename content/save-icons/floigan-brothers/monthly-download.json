@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Monthly download",
+	"gameId": "floigan-brothers",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000077ff",
+		"#994400ff",
+		"#221111ff",
+		"#000000ff",
+		"#ee9977ff",
+		"#ffbb99ff",
+		"#ffbbaaff",
+		"#000000ff",
+		"#ffffffff",
+		"#eeeeeeff",
+		"#ddddddff",
+		"#ccccccff",
+		"#bbbbbbff",
+		"#aaaaaaff",
+		"#888888ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ffffffffffffffffffffffffffff8888999999999999999999999999999f8888900990099009909990900090909f8888909009090990900990990990909f8888909009090990909090990990009f8888909999090990909900990990909f8888909999099009909990990990909f8888999999999999999999999999999f8888ffffffffffffffffffffffffffff8888999999211111111299999999999f8888f99992111112221299999999999f8888f99992111224442299999999aaaaf888f9999212255555662aaaaaaaaaaaf88ff999992555566555529baabbbbbbfffbcf99aa2555666522252b22bbbafffbbbcfaaaaa2562222888242442bffbbbbbbcfbbbbb252888288ff424fffbbbbbbbb9fbbbbb25288ff6882422bbbbbbbbbdd9efbbbbb24288822222bbbbbbbbbdddd9efbbbb22422224453bbbbbbbbdddddf9cefba255254444553bbbbbbdddddff899cfaa25525555553bbbddddddfff88899cef992222566557bbbddddffdf888899ccef999992665fbbdddfffdddf8888999cceff99992ffdddfffdddcccf88889999cceeff9dfdddffdddccccccf888899999cccceffffffddccccccc99f88889999999ccccccccccccccc99999f8888999999999ccccccccc999999999f8888999999999999999999999999999f8888ffffffffffffffffffffffffffff888888888888888888888888888888888888"
+	],
+	"animationSpeed": 59,
+	"vmuName": "FLOIGAN DOWNLOAD",
+	"description": "FLOIGAN BROS MONTHLY DOWNLOAD",
+	"source": {
+		"kind": "save",
+		"files": [
+			"FBROSJ.VMS",
+			"v13591.VMS",
+			"v27154.VMS",
+			"v82691.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/floiganbros"
+	},
+	"tags": [],
+	"hash": "3307d704cd3838e4a0f0ffcfb2a21740ff6edd66",
+	"added": "2026-11-05"
+}

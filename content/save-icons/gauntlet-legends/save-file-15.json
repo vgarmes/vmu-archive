@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "gauntlet-legends",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#888888ff",
+		"#ffffffff",
+		"#773333ff",
+		"#aa6655ff",
+		"#ddaa99ff",
+		"#ddccbbff",
+		"#ffeebbff",
+		"#ddddddff",
+		"#aaaaaaff",
+		"#ffffeeff",
+		"#001199ff",
+		"#666666ff",
+		"#444444ff",
+		"#222222ff",
+		"#000000ff"
+	],
+	"frames": [
+		"000000000000002eefbbbbe001bbbbbb00000000000002eeefbbbbe6cbbbbbbb0000000000000eeeefbbbbbbbbbbbbbb0000000000002e1eefbbbbbbbbbbbbbb0000000000008eefefbbbbbbbbbbbbbb000000000008eeeedffbbbbbbbbbfebb00000000000edeeeeefebbbbbbbffebb00000000009edee08fffebbbbefefebb00000000009eedec01fffeffeffffebb0000000000dffdfffff6dfeffffffebb0000000000fffedeeeecdfeeeddc1ebb0000000000fffffeeeecffd28fffddbb0000000000feffeeeeddfff908ffdebb0000000000fffe4efedffffffdeecdbb0000000000fff3333eeffffdeffd1db00000000000fdf3343effefffececcbb00000000000fdf3344ffeff4ffceddb000000000000fee3ee33e457354fdedb000000000000fe33dc3a6433444feee9000000000000e3334349a983443efec0000000000000e33e44364a8345dded90000000000000e333377363f453fdf000000000089199e333434633554ebfc0000000011cc69ee33344354454ebfe99000000dcccc91ee3335644755fbdec9992000dcccdccdee335668444fbb99ceed980dccdddeeefe446688aebbb111cccdc60dddeeeeddfe44568a3bbbc1111111660ddddeeeddff3456a5fbbfcccccccd692dddeeeeeeeffe444fffedc11cc111190ddefeedeeeeffefedc111cccc111c190cfddceeeeeeecc1cc11cd9cc19dec980"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Mausoleum",
+	"description": "GAUNTLET LEGENDS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v81592.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gauntletlegends"
+	},
+	"tags": [],
+	"hash": "264f7aeafd770e2c8a76890298350090bfa195c4",
+	"added": "2026-11-05"
+}

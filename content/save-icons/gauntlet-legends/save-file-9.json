@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "gauntlet-legends",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#665555ff",
+		"#443333ff",
+		"#bb7755ff",
+		"#eeaa77ff",
+		"#221100ff",
+		"#995500ff",
+		"#ffcc00ff",
+		"#ffee99ff",
+		"#bbbbbbff",
+		"#eeeeffff",
+		"#ccccddff",
+		"#000044ff",
+		"#aa99aaff",
+		"#887788ff",
+		"#000000ff"
+	],
+	"frames": [
+		"000000000006678880877000000000000000000000566778808777000000000000000000005267788887777000000000000000000f5566777777777000000000000000000f5566677777777400000000000000000f55566666666677900000000000000015fff55566566776300000000000000b5f222555526663352000000000000005f123352552212e452e000000000000f5222ffff635f56f3222fd00000000bff525552d31446b963f23ffff0000dfff5f2f5334323384443216f555e000fff55f555444624684446ee3fff51000255f5ff2f634548644435112fff550005ff55ff555555ff11ed12f22ff5f5f0ff22fffff52521ee11eed1ff5fff2ffef525fffff525522251eed1f52ff55fc115fffffff2555533323eeeff55f5ffcf55555ffff255225519dddeff55ffffcffef5fffff55555555f1ee95555fffff11bffffff5522f5555f52ea2555fffff9bdbef22ff52155555255edbe55fffff5f15feff5552255f55522dd9e5ffffcfadf90eefff552f52555551d9e55fffcc2b1f11f55f5525f5f55551dd15ffffccaa0051a12f2555f555525e9e2fffffccc11191f12f555f5f55552ed15ccfffccd200002f25525f5ff5f51e125cccfccc2f122f2ff5525552f5552e25cccccfccff2000af1ef555ff55521d2cccc11ccfccfff555f15ff55f55521e1fcccc67fccfccffe0df2ff5f555f21211fcccc566"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Dragon's Lair",
+	"description": "GAUNTLET LEGENDS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v25387.VMS",
+			"v50581.VMS",
+			"v58132.VMS",
+			"v73140.VMS",
+			"v9100.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gauntletlegends"
+	},
+	"tags": [],
+	"hash": "c5e5e177266c6460b385eba5d1b425c312c70699",
+	"added": "2026-11-05"
+}

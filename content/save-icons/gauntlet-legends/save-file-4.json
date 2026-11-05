@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "gauntlet-legends",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#eeddddff",
+		"#110000ff",
+		"#221111ff",
+		"#774433ff",
+		"#995544ff",
+		"#ccbbaaff",
+		"#aa8888ff",
+		"#443322ff",
+		"#cc7755ff",
+		"#442211ff",
+		"#663311ff",
+		"#eeaa88ff",
+		"#aa6611ff",
+		"#ffcc11ff",
+		"#000000ff"
+	],
+	"frames": [
+		"00000aabaabbbba2f2abbaaaaa00000000002aaabb222aba238baaaaaaa00000000022aaa2322f2a3fab22aaaaaa0000000832aaaff222f33fa24422a8aaa00000032faaa22444ff234455442bbaa000003332338345555b2355544432baaa00003a32ff2dbbb444b244ecdd42b8aa0002a33a2b2deeeeeeeeeed44aaabaaaa00aa3233fbdddddeeeeedba99442abaa0a2323f3333b4a33a8dda9c99583baaa0232333338889c1944abcc8a8a828a8a0323323f3343fff5ccab9b2aa452bfaaaf333fa2334b3a2f49aba3234553bfabaf223fa3335443ffffc52f8455582afaaf32ffb3a24d4488841c5999ccc43a8aa223f3b24349dd99d4c1d9cccc943faab232f3b24a59ccc199d0d9ccc958f2afa23f3b3ff3b9d4c999d1d9c95558f2aba232bafff3b44d999c90cc9c99b3ffabf3fb3fff32ab999cdd999b3c99bfffaab22b2fff3fab599c34443fa595b2f2aab2a22fff33fab595a2f34a2495b22faaaa3fffff2affb85a33a3fa525b3322faa22ffffff33f3bb25c06117f5bfff3faaf2fffffffbffab285cc955fb32ffaafa23232fff3af32a23bbaabb2a3333aafa323332f3af32232aaaaaa33338b48aaf233a333a2a833333a3aaa33338444aaf2aaa3383f488a2322a333333384554aa33aaa43b54448832333a32aa385954aa3aa59a454454488f323333a8a895954a4ac5a55445555442233333b8a495954a"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Cliffs",
+	"description": "GAUNTLET LEGENDS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v18362.VMS",
+			"v82685.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gauntletlegends"
+	},
+	"tags": [],
+	"hash": "28c21dbef4c1a3acf61f22a0e4831a65c6c3046d",
+	"added": "2026-11-05"
+}

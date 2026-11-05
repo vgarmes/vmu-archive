@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Championship file",
+	"gameId": "f1-world-grand-prix-ii",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#444444ff",
+		"#000000ff",
+		"#cc0000ff",
+		"#cc0000ff",
+		"#aa0000ff",
+		"#990000ff",
+		"#880000ff",
+		"#770000ff",
+		"#000000ff",
+		"#ffffffff",
+		"#ddddddff",
+		"#999999ff",
+		"#666666ff",
+		"#222222ff",
+		"#111111ff",
+		"#000000ff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffdddd1ffdeffddeddeddff0ceffddd1ffb999df1abffb90aa09bf099b1fa99b1fb999deb9bffb9c9ac9bfb9990fa999dfb9bc1c99bffc9c9ac9cfaab9cfa9b9dfb9dff0a9bffc9b9ab9cfaab9cfaac9dfb901ff09bffc9b99b9c1aacb0faac9dfb99a1f09bff09b99b901aade1fa9a9dfb9991f09bff09a99a901aaa9cfa999dfb9bc1f09bff099aaa9d1aaa9cfa9acffb90fff09bffd99aa99d1aac9cfa9efffb90fff09bffd99bb99e1aac9cfa9efffb90fff09bffea9bb9ae1aab9cfa9efffb90fff09bff1a9bb9a1fb999cfa9efffb90fff09bff1a9cc9a1f09aacfaaefffffffff1defffed1edefff0de1feefffffffffffffffffffffffffffffffffffffffffffffff222522258fffffffffffffffffffffff423742368ffffffffffffffffffffffff24ff248fffffffffffffffffffffffff24ff248fffffffffffffffffffffffff24ff248fffffffffffffffffffffffff24ff248fffffffffffffffffffffffff24ff2488ffffffffffffffffffffffff24ff248fffffffffffffffffffffffff24ff248fffffffffffffffffffffffff24ff248fffffffffffffffffffffffff24ff248ffffffffffffffffffffffff423742368fffffffffffffffffffffff2225222588ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Championship",
+	"description": "F1 World Grand Prix II",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v75648.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/f1worldprix"
+	},
+	"tags": [],
+	"hash": "dc8bca38a3f66b642679624ec5427b817ed061cd",
+	"added": "2026-11-05"
+}
