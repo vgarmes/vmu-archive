@@ -1,0 +1,54 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "nba-showtime-nba-on-nbc",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#3311bbff",
+		"#aaaaddff",
+		"#4444ffff",
+		"#559999ff",
+		"#11bb22ff",
+		"#ffaa22ff",
+		"#ffcc99ff",
+		"#bb6611ff",
+		"#884411ff",
+		"#dd7722ff",
+		"#aa7766ff",
+		"#cc1111ff",
+		"#ffffffff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"00000000000000002222227d77020000000000000080a82a3333d37dcccc000000000000a066a6323333d3ddcccc000000000080666686323333d37dcccc0000000000886666983b3333d2cdcccc0000000060886666a93233d2ddc7cccc000000006a8a66a66932d3ddddddcacc0000008066aa77a6783bd3ddddddcdcc0b000060668767866a32ddddddddadcc9b00006a77b776866a2bdddddd77adcc8b00006677777b966822ddddddcb7dcc8b09806676776ba6a8dbddddddcc7dcc8b0860667777b6669934d2ddddcad7cc8b0860a87677866a983bddddddc7daca8b08a0a8a966a6a98a3bddddddc7dbc78b086066778b6689863bddddddbddddd8b08606666b66898aa1bd2dddd7ddddd8b0a6066669a899aa81bd3dddddddd7d8b08a066a689898a891431dddd7d7bc78b0860a6889a7977997777d2dd7dcccc8b0a80869877c7cc77117121ddddccccab08009878aacccc37111137ddddc7ccab000088a7aacccc2c111177d3ddcdccaa000089aaaacacc3711113317ddcdccbb000080a7aacacc371131337321bdcc0b000000a7aaaacc2711333373117dcc00000070a7a6aaca27113333742d72cc000000706666a6ca77313354552772cc00000070666666aa77324355552723cc0000007066666676774755555527049c000000006766666627545555551703bb000000000000000000000000000000000000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "KRAPPY0911",
+	"description": "NBA ShowTime Saved Player",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000619.VMS",
+			"v12439.VMS",
+			"v14198.VMS",
+			"v14808.VMS",
+			"v46157.VMS",
+			"v53531.VMS",
+			"v54565.VMS",
+			"v62119.VMS",
+			"v62651.VMS",
+			"v6285.VMS",
+			"v74260.VMS",
+			"v96026.VMS",
+			"v96339.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nbashow"
+	},
+	"tags": [],
+	"hash": "9d5b4db6060507258c6279f38bb8821c17907cb2",
+	"added": "2026-11-05"
+}

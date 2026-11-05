@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Download file",
+	"gameId": "never-7-the-end-of-infinity",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#5588ffff",
+		"#aaaaaaff",
+		"#888888ff",
+		"#777766ff",
+		"#665555ff",
+		"#554433ff",
+		"#222222ff",
+		"#aa1133ff",
+		"#881133ff",
+		"#ddddddff",
+		"#bbbbbbff",
+		"#ffffffff",
+		"#aaaaffff",
+		"#ff8899ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"000000000000000000000000000000000cccccccccccccccccccccccccccccc00c7778dbbbbbbbbbbbbbbbbbbbbbbbc00c7db78dbbbbbbbbbbbbbbbbbbbbbbc00c77db78dbbbbbbbbbbbbbbbbbbbbbc00cd77db78dbbbbbbbbbbbbbbbbbbbbc00cbd78db8888887dbbbbbbbbbbbbbbc00cbbd78888887788dbbbbbbbbbbbbbc00cbbbbd77777dd778dbbbbbbbbbbbbc00cbbbbbbbbbbbbbd78bbbbbbbbbbbbc00cbbbbbbbbbbbb9238551bbbbbbbbbc00cbbbbbbbbbb911a2345551bbbbbbbc00cbbbbbbbbb91aaa22345551bbbbbbc00cbbbbbbbb9199a1122345551bbbbbc00cbbbbbbb9199a9a1122345551bbbbc00cbbbbbbb19999a11112345555bbbbc00cbbbbbb91999a1111123455551bbbc00cbbbbbb19a9a9a111123455555bbbc00cbbbbb91a9a9a11112234555551bbc00cbbbb9a9999aa111111112233441bc00cbbbb11111234354545555555555bc00cbbbb9a333344445555555555551bc00cbbbbb9199a1111233445555551bbc00cbbbbbb19a9a11112334445555bbbc00cbbbbbb199a111232333445555bbbc00cbbbbbb9199a12663663445551bbbc00cbbbbbbb19a9a366666345555bbbbc00cbbbbbbb919a1236663445551bbbbc00cbbbbbbbb919a12363445551bbbbbc00cbbbbbbbbbba1113b44551bbbbbbbc00cccccccccccccccccccccccccccccc000000000000000000000000000000000"
+	],
+	"animationSpeed": 0,
+	"vmuName": "Never7  Download",
+	"description": "Never7 ＤＬデータ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"never7.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/never7"
+	},
+	"tags": [],
+	"hash": "cb154ccfd975587d3a1a402dc5235fd637445de2",
+	"added": "2026-11-05"
+}

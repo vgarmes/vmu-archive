@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "nba-hoopz",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#110000ff",
+		"#331100ff",
+		"#551100ff",
+		"#661100ff",
+		"#771100ff",
+		"#882200ff",
+		"#992200ff",
+		"#aa2200ff",
+		"#aa2200ff",
+		"#cc2200ff",
+		"#cc4411ff",
+		"#dd3300ff",
+		"#ff3300ff",
+		"#ff5511ff",
+		"#ff6611ff"
+	],
+	"frames": [
+		"00000000000129cdddd74100000000000000000003883cdddeeeb69300000000000000027acd77deeee96eee7100000000000049ccddd5deeee3ceeeec2000000000149acddee75eefe3deeeddc30000000038acddeeed4dffe3deeddcca2000000145666ceeff98fff49ddc9777710000147acc63cfffe6efe51754444342000038acdddc2bfff6645827ddddca86100169acdeeea5eb752bef86ddddca9750037accdeeed238bf7fffe6addcca9761147accded7533fffbbfffd4cdcca9752158acdd936dd3ffff5effea3acaa8753268aca57deee4ffff59eeeea37aa8653358a63adeeee4efffa5eeedda359865335735cddeeed3effee5deedcca4366433525cccddeec3efeee7adddcca9425433238acccddda3eeeeea6ddccca97324312589acccdd65eeeedc3cdccaa976223035789acccc4cdddddd37ccaa9876422034678aaac94cdddddd74ccaa987553102456789aa35ccccccca3aaa98765541013456789828acccccca37a998766540002345678639aaaaaaaa43a99876662000133456734899aaaaaa62999877640000023445624788999aa98289987772000000233442467889999994799889300000001234325677889999956999940000000001343256678899999549bb40000000000002325667788999b75c820000000000000012567788999bc955000000000000000000124689bbb8520000000000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "NBA HOOPZ",
+	"description": "NBA HOOPZ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v13529.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nbahoopz"
+	},
+	"tags": [],
+	"hash": "d63e970de2e7a2ca17732d50ed27bddf3a29fe4c",
+	"added": "2026-11-05"
+}

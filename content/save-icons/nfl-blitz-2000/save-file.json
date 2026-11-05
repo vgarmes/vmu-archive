@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "nfl-blitz-2000",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#001111ff",
+		"#112211ff",
+		"#224433ff",
+		"#223322ff",
+		"#001100ff",
+		"#445544ff",
+		"#bbbbaaff",
+		"#667766ff",
+		"#ffffffff",
+		"#777722ff",
+		"#ffff22ff",
+		"#bbaa22ff",
+		"#331100ff",
+		"#664422ff",
+		"#bb7755ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ffffffffffffff727ef0ffffffffffffffffffff3f430f8788f394deffffffffffffff1fb91d0f868804b1aadbffffffffff4f99bb133f888844b0aaaa4bffffffff9199bb4c6f88884490aaaabaf3ffff1f95b9eb436f88881f91aaaaaacaffff5199b9ba4c6f88881090aaaaaabaff4f7599b9ba416f88881f91aaaaaaaaf30f67b6b9ba436f88687f66aaaaaaaafe7466b6bbba416f88688088a8aaaaaa46606666bbba116088688388a8aaaaaa38648866bbba676788686586a8aaaaaa58808868abaa866688888786a8aaaaaa78606666bbbb86666868878868babbbb5765669779398777667687686bbbbbab2b775675574cd36988eeee9e99e999ab2b57c75f157567ded3cc792576edfcac2b57666675578e7ae7e6687e86e667a66777866835ddee7ee7e8886a66de66a86675668802c03c7de7e868ddd35d86e85753638806000463e7e8de31d37d88b815307f8856305285e7e8eeeede6588964251718678005525e3eeeeeed967662b4571536768107732d3eeeeeede6657194554f57166527775ed86eeee7e76d52ff21f37f140717755d3d522552711d033f40f352300707737ed66ee2e0d301333ffff43ff101175255277773522133133ffff50f1ff1f5f97ee6ee602ffff3343ffff0f35441ff430dde9d94fff1f33f4ffffff1f1310410f00000f1f323344ffffffffff4f4010001010101113f0ffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Blitz Save File",
+	"description": "NFL Blitz 2000",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v21453.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nflblitz"
+	},
+	"tags": [],
+	"hash": "0cec3c052c2047b295f8e9d099632aee8caffd84",
+	"added": "2026-11-05"
+}

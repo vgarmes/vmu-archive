@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "milky-season",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#221111ff",
+		"#772211ff",
+		"#884422ff",
+		"#775566ff",
+		"#995544ff",
+		"#997766ff",
+		"#bb6644ff",
+		"#cc5577ff",
+		"#ee6699ff",
+		"#bb8877ff",
+		"#ee9999ff",
+		"#ccaaaaff",
+		"#eeaabbff",
+		"#eeccbbff",
+		"#eeddbbff",
+		"#eeeeeeff"
+	],
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffeecbddbedbffbfeffdedbbdcccbfffffa999aabbf9df9fdbeac995a99a4bfffe96499999b5cb5aa5995694969962fffd6646666462942662661542666962fffb4446626124424222221412664641dff92246424225526522411221462441dff9424642694555bdb9555556462241dff52226216b59ddeeeeeeeea9462121dff51426225bdeaadeed99eeda964211bff5162622beed9bdeeea900bc995411bff9264622ee900beeeee33005999511bfffb44924e9000eeeeeeef30059b911bfffb59c41d3f00deeeeee100305b9119fff9ebe4153500beeeeed31155499115fff9bbd135f303beeeeec95356242115fff9239153e35beeeedeffeba4221125fffb626159bfeeeeeecdeeeec9221114fffb62574bbfeeeeebddeeed94777549ffb94488442beeeeedceeeec7877a87affccc9aa4222beeeeeeeeed78778978affccca41221119deeeeeed688787748cffcca9222211115bdeeeb9888788877cffdcc712211111129b99a98879c8878affd9871222131129caacc979ccc88788ffa88812241913d9ddcda5acccca878affbc8822253bded9bedb95bcccca887affd8874424eeddb33539b959ccc8717affe8877645ded9333233ddb79ca41119fff9777945eebd9397333dd98741132bfffdaa9cb9fb5eddc93335f9c87215bfffffefcfebb9eb9b5cb533bbeec99efff",
+		"ffffffffffffffffffffffffffffffffffeecbddbedbffbfeffdedbbdcccbfffffa999aabbf9df9fdbeac995a99a4bfffe96499999b5cb5aa5995694969962fffd6646666462942662661542666962fffb4446626124424222221412664641dff92246424225526522411221462441dff9424642694555bdb9555556462241dff52226216b55aadeeecddea9462121dff51426225bddedeeeeeeeeea964211bff5162622beeeeeeeeeeeeeec995411bff9264622beeeeeeeeeeeeeeca99511bfffb44924deeeeeeeeeeddeeca9b911bfffb59c41beeeebaeeed9adeda5b9119fff9ebe415eeeb9beeeeb55599499115fff9bbd134d553beeeeeeed559242115fff9239156bb9eeeeeeeeeeed9221125fffb6261599ffeeeeeccefeec9221114fffb62574bbfeeeeebddeeed94777549ffb94488442beeeeedceeeec7877a87affccc9aa4222beeeeeeeeed78778978affccca41221119deeeeeed688787748cffcca9222211115bdeeeb9888788877cffdcc712211111129b99a98879c8878affd9871222131129caacc979ccc88788ffa88812241913d9ddcda5acccca878affbc8822253bded9bedb95bcccca887affd8874424eeddb33539b959ccc8717affe8877645ded9333233ddb79ca41119fff9777945eebd9397333dd98741132bfffdaa9cb9fb5eddc93335f9c87215bfffffefcfebb9eb9b5cb533bbeec99efff"
+	],
+	"animationSpeed": 16,
+	"vmuName": "Milky   Data",
+	"description": "ﾐﾙｷｨ･ｼｰｽﾞﾝ ｾｰﾌﾞﾃﾞｰﾀ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"milkysea.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/milky"
+	},
+	"tags": [],
+	"hash": "389e74634dce5ba6cbc8cd4dc4145318cc76e65f",
+	"added": "2026-11-05"
+}

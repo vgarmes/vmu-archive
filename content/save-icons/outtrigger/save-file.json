@@ -1,0 +1,52 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "outtrigger",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#aa7711ff",
+		"#ff9977ff",
+		"#eeaa00ff",
+		"#ffee33ff",
+		"#ffbb00ff",
+		"#ffdd11ff",
+		"#aa7755ff",
+		"#664422ff",
+		"#222211ff",
+		"#111111ff",
+		"#ffcc99ff",
+		"#dd9900ff",
+		"#665544ff",
+		"#443322ff",
+		"#ffeeccff"
+	],
+	"frames": [
+		"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000aaaaa99aa000000000000000000000a99a9999e9eaa000000000000000000e99e9988eee8ee9000000000000000098ee9edeede89eee900000000000000f8e8e9e8e8e8ee999ef0000000000000e9ee9ee9eee9e99a9ee00000000000009e9ebee999e999aaaae00000000000009987fbeee999aeaaaae0000000000000997bff7889999aeaaad0000000000000a97bffb778eee9a99990000000000000e988bfb7e8ee8e9e9990000000000000fed98b289a98e99a99a000000000000009dbbf22fd72dee999a0000000000000007bffbbfbbb7e9999a000000000000000efffbbfff22ae9aaa000000000000000abbfbbffb279a9aaa000000000000000a2b772bb227e99aad000000000000000a92bbbbb2778aaadf0000000000000007a22277277d8aaa700000000000000007aa222227d82e9a80000000000000000bac2fb27d2bb9aac0000000000000000f5652278deee98800000000000000000f44611eeddee8c810000000000000000ac41127eedd2411c19a00000000c333aa3cc22bbbbbb4535aa99a00000c355ca8541222bbb226561a993ceb0005566aa5562222b2221446aaaa53c33c0466dd9652bbbbbbbb44699a95cc55560f46d9336bbbbbbbbb565ddaa5555644"
+	],
+	"animationSpeed": 1,
+	"vmuName": "OT SAVE FILE",
+	"description": "OUTTRIGGER SAVE FILE",
+	"source": {
+		"kind": "save",
+		"files": [
+			"OUTTRIGR.VMS",
+			"OUT_EURO.VMS",
+			"v32544.VMS",
+			"v47583.VMS",
+			"v4846.VMS",
+			"v56049.VMS",
+			"v56939.VMS",
+			"v73218.VMS",
+			"v7936.VMS",
+			"v89056.VMS",
+			"v95711.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/outtrigger"
+	},
+	"tags": [],
+	"hash": "9cb13e79d6b42139938a2bab8d9191be7eefe3b4",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "High scores",
+	"gameId": "namco-museum",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#222200ff",
+		"#444444ff",
+		"#555500ff",
+		"#666666ff",
+		"#666600ff",
+		"#777777ff",
+		"#999999ff",
+		"#999900ff",
+		"#bbbbbbff",
+		"#bbbb00ff",
+		"#dddd00ff",
+		"#eeeeeeff",
+		"#ffff00ff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"0000000158abddddba8510000000000000000038bddddddddddb830000000000000018dddddddddddddddd81000000000003bddddddddddddddddddb30000000005bddddddddddddddddddddb500000003bddddddddddddddddddddddb3000001bddddddddddddddddddddddddb000008dddddddddddddddddddddddddd00000ddddddddddddddddddddddddd5000000ddddddddddddddddddddddb800000000ddddddddddddddddddddb81000000000ddddddddddddddddddb8100000000000dddddddddddddddddb30022200000022dddddddddddddddb50009eee900009eedddddddddddddb500004eeeee4004eeeddddddddddddd1000009eeeee7009eeedddddddddddddb300007eeeee7007eeeddddddddddddddb80000ceeec0000ceeddddddddddddddddb500179610001179ddddddddddddddddddb1000000000000dddddddddddddddddddb800000000000dddddddddddddddddddddb3000000000dddddddddddddddddddddda8100000008dddddddddddddddddddddddb50000001bdddddddddddddddddddddddda0000003bddddddddddddddddddddddb300000005bddddddddddddddddddddb50000000003bddddddddddddddddddb30000000000018dddddddddddddddd810000000000000038bddddddddddb83000000000000000000158abddba85100000000000000000000000000000000000000000000",
+		"00000158abddddba8510000000000000000038dddddddddddd830000000000000018dddddddddddddddd81000000000003bddddddddddddddddddb30000000005bddddddddddddddddddddb500000000bddddddddddddddddddddddb30000000ddddddddddddddddddddddddb1000000ddddddddddddddddddddddddd8000000dddddddddddddddddddddddddd300000dddddddddddddddddddddddddda00000ddddddddddddddddddddddddb5000000dddddddddddddddddddddb5100000000ddddddddddddddddddb5100000222000dddddddddddddddbaeee900009eee900ddddddddddddb814eeeee4004eeeee40ddddddddddd50009eeeee7009eeeee70ddddddddddddb814eeeee4004eeeee40dddddddddddddddbaeee900009eee900ddddddddddddddddddb5110011496100ddddddddddddddddddddda5000000000dddddddddddddddddddddddda5000000dddddddddddddddddddddddddda00000dddddddddddddddddddddddddd300000ddddddddddddddddddddddddd8000000ddddddddddddddddddddddddb1000000bddddddddddddddddddddddb300000005bddddddddddddddddddddb50000000003bddddddddddddddddddb30000000000018dddddddddddddddd810000000000000038dddddddddddd83000000000000000000158abddba8510000000000000000000000000000000000000000000000",
+		"00000158abddddba8510000000000000000038bddddddddddb830000000000000018dddddddddddddddd81000000000003bddddddddddddddddddb30000000005bddddddddddddddddddddb500000000bddddddddddddddddddddddb30000000ddddddddddddddddddddddddb1000000ddddddddddddddddddddddddd8000000dddddddddddddddddddddddddd300000dddddddddddddddddddddddddd800000ddddddddddddddddddddddddddd10000ddddddddddddddddddddddddddd50000ddddddddddddddddddddddddddd81002dddddddddddddddddddddddddddb109edddddddddddddddddddddddddddb14eedddddddddddddddddddddddddddd19eedddddddddddddddddddddddddddb14eedddddddddddddddddddddddddddb109eddddddddddddddddddddddddddd81114ddddddddddddddddddddddddddd50000ddddddddddddddddddddddddddd10000dddddddddddddddddddddddddd800000dddddddddddddddddddddddddd300000ddddddddddddddddddddddddd8000000ddddddddddddddddddddddddb1000000bddddddddddddddddddddddb300000005bddddddddddddddddddddb50000000003bddddddddddddddddddb30000000000018dddddddddddddddd810000000000000038bddddddddddb83000000000000000000158abddba8510000000000000000000000000000000000000000000000"
+	],
+	"animationSpeed": 6,
+	"vmuName": "Namco Museum",
+	"description": "Namco Museum High-Scores",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v15212.VMS",
+			"v36300.VMS",
+			"v54368.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/namcomuseum"
+	},
+	"tags": [],
+	"hash": "631d7119b36349fb6301d80bb97b5b978130b205",
+	"added": "2026-11-05"
+}

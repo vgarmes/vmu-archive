@@ -379,6 +379,9 @@
 	"kao-the-kangaroo": {
 		"name": "Kao the Kangaroo"
 	},
+	"kidou-senkan-nadesico-nadesico-the-mission": {
+		"name": "Kidou Senkan Nadesico: Nadesico the Mission"
+	},
 	"kidou-senshi-gundam-renpou-vs-zeon": {
 		"name": "Kidou Senshi Gundam: Renpou vs. Zeon"
 	},
@@ -442,8 +445,80 @@
 	"memories-off-complete": {
 		"name": "Memories Off Complete"
 	},
+	"metropolis-street-racer": {
+		"name": "Metropolis Street Racer"
+	},
+	"milky-season": {
+		"name": "Milky Season"
+	},
+	"mizuiro": {
+		"name": "Mizuiro"
+	},
+	"monaco-grand-prix": {
+		"name": "Monaco Grand Prix"
+	},
+	"mortal-kombat-gold": {
+		"name": "Mortal Kombat Gold"
+	},
 	"mr-driller": {
 		"name": "Mr. Driller"
+	},
+	"ms-pac-man-maze-madness": {
+		"name": "Ms. Pac-Man Maze Madness"
+	},
+	"mtv-sports-skateboarding": {
+		"name": "MTV Sports: Skateboarding"
+	},
+	"nakoruru-ano-hito-kara-no-okurimono": {
+		"name": "Nakoruru: Ano Hito kara no Okurimono"
+	},
+	"namco-museum": {
+		"name": "Namco Museum"
+	},
+	"nba-hoopz": {
+		"name": "NBA Hoopz"
+	},
+	"nba-showtime-nba-on-nbc": {
+		"name": "NBA Showtime: NBA on NBC"
+	},
+	"never-7-the-end-of-infinity": {
+		"name": "Never 7: The End of Infinity"
+	},
+	"nfl-blitz-2000": {
+		"name": "NFL Blitz 2000"
+	},
+	"nfl-blitz-2001": {
+		"name": "NFL Blitz 2001"
+	},
+	"nightmare-creatures-2": {
+		"name": "Nightmare Creatures 2"
+	},
+	"nijyuei": {
+		"name": "Nijyuei"
+	},
+	"omikron-the-nomad-soul": {
+		"name": "Omikron: The Nomad Soul"
+	},
+	"ooga-booga": {
+		"name": "Ooga Booga"
+	},
+	"outtrigger": {
+		"name": "Outtrigger"
+	},
+	"pen-pen-triicelon": {
+		"name": "Pen Pen TriIcelon"
+	},
+	"phantasy-star-online": {
+		"name": "Phantasy Star Online"
+	},
+	"pia-carrot-e-youkoso-3": {
+		"name": "Pia Carrot e Youkoso!! 3"
+	},
+	"plasma-sword": {
+		"name": "Plasma Sword"
+	},
+	"pod-speedzone": {
+		"name": "POD: Speedzone"
 	},
 	"power-jet-racing-2001": {
 		"name": "Power Jet Racing 2001"
@@ -454,9 +529,27 @@
 	"power-stone-2": {
 		"name": "Power Stone 2"
 	},
+	"prince-of-persia-arabian-nights": {
+		"name": "Prince of Persia: Arabian Nights"
+	},
+	"princess-holiday": {
+		"name": "Princess Holiday"
+	},
+	"princess-maker-collection": {
+		"name": "Princess Maker Collection"
+	},
+	"prism-heart": {
+		"name": "Prism Heart"
+	},
+	"prismaticallization": {
+		"name": "Prismaticallization"
+	},
 	"project-justice": {
 		"name": "Project Justice",
 		"ja": "Moero! Justice Gakuen"
+	},
+	"propeller-arena": {
+		"name": "Propeller Arena"
 	},
 	"puyo-pop-fever": {
 		"name": "Puyo Pop Fever",
@@ -479,6 +572,15 @@
 	},
 	"sega-marine-fishing": {
 		"name": "Sega Marine Fishing"
+	},
+	"sega-sports-nba-2k": {
+		"name": "Sega Sports NBA 2K"
+	},
+	"sega-sports-nba-2k2": {
+		"name": "Sega Sports NBA 2K2"
+	},
+	"sega-sports-nhl-2k": {
+		"name": "Sega Sports NHL 2K"
 	},
 	"sega-tetris": {
 		"name": "Sega Tetris"

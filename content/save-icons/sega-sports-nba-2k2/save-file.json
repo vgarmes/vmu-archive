@@ -1,0 +1,63 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "sega-sports-nba-2k2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ffff00ff",
+		"#ff00ffff",
+		"#ff0000ff",
+		"#00ffffff",
+		"#00ff00ff",
+		"#0000ffff",
+		"#000000ff",
+		"#662222ff",
+		"#221111ff",
+		"#eeaa55ff",
+		"#eecc99ff",
+		"#ffddccff",
+		"#cc7744ff",
+		"#bb9988ff",
+		"#995544ff"
+	],
+	"frames": [
+		"00000000000000cfffc00000000000000000000000000e99899e00000000000000000000000008f988e9000000000000000000000000c9ececcfc00000000000000000000000c9dbabbfe00000000000000000000000c9ffdadde00000000000000000000000cfd8dd8fe00000000000000000000000cdd8fd8da000000000000000000000000dadbcabb000000000000000000000000bddabadec0000000000000000000000e8ddffafdf8ec00000000000000000cc89ffffff88998ec00000000000000cbb898ddff88978fedc0000000000000bad998f88fff999eccbe00000000000cbaf9988898f8798dcbccb0000000000cadf9988f88f8998dbbccbe000000000bdd8999fdfd89798dabbbbec00000000bdf8978fdddf9798dadaddab00000000bdf99798fff89798ddddddda00000000cdf9979899f89899fffffddf00000000baf8997989899e99888888880000000cad89f79788897e979899988f00000cbbbbbfc797989779979999798f0000cbcbcccc089f8997777777779779000cbccbbcccc0fffde8888899797799000acccbbbcccb08ebcefeeef777977900cbacbbabcbbb0e9eeeedffd899797900baaaabaabbbbe878deefffd897779900bdaadaaaaaaaf7979889998897997900cddaadaafaaaf7977778897779779900cddddadfdaaa87799788cf79797979000adddddddddd999999fee999999998"
+	],
+	"animationSpeed": 59,
+	"vmuName": "NBA2K2",
+	"description": "NBA2K2",
+	"source": {
+		"kind": "save",
+		"files": [
+			"nba2k201.VMS",
+			"v15321.VMS",
+			"v22219.VMS",
+			"v28864.VMS",
+			"v34088.VMS",
+			"v34799.VMS",
+			"v34880.VMS",
+			"v37129.VMS",
+			"v43333.VMS",
+			"v45546.VMS",
+			"v58375.VMS",
+			"v61186.VMS",
+			"v74568.VMS",
+			"v75648.VMS",
+			"v7966.VMS",
+			"v84225.VMS",
+			"v85547.VMS",
+			"v86229.VMS",
+			"v94790.VMS",
+			"v96386.VMS",
+			"v96915.VMS",
+			"v98443.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nba2k2"
+	},
+	"tags": [],
+	"hash": "2a53c1e360e055069fff511c44a8fe5dd27f261f",
+	"added": "2026-11-05"
+}

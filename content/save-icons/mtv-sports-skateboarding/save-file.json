@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "mtv-sports-skateboarding",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#990011ff",
+		"#dd2233ff",
+		"#dd0000ff",
+		"#eebbbbff",
+		"#ff7788ff",
+		"#eeffffff",
+		"#ff4455ff",
+		"#dd5566ff",
+		"#cc0011ff",
+		"#ff99aaff",
+		"#dd0011ff",
+		"#eeccddff",
+		"#ffeeeeff",
+		"#dd3344ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"cda455555555555555555555555555e7da4caaaaaaaaaaaaaaaaaaaaaaaae59ba53733333333333333333333333393115733333333333333333333333333331177333333333333333333333333b3331177a3aaaaaa853ee3aaaaaa5ab833331177f3ffffffcf54ceffffffdf4db3331177f3ffffffdf44fcffffffcf4d53381177f3ffffffffcdffffffcccffdea951177f3ffffffffffffffad89cfcd929a1177fbffffffffffff8fbec8df24a3381177f3ffffffffffff3543fddf3e8a391177f3ffffffffff8439a3a2af59b8331177f3ffffffff8ca3eda3592d48b9331177fbffffffff3ad4efc3829a45b3331177f3ffffffdcddcf8dd3983344b3331177f3ffffff84fd548cf33a834cbb331177f3ffffff445a85e4f39ca34dbb331177fbffffffd495392cd38d424db3331177f3ffffffd43a33ec43dfcc4db3331177f3ffffffd495335c42ffcf4dbb331177f3ffffffd43a33ddf4ffcf4cb3331177cbcccccca43933c4cccccc8ab33311777bbb333333333333333b33b3b3331177a3e88828828882e8888ee888bb331177c3acc484824445aa44aaa455b333117733b333b3b33339333333b33bb333117733b3bbbb33333333333333b3bb3311e7333333333333333333333333333311273933333333333333333333333313119e11111111111111111111111111111192111111111111111111111111111111"
+	],
+	"animationSpeed": 0,
+	"vmuName": "MTVSKATEBOARDING",
+	"description": "MTV_SPORTS_SKATEBOARDING",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v34809.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mtvskate"
+	},
+	"tags": [],
+	"hash": "6f6c5345ccc2a7524e1206eeffcb285856cb4af8",
+	"added": "2026-11-05"
+}

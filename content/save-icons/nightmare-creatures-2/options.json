@@ -1,0 +1,49 @@
+{
+	"kind": "save",
+	"title": "Options",
+	"gameId": "nightmare-creatures-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#000000ff",
+		"#111111ff",
+		"#333333ff",
+		"#555555ff",
+		"#ffff99ff",
+		"#ffffccff",
+		"#ffffeeff",
+		"#222222ff",
+		"#442222ff",
+		"#662222ff",
+		"#331111ff",
+		"#992222ff",
+		"#220000ff",
+		"#bb2222ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82fff8f88f111f232f221ff8ff32f881774f6437617261676f7678373f775276766f7475f87273f74f7773787f637362736f7868737773f62f737367717743766f6f7f7f747873f6ff7f6f756f747f6f6f6f7f57746f62f6ff6f6f616f736f76ffffff93ffffff2ffffffffffffaaf3fffff9ceeafffff9afffffffff2cee9ffff8aee89ecd1ff9ebffffffffcebfaffff8ecdfff9aaeeeeeeeaffffbce1f8ffff9e2f1fff211ddecbbdffff9aec121ff1cc1fffff1f8e9e9389aab9a8cec2fff8ea9eedaeeb9ebeba1ceeadee99ecfff9eabefede92cededcfeefebebf1ee9ffcebfeea1eebeedefeceeeadee2faeaf1cec1e9cce9ceededeeaeeeaeaf1aeaf12cecedbeeee8cdcbeeae9eecee8ceafffbceea9d19dfb9bf9a2fff8b9acec1ffff1aeeeeaff1342862ff1baceeee9ffffffff1d1ccf265357511cab9ac92fffffffffffffb85777777298fffffffffffffffffffffb447577382ffffffffffffffffffffff2286f56f1fffffffffffffffffffffffff26f56ffffffffffffffffffffffffffff6f56fffffffffffffffffffffffffff47465ffffffffffffffffffffffffff15777758fffffffffffffffffffffff156488338ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82fff8f88f111f232f221ff8ff32f881774f6437617261676f7678373f775276766f7475f87273f74f7773787f637362736f7868737773f62f737367717743766f6f7f7f747873f6ff7f6f756f747f6f6f6f7f57746f62f6ff6f6f616f736f76ffffff93ffffff2ffffffffffffaaf3fffff9ceeafffff9afffffffff2cee9ffff8aee89ecd1ff9ebffffffffcebfaffff8ecdfff9aaeeeeeeeaffffbce1f8ffff9e2f1fff211ddecbbdffff9aec121ff1cc1fffff1f8e9e9389aab9a8cec2fff8ea9eedaeeb9ebeba1ceeadee99ecfff9eabefede92cededcfeefebebf1ee9ffcebfeea1eebeedefeceeeadee2faeaf1cec1e9cce9ceededeeaeeeaeaf1aeaf12cecedbeeee8cdcbeeae9eecee8ceafffbceea9d19dfb9bf9a2fff8b9acec1ffff1aeeeeaff1342862ff1baceeee9ffffffff1d1ccf265357511cab9ac92fffffffffffffb85777777298fffffffffffffffffffffb447577382ffffffffffffffffffffff2286f56f1fffffffffffffffffffffffff26f56ffffffffffffffffffffffffffff6f56fffffffffffffffffffffffffff47465ffffffffffffffffffffffffff15777758fffffffffffffffffffffff156488338ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff",
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff82fff8f88f111f232f221ff8ff32f881774f6437617261676f7678373f775276766f7475f87273f74f7773787f637362736f7868737773f62f737367717743766f6f7f7f747873f6ff7f6f756f747f6f6f6f7f57746f62f6ff6f6f616f736f76ffffff93ffffff2ffffffffffffaaf3fffff9ceeafffff9afffffffff2cee9ffff8aee89ecd1ff9ebffffffffcebfaffff8ecdfff9aaeeeeeeeaffffbce1f8ffff9e2f1fff211ddecbbdffff9aec121ff1cc1fffff1f8e9e9389aab9a8cec2fff8ea9eedaeeb9ebeba1ceeadee99ecfff9eabefede92cededcfeefebebf1ee9ffcebfeea1eebeedefeceeeadee2faeaf1cec1e9cce9ceededeeaeeeaeaf1aeaf12cecedbeeee8cdcbeeae9eecee8ceafffbceea9d19dfb9bf9a2fff8b9acec1ffff1aeeeeaff1342862ff1baceeee9ffffffff1d1ccf265357511cab9ac92fffffffffffffb85777777298fffffffffffffffffffffb447577382ffffffffffffffffffffff2286f56f1fffffffffffffffffffffffff26f56ffffffffffffffffffffffffffff6f56fffffffffffffffffffffffffff47465ffffffffffffffffffffffffff15777758fffffffffffffffffffffff156488338ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 4,
+	"vmuName": "Game Setting",
+	"description": "NIGHTMARECREAT2",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v22798.VMS",
+			"v74500.VMS",
+			"v7860.VMS",
+			"v80420.VMS",
+			"v84442.VMS",
+			"v95301.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nightcreature2"
+	},
+	"tags": [],
+	"hash": "fb803979cbbe1f16bca9df92ff16191d9fd1fd81",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "mortal-kombat-gold",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#110000ff",
+		"#221100ff",
+		"#331100ff",
+		"#552200ff",
+		"#663300ff",
+		"#774400ff",
+		"#994400ff",
+		"#bb6600ff",
+		"#cc7700ff",
+		"#cc8800ff",
+		"#ddaa00ff",
+		"#eebb00ff",
+		"#ffcc00ff",
+		"#ffee00ff",
+		"#000000ff"
+	],
+	"frames": [
+		"fffffffffff1f12776421fffffffffffffffffffff36272aeedda52fffffffffffffff1323a8fbb9aeedeec61fffffffffffff4b7f55f27f8deeeeeda3fffffffffff89883ffffff2336deeeed4fffffffff7b4ffffffffffff16aeeeed5ff1ffff6b5ffffffffff1ffff1aeeeed3ffff13841ffffffffff662ff15eedeea1ffff85fffffffffffff22ff6ceedddd7ff1395ffffffffffffffffff38ceddcc2ff891ffffff1fffff4aa4ff122428cc6f298fffffff31ffff138c4f23fff4bca1495fffffff36ff3883f4a5fffff8ccd3795fffffff4b9accdc6f3aa2ff1accc5895fffffff3bbbbcccc81163337dcbb6895fffffff17bbbbcbcd721f11acbbb7a92ffffffff158aaaaaaa99aa45ba588a711fffffffff24555433358c71aa63788852ffffffffffffffffff25a25ba1659885ffffffffffffffffffff5614175399882ffffffffffffffffffff8368a319b994ffffffffffffffffffff4a5581f59994f1fffffffffffffffffff8994ff18892f7fffffffffffffffffff7981fff583f591431fffffffffffffff7941ffff6579646883ffffffffffffff57fffff11489999997ffffffffffffff82ffffff1f13588852fffffffffffff121fffffff1ffffffffffffffffffffff1fffffffff1ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "MK GOLD",
+	"description": "MORTAL KOMBAT GOLD",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v23409.VMS",
+			"v50867.VMS",
+			"v5353.VMS",
+			"v90217.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mkg"
+	},
+	"tags": [],
+	"hash": "89884a6e2c4171feba4f5844f02f812beea0f115",
+	"added": "2026-11-05"
+}

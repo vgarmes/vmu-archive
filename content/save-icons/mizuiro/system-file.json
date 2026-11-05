@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "mizuiro",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#0066ffff",
+		"#4488ffff",
+		"#003388ff",
+		"#aaccffff",
+		"#778899ff",
+		"#0044aaff",
+		"#77bbffff",
+		"#ddeeffff",
+		"#0088ffff",
+		"#33aaffff",
+		"#0099ffff",
+		"#00aaffff",
+		"#00ccffff",
+		"#00ddffff",
+		"#00eeffff",
+		"#00ffffff"
+	],
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeddddddddddddddddddddddddddddddddccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaa76aaaaaaaaa675aaaaaaaaa979388888777688888897728888888886777888889732888889776588888888883758888833218333777271886628888675200007737707777752175037550077742006777732000773203250074207756720347267250034720172001752772537234425752001746203720073203251745732536200017720037106425000674201256625000076200042022500133520077774477777743777477777777444777555555555532255555555555555555558888888888258888888888888888888888888888888888888888888888888888aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaabbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccddddddddddddddddddddddddddddddddeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+	],
+	"animationSpeed": 0,
+	"vmuName": "ｼｽﾃﾑﾌｧｲﾙ",
+	"description": "みずいろ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"mizuiro.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mizuiro"
+	},
+	"tags": [],
+	"hash": "0773c3551a051abf6b965b4b728cce5ffb331520",
+	"added": "2026-11-05"
+}

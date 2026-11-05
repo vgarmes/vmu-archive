@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "princess-maker-collection",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ffeeddff",
+		"#ffee00ff",
+		"#ffccbbff",
+		"#ff99aaff",
+		"#ff0000ff",
+		"#ee9988ff",
+		"#ccccccff",
+		"#aa5555ff",
+		"#882222ff",
+		"#550000ff",
+		"#00cc00ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbaaaaaabbbbbbbbbbbbbbbbbbbbbbbbaa989898aaaabbbbbbbbbbbbbbbbbbba898989898989abbbbbbbbbbbbbbbbba89898989898989abbbbbbbbbbbbbbaa8989898989898989abbbbbbbbbbbbaa89898989868989898abbbbbbbbbbaa98986868689698686868abbbbbbbbaa9898989898966898989898aabbbbbba98989a9a9a9a669a9a989898aabbbbba8989a9a9a9a963a9a9a9a98989abbbba989a9a9a9a9a639a9a9a9a9898abbba989a9a9a9a9aa6369a9a9a9a989abbba8989a9a9a9a9a63369a9a9a9898abbba989a9aaa61aa6633aa16aa9a989abbba8989aaaa61aa63339a16a9a9a98abbbba89a9aa63193333393166aaa989abbbbba89aaa63199333399166aa9a98abbbbbaaaaaaa3333333333366aaa989abbbbaa89aaaa63339993336aaaaa898bbbbaa89aaaaaa6333333668aaaaaaaabbbaa89a9aaaaaaa6333669aaaaa9abbbbba89a9aaaaaaaaa89999aaaaaaabbbbbbba89a9aa40799366933aa7044aabbbbbba9a9a44400933669633a004444abbbbbbaaaaa49993336696633994aa4abbbbbbba1119333336669663333911aabbbbbba1111a333366669666333a111abbbbbba111a3336669999996663a111abbbbbba411a6669998888889966a144abbbbbba444a6999888888888996a648abbbbbbbaaa99aaaa88884888aaaaaaabbbbb",
+		"bbbbbbbbbbaa989898aaaabbbbbbbbbb9bbbbbbbba898989898989abbbbbbbbb89999bbba89898989898989abbbb999b63938bba8989898989898989abbb933966638ba89868686868686868abbbb93366339ba986a9a9a969a98986a9bbb93333339a989a9a9a936a9a98989abbb9336333a989a9a9a9a369a9a98989abb9339333989a9a9a9a936a9a9a9a98a99333963339a9a9a9a96369a9a9a9a98a333396633a9a9a9a9a63369a9a9a98983333b96333a9a9a9a9633669a9a9a9833339b966999aaa61a96336aa168a9a993339bb99111aa661a933339a1689a111939bbb911114a6319333339316694111199bbb911144a631993333991669c41149bbbaa944aa8a333399933336888aa499bba9899a844983339593336694488aa9bb989aa8444496338483666944448a98ab89a9aa64440896356668904448a9a9ab989a9a8444078996689970444a9a98aba989a9a464007788887700448aa9a9abaa989a9a4400055555700444aa9a98abbba9a9aa4440057577000468a9a9a9abbbb89a9a844400575000444a9a9aaaabbbaaa9a9a44444444444448aa9aaabbbbbaa9a9aa84444444444448a9aaabbbbbbbaa9a9a8844444444448aaabbbbbbbbbbbaa9a9a888444444888aaabbbbbbbbbbbaabaaaaaa884488aaaabbbbbbbbbbbbbabbbaa988aaaaa8848abbbbbbbbbbbbbbbbbba8448888844448abbbbbbbb"
+	],
+	"animationSpeed": 10,
+	"vmuName": "Data File 0",
+	"description": "Princess Maker 2",
+	"source": {
+		"kind": "save",
+		"files": [
+			"primake2.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/princessmaker"
+	},
+	"tags": [],
+	"hash": "8d8484e1b2a13051fcaffc4d93aa659874ce8991",
+	"added": "2026-11-05"
+}

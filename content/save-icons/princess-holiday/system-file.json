@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "princess-holiday",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#333355ff",
+		"#aa3322ff",
+		"#776688ff",
+		"#bb7733ff",
+		"#ee6666ff",
+		"#dd9911ff",
+		"#9999ccff",
+		"#dd8877ff",
+		"#eeaa22ff",
+		"#ddbbaaff",
+		"#ffcc55ff",
+		"#ffdd77ff",
+		"#eeddddff",
+		"#ffff99ff",
+		"#ffffeeff",
+		"#ffffffff"
+	],
+	"frames": [
+		"ffffffffffffffefffffffffffffffffffffec97747cfebbcceffeccccccffffffec974444117bbba8afc774444447cffcc94444447aadbddaa9114444441113fcc7447a8abbddddddba734444441111fc4747dbbddddbddddbabba744741117ff317ddbdddbbaddddddabaa7741111effc3dedeedbaa8bbbdabbabaa411117ffffbdeeeebaa85aabaaabaaa831113ffffcadbfdda8a57a8a8a8aa8a851119ffffabbddba88837a585858888851119fffc8baeaaa85537a555535858853117fffbab8d8a8535399855533555833119fffaba8b88533339ca7333333353319ffff9c88a88337779e9c93337335313cffffcc85a58392009ecce2000733311479cfce85855870006eeeec200273311144cfeeb3553829206eeeee22263131411cffffe335159c006eeeee202c71114411bffc444333cf209eeeee626b711144118ff74941337fcceeeceee9993111133abffe9714413ccceec9cee997313138aabffff9179339eeee749eec9c558858aaafffffefffcccceec49ec9ec78a8888abfffffffffecfeceecee77ccf8888a88affffffffffceec99c9779ccfe8588aaaffffffffffe9669c99997666ffa558abffffeeeecec6cc6cc99666226ef97769fffeefffe9c699cc6666622202cc6999ffeeffffc26cc99c669962200069cceefeefffec722ccccccc966622029ecefffefffff9323c969cc966663222ceccce"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SYSTEM FILE",
+	"description": "プリンセスホリデー",
+	"source": {
+		"kind": "save",
+		"files": [
+			"PRINCESS.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/princessh"
+	},
+	"tags": [],
+	"hash": "5ce71d04eec3cd8511e5cc1a27de20428de10dbd",
+	"added": "2026-11-05"
+}
