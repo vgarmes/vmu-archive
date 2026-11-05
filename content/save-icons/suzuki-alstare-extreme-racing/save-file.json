@@ -1,0 +1,51 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "suzuki-alstare-extreme-racing",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#110066ff",
+		"#220077ff",
+		"#331177ff",
+		"#665577ff",
+		"#eebb00ff",
+		"#ffbb00ff",
+		"#ffbb11ff",
+		"#ccaa55ff",
+		"#ffcc00ff",
+		"#ffcc00ff",
+		"#ffcc11ff",
+		"#ffdd00ff",
+		"#ddddeeff",
+		"#eeeeeeff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffff323fffffffffffffffffffffffffffff2422fffffffffffffffffffffffffffc366322fffffffffffffffffffffffff266666120ffffffffffffffffffffff246666668222fffffffffffffffffffc2666666666b22cffffffffffffffffc2666666666666322fffffffffffffff2a66666666666666122effffffffff2266666666666666666a22fffffffff0266666662b66666666602fffffffff2266666666121666666622ffffffffe226666666666a222111224fffffffff022b66666666666322222060fffffffffe221666666666666123f262fff322dffff222166666666666522262222220fffffff022a6666666666632663b622fffffffffe221666666666666666612ffffffffff2222226666666666666b2ffffffffff2223122286666665666a2ffffffffff2766665122766669266642fffffffff286666666a0666652266663ffffffff2b6666666666666620262462fffffffd221866666666666223a222b1fffffffff022366666666622f3a2f22a3ffffffffff222466666682ff22fff222ffffffffffff222a666623ff23ffff22fffffffffffff32236612fff0ffffff2fffffffffffffff22242ffffffffffff3ffffffffffffffef22cffffffffffffffffffffffffffffff0fffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 10,
+	"vmuName": "BRUCE",
+	"description": "Suzuki Alstare Extreme Racing",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000727.VMS",
+			"SUZUKI.VMS",
+			"v19512.VMS",
+			"v34840.VMS",
+			"v42254.VMS",
+			"v55275.VMS",
+			"v74081.VMS",
+			"v79472.VMS",
+			"v83451.VMS",
+			"v87960.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/suzukirace"
+	},
+	"tags": [],
+	"hash": "e67d0580b8e243360b32847dbdbce39184712890",
+	"added": "2026-11-05"
+}

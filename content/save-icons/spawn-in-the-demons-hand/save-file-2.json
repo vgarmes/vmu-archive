@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "spawn-in-the-demons-hand",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#eeaaaaff",
+		"#885555ff",
+		"#221111ff",
+		"#bb7788ff",
+		"#442222ff",
+		"#ffff66ff",
+		"#eecc33ff",
+		"#776611ff",
+		"#aa8822ff",
+		"#554411ff",
+		"#222200ff",
+		"#442200ff",
+		"#110000ff",
+		"#663333ff",
+		"#ffffffff",
+		"#000000ff"
+	],
+	"frames": [
+		"fff6cffff7556e00033111dd47558887fff6ff2355560e0033111dd445569c77fff5c10e556ee0331111ddd455569ba9fff5210e550ee0311ddddd255557bbbbfff6d13e55ee0031d1ddd465556a9aa9fff6d130550ee03111144855657a8af9fff81130560ee0311114d56666a99cf9fff7d136560eee0311dd568669b72cc7fff79116563eee0ddd3567887997cb78fff77116563ee04d3e5899779989c288fff78815563e3d0ee89bb997797ccf78fff7858556130ee679bb787797acccc9fff78566560e55879998899979cccccffffa7658555568777889bb977c22ccccffffb8658556887779bbb97d222cccccfffff7655566879bbaabb42cccccc222ffff6b6555689abac78c222dd2224442ffff7995557bbaa965642f40e03d444cffff66a557baa868787d4fd1d11d22dfffffcc9567b3568868dd4c03ccaabddfffffffb55300003979dd420499babd9fffffffc0e0000331979d4cd277b9a4bffffffff331333333d9999b1498b9abb9fffffff1333333311bbabb149899baa8fffffff44bb4111119bba4d4b8799c96fffffffc31441111d49999d4a87b9c86ffffffff13333111d99942baa77bb751ffffffff733331179b4baaacb99bc553ffffffffb6531799499bacffb9ba1500f211d42f9658873197b2ccffabac500033331d4d6879dd3b7d442cffa97550000331d4286689374831d42ca678653000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ANGEL TENERES",
+	"description": "SPAWN ANGEL TENERES",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v51199.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spawn"
+	},
+	"tags": [],
+	"hash": "2c91b4943c2ab3feb35d5ed20cdd100aa2030abb",
+	"added": "2026-11-05"
+}

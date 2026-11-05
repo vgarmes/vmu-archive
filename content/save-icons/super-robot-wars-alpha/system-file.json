@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "super-robot-wars-alpha",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#bbccccff",
+		"#ffaa44ff",
+		"#9999aaff",
+		"#778888ff",
+		"#ee5511ff",
+		"#666666ff",
+		"#aa3311ff",
+		"#444455ff",
+		"#333333ff",
+		"#551111ff",
+		"#222222ff",
+		"#221111ff",
+		"#222222ff",
+		"#111111ff",
+		"#111111ff",
+		"#111111ff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffca88aceffff7577785affffffffffc732273228cffc0320385effffffffc522258ba3008cf3232285cfffffffd722227bbcc3203ba033275afffffffa323327b999a320280232558ffffffd7203207a6666832037032375ffffffe5202207b6444673005b32375dffffff7202203b64444652007b3375cffffffa20230289411146320085275cffffffd3002005b641014532027275bfffffffa2000008941001453000275bffffffff5000002b64411465200053afffefffff3000005b644444632007303333bfffff3000008b6444445300370035a7efffff300002ab96666633007525277dffffff5000008db999733200583277cfffffffa2200007a85338720000277cfffffffff733223338578582355788dffffffffffea3558b887773257a878efffffffffffffd875557adfea5557befffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 2,
+	"vmuName": "ｲﾝﾀｰﾐｯｼｮﾝ",
+	"description": "ｽｰﾊﾟｰﾛﾎﾞｯﾄ大戦ｱﾙﾌｧ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SRWLAST1.VMS",
+			"SRWLAST2.VMS",
+			"SRWREAL1.VMS",
+			"SRWREAL2.VMS",
+			"SRWSUPE1.VMS",
+			"SRWSUPE2.VMS",
+			"SRWSYSTE.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/srw"
+	},
+	"tags": [],
+	"hash": "a4aedd2f8438994917f9a65266934f505cd61839",
+	"added": "2026-11-05"
+}

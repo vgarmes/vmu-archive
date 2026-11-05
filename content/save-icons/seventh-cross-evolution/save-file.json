@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "seventh-cross-evolution",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#220000ff",
+		"#772222ff",
+		"#552222ff",
+		"#661111ff",
+		"#331100ff",
+		"#441111ff",
+		"#773333ff",
+		"#cc5555ff",
+		"#000000ff",
+		"#000000ff",
+		"#994444ff",
+		"#000000ff",
+		"#111111ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"feefffffffffffffffffffffffffffdcfffffffffffffffff88888ffffeffffdffffffffffffff8888888888eeeffffffffffffffffeef888888888fbefffffffffffffffffff888889b9888888fffffffffffffffffffff889999b988fdcffffefffffffffffb0444098999988ddffffdeffffffce02a77777a399999888ffefffffffffe5aaaa777777a0899888ffdfffffffff5a66aaaaa777770999888fffffffffe46661aaaaa77777a089888ffffffcdfc666611aaaaa7777718888fffffffdef2222211116a1a7777708988fffffbff922255311111111a77a58888fffffeff022253333313333aaa718888fffffffe0155523545433331aa718fffffffffff42255224444433316a718fffffffffff42222525044433316a72efffffffffffd662545500555226a6a5ffffffdffffdd6622524055442266a60ffffffdffffef562522444445522266dfffffffffffff8222255545455536608fffffffffffff80112222555552664efffdeebfffffffff01162233526664ffbeffffeffffffffff03622226661088feffffffffffffffffff043333508effffffffffffffffffffffffeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdeffffffffffffffffffffffffffffffeffffffffffffffffffffffceffffffffffffffffffffffffffffffefffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Invertebrate",
+	"description": "SEVENTH CROSS EVOLUTION",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000176.VMS",
+			"v60011.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/seventhcrossevolution"
+	},
+	"tags": [],
+	"hash": "1dd8882c9b3a914bef9503f1ef76b27c749f6a38",
+	"added": "2026-11-05"
+}

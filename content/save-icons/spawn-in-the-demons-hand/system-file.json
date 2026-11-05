@@ -1,0 +1,55 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "spawn-in-the-demons-hand",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#222233ff",
+		"#ccddddff",
+		"#99aaaaff",
+		"#004411ff",
+		"#66bb66ff",
+		"#445544ff",
+		"#002200ff",
+		"#448800ff",
+		"#225500ff",
+		"#66cc00ff",
+		"#aaee66ff",
+		"#777755ff",
+		"#442200ff",
+		"#ee9944ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffff79866889fffffffffffffffffffffff7897798a1f9c6ff79ffff997fffffff99fff987968bb98c68889689997797f9a9f9aa8ff7f5bcbbf9aaaf9ff8779ff787f7988f7bf7e0ecf9988f8ff97f9ff7a9ffff9778fdeeecf7f99f8ff7ff9fff98887f977988dcd59f77f78f79ff87ffff78ff9f9a8f8bf99fa9f98f78ff87fff797f98f9af78b99a8a9f98f78999fff989f78aa8aa5caa88aaa88a88889ffff788996335c3026abb33b55c99ffffffff797462000000312000000344ffffffff7ff465000000360000002344fffffffffff4653000003c0000025344fffffffffff465832002173000255c44fffffffffff462555202ff602355214fffffffffffff4302232067222220274fffffffffffff712222206f222220c4ffffffffffffff77620223ff62200344fffffffffffffff747303ffff602674fffffffffffffffff747c31fffc3744ffffffffffffffffffff4777fff7747ffffffffffffffffffffff77477447fffff0000fffffffffffffffffffffffffff0ffff0fffffffffffffffffffffffff0f000ff0ffffffffffffffffffffffff0f0ff0f0ffffffffffffffffffffffff0f000ff0ffffffffffffffffffffffff0f0ff0f0fffffffffffffffffffffffff0ffff0fffffffffffffffffffffffffff0000fffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SPAWN SYSTEM",
+	"description": "スポーンシステム",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SPAWN001.VMS",
+			"SPAWNJ.VMS",
+			"v13340.VMS",
+			"v25416.VMS",
+			"v41557.VMS",
+			"v44274.VMS",
+			"v4980.VMS",
+			"v61185.VMS",
+			"v68482.VMS",
+			"v71485.VMS",
+			"v86613.VMS",
+			"v90013.VMS",
+			"v9280.VMS",
+			"v96524.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spawn"
+	},
+	"tags": [],
+	"hash": "97d8104b4395f0c6de48e3bace2535c00a5a17dd",
+	"added": "2026-11-05"
+}

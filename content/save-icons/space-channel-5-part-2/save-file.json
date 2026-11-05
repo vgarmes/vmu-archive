@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "space-channel-5-part-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#440000ff",
+		"#aa2222ff",
+		"#dd6666ff",
+		"#553333ff",
+		"#774444ff",
+		"#bbbbbbff",
+		"#332222ff",
+		"#777777ff",
+		"#333344ff",
+		"#999999ff",
+		"#666666ff",
+		"#444455ff",
+		"#111111ff",
+		"#ddddddff",
+		"#ee1111ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ffffffffffcb95dddd55bcffffffffffffffffffc7dddddddddddd5cfffffffffffffff6755ddddddddddddd7cfffffffffffcabbbb7ddd55555ddddddcfffffffffc5997b6a77a88668a5dddddcfffffffc5dddda66cffffffffcadddddcfffffc7dddddacfccccccccffc7dddd5cffff8ddddd98cc6ccc1010cff65ddddafffc5dddd5b6666661eeee0cf85dddddcff8ddddda88888881eeee0fcadddddd7ff5dddd9b8888888eeeee0fb5dddddddccdddd5a3888888881ee3ccadddddddd66dddd78881ee18888888c0375ddddddaaddd5b881eeeeb888886000037ddddd57ddd5b8b1eeeebbb88800000039dddd55ddd588b1eee1bb8b600000001e19ddd9ddd568bb114bbb80000000c61ee29d59ddddb6bbaaaab60000000c8a73ee15daddddbc68aaa600000836fcad580e195bddd9166baab333aaa43cf65d73e1057cdd9eeea7a888888eee10f8551ee0a5bfd9ee125d5a68381eeee006a2eee05dcf41ee29ddd766830eeee0fc63ee17d5ffc1ee199d5788b311010ccf68311dd6fff4eeee121e38bbb8b1ccf6a7812d5cfffc1eeeeee188bbbb666cc855a61dcfffff6911ee088883bbb8686b7d7828fffffff8d92138338ba559138b7d5abcffffffff8d9e13333b7dd923889dd7cffffffffffc916313b87dd1338a9d8fffffffffffffcba113bb7d5143677cffffffffffffffffc63a3b7d94aa8cfffffffff",
+		"ffffffffffcb95dddd59acffffffffffffffffffc7dddddddddd57bcffffffffffffffcadddddddddddd5a399cfffffffffffc9dddddddddddddd9a9d5cfffffffffc5ddddddddd5555dd9aa5ddcfffffffc5ddddddd597b888aa3689dddcfffffc7ddddddd57666888ccccb5ddd5cffff8ddddddd58c66866666cc67ddddafffc5dddddd588c8881eee1ccc6a5dddcff8ddddddd78c8888eeeeecccccaddd7ff9ddddddd98c8888eeeeecccc067dddccdddddddd5ccc8888eee16cc1e169dd66dddddddd9300c88888888cceee1add7addddddd93000068888886cceeee65d99ddd55221000000008888ccc0ee1c9d59dd52eee1360000000cccccccc0fc9dd9d2eeeee4ab3000000000ccccccc65d595eeee29d9bb30000000000ccccccdd572eee99dd988aa4300000000006a9dd5b2eee2ddd9868ba7746000000035ddd9c5eee225d5b88bba7743000f0015ddd8f52eeee22248bb3111146cc663e25ddcf7d2eeeeee14b311ee110ca9941e159ffcdd2eee1e188b1111e0f69dd71ee26fff7dd2e13388bab311006422211e14cfffcdd2ee3c68bb8606cfc3eeeee01cfffffcd2e14b888888cccc633eee148fffffff8523a7a33a7ab66b8c61e19acffffffff8575948375d54333831257cffffffffffc5d5488a9dd93b883126fffffffffffffca543339dd5333634cffffffffffffffffc84b37dd734a8ffffffffff"
+	],
+	"animationSpeed": 10,
+	"vmuName": "SC5PART2",
+	"description": "SPACECHANNEL5PART2",
+	"source": {
+		"kind": "save",
+		"files": [
+			"space5p2.VMS",
+			"v38568.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/space5p2"
+	},
+	"tags": [],
+	"hash": "3d1e65faa22821c9e57d97e9e4c3bc15fb93f841",
+	"added": "2026-11-05"
+}

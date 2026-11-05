@@ -1,0 +1,50 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "super-runabout-san-francisco-edition",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#cc0000ff",
+		"#cc4466ff",
+		"#dd99aaff",
+		"#eeddeeff",
+		"#0000ddff",
+		"#0000ddff",
+		"#0000ccff",
+		"#0000ddff",
+		"#1122bbff",
+		"#3333ddff",
+		"#6666ccff",
+		"#9999ddff",
+		"#eeff00ff",
+		"#ffffaaff",
+		"#000000ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444449fffffffffffffffffffffffffff3944ff000000000000000000000000003347f2eeeeee0000000eeeeeeeee00000f443ecccccce000000ecccccccce0002344ecccccccce00000eccccccccce00fa4ecccceecccceffffeccceeecccce3354edcdeeeeccceffffedcdeeeedcdef844ecdce10eeeeeffffecdcef0ecdcea544edddef00eeeeffffeddde10eddde6444ecfdfee00003ffffefdfeeefdfce4444eedfdfdee000ffffedfdfdfdfdee44444eedffffce002fffeffffffffee4444444eeedfdfde00fffefdfecdfce444444444eeeefdfce01ffedfdeefdfe44444444444eeeddde003fedddeecddce444445eeee44edcde000fedcdeeedcde44444eccce44ecdce0000ecdcefecdcce4444ecccceecccceee00eccce3eeccce4ee4eecccccccceecce0eccce84eccccecce4eecccccceeecce0eccce54eecccecce44eeeeeeeeeeeee0eeeee444eeeeeeee444eeeeee44bee00eeeee4444eee4ee4444444444445f3000fb5444444444444444444444444bf103364444444444444444444444444433ff84444444444444444444444444446bba4444444444444444444444444444444444444444444444444444444444444444444444444444444",
+		"4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444449fffffffffffffffffffffffffff3944ff000000000000000000000000003347f20eeeeeee000000000eeeee00000f443feccccccce00000000eccce000023448eccccccccce000000eccccce000fa44ecccceeeccccefffffeccccce0033544edcdeeeeedcdefffffedcdcde02f8444ecdce000eeeeeffffedcdcdcdefa5444eddde0000eeeeffffedddeddde364444ecfdfeee003fffffecdfcecfdce44444eedfdfdcee0fffffedfdeeedfde444444eecfffffce2ffffeffce0ecffe4444444eeecdfdfdefffefdfeeeeefdfe4444444eeeeefdfceffedfdfdfdfdfde444444444eeeeddde3ecdddddddddddce444eeee444fecdce0edcdeeeeeeedcde444edcde44aedcde0ecdceeeeeeecdce444ecccceeecccceecccce33644ecccce44eeccccccccceeeccceef8444eeccce444eecccccccee0ecccefb54444eccce4444eeeeeeeee20eeeee3644444eeeee44444eeeeeeebf0eeeef84444444eeee4444444444445f3000fb5444444444444444444444444bf103364444444444444444444444444433ff84444444444444444444444444446bba4444444444444444444444444444444444444444444444444444444444444444444444444444444",
+		"4444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444444449fffffffffffffffffffffffffff3944ff000000000000000000000000003347eeeee0000000eeeee0eeeeeeeeeeee44ecccce00000ecccce0ecccccccccce44eeccce00000ecccee0ecccccccccce444eccce003ffeccceffeccceeeeeeee444ecdcce02feccdceffedcdeeeeeeee444eecdce00fecdceeffecdce000fa544444eddde001edddefffeddde00336444444eedfde0edfdeefffefdfe02f844444444efdfe0efdfeffffedfdeeeeeee444444ecffcecffceffffefffffffffe444444eedfdedfdeefff3edfdfdfdfde4444444efdfefdfeffff0efdfeeeeeee4444444ecddcddce3ff20edddeeeeeee4444444eedcdcdee0f300ecdce44444444444444ecdcdce000000edcde44444444444444eecccee000000eccceeeeeeee44444444eccce0000000ecccccccccce44444444eccce0000000ecccccccccce44444444eeeee2000003eeeeeeeeeeee444444444eeebf00002feeeeeeeeeeee4444444444445f3000fb5444444444444444444444444bf103364444444444444444444444444433ff84444444444444444444444444446bba4444444444444444444444444444444444444444444444444444444444444444444444444444444"
+	],
+	"animationSpeed": 25,
+	"vmuName": "ELVIS!!!  A-FIN",
+	"description": "SUPER RUNABOUT",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SUPERRBT.VMS",
+			"v30268.VMS",
+			"v45464.VMS",
+			"v45837.VMS",
+			"v58936.VMS",
+			"v62262.VMS",
+			"v7623.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/superrun"
+	},
+	"tags": [],
+	"hash": "d007261f9c3235ffdf8a4113632ec40844cf63c7",
+	"added": "2026-11-05"
+}

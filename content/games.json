@@ -306,7 +306,8 @@
 		"name": "Godzilla Generations"
 	},
 	"golf-shiyouyo-2": {
-		"name": "Golf Shiyouyo 2"
+		"name": "Golf Shiyouyo 2",
+		"en": "Tee Off"
 	},
 	"grand-theft-auto-2": {
 		"name": "Grand Theft Auto 2"
@@ -539,7 +540,8 @@
 		"name": "POD: Speedzone"
 	},
 	"power-jet-racing-2001": {
-		"name": "Power Jet Racing 2001"
+		"name": "Power Jet Racing 2001",
+		"en": "Surf Rocket Racers"
 	},
 	"power-stone": {
 		"name": "Power Stone"
@@ -684,8 +686,17 @@
 	"sega-bass-fishing-2": {
 		"name": "Sega Bass Fishing 2"
 	},
+	"sega-gt": {
+		"name": "Sega GT"
+	},
 	"sega-marine-fishing": {
 		"name": "Sega Marine Fishing"
+	},
+	"sega-rally-2": {
+		"name": "Sega Rally 2"
+	},
+	"sega-smash-pack-vol-1": {
+		"name": "Sega Smash Pack Vol. 1"
 	},
 	"sega-sports-nba-2k": {
 		"name": "Sega Sports NBA 2K"
@@ -705,6 +716,15 @@
 	"segagaga": {
 		"name": "SeGaGaGa"
 	},
+	"seirei-hata-ray-blade": {
+		"name": "Seirei Hata Ray Blade"
+	},
+	"seventh-cross-evolution": {
+		"name": "Seventh Cross Evolution"
+	},
+	"shadow-man": {
+		"name": "Shadow Man"
+	},
 	"shenmue": {
 		"name": "Shenmue",
 		"ja": "Shenmue Isshō: Yokosuka",
@@ -721,8 +741,23 @@
 	"shinseiki-evangelion-typing-e-keikaku": {
 		"name": "Shinseiki Evangelion: Typing E-Keikaku"
 	},
+	"silent-scope": {
+		"name": "Silent Scope"
+	},
+	"silver": {
+		"name": "Silver"
+	},
 	"skies-of-arcadia": {
 		"name": "Skies of Arcadia"
+	},
+	"slave-zero": {
+		"name": "Slave Zero"
+	},
+	"sno-cross-championship-racing": {
+		"name": "Sno-Cross Championship Racing"
+	},
+	"soldier-of-fortune": {
+		"name": "Soldier of Fortune"
 	},
 	"sonic-adventure": {
 		"name": "Sonic Adventure"
@@ -733,8 +768,59 @@
 	"sonic-shuffle": {
 		"name": "Sonic Shuffle"
 	},
+	"sorcerian": {
+		"name": "Sorcerian"
+	},
 	"soul-calibur": {
 		"name": "Soul Calibur"
+	},
+	"soul-fighter": {
+		"name": "Soul Fighter"
+	},
+	"south-park-rally": {
+		"name": "South Park Rally"
+	},
+	"space-channel-5": {
+		"name": "Space Channel 5"
+	},
+	"space-channel-5-part-2": {
+		"name": "Space Channel 5: Part 2"
+	},
+	"spawn-in-the-demons-hand": {
+		"name": "Spawn: In the Demon's Hand"
+	},
+	"spec-ops-omega-squad": {
+		"name": "Spec Ops: Omega Squad"
+	},
+	"speed-devils": {
+		"name": "Speed Devils"
+	},
+	"speed-devils-online-racing": {
+		"name": "Speed Devils Online Racing"
+	},
+	"spider-man": {
+		"name": "Spider-Man"
+	},
+	"sports-jam": {
+		"name": "Sports Jam"
+	},
+	"star-seeker-doki-doki-idol-remix": {
+		"name": "Star Seeker - Doki Doki Idol Remix"
+	},
+	"star-wars-demolition": {
+		"name": "Star Wars Demolition"
+	},
+	"star-wars-episode-i-jedi-power-battles": {
+		"name": "Star Wars Episode I: Jedi Power Battles"
+	},
+	"star-wars-episode-i-racer": {
+		"name": "Star Wars Episode I: Racer"
+	},
+	"starlancer": {
+		"name": "Starlancer"
+	},
+	"street-fighter-alpha-3": {
+		"name": "Street Fighter Alpha 3"
 	},
 	"street-fighter-iii-3rd-strike": {
 		"name": "Street Fighter III: 3rd Strike",
@@ -743,8 +829,50 @@
 			"Street Fighter 3rd Strike"
 		]
 	},
+	"street-fighter-iii-double-impact": {
+		"name": "Street Fighter III: Double Impact"
+	},
+	"striker-pro-2000": {
+		"name": "Striker Pro 2000"
+	},
+	"stunt-gp": {
+		"name": "Stunt GP"
+	},
+	"stupid-invaders": {
+		"name": "Stupid Invaders"
+	},
+	"sunrise-eiyuutan": {
+		"name": "Sunrise Eiyuutan"
+	},
 	"super-hero-retsuden": {
 		"name": "Super Hero Retsuden"
+	},
+	"super-magnetic-neo": {
+		"name": "Super Magnetic Neo"
+	},
+	"super-robot-wars-alpha": {
+		"name": "Super Robot Wars Alpha"
+	},
+	"super-runabout-san-francisco-edition": {
+		"name": "Super Runabout: San Francisco Edition"
+	},
+	"super-street-fighter-ii-x-for-matching-service": {
+		"name": "Super Street Fighter II X for Matching Service"
+	},
+	"suzuki-alstare-extreme-racing": {
+		"name": "Suzuki Alstare Extreme Racing"
+	},
+	"sydney-2000": {
+		"name": "Sydney 2000"
+	},
+	"tantei-shinshi-dash": {
+		"name": "Tantei Shinshi Dash"
+	},
+	"tech-romancer": {
+		"name": "Tech Romancer"
+	},
+	"test-drive-6": {
+		"name": "Test Drive 6"
 	},
 	"test-drive-le-mans": {
 		"name": "Test Drive Le Mans"
@@ -772,6 +900,9 @@
 	},
 	"the-last-blade-2": {
 		"name": "The Last Blade 2"
+	},
+	"the-next-tetris-net-edition": {
+		"name": "The Next Tetris: Net Edition"
 	},
 	"the-rhapsody-of-zephyr": {
 		"name": "The Rhapsody of Zephyr"

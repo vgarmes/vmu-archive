@@ -1,0 +1,53 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "sega-smash-pack-vol-1",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#000000ff",
+		"#001100ff",
+		"#001100ff",
+		"#002200ff",
+		"#002200ff",
+		"#003300ff",
+		"#003300ff",
+		"#004400ff",
+		"#005500ff",
+		"#005500ff",
+		"#006600ff",
+		"#007700ff",
+		"#008800ff",
+		"#660000ff",
+		"#cc0000ff"
+	],
+	"frames": [
+		"0000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000e000000e0ddddd0d0900000000000000f000000f0ddddd0d0d09d0000000000ef00000ef0ddddd0d6d2d62000000000ff00000ff0ddddd0dd6d92d90000000eff0000eff0ddddd0dd3d3d602000000fff0000fff0ddddd0d9d3d37d900000efff000efff0ddddd056dd6dd2000000ffff000ffff0ddddd00066ddddd0000effff00effff0ddddd0008ddd2000000fffff00fffff0ddddd0008dddddd000efffff0efffff0ddddd005cdddddd000ffffff0ffffff0ddddd07ddddddda00effffffeffffff0ddddd0dddddddd700ffffffffffffff0ddddd0dddddddd30effffffffffffff0ddddd0ddddddda00fffffffffffffff0ddddd0dddddda00efffffffffffffff0ddddd0ddddda000ffffffffffffffff0ddddd0dd975000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	],
+	"animationSpeed": 0,
+	"vmuName": "GM 00005501-02",
+	"description": "PHANTASY STAR 2",
+	"source": {
+		"kind": "save",
+		"files": [
+			"MDEMU001.VMS",
+			"MDEMU002.VMS",
+			"v13752.VMS",
+			"v26270.VMS",
+			"v28454.VMS",
+			"v44430.VMS",
+			"v48807.VMS",
+			"v55779.VMS",
+			"v67976.VMS",
+			"v73774.VMS",
+			"v90599.VMS",
+			"v99998.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/smashpack"
+	},
+	"tags": [],
+	"hash": "85debfde6ccbb9f9d0a96775a214ddf006174f88",
+	"added": "2026-11-05"
+}

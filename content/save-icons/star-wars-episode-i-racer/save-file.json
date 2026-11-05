@@ -1,0 +1,55 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "star-wars-episode-i-racer",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#222222ff",
+		"#888866ff",
+		"#bbbbaaff",
+		"#99aa99ff",
+		"#778899ff",
+		"#aabbccff",
+		"#8899aaff",
+		"#557799ff",
+		"#ddddeeff",
+		"#556677ff",
+		"#7799ddff",
+		"#5577eeff",
+		"#555555ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee11eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee1eeefc9bbeeeeeeeeeeeeeeeeeeeeeee1eeeb96bbbeeeeeeeeeeeeeeeeeeeee11ee6bbbcb6bfeeeeeeeeeeeeeeeeeeed5ab66bb88858a5feeeeeeeeeeeeeeeebbbbbbbb8a88bbbceeeeeeeeeeeeeefcbbb66bb4aa858bbbfeeeeeeeeeeeeeebcb66bb799d8bbccceeeeeeeeeeeeeef6b66b7a593d1a8bb7bfeeeeeeeeeeeeebb8d1d2d2d11111a87eeeeeeeeeeeeee66d12722d11272d268eeeeeeeeeeeeea6652221221225225665eeeeeeeeeee7bb57112d2442d11157cc7eeeeeeee49bcc8558767b7b77a85ccc995eeee90095cc8887b8888888888ccb900095e996658cc88888888a88888cc6699907e596758ac888a8a888a888cc4766766fee29668a8ccb88888a88cccb777796eeeee1696587bcbccccccbcc6996606eeeeee11766777bbbbcccbbb9909905eeeeeee1e15667576cbbcbbb6390905eeeeeeee11ee56648ccbbbb6c533004fe1eeeeeed11ed6667cccc6b6bc900911111eeeeed7dd1d699c6b776bb90031112d1feeee11eeeed6997666669004eeee111eeeeeda11111d69000000094ee1e12adeeeeed2d1dddd2443090094de11dd2adfeeee21eeeeefefe59994ffeeeeefedafeeee61eeeeeeeeeffffeeeeeeeeeed4eeeeea1eeeeeeeeeeeeeeeeeeeeeeed2eeeef91eeeeeeeeeeeeeeeeeeeeeeed6ee"
+	],
+	"animationSpeed": 0,
+	"vmuName": "Racer Game Data",
+	"description": "Star Wars Episode 1 : Racer",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00001044.VMS",
+			"v10389.VMS",
+			"v16731.VMS",
+			"v19047.VMS",
+			"v24481.VMS",
+			"v25373.VMS",
+			"v32717.VMS",
+			"v33273.VMS",
+			"v4025.VMS",
+			"v65965.VMS",
+			"v66838.VMS",
+			"v78592.VMS",
+			"v801.VMS",
+			"v81697.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/starwars"
+	},
+	"tags": [],
+	"hash": "9f718e18c01bd20e7c4ca87c9cffd028ec3573f6",
+	"added": "2026-11-05"
+}

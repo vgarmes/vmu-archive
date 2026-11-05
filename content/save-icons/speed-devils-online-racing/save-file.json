@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "speed-devils-online-racing",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffeeccff",
+		"#ddbb88ff",
+		"#bb8844ff",
+		"#775544ff",
+		"#553322ff",
+		"#331111ff",
+		"#997766ff",
+		"#ee5544ff",
+		"#552222ff",
+		"#773322ff",
+		"#dd4433ff",
+		"#bb3322ff",
+		"#883322ff",
+		"#332222ff",
+		"#443333ff",
+		"#00000011"
+	],
+	"frames": [
+		"ffff315fffffffffffffffffff314fffffff4125fffffffffffffffff411fffffffff1125fffffffffffffff4201fffffffff20125ffffff5ffffff42102fffffffff5101235f5555555f5321015ffffffffff200123558444555521006ffffffffffff1001484ccc99c496002ffffffffffffff213c4cbbbbcbc9c43ffffffffffffffff5cccbbaaaaaacc8fffffffffffff8ffff5cba77777aabc5fffcfffffffff9cfff8ba777777aaab8ffccffffffffffc9f58baa7777aaabc4f9b5ffffffffff5c558cba777b7abc985cc8ffffffffff585cbbbb7aaaaabc9989a8ffffffffff59554449ba7ac4eee55bbffffffffffffc5dddeee585494ddf8bcfffffffffffec5edd4eee3ee3dded9bffffffffffffecc4666639c9366638c9fffffffffffff5c9c666cbccb22bb58fffffffffffffffffcaa9cccbb77acfffffffffffffffffffc9b9999cbaca5fffffffffffffffffff895ac49bac9afffffffffffffffffffffbfba9cb3fb8fffffffffffffffffffffb537a7165affffffffffffffffffffffcbe1111ebcfffffffffffffffffffffffa861168a5fffffffffffffffffffffffcb6103bbfffffffffffffffffffffffffac33ca5fffffffffffffffffffffffffc7aa7cfffffffffffffffffffffffffff9bccdfffffffffffffffffffffffffffdeeeffffffffffffffffffffffffffffed3effffffffffffff",
+		"ffffffffff895ac49bac9afffffffffffffffffffffbfba9cb3fb8fffffffffffffffffffffb537a7165affffffffffffffffffffffcbe1111ebcfffffffffffffffffffffffa861168a5fffffffffffffffffffffffcb6103bbfffffffffffffffffffffffffac33ca5fffffffffffffffffffffffffc7aa7cfffffffffffffffffffffffffff9bccdfffffffffffffffffffffffffffdeeeffffffffffffffffffffffffffffed3effffffffffffffffff315fffffffffffffffffff314fffffff4125fffffffffffffffff411fffffffff1125fffffffffffffff4201fffffffff20125ffffff5ffffff42102fffffffff5101235f5555555f5321015ffffffffff200123558444555521006ffffffffffff1001484ccc99c496002ffffffffffffff213c4cbbbbcbc9c43ffffffffffffffff5cccbbaaaaaacc8fffffffffffff8ffff5cba77777aabc5fffcfffffffff9cfff8ba777777aaab8ffccffffffffffc9f58baa7777aaabc4f9b5ffffffffff5c558cba777b7abc985cc8ffffffffff585cbbbb7aaaaabc9989a8ffffffffff59554449ba7ac4eee55bbffffffffffffc5dddeee585494ddf8bcfffffffffffec5edd4eee3ee3dded9bffffffffffffecc4666639c9366638c9fffffffffffff5c9c666cbccb22bb58fffffffffffffffffcaa9cccbb77acfffffffffffffffffffc9b9999cbaca5fffffffff",
+		"ffffffc9f58baa7777aaabc4f9b5ffffffffff5c558cba777b7abc985cc8ffffffffff585cbbbb7aaaaabc9989a8ffffffffff59554449ba7ac4eee55bbffffffffffffc5dddeee585494ddf8bcfffffffffffec5edd4eee3ee3dded9bffffffffffffecc4666639c9366638c9fffffffffffff5c9c666cbccb22bb58fffffffffffffffffcaa9cccbb77acfffffffffffffffffffc9b9999cbaca5fffffffffffffffffff895ac49bac9afffffffffffffffffffffbfba9cb3fb8fffffffffffffffffffffb537a7165affffffffffffffffffffffcbe1111ebcfffffffffffffffffffffffa861168a5fffffffffffffffffffffffcb6103bbfffffffffffffffffffffffffac33ca5fffffffffffffffffffffffffc7aa7cfffffffffffffffffffffffffff9bccdfffffffffffffffffffffffffffdeeeffffffffffffffffffffffffffffed3effffffffffffffffff315fffffffffffffffffff314fffffff4125fffffffffffffffff411fffffffff1125fffffffffffffff4201fffffffff20125ffffff5ffffff42102fffffffff5101235f5555555f5321015ffffffffff200123558444555521006ffffffffffff1001484ccc99c496002ffffffffffffff213c4cbbbbcbc9c43ffffffffffffffff5cccbbaaaaaacc8fffffffffffff8ffff5cba77777aabc5fffcfffffffff9cfff8ba777777aaab8ffccffff"
+	],
+	"animationSpeed": 20,
+	"vmuName": "Player pref.",
+	"description": "Speed Devils Online/Settings",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v21477.VMS",
+			"v30784.VMS",
+			"v65861.VMS",
+			"v6651.VMS",
+			"v93076.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/speeddevilson"
+	},
+	"tags": [],
+	"hash": "f47f70bfaa19a8fc016c4dc62100a215640b483d",
+	"added": "2026-11-05"
+}

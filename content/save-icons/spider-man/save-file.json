@@ -1,0 +1,58 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "spider-man",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#110000ff",
+		"#222233ff",
+		"#444477ff",
+		"#334477ff",
+		"#444477ff",
+		"#333366ff",
+		"#222255ff",
+		"#444444ff",
+		"#667777ff",
+		"#ccccccff",
+		"#772222ff",
+		"#441111ff",
+		"#993333ff",
+		"#cc4444ff",
+		"#aa3333ff",
+		"#bb4444ff"
+	],
+	"frames": [
+		"333333332244335555554422333333333333333322443355555544223333333333333322336611000000115544333333333333223366110000001155443333333333223300aaeeeecceecc00664433333333223300aaeeeecceecc006644333333223300aaffffeeccffffccbb66443333223300aaffffeeccffffccbb664433223300aaddeecceeeeffeeffddbb6622223300aaddeecceeeeffeeffddbb66224466bb00bbeeeeeeccffeeccbbbb00334466bb00bbeeeeeeccffeeccbbbb00333311cc000000aacccceebb0000bbaa663311cc000000aacccceebb0000bbaa6655bbee00997700ccffaa119977bbcc1155bbee00997700ccffaa119977bbcc1155bbee0088998800bb11999911aacc1155bbee0088998800bb11999911aacc115500eeaa008877bb00119911bbffcc115500eeaa008877bb00119911bbffcc114411ccddccbbaaffeeaabbbbeeddbb554411ccddccbbaaffeeaabbbbeeddbb55225500eeeeffffffeeffffeeddaa1144225500eeeeffffffeeffffeeddaa114433446600ffeecccceeccffddaa00332233446600ffeecccceeccffddaa0033223333446600eeeeffeeeeddaa003322333333446600eeeeffeeeeddaa00332233333333446611bbaaccbbbb1133223333333333446611bbaaccbbbb11332233333333333344336611111155442233333333333333443366111111554422333333"
+	],
+	"animationSpeed": 8,
+	"vmuName": "SpiderMan Data",
+	"description": "SpiderMan Save File",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SPIDER01.VMS",
+			"v16881.VMS",
+			"v25484.VMS",
+			"v31210.VMS",
+			"v38029.VMS",
+			"v38238.VMS",
+			"v45973.VMS",
+			"v57433.VMS",
+			"v61342.VMS",
+			"v66499.VMS",
+			"v76098.VMS",
+			"v76841.VMS",
+			"v78232.VMS",
+			"v7919.VMS",
+			"v84147.VMS",
+			"v84527.VMS",
+			"v92670.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spiderman"
+	},
+	"tags": [],
+	"hash": "486255aaa3b0e90a8db49a47b9a51daba784d6fe",
+	"added": "2026-11-05"
+}

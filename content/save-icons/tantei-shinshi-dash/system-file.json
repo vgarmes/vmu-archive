@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "tantei-shinshi-dash",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#775555ff",
+		"#220000ff",
+		"#dd0022ff",
+		"#770011ff",
+		"#330011ff",
+		"#ffffffff",
+		"#ffaa00ff",
+		"#664400ff",
+		"#222200ff",
+		"#996611ff",
+		"#111111ff",
+		"#222222ff",
+		"#000000ff",
+		"#ccccccff",
+		"#777777ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ffffffff055555555555555550ffffffffffffcd555555555d55555555dcfffffffffcd5555555e0000ed555555dcfffffffb55555555e0afffbbed55555dcfffffb55555555e0affffffa5555555efffffd5555555e0cfffffffd555555550fffe55555555ecfffffffa555555555daffd5555555e0affffffff55555555550fe5555555e0cfffffffff5555555555efd55555d00cfffffffffe5555555555dbd5555d0bcffffffffff05555555555d0555550bffffffffffffaeed555555550555550fffffffffffffffabed555555b55555dcffffffffffffffffad555555a55555550ffffffffffffffff5555555c55555555bfffffffffffffffd555555c55ddddddeaffffffffffffffb0ed55daddc000ababffffcfff44cff130bdddebedb666b60accc867ff222ff322a00fb00db6699696696766cf223ff3220220a0f0b666667699677ff1224ff322b0bcabab96669076796878f3223343220224af0fa669bc66f96666f222422cfa0224ffafc669b79887699ac22242211b022cfff866669cf8667f7f422242211b022cfff86669a8876677692222422ccc422cfffc6667ff86666cf11322422111322cffffc667ff6666668ff322422ffc122cfffff667f966667666f322422343322cfffc96677667668768f322c4223f3221ffff766678f8668f7ff322c224fff322ffffc78ffffa97ccffc43431ffffff34f"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ｼｽﾃﾑｾｰﾌﾞﾃﾞｰﾀ",
+	"description": "探偵紳士ＤＡＳＨ！",
+	"source": {
+		"kind": "save",
+		"files": [
+			"ZhenTan.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tanteidash"
+	},
+	"tags": [],
+	"hash": "727df8a9ea73485f384fdf6e059f0422efabffc0",
+	"added": "2026-11-05"
+}

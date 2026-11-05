@@ -1,0 +1,47 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "street-fighter-iii-double-impact",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#ffddaaff",
+		"#ee9999ff",
+		"#ffaa77ff",
+		"#99aaccff",
+		"#ffff11ff",
+		"#bbcc77ff",
+		"#ffcc11ff",
+		"#ee6655ff",
+		"#ff9911ff",
+		"#88aa44ff",
+		"#bb6633ff",
+		"#ff3311ff",
+		"#cc2244ff",
+		"#667733ff",
+		"#772200ff"
+	],
+	"frames": [
+		"000000000000000000000000000000000000000b9b9777799bb000000000000000000b99b559595575599000000000000000979ddd77b59559d559900000000000007f9dccc7d79757dd7b0b00000000000b7d9cccc9d9d955ddd9f0000fdf000009bdbdccc9c9dd55dddbfcccddf00f00b9bdcbcccccbcd559dddfdddf00fbb00b99dcccccccccc557dddfdffffb99900999dcdddddddcc555f1bffdd77777700b99ffdbbff4f815553f3bffdb7777700b999f338331183755b31f33fffff8300099931333133327553182f1111833300099b31331112cc7558b82f1118333800099bfb33111228755bb82f1113338100099b00fb311222875b882811833c1100097b0bf3181328875b822831888811008b79b33833332bf95b828333c88113333f77b33f3338ffb95882833ff88131111197b3fcffffbbb958222b3ff813111111b79fccf888fbb85822f33fff811111111b9fffffbb8ff8592fbbfff811111111139f888222bbbf79bb23ff8111111111133c881122222b97222ff38111111111381c88111122b2b7fffff33111111113b1188311111183ff11bbbbaaa311113f111c83111111ff11bb1111b66aaa33f1111f8811111f111f111bbbbaa666fff1111188111111fff1f1f1111b6a6633f31111f811111f11ff3f11ff8b6666333b11111c11111fff3333ffaab66666333f31111fc1111181333333aaeaaa66"
+	],
+	"animationSpeed": 60,
+	"vmuName": "S.F.3_SYSTEM",
+	"description": "STREET FIGHTER 3 DOUBLE IMPACT",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v21939.VMS",
+			"v33370.VMS",
+			"v50554.VMS",
+			"v68968.VMS",
+			"v75558.VMS",
+			"v88846.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfight3di"
+	},
+	"tags": [],
+	"hash": "e0e5237dce11a62e27c6c254f3a6aa4d31af0d56",
+	"added": "2026-11-05"
+}

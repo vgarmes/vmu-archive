@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "super-magnetic-neo",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#663333ff",
+		"#773344ff",
+		"#993355ff",
+		"#aa3366ff",
+		"#443333ff",
+		"#ddddddff",
+		"#ccccccff",
+		"#ccccccff",
+		"#ccccccff",
+		"#999999ff",
+		"#777777ff",
+		"#555555ff",
+		"#333333ff",
+		"#333333ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"3333333333333333333333333333333333333333332104dddd4012333333333333333333204dddddddddd40233333333333333314dddddddddddddd4133333333333320dddddddddddddddddd0233333333320dddddddddddddddbaabc02333333330ddddddddddddddb955559c033333331ddb999bdddddddb85555559c13333324da755559dddddd955555555a4233330db6555555addddb6555555558d033324d955555559ddddb5555555557c42331dd955555557ddddb6555555558cd1330dd955555558baaaa7555555559dd0334ddb5555555655555555555555bdd433dddd955555555555555555556adddd33ddddda975555555555555799bddddd33ddddddd959997555556558bddddddd33ddddddb5adddb8559bba759ddddddd334ddddd99ddddda59dddda58dddddd4330ddddd9adddddb5bddddd68bddddd0331ddddd99dddddb5bddddd67bddddd13324dddd98cdddd959dddda58cdddd423330ddddb59bcb95559bba759ddddd0333324dddd955755555555558cdddd42333331ddddc9555555555558bddddd133333330ddddda8555555569bddddd03333333320dddddb7555559bdddddd0233333333320ddddc6995959dddddd0233333333333314ddc5b95b59dddd41333333333333333204dddddddddd4023333333333333333332104dddd4012333333333333333333333333333333333333333333"
+	],
+	"animationSpeed": 1,
+	"vmuName": "NEO GAMEDATA",
+	"description": "SuperMagneticNeo",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v13138.VMS",
+			"v72773.VMS",
+			"v83322.VMS",
+			"v88771.VMS",
+			"v90163.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/supermagicneo"
+	},
+	"tags": [],
+	"hash": "707786017009ecac9ddf539a04dfddea9594dbe5",
+	"added": "2026-11-05"
+}

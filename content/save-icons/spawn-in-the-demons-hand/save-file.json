@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "spawn-in-the-demons-hand",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#77ffccff",
+		"#005511ff",
+		"#009922ff",
+		"#555544ff",
+		"#000000ff",
+		"#ffeeccff",
+		"#aa9977ff",
+		"#774433ff",
+		"#eeaa88ff",
+		"#886655ff",
+		"#332211ff",
+		"#553322ff",
+		"#220000ff",
+		"#cc6655ff",
+		"#883322ff",
+		"#000000ff"
+	],
+	"frames": [
+		"44444444444444bbc4aaa98c4444c7ca4444444444444449cc4bab6648b449ca44444444444ca44bbc7a4c98438acbaa4444444444c5a44c9d88698894dd9aaa444444444c854d858558558888599cca44444444bd867555555858dd89697aac4444444c58855d8588889b999bbe7d6e4444444855888ed8999bc3bbacac76dd44444448d88deee7bbacccccba44cad94444444beeeb4a4a4a944061004cbba944444444c33ac44a3550205122add7e84444444a90001444200142244aeaccd8444444a882221abb4ccba44ccc4cac954444b8d9deced7addecabbcab93665554ca8587bbeddccb95ba9b6885556697765589cb667864c993a43c44caa7b3399567bacb6bcabac44444444444e9aabab3aacc44c44bdb44444444444cdaac4cccc4444c44a9db4c44444444c9bcba44cc4c44444449dea44c444444d7a7ac4cc4444444444bddac444444ce7bbbccacc4444444444b38ea444444edbbacab7bc444444444a5a8dbc4444d73bbaacccab444444c44c9478dc444dd9caaabacc4a444444ac4a9b9d7e44d83bacaaaaaaaa4444444a44793ecead89bbbaab37aaaa444444ba39a84ecddd6377accaaccccb4444446bc37d4c4acaacaacaaacaccaa44444444cbeb7bcaacae999a793caabb44444444baccacaac4cdbe77ebaccaa74444444444caaba4447de99997baaab9444444444444c44444d9799b97bcaab9"
+	],
+	"animationSpeed": 1,
+	"vmuName": "VAPORIZER",
+	"description": "SPAWN VAPORIZER",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v21645.VMS",
+			"v26930.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spawn"
+	},
+	"tags": [],
+	"hash": "c4c20e2127d0e4ed1f2f5f9312d954c127e26db6",
+	"added": "2026-11-05"
+}
