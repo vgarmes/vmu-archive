@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-05",
+		"title": "Marvel vs. Capcom 2, and VS.COM",
+		"body": "From the Japanese disc: the title screen, now the right way round (a light logo on a dark screen; the old screenshot had it inverted), the ACCESS screen, and VS.COM, the VMU program the game copies to the memory card, with its Capcom logo, title, menu, copyright, shop and trade screens in Japanese and English. Its fonts, character names, ranks and menu parts are in the Sprites card. Three more save icons the game writes, UPLOAD, DOWNLOAD and Capcom network, come straight from the disc, which also confirms the two already here."
+	},
+	{
+		"date": "2026-11-05",
 		"title": "Game pages in tabs",
 		"body": "A game's screens, sprites, fonts and notes are now tabs at the top of its page, so you can go straight to the sprites without scrolling past every screen. Press 1 to 4 to switch, and a link keeps the tab you're on. A game's save icons now sit beside its title."
 	},
