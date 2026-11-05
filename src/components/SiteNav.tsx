@@ -4,15 +4,37 @@ import { useEffect, useRef, useState } from 'react'
 import Link from 'next/link'
 import { usePathname } from 'next/navigation'
 import { cn } from 'cn'
+import { ArrowUpRightIcon } from 'lucide-react'
 import ThemeToggle, { ThemeButtons } from '@/components/ThemeToggle'
 
-const LINKS = [
+type NavLink = { href: string; label: string; external?: boolean }
+
+const LINKS: NavLink[] = [
 	{ href: '/about', label: 'About' },
-	{ href: '/changelog', label: 'Changelog' }
-] as const
+	{ href: '/changelog', label: 'Changelog' },
+	{
+		href: 'https://github.com/vgarmes/vmu-archive',
+		label: 'GitHub',
+		external: true
+	}
+]
 
 const NAV_LINK =
-	'text-muted-foreground hover:bg-foreground hover:text-background focus-visible:bg-foreground focus-visible:text-background flex h-6 items-center px-2 text-xs tracking-[0.2em] uppercase outline-none'
+	'text-muted-foreground hover:bg-foreground hover:text-background focus-visible:bg-foreground focus-visible:text-background flex h-6 items-center gap-1 px-2 text-xs tracking-[0.2em] uppercase outline-none'
+
+/** External links open in a new tab, marked with a diagonal arrow. */
+const newTab = (external?: boolean) =>
+	external ? { target: '_blank', rel: 'noreferrer' } : {}
+
+function Label({ label, external }: NavLink) {
+	return (
+		<>
+			{label}
+			{external && <ArrowUpRightIcon aria-hidden className="size-3 shrink-0" />}
+			{external && <span className="sr-only"> (opens in a new tab)</span>}
+		</>
+	)
+}
 
 /**
  * The header's links and theme. From `sm` up they sit in a row; below it they
@@ -49,12 +71,23 @@ export default function SiteNav() {
 	return (
 		<>
 			<nav className="hidden items-center gap-4 sm:flex">
-				{LINKS.map(({ href, label }) => (
-					<Link key={href} href={href} className={NAV_LINK}>
-						{label}
+				{LINKS.map(link => (
+					<Link
+						key={link.href}
+						href={link.href}
+						className={NAV_LINK}
+						{...newTab(link.external)}
+					>
+						<Label {...link} />
 					</Link>
 				))}
-				<ThemeToggle />
+				{/*
+					The links' px-2 only shows on hover, so their text sits 8px further
+					apart than the toggle's border sits from its neighbour; this evens it.
+				*/}
+				<div className="ml-2">
+					<ThemeToggle />
+				</div>
 			</nav>
 
 			<button
@@ -100,15 +133,16 @@ export default function SiteNav() {
 				)}
 			>
 				<ul>
-					{LINKS.map(({ href, label }) => (
-						<li key={href} className="border-t">
+					{LINKS.map(link => (
+						<li key={link.href} className="border-t">
 							<Link
-								href={href}
+								href={link.href}
 								onClick={() => setOpen(false)}
-								aria-current={pathname === href ? 'page' : undefined}
-								className="text-muted-foreground hover:text-foreground focus-visible:text-foreground aria-[current=page]:text-foreground flex h-12 items-center text-xs tracking-[0.2em] uppercase outline-none"
+								aria-current={pathname === link.href ? 'page' : undefined}
+								className="text-muted-foreground hover:text-foreground focus-visible:text-foreground aria-[current=page]:text-foreground flex h-12 items-center gap-1 text-xs tracking-[0.2em] uppercase outline-none"
+								{...newTab(link.external)}
 							>
-								{label}
+								<Label {...link} />
 							</Link>
 						</li>
 					))}
