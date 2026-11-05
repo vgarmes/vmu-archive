@@ -22,7 +22,7 @@ export interface GameTab {
  *
  * Keys: the number keys 1-9 pick a tab (not while typing, with a modifier, or
  * with a dialog open); in the tab bar, the arrow keys, Home and End move
- * between tabs, as a tablist does. The key hints are hidden on touch screens.
+ * between tabs, as a tablist does.
  */
 export default function GameTabs({
 	tabs,
@@ -97,7 +97,7 @@ export default function GameTabs({
 			<div
 				role="tablist"
 				aria-label={label}
-				className="flex overflow-x-auto shadow-[inset_0_-1px_0_var(--color-border)]"
+				className="flex gap-1.5 overflow-x-auto pb-0.5"
 				onKeyDown={e => {
 					const i = tabs.findIndex(t => t.id === selected)
 					const to =
@@ -130,28 +130,34 @@ export default function GameTabs({
 							aria-controls={`${base}-panel-${tab.id}`}
 							tabIndex={on ? 0 : -1}
 							onClick={() => setSelected(tab.id)}
-							className={cn(
-								'focus-visible:ring-ring flex shrink-0 items-center gap-2 border-b px-3 py-2 text-xs tracking-[0.2em] whitespace-nowrap uppercase outline-none focus-visible:ring-1',
-								on
-									? 'border-foreground text-foreground'
-									: 'text-muted-foreground hover:text-foreground border-transparent'
-							)}
+							// Two blocks, terminal-style: the key, filled, then the label,
+							// outlined. Selected, both fill with the foreground colour;
+							// hover or keyboard focus fills the key and outlines the label.
+							className="group flex h-[30px] shrink-0 items-stretch text-xs leading-[30px] tracking-[0.05em] whitespace-nowrap uppercase outline-none"
 						>
 							<kbd
 								aria-hidden="true"
 								className={cn(
-									'border px-1 font-mono text-[10px] leading-4 tracking-normal pointer-coarse:hidden',
-									on ? 'border-foreground' : 'border-border'
+									'min-w-[3ch] px-[1ch] text-center font-mono transition-colors duration-[120ms]',
+									on
+										? 'bg-foreground text-background'
+										: 'bg-foreground/30 text-foreground group-hover:bg-foreground group-hover:text-background group-focus-visible:bg-foreground group-focus-visible:text-background'
 								)}
 							>
 								{i + 1}
 							</kbd>
-							<span>
+							<span
+								className={cn(
+									'flex items-center gap-[1ch] px-[1.25ch] ring-1 transition-[background-color,color,box-shadow] duration-[120ms] ring-inset',
+									on
+										? 'bg-foreground text-background ring-foreground'
+										: 'text-muted-foreground ring-foreground/30 group-hover:text-foreground group-hover:ring-foreground group-focus-visible:text-foreground group-focus-visible:ring-foreground'
+								)}
+							>
 								{tab.label}
 								{tab.count !== undefined && (
-									<span className="text-muted-foreground/70">
-										{' '}
-										({tab.count})
+									<span className="tracking-normal normal-case opacity-65">
+										{tab.count}
 									</span>
 								)}
 							</span>
