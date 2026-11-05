@@ -1,0 +1,49 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "resident-evil-code-veronica",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#112200ff",
+		"#330000ff",
+		"#223300ff",
+		"#550000ff",
+		"#334411ff",
+		"#555522ff",
+		"#666633ff",
+		"#777733ff",
+		"#887755ff",
+		"#998855ff",
+		"#aa9966ff",
+		"#000000ff",
+		"#bbaa77ff",
+		"#ccbb88ff",
+		"#ddccaaff"
+	],
+	"frames": [
+		"22222223bffffedbbb9999887531cccc2242257bffefedbaabaa987876551ccc222229ffffeeebba9aa9987776531ccc22227effeeedbabbba997876663331cc4224bbedbeedbabbaaa98986653133cc4226ddebdeeddbbabaa98887655333cc2228eeedbedbbbbaaaa998876553331c2227bbbebbbbbbbaba9788886555331c2248a9beedbbdbdaba998ab97533353c4249bbefdb9bdedabb989dd76633353c224abefa989bdedbdda89ea33763351c222abdabdddbdeeaab989e956763351c4228eabddeebdeeba9879d737853331c4427da77779aadedb9877a616753332c2425ba511336bddbba8878639633532c24227a51eac1bdbbba8889758635312c44425883df85baba99988aa77335322244441ab8556bea88899987763333322224444aa776bfeb689a9897535533322244444bebaaeebb78aa8897665535322244441beee9abab98aaa998655333322224447ffdbe99bbbbaab988656533142222445b76aeb8bedba9aa88657633142242442215bebbabdba77987659753344224444437db88777b86777665d6331242444444453685311787778657d7133242444444443555142177766311531111c244444444422224426532cccccccccccc4244444442ccc22442cccccccccccccc224444444442cc11cccccccccccccccc22444444444422cccccccccccccccccc2242444444442ccccccccccccccccccc"
+	],
+	"animationSpeed": 30,
+	"vmuName": "VERONICA.SYS",
+	"description": "BIO_CV/ｼｽﾃﾑﾃﾞｰﾀ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"biocsys1.VMS",
+			"v12022.VMS",
+			"v22475.VMS",
+			"v33626.VMS",
+			"v52935.VMS",
+			"v61271.VMS",
+			"v62187.VMS",
+			"v81176.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/resident_evil"
+	},
+	"tags": [],
+	"hash": "fb6e15ba034368e40f03e79d38f63f9998560884",
+	"added": "2026-11-05"
+}

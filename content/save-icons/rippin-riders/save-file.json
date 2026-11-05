@@ -1,0 +1,47 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "rippin-riders",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#000000ff",
+		"#888888ff",
+		"#ffeeeeff",
+		"#666666ff",
+		"#ddbbbbff",
+		"#bb5555ff",
+		"#884444ff",
+		"#aa4444ff",
+		"#661111ff",
+		"#990000ff",
+		"#440000ff",
+		"#550000ff",
+		"#880000ff",
+		"#dd0000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"0000000000000000000000000000000000000000000000000000000000000000003000000000000000000000000003002255000000000000000000000000552211723000000000000000000000032711fff23000000000000000000000032ffffff23000000000000000000000032fffff1230000000000000000000000321fff175300000000000000000000003571f1925000000000000000000000000529142530000000000333300000000003524533330000033555555553300000333350003335566777777777777665533300033579cccccccccccccccccccccc9753379ccccccbbcddddddddddcbbcccccc97cbccccccccddddddddddddccccccccbccccccccbcddddddddddddddcbccccccccccccccdddeeeeeeeeeeeedddccccccccccccddddeeeeeeeeeeeeeeddddcccccccccddeeeeeeeeeeeeeeeeeeeeddcccccccdddeeeeeeeeeeeeeeeeeeeedddcccdddddeeeeeeeeeeeeeeeeeeeeeedddddddddeeeeeeeeeeeeeeeeeeeeeeeeddddddddeeeeeeeeeeeeeeeeeeeeeeeedddd8daddeedeeeeeeeeeeeeeeeedeeddad8588addeeeeeeeeeeeeeeeeeeeedda8850358adaadeeeeeeeeeeeeeedaada853000035888aeeeeeeeeeeeeeea88853000000000356aaaaaaaaaaaaaa653000000000000000355666666665530000000000000000000033035530330000000000000000000000000000000000000000000"
+	],
+	"animationSpeed": 30,
+	"vmuName": "Rippin' Riders S",
+	"description": "Rippin' Riders        SYSTEMDATA",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000579.VMS",
+			"v12793.VMS",
+			"v14545.VMS",
+			"v28530.VMS",
+			"v28836.VMS",
+			"v50777.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rippinriders"
+	},
+	"tags": [],
+	"hash": "a79e049df0cfb81889caf15e1c807c49f2aa3fd6",
+	"added": "2026-11-05"
+}

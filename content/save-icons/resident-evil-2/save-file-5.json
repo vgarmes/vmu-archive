@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "resident-evil-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#221122ff",
+		"#000000ff",
+		"#444455ff",
+		"#000044ff",
+		"#001177ff",
+		"#0033ccff",
+		"#1155eeff",
+		"#ddddbbff",
+		"#ccaa77ff",
+		"#665544ff",
+		"#887777ff",
+		"#553311ff",
+		"#885533ff",
+		"#aa7755ff",
+		"#220000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"6666619d8899a90e09b1fff99ddb166666664ccd88878a20ffff0a91ffffe4666664b8878aab20eeefffaaaaefffff666640d7778a99a9effef11e0aaefeef46663c87788aaaabeff102bff0a9bebe466628877779effffff199b2efb9cefbe664988778201ffffffe92f1ff0992fff464cd878992ffbcddb99a9bef0999fff160bc77aa9ffed8888dc9ddcff922ffff6ebd788a1fec888888dbcdd9e201ffef61988779ffbd888888dbc88ce00ffff466d88780fbc8888888dbc88a10effff466c9a7affbd8888888c9d88afeefeff666b1979ffcd888887899d88cff1ecb366613289ff99888878a0ebb99fffd8a6666662dceeb1bd8d9ebe19cd9ffb8826666665bcbcdb99ddccdaa8889fbddc666666661ecdd8dcdddd877777cbddb16666666641d8dddddddd877777dcdbe56666666665a78ddd8ddaa77778ddcee66666666666688dd87dddd87778dcb05666666666666a78dd8dcdd88888ddb566666666666666888ddcdd888888dcc456666666666666a7788cddaddd8dcb030e6666666666666a7dccddcddd8dcc330e46666666666666778ddcdddd8dcb330b26666666666664877cccddd8dcc3300b266666666660aaa87788d88dcc233000266666666099979287888ddbb033220292466222999aa7a40ccccbee334222299030999922a9aa8230eee13332922299203220002999aa7723000432a9222299204"
+	],
+	"animationSpeed": 15,
+	"vmuName": "RESIDENT EVIL2",
+	"description": "RE2/ART/Control Room2",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v4864.VMS",
+			"v64640.VMS",
+			"v82929.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
+	},
+	"tags": [],
+	"hash": "a0a945c5e2c2057d547908a28826de1cc4709b6b",
+	"added": "2026-11-05"
+}

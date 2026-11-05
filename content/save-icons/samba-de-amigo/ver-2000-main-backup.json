@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Ver. 2000 main backup",
+	"gameId": "samba-de-amigo",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#ffffffff",
+		"#cc8844ff",
+		"#ee8811ff",
+		"#995500ff",
+		"#ffcc77ff",
+		"#442200ff",
+		"#ffee88ff",
+		"#aa8800ff",
+		"#aaaa99ff",
+		"#ffff99ff",
+		"#ffff00ff",
+		"#66bb00ff",
+		"#55cc00ff",
+		"#66ff00ff",
+		"#11bbeeff"
+	],
+	"frames": [
+		"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeec46666666666664ceeeeeebbbbeeed6683333333333333366deeeebbbbeed633333333333333333336deeebbbbee63334444333333444444336deebbbbe4333457754333345777754334eebbbbe6334777775433357777777436cebbbbd634777777743347777777754666666666457777777433477777777746333443364777777774334777777777463333333647774577743347777547774643333346477756777544577776577746743334754524726777777777625425467433347547756666775557766665774654333455457752666733376662577546433733446252466666aaa666664252463ff733336497777777333777777794463ff366666419999999999999999914466666bbee64591191191119119119546deebbbbeed8491191191119119119446eeebbbbeeed84229559555955922446deeebbbbeeeed86666666666666664deeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb",
+		"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeed46666666666664deeeeeebbbbeeed6643333333333333366deeeebbbbeed633333333333333333336deeebbbbee63334444333333444444336deebbbbe4333457754333345777754334eebbbbe6334777775433357777777436debbbbd6347777777433477777777546666666664577999974334779999777463334433647751111543347511115774633333336477911f194334791f11977464333334647791ff195445791ff1977467433347547791f61977777916f1977467433347547791f61977777916f1977465433345545791ff197777791ff197546433733446275111157777751111572463ff733336497555577333775555794463ff366666419999999999999999914466666bbee64591191191119119119546deebbbbeed4491191191119119119446eeebbbbeeed44229559555955922446deeebbbbeeeed46666666666666664deeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbeeeeeeeeeeeeeeeeeeeeeeeeeeeebbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+	],
+	"animationSpeed": 30,
+	"vmuName": "ﾒｲﾝﾊﾞｯｸｱｯﾌﾟﾃﾞｰﾀ",
+	"description": "サンバＤＥアミーゴVer2000 メイン",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SAMBAV2K.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/samba"
+	},
+	"tags": [],
+	"hash": "c56f8e0d4a7725b431072d85d291f012ddb9dd8b",
+	"added": "2026-11-05"
+}

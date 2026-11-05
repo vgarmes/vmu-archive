@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "razor-freestyle-scooter",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#330000ff",
+		"#333333ff",
+		"#334444ff",
+		"#550000ff",
+		"#442222ff",
+		"#660000ff",
+		"#663333ff",
+		"#666666ff",
+		"#778888ff",
+		"#aa1111ff",
+		"#995555ff",
+		"#dd1111ff",
+		"#ee5555ff",
+		"#888888ff",
+		"#ff9999ff"
+	],
+	"frames": [
+		"0000000000001577775100000000000000000000007bfffffffffb1000000000000000007fffdddffffffffb100000000000001dfddddddddddddddfd5000000000005ddddccccccccccccdddd70000000004ddccccccccccccccccccdd700000001ddccccccccddddccccccccdd5000000accccccccdeeeeeedcccccccdd100006cccccccde99999999edccccccdb0000cccccccd999999899999bcccccdd1004ccccccc99983398838999bcccccd700accccccb9983339e8338999ccccccd00ccccccc9998333998333999bcccccd11ccccccb98889889983888998cccccd74ccccccb99e99999999999998cccccc74cccccc888888998398883898cccccca4ccccccb88333399893333888cccccca4ccccccb88333899998333888cccccc61ccccccc88838988388883988cccccc60acccccc8899988338889e88bcccccc10accccccb888888223888888cdcccca006cccccdd78889823388883dddcccca001accccddd788889998883bddccccc10006cccccdddb388888838dfdccccca00000acccccdffdbb888bdfffcccccc1000001acccccdffffffffffdcccccc400000004cccccccddffffddccccccc60000000004accccccccccccccccccc6000000000001accccccccccccccccc6000000000000016accccccccccccca1000000000000000016acccccccca6100000000000000000000014666661000000000000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "GAME INFO",
+	"description": "Freestyle Scooter",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v47428.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/razor"
+	},
+	"tags": [],
+	"hash": "cc8dc57bc6e5fa71d6753805ca115ed88eec82e6",
+	"added": "2026-11-05"
+}

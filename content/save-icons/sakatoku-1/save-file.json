@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "sakatoku-1",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ffffeeff",
+		"#ffeeccff",
+		"#ffccaaff",
+		"#eeaa77ff",
+		"#aaaaaaff",
+		"#dd7755ff",
+		"#cc4433ff",
+		"#119900ff",
+		"#555555ff",
+		"#bb1111ff",
+		"#990000ff",
+		"#990000ff",
+		"#880000ff",
+		"#441111ff",
+		"#001100ff"
+	],
+	"frames": [
+		"0299999000999992000000000000000009fffff002fffff2000000000000000005f888f00ef888f2000000000000000009f888f00ff888f5012222222100000000f888f09f888feefefefe223333200000f888f2ff888ffff8fffff1127bbb6000f888f9f888fff8888888f9217bccda00f888fff888ff888f8888f90116bbbd00ff88ff888ff888ffff8ff900116bbc00f888ff888ff8888ffffef5001126bc00ef888f88ffff888888fff00001127c00ff88f888ffefff888888f000011237009f888888fffffffff888f000012331009f88888ffff88ffff888f000012322009f88888f2f8888f8888ff000022211001f8888ff0ff8888888ff9000112212003ffffff509fffffffff90001111122004e999990000999999202466777312301432221100000000000016aabbba12302442222110000000012026aabbbb3230363332111100000004427aabbbbca13046433222111000000777abbbbbbcb33046433322121111102aaabbbbbbbcd730664a7332221211213abbbbbbbbccda3077bca433222222217bbbbbbbccccdc406bddca4333323232abbbbbbcccccdd704dddcba433343432accbccccccddda403cdddcb74444432227cdcccccddda2400bddddcb74332223216bdddcddd734600addddddb33333333323acdddc63467004dddddda4443444443336bdb43467a000bddddda44444444444444744667aa"
+	],
+	"animationSpeed": 5,
+	"vmuName": "ｻｶﾄｸ ｸﾗﾌﾞ ｼﾞｭﾗｰﾚ",
+	"description": "ｻｶﾄｸ ｸﾗﾌﾞ ｼﾞｭﾗｰﾚ171/12/3A",
+	"source": {
+		"kind": "save",
+		"files": [
+			"TEDAH1_1.VMS",
+			"TEDAH1_2.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakato1"
+	},
+	"tags": [],
+	"hash": "b13b8647046021c54cd5cec55109682b09fabb25",
+	"added": "2026-11-05"
+}

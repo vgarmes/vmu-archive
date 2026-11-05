@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "resident-evil-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#221122ff",
+		"#000000ff",
+		"#444455ff",
+		"#000044ff",
+		"#001177ff",
+		"#0033ccff",
+		"#1155eeff",
+		"#ddddbbff",
+		"#ccaa77ff",
+		"#665544ff",
+		"#887777ff",
+		"#553311ff",
+		"#885533ff",
+		"#aa7755ff",
+		"#220000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"6661bdd99fff1b90e09a9988d9166666664effff19a0ffff02a87888dcc4666666fffffeaaaafffeee02baa8788b466664feefeaa0e11feffe9a99a8777d046664ebeb9a0ffb201ffebaaaa88778c3666ebfec9bfe2b991ffffffe97777882664fff2990ff1f29effffff102877889461fff9990feb9a99bddcbff299878dc46ffff229ffcdd9cd8888deff9aa77cb06feff102e9ddcbd888888cef1a887dbe64ffff00ec88cbd888888dbff977889164ffffe01a88cbd8888888cbf08788d666ffefeefa88d9c8888888dbffa7a9c6663bce1ffc88d998788888dcff9791b6666a8dfff99bbe0a87888899ff982316666288bff9dc91ebe9d8db1beecd26666666cddbf9888aadccdd99bdcbcb566666661bddbc777778ddddcd8ddce1666666665ebdcd777778dddddddd8d14666666666eecdd87777aadd8ddd87a5666666666650bcd87778dddd78dd8866666666666665bdd88888ddcd8dd87a66666666666654ccd888888ddcdd888666666666666e030bcd8dddaddc8877a666666666664e033ccd8dddcddccd7a6666666666662b033bcd8ddddcdd87766666666666662b0033ccd8dddccc77846666666666662000332ccd88d88778aaa0666666664292022330bbdd88878297999066666630992222433eebcccc04a7aa9992226630299222923331eee0328aa9a22999904029922229a2340003277aa999200022"
+	],
+	"animationSpeed": 15,
+	"vmuName": "RESIDENT EVIL2",
+	"description": "RE2/AEB/Scenario 2nd",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v46465.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
+	},
+	"tags": [],
+	"hash": "f7aab12d376878555abdc77e2d88adf37e5dfb4f",
+	"added": "2026-11-05"
+}

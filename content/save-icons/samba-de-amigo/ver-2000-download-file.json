@@ -1,0 +1,57 @@
+{
+	"kind": "save",
+	"title": "Ver. 2000 download file",
+	"gameId": "samba-de-amigo",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffaabbff",
+		"#ff2244ff",
+		"#11cc55ff",
+		"#ffffffff",
+		"#44cc55ff",
+		"#66ff00ff",
+		"#55ee00ff",
+		"#55cc00ff",
+		"#66ee11ff",
+		"#447722ff",
+		"#558822ff",
+		"#ffff00ff",
+		"#ffff55ff",
+		"#ff8833ff",
+		"#442222ff",
+		"#000000ff"
+	],
+	"frames": [
+		"bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb55556aeeeeeea655555555555555bbbb5557ee1111111ea5555555555555bbbb557e11111ddcc8ae655555555555bbbb55ae1111cc3332a1e65555555555bbbb55e111dc423332411e5555555555bbbb55e11dcaa2243421119555555555bbbb55e1dc2211a22221139655555555bbbb55e1c34211112221133955555555bbbb55ec3332a1111a2a103e55555555bbbb55ac33324110111cccde75555555bbbb55a4243221133dcd111e75555555bbbb557ea2222110cd11111195555555bbbb555911422adcd111111195555555bbbb5557e11144c11111111e75555555bbbb555593011cd11111111e65555555bbbb55556933cd111111111a55555555bbbb555556e3c1111111111e65555555bbbb55555569e11111111111a5555555bbbb5555555579eeeeee11111a555555bbbb555555555567aaaa11111e755555bbbb5555555555555556e11111e75555bbbb55555555555555557e11111e6555bbbb555555555555555557e11111e555bbbb555555555555555555ae1111ea55bbbb5555555555555555555e11111e55bbbb55555555555555555556e1111e55bbbb555555555555555555557e11ee55bbbb5555555555555555555557eee755bbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbbb"
+	],
+	"animationSpeed": 0,
+	"vmuName": "ﾀﾞｳﾝﾛｰﾄﾞﾃﾞｰﾀ",
+	"description": "サンバＤＥアミーゴVer2000 DL",
+	"source": {
+		"kind": "save",
+		"files": [
+			"MUSIC_01.VMS",
+			"MUSIC_02.VMS",
+			"MUSIC_03.VMS",
+			"MUSIC_04.VMS",
+			"MUSIC_05.VMS",
+			"MUSIC_06.VMS",
+			"MUSIC_07.VMS",
+			"MUSIC_08.VMS",
+			"MUSIC_09.VMS",
+			"MUSIC_10.VMS",
+			"MUSIC_11.VMS",
+			"MUSIC_12.VMS",
+			"MUSIC_13.VMS",
+			"MUSIC_14.VMS",
+			"MUSIC_15.VMS",
+			"v99674.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/samba"
+	},
+	"tags": [],
+	"hash": "c7b1b142912833b5c3fb3b4b6f449c94e8fe7686",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,61 @@
+{
+	"kind": "save",
+	"title": "Main backup",
+	"gameId": "samba-de-amigo",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#11bbeeff",
+		"#ddffffff",
+		"#ffff00ff",
+		"#cccc00ff",
+		"#bbbb00ff",
+		"#ffff99ff",
+		"#aaaa99ff",
+		"#ffee88ff",
+		"#ffcc77ff",
+		"#442200ff",
+		"#bb6600ff",
+		"#885500ff",
+		"#ee8811ff",
+		"#cc8844ff",
+		"#ff6600ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee2222222222222222222222222222eeee2222222222222222222222222222eeee2222222222222222222222222222eeee2222222222222222222222222222eeee2222224b999999999999b4222222eeee222399bcccccccccccccc9932222eeee2239ccccccccccccccccccc93222eeee229cccaaaaccccccaaaaaacc9322eeee2bccca8778acccca877778accb22eeee29cca777778accc87777777ac942eeee39ca7777777acca777777778a999999999a87766667acca776666777a9cccaacc9a778ffff8acca78ffff877a9ccccccc9a776f10f6acca76f01f677a9bcccccb9a776f00168aa876100f677a97bcccb78a776f0916777776190f677a97bcccb78a776f0916777776190f677a98bcccb88b876f0016777776100f678b9bcc7ccbb9d78f11f8777778f11f87db9c007cccc9b67888877ccc77888876ba9c00c99999bf66666666666666666fba99999ee229a86ff6ff6fff6ff6ff68a9322eeee223ba6ff6ff6fff6ff6ff6ab9222eeee2223badd68868886886ddab93222eeee22223b999999999999999b322222eeee2222222222222222222222222222eeee2222222222222222222222222222eeee2222222222222222222222222222eeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+	],
+	"animationSpeed": 0,
+	"vmuName": "download",
+	"description": "SAMBADEAMIGO DOWNLOAD",
+	"source": {
+		"kind": "save",
+		"files": [
+			"MUSIC001.VMS",
+			"MUSIC002.VMS",
+			"MUSIC003.VMS",
+			"MUSIC004.VMS",
+			"MUSIC005.VMS",
+			"MUSIC006.VMS",
+			"MUSIC007.VMS",
+			"MUSIC008.VMS",
+			"MUSIC009.VMS",
+			"SAMBAUSA.VMS",
+			"sambajp1.VMS",
+			"v12556.VMS",
+			"v13812.VMS",
+			"v15984.VMS",
+			"v35525.VMS",
+			"v39888.VMS",
+			"v53877.VMS",
+			"v66472.VMS",
+			"v78463.VMS",
+			"v8053.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/samba"
+	},
+	"tags": [],
+	"hash": "918d89c3c9bfb4b8ff5fd0e16874da1fe5a5bcd8",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "102-dalmatians-puppies-to-the-rescue",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#118855ff",
+		"#228855ff",
+		"#117733ff",
+		"#229944ff",
+		"#559966ff",
+		"#227733ff",
+		"#448855ff",
+		"#229944ff",
+		"#88aa88ff",
+		"#bbbbaaff",
+		"#999988ff",
+		"#443322ff",
+		"#665544ff",
+		"#554433ff",
+		"#776655ff",
+		"#665544ff"
+	],
+	"frames": [
+		"310013371133333131223377310001111100111110111111122224733311333311000000000177106eddde87777333113100000000013305edcffc9477731101331000000022112edcffefa8333111013311100fddfe125cdfeecfe973111113331105cdfcfe422cffffffea6111331311112edfeffe82dfefefefea6102113331106dfffeffa2dfefcffffa1255663331126bffeeefa2cfffffffe825cdc9633132bbeffffea22ffeefcfa25dcfee871110bcffffce822cfeefea35bcffee911010bbfffeea42222eee862ddffffe9110000bfffea422222446325ceeefce9100000effea625cccfe8622bdeefffe910000008842222bdddbbe32dcfeeffa900000113222cddccfffcf82cffeeee980100112222ddffeeeeffce62fffcea971311122eddcffefeffffffa36eeea947333122bbddfefffcffffffe82488847773322bbdfffefffffcfcfffa4213377771122bdffffeecfeffffcccea111377773322bdeeffeefffeeefffffe901777773322cfffceecffccffffefce961773333372ecfffefdfffffffffcfa9617333377722ddffefffcffffcffffa96373337777722ccfffeefeececcfeea917737777737774afffffcffcfffeaa9801137333311777748edccfefeeaa99811337111311117377348888888888473377331013310013773111733331100337333100131000137333333333111113733100011"
+	],
+	"animationSpeed": 1,
+	"vmuName": "(C) 2000 Disney",
+	"description": "102 Dalmatians Game Data",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v82937.VMS",
+			"v90561.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/puppies"
+	},
+	"tags": [],
+	"hash": "2d6810920ee0428cc0ff385dd4bc91f494a5cf38",
+	"added": "2026-11-05"
+}

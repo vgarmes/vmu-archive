@@ -1,0 +1,61 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "record-of-lodoss-war",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffff99ff",
+		"#ffff44ff",
+		"#aaaa88ff",
+		"#666666ff",
+		"#666644ff",
+		"#555533ff",
+		"#443322ff",
+		"#333322ff",
+		"#443311ff",
+		"#443311ff",
+		"#333311ff",
+		"#0011ffff",
+		"#222200ff",
+		"#111100ff",
+		"#110000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"bbbbb7555555555444433333345bbbbbbbb75555555555554554444333345bbbbb755a444444caaaaaaaaaaaa53345bbbc55c7e11111fffffffffffffaa5345bbc5cff6d01fffdddddd5dddddffa533bfccafddd01fdddddddacdddddddfa535ffaaddd601fddddddd4ddddddddfa533ffafddd611fddddddddaddddddddfa34ffacdd661fdddddddddfddddddddfa44ffa7dd601fddddd666cd5addddddfa44ffa5dd611fdddd661fddd4ddddddfa44ffa5d661fdddd661ffdddd5adfddfa45ffa5661fddd66601fdddddd5ddddfa45ffa2611111100011fdddddddac5dfa57ffa21fffef11111ffdddddddddddfa57ffa6ffddddffddddddddddddddddfa45ffa5dddddddddaaaa9dddddddd66ec55ffa5dddfdd66611111fd66ddd6611f55ffa5ddd5d6601ff11fdd61ddd6101f45ffa5dddda601fdd11fdd61efd6d01f55ffa5ddddf601fdd01dd8111fddd1ff55ffa5ddddae11dd801dd6111dd661fa55ffa5ddddd411dd601da1f01dd61ffa55ffa4ddddd6fa1dd01d1fd01dd1fffa57ffa4dddddddffdd01a1fd01dd1fdfa77ffca5dddddfaddd111fdd01d1fffaa7cfffa4ddddd5cad611ffdd111ffcfaccfbffca45ddddafd611fdd8d1ffffacffbbfffcaa444444421ff54551f5aacfffbbbffffcaaaaaaacffaaaacffacffffbbbbbffffffffffffffffffffffffffbbbbbbbfffffffffffffffffffffffbbbbb"
+	],
+	"animationSpeed": 0,
+	"vmuName": "ﾛｰﾄﾞｽﾄｳｾﾝｷ",
+	"description": "ロードス島戦記　邪神降臨",
+	"source": {
+		"kind": "save",
+		"files": [
+			"lodoss.VMS",
+			"lodoss2.VMS",
+			"v19236.VMS",
+			"v24693.VMS",
+			"v26462.VMS",
+			"v28475.VMS",
+			"v42073.VMS",
+			"v43391.VMS",
+			"v44020.VMS",
+			"v4477.VMS",
+			"v50206.VMS",
+			"v51717.VMS",
+			"v57702.VMS",
+			"v5828.VMS",
+			"v66639.VMS",
+			"v68838.VMS",
+			"v70065.VMS",
+			"v7288.VMS",
+			"v86585.VMS",
+			"v95669.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/reclodoss"
+	},
+	"tags": [],
+	"hash": "cf30ea55af2b77bef02617d59c3847772e7bb246",
+	"added": "2026-11-05"
+}

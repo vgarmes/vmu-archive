@@ -1,0 +1,49 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "railroad-tycoon-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#111111ff",
+		"#333333ff",
+		"#444444ff",
+		"#555533ff",
+		"#665555ff",
+		"#666666ff",
+		"#777777ff",
+		"#777744ff",
+		"#777777ff",
+		"#888866ff",
+		"#888888ff",
+		"#998877ff",
+		"#999999ff",
+		"#bbbbbbff",
+		"#bbaa77ff",
+		"#eedd88ff"
+	],
+	"frames": [
+		"ddddddddddd0000000000ddddddddda4ddaaaacccccddddddddddaccccaaaa40cac84556665cccccccccc4566556c820ccd82456654586566558658b655cd810ca812bbeee96ebeeeeee59ffe5488100c821fffffff6effffffb2ffff7542110da44effffffbbffffff79ffefb254420dc555fe777fe9b7ee777ef10ef155520dc666f7122bf172ee092b704ef066620dc666f7266ef056ee1668726ef056620dc666f7266ef066ee1666646ef045620ddc56f7268ff066ee1656656fe0566200dc45ffffffb066ee154566efb1662200dc56ffffff7166ee165669ff31662000dc66fffff70266ee16668ffe04662000dc56f703f32666ee1666eff116662000dc45f726f74666ee1669ff3056652000dc45f726ee2666ee166ef70466542000dc56f726ef1666ee166ef37bbf652000dc66f7269f7566ee166fffffff262000dc6ef7266fb266ee166fffffff262000dc5ffb266fff66ff166ffffffe26220dc566401666016660166b00000726520dc68bbbbbbbbb66bb866b9bbbbb46620dc6bffffffffe66ffb96ffffffe65620dc5969b689b6666666666b6969664520da59ffffffffb66ffe66fffffff32420cac82000000004200046000000008820ccd824566666566545666666655cd810ca811456666222222222226665488100a410122222200000000000222222100020000000000000000000000000000000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "RAILROADTYCOON2",
+	"description": "Railroad Tycoon II",
+	"source": {
+		"kind": "save",
+		"files": [
+			"RTYCOON2.VMS",
+			"v1995.VMS",
+			"v21001.VMS",
+			"v21051.VMS",
+			"v42242.VMS",
+			"v43042.VMS",
+			"v95539.VMS",
+			"v96298.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/railroadtycoon2"
+	},
+	"tags": [],
+	"hash": "6bc705d52dbfba30f47a9c25d55724930f320370",
+	"added": "2026-11-05"
+}

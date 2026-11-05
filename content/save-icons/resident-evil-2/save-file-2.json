@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "resident-evil-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#dd4444ff",
+		"#dd5566ff",
+		"#554433ff",
+		"#333333ff",
+		"#000011ff",
+		"#002244ff",
+		"#445566ff",
+		"#889988ff",
+		"#ccbbaaff",
+		"#443311ff",
+		"#997766ff",
+		"#221100ff",
+		"#bb9988ff",
+		"#000000ff",
+		"#775544ff",
+		"#000000ff"
+	],
+	"frames": [
+		"00005632a88ca2bf493922664ddddddd00567ceec88caae222eee634ddddddd402788aec88c8cae2e2bdb4ddddd4ddd4058879ba8caac86b92229dfddb44dddde7873fdbecc2e772999e94dd4b4dddd467c3ffbbd3c72922ee233234ddddddd43caffba299eaa299344bddd4ddd4ddd438effecaeaeee63b44444fddddddddd46c3fde8caaaaae3bdd444ffdddddddddacff9c88aacccce29bddffffffdddddd6eff2888caac888c2e944ffffd29fdd43effa888ccaeeaacccca3dff3c882fd43effa88cce992eacc888adffa888efff03b4eaccce9233ac8888c9ffeccceffd0363522ccaee649ac88882ff6aaceff20050066ccaaacaaccc8882ffeac8bff200000788cccc8888ccc88adfea29ff4000000888ccc888888ccc8adf92dfffe00000078caccc8888cccc8abd2a9ff400000006caeaacc88ccccc8addaceff0000000008caaaccccccccccab9aceff000000000788aaaccccccccca99aca4000000000068ceeeaaccccccca9eaca3000000000006887aacccccccca2accce5000000000007ceaccccccccaaec8cca5300000000006888cccccccaacac888c5d93000000000788ccccccaaccac8cce4fbe00000000067cccaaaaacccc88abfff2e0000000000532345eaac8c88efffdae900000000000000e32ac88ceffff9ae9900000000000000699accedfffdea2999000000000000e6ab9e62dffffea29992"
+	],
+	"animationSpeed": 15,
+	"vmuName": "RESIDENT EVIL2",
+	"description": "RE2/OET/Dark Room",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v23708.VMS",
+			"v8790.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
+	},
+	"tags": [],
+	"hash": "1e13c7152af369407490fa212ce74384fab562bd",
+	"added": "2026-11-05"
+}

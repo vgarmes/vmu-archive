@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "resident-evil-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ff00ffff",
+		"#00ffffff",
+		"#007777ff",
+		"#00ff00ff",
+		"#007700ff",
+		"#ffff00ff",
+		"#777700ff",
+		"#ff0000ff",
+		"#770000ff",
+		"#ffffffff",
+		"#bbbbbbff",
+		"#777777ff",
+		"#000000ff",
+		"#ccccccff",
+		"#228888ff",
+		"#4422ccff"
+	],
+	"frames": [
+		"ccccccccccccccccccccccccccccccccccccccccccccccc8c8cc8cccccccccccccccccccccc4c28c8cccc88ccccccccccccccccccccc4cc8c8ccccc8ccccccccccc88ccccccccc8c7cc4ccccccccccccccccc8ccc22bc8c787ccbccccc8cccccc882cccccc2cc878788cc4ccc8c28cccc2b41cc4cccc8787876c6ccccccb2ccc8b83cccccc8875757586868ccccccc2c243cccc8887b7b5757578768ccccc48c24cccc8787b7b77cc505767678cccccc82ccccc88b7b7b8cc850505767ccccccccccc8cb78b7b58cc8a5057578c8ccccccc8c8cc7b7b5a8cc85a57505cc78ccccc8c768cc5b5a58cc8a595057c8678ccccc8876b7b5b598c87595950c8578ccccc8c7677b7b5a58c87999508057678ccccc8687b7b5b598c8759595050b78ccccc8c858587b5b58cc8a5a5a5a57678ccccc86877785b5b8cc85a5a505ab78ccccc8c87858575858cc8a5a5050578ccccccc8687857885b8cc8505a57c7b78ccccccc86857875b58cc87575a5c87bccccccccc868c757578cc85757575c8ccccc82cccc8c88b5758cc87575787ccccccc88cccccccb87587cc77757c888cccccc8ccccccc8c88878887877c8c8cccc2ccccc84cccc8c8c8c8c8c8c8c8cccc4bcccccc81cccc8c8c8c8c8c8cccc3ccccccccccc41ccccccccccccccccc4bc8ccccccccc88438c2cccccccc2cc48ccc8ccccccccc82848c22cccc244818bccccccc"
+	],
+	"animationSpeed": 15,
+	"vmuName": "RESIDENT EVIL2",
+	"description": "RE2/SYSTEM",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v26878.VMS",
+			"v68066.VMS",
+			"v82450.VMS",
+			"v83992.VMS",
+			"v85972.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
+	},
+	"tags": [],
+	"hash": "3c29148a54500a954d43d8fce5781873fea27fdd",
+	"added": "2026-11-05"
+}

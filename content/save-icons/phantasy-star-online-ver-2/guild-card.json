@@ -1,0 +1,57 @@
+{
+	"kind": "save",
+	"title": "Guild card",
+	"gameId": "phantasy-star-online-ver-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ff8888ff",
+		"#ee6677ff",
+		"#eeccbbff",
+		"#112299ff",
+		"#111155ff",
+		"#3344aaff",
+		"#4455bbff",
+		"#223366ff",
+		"#ddddffff",
+		"#4466aaff",
+		"#5577ccff",
+		"#335588ff",
+		"#aabbffff",
+		"#6688ddff",
+		"#777788ff",
+		"#000000ff"
+	],
+	"frames": [
+		"47777777777774444444444444444444bdddddddddddaaaaaaaa6666666666677a5555555553333333333333333333347d6666666666522a5555533333333334bcdaaaaaaaaa2002a6666666655555577d999555555200002a333333333333347caaaa666620000002a5555533333334bcddddaaa2000000102a6666666655577d999999200000011108a33333333334bcaaaaa20000001111102a5555533334bcdddd2000000111111108a6666666577daa9b1000001111112ccc8333333334bcdddb11000111102cccccc8555555349cddd941100002888ceecccc866666677daaa99411028888ceeeecccc8333334bcdddda940288888eeeeeecccd555554bcdddddd94c8888eeeeeeeccd49966677daaaaa9994c888eeeeeeccd47333334bcddddddaa94c88ceeeeccd4755555549cddddddddd94c88ceeccd47666666677daaaaaaa99994c88cccd47733333334bcdddddddddaa94ccccd4755555555549cdddddddddddd94dcd4799aaaaaaaa77daaaaaaaaaa999b4db7bbbb55555554bcddddddddddda74444477b6666666649cddddddddda744444444477baaaaaa77daaaaaaa97444444444444477555554bcddddd9b77777777777777bbb6666649cddddabbbbbbbbbbbbbbbaaaaaaaaa77daaaaa9bbbbbbbbbb555555555555547a99999999999999996666666666666444444444444444444444444444444444"
+	],
+	"animationSpeed": 1,
+	"vmuName": "PSO/GUILD_CARD",
+	"description": "PSO/GUILD_CARD",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v14517.VMS",
+			"v1944.VMS",
+			"v24089.VMS",
+			"v31234.VMS",
+			"v38041.VMS",
+			"v39598.VMS",
+			"v42979.VMS",
+			"v58812.VMS",
+			"v62157.VMS",
+			"v6305.VMS",
+			"v65002.VMS",
+			"v66518.VMS",
+			"v68323.VMS",
+			"v75359.VMS",
+			"v84436.VMS",
+			"v85560.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/pso2"
+	},
+	"tags": [],
+	"hash": "e3356ac87180f7b20852c5a21ca8c572d2e743b5",
+	"added": "2026-11-05"
+}

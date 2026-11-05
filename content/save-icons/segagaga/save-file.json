@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "segagaga",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#000011ff",
+		"#001122ff",
+		"#002222ff",
+		"#002233ff",
+		"#003344ff",
+		"#003344ff",
+		"#003355ff",
+		"#004466ff",
+		"#005577ff",
+		"#005577ff",
+		"#005588ff",
+		"#006688ff",
+		"#33aaeeff",
+		"#bbddeeff",
+		"#ffffffff"
+	],
+	"frames": [
+		"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccdddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddffffffdfffffffdfffffffdfffffffdffeeeeedffeeeeedffeeeeedffeeeeedfeddddddfeddddddfeddddddfeddddddfeddcccdfeddcccdfeddcccdfeddcccdefedddcdfeddddddfeddddddfedddddddeefedddfedffeddfedffeddfedffedcdddefeddfedefeddfedefeddfedefedcccddfeddfeddfeddfeddfeddfeddfeddddddfeddfeddfeddfeddfeddfeddfedffffffeddfffffeddfffffeddfffffedeeeeeedddeeeeeeddeeeeeeddeeeeeeddddddddddddddddddddddddddddddddddddddddcddddddddddddddddddddddddcccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ｾｶﾞｶﾞｶﾞ ｾｰﾌﾞﾌｧｲﾙ",
+	"description": "セガガガ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SEGAGAG2.VMS",
+			"SEGAGAGA.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/segagaga"
+	},
+	"tags": [],
+	"hash": "9a74bee652793fa071a172e4c39f26fb6b6a01e4",
+	"added": "2026-11-05"
+}

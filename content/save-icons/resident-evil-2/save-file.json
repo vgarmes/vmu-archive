@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "resident-evil-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#1155eeff",
+		"#dd5566ff",
+		"#554433ff",
+		"#333333ff",
+		"#000011ff",
+		"#002244ff",
+		"#445566ff",
+		"#889988ff",
+		"#ccbbaaff",
+		"#443311ff",
+		"#997766ff",
+		"#221100ff",
+		"#bb9988ff",
+		"#000000ff",
+		"#775544ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ddddddd466229394fb2ac88a236500004ddddddd436eee222eaac88ceec765004ddd4ddddd4bdb2e2eac8c88cea88720dddd44bddfd92229b68caac8ab9788504dddd4b4dd49e999277e2ccebdf3787e4ddddddd432332ee22927c3dbbff3c764ddd4ddd4dddb443992aae992abffac34dddddddddf44444b36eeeaeaceffe83dddddddddff444ddb3eaaaaac8edf3c6ddddddffffffddb92eccccaa88c9ffca4ddf92dffff449e2c888caac8882ffe64df288c3ffd3accccaaeeacc888affe3fffe888affda888ccae299ecc88affe3dffeccceff9c8888ca3329ecccae4b302ffecaa6ff28888ca946eeacc22536302ffb8caeff2888cccaacaaacc660050004ff92aefda88ccc8888cccc887000000efffd29fda8ccc888888ccc88800000004ff9a2dba8cccc8888cccac8700000000ffecadda8ccccc88ccaaeac600000000ffeca9baccccccccccaaac800000000004aca99acccccccccaaa88700000000003acae9acccccccaaeeec860000000005eccca2accccccccaa788600000000035acc8ceaaccccccccaec70000000039d5c888cacaaccccccc888600000000ebf4ecc8caccaacccccc887000000000e2fffba88ccccaaaaaccc760000000009eadfffe88c8caae543235000000000099ea9ffffec88ca23e000000000000009992aedfffdecca9960000000000000029992aeffffd26e9ba6e000000000000"
+	],
+	"animationSpeed": 15,
+	"vmuName": "BIOHAZARD2",
+	"description": "ＢＨ２／ＡＥ裏／シナリオ　２ｎｄ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"bio20001.VMS",
+			"v18712.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
+	},
+	"tags": [],
+	"hash": "227e8730273ed384c9301a18890cea82ba26565b",
+	"added": "2026-11-05"
+}

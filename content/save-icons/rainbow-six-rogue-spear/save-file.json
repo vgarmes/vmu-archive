@@ -1,0 +1,54 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "rainbow-six-rogue-spear",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#880000ff",
+		"#008800ff",
+		"#888800ff",
+		"#000088ff",
+		"#880088ff",
+		"#008888ff",
+		"#888888ff",
+		"#ccccccff",
+		"#ff0000ff",
+		"#00ff00ff",
+		"#ffff00ff",
+		"#0000ffff",
+		"#ff00ffff",
+		"#00ffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"ccccccc678fffccccccccccccccccccccccccc777667ffccccccccccccccccccccccc77600067ffccccccccccccccccccccc67600000688ccccccccccccccccccccc76000000078fccccccccccccccccccc6780000000688ccccccccccccccccccc6780000000678ccccccccccccccccccc6780000000678ccccccccccccccccccc6780000000677ccccccccccccccccccc6780000000777cccccccccccccccc6cc6770000006777fccccccccccccccc66067600000077778fffcccccccccccc660667600006776777778fcccccccccc6008f660006777600767778ccccccccc00778866087776000076767fcccccccc077788667877600000066777cccccccc7778647f76600000060676778ccccccc77766477ff000000777067678ccccccc7776484778800006677766777ccccccc77746684770f0066767766678ccccccc677446684006ff66676766677ccccccc66766467006666ff667770f67ccccccc4666664006f00666f777740f7ccccccc46666660006f77006ff76607cccccccc7467666600607777066ff007cccccccc764776766777777770066ffccccccccc76687777777677777600666ffccccccc767678788887767776000066fffccccc77676666666677777607660068008ccc777676687887777766767ccc00000ccc77776767777777006767ccccc8008ccc7777766676777006767ccccccccccccc"
+	],
+	"animationSpeed": 0,
+	"vmuName": "Campaign Info",
+	"description": "ROGUE SPEAR",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v20049.VMS",
+			"v32645.VMS",
+			"v38922.VMS",
+			"v41423.VMS",
+			"v43123.VMS",
+			"v47137.VMS",
+			"v56798.VMS",
+			"v67810.VMS",
+			"v68861.VMS",
+			"v91854.VMS",
+			"v95448.VMS",
+			"v96528.VMS",
+			"v99068.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rsrogue"
+	},
+	"tags": [],
+	"hash": "69c59bd4f1ee79ec5679204cfb55e07c42dbcfcf",
+	"added": "2026-11-05"
+}

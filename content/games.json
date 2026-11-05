@@ -1,4 +1,7 @@
 {
+	"102-dalmatians-puppies-to-the-rescue": {
+		"name": "102 Dalmatians: Puppies to the Rescue"
+	},
 	"18-wheeler-pro-american-trucker": {
 		"name": "18 Wheeler: Pro American Trucker"
 	},
@@ -94,6 +97,9 @@
 	"capcom-vs-snk-millennium-fight-2000": {
 		"name": "Capcom vs SNK: Millennium Fight 2000"
 	},
+	"cardcaptor-sakura-tomoyo-no-video-daisakusen": {
+		"name": "Cardcaptor Sakura: Tomoyo no Video Daisakusen"
+	},
 	"carrier": {
 		"name": "Carrier"
 	},
@@ -183,6 +189,9 @@
 	},
 	"dragon-riders-chronicles-of-pern": {
 		"name": "Dragon Riders: Chronicles of Pern"
+	},
+	"dream-passport": {
+		"name": "Dream Passport"
 	},
 	"dream-passport-3": {
 		"name": "Dream Passport 3"
@@ -322,6 +331,9 @@
 	},
 	"half-life": {
 		"name": "Half-Life"
+	},
+	"hanagumi-taisen-columns-2": {
+		"name": "Hanagumi Taisen Columns 2"
 	},
 	"head-hunter": {
 		"name": "Head Hunter"
@@ -511,8 +523,14 @@
 	"phantasy-star-online": {
 		"name": "Phantasy Star Online"
 	},
+	"phantasy-star-online-ver-2": {
+		"name": "Phantasy Star Online Ver. 2"
+	},
 	"pia-carrot-e-youkoso-3": {
 		"name": "Pia Carrot e Youkoso!! 3"
+	},
+	"planetweb-dreamcast-browser-3-0": {
+		"name": "Planetweb Dreamcast Browser 3.0"
 	},
 	"plasma-sword": {
 		"name": "Plasma Sword"
@@ -551,18 +569,114 @@
 	"propeller-arena": {
 		"name": "Propeller Arena"
 	},
+	"psychic-force-2012": {
+		"name": "Psychic Force 2012"
+	},
 	"puyo-pop-fever": {
 		"name": "Puyo Pop Fever",
 		"ja": "Puyo Puyo Fever"
 	},
+	"puyo-puyo-n": {
+		"name": "Puyo Puyo~n"
+	},
+	"quake-3-arena": {
+		"name": "Quake 3 Arena"
+	},
+	"railroad-tycoon-2": {
+		"name": "Railroad Tycoon 2"
+	},
+	"rainbow-cotton": {
+		"name": "Rainbow Cotton"
+	},
+	"rainbow-six": {
+		"name": "Rainbow Six"
+	},
+	"rainbow-six-rogue-spear": {
+		"name": "Rainbow Six: Rogue Spear"
+	},
+	"rayman-2-the-great-escape": {
+		"name": "Rayman 2: The Great Escape"
+	},
+	"razor-freestyle-scooter": {
+		"name": "Razor Freestyle Scooter"
+	},
+	"re-volt": {
+		"name": "Re-Volt"
+	},
+	"ready-2-rumble-boxing": {
+		"name": "Ready 2 Rumble Boxing"
+	},
+	"ready-2-rumble-boxing-round-2": {
+		"name": "Ready 2 Rumble Boxing: Round 2"
+	},
+	"record-of-lodoss-war": {
+		"name": "Record of Lodoss War"
+	},
+	"red-dog-superior-fire-power": {
+		"name": "Red Dog: Superior Fire Power"
+	},
+	"redline-racer": {
+		"name": "Redline Racer"
+	},
+	"reel-fishing-wild": {
+		"name": "Reel Fishing Wild"
+	},
+	"rent-a-hero-no-1": {
+		"name": "Rent A Hero No. 1"
+	},
+	"resident-evil-2": {
+		"name": "Resident Evil 2"
+	},
+	"resident-evil-3-nemesis": {
+		"name": "Resident Evil 3: Nemesis"
+	},
+	"resident-evil-code-veronica": {
+		"name": "Resident Evil Code: Veronica"
+	},
+	"revive": {
+		"name": "Revive"
+	},
 	"rez": {
 		"name": "Rez"
+	},
+	"rippin-riders": {
+		"name": "Rippin' Riders"
+	},
+	"roadsters": {
+		"name": "Roadsters"
+	},
+	"roommate-novel": {
+		"name": "Roommate Novel"
+	},
+	"sakatoku-1": {
+		"name": "SaKaToKu 1"
+	},
+	"sakatoku-2": {
+		"name": "SaKaToKu 2"
+	},
+	"sakura-taisen": {
+		"name": "Sakura Taisen"
+	},
+	"sakura-taisen-2-kimi-shinitamou-koto-nakare": {
+		"name": "Sakura Taisen 2: Kimi, Shinitamou Koto Nakare"
 	},
 	"sakura-taisen-3-paris-wa-moete-iru-ka": {
 		"name": "Sakura Taisen 3: Paris wa Moete Iru ka",
 		"aliases": [
 			"Sakura Wars 3"
 		]
+	},
+	"sakura-taisen-4-koi-seyo-otome": {
+		"name": "Sakura Taisen 4: Koi Seyo, Otome"
+	},
+	"sakura-taisen-ogami-ichiro-funtouki": {
+		"name": "Sakura Taisen: Ogami Ichiro Funtouki"
+	},
+	"samba-de-amigo": {
+		"name": "Samba de Amigo"
+	},
+	"san-francisco-rush-2049": {
+		"name": "San Francisco Rush 2049"
 	},
 	"sega-bass-fishing": {
 		"name": "Sega Bass Fishing"
@@ -582,8 +696,14 @@
 	"sega-sports-nhl-2k": {
 		"name": "Sega Sports NHL 2K"
 	},
+	"sega-swirl": {
+		"name": "Sega Swirl"
+	},
 	"sega-tetris": {
 		"name": "Sega Tetris"
+	},
+	"segagaga": {
+		"name": "SeGaGaGa"
 	},
 	"shenmue": {
 		"name": "Shenmue",
@@ -652,6 +772,9 @@
 	},
 	"the-last-blade-2": {
 		"name": "The Last Blade 2"
+	},
+	"the-rhapsody-of-zephyr": {
+		"name": "The Rhapsody of Zephyr"
 	},
 	"tnn-motorsports-hardcore-heat": {
 		"name": "TNN Motorsports Hardcore Heat"

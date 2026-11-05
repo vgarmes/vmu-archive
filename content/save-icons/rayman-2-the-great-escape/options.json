@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Options",
+	"gameId": "rayman-2-the-great-escape",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#442244ff",
+		"#995522ff",
+		"#ffffffff",
+		"#dd9922ff",
+		"#ffbb22ff",
+		"#eeaa55ff",
+		"#773311ff",
+		"#dd8811ff",
+		"#552200ff",
+		"#554433ff",
+		"#221111ff",
+		"#cc8844ff",
+		"#bbbbaaff",
+		"#eebb66ff",
+		"#ffeebbff",
+		"#ffcc88ff"
+	],
+	"frames": [
+		"0000000000000aaaaaa00000000000000222000000000a22efa00000000022200200000000000aefb1a0000000000020020000a000000afbb1a000000a00002002000aea00000af551a00000aea000200200a22ea0000ae5b1a0000a2eba0020020aeeeeeaaaaee55b1aaaaef5b1a020020afffeffee22e55b1fffe55bb1a0200200aefffffeeeff5555bbb5bb1a002002000aefffffefff5555bbbbb1a00020020000aeffffff5ff5bbbbbb1a000020020000aef5ff511111bbbbbb1a000020020000ae555511aaaa1bbbbb1a000020aaaaaafb5ffb1a0000af5bbb11aaaaaaae22eefb5b51a000000ae5bbb5eeeffaaeef5bbbbbb1a000000aef55b555bb1aafbbbbbbbbb1a000000aef5555bbbb1aaf1111bbbbb1a000000a2fff5511111aaaaaaa1bbbbb1a0000a22f5511aaaaaa020000afbbbbbfaaaa22e5551a000020020000afbbbbbbfeeeefff551a000020020000ae5bbbbbbb5ff55f551a000020020000ae5bbbbbbb5555f5551a00002002000ae5bbbbbbbb5b5bb55551a000200200af5bbb111bbbbb111155551a0020020afbbbb1aaafbbbb1aaa155551a0200200a1bb1a000afbb1a000a1551a002002000a11a0000afbb1a0000a11a00020020000aa00000afbb1a00000aa0000200200000000000afbb1a00000000000200222000000000af111a00000000022200000000000000aaaaaa0000000000000"
+	],
+	"animationSpeed": 0,
+	"vmuName": "Config' file",
+	"description": "Rayman 2 The great escape",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v4615.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rayman2"
+	},
+	"tags": [],
+	"hash": "2e529c7b0b86da59213168d6ba2f5186c98c9108",
+	"added": "2026-11-05"
+}
