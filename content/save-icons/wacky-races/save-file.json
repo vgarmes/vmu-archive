@@ -1,0 +1,53 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "wacky-races",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#331133ff",
+		"#771166ff",
+		"#880077ff",
+		"#880088ff",
+		"#990077ff",
+		"#aa2277ff",
+		"#aa0099ff",
+		"#bb6655ff",
+		"#dd7744ff",
+		"#ee33ddff",
+		"#eecc22ff",
+		"#ffaaeeff",
+		"#ffff00ff",
+		"#ffffeeff",
+		"#ffff44ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"ffffffffffdb00000000bdffffffffffffffffffb00022333210000bffffffffffffffd003666663333441000dfffffffffffb05999966633334444100bfffffffffb09bbb99666333344444400bfffffffb19bdbb99678aa87544444400bfffffd09dddb998ecccccca854444400dffff05bddbbbeeeeccccccca74444400fffb0bbbbbbdddeeccccccccc8444410bff06bbb9bdbbdecccccccc8ac7444400fd099999bbbbbecccccccc4445544410db199998bbb99cccccccca4445844440b039999ab9996accccccc84447a544400066667cc9664accaaccc7444ac844410066668cc76437ca447cc4444cca4442006666acca4444c4444884425cca4222006666accc544474444452227cca22220023338ccc84444444444222acc822220013337cccc4444444442221acc722210003345accc5444445442221aca422200b033448ccc844447cc42217aa822220bd014445accc4444ccca2118aa522110df0044447ccc5448cccc711aa8211100ffb0144448cc87acccccaa78a211110bfff00444447acccccccccaa72111100ffffd004444458acccccca852111100dfffffb00444444578aa87421111110bfffffffb0044444444422221111100bfffffffffb00144444442221111100bfffffffffffd000144444222221000dffffffffffffffb00001222210000bffffffffffffffffffdb00000000bdffffffffff"
+	],
+	"animationSpeed": 8,
+	"vmuName": "LOS AUTOS LOCOS",
+	"description": "PARTIDA A DE LOS AUTOS LOCOS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v12723.VMS",
+			"v30076.VMS",
+			"v38827.VMS",
+			"v3928.VMS",
+			"v41658.VMS",
+			"v42033.VMS",
+			"v6826.VMS",
+			"v72821.VMS",
+			"v7471.VMS",
+			"v76433.VMS",
+			"v82498.VMS",
+			"v97860.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wackyraces"
+	},
+	"tags": [],
+	"hash": "87c0ed413aa0a239e64a8fdcbb8527036ed1fc74",
+	"added": "2026-11-05"
+}

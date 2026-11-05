@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Replay file",
+	"gameId": "virtua-striker-2-ver-2000-1",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ccccccff",
+		"#aaaaaaff",
+		"#ddddddff",
+		"#666666ff",
+		"#666666ff",
+		"#888888ff",
+		"#444444ff",
+		"#ffee00ff",
+		"#333322ff",
+		"#111111ff",
+		"#996622ff",
+		"#ffaa55ff",
+		"#ffffffff",
+		"#000000ff",
+		"#11111111",
+		"#11111111"
+	],
+	"frames": [
+		"ddddddddddddddddddddddddddddddddddddddddddd96111111158ddddddddddddddddddd852148999865216dddddddddddddddd42c1ddddddddd6cc18dddddddddddd91ccc21158d941102cc26ddddddddddd1cccccccc212cccccccc26ddddddddd12ccccccccccccccccccc228ddddddd5162ccccccccccccccccc24518ddddd82982cccccccccccccccccc4d15ddddd14d4ccccccccccccccccccc1d808ddd61dd5ccccccccc22cccccccc1dd55ddd45dd5ccccccc24d81ccccccc1dd619d856dd4cccccc18dddd5cccccc1ddd18d618d82ccccc5ddddddd62ccccc4dd16d609d1ccccc29ddddddd94ccccc28d54d6096ccdddc2ddddddddddddcccc1d65d6081ccdbdcc6ddbddddddbdcccc2815d602ccdd7ddc5dd7dddddd7ddcccc204d610cdda7adddda7adddda7addccc016d6510dab7baddab7baddab7badcc0118ddddddbddddddbddddddb777bddddddddb77777db77777db7777777777777bddddab777ddab777ddab777777777baddddddda777ddda777ddda7777777addd8dddddddb777dddb777dddb777bddd36ddddd8da77777da77777da77777ad36ddddddda777b7da777b7da777b777adddddddddb77adddb77adddb77ada77bdddddddda7baddda7baddda7badddab7addddddd7add86d7addd3d7addd33dda7ddddddddddddddddddd3dddddd68dddddddddddddddddddd863333688ddddddddddd"
+	],
+	"animationSpeed": 6,
+	"vmuName": "VS2 REPLAY DATA",
+	"description": "VIRTUA STRIKER2 ( DNK vs SCO )",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v5248.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuastriker"
+	},
+	"tags": [],
+	"hash": "a8c11b7f13edb47ab001d070268d42a557fd6eb2",
+	"added": "2026-11-05"
+}

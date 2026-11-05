@@ -1,0 +1,50 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "toy-commander",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#221122ff",
+		"#663311ff",
+		"#994411ff",
+		"#bb7744ff",
+		"#5566bbff",
+		"#aa9999ff",
+		"#cc9977ff",
+		"#ccbbbbff",
+		"#ee9966ff",
+		"#eebb99ff",
+		"#eebbaaff",
+		"#eeddccff",
+		"#eeeeeeff",
+		"#ffeeddff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"ffffffffcbbcfb3ce7bcbcffffffffffffffffc79dfbb5c7bbcffcbffffffffffffffe9887cbb5727cbbbfecfffffffffffff98865cc79116abcbbcccfffffffffffb897ccb793001397bcbbbfffffffffff35bcb7662210012397bcbfffffffffff047633311991000023697cfffffffffe4122210169993100001255cffffffff750100139988899663169627fffffffe112363699986336999899615fffffffe112396388310001133999615ffffffff302239631014014001399325ffffffff501223200044110000099317ffffffff701222001045141000038627ffffffffb0112335965555563301883bffffffffc1012363369999653651686cfffffffff321235665699969a330388cfffffffff3212699aa9aaaaaa9613987fffffffff221299a57bbbb747a993685ffffffffc222399745bbbb75bb9913636beffffe52223a99aababbbbaa96003333afff763321099abbaabbbbbba30013336fff632320029abba99bbbbba05013333fff633220009abbbbbbbbbb55f513333cfe333123c1699a3236bbb905f712333bfc33222bf519a95116ab9517fc11136cfb33122cfccb999aaa99bfeeff5125fffc52113fffffea99999bffffffc327fffffc116ffeb7579999a7cfffffff39fffffc01cc544449999aba447effff79bffff715b444444589abb7774445ff799efff325444447757ab7777774445fc895f"
+	],
+	"animationSpeed": 0,
+	"vmuName": "TOY SAVED GAME",
+	"description": "TOY COMMANDER : SAVED GAME",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000621.VMS",
+			"v13332.VMS",
+			"v29600.VMS",
+			"v33538.VMS",
+			"v37886.VMS",
+			"v50553.VMS",
+			"v54006.VMS",
+			"v57416.VMS",
+			"v9788.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/toycommander"
+	},
+	"tags": [],
+	"hash": "68155dbe9cc7f4a5e978c89bf508e204b250a7ad",
+	"added": "2026-11-05"
+}

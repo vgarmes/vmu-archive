@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "kono-hana-true-report",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#111111ff",
+		"#111133ff",
+		"#222244ff",
+		"#223355ff",
+		"#444466ff",
+		"#666688ff",
+		"#888899ff",
+		"#99aabbff",
+		"#442222ff",
+		"#664433ff",
+		"#886644ff",
+		"#aa8866ff",
+		"#dd9977ff",
+		"#ddbb99ff",
+		"#eeccbbff"
+	],
+	"frames": [
+		"ff765344444444344444442432557ffff87786444444443443434412414627fff77887656555443443434421543654ff8566675677877847648767755726668f705456143576765754665549a455765f503310019101119009001901a24675282133000aa31909a09a10ba19b90654152133091bca9a9ad2ab19cb1aca05421031420a9decacaeecbdabdd9dca14301031410bceeebbceeecebecb2aaba1000031411cecb1019deedeeda99219a1000031401dca9bccccdeeeedccdddb910000224099bdeeedccdeeeeedaadeed9000022401ceeedba9deeeeeea001aeda000033409ceeb10001ceeeeb091001aa000033409cda100115deeeed7f800009000043409a92f80147eeeeeed530349900004430bac775255deeeeeed23565da01004330bacd4356ceeeeeeedcc656ca021043309abdd6ddeeeeeeeeeeeeedca032143309abeffeeeeeeefeeeeeeedca033243301aaefeeeeeeeffdeeeeeedc904334231009deeeeeeeeffceeeeedca014334232000aeeeeeeeeeddeeeeeca10343442320000beeeeeecdecdeeeca10144344133100009ceeeedccdeeec91001443441342000101bdeeeeeeeda90000144343134300122209adeeeeda001100144442134410023311aacddb109a691024443402332001246acdaaa99aca7551243436463321025777dedcccccca657924237847423125d67edeeeccdeda765233248"
+	],
+	"animationSpeed": 0,
+	"vmuName": "ｹﾞｰﾑｾｰﾌﾞﾃﾞｰﾀ",
+	"description": "KONOHANA:TrueReport",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000004.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/truerep"
+	},
+	"tags": [],
+	"hash": "a5381c9aedff069b28a11e346d07d7d9c4fd9f8d",
+	"added": "2026-11-05"
+}

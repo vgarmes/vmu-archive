@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Replay file",
+	"gameId": "virtua-striker-2-ver-2000-1",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ccccccff",
+		"#aaaaaaff",
+		"#ddddddff",
+		"#666666ff",
+		"#666666ff",
+		"#888888ff",
+		"#444444ff",
+		"#ffee00ff",
+		"#333322ff",
+		"#111111ff",
+		"#996622ff",
+		"#ffaa55ff",
+		"#ffffffff",
+		"#000000ff",
+		"#11111111",
+		"#11111111"
+	],
+	"frames": [
+		"ddddddddddddddddddddddddddddddddddddddddddd96111111158ddddddddddddddddddd852148999865216dddddddddddddddd42c1ddddddddd6cc18dddddddddddd91ccc21158d941102cc26ddddddddddd1cccccccc212cccccccc26ddddddddd12ccccccccccccccccccc228ddddddd5162ccccccccccccccccc24518ddddd82982cccccccccccccccccc4d15ddddd14d4ccccccccccccccccccc1d808ddd61dd5ccccccccc22cccccccc1dd55ddd45dd5ccccccc24d81ccccccc1dd619d856dd4cccccc18dddd5cccccc1ddd18d618d82ccccc5ddddddd62ccccc4dd16d609d1ccccc29ddddddd94ccccc28d54d6096ccdddc2ddddddddd5cccccc1d65d6081ccdbdcc6dddddddd1cccccc2815d602ccdd7ddc5ddddddd82ccccccc204d610cdda7add29ddddd94cccccccc016d6510dab7bad26ddddd62ccccccc0118ddddddb777bddddddd65ccccccc0115ddb7777777777777bdccccccccc01153dddab777777777baddccccccc0011556ddddda7777777adddccccc0001335538dddddddb777bdddcccc0000136d8336ddddd8da77777ad10000111368d8336ddddddda777b777ad11111158dd8336ddddddddb77ada77bdd55555ddd3336dddddddda7badddab7ad33333833336ddddddddd7add863dda7d3333333336dddddddddddddddd86dddd333333368dddddddddddddddddddd863333688ddddddddddd"
+	],
+	"animationSpeed": 6,
+	"vmuName": "VS2 REPLAY DATA",
+	"description": "VIRTUA STRIKER2 ( CHI vs MEX )",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v61800.VMS",
+			"v81906.VMS",
+			"v88647.VMS",
+			"v90483.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuastriker"
+	},
+	"tags": [],
+	"hash": "66353ae7f76af0899fa1c6f94f59eccab97e4c67",
+	"added": "2026-11-05"
+}

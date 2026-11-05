@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Options",
+	"gameId": "test-drive-v-rally",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#006644ff",
+		"#000000ff",
+		"#003322ff",
+		"#111111ff",
+		"#222222ff",
+		"#331100ff",
+		"#441100ff",
+		"#444444ff",
+		"#666666ff",
+		"#888888ff",
+		"#997700ff",
+		"#aa0000ff",
+		"#bbbbbbff",
+		"#ddddddff",
+		"#ee9900ff"
+	],
+	"frames": [
+		"4444444444444444444444444444444444444444444444444489aaa9544444444fff4444444445addddddddddda84444444ffffbb4449deeeeeda98addddd9544fff4444b45ddeeeeeeeeed98addddd44444444499deeeeeeeeeeed558aeeea544444445aeeeeeeeeeeeea44428add94444444599deeeeeeeeeea44448daaa8444444494448deeeeeee8d4449daaa9944444494444445aeeee84a84ada999984444485444444445de8448aada99988444898a5422444444ed4448daa9995444445aaada5002444ae5449daa99954444445aa99ad940025ed44adda999544444449aaaa99aa950dea8ddda999544444444aaadddaa99aaeededdda885333111114aaaadddaaa9eeeeddda985447ccc6444adaaadddd9deeedddd958447cc46c64449edaaadddddddddd985444cc144bb44485aea9adddddddda994347c71446b7448888deaadeeddaa999433cc31333bb44444889deddddda9898438c111111bf444444588aeeeea9989443cc4414444f4444444488888889554443cc4414444b4444444444899885444443c74414444b44444444444444444b4443c33313333144a49d449da44a944b4443111111111144444444444444444b44444444444444449dd9494daa4d444f44444444fff44444444444444444444ffffffffff4444444a4adda449d4d944444444444fff44444444444444444444444444444444444"
+	],
+	"animationSpeed": 1,
+	"vmuName": "TDVR CONFIG",
+	"description": "TD-VRally Preferences",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v17157.VMS",
+			"v26860.VMS",
+			"v28938.VMS",
+			"v59944.VMS",
+			"v91867.VMS",
+			"v93443.VMS",
+			"v97468.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/vrally"
+	},
+	"tags": [],
+	"hash": "42ba0a87a8b167587dba19373c3906e00ecf3b16",
+	"added": "2026-11-05"
+}

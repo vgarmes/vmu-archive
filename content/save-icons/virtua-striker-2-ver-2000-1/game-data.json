@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Game data",
+	"gameId": "virtua-striker-2-ver-2000-1",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ff8811ff",
+		"#cc9955ff",
+		"#ffbb66ff",
+		"#ccaa88ff",
+		"#887755ff",
+		"#ffdd88ff",
+		"#ffffaaff",
+		"#555544ff",
+		"#dddd99ff",
+		"#667766ff",
+		"#778877ff",
+		"#005555ff",
+		"#002222ff",
+		"#004444ff",
+		"#000000ff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffff8b970909bbdfffffffffffffffffff8477777777777adfffffffffffffff8497777766777bcbbafffffffffffff89666676667676bbcc8afffffffffff4766666667667777994bb4effffffffab976361337667766667699bfffffff8aec43136116636111116776bbfffffdbeeec313316333331111113765affffbccec53316611111113611116774dffdbeeee81333113311336777111354bffbceeeed51133113313777711111eebddbdeeeeed8273136113333111118eecadbdedeeeedb7633333311181885deecbacddeeeeeec4663336318edddd8ceee8acdeedeeeeee5ba23333ceeecec8eee8acdddeedeeeeeed83333aeea5c888ed8aededdeeeeeeeeec522335235eec8edc5edddededededeeeeec8a546558eded88addddddedeeeededeeedec853ad88e8fbfdddededededeeededeededaa8255afbeddddddedededdededdededde855b8f88dddddddddeddededeedddedd558bfffbdddddddedddeddddddededd85858fff8afdddddddddddeddedddddd8885fffffadfdddddddddddddddddddd8858ffffffadfdddddddddddddddddddd58ffffffffbdffddddddddddddddddf58fffffffffdbdfdfddddddddddddffa8ffffffffffffb8dfdfdfdfdfdfffeb8ffffffffffffff8b8dffffdfffdebadfffffffffffffffff88888c88c88adfffffffff",
+		"ffffffffffffffdfdffffffffffffffffffffffffff8ab49994baffffffffffffffffffff8bb9993909079adfffffffffffffff8bbb9297777777074afffffffffffff8bcecb9777337077665afffffffffffac5bc51137666763667694effffffffca5264733661167766777664fffffff8bc85137777776777796777664fffffdbeee21255670070779cbb57664affffbce8592dcccb9777774ba88a4b69fffdbee2358caaccaa81299666697b46bffbcde2553665cceeecaccc8a9662437dfbdee233336663aca4aaccca7763347adbdea33333663363336631367663334aacd82322333633336366613453366335ac82422332363333333936335a333255ac522222233233633366333338a232e8ac8552223223234323433332328345dcad825222222224322364222239525ed88af5552222423422242232324428dde8fbf85524222224422322222322258debfbfff88885222222222422222228ddadf8afffffff82522225222222525dddbfffbfffffffe55255552555b2558dfa8fff8afffffff825552555252558dddbfffffadfffffff8555851855558ddfa8ffffffadffffffff58558858588dd88ffffffffbdffffff888888888888d88fffffffffdadfffff8888888888ff88ffffffffffffb8ffdfd8888888ffeb8ffffffffffffffab8ddfffff8ff8b5dfffffffffffffffff88888858888adfffffffff",
+		"fffffffffffffffdffdffffffffffffffffffffffff8b977794bbffffffffffffffffffff84777777777775dfffffffffffffff84777766996777494afffffffffffff87666667bccccbcb99aafffffffffff4666766679bccccc29accb8ffffffff56366777669bbccccacccccbfffffff87366667765ccacbcccccccccbfffffd736633645ccc4bbaccccccccccbffffb3333669cccca9cccccccccccccbdffd72336265cc8a45cccccccccceeccbffb3233aeb5b225accccccceceeceeebdf92222ceca5cceeecceeeececeeeeecad422235eecceeececececeececeeeccaa22222ceeeeeeeeeeeeeeceeeeeeeee8a25225deeeeeeeeeeeeeeeeeeeeeeee8a288ddeeeeeeeeeeeeeeeeeeeeeeeedca58dde8dedeeeeeeeeeeeeeeeeeeedd8a58ddd5edeeeeeeeeeeeeeeeeeeeded8855eddabdedededeedeeeeeeeeededdafbdddde28edeeeeedeedededededddcafbdd88d8ededdddeedeedededededdadf85d88ddedddededdeddedededddddbfff4dd888d8deddddeddeddddddddfa8fff8afdd8dd888888ddddeddedddddbfffffbddddddd8e855588d8edddddfa8ffffffadfdddddddd88d8dddddddd88ffffffffadfd88888dd8ddddddddd88fffffffffd5dd88888888ddddddff88fffffffffffd58ff88888888fdffeb8ffffffffffffffab58ffffff8dfeb5dfffffffffffffffff88855555888adfffffffff"
+	],
+	"animationSpeed": 6,
+	"vmuName": "VS2 GAME DATA",
+	"description": "VIRTUA STRIKER2  2000.1",
+	"source": {
+		"kind": "save",
+		"files": [
+			"VS2_SYS1.VMS",
+			"v21388.VMS",
+			"v33991.VMS",
+			"v84724.VMS",
+			"v88766.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuastriker"
+	},
+	"tags": [],
+	"hash": "04abbaf40b9384758fba9cda1654b7a7f50f6a0a",
+	"added": "2026-11-05"
+}

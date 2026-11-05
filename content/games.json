@@ -5,6 +5,9 @@
 	"18-wheeler-pro-american-trucker": {
 		"name": "18 Wheeler: Pro American Trucker"
 	},
+	"21-two-one": {
+		"name": "21: Two One"
+	},
 	"4-wheel-thunder": {
 		"name": "4 Wheel Thunder"
 	},
@@ -141,6 +144,9 @@
 	},
 	"crazy-taxi-2": {
 		"name": "Crazy Taxi 2"
+	},
+	"cyber-troopers-virtual-on-oratorio-tangram": {
+		"name": "Cyber Troopers Virtual-On: Oratorio Tangram"
 	},
 	"d-vine-luv": {
 		"name": "D+Vine [LUV]"
@@ -400,6 +406,9 @@
 	},
 	"kiss-psycho-circus-the-nightmare-child": {
 		"name": "KISS Psycho Circus: The Nightmare Child"
+	},
+	"kono-hana-true-report": {
+		"name": "Kono Hana: True Report"
 	},
 	"langrisser-millennium": {
 		"name": "Langrisser Millennium"
@@ -877,6 +886,9 @@
 	"test-drive-le-mans": {
 		"name": "Test Drive Le Mans"
 	},
+	"test-drive-v-rally": {
+		"name": "Test Drive V-Rally"
+	},
 	"the-grinch": {
 		"name": "The Grinch"
 	},
@@ -907,25 +919,133 @@
 	"the-rhapsody-of-zephyr": {
 		"name": "The Rhapsody of Zephyr"
 	},
+	"the-ring-terrors-realm": {
+		"name": "The Ring: Terror's Realm"
+	},
+	"the-typing-of-the-dead": {
+		"name": "The Typing Of The Dead"
+	},
+	"time-stalkers": {
+		"name": "Time Stalkers"
+	},
 	"tnn-motorsports-hardcore-heat": {
 		"name": "TNN Motorsports Hardcore Heat"
+	},
+	"tokyo-bus-guide": {
+		"name": "Tokyo Bus Guide"
+	},
+	"tokyo-xtreme-racer": {
+		"name": "Tokyo Xtreme Racer"
+	},
+	"tokyo-xtreme-racer-2": {
+		"name": "Tokyo Xtreme Racer 2"
+	},
+	"tomb-raider-chronicles": {
+		"name": "Tomb Raider: Chronicles"
+	},
+	"tomb-raider-the-last-revelation": {
+		"name": "Tomb Raider: The Last Revelation"
 	},
 	"tony-hawks-pro-skater": {
 		"name": "Tony Hawk's Pro Skater"
 	},
+	"tony-hawks-pro-skater-2": {
+		"name": "Tony Hawk's Pro Skater 2"
+	},
+	"toy-commander": {
+		"name": "Toy Commander"
+	},
+	"toy-story-2-buzz-lightyear-to-the-rescue": {
+		"name": "Toy Story 2: Buzz Lightyear to the Rescue"
+	},
+	"trickstyle": {
+		"name": "TrickStyle"
+	},
+	"tricolore-crise": {
+		"name": "Tricolore Crise"
+	},
+	"ultimate-fighting-championship": {
+		"name": "Ultimate Fighting Championship"
+	},
 	"unknown": {
 		"name": "Unknown"
+	},
+	"unreal-tournament": {
+		"name": "Unreal Tournament"
+	},
+	"urban-chaos": {
+		"name": "Urban Chaos"
+	},
+	"vanishing-point": {
+		"name": "Vanishing Point"
+	},
+	"vermilion-desert": {
+		"name": "Vermilion Desert"
+	},
+	"vigilante-8-2nd-offense": {
+		"name": "Vigilante 8: 2nd Offense"
+	},
+	"virtua-athlete-2k": {
+		"name": "Virtua Athlete 2K"
+	},
+	"virtua-cop-2": {
+		"name": "Virtua Cop 2"
+	},
+	"virtua-fighter-3tb": {
+		"name": "Virtua Fighter 3tb"
+	},
+	"virtua-striker-2-ver-2000-1": {
+		"name": "Virtua Striker 2 Ver. 2000.1"
+	},
+	"virtua-tennis": {
+		"name": "Virtua Tennis"
+	},
+	"virtua-tennis-2": {
+		"name": "Virtua Tennis 2"
 	},
 	"visual-memory-unit": {
 		"name": "Visual Memory Unit"
 	},
+	"wacky-races": {
+		"name": "Wacky Races"
+	},
 	"walt-disney-world-quest-magical-racing-tour": {
 		"name": "Walt Disney World Quest: Magical Racing Tour"
+	},
+	"wetrix": {
+		"name": "Wetrix+"
+	},
+	"wild-metal": {
+		"name": "Wild Metal"
 	},
 	"world-series-baseball-2k1": {
 		"name": "World Series Baseball 2K1"
 	},
 	"world-series-baseball-2k2": {
 		"name": "World Series Baseball 2K2"
+	},
+	"worms-armageddon": {
+		"name": "Worms Armageddon"
+	},
+	"wwf-attitude": {
+		"name": "WWF Attitude"
+	},
+	"wwf-royal-rumble": {
+		"name": "WWF Royal Rumble"
+	},
+	"xploder-dc": {
+		"name": "Xploder DC"
+	},
+	"xtreme-sports": {
+		"name": "Xtreme Sports"
+	},
+	"zero-gunner-2": {
+		"name": "Zero Gunner 2"
+	},
+	"zombie-revenge": {
+		"name": "Zombie Revenge"
+	},
+	"zusar-vasar": {
+		"name": "Zusar Vasar"
 	}
 }

@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "wild-metal",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#aa99aaff",
+		"#777788ff",
+		"#889999ff",
+		"#ffffffff",
+		"#ffee66ff",
+		"#664411ff",
+		"#dd9933ff",
+		"#996622ff",
+		"#554433ff",
+		"#998888ff",
+		"#887777ff",
+		"#776655ff",
+		"#aa9988ff",
+		"#bb9999ff",
+		"#ccbbaaff",
+		"#000000ff"
+	],
+	"frames": [
+		"ffffff8eedd00cabffffffffffffffffffffff8eeed00c9b8fffffffffffffffffffff8edde299c929b8ffffffffffffffffffbed1e0220220e0ea8fffffffffffffffcdeb30220200200ebffffffffffffffbdddb4a297666cc0e8fffffffffffff8dd000109a566666665fffffff8bfff8dddddd90975fffff55ffffffff8bf8adddededd0a7fffff8b8ffffffff8bccdcd9e0ded975ffffbcddfffffff88bcdcddb3ec9cabfffff57de9ffffff8bbdddddb46c9d9a8ffff55ceebfffff8bb9cdcdcbccddcda8fff557eed8ffff8bb99ccdcdc66ddccaffff55cee988b9caaa99cc9a6676cdddafff557eeeacddddac999c6675f56cdcdbfff55cdedddc9ccccca765ffff576ddc5ffb8b2edccdccc7d9ab5ffff88576c7f8b99b999c1acdc5baabffff8899b7758a99990c0a3e9ccfbcca8fffb10001b8a99999cdca4aaccf5acc8fff57d022d09999999ddc68cc9ffaaabfffff7c900999992229ddccc9cff8cabffffff5792222210e229dddab8ff5acaffffffff7a19211eebccca8ffffff766ffffffff858a91b4aaccbffffffff55fffffffff8889a99bbccbffffffffffffffffffff88bc919cdc9fffffffffffffffffffff88ba92accc8ffffffffffffffffff88888b1119cccffffffffffffff8b9eeeeeb8a11e09daffffffffffffffae3eeeeedacabe0bdbfffffffffffffffadc9a91dc9ab4badbffffffff",
+		"fffffffeea4ac218fffffffffffffffffffffffedcc220b8fffffffffffffffffffffffeedc02cb8ffffffffffffffffffffffbdedd00cb8ffffffffffffffffffffffceedd0cdb8fffffffffffffffffffffbdd909210a1bffffffffffffffffffffddeb3e22022098fffffff8addffffffddc0b4a220220ed08fffff8bd0bfffbddd002a09a6cdd200dbffff8bc01fadddddddc20c77666cd0e8ffff8ba00fccdc9dddd0977ff557666fffff8bc0efcddb3eddd0a75fff8bf55fffff8ba008ddd84cd9ca75ff5bcecfffffff8ba00adcdb6ac9dabfff57ceecfffffbaba9e9cccdcccdd9affff57d00cffaeecca920999ac66cdddbffff77dee9cdcdccc9999c666677ccdcffff57addeaddc99cca9a7675fff7cddaffff57c0eecdcdcccc9abffffff57ccd8ffff572dc9c1cccdca9bfffffff56ddafffff8ac99139cdcdccbffffffff5667fffb1a9cdca4bdccdccbffffffbb877fffb1aa9ccda68c9cccabffffff8000909baaa999cdcaccca88abffffff80002eeeaa99222ccdcaffffc8ffffffbc00109201110229ccbfffff67ffffffff7c0911122b3eaccbffffffffffffffffff7c11911b4ba9afffffffffffffffffffff7baaa18bcd8fffffffffffffffffffffffba91cdccffffffffffffffffffffffffaa11cccaffffffffffffffffffffffffb911accbffffffffffffffffffffffffb1119cdbffffffff",
+		"fffffffde0990dded00dde9ffffffffffffffffeebe31dee9cccccdfffffffffffffff8eeb4da9c76666667fffffffffffffffbeecaa91b57555ffffffffffffffffffcedd22e9b5fffffffffffffffffffff8deed02cabfffffffffffffffffffff8ddedd00cabffffffff888fffffffff8ddd901290b8fffffffbde9fffffff8bdddd13221cabfffffff5be08fffff9dddd00a4b2292298fffff55001fffffcdddd021a299219098ffff55a0e8ffffdc9dddc299a76cd09ebfff55aeebffffc130ddd99a77766900ebff55be0dffffab4addd9777ff576c0e7ff557200baaac86a990775ff88b57675ff8b7a990cdccd9ccd9b5ff889ea855ff9ecca99cce0a666ddca8ff57ce0dbf80dcdcc9999ad66667dddbfff57d000c9ccc99cc991e155ff5cccaffff57c00cdaccdcdcc9a31fffff7ddc8ffff57cdcddc9ccdcdca48fffff5ccdbfffff57c2d9cae9cdcdcbaffffff7ddaffffff55acac139cc9ccccffffff5ac65ffff888a9cca4bc9ccab8fffffff565fffff88b9cddabbcca8fffffffffffffffff8bbb999dccdcbffffffffffffbba99abbbba91299cdbfffffffffffffbe33333eab921129caffffffffffffff890020d0011133acc8ffffffffffffff89901911121b4abc9fffffffffffffff58ac9111191b7bccafffffffffffffffffff577ab911baccbffffffffffffffffffffff55aa11cccbffffffff"
+	],
+	"animationSpeed": 4,
+	"vmuName": "2:MAZE 0/8",
+	"description": "WILD METAL......................",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v56159.VMS",
+			"v92577.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wildmetal"
+	},
+	"tags": [],
+	"hash": "f156af36a5c3d641350169e7882efba9e33375c4",
+	"added": "2026-11-05"
+}

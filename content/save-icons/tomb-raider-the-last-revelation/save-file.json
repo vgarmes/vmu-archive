@@ -1,0 +1,55 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "tomb-raider-the-last-revelation",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#cc6633ff",
+		"#cc7755ff",
+		"#663322ff",
+		"#995533ff",
+		"#442211ff",
+		"#110000ff",
+		"#ee8844ff",
+		"#774422ff",
+		"#221100ff",
+		"#aa6644ff",
+		"#ddaa66ff",
+		"#ffaa55ff",
+		"#bb7733ff",
+		"#ffcc88ff",
+		"#ffffccff",
+		"#000000ff"
+	],
+	"frames": [
+		"77777777777777777777777777777777f85f85478f858778f57774f528f55587495f9244f299f879ff8778f839f505f2375f7335f3778f774f5728f877f574f2375f773f57774f472ff242f877ff4f43335f773f57778f2724f822f833ff4f57335f333ff3338f3329ff72f433f502f8335f3994f300f833298f02f493f534f407ff49008f255004833434f534ff8f80006600006023600000000066106666604f25200430004f34f28704f2874f25207567566580007567560f67569975675675684637f0607567566577f4767568467f556076f206756756657757767f5566750f202288607567566f675aa3751f264f07f5764f364f04f343b4f3244f17f36666666b66b666b66aabbaaddaaaaa6bbbbbbb6bbbbbbbbbbbddddeeeeedddbbbbbbbc3abbbbbbbbbbddeeeeeeeedddbbbbbc27cbbbbbbbbbbddeeeeeeeeeddbbbbc727ccbbbbbbbba9deeeeeeeeedddbbc2223cc6ddbbbbb99ddeeeeeeeeeddbc27773c3c1ddddd931aeeeeeeeeeeedc222223933c9bac7772719eeeeeeeddd727332773373ccc9773991deeeedddab771666ccccc6c666c99caaadddaaaaaa11abbbbbbbbbbabbbbbbbbaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa199116611119116a61aaa6aaa61191113377919333377731a1111139969777397777739337222222361993377772227722222222772222222739922222222222"
+	],
+	"animationSpeed": 0,
+	"vmuName": "The Tomb Of Seth",
+	"description": "Tomb Raider IV Save",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000001.VMS",
+			"TOMBR4.VMS",
+			"v22876.VMS",
+			"v25755.VMS",
+			"v27766.VMS",
+			"v33314.VMS",
+			"v40304.VMS",
+			"v47078.VMS",
+			"v47998.VMS",
+			"v50322.VMS",
+			"v76754.VMS",
+			"v78133.VMS",
+			"v99644.VMS",
+			"v99922.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tombraider"
+	},
+	"tags": [],
+	"hash": "e07cbe9ac2666d34bdd64c2125df9fcce05b25b5",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "21-two-one",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#112233ff",
+		"#aa1111ff",
+		"#774499ff",
+		"#cc2222ff",
+		"#8855aaff",
+		"#ee4422ff",
+		"#aa66aaff",
+		"#ff7733ff",
+		"#bb88ccff",
+		"#cc9944ff",
+		"#ffaa44ff",
+		"#eebbbbff",
+		"#ffccccff",
+		"#ffeeddff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"8886888889988888888488eeeeceeeeb8866989689898898686448beeedbceea88486886988988b9886868bceeed77b78868464494464688888888bbdeee7555996444248644448488b88b9cbaaa7531984422246466646448b88bcbca7531118644444b94998242469668dbddb753116466402969bb9492448646cdcca7531144600022bdcc4242446646bd9a7775334200006ddddd00006466489dbbaa7731422222bdddcd20442464489ededdc751446966cdcddd628924664bbeeeeee7534249dddcdcdd969624644fcceeeee77a4246bddddbcddeb224666fdbeeeedade42469cdccccddecc24648febbeeeedee44469bdcbcdde92aac648feaaeeeee6644946acddddc6222caabbffa7bffff684269699bdd9222242b777afa57f9fff642213699622222242c7555775595ffff4464311531224242267555555575ffff22699cb956222242467555335333ffff22499cec6cbbaaa7777555313333fff94824bbcc482ca777775333311113ff66bb948ccb6cc9ca77753111111113f66fcccb6bcb6bcdcca775531111111336ffdccdcbcd69cccdeb7755331111113577ddddddcd99bdddba775553111111135addddddddc6ddca77775533111111115fddddddccc6cbaa777775533311111157ddddddccdbaaaaaaa777553311111355ddddddddd94dcbaaa777753311111355dddddddddd8bddcbbaa775331131137a"
+	],
+	"animationSpeed": 0,
+	"vmuName": "TwoOne ｼｽﾃﾑﾃﾞｰﾀ",
+	"description": "２１－ＴｗｏＯｎｅ－",
+	"source": {
+		"kind": "save",
+		"files": [
+			"21twoone.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/twoone"
+	},
+	"tags": [],
+	"hash": "5b961f0165e060a54d8963939771f7703d4fe719",
+	"added": "2026-11-05"
+}

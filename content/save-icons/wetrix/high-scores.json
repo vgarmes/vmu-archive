@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "High scores",
+	"gameId": "wetrix",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#220011ff",
+		"#550044ff",
+		"#990077ff",
+		"#dd33bbff",
+		"#000000ff",
+		"#775588ff",
+		"#eeeeffff",
+		"#111133ff",
+		"#1166bbff",
+		"#114466ff",
+		"#6688aaff",
+		"#11aaddff",
+		"#119999ff",
+		"#55eeddff",
+		"#11cc33ff",
+		"#88ff55ff"
+	],
+	"frames": [
+		"40000000004400000000040000000004021122222144122222222412222222200535353320441353333324023333353076666666504406666666a405666666694d6fff66a104066f6f6654456ffff6674afffff6a1040dfffff654056fffffd44afffefda1440afffefd5405dfefffa449defffda1040ddffffd9415dfffeda447dffefda1111adfeffd1405deffffc447cfefeda2222bffffed940adfefed9447cefefddddddddefefb7408defefc7444cfefeeddddddeeefeb740cdfeeec44448cfeefefeeeeefeefb7408ceeefc74449eefeeeeeefeeefeeb701beefeec44449ceefeeeeeeeefeeeb041beeefc944447cefeec99998ceeef80418efeec9444479eeeec74449ceefe84018eeeec744444ceeee850449ceeee80018eeeed7444445eeeed50445aeeee8045deeeed744444aeeeed50445deeee80456eeeea044444aeeeed3144afeeee8045deeeea0444405a995aa0415a9a958045a555a5114403317022202332112332013333233304266202665236663066662266662366576dda266da56dbd61add661dbbb266b79bca2adcbadbcccd5bb8cdabc956d8979cb63bc879bb948ba8b6b85b665b8dd4478bdb8525bb508bbabdb99b8b798bb742a8bbb6338ba3b89888ba5b8a53a8844ab8898bdd88bdb878b88bd8bd8db874478894788b998887788788888858874444744447777477444774447777474444"
+	],
+	"animationSpeed": 1,
+	"vmuName": "High Scores",
+	"description": "WETRIX PLUS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v39228.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wetrix"
+	},
+	"tags": [],
+	"hash": "80a541c5d68943e78ca781717471b6d24f7634a2",
+	"added": "2026-11-05"
+}

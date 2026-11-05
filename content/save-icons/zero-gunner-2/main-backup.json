@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Main backup",
+	"gameId": "zero-gunner-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#006600ff",
+		"#55bbbbff",
+		"#2299bbff",
+		"#eeeeffff",
+		"#bbccffff",
+		"#99cceeff",
+		"#88aaeeff",
+		"#7799ddff",
+		"#5566bbff",
+		"#445588ff",
+		"#554433ff",
+		"#553322ff",
+		"#443322ff",
+		"#442211ff",
+		"#331111ff",
+		"#221100ff"
+	],
+	"frames": [
+		"aaaaaaaaaaaaaaaaaaa11aaaaaaaaaaaaaaaaaaaaaaaaaaaa11891aaaaaaaaaaaaaaaaaaaaaaaaa1188781aaaaaaaaaaaaaaaaaaaaaaa11886681aaaaaaaaaaaaaaaaaaaaaa1188655681aaaaaaaaaaabbbbbbbbb11886444581bbbbbbbbbbbbbbbbbbbb188644444581bbbbbbbbbbbbbbbbbbbb17444444481bbbbbbb11bbbbbbbbbbb18544444481bbbbbb11991bbbbbbbbbb1861844481bbbbb1188791bbbcccccccc11854481cccc11776681cccccccccccc1854481ccc1177444681ccccccccccc1854481cc11774444481ccccccccccc1854481c1166334774481cccccccccc185448111663336617471ccccccddddd185481166333371175771dddddddddd186547763333351d17711ddddddddddd186544433553361dd111ddddddddddd197655557716361d118881dddddddddd1976668811843711887781ddddddddd197778811d174618777781ddddddddee1978811ee1954718877791eeeeeeeeee19911eeee185711118781eeeeeeeeeeee11eeeee1965711987791eeeeeeeeeeeeeeeeeee186819866681eeeeeeeeeeeeeeeeeee1966986666891eeeeeeeeeefffffffff186666668811fffffffffffffffffff19766668811fffffffffffffffffffff187778811ffffffffffffffffffffff19889911ffffffffffffffffffffffff199911fffffffffffffffffffffffffff111fffffffffffffffffffff",
+		"aaaaaaaaaaaaaaaaaaa22aaaaaaaaaaaaaaaaaaaaaaaaaaaa22892aaaaaaaaaaaaaaaaaaaaaaaaa2288782aaaaaaaaaaaaaaaaaaaaaaa22886682aaaaaaaaaaaaaaaaaaaaaa2288655682aaaaaaaaaaabbbbbbbbb22886444582bbbbbbbbbbbbbbbbbbbb288644444582bbbbbbbbbbbbbbbbbbbb27444444482bbbbbbb22bbbbbbbbbbb28544444482bbbbbb22992bbbbbbbbbb2862844482bbbbb2288792bbbcccccccc22854482cccc22776682cccccccccccc2854482ccc2277444682ccccccccccc2854482cc22774444482ccccccccccc2854482c2266334774482cccccccccc285448222663336627472ccccccddddd285482266333372275772dddddddddd286547763333352d27722ddddddddddd286544433553362dd222ddddddddddd297655557726362d228882dddddddddd2976668822843722887782ddddddddd297778822d274628777782ddddddddee2978822ee2954728877792eeeeeeeeee29922eeee285722228782eeeeeeeeeeee22eeeee2965722987792eeeeeeeeeeeeeeeeeee286829866682eeeeeeeeeeeeeeeeeee2966986666892eeeeeeeeeefffffffff286666668822fffffffffffffffffff29766668822fffffffffffffffffffff287778822ffffffffffffffffffffff29889922ffffffffffffffffffffffff299922fffffffffffffffffffffffffff222fffffffffffffffffffff"
+	],
+	"animationSpeed": 20,
+	"vmuName": "ﾒｲﾝﾊﾞｯｸｱｯﾌﾟﾃﾞｰﾀ",
+	"description": "ゼロガンナー２／メインデータ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v97953.VMS",
+			"zerogun2.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/zerogun2"
+	},
+	"tags": [],
+	"hash": "7fa48e30e60386a4022fe02175cbc14901dae4da",
+	"added": "2026-11-05"
+}

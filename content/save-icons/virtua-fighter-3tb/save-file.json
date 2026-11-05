@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "virtua-fighter-3tb",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#660000ff",
+		"#991100ff",
+		"#ff2200ff",
+		"#ff6611ff",
+		"#ffff33ff",
+		"#999911ff",
+		"#dddd22ff",
+		"#666600ff",
+		"#006611ff",
+		"#009922ff",
+		"#00cc44ff",
+		"#00ff55ff",
+		"#000000ff",
+		"#ddccccff",
+		"#ccddddff"
+	],
+	"frames": [
+		"ccccddddddddccccccccddddddddccccccddd755556dddccccddd755556dddcccdd7557777556ddccdd7557777556ddccd75ddd77ddd56dccd75ddddddd556dcdd57d8857d8855dddd57d888888575ddd757d8857d88576dd757d8855555776dd577d8857d88577dd577d8857777777dd577d8857d88577dd577d88dddd5777dd577d8857d88577dd577d8888885777dd577d8857d88578dd577d8855555778dd677d8857d88578dd677d8857777778ddd777d88888577dddd77d885777777ddcd6777d8885778dccd67d885777776dccdd6777885778ddccdd6555577778ddcccddd675588dddccccddd677788dddccccccddddddddccccccccddddddddccccccccddddddddccccccccddddddddccccccdddbccccadddccccddd344442dddcccddbccdddcccaddccdd3433333442ddccdbcbbd99cbbcadccd34ddd3333342dcddcbbbd99cbbbcdddd43d114333334dddbcbdd999ddcbbadd333d1143333332ddcbbd999999cbbbdd433d1143333333ddcbbccd99cccbbbdd433d11dddd3333ddcbbbbd99cbbbbbdd433d111111d333ddcbbbbd99cbbbbbdd433d1144d11433ddabbbbd99cbbbbadd233d1143d11432dddbbbbd99cbbbbdddd33d11ddd1143ddcdabbbd99ddcbadccd23d111111432dccddabbc9999cbddccdd2344444432ddcccdddabccccdddccccddd233332dddccccccddddddddccccccccddddddddcccc"
+	],
+	"animationSpeed": 1,
+	"vmuName": "VF3TB",
+	"description": "Virtua Fighter 3tb",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00001125.VMS",
+			"v42173.VMS",
+			"v57870.VMS",
+			"v96870.VMS",
+			"vf3tb.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/vf"
+	},
+	"tags": [],
+	"hash": "5e7397c1850d0d9677ce9ee446510bd8598c126d",
+	"added": "2026-11-05"
+}

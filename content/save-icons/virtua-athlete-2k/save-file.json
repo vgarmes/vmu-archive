@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "virtua-athlete-2k",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#0044bbff",
+		"#3399ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#ff00ffff",
+		"#88eeffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"111111111111111111111111111111111122222222222222222222222222221112eeee22222eeeeeeeeeeeeeeeeeee2112efe2111112efffffe22efe2111111112ef211111112efffe2112efe222222112ee211111112effe211112efeeeee2112ee211111112efe21111112effffe2112ee211111112ee2111221112efffe2112ee211111112e21112ee2112efffe2112efe2111112e21112effe222efffe2112effe22222e21112effffeeeefffe2112eeffeeeee211112efffffeeeeeee211222effffe21111112efffe21111112112112effe2111111112efffe22222211121112ee211111111112efffeeeeee21122111221112211111112ef21111111112e21111112ee211111112ee2222222112ee211112effe211111112eeeeeee2112efe2222effffe211111112efffff2112effeeeeeeeeeee211111112effff2112effee2222222222111111112efff2112effe211111111111111111112eff2112effe2111112222222222111112ef2112effe211112eeeeeeeeee2111112e2112efffe211112eeffffffee211111e2112effffe211112eefffffffe2111111112efffffe211112eefffffffe211111112effffffe211112ee211111ee21111112efffffffe211112ee222222ee2111112eeeeeeeeee22222eeeeeeeeeee21111122222222222222222222222222211111111111111111111111111111111111"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ReyKaras",
+	"description": "VirtuaAthlete2K  0099 GER  5217P",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v25831.VMS",
+			"v26575.VMS",
+			"v46971.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuaathlete"
+	},
+	"tags": [],
+	"hash": "21f121275cfea779f1d7369df64d2ea14afe0e24",
+	"added": "2026-11-05"
+}

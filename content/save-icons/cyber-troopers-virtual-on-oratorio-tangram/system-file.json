@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "cyber-troopers-virtual-on-oratorio-tangram",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ff0000ff",
+		"#ff0000ff",
+		"#ee0000ff",
+		"#ee0000ff",
+		"#dd0000ff",
+		"#bb0000ff",
+		"#aa0000ff",
+		"#880000ff",
+		"#660000ff",
+		"#550000ff",
+		"#330000ff",
+		"#220000ff",
+		"#110000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffc81111118cffffffffffffffffffffe6319bbbb9136efffffffffffffffffd537fbaaaabf735dfffffffffffffffe52cf63111136fc25efffffffffffffd52c811111111118c25dffffffffffffa1d81123bccb32118d1afffffffffffe16d5119fc99cf9115d61efffffffeda41ba119f731137f911ab14adefffb71116c213da111111ad312c61117bfb1237cdf216f41111114f612fdc7321ba16ffffe216f21111112f612effff61ab1237cdf216f41111114f612fdc7321bfb71116c213da111111ad312c61117bfffeda41ba119f731137f911ab14adefffffffe16d5119fc99cf9115d61efffffffffffa1d81123bccb32118d1affffffffffffd52c811111111118c25dfffffffffffffe52cf63111136fc25efffffffffffffffd537fbaaaabf735dfffffffffffffffffe6319bbbb9136effffffffffffffffffffc81111118cfffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ｼｽﾃﾑﾃﾞｰﾀ",
+	"description": "電脳戦機ﾊﾞｰﾁｬﾛﾝ ｵﾗﾄﾘｵ･ﾀﾝｸﾞﾗﾑ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v1971.VMS",
+			"v81022.VMS",
+			"virtuaon.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtualon"
+	},
+	"tags": [],
+	"hash": "50c6a5cc441a396c9198a3a6fdea6ed2cd274305",
+	"added": "2026-11-05"
+}

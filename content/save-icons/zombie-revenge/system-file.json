@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "zombie-revenge",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ffeebbff",
+		"#ffbb77ff",
+		"#bbaaaaff",
+		"#ee8855ff",
+		"#888888ff",
+		"#bb5533ff",
+		"#aa6644ff",
+		"#775555ff",
+		"#663322ff",
+		"#443333ff",
+		"#222233ff",
+		"#222222ff",
+		"#112222ff",
+		"#222222ff",
+		"#111111ff"
+	],
+	"frames": [
+		"000000000000050838aa58a0000000000000000000aabcfdfdffffdc1000000000000005bbdecbbbbcdeeedefba000000000058dddbbbbbcbceedeeeeedc0000000818ddbbbccbbcbbedfedeeeed5000000a8adbbbcbbbbcbcddedeedeece30001b5abbcbbbbbbcbbccddeedeedddb100fb8aacdbdbbbbbbcdeedeeecdeccea08aaaabbcbbbbbbddeefdeefeeedccd800858abcbcbbddccfedcffeeedddecdb01baaabbccdda8f8aafaeafefedcdded00b8aaacdbda7a5fa7bfbabcdfedccdc0388aacdbdae7433ca8b7dca8fededcc003d8ccccee882873a78db8ee9edddcc01b88bbbdff2142782575a889eededdc0015daabcff12822453757da7ffbece3000aaabcda72ffeff98ffdff7baeedd50033aaabdf7bfbfffcffcfefcafeeddd000a8aabcf8cafeff27ffedef9eddec0001b5eaabf27e9fe928e9ffeaafeee5000d30aaacdd1aea424ae7ae97ffeee00000008aabff21442428ea2aa7feefe0000008a8abed7442742579999ffeeeb000000008babf462269cee9e979cefd300000008f8aadf6222449a9a976cffa0000000008aa8f827466779a9966fffa0000000008baabf2644769a997966fe00000000000888da1774677c9c6699fb000000000000f88816646cc999966e00000000000000000116962498c69696430000000009410231269699c9999964741278301422112422496689797964444222214"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ZOMBIE REVENGE",
+	"description": "ZOMBIE REVENGE SYSTEM FILE",
+	"source": {
+		"kind": "save",
+		"files": [
+			"ZOMBIERE.VMS",
+			"v26491.VMS",
+			"v30965.VMS",
+			"v91226.VMS",
+			"v97447.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/zombie"
+	},
+	"tags": [],
+	"hash": "54f1b8ee2ae49314537accf38dcab6f360692dbc",
+	"added": "2026-11-05"
+}

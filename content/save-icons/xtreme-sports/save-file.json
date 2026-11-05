@@ -1,0 +1,50 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "xtreme-sports",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffccff",
+		"#ffff88ff",
+		"#995500ff",
+		"#664400ff",
+		"#cc7700ff",
+		"#ffbb11ff",
+		"#ffee00ff",
+		"#ffdd00ff",
+		"#dd8800ff",
+		"#0033bbff",
+		"#000000ff",
+		"#aa6600ff",
+		"#ffffffff",
+		"#ccccccff",
+		"#00000000",
+		"#00000000"
+	],
+	"frames": [
+		"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa9999999999aab8064aa99999999999aa99999999aa444bbbb44aa999999999aa9999999a4866606668844a99999999aa999999a8611c0111116884a9999999aa99aaaa81110c01111116844aaaaa99aa9a6666bbb487844444444bbb8666a9aaa6844448661116668443a34444486aaa68aaa44861cc0116844aaa444aaa86aa64a99a4861cc0116844aaa44a99a86aa64a99a4861cc0116844aaa44a99a86aa64a99a4861cc1116844aaa44a99a86aa84a99a4861cc1116844aaa44a99a86aa484aaa4861001116844aaa44a9a468aaa488aa4861001116844aa344aa488aaa9a44888466001166844aa2444884a9aa99aa44848666666844ba344444aa99aa9999aa444888888442334884aa9999aa99999a444444444b3a3866aa999999aa999999a43aaaaaaa348615a9999999aa9999999a43aaa34486115a99999999aa99999999a43248661115a999999999aa999999999a444486665a9999999999aa9999999999a4444444a99999999999aa99999999999a4c183a999999999999aa99999999999a8c163a999999999999aa9999999999a48c1633a99999999999aa9999999999a46c1633a99999999999aa999999999aa46c16233a9999999999aa99999999a44866664244a999999999aa9999999a8661111168844a99999999aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+	],
+	"animationSpeed": 10,
+	"vmuName": "EXTREME SPORTS",
+	"description": "Extreme Sports Hiscores",
+	"source": {
+		"kind": "save",
+		"files": [
+			"EXTS1.VMS",
+			"EXTS2.VMS",
+			"EXTS3.VMS",
+			"EXTS4.VMS",
+			"exsports.VMS",
+			"v20833.VMS",
+			"v34612.VMS",
+			"v37050.VMS",
+			"v94008.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/xsports"
+	},
+	"tags": [],
+	"hash": "ab198bfe9b7561935d7adb658eae0adb2b5a7b1d",
+	"added": "2026-11-05"
+}

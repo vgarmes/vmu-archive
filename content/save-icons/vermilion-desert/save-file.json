@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "vermilion-desert",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#333333ff",
+		"#999999ff",
+		"#555555ff",
+		"#777777ff",
+		"#774433ff",
+		"#221111ff",
+		"#551111ff",
+		"#ffaa99ff",
+		"#aa2211ff",
+		"#dd3322ff",
+		"#ee4433ff",
+		"#ee4433ff",
+		"#ffccbbff",
+		"#bbbbbbff",
+		"#000000ff",
+		"#00000000"
+	],
+	"frames": [
+		"c77777777777777777777777777777797bbbbbbbbbbbbbbbbbbbbbbbbbbbbbb87b66666669bbbbbbbbbbbbbbbbbbbbb87b68888887bbbbbbbbbbbbbb866555557b6888887bbbbbbbbbb656650231d2567b688887bbb8bbbbb852031ddddd05987b68887bbb65bbb6501ddddddd356bb87b6887bbb856bb652dd33dddd258bbb87b687bbbb506b62dd2051ddd059bbbb87b97bbbb620862d20213dd106bbbbbb87bbbbbb951560202133dd156bbbbbbb87bbbbbb62355521813dd156bbbbbbbb87bbbbb958d5038813dd156bb9666bbb87bbbbb629d21dd13dd158a855205bbb87bbbb953dddddddddd066503d25bbbb87bbbb62dddddddddd25501dd05bbbbb87bbbb51d73dd11dd3501ddd05bbbbbb87bbb60899d1201dd03dddd25bbbbbbb87bb9511d10552dddddddd25bbbbbbbb87b953d305685dddd12dd259bbbbbbbb878513558bb62dd1052d35bbbbbbbbbb8755568bbbb5d10555d15bbbbbbbbbbb878bbbbbbb62256553d566558bbbb69b87bbbbbbbb5569600d050558bbbb687b87bbbbbbb858bb53ddd106bbbbb6887b87bbbbbbbbbbb85ddd358bbbbb68887b87bbbbbbbbbbb62d105bbbbbb688887b87bbbbbbbbbbb5d156bbbbbb6888887b87bbbbbbbbbb655bbbbbbbb97777777b87bbbbbbbbbb655bbbbbbbb97777777b87bbbbbbbbbb65bbbbbbbbbbbbbbbbbb898888888888888888888888888888888"
+	],
+	"animationSpeed": 1,
+	"vmuName": "MISSION 1  00:12",
+	"description": "バーミリオン　デザート",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00001212.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/vermilion"
+	},
+	"tags": [],
+	"hash": "487d577716875dc1b18a38eeb184b993e548e6e5",
+	"added": "2026-11-05"
+}

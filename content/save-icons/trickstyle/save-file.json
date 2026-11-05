@@ -1,0 +1,47 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "trickstyle",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#dd0022ff",
+		"#330000ff",
+		"#772233ff",
+		"#dd7788ff",
+		"#220000ff",
+		"#000000ff",
+		"#005566ff",
+		"#003344ff",
+		"#002233ff",
+		"#11aaddff",
+		"#2288aaff",
+		"#88ccddff",
+		"#111122ff",
+		"#445566ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ceeeeeeeeeeeeeeeeeeeeeeeeeeeeeeceffffffffffffffffffffffffffffffeeffffffffffffffffffffffffffffffeeffffffffffffffffffffffffffffffeeffffffffffffffffffffffffffffffeeffcbbbbbbbbbbbbaffffffffffffffeeffa9999999999997ffffffffffffffeeff6777799a77777effffffffffffffeeffffff69965fffffffff5233333332eeffffffb998fffffffff23301111114eefffffd9965fffffff133014fffffffeefffffb998fffffff23001fffffffffeeffffc99aeffffff23001ffffffffffeeffffa997ffffff13001fffffffffffeefff5b9acfffff43001ffffdbbbbaffeefffd996fffff430004ff5bb99998ffeeff5b998ffff130004fffb9a67785ffeeffe6675ff4330001fff7b975ffffffeeff22222233300025fffb99adddddc5eef13333330000004ffffa99bbbbbbbbdef3000000000001fffff86aaaaaa999be2300000000004fffffffe8888888996e21111111445ffffffffffffffff5997effffffffffffffffffffffffff5a9acebbbbbbbbbcffdbbbbbbbbbbbbbbb97edb99999999cfcb99999999999999a7ee6666666666cf866666666666666785feeffffffffffffffffffffffffffffffeeffffffffffffffffffffffffffffffeeffffffffffffffffffffffffffffffeeffffffffffffffffffffffffffffffeceeeeeeeeeeeeeeeeeeeeeeeeeeeeeec",
+		"ffffffffeeeeeeeeeeeeeefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcbbbbbbfffffffffffffffffffffffffa999999fffffffffffffffffffffffff6779777fffffffffffffffffffffffffff695ffff53333ffffffffffffffffffffb9fffff30111ffffffffffffffffffff96ffff304fffffffffffffffffffffff98fff201fffffffffffffffffffffffc9efff30ffffffffffffffffffffffffa9fff101ffffffffffffffffffffffffbafff30ffdbbffffffffffffffffffff96ff400f5b99fffffffffffffffffff598ff304fba78fffffffffffffffffffe65f300ffb7fffffffffffffffffffff2223302ff9addfffffffffffffffffff3330004ff9bbbbdfffffffffffffffff000000fff6aaa9bfffffffffffffffff000004fffe88896fffffffffffffffff11145ffffffff97fffffffffffffffffffffffffffff59fffffffffffffffffbbbbbfdbbbbbbb9fffffffffffffffffb9999fb99999997fffffffffffffffff66666f66666667ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeeeeeeeeeeeeeeffffffffff",
+		"ffffffffffeeeeeeeeeeeeeeffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffbbbbbbcfffffffffffffffffffffffff999999afffffffffffffffffffffffff7779776ffffffffffffffffff33335ffff596ffffffffffffffffffff11103fffff9bfffffffffffffffffffffff403ffff69ffffffffffffffffffffffff102fff89fffffffffffffffffffffffff03fffe9cffffffffffffffffffffffff101fff9affffffffffffffffffffbbdff03fffabffffffffffffffffffff99b5f004ff69ffffffffffffffffffff87abf403ff895fffffffffffffffffffff7bff003f56efffffffffffffffffffdda9ff2033222fffffffffffffffffdbbbb9ff4000333fffffffffffffffffb9aaa6fff000000fffffffffffffffff69888efff400000fffffffffffffffff79ffffffff54111ffffffffffffffffff95ffffffffffffffffffffffffffffff9bbbbbbbdfbbbbbfffffffffffffffff79999999bf9999bffffffffffffffffff76666666f66666ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffeeeeeeeeeeeeeeffffffff"
+	],
+	"animationSpeed": 10,
+	"vmuName": "NATE",
+	"description": "TrickStyle",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000168.VMS",
+			"v38795.VMS",
+			"v39698.VMS",
+			"v87808.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/trickstyle"
+	},
+	"tags": [],
+	"hash": "4084ef4ad52139430b83db6ab80363efe818865f",
+	"added": "2026-11-05"
+}

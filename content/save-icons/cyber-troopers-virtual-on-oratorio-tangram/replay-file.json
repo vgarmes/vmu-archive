@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Replay file",
+	"gameId": "cyber-troopers-virtual-on-oratorio-tangram",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ff0000ff",
+		"#ff0000ff",
+		"#ee0000ff",
+		"#dd0000ff",
+		"#dd0000ff",
+		"#cc0000ff",
+		"#aa0000ff",
+		"#990000ff",
+		"#770000ff",
+		"#660000ff",
+		"#440000ff",
+		"#220000ff",
+		"#110000ff",
+		"#110000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffb70000007bffffffffffffffffffffe6208baab8026efffffffffffffffffd427fb9aa9bf724dfffffffffffffffd41cf62000026fc14dfffffffffffffd31c800000000008c13dffffffffffff90c80012bbbb21008c09fffffffffffe06d3009fc99cf9003d60efffffffed930a9009f720027f9009a039defffa60006b102da000000ad201b60006afa0126cce106f30000003f601ecc6210aa06ffffe106f10000001f601effff60aa0126cce106f30000003f601ecc6210afa60006b102da000000ad201b60006afffed930a9009f720027f9009a039defffffffe06d3009fc99cf9003d60efffffffffff90c80012bbbb21008c09ffffffffffffd31c800000000008c13dfffffffffffffd41cf62000026fc14dfffffffffffffffd427fb9aa9bf724dfffffffffffffffffe6208baab8026effffffffffffffffffffb70000007bfffffffffffffffffffffffffffffffffffffffffffffffefffffffffffffffffffffffffffffecbcefff70007f70000f70000ffffffea656aeff0fff0f0fffff0ffffffffffc61016cff0fff0f0fffff0ffffffffffb20002bef00007f00000f0ffffffffffb40004bff0f0bff0fffff0ffffffffffd94149dff0ff0bf0fffff0ffffffffffeca9aceff0fff0f70000f70000fffffffeeddefffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Replay SPF(LAST)",
+	"description": "VIRTUAL-ON ORATORIO TANGRAM",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v39368.VMS",
+			"v8748.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtualon"
+	},
+	"tags": [],
+	"hash": "399e300b9fe1a865dfa40cd4660c7d611ffd34a3",
+	"added": "2026-11-05"
+}

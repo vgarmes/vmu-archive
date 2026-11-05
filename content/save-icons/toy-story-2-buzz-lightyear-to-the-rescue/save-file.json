@@ -1,0 +1,47 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "toy-story-2-buzz-lightyear-to-the-rescue",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#886633ff",
+		"#bb8844ff",
+		"#bb5599ff",
+		"#bb9999ff",
+		"#bbcc00ff",
+		"#bbbb55ff",
+		"#bbbbbbff",
+		"#ddccccff",
+		"#eecc88ff",
+		"#eeee99ff",
+		"#ffddaaff",
+		"#eeddbbff",
+		"#ffddffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffeeff"
+	],
+	"frames": [
+		"30eceeeeeeeecccccceceeeece030000c3eeeedded77a7aaaa676601e76e0000eceeeeee7dbbabaaaa180011e0ee0c00eeeeeedecc15858a38555555e0eece00eeeeeece9c00111151553351e0eeee0ceeeeeece57808a3815113513e1eeeeceeeeede7c57f57d0313333613e3eeeeeeeeee7e22b7ea7d0683666630edeeeeeeeeee2e22bbd87e66933a6366eceeeeeeeeee2722ab8a6b83b83b6337e7eeeeeeeeee2762ab8a8888b88f1333e7eeeeeeeeee27b2ab888888fa181322ebeeeeeeeeee2eb7ab88588518103122e2eeeeeeeeee7eb7ab8a1188aa38331172eeeeeeeeee7e97aa5a00a58888131162deeeeeeeee7ebbaa1a10756773061360dededdeedd6ebbaa8a98687766073661deddddeedd7ebbaaaaa88aec7e873333eedddddedd7ebbaaaaa8aa5811633333deddddeedd7eaaaaaaaaaa8888333333deddddeedd6eaaaaaaaaaa8888383333deddddeddd6e93aaaaaaaa8888383333dedddddddd6e92aaaaaa8a8815113331dedddddddd7e82a9aaaa885811003130dede6bdddd7e22a8aa8a881501000070ce6b33dddd7e228388581111110031c7673355dddd7e2232881111010071be6c554444dddd7e222242110010e6be5544444444dddd7e2222221061eb57444444444445dddd6e222262ec594444444444445445dddd2c22779e44444444444444445545ddddccedee4744444444444444545544"
+	],
+	"animationSpeed": 0,
+	"vmuName": "TOKENS 13",
+	"description": "TOY STORY 2 - SAVE GAME DATA",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v14062.VMS",
+			"v38204.VMS",
+			"v45862.VMS",
+			"v82035.VMS",
+			"v82334.VMS",
+			"v93671.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/toystory"
+	},
+	"tags": [],
+	"hash": "40acdcfe448167595f80fdd71199acce3d485951",
+	"added": "2026-11-05"
+}
