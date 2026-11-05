@@ -17,8 +17,6 @@ interface File {
 	kind: 'save' | 'memory-card'
 	title: string
 	gameId: string
-	publisher?: string
-	year?: number
 	region?: string
 	width: number
 	height: number
@@ -52,6 +50,7 @@ export interface SaveIcon {
 	ja?: string
 	/** Whether the game has a page (it has VMU screens). */
 	hasPage: boolean
+	/** The game's publisher and year, from the registry. */
 	publisher?: string
 	year?: number
 	region?: string
@@ -98,8 +97,8 @@ export function getSaveIcons(): SaveIcon[] {
 				gameSlug,
 				ja: entry.ja ?? (entry.en ? entry.name : undefined),
 				hasPage: !!game,
-				publisher: s.publisher,
-				year: s.year,
+				publisher: entry.publisher,
+				year: entry.year,
 				region: s.region,
 				vmuName: s.vmuName,
 				description: s.description,

@@ -7,7 +7,8 @@
  * save-icons.json, in the folder or given with --sidecar, says which game
  * they're from (by its name, an alias or its id in content/games.json; a game
  * the registry doesn't know yet is added to it) and names each distinct icon
- * by any one of its saves:
+ * by any one of its saves ("publisher" and "year" are the game's, and go on
+ * its entry in content/games.json):
  *
  *   {
  *     "game": "Capcom vs. SNK 2", "publisher": "Capcom", "year": 2001,
@@ -42,7 +43,13 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { slug } from '../src/lib/slug.ts'
-import { findGame, gameIdFor, loadRegistry, saveRegistry } from './registry.ts'
+import {
+	findGame,
+	gameIdFor,
+	loadRegistry,
+	saveRegistry,
+	setGameDetails
+} from './registry.ts'
 import {
 	ICON_SIZE,
 	SAVE_ICONS_DIR,
@@ -198,11 +205,13 @@ function main() {
 		groups.set(hash, [...(groups.get(hash) ?? []), s])
 	}
 
-	// A game the registry doesn't know yet joins it only once one of its icons
-	// is written: a folder whose icons are all elsewhere already adds nothing.
+	// A game the registry doesn't know yet joins it, and the sidecar's
+	// publisher and year go on its entry, only once one of its icons is
+	// written: a folder whose icons are all elsewhere already adds nothing.
 	const registry = loadRegistry()
 	const isNew = !findGame(registry, sidecar.game)
 	const gameId = gameIdFor(registry, sidecar.game, { dryRun: true })
+	const registryChanged = setGameDetails(registry, gameId, sidecar) || isNew
 	const have = existingHashes()
 	const dir = path.join(SAVE_ICONS_DIR, gameId)
 	const taken = new Set(
@@ -238,8 +247,6 @@ function main() {
 			kind: first.kind,
 			title,
 			gameId,
-			publisher: sidecar.publisher,
-			year: sidecar.year,
 			region: sidecar.region,
 			width: ICON_SIZE,
 			height: ICON_SIZE,
@@ -267,7 +274,7 @@ function main() {
 		const problems = saveIconProblems(icon)
 		if (problems.length) throw new Error(`${id}: ${problems.join('; ')}`)
 		if (!dryRun) {
-			if (isNew && !added) saveRegistry(registry)
+			if (registryChanged && !added) saveRegistry(registry)
 			fs.mkdirSync(dir, { recursive: true })
 			fs.writeFileSync(
 				path.join(dir, `${id}.json`),

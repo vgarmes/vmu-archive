@@ -6,7 +6,8 @@
  *
  * - content/games.json, the registry (see scripts/registry.ts), is sound,
  *   every game in it has some content, and every screen, sprite and save icon
- *   names a game that's in it (`gameId`).
+ *   names a game that's in it (`gameId`), leaving the game's publisher and
+ *   year to it.
  * - Every content/sprites/<game id>/*.json is well formed (see
  *   scripts/sprites.ts), sits in its game's folder, and is drawn only on
  *   screens that exist.
@@ -35,19 +36,25 @@ const jsonFiles = (dir: string) =>
 const registry = loadRegistry()
 const problems: string[] = [...registryProblems(registry)]
 const used = new Set<string>()
-const known = (where: string, gameId: string) => {
+const known = (where: string, entry: { gameId: string }) => {
+	const { gameId } = entry
 	used.add(gameId)
 	if (!registry[gameId])
 		problems.push(`${where}: no game "${gameId}" in content/games.json`)
+	for (const key of ['publisher', 'year'])
+		if (key in entry)
+			problems.push(
+				`${where}: "${key}" is the game's; it goes in content/games.json`
+			)
 }
 
 const screens = new Set<string>()
 for (const file of jsonFiles(ICONS_DIR)) {
 	screens.add(file.replace(/\.json$/, ''))
-	const { gameId } = JSON.parse(
-		fs.readFileSync(path.join(ICONS_DIR, file), 'utf8')
+	known(
+		`icons/${file}`,
+		JSON.parse(fs.readFileSync(path.join(ICONS_DIR, file), 'utf8'))
 	)
-	known(`icons/${file}`, gameId)
 }
 
 /** Each JSON in content/<root>/<game id>/, with where it is. */
@@ -80,7 +87,7 @@ for (const { dir, where, entry: s } of inGameFolders<Sprite>(
 	'sprites'
 )) {
 	sprites++
-	known(where, s.gameId)
+	known(where, s)
 	if (s.gameId && s.gameId !== dir)
 		problems.push(`${where}: "${s.gameId}" belongs in sprites/${s.gameId}/`)
 	for (const p of spriteProblems(s, screens)) problems.push(`${where}: ${p}`)
@@ -93,7 +100,7 @@ for (const { dir, where, entry: s } of inGameFolders<SaveIcon>(
 	'save-icons'
 )) {
 	saveIcons++
-	known(where, s.gameId)
+	known(where, s)
 	if (s.gameId && s.gameId !== dir)
 		problems.push(`${where}: "${s.gameId}" belongs in save-icons/${s.gameId}/`)
 	const twin = saveHashes.get(s.hash)

@@ -23,6 +23,12 @@ const schema = z.record(
 		 * one ("Project Justice" → "Moero! Justice Gakuen").
 		 */
 		ja: z.string().optional(),
+		/**
+		 * Its publisher and the year it first came out: the game's, so its
+		 * screens, sprites and save icons don't repeat them.
+		 */
+		publisher: z.string().min(1).optional(),
+		year: z.number().int().min(1998).optional(),
 		/** Id of the screen its card shows. */
 		cover: z.string().optional(),
 		/** Other names it goes by in sources, for the importers. */

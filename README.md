@@ -37,6 +37,9 @@ its screens, sprites and save icons refer to (`"gameId"`) and that gives its
 URL, `/games/<game id>`, and folders. `name` is its name in the archive;
 `aliases` are other names sources use for it, so the importers can find it.
 Set `en` when the name is the Japanese one, `ja` when it's the English one.
+`publisher` and `year` (its first release's) are the game's, kept here
+rather than on each screen: a sidecar's `"publisher"` and `"year"` fill them
+in, and one that disagrees with the registry fails the import.
 `cover` picks the screen its card shows (an icon id); by default that's its
 title screen, else its logo. A sidecar's `"game"` can be a name, an alias or
 an id; a game the registry doesn't know yet is added to it with its name's

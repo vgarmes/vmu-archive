@@ -55,17 +55,23 @@
 	},
 	"bangai-o": {
 		"name": "Bangai-O",
-		"ja": "Bakuretsu Muteki Bangaioh"
+		"ja": "Bakuretsu Muteki Bangaioh",
+		"publisher": "Treasure",
+		"year": 1999
 	},
 	"berserk-millennium-falcon-hen-wasurebana-no-sho": {
 		"name": "Berserk: Millennium Falcon-hen – Wasurebana no Shō",
-		"en": "Sword of the Berserk: Guts' Rage"
+		"en": "Sword of the Berserk: Guts' Rage",
+		"publisher": "ASCII",
+		"year": 1999
 	},
 	"black-matrix-advanced": {
 		"name": "Black Matrix Advanced"
 	},
 	"blue-stinger": {
-		"name": "Blue Stinger"
+		"name": "Blue Stinger",
+		"publisher": "Activision",
+		"year": 1999
 	},
 	"blue-submarine-no-6": {
 		"name": "Blue Submarine No. 6"
@@ -95,7 +101,9 @@
 		"name": "Canvas"
 	},
 	"capcom-vs-snk-2": {
-		"name": "Capcom vs. SNK 2"
+		"name": "Capcom vs. SNK 2",
+		"publisher": "Capcom",
+		"year": 2001
 	},
 	"capcom-vs-snk-millennium-fight-2000": {
 		"name": "Capcom vs SNK: Millennium Fight 2000"
@@ -104,7 +112,9 @@
 		"name": "Cardcaptor Sakura: Tomoyo no Video Daisakusen"
 	},
 	"carrier": {
-		"name": "Carrier"
+		"name": "Carrier",
+		"publisher": "Jaleco",
+		"year": 2000
 	},
 	"castle-fantasia": {
 		"name": "Castle Fantasia"
@@ -140,10 +150,14 @@
 		"name": "Cool Cool Toon"
 	},
 	"crazy-taxi": {
-		"name": "Crazy Taxi"
+		"name": "Crazy Taxi",
+		"publisher": "Sega",
+		"year": 2000
 	},
 	"crazy-taxi-2": {
-		"name": "Crazy Taxi 2"
+		"name": "Crazy Taxi 2",
+		"publisher": "Sega",
+		"year": 2001
 	},
 	"cyber-troopers-virtual-on-oratorio-tangram": {
 		"name": "Cyber Troopers Virtual-On: Oratorio Tangram"
@@ -206,7 +220,9 @@
 		"name": "Dream Passport 3"
 	},
 	"dreamcast": {
-		"name": "Dreamcast"
+		"name": "Dreamcast",
+		"publisher": "Sega",
+		"year": 1998
 	},
 	"ducati-world-racing-challenge": {
 		"name": "Ducati World Racing Challenge"
@@ -367,7 +383,9 @@
 		"name": "Hydro Thunder"
 	},
 	"ikaruga": {
-		"name": "Ikaruga"
+		"name": "Ikaruga",
+		"publisher": "Treasure",
+		"year": 2001
 	},
 	"illbleed": {
 		"name": "Illbleed"
@@ -383,11 +401,9 @@
 	},
 	"jet-set-radio": {
 		"name": "Jet Set Radio",
-		"aliases": [
-			"Jet Grind Radio",
-			"De La Jet Set Radio",
-			"Jet Set Radio DX"
-		]
+		"publisher": "Sega",
+		"year": 2000,
+		"aliases": ["Jet Grind Radio", "De La Jet Set Radio", "Jet Set Radio DX"]
 	},
 	"jojos-bizarre-adventure": {
 		"name": "Jojo's Bizarre Adventure"
@@ -420,7 +436,9 @@
 		"name": "Langrisser Millennium"
 	},
 	"legacy-of-kain-soul-reaver": {
-		"name": "Legacy of Kain: Soul Reaver"
+		"name": "Legacy of Kain: Soul Reaver",
+		"publisher": "Eidos Interactive",
+		"year": 2000
 	},
 	"looney-tunes-space-race": {
 		"name": "Looney Tunes: Space Race"
@@ -453,7 +471,9 @@
 		"name": "Marvel vs. Capcom"
 	},
 	"marvel-vs-capcom-2": {
-		"name": "Marvel vs. Capcom 2"
+		"name": "Marvel vs. Capcom 2",
+		"publisher": "Capcom",
+		"year": 2000
 	},
 	"mat-hoffmans-pro-bmx": {
 		"name": "Mat Hoffman's Pro BMX"
@@ -559,10 +579,14 @@
 		"en": "Surf Rocket Racers"
 	},
 	"power-stone": {
-		"name": "Power Stone"
+		"name": "Power Stone",
+		"publisher": "Capcom",
+		"year": 1999
 	},
 	"power-stone-2": {
-		"name": "Power Stone 2"
+		"name": "Power Stone 2",
+		"publisher": "Capcom",
+		"year": 2000
 	},
 	"prince-of-persia-arabian-nights": {
 		"name": "Prince of Persia: Arabian Nights"
@@ -581,7 +605,9 @@
 	},
 	"project-justice": {
 		"name": "Project Justice",
-		"ja": "Moero! Justice Gakuen"
+		"ja": "Moero! Justice Gakuen",
+		"publisher": "Capcom",
+		"year": 2000
 	},
 	"propeller-arena": {
 		"name": "Propeller Arena"
@@ -591,7 +617,9 @@
 	},
 	"puyo-pop-fever": {
 		"name": "Puyo Pop Fever",
-		"ja": "Puyo Puyo Fever"
+		"ja": "Puyo Puyo Fever",
+		"publisher": "Sega",
+		"year": 2004
 	},
 	"puyo-puyo-n": {
 		"name": "Puyo Puyo~n"
@@ -654,7 +682,9 @@
 		"name": "Revive"
 	},
 	"rez": {
-		"name": "Rez"
+		"name": "Rez",
+		"publisher": "Sega",
+		"year": 2002
 	},
 	"rippin-riders": {
 		"name": "Rippin' Riders"
@@ -679,9 +709,9 @@
 	},
 	"sakura-taisen-3-paris-wa-moete-iru-ka": {
 		"name": "Sakura Taisen 3: Paris wa Moete Iru ka",
-		"aliases": [
-			"Sakura Wars 3"
-		]
+		"publisher": "Sega",
+		"year": 2001,
+		"aliases": ["Sakura Wars 3"]
 	},
 	"sakura-taisen-4-koi-seyo-otome": {
 		"name": "Sakura Taisen 4: Koi Seyo, Otome"
@@ -726,7 +756,9 @@
 		"name": "Sega Swirl"
 	},
 	"sega-tetris": {
-		"name": "Sega Tetris"
+		"name": "Sega Tetris",
+		"publisher": "Sega",
+		"year": 2000
 	},
 	"segagaga": {
 		"name": "SeGaGaGa"
@@ -743,18 +775,22 @@
 	"shenmue": {
 		"name": "Shenmue",
 		"ja": "Shenmue Isshō: Yokosuka",
-		"aliases": [
-			"Shenmue Chapter 1: Yokosuka"
-		]
+		"publisher": "Sega",
+		"year": 1999,
+		"aliases": ["Shenmue Chapter 1: Yokosuka"]
 	},
 	"shenmue-ii": {
-		"name": "Shenmue II"
+		"name": "Shenmue II",
+		"publisher": "Sega",
+		"year": 2001
 	},
 	"shinseiki-evangelion-ayanami-ikusei-keikaku": {
 		"name": "Shinseiki Evangelion: Ayanami Ikusei Keikaku"
 	},
 	"shinseiki-evangelion-typing-e-keikaku": {
-		"name": "Shinseiki Evangelion: Typing E-Keikaku"
+		"name": "Shinseiki Evangelion: Typing E-Keikaku",
+		"publisher": "Gainax",
+		"year": 2001
 	},
 	"silent-scope": {
 		"name": "Silent Scope"
@@ -775,19 +811,27 @@
 		"name": "Soldier of Fortune"
 	},
 	"sonic-adventure": {
-		"name": "Sonic Adventure"
+		"name": "Sonic Adventure",
+		"publisher": "Sega",
+		"year": 1998
 	},
 	"sonic-adventure-2": {
-		"name": "Sonic Adventure 2"
+		"name": "Sonic Adventure 2",
+		"publisher": "Sega",
+		"year": 2001
 	},
 	"sonic-shuffle": {
-		"name": "Sonic Shuffle"
+		"name": "Sonic Shuffle",
+		"publisher": "Sega",
+		"year": 2000
 	},
 	"sorcerian": {
 		"name": "Sorcerian"
 	},
 	"soul-calibur": {
-		"name": "Soul Calibur"
+		"name": "Soul Calibur",
+		"publisher": "Namco",
+		"year": 1999
 	},
 	"soul-fighter": {
 		"name": "Soul Fighter"
@@ -840,9 +884,9 @@
 	"street-fighter-iii-3rd-strike": {
 		"name": "Street Fighter III: 3rd Strike",
 		"ja": "Street Fighter III 3rd Strike: Fight for the Future",
-		"aliases": [
-			"Street Fighter 3rd Strike"
-		]
+		"publisher": "Capcom",
+		"year": 2000,
+		"aliases": ["Street Fighter 3rd Strike"]
 	},
 	"street-fighter-iii-double-impact": {
 		"name": "Street Fighter III: Double Impact"
@@ -953,7 +997,9 @@
 		"name": "Tomb Raider: The Last Revelation"
 	},
 	"tony-hawks-pro-skater": {
-		"name": "Tony Hawk's Pro Skater"
+		"name": "Tony Hawk's Pro Skater",
+		"publisher": "Crave Entertainment",
+		"year": 2000
 	},
 	"tony-hawks-pro-skater-2": {
 		"name": "Tony Hawk's Pro Skater 2"
@@ -974,7 +1020,8 @@
 		"name": "Ultimate Fighting Championship"
 	},
 	"unknown": {
-		"name": "Unknown"
+		"name": "Unknown",
+		"publisher": "Sega"
 	},
 	"unreal-tournament": {
 		"name": "Unreal Tournament"
@@ -1010,7 +1057,9 @@
 		"name": "Virtua Tennis 2"
 	},
 	"visual-memory-unit": {
-		"name": "Visual Memory Unit"
+		"name": "Visual Memory Unit",
+		"publisher": "Sega",
+		"year": 1999
 	},
 	"wacky-races": {
 		"name": "Wacky Races"

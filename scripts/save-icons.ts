@@ -31,8 +31,6 @@ export interface SaveIcon {
 	title: string
 	/** The game's id in the registry, content/games.json. */
 	gameId: string
-	publisher?: string
-	year?: number
 	region?: 'JP' | 'US' | 'EU' | 'WW'
 	width: 32
 	height: 32

@@ -13,6 +13,8 @@
  * frameDelayMs, frameDelaysMs, posterFrame, replaces }. "game" names the game
  * by its name, an alias or its id in content/games.json; the entry stores its
  * id ("gameId"), and a game the registry doesn't know yet is added to it.
+ * "publisher" and "year" are the game's, so they go on its registry entry,
+ * not the piece's (see `setGameDetails` in ./registry.ts).
  * "frameDelaysMs" gives
  * each frame its own delay, one per frame, for frames that last different
  * times. Back-to-back copies of a frame are merged into one frame held for
@@ -51,7 +53,12 @@ import path from 'node:path'
 import pngjs from 'pngjs'
 import { DEFAULT_FRAME_DELAY_MS, encodeFrame } from '../src/lib/pixels.ts'
 import { slug } from '../src/lib/slug.ts'
-import { gameIdFor, loadRegistry } from './registry.ts'
+import {
+	gameIdFor,
+	loadRegistry,
+	saveRegistry,
+	setGameDetails
+} from './registry.ts'
 import {
 	ICONS_DIR,
 	SPRITES_DIR,
@@ -70,7 +77,9 @@ interface Meta {
 	title?: string
 	/** The game's name, an alias or its id in content/games.json. */
 	game?: string
+	/** The game's, written to its entry in content/games.json. */
 	publisher?: string
+	/** The game's first release, written to its entry in content/games.json. */
 	year?: number
 	region?: 'JP' | 'US' | 'EU' | 'WW'
 	tags?: string[]
@@ -264,6 +273,11 @@ function main() {
 	// Sidecars name their game by name, alias or id; a new one joins the registry.
 	const registry = loadRegistry()
 	const gameIdOf = (name: string) => gameIdFor(registry, name, { dryRun })
+	// A sidecar's publisher and year go on its game in the registry.
+	const recordDetails = (gameId: string, meta: Meta) => {
+		const changed = setGameDetails(registry, gameId, meta)
+		if (changed && !dryRun) saveRegistry(registry)
+	}
 	const inputs = args.filter(a => !a.startsWith('--'))
 	if (!inputs.length) {
 		console.log(
@@ -354,8 +368,6 @@ function main() {
 				const sprite: Sprite = {
 					title,
 					gameId,
-					publisher: meta.publisher,
-					year: meta.year,
 					region: meta.region,
 					width,
 					height,
@@ -370,6 +382,7 @@ function main() {
 				}
 				const problems = spriteProblems(sprite, screenIds)
 				if (problems.length) throw new Error(problems.join('; '))
+				recordDetails(gameId, meta)
 				if (!dryRun) {
 					fs.mkdirSync(dir, { recursive: true })
 					fs.writeFileSync(
@@ -426,8 +439,6 @@ function main() {
 				const entry = {
 					title,
 					gameId,
-					publisher: pick('publisher'),
-					year: pick('year'),
 					region: pick('region'),
 					width: W,
 					height: H,
@@ -441,6 +452,7 @@ function main() {
 					hash,
 					added: addedDate()
 				}
+				recordDetails(gameId, meta)
 				if (!dryRun)
 					fs.writeFileSync(
 						path.join(OUT_DIR, `${id}.json`),
@@ -546,8 +558,6 @@ function main() {
 			const entry = {
 				title,
 				gameId,
-				publisher: pick('publisher'),
-				year: pick('year'),
 				region: pick('region'),
 				width: W,
 				height: H,
@@ -560,6 +570,7 @@ function main() {
 				hash,
 				added: addedDate()
 			}
+			recordDetails(gameId, meta)
 			if (!dryRun)
 				fs.writeFileSync(
 					path.join(OUT_DIR, `${id}.json`),

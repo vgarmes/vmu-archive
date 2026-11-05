@@ -53,8 +53,6 @@ const schema = z
 		title: z.string(),
 		/** The game's id in the registry, content/games.json. */
 		gameId: z.string(),
-		publisher: z.string().optional(),
-		year: z.number().int().optional(),
 		region: z.enum(['JP', 'US', 'EU', 'WW']).optional(),
 		width: z.literal(48),
 		height: z.literal(32),
@@ -132,7 +130,7 @@ export interface Icon {
 export interface IndexEntry {
 	id: string
 	title: string
-	/** The game's name, from the registry. */
+	/** The game's name, publisher and year, from the registry. */
 	game: string
 	publisher?: string
 	year?: number
@@ -197,26 +195,29 @@ export function getIcons(): Icon[] {
 
 export const getIcon = (id: string) => getIcons().find(icon => icon.id === id)
 
-export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
-	id,
-	title: data.title,
-	game: getGameEntry(data.gameId).name,
-	publisher: data.publisher,
-	year: data.year,
-	tags: data.tags,
-	...(data.region && { region: data.region }),
-	...(data.unused && { unused: true as const }),
-	...(data.frames.length > 1 && {
-		frames: data.frames.length,
-		frameDelayMs: data.frameDelayMs,
-		frameDelaysMs: data.frameDelaysMs,
-		posterFrame: data.posterFrame
-	}),
-	...(data.scroll && {
-		scroll: {
-			...scrollStripSize(data.scroll, data.width, data.height),
-			stepPx: data.scroll.stepPx,
-			...(data.scroll.direction === 'down' && { direction: 'down' as const })
-		}
-	})
-})
+export const toIndexEntry = ({ id, data }: Icon): IndexEntry => {
+	const game = getGameEntry(data.gameId)
+	return {
+		id,
+		title: data.title,
+		game: game.name,
+		publisher: game.publisher,
+		year: game.year,
+		tags: data.tags,
+		...(data.region && { region: data.region }),
+		...(data.unused && { unused: true as const }),
+		...(data.frames.length > 1 && {
+			frames: data.frames.length,
+			frameDelayMs: data.frameDelayMs,
+			frameDelaysMs: data.frameDelaysMs,
+			posterFrame: data.posterFrame
+		}),
+		...(data.scroll && {
+			scroll: {
+				...scrollStripSize(data.scroll, data.width, data.height),
+				stepPx: data.scroll.stepPx,
+				...(data.scroll.direction === 'down' && { direction: 'down' as const })
+			}
+		})
+	}
+}

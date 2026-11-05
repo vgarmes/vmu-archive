@@ -31,9 +31,11 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   `content/games/<game id>.md`; its README in `tools/disc-extraction/<game>/`
   only names the dump and how to run the scripts.
 - `content/games.json` is the game registry: every game under a stable id,
-  with its name, English/Japanese (romanized) titles, aliases and card cover
-  (see `scripts/registry.ts`). Content refers to a game by that id
-  (`"gameId"`), never by name; folders and the page route
+  with its name, English/Japanese (romanized) titles, publisher, year,
+  aliases and card cover (see `scripts/registry.ts`). Content refers to a
+  game by that id (`"gameId"`), never by name, and doesn't repeat its
+  publisher or year (`pnpm content:check` fails if it does); a sidecar's
+  `"publisher"`/`"year"` are written to the registry. Folders and the page route
   (`/games/<game id>`, which shows its notes) use it too. Importers resolve a
   sidecar's `"game"` name or alias through the registry.
 - `src/lib/pixels.ts` is run by Node directly from the importer: keep it free

@@ -10,8 +10,8 @@ import { slug } from './slug'
  * The games with screens, each with a page: the screens grouped by their
  * `gameId`, plus what content/ says about each one:
  * - the registry, content/games.json (./registry), keyed by that id: its name,
- *   its English and romanized Japanese titles where they differ, and which
- *   screen its card shows (`cover`, an icon id; by default its title screen,
+ *   its English and romanized Japanese titles where they differ, its publisher
+ *   and year, and which screen its card shows (`cover`, an icon id; by default its title screen,
  *   else its logo, else its first). A game there without screens (one with
  *   only save icons, say) has no page.
  * - content/games/<game id>.md, its notes on how the screens were extracted,
@@ -60,16 +60,14 @@ function load() {
 			)
 		slugs.add(id)
 		const ja = m.ja ?? (m.en ? m.name : undefined)
-		const first = <K extends 'publisher' | 'year'>(key: K) =>
-			icons.find(i => i.data[key] !== undefined)?.data[key]
 		return {
 			game: {
 				name: m.name,
 				slug: id,
 				en: m.en ?? m.name,
 				...(ja && { ja }),
-				publisher: first('publisher'),
-				year: first('year'),
+				publisher: m.publisher,
+				year: m.year,
 				count: icons.length,
 				cover: toIndexEntry(pickCover(id, icons, m.cover))
 			},
