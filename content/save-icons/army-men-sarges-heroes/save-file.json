@@ -1,0 +1,50 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "army-men-sarges-heroes",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ccffccff",
+		"#99ff99ff",
+		"#66ff66ff",
+		"#001100ff",
+		"#227722ff",
+		"#33bb33ff",
+		"#33aa33ff",
+		"#44dd44ff",
+		"#113311ff",
+		"#113311ff",
+		"#229922ff",
+		"#33cc33ff",
+		"#44ff44ff",
+		"#115511ff",
+		"#115511ff"
+	],
+	"frames": [
+		"aaaaaaaff5577a2f6c1321d6bfaaaaaaaaaaaaff577ba3faf7c1321d6bfaaaaaaaaa9f5bb7ba3fa2107c132287faaaaaaaa9faf5bb5afa2f7c17c3215f5faaaaaaaaffa5b5faa3faf7c17d22ffffaaaaaa9fffab5ffa3fa2107c1d22ff78faaaaaaf5aab5ffafa2fbc17cd236f8efaaaa9ffba4b55faa3faf7c17d2d676ffaaaaaf56af5555a3fa66f7c1d3c667f5faaaaf6bfaaaaafaa555bf768866757ffaaaaffaafb88dddddd3322110112b8ffaaaafaa66666777bbbbbb7766321255faaaa4f65f4444444aaaa4444aaa412faaaa445f4aaaaa4fffbb5ffaa4faa412aaaa45f4aaa44aa4a5bb5fa44a4aaa4daaaa4f4afaf4b5faff76faf4bffafaafdaa4544ffa565fb755d355b6655affaafaaa5a4ff56822275f31fb68d1265ff4aaaa4aa4f6812d65fd10dfb668126bfaaaaaaaaa7828665f7b3156f5768d67aaaaa9a5aa58876867faffafb83165a5aaaaa9a5fa5676888dbffffbd56215f5aa5aa9aafaff68d868d8678d86a62254afaaa9aa5af57d854a444444444a785aa5aaaa9aaaf5b85a556d2101186bb7baaaaaaaa9aaa5b65587b5fffb78b67b5aaaaaaaaa9aa757b7b5668330bbf67b5aaaaaaaaaa9abfb6f576d82620fb65b5aaaaaaaaaaa9ff575b762276622765bfaaaaaaaaaaaaa5fbb7688bbbd2d675bffaaaaaaaaaaa9ff5b7668678d287755faaaaaaaaaaaaaaff57666676d367b5faaaaaaa"
+	],
+	"animationSpeed": 30,
+	"vmuName": "AM_SARGES_HEROES",
+	"description": "ARMY_MEN_SARGES_HEROES",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v14368.VMS",
+			"v23978.VMS",
+			"v28863.VMS",
+			"v51940.VMS",
+			"v54315.VMS",
+			"v66921.VMS",
+			"v82896.VMS",
+			"v83075.VMS",
+			"v93695.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/armymen"
+	},
+	"tags": [],
+	"hash": "ab5ad3fb808eb39398c47579eeccee032110fda1",
+	"added": "2026-11-05"
+}

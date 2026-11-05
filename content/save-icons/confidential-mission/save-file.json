@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "confidential-mission",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ff4477ff",
+		"#774433ff",
+		"#553322ff",
+		"#111111ff",
+		"#bb7755ff",
+		"#aa3344ff",
+		"#222222ff",
+		"#000000ff",
+		"#999999ff",
+		"#666666ff",
+		"#ffffffff",
+		"#ccccccff",
+		"#444444ff",
+		"#333333ff",
+		"#ffaa77ff",
+		"#00000000"
+	],
+	"frames": [
+		"00000000123214444441332500000000000000001133214444167615000000000000000892333621123333180000000000000008a8273333333331bb4000000000000008bab8233333618abb40000000000005c8cc99891221889cdc825000000051d7c837373d999cd6337d8d665000526663983dddd373736ddd6d8cdd3615666dd398366d67763733663d8dddddd9ddddd6d86737779b8677337986ddc99dd66dd6dbc77779bb88d7737886c98d33773dd63897778bbabbb977789c9c637363ddd6798c9baabaabaa89989c63736dddddd636baaaaabaaaaaabb933773dccddddd637baaaaabaaaaabddd7736dcccdddd66378aaaaaaaaaa8d6dd6ddcccccdd6d6637caaaaaaaab96ddd6ddccccccd66663376baaaaab9ddddd376dcccccd666666377baaab9ddddd6336ddccccdd3636633378aa8d36ddd3366dddccccdd636363377cb96dddd6d368d6ddcccdd63733377776ddddddd6639b66ddddddd633337773ddcdddddd6938876dddddd66373777ddcdddddd644938c766dddd6667377dd9dddddd61e413c83336ddd66d637769dddd666d4e41398973666dd3666773d9ddd6614ee4298ba97366dd66d667736c63614ee413d8baa97366dd6666677733324eeee1364baabd736666666667777d4eeeee444ee48ab77336666d666777d4eeeee444e4128a87733663663637764eeeee444412224bc777333333333"
+	],
+	"animationSpeed": 0,
+	"vmuName": "CM_MAIN_DATA",
+	"description": "CONFIDENTIAL MISSION",
+	"source": {
+		"kind": "save",
+		"files": [
+			"CONF_MS.VMS",
+			"cmission.VMS",
+			"v1309.VMS",
+			"v23841.VMS",
+			"v76464.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/cmission"
+	},
+	"tags": [],
+	"hash": "0e963eb1bcc65972b4cfb726e6cf9a100bc3ee4e",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,47 @@
+{
+	"kind": "save",
+	"title": "Aline save file",
+	"gameId": "alone-in-the-dark-the-new-nightmare",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#000000ff",
+		"#110000ff",
+		"#221111ff",
+		"#553311ff",
+		"#995511ff",
+		"#886655ff",
+		"#bb9977ff",
+		"#ee8844ff",
+		"#eebb77ff",
+		"#eecc99ff",
+		"#ffeeaaff",
+		"#eeeeeeff",
+		"#ffffddff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"ffffffff0000fffffffffffffffffffffffffffff00ffffffffffffffffffffffff0000ff00ffff00ff00ff000ffffffffff00fff00fff0000f000f00ff00000ffff00fff00ff00f00f000f00ff00ffffff0000ff00ff00f00f000f00ff00ffffff0000ff00ff00f00f000000ff00000fff0000ff00ff00f00f000000ff00fffff00ff0ff00ff00f00f000000ff00fffff00ff00f00ff00f00f000000ff00fffff00ff00f00ff00f00f00f000ff00ffff000ff00f00ff00f00f00ff00ff00ffff000000000000f0000f00ff00ff00000f000000000000ff00f0000f000f00000f00fff00ffffffffffffffffffffffff000fff000f000f000fff000f0f0f000ffffffffffff0ff0f0ffff0ff000f00ffffffffffff000f0f0ffff0ff0f0f000fffffffffffffffffffffffffffffffff000000ffffffffffffffff0000fffffff000000ffffffffffffffff00ffffffff000f000ff000fff00000ff00ffffffff00fff00ff000fff000000f00fff00fff00fff00ff0000ff00ff00000f000ffff00fff00f00000ff00ff00000000fffff00fff00000f00ff00ff00f0000ffffff00ff00000fff00f00000ff00000fffff00f000f00fff00f000000f00f000ffff00000f00000000f00ff00f00ff000ff00000ff000fff000000f000000ff000ffffffff00fffff00ffffffffffffffffffffff000fffff000fffffffffffffff",
+		"ffffffffffffef1441cfffffffffffffffffffffffff7555580cffffffffffffffffffffffe355555584eaceeeefffffffffffffff35558888404554037fffffffffffffa455888888880441245cfffffffffff455488434688882888858cfffffffff35548848899099858888858cffffffe4855555839994392604888888efffff765555854999ab4b4bbbb448885fffff478828528999aaaaaaaabb517984ffe37588485499679abaaaaabb554994fe677588084889640baaaaaaba455384fc77858804399addd4aaaabbbb454416f467558825599103b999aab640481600c7677582026976616999abdddb43ff88a74777542549976a6699bb601a0eef217737776945399aaaa999b6a4467eff74c760677955299aaaaa99baab6daffff1f67064a6345899aaaa99babbbbcffff0f4742073a56589aaa499dbbbb6ffffe1fe74f627669379aa934babbdb1effe30ff21efe473a9a9a99999dbbbaefffe57fff6aefc74a999999947dbbb3effe07ffffffff73479999688892dbbefffcfeffffffff77319999933974bd4fffffffffffffffc04a699aa955d6bdaffffffffffffffffe0a96aaaa440bb2ffffffffffffffffffaa894baabbbdafffffffffffffffffff4a89964bbdb376feffffffffffff413a3a9a9aba606dd63aeffffffffc067aaa0a89bbbb97aebddd77fefff474aaaba72a89bbbb977cdcdddd66a7e"
+	],
+	"animationSpeed": 42,
+	"vmuName": "AITD4_ALI069005",
+	"description": "AITD4 CHR_ALINE LEV_069 SAV_005",
+	"source": {
+		"kind": "save",
+		"files": [
+			"AITDA1.VMS",
+			"AITDA2.VMS",
+			"ALONE4.VMS",
+			"v22685.VMS",
+			"v58587.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/alonedark"
+	},
+	"tags": [],
+	"hash": "0b032edf827edf3f0a25bc988c87d7cd0cc55bce",
+	"added": "2026-11-05"
+}

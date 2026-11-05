@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "centipede",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#663300ff",
+		"#885500ff",
+		"#554422ff",
+		"#443322ff",
+		"#332211ff",
+		"#777755ff",
+		"#aaaa88ff",
+		"#111111ff",
+		"#000000ff",
+		"#113311ff",
+		"#002200ff",
+		"#003300ff",
+		"#115500ff",
+		"#116611ff",
+		"#224422ff",
+		"#336644ff"
+	],
+	"frames": [
+		"999aaaaaa8888aa8a8a8887788888888999aaabaabaaaba8abaa899778847888bbbbbcccccccccbccbca7e9774004888cdcdcd9cccddddcccc9ff977710107a8ddddccc9ccdddddccefee988711110badbc9dddcdddddccccfe99488811110aabbdcbdbccccdddceee974118881110aadbbcddcddddccdffe9401111881110aaab9eebcbbcbb9fe970011111181004aa9ab9a9ccbbb9e97000111111141007abee9bb9cabbee740001111111141009aaee9abab999770000001111000000a99a99aaa887a700000001100000009aaaaaaaaaaaa888a440000000000348aa99babbbaaaaaaaa8888aa999a8a97aaaa9babbbbbbabaaaaaaa88aa88a88a7aaabbacbabbbcbbbbbbbba7ba99ababaa9aabacccbbbbcecbb99bbbbbabbbabaa99abbebcccdbbcebbbbbbbbbbabbaaaaa9abbccdbccbbececbbbbaabbbbbaa9aaabbbdccbbcdbb9bbbaabbcbbbca999999aabbccbceeebbe9bbbbb99abb87747999aacbcbbeecbb9bbaaaa9b944774447a77acbbbb9c9bbbbbaaaa9434484444378aaab99bbbbbbbaa9977743344883322788bbbbaaaaaa949773344337488842228abbb9999ab4443733223337488884222aabaa9939442334452222377888883223a9499423232228524222237788832334737473333343286884422277888334477378877444744728888777788874777887788888888887788888887888878888"
+	],
+	"animationSpeed": 1,
+	"vmuName": "",
+	"description": "CENTIPEDE SAVE GAME",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v72205.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/centipede"
+	},
+	"tags": [],
+	"hash": "cd691f4b558f5646712ccb9f55e8ed70e8579ea2",
+	"added": "2026-11-05"
+}

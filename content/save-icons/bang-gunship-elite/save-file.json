@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "bang-gunship-elite",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#447799ff",
+		"#99bbbbff",
+		"#336666ff",
+		"#777755ff",
+		"#ffee66ff",
+		"#aa9977ff",
+		"#221100ff",
+		"#553300ff",
+		"#ccccaaff",
+		"#775500ff",
+		"#eeddbbff",
+		"#ee9911ff",
+		"#eeeeddff",
+		"#aa6600ff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"66666666666679dddd976666666666666666666667dddddbbbbbb9766666666666666667dd9999dddbdbbbbd766666666666669d99dd999d9dbdbbbbbd66666666666d979bdd9999d9dbdbbbbbd766666666d96dbdd979d97d9dbbbbbbbd96666669967bd977779797d9dbbbbbbbd666667d67dd99777777799dddbdbdbbbd6666d66999776777779799dbdbbbbbbb76699667977676767679799dbdbdbbbb966d66777767666666679799dddbdbbbd698888596765883675839788bdd4aaab73fffffc767fff8768fe99ffddcfeefe9bff63fe663fafe768ffa7ffd5fcd985dbffcef3668f5af378fef5ff9af598883bff55fe77ef58f868f5ceffdaf89cff8bff99ef33ffffff78f33fff95fcd98f5bfffffe78fa33ef38f378ffd7cffffe59811112211002111110201122218813970202020ddbbbbbbbbbbbbdd2020205d73233ddbbbb4b4b4b4b4b4bbbdd533596d99dbbb4b444444444444444bbddbd769967799dbbb444444bbbbbddd99dd9667d7676979ddbdbdbbd997799799dd7666996667979d97977d9666677779d966667d96767699667767777777779dd6666667d966677766666666779779dd666666667d966676766667777799ddd76666666667dd77666776777999dbbd66666666666679bd76666767799dbd76666666666666667dd99777999dbd96666666666666666666679dddddd9666666666666"
+	],
+	"animationSpeed": 10,
+	"vmuName": "y2k",
+	"description": "Bang! Gunship Elite",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v2523.VMS",
+			"v31440.VMS",
+			"v51819.VMS",
+			"v64092.VMS",
+			"v69358.VMS",
+			"v73147.VMS",
+			"v88695.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bang"
+	},
+	"tags": [],
+	"hash": "a52eccec0e531bdf61544d4586f8b1d505215f07",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,59 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "air-force-delta",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#222222ff",
+		"#222222ff",
+		"#333333ff",
+		"#666666ff",
+		"#666666ff",
+		"#888888ff",
+		"#999999ff",
+		"#ccccccff",
+		"#008844ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"177777777777777777777777777777717aaaaaaaaaaaaaa77aaaaaaaaaaaaaa77aaaaaaaaaaaaa7677aaaaaaaaaaaaa77aaaaaaaaaaaaa7777aaaaaaaaaaaaa77aaaaaaaaaaaaa7aa7aaaaaaaaaaaaa77aaaaaaaaaaaaa7aa7aaaaaaaaaaaaa77aaaaaaaaaaaaa7aa7aaaaaaaaaaaaa77aaaaaaaaaaaaa7aa7aaaaaaaaaaaaa77aaaaaaaaaaaa77aa77aaaaaaaaaaaa77aaaaaaaaaaa777aa777aaaaaaaaaaa77aaaaaaaaaaa76777677aaaaaaaaaaa77aaaaaaaaaaa77767777aaaaaaaaaaa77aaaaaaaaaaa77677767aaaaaaaaaaa77aaaaaaaaa777677767777aaaaaaaaa77aaaaaaaaa767776777677aaaaaaaaa77aaaaaaaa77767776777677aaaaaaaa77aaaaaaa7777776777677767aaaaaaa77aaaaaa776767777677767777aaaaaa77aaaaa76777777677767776777aaaaa77aaaa7777677677767776777677aaaa77aaa777677767776777677767777aaa77aaa776777677767776777677767aaa77aaa677767776777677767776777aaa77aaa767776777677767776777677aaa77aaa777677767776777677767776aaa77aaaa1777677767776777677761aaaa77aaa111117767776777677711111aaa77aaa111117776777677767711121aaa77aaa121277777767776777671211aaa77aaa111177677117711776771111aaa77aaa121177777111111677771121aaa7a777777777767777777776777777777a",
+		"177777777777777777777777777777717aaaaaaaaa777777777777aaaaaaaaa77aaaaaaaaa777777777777aaaaaaaaa77aaaaaaaa77777777777777aaaaaaaa77aaaaaaa7777777777777777aaaaaaa77aaaaaa777777777777777777aaaaaa77aaaaa77777777777777777777aaaaa77aaaa7777777777777777777777aaaa77aaa777777777777777777777777aaa77aaa777777777777777777777777aaa77aaa777777777777777777777777aaa77aaa777777777777777777777777aaa77aaa777777777777777777777777aaa77aaaa1777777777777777777771aaaa77aaa111117777777777777711111aaa77aaa111117777777777777711111aaa77aaa111177777777777777771111aaa77aaa111177777117711777771111aaa77aaa111177777111111777771111aaa77aaaaa11777111111111177711aaaaa77aaaaaaaa11111111111111aaaaaaaa77aaaaaaaa11111111111111aaaaaaaa77aaaaaaa1111111111111111aaaaaaa77aaaaaaa11111aa11aa11111aaaaaaa77aaaaaaa11111aaaaaa11111aaaaaaa77aaaaaaa111aaaaaaaaaa111aaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa7a777777777777777777777777777777a",
+		"177777777777777777777777777777717aaaa1111777777777777771111aaaa77aaa111117777777777777711111aaa77aaa111177777777777777771111aaa77aaa111177777117711777771111aaa77aaa111177777111111777771111aaa77aaa111177711111111117771111aaa77aaaaa11111111111111111111aaaaa77aaaaaaaa11111111111111aaaaaaaa77aaaaaaaa11111111111111aaaaaaaa77aaaaaaa1111111111111111aaaaaaa77aaaaaaa11111aa11aa11111aaaaaaa77aaaaaaa11111aaaaaa11111aaaaaaa77aaaaaaa111aaaaaaaaaa111aaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaa77aaaaaaaaaaaaaa77aaaaaaaaaaaaaa77aaaaaaaaaaaaaa77aaaaaaaaaaaaa7777aaaaaaaaaaaaa77aaaaaaaaaaaaa7777aaaaaaaaaaaaa77aaaaaaaaaaaaa7227aaaaaaaaaaaaa77aaaaaaaaaaaaa7227aaaaaaaaaaaaa77aaaaaaaaaaaaa7227aaaaaaaaaaaaa77aaaaaaaaaaaaa7227aaaaaaaaaaaaa77aaaaaaaaaaaa772277aaaaaaaaaaaa7a777777777777777777777777777777a"
+	],
+	"animationSpeed": 10,
+	"vmuName": "Mission 09",
+	"description": "AIRFORCE DELTA",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000682.VMS",
+			"airforce.VMS",
+			"v25379.VMS",
+			"v27367.VMS",
+			"v39495.VMS",
+			"v40825.VMS",
+			"v49408.VMS",
+			"v49818.VMS",
+			"v74019.VMS",
+			"v82163.VMS",
+			"v8448.VMS",
+			"v84491.VMS",
+			"v8450.VMS",
+			"v85446.VMS",
+			"v88719.VMS",
+			"v96714.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/airforcedelta"
+	},
+	"tags": [],
+	"hash": "489d87855cb5474621bbe5f9ad8afbc0a01019aa",
+	"added": "2026-11-05"
+}

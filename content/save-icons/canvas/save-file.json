@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "canvas",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffaa22ff"
+	],
+	"frames": [
+		"000000000000f0000000000000000000000000000000ff000000000000000000000000000000ff000000000000000000000000000000fff00000000000000000000000000000ffff000000000000f000000000000000ffff00000000000ff000000000000000fffff000000000ff0000000000000000fffff00000000fff0000000000000000ffffff000000ffff0000000000000000fffffff0000fffff0000000000000000fffffff000fffff00000000000000000fffffff0fffffff00000ffffffff0000fffffffffffffff0000000ffffffffffffffffffffffff000000000fffffffffffffffffffffff0000000000fffffffffffffffffffff000000000000ffffffffffffffffffff0000000000000ffffffffffffffffffffffffff0000000fffffffffffffffffffffff0000000000fffffffffffffffffffff0000000000000ffffffffffffffffff0000000000000ffffffffffffffffff0000000000000fffffffffffffffff00000000000000ffffffffffffffffff000000000000fffffffffffffffffffff0000000000ffffffffffffff00f000fff00000000ff000000000fff000f0000000000000000000000000ff00000f00000000000000000000000fff00000f00000000000000000000000ff0000000f0000000000000000000000f00000000ff0000000000000000000000000000000f00000000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Canvas",
+	"description": "Ｃａｎｖａｓ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"CANVAS.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/canvas"
+	},
+	"tags": [],
+	"hash": "ffcec84329bb7c567203290ebd63ca9652994c18",
+	"added": "2026-11-05"
+}

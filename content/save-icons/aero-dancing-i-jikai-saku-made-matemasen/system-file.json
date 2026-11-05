@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "aero-dancing-i-jikai-saku-made-matemasen",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ddffffff",
+		"#aaeeffff",
+		"#77eeffff",
+		"#bbbbbbff",
+		"#33ddffff",
+		"#8899ffff",
+		"#5577ffff",
+		"#888888ff",
+		"#2277ffff",
+		"#5555ffff",
+		"#2233eeff",
+		"#2222ffff",
+		"#0000ffff",
+		"#0000bbff",
+		"#000077ff",
+		"#000000ff"
+	],
+	"frames": [
+		"73337ffffffffffffffffffffff7333733333337ffffffffffffffff73333333333333337ffffffffffffff7333333333337ff73337ffffffffff73337ff7333733fffff7337fbcccccf7337fffff337f33ffffff7bbbbbbcccccd7ffffff33ff337fffff99999bbbccccddfffff733ff733ffff999999669bccccddffff337fff737ff9966500111228ccdddff737fffff337996510000111224cddde733ffffff73b9961000015112228cddee37fffffff7b9960000059912224cddee7fffffffffb99600000569668aacddeefffffffffbb9965000001159cccdddeeeffffffffcbb99610001112228cdddeeeffffffffcbba99651111122248dddeeeffffffffccbbb9999652222444dddeeeffffffffcccbbbb99abbb424448deeeeffffffffccccb22226ccca44448deeeefffffffffcccc22222bcc84444aeeeefffffffff7cccc8222248444448eeeee7fffffff73ddccc44444444444deeeee37fffffffffffffffffffffffffffff73fffff00000000ff000000000ff000ff7f00ff00000000ff000000000ff0000fff00ff00ffffffff00fffff00ff00000ff00ff00ffffffff00ffeef00ff00f000f00ff00000000ff00fffff00ff00ff00000ff00000000ff000000000ff00fff0000ff00ffffffff000000000ff00f3ff000ff00f3337fff00fffff00ff00f33ff00ff00f7ffffff00fffff00ff00fff7f00f"
+	],
+	"animationSpeed": 0,
+	"vmuName": "ｴｱiSD",
+	"description": "Aero_iSD SYSTEM",
+	"source": {
+		"kind": "save",
+		"files": [
+			"aerocnem.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroif"
+	},
+	"tags": [],
+	"hash": "30b825865f92eb24de1fdfd422c2ee1b4fadec86",
+	"added": "2026-11-05"
+}

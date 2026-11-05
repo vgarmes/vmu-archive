@@ -1,4 +1,49 @@
 {
+	"18-wheeler-pro-american-trucker": {
+		"name": "18 Wheeler: Pro American Trucker"
+	},
+	"4-wheel-thunder": {
+		"name": "4 Wheel Thunder"
+	},
+	"4x4-evolution": {
+		"name": "4x4 Evolution"
+	},
+	"action-replay-cdx": {
+		"name": "Action Replay CDX"
+	},
+	"aero-dancing-i": {
+		"name": "Aero Dancing i"
+	},
+	"aero-dancing-i-jikai-saku-made-matemasen": {
+		"name": "Aero Dancing i: Jikai-saku Made Matemasen"
+	},
+	"aero-wings": {
+		"name": "Aero Wings"
+	},
+	"aero-wings-2-air-strike": {
+		"name": "Aero Wings 2: Air Strike"
+	},
+	"air-force-delta": {
+		"name": "Air Force Delta"
+	},
+	"alone-in-the-dark-the-new-nightmare": {
+		"name": "Alone in the Dark: The New Nightmare"
+	},
+	"angel-present": {
+		"name": "Angel Present"
+	},
+	"armada": {
+		"name": "Armada"
+	},
+	"army-men-sarges-heroes": {
+		"name": "Army Men: Sarge's Heroes"
+	},
+	"atari-anniversary-edition": {
+		"name": "Atari Anniversary Edition"
+	},
+	"bang-gunship-elite": {
+		"name": "Bang! Gunship Elite"
+	},
 	"bangai-o": {
 		"name": "Bangai-O",
 		"ja": "Bakuretsu Muteki Bangaioh"
@@ -7,14 +52,71 @@
 		"name": "Berserk: Millennium Falcon-hen – Wasurebana no Shō",
 		"en": "Sword of the Berserk: Guts' Rage"
 	},
+	"black-matrix-advanced": {
+		"name": "Black Matrix Advanced"
+	},
 	"blue-stinger": {
 		"name": "Blue Stinger"
+	},
+	"blue-submarine-no-6": {
+		"name": "Blue Submarine No. 6"
+	},
+	"bomber-hehhe": {
+		"name": "Bomber Hehhe"
+	},
+	"bomberman-online": {
+		"name": "Bomberman Online"
+	},
+	"bust-a-move-4": {
+		"name": "Bust-A-Move 4"
+	},
+	"buzz-lightyear-of-star-command": {
+		"name": "Buzz Lightyear of Star Command"
+	},
+	"caesars-palace-2000": {
+		"name": "Caesars Palace 2000"
+	},
+	"cannon-spike": {
+		"name": "Cannon Spike"
+	},
+	"canvas": {
+		"name": "Canvas"
 	},
 	"capcom-vs-snk-2": {
 		"name": "Capcom vs. SNK 2"
 	},
+	"capcom-vs-snk-millennium-fight-2000": {
+		"name": "Capcom vs SNK: Millennium Fight 2000"
+	},
 	"carrier": {
 		"name": "Carrier"
+	},
+	"castle-fantasia": {
+		"name": "Castle Fantasia"
+	},
+	"centipede": {
+		"name": "Centipede"
+	},
+	"championship-surfer": {
+		"name": "Championship Surfer"
+	},
+	"charge-n-blast": {
+		"name": "Charge 'n Blast"
+	},
+	"chicken-run": {
+		"name": "Chicken Run"
+	},
+	"chuchu-rocket": {
+		"name": "ChuChu Rocket!"
+	},
+	"coaster-works": {
+		"name": "Coaster Works"
+	},
+	"comic-party": {
+		"name": "Comic Party"
+	},
+	"confidential-mission": {
+		"name": "Confidential Mission"
 	},
 	"crazy-taxi": {
 		"name": "Crazy Taxi"
@@ -65,6 +167,12 @@
 			"Sakura Wars 3"
 		]
 	},
+	"sega-bass-fishing": {
+		"name": "Sega Bass Fishing"
+	},
+	"sega-bass-fishing-2": {
+		"name": "Sega Bass Fishing 2"
+	},
 	"sega-tetris": {
 		"name": "Sega Tetris"
 	},
@@ -80,6 +188,9 @@
 	},
 	"shinseiki-evangelion-typing-e-keikaku": {
 		"name": "Shinseiki Evangelion: Typing E-Keikaku"
+	},
+	"skies-of-arcadia": {
+		"name": "Skies of Arcadia"
 	},
 	"sonic-adventure": {
 		"name": "Sonic Adventure"
@@ -108,5 +219,11 @@
 	},
 	"visual-memory-unit": {
 		"name": "Visual Memory Unit"
+	},
+	"world-series-baseball-2k1": {
+		"name": "World Series Baseball 2K1"
+	},
+	"world-series-baseball-2k2": {
+		"name": "World Series Baseball 2K2"
 	}
 }

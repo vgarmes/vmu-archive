@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Special data",
+	"gameId": "aero-dancing-i",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ddffffff",
+		"#aaeeffff",
+		"#77eeffff",
+		"#bbbbbbff",
+		"#33ddffff",
+		"#8899ffff",
+		"#5577ffff",
+		"#888888ff",
+		"#2277ffff",
+		"#5555ffff",
+		"#2233eeff",
+		"#2222ffff",
+		"#0000ffff",
+		"#0000bbff",
+		"#000077ff",
+		"#000000ff"
+	],
+	"frames": [
+		"73337ffffffffffffffffffffff7333733333337ffffffffffffffff73333333333333337ffffffffffffff7333333333337ff73337ffffffffff73337ff7333733fffff7337fbcccccf7337fffff337f33ffffff7bbbbbbcccccd7ffffff33ff337fffff99999bbbccccddfffff733ff733ffff999999669bccccddffff337fff737ff9966500111228ccdddff737fffff337996510000111224cddde733ffffff73b9961000015112228cddee37fffffff7b9960000059912224cddee7fffffffffb99600000569668aacddeefffffffffbb9965000001159cccdddeeeffffffffcbb99610001112228cdddeeeffffffffcbba99651111122248dddeeeffffffffccbbb9999652222444dddeeeffffffffcccbbbb99abbb424448deeeeffffffffccccb22226ccca44448deeeefffffffffcccc22222bcc84444aeeeefffffffff7cccc8222248444448eeeee7fffffff73ddccc44444444444deeeee37ffffff337ddddc844444448deeeee733fffff737ffdddddddaaaddeeeeeeff737fff733ffffdddddddddeeeeeeeffff337ff337fffffeedeeeeeeeeeeefffff733ff33ffffff7eeeeeeeeeeeefffffff33f733fffff7337feeeeeeff337fffff3373337ff73337ffffffffff73337ff7333333333337ffffffffffffff73333333333333337ffffffffffffffff7333333373337ffffffffffffffffffffff73337"
+	],
+	"animationSpeed": 0,
+	"vmuName": "Special",
+	"description": "AeroDancingi SpecialData",
+	"source": {
+		"kind": "save",
+		"files": [
+			"aeroisys.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroi"
+	},
+	"tags": [],
+	"hash": "ed120a44784047aa7cc151d53f836272cfa75866",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "chicken-run",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#222200ff",
+		"#664411ff",
+		"#998866ff",
+		"#bbbb99ff",
+		"#cc8822ff",
+		"#dd3300ff",
+		"#ddccbbff",
+		"#eeaa55ff",
+		"#eecc88ff",
+		"#eeeeddff",
+		"#ffddccff",
+		"#ffeeeeff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"ddddddddddddddc55adddddddddddddddddddddddddddd6552dddddddddddddddddddddddddb692555ddddddddddddddddddddddddc5511555039ddddddddddddddddddddd655515510002ddddddddddddddddddd31555151100002cdddddddddddddddd6111511110000002cddddddddddddddb11001555555000003dddddddddddddd3000555555555100009ddddddddddddc1005555555555510002dddddddddddd61015555555555551000dddddddddddd210555555516965550009ddddddddddd210555666233123550009ddddddddddd2105576103a0006551009ddddddddddd31055720022201255101cddddddddddd91055561125422555502ddddddddddddd1015557455555555509ddddddddddddd311555554444455556ddddddddddddddd3045557777444555cdddddddddddddddd9755768777444456ddddddddddddddddda556a8777744447cdddddddddddddddda57aa87777724447dddddddddddddddd8788688887720014bddddddddddddddc7778887877210014bddddddddddddddb7400277744110117dddddddddddddddd712633241111143cdddddddddddddddd84777444444556ddddddddddddddddddd877445555555dddddddddddddddddddddd7555555555dddddddddddddddddddddd7555555555bddddddddddddddddddddd7555555555addddddddddddddddddddd75555555556dddddddd"
+	],
+	"animationSpeed": 1,
+	"vmuName": "CHICKEN RUN DATA",
+	"description": "CHICKEN RUN",
+	"source": {
+		"kind": "save",
+		"files": [
+			"CHICKEN.VMS",
+			"v70580.VMS",
+			"v7111.VMS",
+			"v98258.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/chickenrun"
+	},
+	"tags": [],
+	"hash": "c47c24a2afe47eabcb91224fb677955a278fd828",
+	"added": "2026-11-05"
+}

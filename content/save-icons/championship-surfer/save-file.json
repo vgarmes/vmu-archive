@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "championship-surfer",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#ffff00ff",
+		"#444400ff",
+		"#111100ff",
+		"#222200ff",
+		"#000000ff",
+		"#ccaa44ff",
+		"#aa7711ff",
+		"#000000ff",
+		"#000000ff",
+		"#883311ff",
+		"#aa3300ff",
+		"#110000ff",
+		"#660000ff",
+		"#773322ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddededededededededededededededededdedededddededa77777ededededededeeeeeeeeeeeea711111117aeeeeeeeeeeeeeeeeeeee711111111111aeeeeeeeeeeeeeeeeee711111111111117eeeeeeeeeeeeeeee71111175711111117eeeeeeeeeeeeee7111111ff311111dd6aeeeeeeeeeeeee6111111ff0111114f77eeeeeeeeeeeea1111111f001111dffd6eee76677eeee711111162021111ffff1ae767a767eee711111600f03611fff517e7777a766ee711111600fffd11ffff1677aaeaaa6ae71111120005f011ffff166667aab7766711111d0ffff0d1ffff667a77eaa7676661116e00f000068ff066aaaaaaaaaaa76111e8000f0f0d0ff8a7aaaaeeeabab766113df0ff0250ffffbababaeeababaaa7112d00f00124fff8ababaaaeaabbbbbbb77d00f30165fff8abbabdaaadabbbbbbb7d0ff00116fff8abbadaaadadadbbb766dfff00676f8f8adadadadadadadab7776ff5f066af8f9dadadaddddddddda7766ffd0f66aff82ddddddddddddddda7a7affd0f7aa8888ddddddddddddddddddddf8d0faad8889cddddddddddddddddddd98dffddd8888ddddddddddddddddddddc8d9fdddf885ddddddd777777777777799699777f88f7777777666666666666699699666dffd66666666666666666667dd7dd767dddd7666666"
+	],
+	"animationSpeed": 0,
+	"vmuName": "SAVE GAMES",
+	"description": "Championship Surfer",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v47130.VMS",
+			"v57326.VMS",
+			"v86604.VMS",
+			"v91655.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/champsurfer"
+	},
+	"tags": [],
+	"hash": "058209044393b9537197ee572b961ac69d572103",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,44 @@
+{
+	"kind": "memory-card",
+	"title": "Memory card icon",
+	"gameId": "cannon-spike",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#ffbb88ff",
+		"#ff4411ff",
+		"#eeeeeeff",
+		"#bb6644ff",
+		"#888888ff",
+		"#884422ff",
+		"#77ddffff",
+		"#55aaffff",
+		"#338844ff",
+		"#223388ff",
+		"#1155bbff",
+		"#111111ff",
+		"#0088ffff",
+		"#0044ffff",
+		"#000000ff"
+	],
+	"frames": [
+		"9999999999999999cc000cc999999999999999999999999caaec878c9999999999999999999999caaedecb7bc999999999999999999999caeeaaec77c99999999999999999999caaec88a6226c9999999999999999999cacc8888a636c9999999999999999999ccc5c8cc8a2ac9999999999999999999cc2cc643c8a8c99999999999999999999c2cc613cc8c999999999999999999ccceccb611c1c999999999999999999cbcadecc61114999999999999999999cb87cedcac1c11c999999999999999ccb877ceecea614c999ccc999999999cadaa7bcacaddaacc99c3c3c99999999caedaacccaaedec78ccc5c33c9999999caaea333c8aaac877cea5c53c99999999caa5335c878ccb87ada53c5c999999999ca5333caaac9cbaeeea55c99999999999c5335aedec99ccaaaccc9999999999999c55caeda7c999ccc9999999999999999ccc7baa877c999999999999999999999cc77bcb8878cc999999999999999999caac8c9cb88ceac9999999999999999caaeecc99cbcaedc999999999999999caaeddc9999caaddac9999999999999caaeddec9999caadddc999999999999caaaeddc99999caaeddc99999999999cccccedec99999caaaeccc999999999caaaaecec999999caaacedec9999999caaaeddecc99999cacccedddec99999caaaeddddac99999caaaaaedddec9999ccccccccccc99999cccccccccccc999"
+	],
+	"animationSpeed": 0,
+	"vmuIcon": "0000fe000001d1000003a8800003348000074fc0000786c00007dbc00007f5400003e680001da500002ee2000045e9000184b63803e7fe54037fa9f203a2f17a01e631ee00e3ea3c0066a7f8003ed1c00039880000310600007a8b0000e65b0001dc3f8003b43f8007b83b800fa83dc01f503ea03db07dd07bf07ee87ff07ff8",
+	"madeByGame": null,
+	"vmuName": "Megaman X",
+	"description": "",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v50562.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/cannonspike"
+	},
+	"tags": [],
+	"hash": "6f16e481e1481372ff120b2dcd5813cf1d15b576",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,52 @@
+{
+	"kind": "save",
+	"title": "Emblem data",
+	"gameId": "aero-dancing-i-jikai-saku-made-matemasen",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#eeffeeff",
+		"#ccffccff",
+		"#bbffbbff",
+		"#bbffbbff",
+		"#aaeeaaff",
+		"#bbbbbbff",
+		"#99cc99ff",
+		"#66aa66ff",
+		"#888888ff",
+		"#44aa44ff",
+		"#228822ff",
+		"#007700ff",
+		"#006600ff",
+		"#115500ff",
+		"#224400ff",
+		"#000000ff"
+	],
+	"frames": [
+		"85558ffffffffffffffffffffff8555855555558ffffffffffffffff85555555555555558ffffffffffffff8555555555558ff85558ffffffffff85558ff8555855fffff8558fbbbbccf8558fffff558f55ffffff8aaaaabbbcccd8ffffff55ff558fffff99999aabbbcccdfffff855ff855ffff9977799aabbcccddffff558fff858ff974000000011112cddff858fffff5589973000000011112cdde855ffffff85a9773000000011112cddde58fffffff8a9771000036667777cddde8fffffffffa97730000679abbcccdddefffffffffba9974000013344669cddeeeffffffffbaa974000000111117cddeeeffffffffbbaa96000001111129dddeeeffffffffbbbaa6000034466669dddeeeffffffffcbbba711119bbbcccdddeeeeffffffffccbbb711119bbccccdddeeeefffffffffcccb7111167779999deeeefffffffff8cccc7111112222333aeeee8fffffff85dccc7222222233334aeeee58fffffffffffffffffffffffffffff85fffff00000000ff000000000ff000ff8f00ff00000000ff000000000ff0000fff00ff00ffffffff00fffff00ff00000ff00ff00ffffffff00ffeef00ff00f000f00ff00000000ff00fffff00ff00ff00000ff00000000ff000000000ff00fff0000ff00ffffffff000000000ff00f5ff100ff00f5558fff00fffff00ff00f55ff00ff00f8ffffff00fffff00ff00fff8f00f"
+	],
+	"animationSpeed": 0,
+	"vmuName": "EMBLEM DATA   00",
+	"description": "Aero_iSD Emblem",
+	"source": {
+		"kind": "save",
+		"files": [
+			"aeroife0.VMS",
+			"aeroife1.VMS",
+			"aeroife2.VMS",
+			"aeroife3.VMS",
+			"aeroife4.VMS",
+			"aeroife5.VMS",
+			"aeroife6.VMS",
+			"aeroife7.VMS",
+			"aeroife8.VMS",
+			"aeroife9.VMS",
+			"aeroifea.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroif"
+	},
+	"tags": [],
+	"hash": "cc6e30aa840e300008388e4b2dcc20a5c2115270",
+	"added": "2026-11-05"
+}

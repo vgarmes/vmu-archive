@@ -1,0 +1,51 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "18-wheeler-pro-american-trucker",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#eeddddff",
+		"#ddddccff",
+		"#ddddddff",
+		"#ccccbbff",
+		"#eeeeeeff",
+		"#444433ff",
+		"#999988ff",
+		"#ccbbaaff",
+		"#ee6655ff",
+		"#ee4422ff",
+		"#dd2211ff",
+		"#bb3322ff",
+		"#dd3322ff",
+		"#bb4433ff",
+		"#00000000",
+		"#00000000"
+	],
+	"frames": [
+		"012222211221213311222122222212442555555555555555555555555555555215653133333733333333117733135651155562222421111222222222224655512565322133731111121333333223565225143789aab7111127cccc9c972222522517ccccaab711127caaaaaaaa7221522517a9aaaab711279aaaaaaaaac823522516b9aaaab32228aaaaabcaaaab7452153768aaaab72228aaaab68aaaab6451153128aaaab72128aaaab78aaaab6251253118aaaab72228aaaab78aaaab6452253118aaaab72228aaaab78aaaa97452153128aaaab7222daaaab79aaaad7451153128aaaab72227daaaacaaaad62251353118aaaab7224418aaaaaaad744453353118aaaab7212439aaaaaaaa744453353128aaaab32227aaaaabaaaaa81453253228aaaab3443aaaaab68aaaaa6452157228aaaab3443aaaaab38aaaaa6451153228aaaab3443aaaaab38aaaaa6451253128aaaab1443aaaaad38aaaaa6452153128aaaab1443aaaaad18aaaaa6451157118aaaab3443aaaaaa8aaaaaa6451153228aaaab3443daaaaaaaaaaad6451253448aaaab32243daaaaaaaaad64452253448aaaab344443daaaaaaad6444522565366666624444416666666743565225556444444444444444444444465552256534444444444444444444444356521555555555555555555555555555555101222221122121331122212222221244"
+	],
+	"animationSpeed": 1,
+	"vmuName": "18W SYS",
+	"description": "18WHEELER AMERICAN_PRO_TRUCKER",
+	"source": {
+		"kind": "save",
+		"files": [
+			"18LUN.VMS",
+			"v16797.VMS",
+			"v21706.VMS",
+			"v45386.VMS",
+			"v57155.VMS",
+			"v61567.VMS",
+			"v71799.VMS",
+			"v78825.VMS",
+			"v91373.VMS",
+			"v93849.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/18wheeler"
+	},
+	"tags": [],
+	"hash": "368cd315294b65ac1363d6a8fd609247c4edc482",
+	"added": "2026-11-05"
+}

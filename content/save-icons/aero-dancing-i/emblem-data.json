@@ -1,0 +1,56 @@
+{
+	"kind": "save",
+	"title": "Emblem data",
+	"gameId": "aero-dancing-i",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#eeffeeff",
+		"#ccffccff",
+		"#bbffbbff",
+		"#bbffbbff",
+		"#aaeeaaff",
+		"#bbbbbbff",
+		"#99cc99ff",
+		"#66aa66ff",
+		"#888888ff",
+		"#44aa44ff",
+		"#228822ff",
+		"#007700ff",
+		"#006600ff",
+		"#115500ff",
+		"#224400ff",
+		"#000000ff"
+	],
+	"frames": [
+		"85558ffffffffffffffffffffff8555855555558ffffffffffffffff85555555555555558ffffffffffffff8555555555558ff85558ffffffffff85558ff8555855fffff8558fbbbbccf8558fffff558f55ffffff8aaaaabbbcccd8ffffff55ff558fffff99999aabbbcccdfffff855ff855ffff9977799aabbcccddffff558fff858ff974000000011112cddff858fffff5589973000000011112cdde855ffffff85a9773000000011112cddde58fffffff8a9771000036667777cddde8fffffffffa97730000679abbcccdddefffffffffba9974000013344669cddeeeffffffffbaa974000000111117cddeeeffffffffbbaa96000001111129dddeeeffffffffbbbaa6000034466669dddeeeffffffffcbbba711119bbbcccdddeeeeffffffffccbbb711119bbccccdddeeeefffffffffcccb7111167779999deeeefffffffff8cccc7111112222333aeeee8fffffff85dccc7222222233334aeeee58ffffff558ddc9222223333344aeee855fffff858ffddddddddddddeeeeeeff858fff855ffffdddddddddeeeeeeeffff558ff558fffffeddddeeeeeeeeefffff855ff55ffffff8eeeeeeeeeeeefffffff55f855fffff8558feeeeeeff558fffff5585558ff85558ffffffffff85558ff8555555555558ffffffffffffff85555555555555558ffffffffffffffff8555555585558ffffffffffffffffffffff85558"
+	],
+	"animationSpeed": 0,
+	"vmuName": "EMBLEM DATA   00",
+	"description": "AeroDancingI",
+	"source": {
+		"kind": "save",
+		"files": [
+			"aeroie00.VMS",
+			"aeroie01.VMS",
+			"aeroie02.VMS",
+			"aeroie03.VMS",
+			"aeroie04.VMS",
+			"aeroie05.VMS",
+			"aeroie06.VMS",
+			"aeroie07.VMS",
+			"aeroie08.VMS",
+			"aeroie09.VMS",
+			"aeroie10.VMS",
+			"aeroie11.VMS",
+			"aeroie12.VMS",
+			"aeroie13.VMS",
+			"aeroie14.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroi"
+	},
+	"tags": [],
+	"hash": "82e211677ef37ff4a788ed3c07427b2afeabdab0",
+	"added": "2026-11-05"
+}

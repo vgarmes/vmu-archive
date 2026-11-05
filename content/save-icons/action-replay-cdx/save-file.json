@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "action-replay-cdx",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#00000000",
+		"#000000ff",
+		"#111111ff",
+		"#443333ff",
+		"#2200ddff",
+		"#555555ff",
+		"#665555ff",
+		"#666688ff",
+		"#5533eeff",
+		"#887799ff",
+		"#7766eeff",
+		"#aa9999ff",
+		"#aaaaaaff",
+		"#bbbbbbff",
+		"#ccccccff",
+		"#ccccccff"
+	],
+	"frames": [
+		"21111111111111111111111111111112111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111111115cbbccc6555332111111111111111113ffffffe788aaa997311111111111139cffffffd84444448acb31111111129a8dffffffdbffffffffffeb3111113c848fffffffdbffffffffffffe61112c844cfefffffdbfffffffffffffe311b8448feeffeefdbffffffffffffff923a444bfeeddeeedbfffd99ceffffff9568448feee99eeed9eefb448cfffffe777844bfded79eeed9eee7444dfffffd797848feddb89dddd9eed744afeeeefb873a49fdddccfdddd9eec88affeeefd7a51b8fdddddeddddd9eedefffeeeed78c213dfddddddddddd9eeeeeeeeeed78c3112eddddcbcddddd9eeeeeeeeeed7c51117fdddc748cdddd9eeddeeeeeeed31112eeddd99a8cdddd9eb57beeeeeed31116ecddc3379cdddc9d78a9deeeeec2111333333211399999bd6556eeeeeeb21111111111115fdeeeeb2119feeeee911111111111119fdeeee9111ceeeeed61111111111111ceeeeed5112eeeeeed31111111111112feeeeec3113feeeeec31111111111116edddde92115edddded5111111111111365555531112655555531111111111111111111111111111111111111111111111111111111111111111111121111111111111111111111111111112"
+	],
+	"animationSpeed": 0,
+	"vmuName": "Action Replay",
+	"description": "(c)Datel - www.codejunkies.com",
+	"source": {
+		"kind": "save",
+		"files": [
+			"AR423.VMS",
+			"arcdx1.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/arcdx"
+	},
+	"tags": [],
+	"hash": "832a80a28cb7bb11b41a20bb6b1bcd289cd0da61",
+	"added": "2026-11-05"
+}

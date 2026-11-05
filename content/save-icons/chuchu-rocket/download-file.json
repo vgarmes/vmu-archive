@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Download file",
+	"gameId": "chuchu-rocket",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#00bbeeff",
+		"#0077bbff",
+		"#bb9944ff",
+		"#eeaa11ff",
+		"#558877ff",
+		"#0088ccff",
+		"#cc9922ff",
+		"#aabb44ff",
+		"#889955ff",
+		"#337799ff",
+		"#ffbb00ff",
+		"#668877ff",
+		"#ffaa11ff",
+		"#ffff00ff",
+		"#ccdd33ff",
+		"#22334411"
+	],
+	"frames": [
+		"10000023451160000000000000001231000005471489a5000000055550059bac000059d9beddd1500000598815016aa600051321ddddd71555554dddf11baaaa00018a4bdddddd994911eddddb13aaaa001baa97dddddd4baab4ddddd79aaaaa05baaa97ddddddb4aa98ddddde9caaaa59aaaa97ddddddb9aa97ddddde9aaaaa13aaaa44dddddd44aa98ddddd89aaaaa8aaaaa21dddddd12aab4ddddd18aaaaaaaaaaaa9bdddd89caa61edddb9aaaaaaaaaaaaa618dd712aaaab17e416aaaaaaaaaaaaaa699918aaaaaa899b3aaaaaaaaaa6aaaaaa223aaaaaaaaaaaaa83aaaaac41caaaaaaaaaaaaaaaaaaaa618aaaa39116aaa2caaaaaaaaaaaaaaa41baaaa15058acb18aaa33aaaa86aaa2159aaaa50059695513a319aaa219caa95013aaa0000115005b6155ba31554a810016aaa00005500001150018950014150052aaa00000000005500051100051500052aaa00000000000000005000005000012aaa00000000000000000000000000016aaa00000000000000000000000000013aaa0000000000000000000000000059caaa0000055000000000000000000054aaaa0000011000150000000000000018aaaa5000599505115005100055000016aaaa15001661512b505115001100059aaaaa9b154aa914ac951261059950012aaaaa13816aa213aa218aa411c85059aaaaaa58a3aaaa3aaaa2aaa218a61512aaaaaa"
+	],
+	"animationSpeed": 1,
+	"vmuName": "CHU_CHU__D01",
+	"description": "チューチュー！／ダウンロード",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00016486.VMS",
+			"v59325.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/chuchu"
+	},
+	"tags": [],
+	"hash": "c952d0758943c3129e1c46e527040ca36f97fed1",
+	"added": "2026-11-05"
+}

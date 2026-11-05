@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "sega-bass-fishing",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#6600ffff",
+		"#889999ff",
+		"#00aaddff",
+		"#00ffffff",
+		"#005555ff",
+		"#007711ff",
+		"#00cc00ff",
+		"#009900ff",
+		"#66ff00ff",
+		"#bbdd00ff",
+		"#eeff00ff",
+		"#99aa00ff",
+		"#667700ff",
+		"#cc2211ff",
+		"#ffffffff",
+		"#000000ff"
+	],
+	"frames": [
+		"3eeeeeeeeeeeeeeeeeeeeeeeeeeeeeee23333333333333324ffffffff423333e23333333333324fff44ff44fffff423e233333333332ffff444ff44ff444ff2e2333333333ff44fff4444554455555fe233333332fff444ff4554775576666fe23333332f4fff44544775667688888fe2333332f444ff455557666888aabcf2e233333fff44444477766888aa9bff23e233334ffff45545566688aaa9bf2313e23332f44ff4577576688aaa9bf13313e2333f44444447766688aaa9bf431f33e2332f4445545566688aaaabcf233333e233f444fff75766688aaa9cf4333333e233f44fefef666688aaaabcf2333333e232f44fffef666688aaa9cf43333333e232f45feeef66688aaa9bcf23333333e232f455fff66688aaa9bbf413333333e232f5577666688aaa9bbcf331333333e232f577666688aaa9bbbf1331333333e233f57666888aaa9bbbcf31f3333333e2332f76888aaaa9bbbcf23333333333e2333f5b8aaa99bbbbcf22fffffffff2e23332ffbbbbbbbbcff23faaaafaaaafe2333114ffcccccff4333fdffdfdffdfe233112444fffff423333fdffffdddffe231e2442333333333333fdfddfddddfe21e24423333333333333fdffdfdffdfe21242333333333333333f0000f0000fe214233333333333333332ffff2ffff2e2333333333333333333333333333333e22222222222222222222222222222223"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SEGABassFishing",
+	"description": "SEGABassFishing",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000073.VMS",
+			"v21584.VMS",
+			"v33309.VMS",
+			"v45604.VMS",
+			"v72094.VMS",
+			"v79466.VMS",
+			"v94898.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bassfish"
+	},
+	"tags": [],
+	"hash": "647c974e69297f64d89db53937095fc08480f29f",
+	"added": "2026-11-05"
+}
