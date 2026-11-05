@@ -1,5 +1,10 @@
 [
 	{
+		"date": "2026-11-05",
+		"title": "Save icons",
+		"body": "A new page for the colour icons the Dreamcast's memory card menu shows for each save, every game's in one grid you can search. The first come from Capcom vs. SNK 2: its system file and replay file icons, read from 23 dumped saves that share just those two."
+	},
+	{
 		"date": "2026-11-04",
 		"title": "Jet Set Radio, and its graffiti viewer",
 		"body": "Twelve screens from the Japanese disc: the katakana logo, the radio turning on its loop, Now Saving, Now Loading, OK and NG, and the graffiti viewer the game copies to the VMU, with its SEGA and copyright screens, title, menus and blinking Press A. Its fonts and radio parts are in the Sprites card."
