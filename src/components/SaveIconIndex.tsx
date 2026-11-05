@@ -108,7 +108,7 @@ function SaveIconCard({ icon }: { icon: SaveIconEntry }) {
 		<span className="truncate">{icon.game}</span>
 	)
 	return (
-		<li className="border-border bg-card flex flex-col border">
+		<li className="border-border bg-card hover:border-foreground flex flex-col border">
 			<div className="flex items-center justify-center p-4">
 				<SaveIconImage icon={icon} className="w-24" />
 			</div>
