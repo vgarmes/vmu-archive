@@ -33,9 +33,7 @@
 	"description": "サクラ大戦２  12話05  13:58",
 	"source": {
 		"kind": "save",
-		"files": [
-			"sw2_009.VMS"
-		],
+		"file": "sw2_009.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakura2"
 	},
 	"tags": [],

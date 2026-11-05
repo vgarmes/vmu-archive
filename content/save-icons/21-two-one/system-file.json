@@ -31,9 +31,7 @@
 	"description": "２１－ＴｗｏＯｎｅ－",
 	"source": {
 		"kind": "save",
-		"files": [
-			"21twoone.VMS"
-		],
+		"file": "21twoone.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/twoone"
 	},
 	"tags": [],

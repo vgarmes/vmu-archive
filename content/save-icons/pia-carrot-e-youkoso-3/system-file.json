@@ -31,9 +31,7 @@
 	"description": "Piaキャロットへようこそ!!3 ｼｽﾃﾑ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"PIA3BEST.VMS"
-		],
+		"file": "PIA3BEST.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/pia3"
 	},
 	"tags": [],

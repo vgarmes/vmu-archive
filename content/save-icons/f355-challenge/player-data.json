@@ -31,10 +31,7 @@
 	"description": "F355 Challenge Player Data",
 	"source": {
 		"kind": "save",
-		"files": [
-			"f355_1.VMS",
-			"v49123.VMS"
-		],
+		"file": "f355_1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/f355challenge"
 	},
 	"tags": [],

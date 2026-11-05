@@ -31,10 +31,7 @@
 	"description": "ライブレード",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SHENGLJ1.VMS",
-			"SHENGLJ2.VMS"
-		],
+		"file": "SHENGLJ1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/seirei"
 	},
 	"tags": [],

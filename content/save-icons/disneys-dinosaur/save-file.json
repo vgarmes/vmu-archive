@@ -31,10 +31,7 @@
 	"description": "Dinosaurs",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v30174.VMS",
-			"v42869.VMS"
-		],
+		"file": "v30174.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dinosaur"
 	},
 	"tags": [],

@@ -31,16 +31,7 @@
 	"description": "BIO_CV/ｼｽﾃﾑﾃﾞｰﾀ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"biocsys1.VMS",
-			"v12022.VMS",
-			"v22475.VMS",
-			"v33626.VMS",
-			"v52935.VMS",
-			"v61271.VMS",
-			"v62187.VMS",
-			"v81176.VMS"
-		],
+		"file": "biocsys1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/resident_evil"
 	},
 	"tags": [],

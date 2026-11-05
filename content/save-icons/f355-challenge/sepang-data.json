@@ -31,10 +31,7 @@
 	"description": "F355 CHALLENGE SEPANG DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v37728.VMS",
-			"v63581.VMS"
-		],
+		"file": "v37728.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/f355challenge"
 	},
 	"tags": [],

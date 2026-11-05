@@ -31,19 +31,7 @@
 	"description": "SW Episode1 : Jedi Power Battles",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v35202.VMS",
-			"v35686.VMS",
-			"v39628.VMS",
-			"v54185.VMS",
-			"v54651.VMS",
-			"v56151.VMS",
-			"v58469.VMS",
-			"v72433.VMS",
-			"v79145.VMS",
-			"v92210.VMS",
-			"v95231.VMS"
-		],
+		"file": "v35202.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/starwarsjedi"
 	},
 	"tags": [],

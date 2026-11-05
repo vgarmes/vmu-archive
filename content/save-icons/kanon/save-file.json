@@ -31,10 +31,7 @@
 	"description": "Ｋａｎｏｎ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"KANON1.VMS",
-			"KANON2.VMS"
-		],
+		"file": "KANON1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kanon"
 	},
 	"tags": [],

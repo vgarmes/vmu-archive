@@ -32,9 +32,7 @@
 	"description": "Gundam外伝 Premium Disc",
 	"source": {
 		"kind": "save",
-		"files": [
-			"GUNDAM1.VMS"
-		],
+		"file": "GUNDAM1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gundam"
 	},
 	"tags": [],

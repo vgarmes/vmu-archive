@@ -33,9 +33,7 @@
 	"description": "AIRFORCE DELTA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v45403.VMS"
-		],
+		"file": "v45403.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/airforcedelta"
 	},
 	"tags": [],

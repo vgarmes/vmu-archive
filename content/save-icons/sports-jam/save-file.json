@@ -32,9 +32,7 @@
 	"description": "Sports Jam Dreamcast Edition",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v33248.VMS"
-		],
+		"file": "v33248.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sportsjam"
 	},
 	"tags": [],

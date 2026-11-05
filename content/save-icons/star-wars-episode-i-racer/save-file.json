@@ -31,22 +31,7 @@
 	"description": "Star Wars Episode 1 : Racer",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00001044.VMS",
-			"v10389.VMS",
-			"v16731.VMS",
-			"v19047.VMS",
-			"v24481.VMS",
-			"v25373.VMS",
-			"v32717.VMS",
-			"v33273.VMS",
-			"v4025.VMS",
-			"v65965.VMS",
-			"v66838.VMS",
-			"v78592.VMS",
-			"v801.VMS",
-			"v81697.VMS"
-		],
+		"file": "00001044.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/starwars"
 	},
 	"tags": [],

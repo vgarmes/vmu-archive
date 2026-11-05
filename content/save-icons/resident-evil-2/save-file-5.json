@@ -31,11 +31,7 @@
 	"description": "RE2/ART/Control Room2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v4864.VMS",
-			"v64640.VMS",
-			"v82929.VMS"
-		],
+		"file": "v4864.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
 	},
 	"tags": [],

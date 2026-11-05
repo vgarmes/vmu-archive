@@ -31,11 +31,7 @@
 	"description": "JEREMY MCGRATH SUPERCROSS 2000",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v52330.VMS",
-			"v62775.VMS",
-			"v85569.VMS"
-		],
+		"file": "v52330.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/jeremymcgrath"
 	},
 	"tags": [],

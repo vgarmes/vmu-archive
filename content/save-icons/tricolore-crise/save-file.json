@@ -31,11 +31,7 @@
 	"description": "トリコロールクライシス",
 	"source": {
 		"kind": "save",
-		"files": [
-			"3jiao.VMS",
-			"3jiao2.VMS",
-			"3jiao3.VMS"
-		],
+		"file": "3jiao.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tricolore"
 	},
 	"tags": [],

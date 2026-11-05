@@ -31,9 +31,7 @@
 	"description": "MARIONETTE_HANDLER",
 	"source": {
 		"kind": "save",
-		"files": [
-			"MARHAND1.VMS"
-		],
+		"file": "MARHAND1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/marionette1"
 	},
 	"tags": [],

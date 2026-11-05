@@ -31,9 +31,7 @@
 	"description": "スターシーカーＲｅｍｉｘ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"starseek.VMS"
-		],
+		"file": "starseek.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/starseek"
 	},
 	"tags": [],

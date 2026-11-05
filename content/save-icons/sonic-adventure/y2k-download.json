@@ -33,12 +33,7 @@
 	"description": "SONIC ADVENTURE / Y2K",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000136.VMS",
-			"00000762.VMS",
-			"SA1_510.VMS",
-			"v95495.VMS"
-		],
+		"file": "00000136.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

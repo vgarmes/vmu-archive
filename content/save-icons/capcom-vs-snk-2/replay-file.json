@@ -34,17 +34,7 @@
 	"description": "CAPCOM VS. SNK 2 ﾘﾌﾟﾚｲﾌｧｲﾙ 00",
 	"source": {
 		"kind": "save",
-		"files": [
-			"cvs2rep1.VMS",
-			"cvs2rep2.VMS",
-			"cvs2rep3.VMS",
-			"cvs2rep4.VMS",
-			"cvs2rep5.VMS",
-			"cvs2rep6.VMS",
-			"cvs2rep7.VMS",
-			"cvs2rex1.VMS",
-			"cvs2rex2.VMS"
-		],
+		"file": "cvs2rep1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/73f6e86bd33d2806f2ab5512c4c02a699f3a1443/capcomsnk2",
 		"commit": "73f6e86bd33d2806f2ab5512c4c02a699f3a1443"
 	},

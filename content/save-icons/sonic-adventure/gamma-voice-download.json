@@ -33,9 +33,7 @@
 	"description": "SONIC ADVENTURE / GAMMA Voice",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000523.VMS"
-		],
+		"file": "00000523.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

@@ -33,9 +33,7 @@
 	"description": "Redline Racer Save Game",
 	"source": {
 		"kind": "save",
-		"files": [
-			"REDRACE.VMS"
-		],
+		"file": "REDRACE.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/redlineracer"
 	},
 	"tags": [],

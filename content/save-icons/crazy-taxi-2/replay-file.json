@@ -33,9 +33,7 @@
 	"description": "CRAZY TAXI 2  REPLAY DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v43160.VMS"
-		],
+		"file": "v43160.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/crazytaxi2"
 	},
 	"tags": [],

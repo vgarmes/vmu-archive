@@ -31,12 +31,7 @@
 	"description": "MAGFORCE RACING SAVEGAME",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v25599.VMS",
-			"v45397.VMS",
-			"v51230.VMS",
-			"v7123.VMS"
-		],
+		"file": "v25599.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/magforceracing"
 	},
 	"tags": [],

@@ -35,9 +35,7 @@
 	"description": "",
 	"source": {
 		"kind": "save",
-		"files": [
-			"CRAZYT.VMS"
-		],
+		"file": "CRAZYT.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/crazytaxi"
 	},
 	"tags": [],

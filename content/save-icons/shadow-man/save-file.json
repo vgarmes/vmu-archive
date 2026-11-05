@@ -31,18 +31,7 @@
 	"description": "SHADOWMAN   47:03:26 D=120 C=  7",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v1056.VMS",
-			"v49533.VMS",
-			"v67545.VMS",
-			"v6915.VMS",
-			"v75146.VMS",
-			"v78723.VMS",
-			"v7967.VMS",
-			"v92438.VMS",
-			"v94384.VMS",
-			"v98125.VMS"
-		],
+		"file": "v1056.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/shadowman"
 	},
 	"tags": [],

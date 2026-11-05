@@ -33,10 +33,7 @@
 	"description": "ROADSTERS PLAYER DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v43459.VMS",
-			"v96969.VMS"
-		],
+		"file": "v43459.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/roadsters"
 	},
 	"tags": [],

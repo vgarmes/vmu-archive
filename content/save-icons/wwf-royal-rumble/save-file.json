@@ -31,19 +31,7 @@
 	"description": "ROYALRUMBLE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v11835.VMS",
-			"v31180.VMS",
-			"v33904.VMS",
-			"v39825.VMS",
-			"v4477.VMS",
-			"v45315.VMS",
-			"v79690.VMS",
-			"v84955.VMS",
-			"v93698.VMS",
-			"v95072.VMS",
-			"v95992.VMS"
-		],
+		"file": "v11835.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wwfrumble"
 	},
 	"tags": [],

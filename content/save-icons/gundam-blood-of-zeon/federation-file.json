@@ -31,9 +31,7 @@
 	"description": "BLOOD OF ZEON 連邦ファイル",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000006.VMS"
-		],
+		"file": "00000006.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gundambz"
 	},
 	"tags": [],

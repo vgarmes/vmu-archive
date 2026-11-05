@@ -31,22 +31,7 @@
 	"description": "スポーンシステム",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SPAWN001.VMS",
-			"SPAWNJ.VMS",
-			"v13340.VMS",
-			"v25416.VMS",
-			"v41557.VMS",
-			"v44274.VMS",
-			"v4980.VMS",
-			"v61185.VMS",
-			"v68482.VMS",
-			"v71485.VMS",
-			"v86613.VMS",
-			"v90013.VMS",
-			"v9280.VMS",
-			"v96524.VMS"
-		],
+		"file": "SPAWN001.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spawn"
 	},
 	"tags": [],

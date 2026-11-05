@@ -140,16 +140,8 @@ function SaveIconCard({ icon, vmu }: { icon: SaveIconEntry; vmu: boolean }) {
 				)}
 			</div>
 			<div className="border-border flex flex-col gap-0.5 border-t px-3 py-2 text-xs">
-				<span className="flex items-baseline justify-between gap-2">
-					<span className="truncate" title={icon.title}>
-						{icon.title}
-					</span>
-					<span
-						className="text-muted-foreground shrink-0 tabular-nums"
-						title={`Carried by ${icon.saves} ${icon.saves === 1 ? 'save' : 'saves'}`}
-					>
-						{icon.saves}
-					</span>
+				<span className="truncate" title={icon.title}>
+					{icon.title}
 				</span>
 				<span className="text-muted-foreground flex min-w-0">{game}</span>
 				<span

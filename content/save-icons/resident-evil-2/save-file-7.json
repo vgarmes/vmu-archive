@@ -31,10 +31,7 @@
 	"description": "RE2/ART/Scenario 1st",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v54780.VMS",
-			"v68907.VMS"
-		],
+		"file": "v54780.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
 	},
 	"tags": [],

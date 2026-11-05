@@ -31,9 +31,7 @@
 	"description": "F1 World Grand Prix II",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v75648.VMS"
-		],
+		"file": "v75648.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/f1worldprix"
 	},
 	"tags": [],

@@ -33,9 +33,7 @@
 	"description": "PLASMA_SWORD_SG_EPISODE2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v78823.VMS"
-		],
+		"file": "v78823.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/plasmasword"
 	},
 	"tags": [],

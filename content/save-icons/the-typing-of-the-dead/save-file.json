@@ -33,9 +33,7 @@
 	"description": "ザ・タイピング・オブ・ザ・デッド",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000014.VMS"
-		],
+		"file": "00000014.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/typingdead"
 	},
 	"tags": [],

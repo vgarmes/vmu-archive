@@ -34,22 +34,7 @@
 	"description": "CAPCOM VS. SNK 2 ｼｽﾃﾑﾌｧｲﾙ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"cvs2jp.VMS",
-			"v21640.VMS",
-			"v3076.VMS",
-			"v43895.VMS",
-			"v46252.VMS",
-			"v59287.VMS",
-			"v6561.VMS",
-			"v7082.VMS",
-			"v75548.VMS",
-			"v8117.VMS",
-			"v88291.VMS",
-			"v92076.VMS",
-			"v96710.VMS",
-			"v97936.VMS"
-		],
+		"file": "cvs2jp.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/73f6e86bd33d2806f2ab5512c4c02a699f3a1443/capcomsnk2",
 		"commit": "73f6e86bd33d2806f2ab5512c4c02a699f3a1443"
 	},

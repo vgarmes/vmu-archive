@@ -31,10 +31,7 @@
 	"description": "RE2/OET/Dark Room",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v23708.VMS",
-			"v8790.VMS"
-		],
+		"file": "v23708.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
 	},
 	"tags": [],

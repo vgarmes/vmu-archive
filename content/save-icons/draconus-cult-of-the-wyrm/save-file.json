@@ -31,15 +31,7 @@
 	"description": "Draconus: Cult of the Wyrm",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v2726.VMS",
-			"v55336.VMS",
-			"v59123.VMS",
-			"v62188.VMS",
-			"v83380.VMS",
-			"v86050.VMS",
-			"v98110.VMS"
-		],
+		"file": "v2726.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/draconus"
 	},
 	"tags": [],

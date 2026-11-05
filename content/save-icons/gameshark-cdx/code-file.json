@@ -31,10 +31,7 @@
 	"description": "(c)Interact - www.gameshark.com",
 	"source": {
 		"kind": "save",
-		"files": [
-			"GSCDX.VMS",
-			"gscdx1.VMS"
-		],
+		"file": "GSCDX.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gscdx"
 	},
 	"tags": [],

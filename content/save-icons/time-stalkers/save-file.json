@@ -33,23 +33,7 @@
 	"description": "TIME STALKERS",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00001001.VMS",
-			"tstalker.VMS",
-			"v11455.VMS",
-			"v12608.VMS",
-			"v21354.VMS",
-			"v43436.VMS",
-			"v46687.VMS",
-			"v48250.VMS",
-			"v58992.VMS",
-			"v67772.VMS",
-			"v71802.VMS",
-			"v83899.VMS",
-			"v88055.VMS",
-			"v95195.VMS",
-			"v98204.VMS"
-		],
+		"file": "00001001.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/timestalkers"
 	},
 	"tags": [],

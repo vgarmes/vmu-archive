@@ -31,9 +31,7 @@
 	"description": "バーミリオン　デザート",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00001212.VMS"
-		],
+		"file": "00001212.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/vermilion"
 	},
 	"tags": [],

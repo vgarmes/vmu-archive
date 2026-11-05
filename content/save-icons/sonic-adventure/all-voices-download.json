@@ -33,9 +33,7 @@
 	"description": "SONIC ADVENTURE / ALL Voice",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00001311.VMS"
-		],
+		"file": "00001311.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

@@ -31,11 +31,7 @@
 	"description": "ECW Anarchy Rulz",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v34644.VMS",
-			"v39669.VMS",
-			"v96747.VMS"
-		],
+		"file": "v34644.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ecwanarchy"
 	},
 	"tags": [],

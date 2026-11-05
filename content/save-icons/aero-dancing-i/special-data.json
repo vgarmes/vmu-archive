@@ -31,9 +31,7 @@
 	"description": "AeroDancingi SpecialData",
 	"source": {
 		"kind": "save",
-		"files": [
-			"aeroisys.VMS"
-		],
+		"file": "aeroisys.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroi"
 	},
 	"tags": [],

@@ -31,10 +31,7 @@
 	"description": "Striker Pro 2000",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v3240.VMS",
-			"v62608.VMS"
-		],
+		"file": "v3240.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/strikerpro2k"
 	},
 	"tags": [],

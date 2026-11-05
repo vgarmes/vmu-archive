@@ -31,14 +31,7 @@
 	"description": "ヘビーメタルシステムファイル",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v12546.VMS",
-			"v22716.VMS",
-			"v77137.VMS",
-			"v87983.VMS",
-			"v93134.VMS",
-			"v99350.VMS"
-		],
+		"file": "v12546.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/heavymetal"
 	},
 	"tags": [],

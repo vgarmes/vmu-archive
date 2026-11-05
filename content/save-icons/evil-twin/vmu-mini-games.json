@@ -33,12 +33,7 @@
 	"description": "Evil Twin - Fat Rain",
 	"source": {
 		"kind": "save",
-		"files": [
-			"FATRAIN.VMS",
-			"GLUCKY.VMS",
-			"PAPER.VMS",
-			"SWAMPY.VMS"
-		],
+		"file": "FATRAIN.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

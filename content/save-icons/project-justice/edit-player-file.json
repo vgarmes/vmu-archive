@@ -33,11 +33,7 @@
 	"description": "燃えろ！ジャスティス学園／EDIT",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v15522.VMS",
-			"v30197.VMS",
-			"v7467.VMS"
-		],
+		"file": "v15522.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/projectjustice"
 	},
 	"tags": [],

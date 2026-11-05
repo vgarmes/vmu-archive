@@ -33,9 +33,7 @@
 	"description": "EVILTWIN",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000024.VMS"
-		],
+		"file": "00000024.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/eviltwin"
 	},
 	"tags": [],

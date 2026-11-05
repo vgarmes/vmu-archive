@@ -31,9 +31,7 @@
 	"description": "CENTIPEDE SAVE GAME",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v72205.VMS"
-		],
+		"file": "v72205.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/centipede"
 	},
 	"tags": [],

@@ -33,12 +33,7 @@
 	"description": "青の６号 歳月不待人 Extra Data",
 	"source": {
 		"kind": "save",
-		"files": [
-			"BSUBNO6.VMS",
-			"q6_ex.VMS",
-			"q6_last.VMS",
-			"q6sys.VMS"
-		],
+		"file": "BSUBNO6.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bluesub6"
 	},
 	"tags": [],

@@ -31,24 +31,7 @@
 	"description": "サンバＤＥアミーゴVer2000 DL",
 	"source": {
 		"kind": "save",
-		"files": [
-			"MUSIC_01.VMS",
-			"MUSIC_02.VMS",
-			"MUSIC_03.VMS",
-			"MUSIC_04.VMS",
-			"MUSIC_05.VMS",
-			"MUSIC_06.VMS",
-			"MUSIC_07.VMS",
-			"MUSIC_08.VMS",
-			"MUSIC_09.VMS",
-			"MUSIC_10.VMS",
-			"MUSIC_11.VMS",
-			"MUSIC_12.VMS",
-			"MUSIC_13.VMS",
-			"MUSIC_14.VMS",
-			"MUSIC_15.VMS",
-			"v99674.VMS"
-		],
+		"file": "MUSIC_01.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/samba"
 	},
 	"tags": [],

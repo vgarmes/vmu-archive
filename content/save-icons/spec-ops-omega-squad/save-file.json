@@ -31,13 +31,7 @@
 	"description": "SO2: OMEGA SQUAD",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v18635.VMS",
-			"v35028.VMS",
-			"v53099.VMS",
-			"v66330.VMS",
-			"v68899.VMS"
-		],
+		"file": "v18635.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/specopsomega"
 	},
 	"tags": [],

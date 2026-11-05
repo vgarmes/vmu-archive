@@ -31,15 +31,7 @@
 	"description": "TD-VRally Preferences",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v17157.VMS",
-			"v26860.VMS",
-			"v28938.VMS",
-			"v59944.VMS",
-			"v91867.VMS",
-			"v93443.VMS",
-			"v97468.VMS"
-		],
+		"file": "v17157.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/vrally"
 	},
 	"tags": [],

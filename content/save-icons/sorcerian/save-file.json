@@ -31,9 +31,7 @@
 	"description": "Ｓｏｒひまわり亭　　　００：２０",
 	"source": {
 		"kind": "save",
-		"files": [
-			"7XING.VMS"
-		],
+		"file": "7XING.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sorcer"
 	},
 	"tags": [],

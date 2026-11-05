@@ -31,23 +31,7 @@
 	"description": "AeroDancingI",
 	"source": {
 		"kind": "save",
-		"files": [
-			"aeroie00.VMS",
-			"aeroie01.VMS",
-			"aeroie02.VMS",
-			"aeroie03.VMS",
-			"aeroie04.VMS",
-			"aeroie05.VMS",
-			"aeroie06.VMS",
-			"aeroie07.VMS",
-			"aeroie08.VMS",
-			"aeroie09.VMS",
-			"aeroie10.VMS",
-			"aeroie11.VMS",
-			"aeroie12.VMS",
-			"aeroie13.VMS",
-			"aeroie14.VMS"
-		],
+		"file": "aeroie00.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroi"
 	},
 	"tags": [],

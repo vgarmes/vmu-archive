@@ -33,16 +33,7 @@
 	"description": "SONIC ADVENTURE 2 / Download",
 	"source": {
 		"kind": "save",
-		"files": [
-			"DOWN001.VMS",
-			"DOWN002.VMS",
-			"DOWN003.VMS",
-			"SA2CART.VMS",
-			"SA2CART2.VMS",
-			"SA2_D3.VMS",
-			"v47754.VMS",
-			"v70904.VMS"
-		],
+		"file": "DOWN001.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
 	},
 	"tags": [],

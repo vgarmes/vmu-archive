@@ -31,22 +31,7 @@
 	"description": "Tomb Raider IV Save",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000001.VMS",
-			"TOMBR4.VMS",
-			"v22876.VMS",
-			"v25755.VMS",
-			"v27766.VMS",
-			"v33314.VMS",
-			"v40304.VMS",
-			"v47078.VMS",
-			"v47998.VMS",
-			"v50322.VMS",
-			"v76754.VMS",
-			"v78133.VMS",
-			"v99644.VMS",
-			"v99922.VMS"
-		],
+		"file": "00000001.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tombraider"
 	},
 	"tags": [],

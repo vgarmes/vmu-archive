@@ -32,18 +32,7 @@
 	"description": "サイレントスコープ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"sscopejp.VMS",
-			"v17758.VMS",
-			"v19765.VMS",
-			"v24722.VMS",
-			"v29919.VMS",
-			"v36531.VMS",
-			"v47063.VMS",
-			"v50844.VMS",
-			"v65232.VMS",
-			"v91000.VMS"
-		],
+		"file": "sscopejp.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/silentscope"
 	},
 	"tags": [],

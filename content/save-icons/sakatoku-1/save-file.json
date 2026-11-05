@@ -31,10 +31,7 @@
 	"description": "ｻｶﾄｸ ｸﾗﾌﾞ ｼﾞｭﾗｰﾚ171/12/3A",
 	"source": {
 		"kind": "save",
-		"files": [
-			"TEDAH1_1.VMS",
-			"TEDAH1_2.VMS"
-		],
+		"file": "TEDAH1_1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakato1"
 	},
 	"tags": [],

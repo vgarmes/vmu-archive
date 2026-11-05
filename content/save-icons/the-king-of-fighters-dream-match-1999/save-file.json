@@ -31,14 +31,7 @@
 	"description": "THE KING OF FIGHTERS 1999",
 	"source": {
 		"kind": "save",
-		"files": [
-			"KOF_1998.VMS",
-			"v42176.VMS",
-			"v65184.VMS",
-			"v7284.VMS",
-			"v86685.VMS",
-			"v93429.VMS"
-		],
+		"file": "KOF_1998.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kof99dm"
 	},
 	"tags": [],

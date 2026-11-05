@@ -31,15 +31,7 @@
 	"description": "CART RACING",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v46911.VMS",
-			"v54673.VMS",
-			"v59453.VMS",
-			"v81874.VMS",
-			"v81960.VMS",
-			"v90922.VMS",
-			"v97020.VMS"
-		],
+		"file": "v46911.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/flag2flag"
 	},
 	"tags": [],

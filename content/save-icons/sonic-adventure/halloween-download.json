@@ -33,12 +33,7 @@
 	"description": "SONIC ADVENTURE / Tremble Park",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000028.VMS",
-			"00000135.VMS",
-			"00000763.VMS",
-			"v65734.VMS"
-		],
+		"file": "00000028.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

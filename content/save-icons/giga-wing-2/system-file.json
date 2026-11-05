@@ -31,14 +31,7 @@
 	"description": "ギガウイング２システムファイル",
 	"source": {
 		"kind": "save",
-		"files": [
-			"GIGAWIN2.VMS",
-			"v29890.VMS",
-			"v36524.VMS",
-			"v499.VMS",
-			"v58396.VMS",
-			"v73350.VMS"
-		],
+		"file": "GIGAWIN2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gigawing2"
 	},
 	"tags": [],

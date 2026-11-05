@@ -31,15 +31,7 @@
 	"description": "SEGABassFishing",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000073.VMS",
-			"v21584.VMS",
-			"v33309.VMS",
-			"v45604.VMS",
-			"v72094.VMS",
-			"v79466.VMS",
-			"v94898.VMS"
-		],
+		"file": "00000073.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bassfish"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "VIRTUA STRIKER2 ( GER vs CHI )",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v21180.VMS"
-		],
+		"file": "v21180.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuastriker"
 	},
 	"tags": [],

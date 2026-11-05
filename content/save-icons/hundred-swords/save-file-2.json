@@ -33,9 +33,7 @@
 	"description": "Ｈｕｎｄｒｅｄ　Ｓｗｏｒｄｓ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"100sword.VMS"
-		],
+		"file": "100sword.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/hswords"
 	},
 	"tags": [],

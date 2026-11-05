@@ -31,13 +31,7 @@
 	"description": "SuperMagneticNeo",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v13138.VMS",
-			"v72773.VMS",
-			"v83322.VMS",
-			"v88771.VMS",
-			"v90163.VMS"
-		],
+		"file": "v13138.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/supermagicneo"
 	},
 	"tags": [],

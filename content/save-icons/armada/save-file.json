@@ -31,14 +31,7 @@
 	"description": "",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v44206.VMS",
-			"v51270.VMS",
-			"v8538.VMS",
-			"v96116.VMS",
-			"v98724.VMS",
-			"v99148.VMS"
-		],
+		"file": "v44206.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/armada"
 	},
 	"tags": [],

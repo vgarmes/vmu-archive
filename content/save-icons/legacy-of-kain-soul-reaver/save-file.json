@@ -33,16 +33,7 @@
 	"description": "Legacy of Kain: Soul Reaver",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000628.VMS",
-			"v13239.VMS",
-			"v13811.VMS",
-			"v25761.VMS",
-			"v3848.VMS",
-			"v4784.VMS",
-			"v73699.VMS",
-			"v91996.VMS"
-		],
+		"file": "00000628.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/legacykain"
 	},
 	"tags": [],

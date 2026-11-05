@@ -31,15 +31,7 @@
 	"description": "Donald Duck",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v2502.VMS",
-			"v27734.VMS",
-			"v33741.VMS",
-			"v39306.VMS",
-			"v41043.VMS",
-			"v48835.VMS",
-			"v89294.VMS"
-		],
+		"file": "v2502.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/donaldduck"
 	},
 	"tags": [],

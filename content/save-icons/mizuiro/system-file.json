@@ -31,9 +31,7 @@
 	"description": "みずいろ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"mizuiro.VMS"
-		],
+		"file": "mizuiro.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mizuiro"
 	},
 	"tags": [],

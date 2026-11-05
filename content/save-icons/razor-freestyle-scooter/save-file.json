@@ -31,9 +31,7 @@
 	"description": "Freestyle Scooter",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v47428.VMS"
-		],
+		"file": "v47428.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/razor"
 	},
 	"tags": [],

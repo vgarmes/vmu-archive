@@ -31,14 +31,7 @@
 	"description": "STREET FIGHTER 3 DOUBLE IMPACT",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v21939.VMS",
-			"v33370.VMS",
-			"v50554.VMS",
-			"v68968.VMS",
-			"v75558.VMS",
-			"v88846.VMS"
-		],
+		"file": "v21939.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfight3di"
 	},
 	"tags": [],

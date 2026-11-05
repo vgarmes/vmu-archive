@@ -33,9 +33,7 @@
 	"description": "SONIC ADVENTURE / EC Launch",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000668.VMS"
-		],
+		"file": "00000668.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

@@ -31,10 +31,7 @@
 	"description": "",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v25282.VMS",
-			"v8994.VMS"
-		],
+		"file": "v25282.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/silver"
 	},
 	"tags": [],

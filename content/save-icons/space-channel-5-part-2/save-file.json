@@ -32,10 +32,7 @@
 	"description": "SPACECHANNEL5PART2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"space5p2.VMS",
-			"v38568.VMS"
-		],
+		"file": "space5p2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/space5p2"
 	},
 	"tags": [],

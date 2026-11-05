@@ -31,21 +31,7 @@
 	"description": "ROGUE SPEAR",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v20049.VMS",
-			"v32645.VMS",
-			"v38922.VMS",
-			"v41423.VMS",
-			"v43123.VMS",
-			"v47137.VMS",
-			"v56798.VMS",
-			"v67810.VMS",
-			"v68861.VMS",
-			"v91854.VMS",
-			"v95448.VMS",
-			"v96528.VMS",
-			"v99068.VMS"
-		],
+		"file": "v20049.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rsrogue"
 	},
 	"tags": [],

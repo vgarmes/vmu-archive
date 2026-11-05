@@ -33,9 +33,7 @@
 	"description": "エンジェルプレゼント",
 	"source": {
 		"kind": "save",
-		"files": [
-			"angelpre.VMS"
-		],
+		"file": "angelpre.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/angelpre"
 	},
 	"tags": [],

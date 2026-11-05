@@ -31,11 +31,7 @@
 	"description": "GTA2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v11998.VMS",
-			"v81958.VMS",
-			"v87708.VMS"
-		],
+		"file": "v11998.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gta2"
 	},
 	"tags": [],

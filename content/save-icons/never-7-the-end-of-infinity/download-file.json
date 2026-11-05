@@ -31,9 +31,7 @@
 	"description": "Never7 ＤＬデータ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"never7.VMS"
-		],
+		"file": "never7.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/never7"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "ＦＲＡＭＥ ＧＲＩＤＥ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"FRAMEGR.VMS"
-		],
+		"file": "FRAMEGR.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/framegride"
 	},
 	"tags": [],

@@ -31,11 +31,7 @@
 	"description": "THE KING OF FIGHTERS 2001",
 	"source": {
 		"kind": "save",
-		"files": [
-			"KOF_2001.VMS",
-			"v37891.VMS",
-			"v91551.VMS"
-		],
+		"file": "KOF_2001.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kof2001"
 	},
 	"tags": [],

@@ -31,27 +31,7 @@
 	"description": "WorldSeriesBaseball2K1 04/06 BOS",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v10156.VMS",
-			"v12541.VMS",
-			"v22375.VMS",
-			"v30113.VMS",
-			"v34406.VMS",
-			"v41992.VMS",
-			"v45014.VMS",
-			"v49283.VMS",
-			"v50553.VMS",
-			"v54470.VMS",
-			"v54876.VMS",
-			"v58522.VMS",
-			"v65822.VMS",
-			"v66989.VMS",
-			"v72548.VMS",
-			"v74376.VMS",
-			"v77383.VMS",
-			"v98370.VMS",
-			"v98446.VMS"
-		],
+		"file": "v10156.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/baseball2k1"
 	},
 	"tags": [],

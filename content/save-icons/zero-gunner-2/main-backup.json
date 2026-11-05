@@ -32,10 +32,7 @@
 	"description": "ゼロガンナー２／メインデータ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v97953.VMS",
-			"zerogun2.VMS"
-		],
+		"file": "v97953.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/zerogun2"
 	},
 	"tags": [],

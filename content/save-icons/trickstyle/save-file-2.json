@@ -33,9 +33,7 @@
 	"description": "TrickStyle",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v75229.VMS"
-		],
+		"file": "v75229.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/trickstyle"
 	},
 	"tags": [],

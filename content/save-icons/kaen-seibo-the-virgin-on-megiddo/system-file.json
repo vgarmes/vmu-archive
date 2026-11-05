@@ -33,9 +33,7 @@
 	"description": "火焔聖母　システムファイル",
 	"source": {
 		"kind": "save",
-		"files": [
-			"huoyansh.VMS"
-		],
+		"file": "huoyansh.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/megiddo"
 	},
 	"tags": [],

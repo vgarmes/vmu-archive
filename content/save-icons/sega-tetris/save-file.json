@@ -33,9 +33,7 @@
 	"description": "セガテトリスセーブデータ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000025.VMS"
-		],
+		"file": "00000025.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tetris"
 	},
 	"tags": [],

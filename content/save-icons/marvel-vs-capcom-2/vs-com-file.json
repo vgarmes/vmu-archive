@@ -33,9 +33,7 @@
 	"description": "ﾏｰｳﾞﾙ VS.ｶﾌﾟｺﾝ 2_VS.COMﾌｧｲﾙ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"4007.VMS"
-		],
+		"file": "4007.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

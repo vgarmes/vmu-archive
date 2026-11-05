@@ -31,17 +31,7 @@
 	"description": "TOY COMMANDER : SAVED GAME",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000621.VMS",
-			"v13332.VMS",
-			"v29600.VMS",
-			"v33538.VMS",
-			"v37886.VMS",
-			"v50553.VMS",
-			"v54006.VMS",
-			"v57416.VMS",
-			"v9788.VMS"
-		],
+		"file": "00000621.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/toycommander"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "THE KING OF FIGHTERS 2002",
 	"source": {
 		"kind": "save",
-		"files": [
-			"KOF_2002.VMS"
-		],
+		"file": "KOF_2002.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kof2002"
 	},
 	"tags": [],

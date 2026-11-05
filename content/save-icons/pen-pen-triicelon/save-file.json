@@ -33,9 +33,7 @@
 	"description": "PENPEN TRiICELON",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v92450.VMS"
-		],
+		"file": "v92450.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/penpen"
 	},
 	"tags": [],

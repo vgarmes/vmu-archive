@@ -33,19 +33,7 @@
 	"description": "V8SECOND, \" \"",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000307.VMS",
-			"v22250.VMS",
-			"v38833.VMS",
-			"v4068.VMS",
-			"v50580.VMS",
-			"v52014.VMS",
-			"v53148.VMS",
-			"v60186.VMS",
-			"v69678.VMS",
-			"v69901.VMS",
-			"v89214.VMS"
-		],
+		"file": "00000307.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/vigilante8"
 	},
 	"tags": [],

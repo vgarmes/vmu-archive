@@ -33,11 +33,7 @@
 	"description": "Arcadia              Pinta_Quest",
 	"source": {
 		"kind": "save",
-		"files": [
-			"PQ_NTSC.VMS",
-			"PQ_PAL.VMS",
-			"SOAMINI.VMS"
-		],
+		"file": "PQ_NTSC.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

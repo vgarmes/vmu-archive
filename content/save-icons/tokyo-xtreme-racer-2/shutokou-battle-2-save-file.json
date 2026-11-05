@@ -33,10 +33,7 @@
 	"description": "首都高バトル２",
 	"source": {
 		"kind": "save",
-		"files": [
-			"shoudu2.VMS",
-			"v395.VMS"
-		],
+		"file": "shoudu2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tokyo2"
 	},
 	"tags": [],

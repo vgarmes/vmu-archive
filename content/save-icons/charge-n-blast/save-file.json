@@ -31,10 +31,7 @@
 	"description": "Charge'n Blast",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v23820.VMS",
-			"v34436.VMS"
-		],
+		"file": "v23820.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/chargeblast"
 	},
 	"tags": [],

@@ -33,16 +33,7 @@
 	"description": "IT AND F",
 	"source": {
 		"kind": "save",
-		"files": [
-			"ITANDF.VMS",
-			"v28269.VMS",
-			"v32768.VMS",
-			"v50113.VMS",
-			"v70272.VMS",
-			"v74596.VMS",
-			"v80721.VMS",
-			"v84435.VMS"
-		],
+		"file": "ITANDF.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/espntrack"
 	},
 	"tags": [],

@@ -31,12 +31,7 @@
 	"description": "Red Dog",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v21793.VMS",
-			"v5415.VMS",
-			"v64962.VMS",
-			"v96318.VMS"
-		],
+		"file": "v21793.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/reddog"
 	},
 	"tags": [],

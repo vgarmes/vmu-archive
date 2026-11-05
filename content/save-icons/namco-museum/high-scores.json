@@ -33,11 +33,7 @@
 	"description": "Namco Museum High-Scores",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v15212.VMS",
-			"v36300.VMS",
-			"v54368.VMS"
-		],
+		"file": "v15212.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/namcomuseum"
 	},
 	"tags": [],

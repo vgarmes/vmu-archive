@@ -31,16 +31,7 @@
 	"description": "魔剣Ｘ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"makenxjp.VMS",
-			"v33792.VMS",
-			"v3910.VMS",
-			"v40788.VMS",
-			"v43932.VMS",
-			"v48230.VMS",
-			"v51165.VMS",
-			"v57196.VMS"
-		],
+		"file": "makenxjp.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/makenx"
 	},
 	"tags": [],

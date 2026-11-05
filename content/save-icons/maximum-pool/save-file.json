@@ -33,16 +33,7 @@
 	"description": "MaximumPool Prefs",
 	"source": {
 		"kind": "save",
-		"files": [
-			"MAX2.VMS",
-			"MAXPOOL.VMS",
-			"v44026.VMS",
-			"v56543.VMS",
-			"v58605.VMS",
-			"v65883.VMS",
-			"v76804.VMS",
-			"v9149.VMS"
-		],
+		"file": "MAX2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/maxpool"
 	},
 	"tags": [],

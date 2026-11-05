@@ -31,25 +31,7 @@
 	"description": "SpiderMan Save File",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SPIDER01.VMS",
-			"v16881.VMS",
-			"v25484.VMS",
-			"v31210.VMS",
-			"v38029.VMS",
-			"v38238.VMS",
-			"v45973.VMS",
-			"v57433.VMS",
-			"v61342.VMS",
-			"v66499.VMS",
-			"v76098.VMS",
-			"v76841.VMS",
-			"v78232.VMS",
-			"v7919.VMS",
-			"v84147.VMS",
-			"v84527.VMS",
-			"v92670.VMS"
-		],
+		"file": "SPIDER01.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spiderman"
 	},
 	"tags": [],

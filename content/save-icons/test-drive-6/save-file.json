@@ -31,22 +31,7 @@
 	"description": "TEST DRIVE 6 OPTIONS / GAME DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v19785.VMS",
-			"v22500.VMS",
-			"v26596.VMS",
-			"v44546.VMS",
-			"v45078.VMS",
-			"v51961.VMS",
-			"v5217.VMS",
-			"v57372.VMS",
-			"v81073.VMS",
-			"v81126.VMS",
-			"v87335.VMS",
-			"v92113.VMS",
-			"v9589.VMS",
-			"v99920.VMS"
-		],
+		"file": "v19785.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/testdrive6"
 	},
 	"tags": [],

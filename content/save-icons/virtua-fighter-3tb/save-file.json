@@ -31,13 +31,7 @@
 	"description": "Virtua Fighter 3tb",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00001125.VMS",
-			"v42173.VMS",
-			"v57870.VMS",
-			"v96870.VMS",
-			"vf3tb.VMS"
-		],
+		"file": "00001125.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/vf"
 	},
 	"tags": [],

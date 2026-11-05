@@ -32,9 +32,7 @@
 	"description": "ハローキティのダイエットルーム",
 	"source": {
 		"kind": "save",
-		"files": [
-			"KITTYCAT.VMS"
-		],
+		"file": "KITTYCAT.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

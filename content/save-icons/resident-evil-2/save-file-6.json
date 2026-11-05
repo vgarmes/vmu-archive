@@ -31,10 +31,7 @@
 	"description": "RE2/ONB/Scenario 2nd",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v50830.VMS",
-			"v58582.VMS"
-		],
+		"file": "v50830.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
 	},
 	"tags": [],

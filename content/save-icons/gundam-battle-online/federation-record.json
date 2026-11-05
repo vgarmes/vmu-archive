@@ -31,11 +31,7 @@
 	"description": "GUNDAM_BATTLE_ONLINE/ﾌﾞﾀｲｷﾛｸﾃﾞｰﾀ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"GUNDAMO1.VMS",
-			"GUNDAMO2.VMS",
-			"GUNDAMOL.VMS"
-		],
+		"file": "GUNDAMO1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gundamol"
 	},
 	"tags": [],

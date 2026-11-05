@@ -33,13 +33,7 @@
 	"description": "燃えろ！ジャスティス学園／DIARY",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v37747.VMS",
-			"v3776.VMS",
-			"v7043.VMS",
-			"v70669.VMS",
-			"v8186.VMS"
-		],
+		"file": "v37747.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/projectjustice"
 	},
 	"tags": [],

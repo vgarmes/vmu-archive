@@ -31,10 +31,7 @@
 	"description": "東京バス案内　データ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"TOKYOBU2.VMS",
-			"TOKYOBUS.VMS"
-		],
+		"file": "TOKYOBU2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tokyobus"
 	},
 	"tags": [],

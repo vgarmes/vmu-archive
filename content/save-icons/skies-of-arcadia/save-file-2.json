@@ -31,22 +31,7 @@
 	"description": "Arcadia                   Soltis",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v15619.VMS",
-			"v53916.VMS",
-			"v5418.VMS",
-			"v5501.VMS",
-			"v65410.VMS",
-			"v65688.VMS",
-			"v68517.VMS",
-			"v71659.VMS",
-			"v72212.VMS",
-			"v81850.VMS",
-			"v88058.VMS",
-			"v92056.VMS",
-			"v95043.VMS",
-			"v95768.VMS"
-		],
+		"file": "v15619.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/arcadia"
 	},
 	"tags": [],

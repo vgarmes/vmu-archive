@@ -33,10 +33,7 @@
 	"description": "特撮冒険活劇スーパーヒーロー烈伝",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SPHERO.VMS",
-			"supehero.VMS"
-		],
+		"file": "SPHERO.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/heroretsuden"
 	},
 	"tags": [],

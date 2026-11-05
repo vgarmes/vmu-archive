@@ -33,19 +33,7 @@
 	"description": "ｻﾞｷﾝｸﾞｵﾌﾞﾌｧｲﾀｰｽﾞ'99 ｴﾎﾞﾘｭｰｼｮﾝ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"KOF_1999.VMS",
-			"v21370.VMS",
-			"v25865.VMS",
-			"v37628.VMS",
-			"v60865.VMS",
-			"v62523.VMS",
-			"v64262.VMS",
-			"v65162.VMS",
-			"v70036.VMS",
-			"v75278.VMS",
-			"v95799.VMS"
-		],
+		"file": "KOF_1999.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kof99evo"
 	},
 	"tags": [],

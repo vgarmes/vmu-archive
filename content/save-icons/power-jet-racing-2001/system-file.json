@@ -31,9 +31,7 @@
 	"description": "POWER JET RACING SYSTEM DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"JETRACE1.VMS"
-		],
+		"file": "JETRACE1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/jetr2001"
 	},
 	"tags": [],

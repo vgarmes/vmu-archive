@@ -33,9 +33,7 @@
 	"description": "ラングリッサーミレニアム",
 	"source": {
 		"kind": "save",
-		"files": [
-			"langriss.VMS"
-		],
+		"file": "langriss.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/langrisser"
 	},
 	"tags": [],

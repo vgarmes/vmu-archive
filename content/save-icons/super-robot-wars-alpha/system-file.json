@@ -31,15 +31,7 @@
 	"description": "ｽｰﾊﾟｰﾛﾎﾞｯﾄ大戦ｱﾙﾌｧ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SRWLAST1.VMS",
-			"SRWLAST2.VMS",
-			"SRWREAL1.VMS",
-			"SRWREAL2.VMS",
-			"SRWSUPE1.VMS",
-			"SRWSUPE2.VMS",
-			"SRWSYSTE.VMS"
-		],
+		"file": "SRWLAST1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/srw"
 	},
 	"tags": [],

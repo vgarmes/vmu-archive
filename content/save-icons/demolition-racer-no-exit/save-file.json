@@ -31,19 +31,7 @@
 	"description": "Demolition Racer Game Data",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v10278.VMS",
-			"v1918.VMS",
-			"v21403.VMS",
-			"v24288.VMS",
-			"v29310.VMS",
-			"v33584.VMS",
-			"v39167.VMS",
-			"v44947.VMS",
-			"v83825.VMS",
-			"v91658.VMS",
-			"v97306.VMS"
-		],
+		"file": "v10278.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/demolitionrace"
 	},
 	"tags": [],

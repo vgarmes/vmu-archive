@@ -32,9 +32,7 @@
 	"description": "ドラえもん　１年目はじめから",
 	"source": {
 		"kind": "save",
-		"files": [
-			"dingdang.VMS"
-		],
+		"file": "dingdang.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/doraemon"
 	},
 	"tags": [],

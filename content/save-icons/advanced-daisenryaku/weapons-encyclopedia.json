@@ -31,9 +31,7 @@
 	"description": "アドバンスド大戦略／兵器図鑑",
 	"source": {
 		"kind": "save",
-		"files": [
-			"dazhanlu.VMS"
-		],
+		"file": "dazhanlu.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dazhanlu"
 	},
 	"tags": [],

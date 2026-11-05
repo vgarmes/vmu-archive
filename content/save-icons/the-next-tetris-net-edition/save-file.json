@@ -31,9 +31,7 @@
 	"description": "THE NEXT TETRIS",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v10638.VMS"
-		],
+		"file": "v10638.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tetris"
 	},
 	"tags": [],

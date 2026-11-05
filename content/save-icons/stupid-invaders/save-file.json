@@ -31,9 +31,7 @@
 	"description": "Stupid Invaders",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v1814.VMS"
-		],
+		"file": "v1814.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/stupidinvaders"
 	},
 	"tags": [],

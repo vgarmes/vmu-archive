@@ -33,11 +33,7 @@
 	"description": "SONIC ADVENTURE 2 / Download",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00007546.VMS",
-			"THEME011.VMS",
-			"v88812.VMS"
-		],
+		"file": "00007546.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
 	},
 	"tags": [],

@@ -31,20 +31,7 @@
 	"description": "ECW Hardcore Revolution",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v20408.VMS",
-			"v24352.VMS",
-			"v28759.VMS",
-			"v31883.VMS",
-			"v42285.VMS",
-			"v56116.VMS",
-			"v68275.VMS",
-			"v69549.VMS",
-			"v76233.VMS",
-			"v87666.VMS",
-			"v89578.VMS",
-			"v91811.VMS"
-		],
+		"file": "v20408.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ecw"
 	},
 	"tags": [],

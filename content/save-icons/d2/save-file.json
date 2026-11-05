@@ -31,24 +31,7 @@
 	"description": "D2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"D2END1.VMS",
-			"D2EXPMAX.VMS",
-			"d2jp0001.VMS",
-			"v13970.VMS",
-			"v24276.VMS",
-			"v40396.VMS",
-			"v52278.VMS",
-			"v5514.VMS",
-			"v64228.VMS",
-			"v64744.VMS",
-			"v70664.VMS",
-			"v76524.VMS",
-			"v76630.VMS",
-			"v80068.VMS",
-			"v89763.VMS",
-			"v93751.VMS"
-		],
+		"file": "D2END1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/d2"
 	},
 	"tags": [],

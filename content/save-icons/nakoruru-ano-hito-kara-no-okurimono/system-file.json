@@ -31,9 +31,7 @@
 	"description": "ナコルル　システムデータ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000020.VMS"
-		],
+		"file": "00000020.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nakoruru"
 	},
 	"tags": [],

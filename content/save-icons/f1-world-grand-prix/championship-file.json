@@ -31,10 +31,7 @@
 	"description": "F1 World Grand Prix 4 Dreamcast",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v6277.VMS",
-			"v97839.VMS"
-		],
+		"file": "v6277.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/f1worldprix"
 	},
 	"tags": [],

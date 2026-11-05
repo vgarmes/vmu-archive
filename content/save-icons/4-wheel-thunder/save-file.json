@@ -31,12 +31,7 @@
 	"description": "4 WHeel Thunder",
 	"source": {
 		"kind": "save",
-		"files": [
-			"4WHEEL.VMS",
-			"v30471.VMS",
-			"v33294.VMS",
-			"v77702.VMS"
-		],
+		"file": "4WHEEL.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/4wheelthunder"
 	},
 	"tags": [],

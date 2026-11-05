@@ -33,15 +33,7 @@
 	"description": "REVOLT REGISTRY SETTINGS FILE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000588.VMS",
-			"v31269.VMS",
-			"v32546.VMS",
-			"v54542.VMS",
-			"v63092.VMS",
-			"v71563.VMS",
-			"v8042.VMS"
-		],
+		"file": "00000588.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/revolt"
 	},
 	"tags": [],

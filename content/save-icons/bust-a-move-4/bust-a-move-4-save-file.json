@@ -33,13 +33,7 @@
 	"description": "BUST_A_MOVE4",
 	"source": {
 		"kind": "save",
-		"files": [
-			"pb4us.VMS",
-			"v1608.VMS",
-			"v2285.VMS",
-			"v24180.VMS",
-			"v65683.VMS"
-		],
+		"file": "pb4us.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bustamove4"
 	},
 	"tags": [],

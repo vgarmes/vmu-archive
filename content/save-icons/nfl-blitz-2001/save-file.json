@@ -31,11 +31,7 @@
 	"description": "NFL Blitz 2001 Control Config",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v11701.VMS",
-			"v58068.VMS",
-			"v78336.VMS"
-		],
+		"file": "v11701.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nflblitz2k1"
 	},
 	"tags": [],

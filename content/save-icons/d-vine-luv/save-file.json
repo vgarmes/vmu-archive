@@ -31,9 +31,7 @@
 	"description": "Ｄ＋ＶＩＮＥ[ＬＵＶ]",
 	"source": {
 		"kind": "save",
-		"files": [
-			"DVINELUV.VMS"
-		],
+		"file": "DVINELUV.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dvine"
 	},
 	"tags": [],

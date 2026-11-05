@@ -31,10 +31,7 @@
 	"description": "チューチュー！／ダウンロード",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00016486.VMS",
-			"v59325.VMS"
-		],
+		"file": "00016486.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/chuchu"
 	},
 	"tags": [],

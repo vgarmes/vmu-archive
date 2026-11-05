@@ -31,11 +31,7 @@
 	"description": "VirtuaAthlete2K  0099 GER  5217P",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v25831.VMS",
-			"v26575.VMS",
-			"v46971.VMS"
-		],
+		"file": "v25831.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuaathlete"
 	},
 	"tags": [],

@@ -33,10 +33,7 @@
 	"description": "SOUTH PARK RALLY",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v75481.VMS",
-			"v76554.VMS"
-		],
+		"file": "v75481.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/southparkrally"
 	},
 	"tags": [],

@@ -33,11 +33,7 @@
 	"description": "SONIC ADVENTURE / JP Launch",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000040.VMS",
-			"SA1_501.VMS",
-			"v61152.VMS"
-		],
+		"file": "00000040.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

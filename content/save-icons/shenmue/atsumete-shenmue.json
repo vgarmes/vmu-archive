@@ -31,9 +31,7 @@
 	"description": "ｱﾂﾒﾃｼｪﾝﾑｰ '99SPRING ﾄｳｷｮｳｹﾞｰﾑｼｮｳ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"4001.VMS"
-		],
+		"file": "4001.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

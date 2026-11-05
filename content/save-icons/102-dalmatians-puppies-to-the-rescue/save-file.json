@@ -31,10 +31,7 @@
 	"description": "102 Dalmatians Game Data",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v82937.VMS",
-			"v90561.VMS"
-		],
+		"file": "v82937.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/puppies"
 	},
 	"tags": [],

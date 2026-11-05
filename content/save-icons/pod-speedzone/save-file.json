@@ -31,10 +31,7 @@
 	"description": "POD SPEEDZONE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"podsave.VMS",
-			"v52396.VMS"
-		],
+		"file": "podsave.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/pod"
 	},
 	"tags": [],

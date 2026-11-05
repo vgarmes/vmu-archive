@@ -35,10 +35,7 @@
 	"description": "BANGAI-O",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v8919.VMS",
-			"v95185.VMS"
-		],
+		"file": "v8919.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bangaio"
 	},
 	"tags": [],

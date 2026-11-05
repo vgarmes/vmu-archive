@@ -33,11 +33,7 @@
 	"description": "PROJECT JUSTICE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"PJUSTEUR.VMS",
-			"school01.VMS",
-			"schoolus.VMS"
-		],
+		"file": "PJUSTEUR.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/projectjustice"
 	},
 	"tags": [],

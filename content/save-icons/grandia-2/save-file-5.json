@@ -31,15 +31,7 @@
 	"description": "GRANDIA2 NEW VALMAR, ROOM OF CHA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v13503.VMS",
-			"v16239.VMS",
-			"v29000.VMS",
-			"v34045.VMS",
-			"v61175.VMS",
-			"v67475.VMS",
-			"v75732.VMS"
-		],
+		"file": "v13503.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
 	},
 	"tags": [],

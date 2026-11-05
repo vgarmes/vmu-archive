@@ -33,11 +33,7 @@
 	"description": "CANNONSPIKE / MAIN DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v25804.VMS",
-			"v57068.VMS",
-			"v62540.VMS"
-		],
+		"file": "v25804.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/cannonspike"
 	},
 	"tags": [],

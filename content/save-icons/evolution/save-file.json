@@ -31,24 +31,7 @@
 	"description": "Evolution Pannam Town",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000011.VMS",
-			"00000606.VMS",
-			"evolujp.VMS",
-			"v30167.VMS",
-			"v47072.VMS",
-			"v49616.VMS",
-			"v69147.VMS",
-			"v74072.VMS",
-			"v77140.VMS",
-			"v81894.VMS",
-			"v8206.VMS",
-			"v92335.VMS",
-			"v94887.VMS",
-			"v96083.VMS",
-			"v96215.VMS",
-			"v99264.VMS"
-		],
+		"file": "00000011.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evolution"
 	},
 	"tags": [],

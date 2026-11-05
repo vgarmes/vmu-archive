@@ -35,23 +35,7 @@
 	"description": "サクラ大戦３ ﾀｲﾄﾙ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SW3_D01.VMS",
-			"SW3_D02.VMS",
-			"SW3_D03.VMS",
-			"SW3_D04.VMS",
-			"SW3_D05.VMS",
-			"SW3_D06.VMS",
-			"SW3_D07.VMS",
-			"SW3_D08.VMS",
-			"SW3_D09.VMS",
-			"SW3_D10.VMS",
-			"SW3_D11.VMS",
-			"SW3_D12.VMS",
-			"SW3_D13.VMS",
-			"SW3_D14.VMS",
-			"SW3_D15.VMS"
-		],
+		"file": "SW3_D01.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sakura3"
 	},
 	"tags": [],

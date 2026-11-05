@@ -33,15 +33,7 @@
 	"description": "ELEMENTAL GIMMICK GEAR",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000003.VMS",
-			"00000021.VMS",
-			"eggjp001.VMS",
-			"v13863.VMS",
-			"v30225.VMS",
-			"v46355.VMS",
-			"v64848.VMS"
-		],
+		"file": "00000003.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/egg"
 	},
 	"tags": [],

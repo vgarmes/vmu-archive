@@ -33,11 +33,7 @@
 	"description": "ｴﾀｰﾅﾙ ｱﾙｶﾃﾞｨｱ     ﾀﾞｳﾝﾛｰﾄﾞﾌｧｲﾙ 1",
 	"source": {
 		"kind": "save",
-		"files": [
-			"ARCAEX01.VMS",
-			"DC38A.VMS",
-			"sa_d01.VMS"
-		],
+		"file": "ARCAEX01.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/arcadia"
 	},
 	"tags": [],

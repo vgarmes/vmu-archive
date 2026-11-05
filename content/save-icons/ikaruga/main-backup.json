@@ -35,9 +35,7 @@
 	"description": "斑鳩（いかるが）",
 	"source": {
 		"kind": "save",
-		"files": [
-			"IKARUGA.VMS"
-		],
+		"file": "IKARUGA.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ikaruga"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "FAR OFF PROMISE Linear Watch",
 	"source": {
 		"kind": "save",
-		"files": [
-			"MINICLOC.VMS"
-		],
+		"file": "MINICLOC.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

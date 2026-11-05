@@ -31,16 +31,7 @@
 	"description": "",
 	"source": {
 		"kind": "save",
-		"files": [
-			"KISSPC.VMS",
-			"v15003.VMS",
-			"v18475.VMS",
-			"v18835.VMS",
-			"v25392.VMS",
-			"v55188.VMS",
-			"v64618.VMS",
-			"v95432.VMS"
-		],
+		"file": "KISSPC.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kisspsycho"
 	},
 	"tags": [],

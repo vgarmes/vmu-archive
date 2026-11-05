@@ -33,26 +33,7 @@
 	"description": "JETGRINDRADIO SYSTEM",
 	"source": {
 		"kind": "save",
-		"files": [
-			"JETGR.VMS",
-			"jetset.VMS",
-			"v12082.VMS",
-			"v12639.VMS",
-			"v14272.VMS",
-			"v19227.VMS",
-			"v24620.VMS",
-			"v31489.VMS",
-			"v44626.VMS",
-			"v63649.VMS",
-			"v64016.VMS",
-			"v66410.VMS",
-			"v66419.VMS",
-			"v79379.VMS",
-			"v80608.VMS",
-			"v88834.VMS",
-			"v92607.VMS",
-			"v95518.VMS"
-		],
+		"file": "JETGR.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/jetgrindradio"
 	},
 	"tags": [],

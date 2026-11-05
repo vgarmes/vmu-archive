@@ -31,10 +31,7 @@
 	"description": "Half Life",
 	"source": {
 		"kind": "save",
-		"files": [
-			"HLDC_000.VMS",
-			"HLDC_CFG.VMS"
-		],
+		"file": "HLDC_000.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/halflife"
 	},
 	"tags": [],

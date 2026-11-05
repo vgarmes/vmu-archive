@@ -31,24 +31,7 @@
 	"description": "SEGA MARINE FISHING SYSTEM",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v21653.VMS",
-			"v21855.VMS",
-			"v22795.VMS",
-			"v37175.VMS",
-			"v52833.VMS",
-			"v64015.VMS",
-			"v69853.VMS",
-			"v72852.VMS",
-			"v7347.VMS",
-			"v74449.VMS",
-			"v75039.VMS",
-			"v8135.VMS",
-			"v83653.VMS",
-			"v90235.VMS",
-			"v9044.VMS",
-			"v91348.VMS"
-		],
+		"file": "v21653.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/marinefish"
 	},
 	"tags": [],

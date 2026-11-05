@@ -31,11 +31,7 @@
 	"description": "Ｄｒｅａｍ　Ｐａｓｓｐｏｒｔ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v12730.VMS",
-			"v44548.VMS",
-			"v64355.VMS"
-		],
+		"file": "v12730.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/pwbrowser"
 	},
 	"tags": [],

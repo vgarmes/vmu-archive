@@ -31,12 +31,7 @@
 	"description": "スパ２Ｘ  セーブデータ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SSF2X.VMS",
-			"pfighter.VMS",
-			"ssf2x001.VMS",
-			"v70779.VMS"
-		],
+		"file": "SSF2X.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ssf2x"
 	},
 	"tags": [],

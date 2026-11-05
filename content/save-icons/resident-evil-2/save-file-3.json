@@ -31,10 +31,7 @@
 	"description": "RE2/OHT/Factory",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v27711.VMS",
-			"v5845.VMS"
-		],
+		"file": "v27711.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
 	},
 	"tags": [],

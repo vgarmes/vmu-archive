@@ -33,11 +33,7 @@
 	"description": "ジョジョの奇妙な冒険",
 	"source": {
 		"kind": "save",
-		"files": [
-			"jojoadv1.VMS",
-			"v11766.VMS",
-			"v12859.VMS"
-		],
+		"file": "jojoadv1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/jojo"
 	},
 	"tags": [],

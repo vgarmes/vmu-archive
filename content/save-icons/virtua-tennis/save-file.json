@@ -31,25 +31,7 @@
 	"description": "パワースマッシュ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"psmash1.VMS",
-			"v18934.VMS",
-			"v1927.VMS",
-			"v36332.VMS",
-			"v38485.VMS",
-			"v39841.VMS",
-			"v41263.VMS",
-			"v4577.VMS",
-			"v46380.VMS",
-			"v60789.VMS",
-			"v61156.VMS",
-			"v6482.VMS",
-			"v65179.VMS",
-			"v67423.VMS",
-			"v68528.VMS",
-			"v71306.VMS",
-			"v94519.VMS"
-		],
+		"file": "psmash1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuatennis"
 	},
 	"tags": [],

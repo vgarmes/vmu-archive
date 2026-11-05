@@ -31,10 +31,7 @@
 	"description": "VIRTUACOP2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v59185.VMS",
-			"vrcop2jp.VMS"
-		],
+		"file": "v59185.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtuacop2"
 	},
 	"tags": [],

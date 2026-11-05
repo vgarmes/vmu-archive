@@ -33,9 +33,7 @@
 	"description": "",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v8737.VMS"
-		],
+		"file": "v8737.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/shadowman"
 	},
 	"tags": [],

@@ -33,17 +33,7 @@
 	"description": "PSYCHIC FORCE 2012 GAME DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000035.VMS",
-			"P2012.VMS",
-			"v10468.VMS",
-			"v16199.VMS",
-			"v27440.VMS",
-			"v34121.VMS",
-			"v34278.VMS",
-			"v34660.VMS",
-			"v5122.VMS"
-		],
+		"file": "00000035.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/psychicforce"
 	},
 	"tags": [],

@@ -33,18 +33,7 @@
 	"description": "RE3/EASY/Monitor Room",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v18254.VMS",
-			"v22935.VMS",
-			"v53088.VMS",
-			"v67159.VMS",
-			"v67409.VMS",
-			"v71483.VMS",
-			"v72986.VMS",
-			"v86309.VMS",
-			"v91831.VMS",
-			"v96903.VMS"
-		],
+		"file": "v18254.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil3"
 	},
 	"tags": [],

@@ -31,10 +31,7 @@
 	"description": "SEVENTH CROSS EVOLUTION",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000176.VMS",
-			"v60011.VMS"
-		],
+		"file": "00000176.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/seventhcrossevolution"
 	},
 	"tags": [],

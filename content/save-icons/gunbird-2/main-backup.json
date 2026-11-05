@@ -33,9 +33,7 @@
 	"description": "GUNBIRD2/MAIN",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v33167.VMS"
-		],
+		"file": "v33167.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gunbird2"
 	},
 	"tags": [],

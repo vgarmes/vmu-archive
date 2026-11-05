@@ -33,9 +33,7 @@
 	"description": "ソニックアドベンチャー／ﾌｧﾐ通",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000760.VMS"
-		],
+		"file": "00000760.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

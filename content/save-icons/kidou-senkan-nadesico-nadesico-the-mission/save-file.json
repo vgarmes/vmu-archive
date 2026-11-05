@@ -31,9 +31,7 @@
 	"description": "機動戦艦ナデシコ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"NADESICO.VMS"
-		],
+		"file": "NADESICO.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nadesico"
 	},
 	"tags": [],

@@ -31,19 +31,7 @@
 	"description": "OUTTRIGGER SAVE FILE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"OUTTRIGR.VMS",
-			"OUT_EURO.VMS",
-			"v32544.VMS",
-			"v47583.VMS",
-			"v4846.VMS",
-			"v56049.VMS",
-			"v56939.VMS",
-			"v73218.VMS",
-			"v7936.VMS",
-			"v89056.VMS",
-			"v95711.VMS"
-		],
+		"file": "OUTTRIGR.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/outtrigger"
 	},
 	"tags": [],

@@ -31,10 +31,7 @@
 	"description": "Gundam外伝1 DownLoad File",
 	"source": {
 		"kind": "save",
-		"files": [
-			"GUNDAM2.VMS",
-			"v31604.VMS"
-		],
+		"file": "GUNDAM2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gundam"
 	},
 	"tags": [],

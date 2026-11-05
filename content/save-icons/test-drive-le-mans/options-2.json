@@ -31,16 +31,7 @@
 	"description": "Test Drive Le Mans Options",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v13162.VMS",
-			"v36820.VMS",
-			"v38692.VMS",
-			"v6000.VMS",
-			"v72767.VMS",
-			"v8375.VMS",
-			"v8626.VMS",
-			"v91547.VMS"
-		],
+		"file": "v13162.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lemans"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "エルドラドゲート データ１",
 	"source": {
 		"kind": "save",
-		"files": [
-			"eldgate7.VMS"
-		],
+		"file": "eldgate7.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/eldorado7"
 	},
 	"tags": [],

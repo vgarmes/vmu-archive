@@ -33,9 +33,7 @@
 	"description": "{Download by www.Dreamsaves.de}",
 	"source": {
 		"kind": "save",
-		"files": [
-			"GODZILLA.VMS"
-		],
+		"file": "GODZILLA.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/godzilla"
 	},
 	"tags": [],

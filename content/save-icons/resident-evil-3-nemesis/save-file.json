@@ -33,9 +33,7 @@
 	"description": "ＢＨ３／ＡＨ／倉庫オフィス",
 	"source": {
 		"kind": "save",
-		"files": [
-			"bio3a05.VMS"
-		],
+		"file": "bio3a05.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil3"
 	},
 	"tags": [],

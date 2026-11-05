@@ -31,9 +31,7 @@
 	"description": "ﾌﾞﾗｯｸﾏﾄﾘｸｽ　１章　ルイン",
 	"source": {
 		"kind": "save",
-		"files": [
-			"blackad1.VMS"
-		],
+		"file": "blackad1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/blackmatrix"
 	},
 	"tags": [],

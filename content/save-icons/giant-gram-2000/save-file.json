@@ -33,9 +33,7 @@
 	"description": "ジャイアントグラム２０００",
 	"source": {
 		"kind": "save",
-		"files": [
-			"GIANTG2K.VMS"
-		],
+		"file": "GIANTG2K.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/giantgram"
 	},
 	"tags": [],

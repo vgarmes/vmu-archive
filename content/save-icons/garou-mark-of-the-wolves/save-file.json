@@ -31,9 +31,7 @@
 	"description": "GAROU -- MARK OF THE WOLVES --",
 	"source": {
 		"kind": "save",
-		"files": [
-			"garou1.VMS"
-		],
+		"file": "garou1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/garou"
 	},
 	"tags": [],

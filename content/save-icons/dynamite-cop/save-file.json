@@ -33,18 +33,7 @@
 	"description": "Dynamite Cop \"Combat File\"",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000728.VMS",
-			"DET_PACK.VMS",
-			"v18467.VMS",
-			"v26274.VMS",
-			"v38473.VMS",
-			"v65817.VMS",
-			"v78278.VMS",
-			"v92082.VMS",
-			"v99226.VMS",
-			"v99721.VMS"
-		],
+		"file": "00000728.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dynamitecop"
 	},
 	"tags": [],

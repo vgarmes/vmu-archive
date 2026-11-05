@@ -33,11 +33,7 @@
 	"description": "Hoyle Casino",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v46800.VMS",
-			"v7562.VMS",
-			"v85215.VMS"
-		],
+		"file": "v46800.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/hoyle"
 	},
 	"tags": [],

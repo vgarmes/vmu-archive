@@ -33,12 +33,7 @@
 	"description": "Ms. Pac-Man Maze Madness",
 	"source": {
 		"kind": "save",
-		"files": [
-			"PACMAN.VMS",
-			"v39739.VMS",
-			"v60773.VMS",
-			"v84992.VMS"
-		],
+		"file": "PACMAN.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mspacman"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "ＺＥＲＯ３＿ダウンロード",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v20786.VMS"
-		],
+		"file": "v20786.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfighter3"
 	},
 	"tags": [],

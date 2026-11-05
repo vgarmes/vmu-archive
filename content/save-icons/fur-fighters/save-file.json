@@ -33,17 +33,7 @@
 	"description": "FUR FIGHTERS SAVED GAME",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v11693.VMS",
-			"v14691.VMS",
-			"v22791.VMS",
-			"v28135.VMS",
-			"v35224.VMS",
-			"v47052.VMS",
-			"v49072.VMS",
-			"v56823.VMS",
-			"v5903.VMS"
-		],
+		"file": "v11693.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/furfighters"
 	},
 	"tags": [],

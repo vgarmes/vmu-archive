@@ -35,14 +35,7 @@
 	"description": "SHENMUE 2 EU",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000037.VMS",
-			"v15126.VMS",
-			"v28795.VMS",
-			"v43574.VMS",
-			"v56186.VMS",
-			"v71447.VMS"
-		],
+		"file": "00000037.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/shenmue2"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "Ｊｕｌｙ　最終章　高村誠",
 	"source": {
 		"kind": "save",
-		"files": [
-			"july0001.VMS"
-		],
+		"file": "july0001.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/july"
 	},
 	"tags": [],

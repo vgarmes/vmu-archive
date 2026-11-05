@@ -31,19 +31,7 @@
 	"description": "Aero_iSD Emblem",
 	"source": {
 		"kind": "save",
-		"files": [
-			"aeroife0.VMS",
-			"aeroife1.VMS",
-			"aeroife2.VMS",
-			"aeroife3.VMS",
-			"aeroife4.VMS",
-			"aeroife5.VMS",
-			"aeroife6.VMS",
-			"aeroife7.VMS",
-			"aeroife8.VMS",
-			"aeroife9.VMS",
-			"aeroifea.VMS"
-		],
+		"file": "aeroife0.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aeroif"
 	},
 	"tags": [],

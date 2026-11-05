@@ -32,9 +32,7 @@
 	"description": "ﾒﾓﾘｰｽﾞｵﾌ2 セーブデータ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"memoff2.VMS"
-		],
+		"file": "memoff2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/memoff2"
 	},
 	"tags": [],

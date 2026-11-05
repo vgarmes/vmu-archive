@@ -31,10 +31,7 @@
 	"description": "ＭＡＣＲＯＳＳ　－Ｍ３－",
 	"source": {
 		"kind": "save",
-		"files": [
-			"m3office.VMS",
-			"macross.VMS"
-		],
+		"file": "m3office.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/macross"
 	},
 	"tags": [],

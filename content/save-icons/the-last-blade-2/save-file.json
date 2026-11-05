@@ -31,9 +31,7 @@
 	"description": "LAST BLADE2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v35892.VMS"
-		],
+		"file": "v35892.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lastblade2"
 	},
 	"tags": [],

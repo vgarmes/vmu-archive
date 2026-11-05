@@ -31,13 +31,7 @@
 	"description": "LAST BLADE2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v15978.VMS",
-			"v29093.VMS",
-			"v64003.VMS",
-			"v73393.VMS",
-			"yuehua.VMS"
-		],
+		"file": "v15978.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lastblade2"
 	},
 	"tags": [],

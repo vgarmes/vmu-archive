@@ -33,19 +33,7 @@
 	"description": "Mat Hoffman Career A",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v21346.VMS",
-			"v21410.VMS",
-			"v34574.VMS",
-			"v34970.VMS",
-			"v37771.VMS",
-			"v45614.VMS",
-			"v5914.VMS",
-			"v62728.VMS",
-			"v64233.VMS",
-			"v70903.VMS",
-			"v91297.VMS"
-		],
+		"file": "v21346.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/matbmx"
 	},
 	"tags": [],

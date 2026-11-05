@@ -35,19 +35,7 @@
 	"description": "ベルセルク",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000933.VMS",
-			"berserk.VMS",
-			"v12114.VMS",
-			"v38721.VMS",
-			"v43802.VMS",
-			"v47779.VMS",
-			"v58726.VMS",
-			"v73453.VMS",
-			"v74372.VMS",
-			"v78570.VMS",
-			"v79916.VMS"
-		],
+		"file": "00000933.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sword_berserk"
 	},
 	"tags": [],

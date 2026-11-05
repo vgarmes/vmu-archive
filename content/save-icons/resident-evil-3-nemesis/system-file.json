@@ -33,23 +33,7 @@
 	"description": "ＢＨ３／システム／アップロード",
 	"source": {
 		"kind": "save",
-		"files": [
-			"bio3jpsy.VMS",
-			"v1995.VMS",
-			"v2671.VMS",
-			"v27144.VMS",
-			"v27920.VMS",
-			"v33463.VMS",
-			"v61221.VMS",
-			"v61857.VMS",
-			"v63312.VMS",
-			"v64093.VMS",
-			"v65367.VMS",
-			"v87889.VMS",
-			"v88744.VMS",
-			"v93576.VMS",
-			"v98299.VMS"
-		],
+		"file": "bio3jpsy.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil3"
 	},
 	"tags": [],

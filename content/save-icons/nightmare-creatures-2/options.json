@@ -33,14 +33,7 @@
 	"description": "NIGHTMARECREAT2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v22798.VMS",
-			"v74500.VMS",
-			"v7860.VMS",
-			"v80420.VMS",
-			"v84442.VMS",
-			"v95301.VMS"
-		],
+		"file": "v22798.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/nightcreature2"
 	},
 	"tags": [],

@@ -31,10 +31,7 @@
 	"description": "ＭＡＧＩＣ：THE GATHERING",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000026.VMS",
-			"magicthe.VMS"
-		],
+		"file": "00000026.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/magic"
 	},
 	"tags": [],

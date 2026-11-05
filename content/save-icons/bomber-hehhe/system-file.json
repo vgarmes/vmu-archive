@@ -33,9 +33,7 @@
 	"description": "ボンバーヘッヘシステムファイル",
 	"source": {
 		"kind": "save",
-		"files": [
-			"bomberhe.VMS"
-		],
+		"file": "bomberhe.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bomberhe"
 	},
 	"tags": [],

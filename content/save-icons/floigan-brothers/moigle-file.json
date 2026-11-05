@@ -31,12 +31,7 @@
 	"description": "FLOIGAN BROS MOIGLE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v15577.VMS",
-			"v46904.VMS",
-			"v97809.VMS",
-			"v9875.VMS"
-		],
+		"file": "v15577.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/floiganbros"
 	},
 	"tags": [],

@@ -35,9 +35,7 @@
 	"description": "Ｒｅｚ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"rez9999.VMS"
-		],
+		"file": "rez9999.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rez"
 	},
 	"tags": [],

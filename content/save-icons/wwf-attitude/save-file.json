@@ -31,21 +31,7 @@
 	"description": "WWF Attitude",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000855.VMS",
-			"v1009.VMS",
-			"v11011.VMS",
-			"v20468.VMS",
-			"v26645.VMS",
-			"v3458.VMS",
-			"v37991.VMS",
-			"v42582.VMS",
-			"v43953.VMS",
-			"v58809.VMS",
-			"v72529.VMS",
-			"v7985.VMS",
-			"v91195.VMS"
-		],
+		"file": "00000855.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wwfattitude"
 	},
 	"tags": [],

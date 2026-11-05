@@ -33,11 +33,7 @@
 	"description": "Star Wars Demolition",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v28784.VMS",
-			"v59570.VMS",
-			"v71451.VMS"
-		],
+		"file": "v28784.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/swdemolition"
 	},
 	"tags": [],

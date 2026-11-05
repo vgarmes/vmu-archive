@@ -31,17 +31,7 @@
 	"description": "CHUCHU!/PZ EDIT",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00001556.VMS",
-			"MYCHU1.VMS",
-			"SHARKCH1.VMS",
-			"SHARKCH2.VMS",
-			"SHARKCH3.VMS",
-			"SHARKCH4.VMS",
-			"v37721.VMS",
-			"v38939.VMS",
-			"v83327.VMS"
-		],
+		"file": "00001556.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/chuchu"
 	},
 	"tags": [],

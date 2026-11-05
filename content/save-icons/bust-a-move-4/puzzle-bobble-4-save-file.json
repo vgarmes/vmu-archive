@@ -33,9 +33,7 @@
 	"description": "パズルボブル４",
 	"source": {
 		"kind": "save",
-		"files": [
-			"pb4jp.VMS"
-		],
+		"file": "pb4jp.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bustamove4"
 	},
 	"tags": [],

@@ -31,10 +31,7 @@
 	"description": "SPAWN VAPORIZER",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v21645.VMS",
-			"v26930.VMS"
-		],
+		"file": "v21645.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spawn"
 	},
 	"tags": [],

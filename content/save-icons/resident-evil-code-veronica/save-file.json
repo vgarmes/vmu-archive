@@ -33,21 +33,7 @@
 	"description": "RE_CV/CHRIS/N/Ant. Base: SR",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000886.VMS",
-			"v12018.VMS",
-			"v33557.VMS",
-			"v41499.VMS",
-			"v43618.VMS",
-			"v49956.VMS",
-			"v63276.VMS",
-			"v64920.VMS",
-			"v65733.VMS",
-			"v77209.VMS",
-			"v81216.VMS",
-			"v84865.VMS",
-			"v89183.VMS"
-		],
+		"file": "00000886.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/resident_evil"
 	},
 	"tags": [],

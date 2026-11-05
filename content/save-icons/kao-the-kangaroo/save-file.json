@@ -31,9 +31,7 @@
 	"description": "KAO THE KANGAROO",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v27628.VMS"
-		],
+		"file": "v27628.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kao"
 	},
 	"tags": [],

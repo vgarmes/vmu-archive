@@ -31,9 +31,7 @@
 	"description": "MTV_SPORTS_SKATEBOARDING",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v34809.VMS"
-		],
+		"file": "v34809.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mtvskate"
 	},
 	"tags": [],

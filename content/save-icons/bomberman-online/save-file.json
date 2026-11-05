@@ -33,27 +33,7 @@
 	"description": "BOMBERMAN ONLINE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"BOMBMO.VMS",
-			"boonline.VMS",
-			"v11063.VMS",
-			"v11158.VMS",
-			"v17160.VMS",
-			"v21769.VMS",
-			"v32866.VMS",
-			"v41120.VMS",
-			"v51939.VMS",
-			"v51947.VMS",
-			"v5687.VMS",
-			"v58626.VMS",
-			"v61788.VMS",
-			"v67819.VMS",
-			"v70850.VMS",
-			"v72691.VMS",
-			"v75708.VMS",
-			"v87622.VMS",
-			"v99727.VMS"
-		],
+		"file": "BOMBMO.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bomberman"
 	},
 	"tags": [],

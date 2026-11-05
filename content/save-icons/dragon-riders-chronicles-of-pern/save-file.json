@@ -31,13 +31,7 @@
 	"description": "DRAGONRIDERS",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v10250.VMS",
-			"v10984.VMS",
-			"v18754.VMS",
-			"v68252.VMS",
-			"v99654.VMS"
-		],
+		"file": "v10250.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dragon"
 	},
 	"tags": [],

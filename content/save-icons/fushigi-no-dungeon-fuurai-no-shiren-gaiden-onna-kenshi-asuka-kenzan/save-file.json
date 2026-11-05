@@ -31,10 +31,7 @@
 	"description": "女剣士アスカ見参　風来日記",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000013.VMS",
-			"asuka001.VMS"
-		],
+		"file": "00000013.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/fushigi"
 	},
 	"tags": [],

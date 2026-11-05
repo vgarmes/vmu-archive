@@ -31,9 +31,7 @@
 	"description": "栞の束",
 	"source": {
 		"kind": "save",
-		"files": [
-			"DP3__S68.VMS"
-		],
+		"file": "DP3__S68.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dp3"
 	},
 	"tags": [],

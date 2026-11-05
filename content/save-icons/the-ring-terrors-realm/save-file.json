@@ -31,14 +31,7 @@
 	"description": "RING",
 	"source": {
 		"kind": "save",
-		"files": [
-			"THERING.VMS",
-			"v16006.VMS",
-			"v3937.VMS",
-			"v45548.VMS",
-			"v72336.VMS",
-			"v94584.VMS"
-		],
+		"file": "THERING.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/thering"
 	},
 	"tags": [],

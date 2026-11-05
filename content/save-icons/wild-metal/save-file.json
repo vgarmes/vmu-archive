@@ -33,10 +33,7 @@
 	"description": "WILD METAL......................",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v56159.VMS",
-			"v92577.VMS"
-		],
+		"file": "v56159.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wildmetal"
 	},
 	"tags": [],

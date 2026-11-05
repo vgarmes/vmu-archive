@@ -31,9 +31,7 @@
 	"description": "F355 Challenge LONG-BEACH Data",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v59007.VMS"
-		],
+		"file": "v59007.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/f355challenge"
 	},
 	"tags": [],

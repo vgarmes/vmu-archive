@@ -31,10 +31,7 @@
 	"description": "(c)Datel - www.codejunkies.com",
 	"source": {
 		"kind": "save",
-		"files": [
-			"AR423.VMS",
-			"arcdx1.VMS"
-		],
+		"file": "AR423.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/arcdx"
 	},
 	"tags": [],

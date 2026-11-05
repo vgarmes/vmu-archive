@@ -31,16 +31,7 @@
 	"description": "AEROWINGS 2: AIR STRIKE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v22413.VMS",
-			"v43351.VMS",
-			"v4721.VMS",
-			"v51815.VMS",
-			"v55157.VMS",
-			"v6206.VMS",
-			"v86752.VMS",
-			"v90411.VMS"
-		],
+		"file": "v22413.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/aerowings2"
 	},
 	"tags": [],

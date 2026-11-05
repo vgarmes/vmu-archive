@@ -32,15 +32,7 @@
 	"description": "ED: WORKSHED 00:02:25",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v19528.VMS",
-			"v31957.VMS",
-			"v41854.VMS",
-			"v47853.VMS",
-			"v681.VMS",
-			"v9578.VMS",
-			"v97286.VMS"
-		],
+		"file": "v19528.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evildead"
 	},
 	"tags": [],

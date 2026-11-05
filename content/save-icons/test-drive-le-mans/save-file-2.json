@@ -31,14 +31,7 @@
 	"description": "Le Mans 24 Hours Save",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v21789.VMS",
-			"v40738.VMS",
-			"v49179.VMS",
-			"v62691.VMS",
-			"v73041.VMS",
-			"v82547.VMS"
-		],
+		"file": "v21789.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lemans"
 	},
 	"tags": [],

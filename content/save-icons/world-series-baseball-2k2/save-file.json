@@ -33,16 +33,7 @@
 	"description": "WORLD SERIES BASEBALL 2K2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v1735.VMS",
-			"v20453.VMS",
-			"v35219.VMS",
-			"v44044.VMS",
-			"v63148.VMS",
-			"v78593.VMS",
-			"v8983.VMS",
-			"v95783.VMS"
-		],
+		"file": "v1735.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/baseball2k2"
 	},
 	"tags": [],

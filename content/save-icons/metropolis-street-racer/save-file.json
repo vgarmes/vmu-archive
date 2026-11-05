@@ -31,26 +31,7 @@
 	"description": "Metropolis Street Racer",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v1522.VMS",
-			"v27490.VMS",
-			"v45725.VMS",
-			"v48592.VMS",
-			"v5378.VMS",
-			"v6728.VMS",
-			"v72304.VMS",
-			"v7234.VMS",
-			"v73236.VMS",
-			"v73569.VMS",
-			"v74970.VMS",
-			"v76027.VMS",
-			"v81430.VMS",
-			"v84436.VMS",
-			"v85504.VMS",
-			"v91729.VMS",
-			"v92682.VMS",
-			"v99816.VMS"
-		],
+		"file": "v1522.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/metropolisracer"
 	},
 	"tags": [],

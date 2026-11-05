@@ -31,9 +31,7 @@
 	"description": "ﾌﾞﾗｯｸﾏﾄﾘｸｽ　５章　アキラ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v53621.VMS"
-		],
+		"file": "v53621.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/blackmatrix"
 	},
 	"tags": [],

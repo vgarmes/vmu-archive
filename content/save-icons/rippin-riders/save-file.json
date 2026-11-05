@@ -31,14 +31,7 @@
 	"description": "Rippin' Riders        SYSTEMDATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000579.VMS",
-			"v12793.VMS",
-			"v14545.VMS",
-			"v28530.VMS",
-			"v28836.VMS",
-			"v50777.VMS"
-		],
+		"file": "00000579.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rippinriders"
 	},
 	"tags": [],

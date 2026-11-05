@@ -32,10 +32,7 @@
 	"description": "REELFISHING WILD",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v55486.VMS",
-			"v60365.VMS"
-		],
+		"file": "v55486.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/reelfish"
 	},
 	"tags": [],

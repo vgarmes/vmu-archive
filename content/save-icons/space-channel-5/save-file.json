@@ -33,18 +33,7 @@
 	"description": "SPACECHANNEL5",
 	"source": {
 		"kind": "save",
-		"files": [
-			"space5jp.VMS",
-			"v12273.VMS",
-			"v53024.VMS",
-			"v53161.VMS",
-			"v60454.VMS",
-			"v61335.VMS",
-			"v62695.VMS",
-			"v64607.VMS",
-			"v76325.VMS",
-			"v99436.VMS"
-		],
+		"file": "space5jp.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/spacechannel5"
 	},
 	"tags": [],

@@ -31,22 +31,7 @@
 	"description": "EVOLUTION2 Train Car 1",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000012.VMS",
-			"evo29999.VMS",
-			"v16778.VMS",
-			"v24181.VMS",
-			"v26039.VMS",
-			"v38455.VMS",
-			"v40993.VMS",
-			"v43489.VMS",
-			"v46154.VMS",
-			"v47913.VMS",
-			"v52518.VMS",
-			"v68067.VMS",
-			"v90202.VMS",
-			"v97753.VMS"
-		],
+		"file": "00000012.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evolution2"
 	},
 	"tags": [],

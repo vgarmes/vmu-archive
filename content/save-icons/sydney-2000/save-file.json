@@ -31,16 +31,7 @@
 	"description": "SYDNEY 2000 GAME SAVE",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v12998.VMS",
-			"v20112.VMS",
-			"v207.VMS",
-			"v34290.VMS",
-			"v48886.VMS",
-			"v89834.VMS",
-			"v9210.VMS",
-			"v97790.VMS"
-		],
+		"file": "v12998.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sydney2000"
 	},
 	"tags": [],

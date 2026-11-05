@@ -31,11 +31,7 @@
 	"description": "電脳戦機ﾊﾞｰﾁｬﾛﾝ ｵﾗﾄﾘｵ･ﾀﾝｸﾞﾗﾑ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v1971.VMS",
-			"v81022.VMS",
-			"virtuaon.VMS"
-		],
+		"file": "v1971.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/virtualon"
 	},
 	"tags": [],

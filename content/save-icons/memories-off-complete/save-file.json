@@ -33,9 +33,7 @@
 	"description": "メモリーズオフ　せーぶでーた",
 	"source": {
 		"kind": "save",
-		"files": [
-			"memoff1.VMS"
-		],
+		"file": "memoff1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/memoff"
 	},
 	"tags": [],

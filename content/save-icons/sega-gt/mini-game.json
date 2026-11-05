@@ -31,9 +31,7 @@
 	"description": "ＳｅｇａＧＴ　ミニゲーム",
 	"source": {
 		"kind": "save",
-		"files": [
-			"4004.VMS"
-		],
+		"file": "4004.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

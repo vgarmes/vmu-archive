@@ -31,22 +31,7 @@
 	"description": "ECCO: Defender Of The Future",
 	"source": {
 		"kind": "save",
-		"files": [
-			"ecco.VMS",
-			"v19532.VMS",
-			"v20964.VMS",
-			"v21143.VMS",
-			"v23408.VMS",
-			"v34450.VMS",
-			"v36417.VMS",
-			"v45125.VMS",
-			"v48991.VMS",
-			"v49387.VMS",
-			"v55326.VMS",
-			"v720.VMS",
-			"v79960.VMS",
-			"v86933.VMS"
-		],
+		"file": "ecco.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ecco"
 	},
 	"tags": [],

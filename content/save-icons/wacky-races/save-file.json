@@ -31,20 +31,7 @@
 	"description": "PARTIDA A DE LOS AUTOS LOCOS",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v12723.VMS",
-			"v30076.VMS",
-			"v38827.VMS",
-			"v3928.VMS",
-			"v41658.VMS",
-			"v42033.VMS",
-			"v6826.VMS",
-			"v72821.VMS",
-			"v7471.VMS",
-			"v76433.VMS",
-			"v82498.VMS",
-			"v97860.VMS"
-		],
+		"file": "v12723.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/wackyraces"
 	},
 	"tags": [],

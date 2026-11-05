@@ -31,10 +31,7 @@
 	"description": "ギガウイング＿システムファイル",
 	"source": {
 		"kind": "save",
-		"files": [
-			"GIGAWING.VMS",
-			"v63102.VMS"
-		],
+		"file": "GIGAWING.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/gigawing"
 	},
 	"tags": [],

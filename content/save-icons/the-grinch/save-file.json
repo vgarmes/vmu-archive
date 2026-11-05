@@ -31,11 +31,7 @@
 	"description": "The Grinch 97%",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v14904.VMS",
-			"v16992.VMS",
-			"v5981.VMS"
-		],
+		"file": "v14904.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grinch"
 	},
 	"tags": [],

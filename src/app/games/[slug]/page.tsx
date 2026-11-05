@@ -45,8 +45,13 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 	const { game, icons, notes } = found
 	const sheet = getSpriteSheet(game.slug)
 	const saveIcons = getGameSaveIcons(game.slug)
+	// Its main, system and save files' icons first (the ones every player
+	// has), then its other saves' (downloads, replays…), then its memory
+	// card's; each group in file order.
+	const rank = (i: (typeof saveIcons)[number]) =>
+		i.kind !== 'save' ? 2 : /\b(main|system|save)\b/i.test(i.title) ? 0 : 1
 	const headerIcons = [...saveIcons]
-		.sort((a, b) => b.saves - a.saves)
+		.sort((a, b) => rank(a) - rank(b))
 		.slice(0, HEADER_SAVE_ICONS)
 	const allSaveIcons = `/save-icons?${new URLSearchParams({ q: game.en })}`
 	const meta = [game.publisher, game.year].filter(Boolean).join(' · ')
@@ -129,9 +134,8 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 					</BreadcrumbList>
 				</Breadcrumb>
 				{/*
-					The game's save icons, at their own size, as its emblem: the few
-					most saves carry (usually its main save file), and a link to the
-					rest on the save icons page.
+					The game's save icons, at their own size, as its emblem: the
+					first few, and a link to the rest on the save icons page.
 				*/}
 				{saveIcons.length > 0 && (
 					<ul

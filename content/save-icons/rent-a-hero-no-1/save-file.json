@@ -32,12 +32,7 @@
 	"description": "レンタヒーローＮｏ．１",
 	"source": {
 		"kind": "save",
-		"files": [
-			"renthero.VMS",
-			"v42170.VMS",
-			"v47039.VMS",
-			"v84947.VMS"
-		],
+		"file": "renthero.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rentahero"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "SOULCALIBUR / VMU GAME 1",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SCALIBU.VMS"
-		],
+		"file": "SCALIBU.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

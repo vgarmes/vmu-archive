@@ -35,17 +35,7 @@
 	"description": "POWER STONE DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000033.VMS",
-			"PSTONE1.VMS",
-			"v27222.VMS",
-			"v39744.VMS",
-			"v62607.VMS",
-			"v72823.VMS",
-			"v74193.VMS",
-			"v79451.VMS",
-			"v83943.VMS"
-		],
+		"file": "00000033.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/powerstone"
 	},
 	"tags": [],

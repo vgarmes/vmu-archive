@@ -31,12 +31,7 @@
 	"description": "LOONEY TUNES SPACE RACE GAME",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v40327.VMS",
-			"v68008.VMS",
-			"v95476.VMS",
-			"v96069.VMS"
-		],
+		"file": "v40327.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/looneytoons"
 	},
 	"tags": [],

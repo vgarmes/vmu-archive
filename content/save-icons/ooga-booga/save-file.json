@@ -31,12 +31,7 @@
 	"description": "OOGA BOOGA GAME DATA",
 	"source": {
 		"kind": "save",
-		"files": [
-			"O_BOOGA.VMS",
-			"v43154.VMS",
-			"v70282.VMS",
-			"v81380.VMS"
-		],
+		"file": "O_BOOGA.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ooga"
 	},
 	"tags": [],

@@ -33,25 +33,7 @@
 	"description": "パワーストーン２　セーブデータ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"PSTONE2.VMS",
-			"v13088.VMS",
-			"v20786.VMS",
-			"v23004.VMS",
-			"v28372.VMS",
-			"v3876.VMS",
-			"v4427.VMS",
-			"v48514.VMS",
-			"v56529.VMS",
-			"v59109.VMS",
-			"v61589.VMS",
-			"v63191.VMS",
-			"v67990.VMS",
-			"v74828.VMS",
-			"v77729.VMS",
-			"v83431.VMS",
-			"v99484.VMS"
-		],
+		"file": "PSTONE2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/powerstone2"
 	},
 	"tags": [],

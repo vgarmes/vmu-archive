@@ -31,9 +31,7 @@
 	"description": "D2-shock!-",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v89015.VMS"
-		],
+		"file": "v89015.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/d2"
 	},
 	"tags": [],

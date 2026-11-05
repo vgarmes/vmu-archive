@@ -33,9 +33,7 @@
 	"description": "SegaGT Replay Data",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v47207.VMS"
-		],
+		"file": "v47207.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/segagt"
 	},
 	"tags": [],

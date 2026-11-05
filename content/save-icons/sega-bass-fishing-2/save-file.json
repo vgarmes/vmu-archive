@@ -31,17 +31,7 @@
 	"description": "SEGABassFishing2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SBASSF2.VMS",
-			"bass2jp1.VMS",
-			"v19323.VMS",
-			"v32382.VMS",
-			"v40328.VMS",
-			"v41303.VMS",
-			"v46495.VMS",
-			"v88108.VMS",
-			"v99176.VMS"
-		],
+		"file": "SBASSF2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bassfish2"
 	},
 	"tags": [],

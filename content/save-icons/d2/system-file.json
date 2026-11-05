@@ -31,10 +31,7 @@
 	"description": "D2SYSTEM",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v60528.VMS",
-			"v69484.VMS"
-		],
+		"file": "v60528.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/d2"
 	},
 	"tags": [],

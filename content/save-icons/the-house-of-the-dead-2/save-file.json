@@ -33,21 +33,7 @@
 	"description": "THE HOUSE OF THE DEAD 2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000095.VMS",
-			"house2.VMS",
-			"v20930.VMS",
-			"v24750.VMS",
-			"v3080.VMS",
-			"v47227.VMS",
-			"v67414.VMS",
-			"v71932.VMS",
-			"v72963.VMS",
-			"v77697.VMS",
-			"v85932.VMS",
-			"v88935.VMS",
-			"v96856.VMS"
-		],
+		"file": "00000095.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/house_dead"
 	},
 	"tags": [],

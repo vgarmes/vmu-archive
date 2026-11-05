@@ -33,9 +33,7 @@
 	"description": "CAESARS PALACE 2000",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v7771.VMS"
-		],
+		"file": "v7771.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/caesar"
 	},
 	"tags": [],

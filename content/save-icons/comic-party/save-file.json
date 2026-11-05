@@ -31,9 +31,7 @@
 	"description": "こみっくパーティー",
 	"source": {
 		"kind": "save",
-		"files": [
-			"comicpar.VMS"
-		],
+		"file": "comicpar.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/comicpart"
 	},
 	"tags": [],

@@ -31,10 +31,7 @@
 	"description": "西風の狂詩曲／セーブファイル",
 	"source": {
 		"kind": "save",
-		"files": [
-			"XIFENG01.VMS",
-			"XIFENG02.VMS"
-		],
+		"file": "XIFENG01.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/rzephyr"
 	},
 	"tags": [],

@@ -60,8 +60,8 @@ export interface SaveIcon {
 	source: {
 		/** "save": dumped save files; "disc": a game's disc. */
 		kind: 'save' | 'disc'
-		/** The save files (or disc file) that carry this icon. */
-		files: string[]
+		/** The save (or disc file) it was read from; other saves may carry it too. */
+		file: string
 		/** Where the files were taken from, e.g. a repository's folder. */
 		url?: string
 		/** The repository's commit the files were taken at. */
@@ -141,10 +141,10 @@ export function saveIconProblems(s: SaveIcon): string[] {
 	if (
 		!s.source ||
 		!['save', 'disc'].includes(s.source.kind) ||
-		!Array.isArray(s.source.files) ||
-		s.source.files.length === 0
+		typeof s.source.file !== 'string' ||
+		!s.source.file
 	)
-		out.push('"source" needs a "kind" (save or disc) and its "files"')
+		out.push('"source" needs a "kind" (save or disc) and its "file"')
 	if (!Array.isArray(s.tags)) out.push('"tags" must be a list')
 	if (!/^\d{4}-\d{2}-\d{2}$/.test(s.added ?? ''))
 		out.push('"added" is not a date')

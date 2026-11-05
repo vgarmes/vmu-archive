@@ -31,11 +31,7 @@
 	"description": "Le Mans 24 Options",
 	"source": {
 		"kind": "save",
-		"files": [
-			"LEMANS24.VMS",
-			"v31243.VMS",
-			"v74387.VMS"
-		],
+		"file": "LEMANS24.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lemans"
 	},
 	"tags": [],

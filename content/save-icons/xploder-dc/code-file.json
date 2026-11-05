@@ -31,9 +31,7 @@
 	"description": "XploderDC Cheats",
 	"source": {
 		"kind": "save",
-		"files": [
-			"XPLODER.VMS"
-		],
+		"file": "XPLODER.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/xploder"
 	},
 	"tags": [],

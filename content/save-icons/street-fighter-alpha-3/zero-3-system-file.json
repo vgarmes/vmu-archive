@@ -31,9 +31,7 @@
 	"description": "ＺＥＲＯ３＿システムファイル",
 	"source": {
 		"kind": "save",
-		"files": [
-			"sfz3best.VMS"
-		],
+		"file": "sfz3best.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfighter3"
 	},
 	"tags": [],

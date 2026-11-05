@@ -31,11 +31,7 @@
 	"description": "GRANDIA2 CECEILE REEF 1",
 	"source": {
 		"kind": "save",
-		"files": [
-			"gran2us1.VMS",
-			"v43506.VMS",
-			"v75138.VMS"
-		],
+		"file": "gran2us1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
 	},
 	"tags": [],

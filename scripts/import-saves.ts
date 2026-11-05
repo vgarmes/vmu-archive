@@ -30,8 +30,9 @@
  * 32x32 at 4 bits). Whether the game made it isn't known from the file, so
  * it's imported with "madeByGame": null until a disc shows it.
  *
- * Saves carrying the same icon are one entry, which lists them all. An icon
- * not named in "titles" is left out, so a folder can be imported in part.
+ * Saves carrying the same icon are one entry, which keeps the save that names
+ * it in "titles" as its source. An icon not named in "titles" is left out, so
+ * a folder can be imported in part.
  * Icons already in the archive, under any game, are skipped.
  */
 import fs from 'node:fs'
@@ -239,7 +240,13 @@ function main() {
 				: {}),
 			vmuName: first.vmuName,
 			description: first.description,
-			source: { kind: 'save', files, url: sidecar.url, commit: sidecar.commit },
+			source: {
+				kind: 'save',
+				// The save that named it; the others carrying it add nothing.
+				file: files.find(f => sidecar.titles[f]) ?? files[0],
+				url: sidecar.url,
+				commit: sidecar.commit
+			},
 			tags: sidecar.tags ?? [],
 			hash,
 			added: new Date().toISOString().slice(0, 10)

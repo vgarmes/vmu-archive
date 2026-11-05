@@ -31,13 +31,7 @@
 	"description": "RE2/SYSTEM",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v26878.VMS",
-			"v68066.VMS",
-			"v82450.VMS",
-			"v83992.VMS",
-			"v85972.VMS"
-		],
+		"file": "v26878.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/residentevil2"
 	},
 	"tags": [],

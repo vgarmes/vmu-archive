@@ -33,19 +33,7 @@
 	"description": "COASTER_WORKS",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v13052.VMS",
-			"v13912.VMS",
-			"v14850.VMS",
-			"v17167.VMS",
-			"v27261.VMS",
-			"v35815.VMS",
-			"v5473.VMS",
-			"v55985.VMS",
-			"v60797.VMS",
-			"v75685.VMS",
-			"v89321.VMS"
-		],
+		"file": "v13052.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/coasterworks"
 	},
 	"tags": [],

@@ -31,14 +31,7 @@
 	"description": "GRANDIA2 ウィット林道",
 	"source": {
 		"kind": "save",
-		"files": [
-			"gran2jp2.VMS",
-			"v48833.VMS",
-			"v53994.VMS",
-			"v54497.VMS",
-			"v73714.VMS",
-			"v80675.VMS"
-		],
+		"file": "gran2jp2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/grandia2"
 	},
 	"tags": [],

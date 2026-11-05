@@ -31,12 +31,7 @@
 	"description": "CHICKEN RUN",
 	"source": {
 		"kind": "save",
-		"files": [
-			"CHICKEN.VMS",
-			"v70580.VMS",
-			"v7111.VMS",
-			"v98258.VMS"
-		],
+		"file": "CHICKEN.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/chickenrun"
 	},
 	"tags": [],

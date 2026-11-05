@@ -31,16 +31,7 @@
 	"description": "SEGA Dreamcast Browser",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v11808.VMS",
-			"v23844.VMS",
-			"v36552.VMS",
-			"v56037.VMS",
-			"v74890.VMS",
-			"v86027.VMS",
-			"v94292.VMS",
-			"v99959.VMS"
-		],
+		"file": "v11808.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/pwbrowser"
 	},
 	"tags": [],

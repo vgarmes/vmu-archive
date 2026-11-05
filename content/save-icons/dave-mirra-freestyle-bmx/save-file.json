@@ -31,24 +31,7 @@
 	"description": "Dave Mirra Freestyle BMX",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v12134.VMS",
-			"v13769.VMS",
-			"v20365.VMS",
-			"v32898.VMS",
-			"v35319.VMS",
-			"v39009.VMS",
-			"v42220.VMS",
-			"v47784.VMS",
-			"v58769.VMS",
-			"v62106.VMS",
-			"v65954.VMS",
-			"v72860.VMS",
-			"v7838.VMS",
-			"v81769.VMS",
-			"v8604.VMS",
-			"v93616.VMS"
-		],
+		"file": "v12134.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/davemirra"
 	},
 	"tags": [],

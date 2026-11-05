@@ -33,11 +33,7 @@
 	"description": "SONIC ADVENTURE / ATT03",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00001332.VMS",
-			"00001333.VMS",
-			"00001334.VMS"
-		],
+		"file": "00001332.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

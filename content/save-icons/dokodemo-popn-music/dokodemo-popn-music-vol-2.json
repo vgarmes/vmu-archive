@@ -33,9 +33,7 @@
 	"description": "どこでもポップンミュージックVol2",
 	"source": {
 		"kind": "save",
-		"files": [
-			"POPMUSI2.VMS"
-		],
+		"file": "POPMUSI2.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/minigames"
 	},
 	"tags": [],

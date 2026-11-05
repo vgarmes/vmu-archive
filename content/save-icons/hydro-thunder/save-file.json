@@ -31,17 +31,7 @@
 	"description": "HYDRO THUNDER",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v17911.VMS",
-			"v32436.VMS",
-			"v56771.VMS",
-			"v68710.VMS",
-			"v73441.VMS",
-			"v78793.VMS",
-			"v90267.VMS",
-			"v98532.VMS",
-			"v99749.VMS"
-		],
+		"file": "v17911.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/hydrothunder"
 	},
 	"tags": [],

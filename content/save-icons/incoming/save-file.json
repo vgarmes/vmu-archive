@@ -31,11 +31,7 @@
 	"description": "INCOMING",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00000378.VMS",
-			"v19449.VMS",
-			"v30743.VMS"
-		],
+		"file": "00000378.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/incoming"
 	},
 	"tags": [],

@@ -31,9 +31,7 @@
 	"description": "ラブひな　データ",
 	"source": {
 		"kind": "save",
-		"files": [
-			"lovehina.VMS"
-		],
+		"file": "lovehina.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lovehina"
 	},
 	"tags": [],

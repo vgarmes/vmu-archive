@@ -33,9 +33,7 @@
 	"description": "クルクルトゥーン",
 	"source": {
 		"kind": "save",
-		"files": [
-			"COOLCT.VMS"
-		],
+		"file": "COOLCT.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/cooltoon"
 	},
 	"tags": [],

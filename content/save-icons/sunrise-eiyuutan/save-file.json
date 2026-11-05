@@ -31,9 +31,7 @@
 	"description": "サンライズ英雄譚",
 	"source": {
 		"kind": "save",
-		"files": [
-			"SUNRISE.VMS"
-		],
+		"file": "SUNRISE.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sunrise_eiyu"
 	},
 	"tags": [],

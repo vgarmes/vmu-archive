@@ -31,23 +31,7 @@
 	"description": "イルブリード",
 	"source": {
 		"kind": "save",
-		"files": [
-			"illbldjp.VMS",
-			"v18164.VMS",
-			"v19354.VMS",
-			"v19633.VMS",
-			"v27376.VMS",
-			"v40337.VMS",
-			"v50635.VMS",
-			"v53049.VMS",
-			"v56401.VMS",
-			"v70542.VMS",
-			"v76597.VMS",
-			"v78583.VMS",
-			"v85416.VMS",
-			"v94221.VMS",
-			"v96306.VMS"
-		],
+		"file": "illbldjp.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/illbleed"
 	},
 	"tags": [],

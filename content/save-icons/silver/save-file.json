@@ -31,20 +31,7 @@
 	"description": "SILVER",
 	"source": {
 		"kind": "save",
-		"files": [
-			"v17633.VMS",
-			"v21216.VMS",
-			"v24772.VMS",
-			"v25702.VMS",
-			"v259.VMS",
-			"v2776.VMS",
-			"v50202.VMS",
-			"v55631.VMS",
-			"v57375.VMS",
-			"v760.VMS",
-			"v7669.VMS",
-			"v90565.VMS"
-		],
+		"file": "v17633.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/silver"
 	},
 	"tags": [],

@@ -31,13 +31,7 @@
 	"description": "CONFIDENTIAL MISSION",
 	"source": {
 		"kind": "save",
-		"files": [
-			"CONF_MS.VMS",
-			"cmission.VMS",
-			"v1309.VMS",
-			"v23841.VMS",
-			"v76464.VMS"
-		],
+		"file": "CONF_MS.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/cmission"
 	},
 	"tags": [],

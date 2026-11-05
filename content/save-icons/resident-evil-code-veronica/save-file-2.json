@@ -33,20 +33,7 @@
 	"description": "BIO_CV/ｸﾚｱ/N/公邸　　　秘書室",
 	"source": {
 		"kind": "save",
-		"files": [
-			"bioc001.VMS",
-			"v12495.VMS",
-			"v20350.VMS",
-			"v39417.VMS",
-			"v42832.VMS",
-			"v43934.VMS",
-			"v46677.VMS",
-			"v52407.VMS",
-			"v58348.VMS",
-			"v60781.VMS",
-			"v70045.VMS",
-			"v84106.VMS"
-		],
+		"file": "bioc001.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/resident_evil"
 	},
 	"tags": [],

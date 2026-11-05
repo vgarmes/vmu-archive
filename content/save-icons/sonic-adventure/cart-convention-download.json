@@ -33,10 +33,7 @@
 	"description": "SONIC ADVENTURE / CART",
 	"source": {
 		"kind": "save",
-		"files": [
-			"00001310.VMS",
-			"SASDAC.VMS"
-		],
+		"file": "00001310.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
 	},
 	"tags": [],

@@ -32,18 +32,7 @@
 	"description": "AITD4 CHR_CARNBY LEV_030 SAV_006",
 	"source": {
 		"kind": "save",
-		"files": [
-			"AITDC1.VMS",
-			"v12303.VMS",
-			"v33710.VMS",
-			"v51789.VMS",
-			"v65834.VMS",
-			"v66414.VMS",
-			"v83379.VMS",
-			"v84284.VMS",
-			"v85699.VMS",
-			"v9840.VMS"
-		],
+		"file": "AITDC1.VMS",
 		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/alonedark"
 	},
 	"tags": [],
