@@ -1,6 +1,7 @@
 import type { Metadata, Viewport } from 'next'
 import { Geist_Mono } from 'next/font/google'
 import Link from 'next/link'
+import { Analytics } from '@vercel/analytics/next'
 import Swirl from '@/components/Swirl'
 import SiteNav from '@/components/SiteNav'
 import './globals.css'
@@ -48,6 +49,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 					<SiteNav />
 				</header>
 				<main className="mx-auto max-w-6xl px-4 pb-16">{children}</main>
+				<Analytics />
 			</body>
 		</html>
 	)
