@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Knuckles theme",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ff8833ff",
+		"#ff6600ff",
+		"#ff0000ff",
+		"#eedd88ff",
+		"#bbeeffff",
+		"#7799ffff",
+		"#0000ffff",
+		"#ff7733ff",
+		"#ff9922ff",
+		"#eeaa11ff",
+		"#997733ff",
+		"#ccccccff",
+		"#888888ff",
+		"#666666ff",
+		"#000000ff"
+	],
+	"frames": [
+		"33333333333333333333333333333333333fffffffffffffffffffffffff3333333fcccccccccccccccccccccccf3333333fc000000006777776000000cf3333333fc000000677777777760000cfff33333fc077607777777777777000cfff33333fc067777777777777777700cfff33333fc067777777777777760000cfff33888fc007777776777777600000cfff88333fc007777700677777776000cfff33888fc007077700077777777600cfff88333fc007067007077777777700cfff33888fc006077007777777777770cfff88888fc006077007677777700000cfff88888fc000607700677777776000cfff88999fc007777777777777777000cfff99888fc000067777777777777600cfff88999fc000000677777660006700cfff99888fcccccccccccccccccccccccfff88999fffffffffffffffffffffffffff9999999fffffffffffffffffffffffff9999999fffffffffffffffffffffffff9999999999999999999999999999999999fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdcccefcefcefccccefceffcefcccceffff0eff0ef0ef0effff00e00ef0efffffff0eff0000ef0000ef0e0e0ef0000effffceffcefcefceffffcececefcefffffffceffcefcefccccefcececefccccefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "KNUCKLES___Theme",
+	"description": "SONIC ADVENTURE 2 / Download",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00006007.VMS",
+			"THEME003.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
+	},
+	"tags": [],
+	"hash": "4745dad6e02ffbe37f869e90dc1580736de5a937",
+	"added": "2026-11-05"
+}

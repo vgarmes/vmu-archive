@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Diary file",
+	"game": "Project Justice",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#991100ff",
+		"#223399ff",
+		"#bb3300ff",
+		"#665577ff",
+		"#0066ffff",
+		"#0088ffff",
+		"#5577bbff",
+		"#00aaffff",
+		"#ee6600ff",
+		"#998877ff",
+		"#999999ff",
+		"#00ccffff",
+		"#ff8800ff",
+		"#00eeffff",
+		"#eeccbbff",
+		"#ffffffff"
+	],
+	"frames": [
+		"dddddbbbbbbbbbbbbbb7bbbbddddddddddddbbbb7777777753237bbbbbddddddddbbbb77777555322002677bbbbddddddbbbb7775553222222022777bbbbdddddbbb777532222222222026577bbbbdddbbb753222222228cc820225577bbbdddbb7222222228cc8222220235577bbbddbb7022228cc82222222202245577bbbdb750228c8222222228c8202355777bbdb77302222222228cc822200245577bbd77a902222288cc822222220235557bbb756a30228cc8222222222200245577bb750a90022222222222222220225577bb7502a9022222222222222220026577bb7540a9002222222222222222022577bb75510a902222222222222222202377bb755409a00222222222222222202257bb755440a90022222222222222220237bb7554403a3022222222222222220227bb7555440a9002222222222222222023bb77554410a3022222222222222220027b77554440aa002222222222222222002bb77554410a902222222222222200020db775544409a0022222222220008ef82dbb77555440a9022222220002eff9005dbb775555413a002220002effe2006bddbbb77555540aa000009fff90037bbddddbbb77755510a009fffe20067bbbbddddbbbb77755503afff9003577bbbbddddddbbbb7777740a900257777bbbbdddddddddbbbb7777000377777bbbbbdddddddddddbbbbbbbb57bbbbbbbbbdddddddd"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ｾｲｼｭﾝﾆｯｷﾌｧｲﾙ",
+	"description": "燃えろ！ジャスティス学園／DIARY",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v37747.VMS",
+			"v3776.VMS",
+			"v7043.VMS",
+			"v70669.VMS",
+			"v8186.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/projectjustice"
+	},
+	"tags": [],
+	"hash": "4b9f447a15a08d2c5ac45748d711be821e8ea703",
+	"added": "2026-11-05"
+}

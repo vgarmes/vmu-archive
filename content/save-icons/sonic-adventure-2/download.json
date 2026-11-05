@@ -1,0 +1,51 @@
+{
+	"kind": "save",
+	"title": "Download",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ffee55ff",
+		"#88ccffff",
+		"#dd0000ff",
+		"#aa0000ff",
+		"#4400aaff",
+		"#0000ddff",
+		"#0077eeff",
+		"#99ccddff",
+		"#006611ff",
+		"#aa8800ff",
+		"#ccbb00ff",
+		"#ddddddff",
+		"#888888ff",
+		"#444444ff",
+		"#000000ff"
+	],
+	"frames": [
+		"eeeeeeee000ccccceeeeeeee00000000eeeeeeee0ccc0000000000ee00000000eeeeeeeecc00876666667800ccc00000eeee000ec08766666666667800cc0000eee076800766666666666666880c0000eee066678666666666666666670cc000eee0766766666666666666666780c000eee0866666666666666666677770c00000c086666666666666666678000eeeee00cc066666667766666667780eeeeeee000c06666667008666666666700eeeee000c068766680007666666666780eeee000c068076888707666666666670eeee000c0780668076866666666666680eee000c0708668076866666666666660eee000c070866807676666666800880eeeeeeee00787670078666666667000c0000eeee08778767087666666666780c0000eeee07666666766666666666680c0000eeee08876666666666666666670cc000eeeee00007666666666677776680c000eeeeeeeec0076666677880008670c000eeeeeeeeccc0000000000eee0000c000eeeeeeee00cccccceeeeeeeeccccc000fffffffffffffffffffffffffffffffff02fe02ffd0222dff02222dff022222ff02f02dff02ff02ff02ff02ffdd02ddff00e0dfff00ff00ff00ff0cffff00ffff0000dfff000000ff00000effff00ffff01d11dff01dd11ff01db1dffff01ffff1bfe1bff1bff1bff1bff1adfff1bffffbbfebbffbbffbbffbbffabdfffbbfff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "HIGH SPEED TRIAL",
+	"description": "SONIC ADVENTURE 2 / Download",
+	"source": {
+		"kind": "save",
+		"files": [
+			"DOWN001.VMS",
+			"DOWN002.VMS",
+			"DOWN003.VMS",
+			"SA2CART.VMS",
+			"SA2CART2.VMS",
+			"SA2_D3.VMS",
+			"v47754.VMS",
+			"v70904.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
+	},
+	"tags": [],
+	"hash": "172cc34991fbda60103ba858c4deb9aa6c8fefd7",
+	"added": "2026-11-05"
+}

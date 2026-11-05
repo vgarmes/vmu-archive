@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"game": "Project Justice",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#221111ff",
+		"#442244ff",
+		"#553311ff",
+		"#772266ff",
+		"#8822aaff",
+		"#774411ff",
+		"#9922aaff",
+		"#995500ff",
+		"#bb6600ff",
+		"#ff5500ff",
+		"#ff6600ff",
+		"#ff7700ff",
+		"#ff8800ff",
+		"#ff9900ff",
+		"#ff9900ff",
+		"#ffaa00ff"
+	],
+	"frames": [
+		"99999aaaaaabbbbbbbaaaaaaa9999999999aaaaabbbbbbbbbbbbbbaaaa99999999aaaabbbbccccccccccbbbbaaa999999aaabbbbccccdddddccccbbbbaa82099aaabbbcccdddddeedddddccb85110599aabbbccdddeeeeeeeeeddb7213615a99aabbccddeeeeffffffd821336615aa99abbccddeeffffffe85113313615baaa9bbccddeeffffe8511331003615cbbaa9bbccdeefffc71133300001615ccbbaaabccddeec7213331000110342ddccbbaabccdc7211446300003600618eddcbbaabc821144444463103610342feedcbbaabc814666444444636400618feedccbaabcdb163366644446610161fffedccbaaccde716101336644600637fffedccbaaccdee2360000036610161efffedccbaabcdeed143000364600345ffffedccbaabcdeef81630016610061dfffeedccbaabcddeff7161000300342ffffeedcbbaabccdeeff246000000618ffffeddcbbaabccddeffd1430000162ffffeedccbbaabbccdeeff8163000317fffeeddcbbaaabbccddeeff51610161effeeedccbbaa9abbccddeefe2460345ffeeedccbbaaa9aabbccddeeec14661ceeeddccbbbaa99aabbbccdddee71642eedddccbbbaaa99aaabbbcccdddd2318ddddccbbbaaa9999aaabbbbccccdb11cccccbbbbaaa999999aaaabbbbcccc87ccccbbbbaaa99999999aaaaabbbbbbbbbbbbbbaaaa99999999999aaaaaabbbbbbbaaaaaaa9999999"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SYSTEM FILE",
+	"description": "PROJECT JUSTICE",
+	"source": {
+		"kind": "save",
+		"files": [
+			"PJUSTEUR.VMS",
+			"school01.VMS",
+			"schoolus.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/projectjustice"
+	},
+	"tags": [],
+	"hash": "be204cd1e0ba14328e345ee59c08800cdb5f4c77",
+	"added": "2026-11-05"
+}

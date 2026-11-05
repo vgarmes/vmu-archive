@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"game": "Sonic Shuffle",
+	"publisher": "Sega",
+	"year": 2000,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffccff",
+		"#bb5588ff",
+		"#dd88aaff",
+		"#220011ff",
+		"#770044ff",
+		"#554455ff",
+		"#aa3388ff",
+		"#dd66bbff",
+		"#ffffffff",
+		"#ff66ffff",
+		"#ffeeffff",
+		"#005566ff",
+		"#1166bbff",
+		"#88eeccff",
+		"#cccceeff",
+		"#ffffffff"
+	],
+	"frames": [
+		"4444444444444444444444443418fffa44444444444444444444444318ffff8a43333444444444444444443a8fff8aaa3446433344444444444443afff88aaa92ff8aa94344444444444318ff88aaaa9ffff88aa93344333333392ff8a8aaa9988fff8899633369aaa919af8a8aaaa99aaa8ff89766a8aaaaaa7a8888aaaa999aaaa8a8a98ff88aaaaa79a9aaaaa99999aaa99a28ffff8aaaaa79979aaa9999479a97978fffff8aaaaa999976a999763499777affffff8aaaaaa7999966664433677798fffff8aaaaaaaa7999776663343777a8fffff8aaaaaaaaa776776643444367aa88f88aaaaaaaaaa997664433444436aaa8a8aaaaaaaa226999977743444436aaaaaaaaaaaaa1802699797763444431aaaaaaaaaaaa1001126969776344443691aaaaaaaaa102334254999763444434901aaa2aaa1213cde3397997634444437252a17422215dcdf13499974344444365d396447105eebcee5999773444444435f54744605effcbd13999773444444434fe346621dfffcbb8a7997434444444342eb11215fffffc2a979773444444444310cbaaadffff017a6697434444444444912c2008f0000067997634444444444469000008fff81016763344444444444446288ffff821021433444444444444444431088fff8014334444444444444444444433346433334444444444444444444444444333444444444444444"
+	],
+	"animationSpeed": 0,
+	"vmuName": "SONIC   SHUFFLE",
+	"description": "SONIC SHUFFLE",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SONICEX.VMS",
+			"v20598.VMS",
+			"v58859.VMS",
+			"v61627.VMS",
+			"v98575.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonicshuffle"
+	},
+	"tags": [],
+	"hash": "5f777e56a8cf5bd31a0ea66a7c4ba50e5d8b0f0a",
+	"added": "2026-11-05"
+}

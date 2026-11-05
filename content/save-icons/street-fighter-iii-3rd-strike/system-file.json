@@ -1,0 +1,58 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"game": "Street Fighter III: 3rd Strike",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#332211ff",
+		"#99aa99ff",
+		"#7799ccff",
+		"#1144ddff",
+		"#ffddaaff",
+		"#666677ff",
+		"#ddcc55ff",
+		"#ccddddff",
+		"#885522ff",
+		"#4488ffff",
+		"#ffffffff",
+		"#66bbffff",
+		"#bb8855ff",
+		"#ffff88ff",
+		"#ffcc88ff",
+		"#eeaa77ff"
+	],
+	"frames": [
+		"ddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddddd00000080555ddddddddddddddddddd8888888c017771dddddddddddddddd8c08c8cfcc0aaaa71ddddddddddddddc080cfcffcc0aaaaa1ddddddddddddd6080cefeeccc07aaaa5ddddddddddddd080c44444fc880aaa70ddddddddddddd080f44fe44cc8c5a75710ddddddddddd0804e84444fcc4c515a77ddddddddddd080480cce44ce4e0151a7ddddddddddd000f0808f44ff4c0a0175dddddddddddd0d8480ac44f0e00a075dddddddddddddddd4c8444ee8080a071ddddddddddddddd44ee444ee88f5a017dddddddddddddddf444444ee0f21a06a7ddddddddddddddcf44444ec8157a0da7ddddddddddddddd8ce44ec0c3c7a3d7adddddddddddddddd0c44f0c3c97a3ddaadddddddd33331dd60fc0cf3c97a93daddddddd23999932dd54605c5297a99292277722399999931d7ad335699aa9b993bbbbb399999999317a7393c99aa9bbb09b99b999999999337ab993c99aa9bbb3399bb99999939999aabb6669baa9b339bbbbb99999993993b66622299bbb399bbbbbbbbbbb9993366111999bb9993bbbb6666bbbbbbb90511999b9bbbb939bbb7dddd9999bbb98699bbb92222bb39bb767777999999b339bbbb3b666cbb3bbb69bb7b933399339b6bb9b6bbbbbb3999c99999"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SF3 3rd_ｼｽﾃﾑﾌｧｲﾙ",
+	"description": "STREET FIGHTER 3 3rd STRIKE",
+	"source": {
+		"kind": "save",
+		"files": [
+			"sf33rd.VMS",
+			"v13702.VMS",
+			"v22797.VMS",
+			"v26466.VMS",
+			"v30505.VMS",
+			"v32290.VMS",
+			"v32947.VMS",
+			"v37955.VMS",
+			"v45220.VMS",
+			"v58703.VMS",
+			"v60835.VMS",
+			"v64392.VMS",
+			"v72785.VMS",
+			"v76108.VMS",
+			"v83707.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfight3rd"
+	},
+	"tags": [],
+	"hash": "e87df99bf3d20854b9dce53171cf1ac8dfb429fd",
+	"added": "2026-11-05"
+}

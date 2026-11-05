@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Big voice download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#8899ffff",
+		"#000000ff",
+		"#aa55ffff",
+		"#000066ff",
+		"#5500ccff",
+		"#8833ffff",
+		"#ffee33ff",
+		"#ffcc99ff",
+		"#ee7733ff",
+		"#007700ff",
+		"#ddddffff",
+		"#9999bbff",
+		"#333344ff",
+		"#7700ffff",
+		"#ffeeddff",
+		"#ffffffff"
+	],
+	"frames": [
+		"000000000000000000000000000044ddd4000000000000000111111111111d4bd5d44000000000001ffffffffffff1badd55d44000000001ffffffffffffff1adddd55d440000001ffffffffffffff1bddddd55d44000001ffffffffffffff1fdddddd55dd4c1111ffffffffffffff1f4dddddddd4c111111ffffffffffff1ffc4ddddd44d11114551111fff11111dbabc4ddd4d5111145555551ff15555d44dbb44d4d5d111455d41111f15255555d4bbb44dddd114d541111111145555555dbbb4111dd4dd55111111111145555555bb411114ddd554111111111115555555bb111111dd55511111111111155555554b111111dd55d111111111111555555401111111dddd4111111111111d55555401111111dddd1111111111111d55554b01111111dddd1111111111111d55543f01111161dddd1111661111114d5543ff011116164ddd111611611111d54bbaaff11116161dd41116116111144baafffffa4111611144111166111114baffffffaabb111f1bf411111111114aafffffffbaaffb11bffab4111111bafffffffffabbaaafffffffffaaaaaaffffffffffaafbaaaafaaaaafffffffffffffffaaaaaccbaaaaacccbaaaffffffffaaaaaaaab00cbbaacaffcbaaaaaaaaaaaaaaaabbc0044bbbcbaafcbbaaaaaaaaaaabbbcc40ddd444444522cccbbbbbbbbbbbc4444ddddddddddd44444ccccccccccc44444"
+	],
+	"animationSpeed": 8,
+	"vmuName": "BIG______VOICE",
+	"description": "SONIC ADVENTURE / BIG Voice",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00001420.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "b43f057eb3e942618f873cea2d1b2c9118eee46e",
+	"added": "2026-11-05"
+}

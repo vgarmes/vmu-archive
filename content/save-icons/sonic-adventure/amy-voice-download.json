@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Amy voice download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ccccffff",
+		"#000000ff",
+		"#0033ffff",
+		"#cc0066ff",
+		"#ff22bbff",
+		"#ff55ddff",
+		"#ff8877ff",
+		"#ffbbbbff",
+		"#ee4444ff",
+		"#007700ff",
+		"#99bbccff",
+		"#ff66eeff",
+		"#ffddddff",
+		"#ff99eeff",
+		"#aa0033ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"000445ddddd44000000000000000000000eee555dddd54eee11111111111100000000ee55dddd5ee1ffffffffffff1000eeee44e45ddd541ffffffffffffff10e5555555545ddd51ffffffffffffff1055555ddddd5ddd51ffffffffffffff10555555555ddddd51ffffffffffffff1055444455555dd5351ffffffffffff154444444445555554551111fff11111bb54443e5555555555555551ff1754eddbb43e555555555555bddb51f17753e5dbb3e555555555bbbbbdfdb1147643e4ddbe555555555bbbbbdffdd1b5554eeeddb55555444bbbbddb544444b5bb154eddb5554ee35bbdddb54affa44bb1bb55ddd554eaf4bddddb4affffffa11bbb5eddd54e3ff45dddb4affffaaff35bbb15ddd54e4fff4ddb54ffff999af34b114dddd54eaff9fdb54affff9f9af11144ddddd4e3aff91444afffff919af334ddd5ddd4eeaff91335ffffff919ff35bddd5ddd3ee4ff91fffffffff119f535dddd4dddeeeeaf144ffffffff111f435ddfd4ddb3eee41f1167ffffff996f435ddfd4dd5eeee311177666fff66764435ddfd3db5eeee666777cc777cccc76435dfd53d55ee3e86677777cccccc776345dfd43d540e33e866777777777716634bdd534b530e33ee86666777771166635ddd53554300e330ee86666666666834bdd543543000e33300ee866666688834dd54034330000e3e000008eeee888345d540343000"
+	],
+	"animationSpeed": 8,
+	"vmuName": "AMY______VOICE",
+	"description": "SONIC ADVENTURE / AMY Voice",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000698.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "e5da9c3b473ed15f4e31c6846ecc0cb04d1125b3",
+	"added": "2026-11-05"
+}

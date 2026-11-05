@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "Halloween theme",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ee6622ff",
+		"#eeeeeeff",
+		"#001144ff",
+		"#0022bbff",
+		"#3366ffff",
+		"#2255ffff",
+		"#0000ffff",
+		"#ffee33ff",
+		"#66ffffff",
+		"#eeaa11ff",
+		"#997733ff",
+		"#ccccccff",
+		"#888888ff",
+		"#666666ff",
+		"#000000ff"
+	],
+	"frames": [
+		"3bbab33333323333333333d333333332b88fffffffffffffffffffffffff33338abfcccccccccccccccccccccccf33338b3fc000000005777775000000cfd3338b3fc000000577777777750000cfff338a3fc077507777777777777000cfffc3b88fc057777777777777777700cfff333bbfc057777777777777750000cfff33444fc007777777777777500000cfff44d33fc007777777777777775000cfff33444fc007577750577777777500cfff44323fc005057500057777777700cfff3c444fc005007007505777777770cfff4d444fc000707057777757700000cfffce444fc000757777775057775000cdcc44444fc00777755570057777700eddfd4d666fc0000570005057777775ddcddddd444fc000000577777550005de0dedf4d666fccccccccccccccccccdeccdfedd6666ffffffffffffffffcddfffddfdfdd66666fffffffffffcccffcfffcffdfce66666ffffffffcccffffffcfcfccdc6666666666666cc6666666666cd666d666ffffffffffffffffffffffffffffffff111111111111111111111111111111111a888f18f18f18888f18f118f18888f11ff0ff10f10f10ffff100f00f10ffff11110f110000f10000f10f0f0f10000f11118f118ff8f18ffff18f8f8f18ffff11118f118f18f18888f18f8f8f18888f1111ff11ff1ff1fffff1ffffff1fffff111111111111111111111111111111111"
+	],
+	"animationSpeed": 1,
+	"vmuName": "HALLOWEEN__Theme",
+	"description": "SONIC ADVENTURE 2 / Download",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00007546.VMS",
+			"THEME011.VMS",
+			"v88812.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
+	},
+	"tags": [],
+	"hash": "00078e2a1c3c840a6f52dd3d7893fea460b73bad",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,63 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"game": "Blue Stinger",
+	"publisher": "Activision",
+	"year": 1999,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#00ff00ff",
+		"#eeffffff",
+		"#aaeeffff",
+		"#aaddffff",
+		"#aabbeeff",
+		"#55eeffff",
+		"#7799ddff",
+		"#11ccffff",
+		"#4499eeff",
+		"#1199eeff",
+		"#2288ddff",
+		"#4455bbff",
+		"#2277ccff",
+		"#1177bbff",
+		"#1155bbff",
+		"#333399ff"
+	],
+	"frames": [
+		"ffffffeeeddd64444466dddeeefffffffffffeeedd11144441114dddeeefffffffffeeedd14322234446428ddeeefffffffeeedd1431111234466928deefefffffefeed14621111224468d92ddeefffffffeedd16421111124469dd95deeefffffeeed14243211112466ad867ddefefffefeed14124211122468d94697deefffffeedd12116321123469a646d5deeefffeeed14111442212366a9246d5ddeeefffeed1611126322246996168d5ddeefffeedd162212642224996426a965deeefefed6164212643246a862469665ddefefeed114622246434696616a8687ddeefeeed124b6424a444a8624a846a77deeeeedd121ab644a644964488482cd5ddeeeed122186ae48a46964c88882cc5ddeeedd1241c611f4a6694c11f942c9d5deeed12241a656b7c699c876a561c687ddedd122618b655a63cc66455661e46c5ddd1221612f4881113c668aae22a48a75d12211441b2111111e8446ae16846aa7d2221126188111146c8246e229446aada221111e41b42224b9846ac18a366aadd2221118e41f42211666ac14a6168addd3221111ea15b448256c942c6136aada9322211168b266455799626b4146aa99933221114c6e4a46baa644961269a998843322111c8b8a62469426d4146a99886443322114a868b64a648cd1149a98866644332211e6644ca649ce4126a9886666644332214c66426aaadc1246a986666"
+	],
+	"animationSpeed": 8,
+	"vmuName": "BlueStinger",
+	"description": "ブルースティンガー  ＳＡＶＥ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000391.VMS",
+			"bluestin.VMS",
+			"v10039.VMS",
+			"v12669.VMS",
+			"v16130.VMS",
+			"v17010.VMS",
+			"v20263.VMS",
+			"v22896.VMS",
+			"v31243.VMS",
+			"v36002.VMS",
+			"v45198.VMS",
+			"v52713.VMS",
+			"v59496.VMS",
+			"v62879.VMS",
+			"v75365.VMS",
+			"v81544.VMS",
+			"v92834.VMS",
+			"v98538.VMS",
+			"v98744.VMS",
+			"v99300.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/bsting"
+	},
+	"tags": [],
+	"hash": "158a2d22a5b17c3ccd5eb15df0d72f820edab654",
+	"added": "2026-11-05"
+}

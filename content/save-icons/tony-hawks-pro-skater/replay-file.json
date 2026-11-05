@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Replay file",
+	"game": "Tony Hawk's Pro Skater",
+	"publisher": "Crave Entertainment",
+	"year": 2000,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#bbbbddff",
+		"#6655aaff",
+		"#ddddddff",
+		"#998888ff",
+		"#aa9999ff",
+		"#eeccbbff",
+		"#ddbbaaff",
+		"#333333ff",
+		"#555555ff",
+		"#444433ff",
+		"#887777ff",
+		"#776666ff",
+		"#111100ff",
+		"#222222ff",
+		"#ffffffff",
+		"#ccbbbbff"
+	],
+	"frames": [
+		"5555555555555555555544bbbb6655555555555555555555555544bbbb665555555555555555555544bb88ddcc996655555555555555555544bb88ddcc9966555555555555556633aa88ddaa22bb99555555555555556633aa88ddaa22bb9955555555555544aaaa997788ffeeee8833555555555544aaaa997788ffeeee883355555544bbbb88ddbb22ffaaffeebbcc55555544bbbb88ddbb22ffaaffeebbcc5566bb8899ccddff2244aa88dd88cccc5566bb8899ccddff2244aa88dd88cccc448899ddcc3344441111ffaaddddddcc448899ddcc3344441111ffaaddddddcc99aaccdd22eeee331100bb7799dd773399aaccdd22eeee331100bb7799dd7733bbbbcc88eeee224477887799dd776655bbbbcc88eeee224477887799dd7766556677ddcc22eeee44dd7777cc776655556677ddcc22eeee44dd7777cc776655555533dddd9922ffddddddccbb665555555533dddd9922ffddddddccbb6655555555559977ccccccddddcc33555555555555559977ccccccddddcc3355555555555555447777cccccccc335555555555555555447777cccccccc33555555555555555555aa9977cccc3355555555555555555555aa9977cccc33555555555555555555556688ddcc3355555555555555555555556688ddcc3355555555555555555555555544dd335555555555555555555555555544dd33555555555555555555"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Tony Hawk Replay",
+	"description": "Tony Hawk Replay SCHOOLCHAD",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v32543.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tonyhawk"
+	},
+	"tags": [],
+	"hash": "1737e8b1a18e82f80aef7cc140a6917ce4f4138e",
+	"added": "2026-11-05"
+}

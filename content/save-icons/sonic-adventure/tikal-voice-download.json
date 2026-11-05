@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Tikal voice download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ccccffff",
+		"#000000ff",
+		"#ffff00ff",
+		"#cc2211ff",
+		"#ff3300ff",
+		"#ff6633ff",
+		"#ff8877ff",
+		"#ffbbbbff",
+		"#ee4444ff",
+		"#0044ccff",
+		"#99bbccff",
+		"#ff8811ff",
+		"#ffddddff",
+		"#ffbb66ff",
+		"#991100ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"000000000005555555550000000000000000000444455bbbb11111111111100000000445555bbbbb1ffffffffffff1000000455555bbbbb1ffffffffffffff1000045555bbbbbbb1ffffffffffffff10000455bd29992221ffffffffffffff1000455b22999a9221ffffffffffffff150045522299aa92221ffffffffffff1bb0445d2222999222221111fff11111dbb03555d2dbbbbbbbbdd221ff1dbb4bddb03553bbbbbbdddbddddb1f1bddb34ddb345515bbdddddbb54444111bbdb34ddb3435414bddddbb54affa114b3db53ddd3451eaabddbbb4afffffa413bdd53dcd3453aff4bdbb4affffaafa35bddb3dcd3453aff9bbb54ffffa99af34bddb3dcd3454ffafbbb4affff9f9af34bddb3dcd3454ff91bb55fffff919af33bddd4dcd3354ff91bb5afffff919ff35bddd4ddde344af914b5ffffff119f535bddd4ddbe344eaa143affffff111f43dcfcd4ddb0e43e11c166ffffff916f43dcffc4dd50e3e6e1167766fff6676443dcffc3db50e3e8666777c777cccc76435bcfc3db50e33e8667777cccccc77634bdddc3db400e33e86677777787776634bdd534bb300e33ee86667888777666dccfd535b5300e333eee866666666683dcfffc35b43000e33e33ee6666668883ccffcc3bb430005dc53333eeeeeee3345bddcd3b5300005dcc5335bbeeeee3445dd54d454300000e33e35bddbbeee3445dd54354300"
+	],
+	"animationSpeed": 8,
+	"vmuName": "TIKAL____VOICE",
+	"description": "SONIC ADVENTURE / TIKAL Voice",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00001295.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "b41164a25cd987402c085c68365795979e952e32",
+	"added": "2026-11-05"
+}

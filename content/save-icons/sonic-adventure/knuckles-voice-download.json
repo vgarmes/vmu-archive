@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Knuckles voice download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#aa99ccff",
+		"#000000ff",
+		"#007755ff",
+		"#990000ff",
+		"#dd0000ff",
+		"#ff4422ff",
+		"#ff9966ff",
+		"#ffcc99ff",
+		"#ee6633ff",
+		"#007700ff",
+		"#bbbbddff",
+		"#777799ff",
+		"#222266ff",
+		"#ff2222ff",
+		"#ffddccff",
+		"#ffffffff"
+	],
+	"frames": [
+		"000000000000000000000000000000000000000000000000011111111111100000000000000000441ffffffffffff10000000000000044d1ffffffffffffff10000000000044ddd1ffffffffffffff1400000004444dddd1ffffffffffffff140000004444ddddd1ffffffffffffff14000444444ddddddd1ffffffffffff1dd00444444ddddddd441111fff11111ddd03444dd4dddddd4444dd1ff165d44ddd0444d5ddddddd444dddd1f1dd65d44dd0434d5dddddd444ddddd1144dd5dd4dd0333d5dddddd44dddd44144444ddd4dd003345dddddd4dddd443333344ddd4dd003a45dddddddddd44333333344d44dd003a4d5dddddddd433ffff43344444dd000f4d5ddddddd43fffffff44344445d000faddd4dddd43ffffffff344444d5d000ffdd44ddd43ffffbcaff334444d5d000ff4d4ddd43afffaccaff43344dd5d000ffc444443affffbccaff43344d55d0000fc444334affffcfcff443344d55d0000ff33334afffff11cff443344d55d01cccc6433fffffff11cf666334dd55d0c1ba16666667ffff1c66eff334dd55d00c111fe76666667776ee777334d55d4000018667eeeee7eeeee76c633dd55d400000388666777777778cc6634dd55d400000033886666677777666834dd55d400000033338866666666688334d555d400000033333338888888888334d555d400000003333333333333333334d555d4"
+	],
+	"animationSpeed": 8,
+	"vmuName": "KNUCKLES_VOICE",
+	"description": "SONIC ADVENTURE / KNUCKLES Voice",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SA1_V13.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "726d53ca9756a2cacbfd293789443737158620b2",
+	"added": "2026-11-05"
+}

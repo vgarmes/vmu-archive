@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Tails voice download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#aa99ccff",
+		"#000000ff",
+		"#0022ffff",
+		"#ffff22ff",
+		"#cc5500ff",
+		"#ee9900ff",
+		"#ffbb00ff",
+		"#ffdd00ff",
+		"#cc88ddff",
+		"#009966ff",
+		"#bbbbddff",
+		"#777799ff",
+		"#444455ff",
+		"#8855ffff",
+		"#eeddeeff",
+		"#ffffffff"
+	],
+	"frames": [
+		"a46666677aaaaaaaaaaaaaaaaaa77555aa44566677aaaaaaa111111111111eee77754556677aaaaa1ffffffffffff1ff666774456677aaa1ffffffffffffff174456677456677761ffffffffffffff157775467745556771ffffffffffffff156677746774667731ffffffffffffff1455667756767733331ffffffffffff154555556777773333331111fff11111e44554c45677733333333331ff177ffa74a44caa4677733333333331f13377f754accaa46556733365556331133367f64aaaaaa45ee573335ee75531333366e64aaaaa465ef573375efff753333365754aaaaac65ff577366fffff5733376554aaaaaac57ff57776efffff7633366554aaaaaac4efe57776effffff53376654aaaaaaac4efc16775effb1ff53376554aaaaaaaacef195775eff19cf53766554aaaaaaaacff195775fff191f5776554aaaaaccbccff1f5765fff1f1f5766554bbbbbffebcffc15665fffc11e5665bbaeffffeeb11bbbaa555fffb1f5665befffffabeebffcaaeeee65fffff555befffffbcaeee111fffffee65ef65e5bfffffffeebaaacbaaeeffffffeeeffffeeeefffffeaabccbaaaeeffffffffeeeaaaeeeaaeebbcaacbbaaaeeeeeeea1aabbaaeeeabcccaaaacbbbaaaeeee11aabccbbaaaeeeaaaaaaaccbbbaaaaaaaabccacccbbaaeaaaaaaaaaccbbbbbbbbbccaaaaaccccbaaaaaaaaaaacccbbbbcccaaaaaaaaaac"
+	],
+	"animationSpeed": 8,
+	"vmuName": "TAILS____VOICE",
+	"description": "SONIC ADVENTURE / TAILS Voice",
+	"source": {
+		"kind": "save",
+		"files": [
+			"SA1_V12.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "62af20296fd0f71c3ed97dcd8076a18bec85ab2d",
+	"added": "2026-11-05"
+}

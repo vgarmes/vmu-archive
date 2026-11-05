@@ -1,0 +1,52 @@
+{
+	"kind": "save",
+	"title": "Amy and Maria themes",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ff8833ff",
+		"#ff6600ff",
+		"#dd0000ff",
+		"#eedd88ff",
+		"#bbeeffff",
+		"#7799ffff",
+		"#0000ffff",
+		"#0066eeff",
+		"#0088ffff",
+		"#eeaa11ff",
+		"#997733ff",
+		"#ccccccff",
+		"#888888ff",
+		"#666666ff",
+		"#000000ff"
+	],
+	"frames": [
+		"77777777777777777777777777777777777fffffffffffffffffffffffff7777777fcccccccccccccccccccccccf7777777fc000000006777776000000cf7777777fc000000677777777760000cfff77777fc077607777777777777000cfff77777fc067777777777777777700cfff77777fc067777777777777760000cfff77888fc007777776777777600000cfff88777fc007777700677777776000cfff77888fc007077700077777777600cfff88777fc007067007077777777700cfff77888fc006077007777777777770cfff88888fc006077007677777700000cfff88888fc000607700677777776000cfff88999fc007777777777777777000cfff99888fc000067777777777777600cfff88999fc000000677777660006700cfff99888fcccccccccccccccccccccccfff88999fffffffffffffffffffffffffff9999999fffffffffffffffffffffffff9999999fffffffffffffffffffffffff9999999999999999999999999999999999fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffdcccefcefcefccccefceffcefcccceffff0eff0ef0ef0effff00e00ef0efffffff0eff0000ef0000ef0e0e0ef0000effffceffcefcefceffffcececefcefffffffceffcefcefccccefcececefccccefffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SONIC______Theme",
+	"description": "SONIC ADVENTURE 2 / Download",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00005942.VMS",
+			"THEME001.VMS",
+			"THEME004.VMS",
+			"THEME007.VMS",
+			"THEME008.VMS",
+			"THEME009.VMS",
+			"THEME010.VMS",
+			"v19962.VMS",
+			"v59813.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
+	},
+	"tags": [],
+	"hash": "c987aee10465d6ca93c237ddd5f917c1a4986903",
+	"added": "2026-11-05"
+}

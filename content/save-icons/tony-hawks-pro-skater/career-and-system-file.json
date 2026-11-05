@@ -1,0 +1,57 @@
+{
+	"kind": "save",
+	"title": "Career and system file",
+	"game": "Tony Hawk's Pro Skater",
+	"publisher": "Crave Entertainment",
+	"year": 2000,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#332211ff",
+		"#bb8877ff",
+		"#ccaa88ff",
+		"#666655ff",
+		"#887766ff",
+		"#444433ff",
+		"#888899ff",
+		"#33aaccff",
+		"#3388bbff",
+		"#44bbeeff",
+		"#44aaddff",
+		"#4499bbff",
+		"#66cceeff",
+		"#66aaccff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"2222221122112211222222112222113322222211221122112222221122221133eeeeee44ee44ee44eeeeee44eeeeee00eeeeee44ee44ee44eeeeee44eeeeee0011ee5555ee33ee55ee66ee55ee33550011ee5555ee33ee55ee66ee55ee33550011ee0033eeeeee55eeeeee55eeeeff0011ee0033eeeeee55eeeeee55eeeeff0011ee0033ee33ee55ee5500004433ff0011ee0033ee33ee55ee5500004433ff0011ee0033ee55ee55ee005544eeeeff0011ee0033ee55ee55ee005544eeeeff0011660033440033003300334444550000116600334400330033003344445500006666446666446644664466666644333366664466664466446644666666443333ddddddddddddddddddddddddddddddbbddddddddddddddddddddddddddddddbbccddaa9999aa9999999999aaaa99bbbbccddaa9999aa9999999999aaaa99bbbbdd55bb77aaaaaaaaaaaaaaaaaabb0088dd55bb77aaaaaaaaaaaaaaaaaabb0088ccbb0000000000000000000000008877ccbb0000000000000000000000008877cc997788aaaaaa77aa77aa7788779988cc997788aaaaaa77aa77aa7788779988cc99880088999999999999bb00887777cc99880088999999999999bb008877779999aa8877aa7777aa77777788aa77889999aa8877aa7777aa77777788aa77887788888888888888888888888888888877888888888888888888888888888888"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Tony Hawk Career",
+	"description": "Tony Hawk Career BUM",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v10555.VMS",
+			"v10797.VMS",
+			"v14652.VMS",
+			"v31605.VMS",
+			"v3218.VMS",
+			"v52.VMS",
+			"v5502.VMS",
+			"v59154.VMS",
+			"v7346.VMS",
+			"v76507.VMS",
+			"v80346.VMS",
+			"v81525.VMS",
+			"v82327.VMS",
+			"v95483.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/tonyhawk"
+	},
+	"tags": [],
+	"hash": "fc45c2cfca4ff313cb495852bc6462bb343bc645",
+	"added": "2026-11-05"
+}

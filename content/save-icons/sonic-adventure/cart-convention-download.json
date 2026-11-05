@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Cart convention download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ee0011ff",
+		"#dd4455ff",
+		"#554444ff",
+		"#ffffffff",
+		"#777777ff",
+		"#dddd99ff",
+		"#eeaa99ff",
+		"#222222ff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#eeeeeeff",
+		"#ddddddff",
+		"#aaaaaaff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"8888888888888888888888888888888888888888888888888888888888888888888888827a8888888888888888dc88888888882777c888888888888882eeb888888887467728c77222dddda272d2ec888888c787f729724442277022783427888888c282f77772444442720778ffd7888888a7d8d777724444427712764dd78888888b727777724444427211206374888888888270777244444211114777d8888888888200722ddd44410111127b88888888882000222242721100111122b8888888820000044d4200000001114778888888d70000066661000000011112ed88888c700000000000000000016427e7888882700000000000016100022777e78888be772222100000015542777777e78888ce772222227777722222777777e788884ee77722277777722222777777e788882effffe77e772277772277777eed88821effffffffee7eeff747777eeeec88820ffffffffffffffff162777eeeeb88897effffffffffffffe000e7eeee7888887effffffffffffffe707eeeee7c88888deeefffffffffffff77eeee7d888888884eeeeeeeeeeeeeefeeee2db9988888888894777eeeeeeeeeee74dddddddc888bbcddddd47222222274dddddddddd888ddddddddddddddddddddddddddddc888bdddddddddddddddddddddddcba988888888abbbbddddddddddddbb988888888888888888888888888888888888888"
+	],
+	"animationSpeed": 1,
+	"vmuName": "CART_CONVENTION",
+	"description": "SONIC ADVENTURE / CART",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00001310.VMS",
+			"SASDAC.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "450406beb1fc83c278ffc69ff6ebd7bfd26fb3e4",
+	"added": "2026-11-05"
+}

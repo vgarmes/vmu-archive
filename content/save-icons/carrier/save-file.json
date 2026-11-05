@@ -1,0 +1,56 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"game": "Carrier",
+	"publisher": "Jaleco",
+	"year": 2000,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#990011ff",
+		"#660011ff",
+		"#110000ff",
+		"#332222ff",
+		"#111111ff",
+		"#bbbbbbff",
+		"#aaaaaaff",
+		"#333333ff",
+		"#333333ff",
+		"#888888ff",
+		"#ffffffff",
+		"#666666ff",
+		"#000000ff",
+		"#00000000",
+		"#00000000",
+		"#00000000"
+	],
+	"frames": [
+		"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa0000aaa000aa0000aaaaa8aaaaaaaaa00a000a00a00a00a0aaabb88aaaaaaaa00a000a00a00a00a0aaaa33aaaaaaaaa00aaaaa00000a0000aaaa88aaaaaaaaa00a000a00a00a00a0aaa5569aaaaaaaa000000a00a00a00a0b222bb58aaaaaaaa0000aa00a00a00a0aaa3335bbbaaaaaaaaaaaaaaaaaaaaa9555555588aaaaaaaaaaaaaaaaaa9555555558bb558aaaaaaaaaaaaaa9555555555988555598aaaaaaaaaaaa95555555598b855559baaaaaaaaaaaa955555559b88555559b1aaaaaaaaaaa96555559bbb8555559b11aaaaaaaaaaaa95555bbb85555559b11aaaaaaaaaaaa5555bbb899999999b111aaaaaaaaaaa5555bb88888888888311aaaaaaaaaaa5559bb83444444444311aaaaaaaaaaa555bb8447bb888888891aaaaaaaaaaa55b4444777bbbb880001aaaaaaaaaaaa777447777bbb699001aaaaaaaaaaaaaaaaaaa777bb699901aaaaaaaaaaaaaaaaaaaaa77bbb99001aaaaaaaaaaaaaaaaaaaaa9bbb999001aaaaaaaaaaaaaaaaaaaaa96bb999001aaaaaaaaaaaaaaaaaaaaa966999011aaaaaaaaaaaaaaaaaaaaaaa6669001aaaaaaaaaaaaaaaaaaaaaaaaa00001aaaaaaaaaaaaaaaaaaaaaaaaaaa001aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+		"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa00aa0000aa0000aaaaaaaaaa8aaaaaaaa00a00a00a00a00aaaaaaabb88aaaaaaa00a00a00a00a00aaaaaaaa33aaaaaaa000a00000a00000aaaaaaaa88aaaaaaaa00a00a0aa00a0aaaaaaaa5569aaaaaaa00a00a00a00a00aaaab222bb58aaaaaa00a00a00a00a00aaaaaaa3335bbbaaaaaaaaaaaaaaaaaaaaa9555555588aaaaaaaaaaaaaaaaaa9555555558bb558aaaaaaaaaaaaaa9555555555988555598aaaaaaaaaaaa95555555598b855559baaaaaaaaaaaa955555559b88555559b1aaaaaaaaaaa96555559bbb8555559b11aaaaaaaaaaaa95555bbb85555559b11aaaaaaaaaaaa5555bbb899999999b111aaaaaaaaaaa5555bb88888888888311aaaaaaaaaaa5559bb83444444444311aaaaaaaaaaa555bb8447bb888888891aaaaaaaaaaa55b4444777bbbb880001aaaaaaaaaaaa777447777bbb699001aaaaaaaaaaaaaaaaaaa777bb699901aaaaaaaaaaaaaaaaaaaaa77bbb99001aaaaaaaaaaaaaaaaaaaaa9bbb999001aaaaaaaaaaaaaaaaaaaaa96bb999001aaaaaaaaaaaaaaaaaaaaa966999011aaaaaaaaaaaaaaaaaaaaaaa6669001aaaaaaaaaaaaaaaaaaaaaaaaa00001aaaaaaaaaaaaaaaaaaaaaaaaaaa001aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+		"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa00aa00a00000a0000aaaaaaa8aaaaaaaa00a00a00aaaa00a00aaaabb88aaaaaaa00a00a00aaaa00a00aaaaa33aaaaaaa000a00a00000a00000aaaaa88aaaaaaaa0aa00a00aaaa00a0aaaaa5569aaaaaaa00a00a00aaaa00a00ab222bb58aaaaaa00a00a00000a00a00aaaa3335bbbaaaaaaaaaaaaaaaaaaaaa9555555588aaaaaaaaaaaaaaaaaa9555555558bb558aaaaaaaaaaaaaa9555555555988555598aaaaaaaaaaaa95555555598b855559baaaaaaaaaaaa955555559b88555559b1aaaaaaaaaaa96555559bbb8555559b11aaaaaaaaaaaa95555bbb85555559b11aaaaaaaaaaaa5555bbb899999999b111aaaaaaaaaaa5555bb88888888888311aaaaaaaaaaa5559bb83444444444311aaaaaaaaaaa555bb8447bb888888891aaaaaaaaaaa55b4444777bbbb880001aaaaaaaaaaaa777447777bbb699001aaaaaaaaaaaaaaaaaaa777bb699901aaaaaaaaaaaaaaaaaaaaa77bbb99001aaaaaaaaaaaaaaaaaaaaa9bbb999001aaaaaaaaaaaaaaaaaaaaa96bb999001aaaaaaaaaaaaaaaaaaaaa966999011aaaaaaaaaaaaaaaaaaaaaaa6669001aaaaaaaaaaaaaaaaaaaaaaaaa00001aaaaaaaaaaaaaaaaaaaaaaaaaaa001aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa"
+	],
+	"animationSpeed": 16,
+	"vmuName": "GAMEFILE",
+	"description": "CARRIER",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000812.VMS",
+			"CARRIER.VMS",
+			"v16562.VMS",
+			"v26111.VMS",
+			"v49690.VMS",
+			"v5628.VMS",
+			"v666.VMS",
+			"v80139.VMS",
+			"v88552.VMS",
+			"v94735.VMS",
+			"v97548.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/carrier"
+	},
+	"tags": [],
+	"hash": "f8f71e6ee1c26c9ca155df973bf5d7490321d719",
+	"added": "2026-11-05"
+}

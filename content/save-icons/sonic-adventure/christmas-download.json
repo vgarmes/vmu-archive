@@ -1,0 +1,47 @@
+{
+	"kind": "save",
+	"title": "Christmas download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#eeffeeff",
+		"#11aa11ff",
+		"#77cc77ff",
+		"#ffee00ff",
+		"#775500ff",
+		"#ff6600ff",
+		"#551100ff",
+		"#aa2200ff",
+		"#cc2200ff",
+		"#dd1100ff",
+		"#ee1100ff",
+		"#ff1100ff",
+		"#ee0000ff",
+		"#ff0000ff",
+		"#ff0000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ddddddddddddddd55dddddddddddddddddddddddddddddd33dddddddddddddddddddddddddd53333333bddddddddddddddddddddddddd53333dddddddddddddddddddddddddddb33335dddddddddddddddddddddddddd531133ddddddddddddddddddddddddd41111114dddddddddddddddddddddde4121111114eddddddddddddddddddd81120211111118ddddddddddddddddd7111121111111117dddddddddddddde411111111112111114eddddddddddddc999711111120017999cddddddddddddddda111111120211addddddddddddddddda11111111111111addddddddddddddd911112111111111119ddddddddddddd81111202111111111118ddddddddddd8111112021111121111118ddddddddd711111112111112001111117dddddddc444441111111111021144444cddddddddddc4111111111111114cddddddddddddd81111111221111111118ddddddddddd4112111110021111111114ddddddddc411002111122111112021114cddddd8111120111111111111200111118ddd411111111111111111111221111114ddddddddddc666666666667ddddddddddddddddddde666666666669dddddddddddddddddddd66666666666edddddddddddddddddddd76666666666dddddddddddddddddddddc6666666667dddddddddddddddddddddd6666666667ddddddddddddddddddddddddddddddddddddddddddd"
+	],
+	"animationSpeed": 1,
+	"vmuName": "DOWNLOAD_XMAS",
+	"description": "SONIC ADVENTURE / XMAS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000114.VMS",
+			"00000509.VMS",
+			"SA1_509.VMS",
+			"v17434.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "7d9314d2fa20ebe6ac0aae0e061f1a3463c64ba8",
+	"added": "2026-11-05"
+}

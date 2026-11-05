@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "QUO card download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#eeaa33ff",
+		"#995500ff",
+		"#aa6611ff",
+		"#cc8811ff",
+		"#ff8811ff",
+		"#cc7722ff",
+		"#ff9944ff",
+		"#111100ff",
+		"#ffbb66ff",
+		"#ffcc99ff",
+		"#ffcc88ff",
+		"#333322ff",
+		"#ffffffff",
+		"#888888ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccbeeeeeeeeebcccccccccccccccccccbeeeeeeeeeeeebccccccccccccccccbeeeeeeeeeeeeeeebccccccccccccccbeedcddeeeeeeeeeeeebcccccccccccceddccccdddeeeeee6eeebccccccccccbccccccccc77777766eeeecccccccccce7777777776666668637decccccccccbe7366888888888888637debccccccccee73666888aaaa8886637dceccccccccee7366666688886666667cceccccccccee766b777466664777b677cecccccccbed76422221444412222437cebcccccce7c76269c96122169c96247777cccccc7673126c7c626626c7c6213767cccccc76636269c96288269c96263667cccccc767364266620aa026662463767ccccccb765684222066660222486567bcccccccb7766866647447466686677bccccccccccb466643466664346664bccccccccccccc747664666666466747cccccccccccccc744666677776666447cccccccccccccc744664764467466447ccccccccccccccb5466466666646645bccccccccccccccb7466668888666647bcccccccccccccccb74666666666647bcccccccccccccccccb746644446647bcccccccccccccccccccb5344444435bcccccccccccccccccccccb77777777bccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc"
+	],
+	"animationSpeed": 1,
+	"vmuName": "QUOｶｰﾄﾞｦｻｶﾞｿｳ",
+	"description": "ソニックアドベンチャー／ＱＵＯ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000761.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "e440a8d94c40dda0fe1eb48940fdc2588df593a7",
+	"added": "2026-11-05"
+}

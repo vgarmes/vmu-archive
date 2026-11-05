@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "All voices download",
+	"game": "Sonic Adventure",
+	"publisher": "Sega",
+	"year": 1998,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ccccffff",
+		"#000000ff",
+		"#ffff00ff",
+		"#cc2211ff",
+		"#ff3300ff",
+		"#ff6633ff",
+		"#ff8877ff",
+		"#ffbbbbff",
+		"#ee4444ff",
+		"#0044ccff",
+		"#99bbccff",
+		"#ff8811ff",
+		"#ffddddff",
+		"#ffbb66ff",
+		"#991100ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"aaaaa777777aaaaaa777777aaaaa77aaaaaaa777777aaa111111111111aa7777aaaaa777777aa1ffffffffffff1a7777aaaaa777777a1ffffffffffffff17777aaaaa777777a1ffffffffffffff1777777777aaaaaa71ffffffffffffff1aaaa77777aaaaaa71ffffffffffffff1aaaa77777aaaaaa771ffffffffffff17aaaa77777aaaaaa7771111fff1111177aaaa77777aaaaaa7777771ff1aaa7777aaaaaaa11111117a1111a1f171111aaa7777aa11fffff11a1ff1a11771ff1aaa7777aa1fffffff1a1ff1a17771ff1aaa7777aa1ff111ff1a1ff1aa7771ff1aaa7777aa1ff1a1ff1a1ff1aa7771ff1aaa7777771ff111ff171ff177aaa1ff1777aaaa771fffffff171ff11111a1ff11111aaa771ff111ff171ffffff1a1ffffff1aaa771ff1a1ff171ffffff1a1ffffff1aaa771111a1111711111111a11111111aaa77777aaaaaa7777777aaaaaa7777aaaa1111111a1111171117111111711111171ff11ff11ffff11ff11ffff11ffffff11ff11ff1ffffff1ff1ffffff1ffffff11ff11ff1ff11ff1ff1ff11ff1ff111111ff11ff1ff11ff1ff1ff11111fffff111ff11ff1ff11ff1ff1ff11111fffff111ffffff1ff11ff1ff1ff11ff1ff1111111ffff11ffffff1ff1ffffff1ffffff1a11ff1111ffff11ff11ffff11ffffff1aa111177111111a111111111a1111117aaaaaa777777aaaaaaa77777aaaaa777"
+	],
+	"animationSpeed": 8,
+	"vmuName": "ALL______VOICE",
+	"description": "SONIC ADVENTURE / ALL Voice",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00001311.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic"
+	},
+	"tags": [],
+	"hash": "6ca7e7fab0fe9d736337b819b707fe6d28f006bc",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Christmas theme",
+	"game": "Sonic Adventure 2",
+	"publisher": "Sega",
+	"year": 2001,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#cc0000ff",
+		"#ffbbffff",
+		"#5511ffff",
+		"#eedd88ff",
+		"#5566ffff",
+		"#bbbbffff",
+		"#0000ffff",
+		"#11eeffff",
+		"#66ffffff",
+		"#eeaa11ff",
+		"#997733ff",
+		"#ccccccff",
+		"#888888ff",
+		"#666666ff",
+		"#000000ff"
+	],
+	"frames": [
+		"33333333306633333333336633333300003fffffffffffffffffffffffff3366663fcccccccccccccccccccccccf3333333fc000000005777775000000cf3333333fc000000577777777750000cfff33333fc077507777777777777000cfff33330fc057777777777777777700cfff33336fc057777777777777750000cfff03555fc007777775777777500000cfff65333fc007777700577777775000cfff33555fc007077700077777777500cfff55003fc007057007077777777700cfff33665fc005077007777777777770cfff55555fc005077007577777700000cfff50555fc000507700577777775000cfff56556fc007777777777777777000cfff55666fc000057777777777777500cfff66666fc000000577777550005700cfff66000fcccccccccccccccccccccccfff00666fffffffffffffffffffffffffff6600000fffffffffffffffffffffffff0000000fffffffffffffffffffffffff0000000000000000000000000000000000ffffffffffffffffffffffffffffffff111111111111111111111111111111111a444f14f14f14444f14f114f14444f11ff0ff10f10f10ffff100f00f10ffff11110f110000f10000f10f0f0f10000f11114f114ff4f14ffff14f4f4f14ffff11114f114f14f14444f14f4f4f14444f1111ff11ff1ff1fffff1ffffff1fffff111111111111111111111111111111111"
+	],
+	"animationSpeed": 1,
+	"vmuName": "XMAS_______Theme",
+	"description": "SONIC ADVENTURE 2 / Download",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00007547.VMS",
+			"THEME012.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/sonic2"
+	},
+	"tags": [],
+	"hash": "443c2b0420f70a987d1a720acfaa34b6f7319391",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Direction data",
+	"game": "Street Fighter III: 3rd Strike",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#110000ff",
+		"#ff8800ff",
+		"#bb9988ff",
+		"#ffdd22ff",
+		"#aa6600ff",
+		"#ffee22ff",
+		"#aa3311ff",
+		"#ddbb22ff",
+		"#ffcc66ff",
+		"#777799ff",
+		"#ffeeccff",
+		"#443333ff",
+		"#ff9944ff",
+		"#dd6633ff",
+		"#ffff33ff",
+		"#ffdd22ff"
+	],
+	"frames": [
+		"3f3f3f3f3f3f3ff3f33f3f3f3f3f3f3ff3f3f3f3f3f3f300fff3f3f3f3f3f3f33f3f3f3f3f3ff3bb333f3f3f3f3f3f3ff3f3f3f3f3f333000b33f3f3f3f3f3f33f3f3f3f3f3333330b03f33f3f3f3f3ff3f3f3f3f333000000b33ff3f3f3f3f33f3f3f3f3300bbbbb000033f3f3f3f3f3f3f3f3f339999999bbbb333f3f3f3f3f3ff3f33bbbbbbbb9999999f3f3f3f3f3f30fff0bbbbbbbbbbbb999bf3f3f3f3f3f0000bbb0bbbbbbbbbbb990f3f3f3f3f3f0bbbbb00bbbbbbbbbbbbb0f3f3f3f3f3f0bb0060b0b0bbbbbbbbbbff3f3f3f3f3f0006000d060bb00bbbbb0ff3f3f3f3f000066d6d06bb00600000003f3f3f3f30000bddcd6020b0cb000000f3f3f3f3f0f00bc688cbab8b86000f3f3f3ff3f3f3f3f6688888cccc8600000f3ff33f3f3f3f368c888888ccd0017713f33f3f3f3f3f368cccd888c6004eee574ff3f3f3ff3f30c8ccd888d1403555ee543f3f3f333f3f6c88888cd51974445ee3b3f3f3ffff3f06c88cc65312200015ee303f3f3333f3226cc661331ba22221333af3f3fffff2a2a2611f31cdba2aa22c68f3fbbbbb9aa2a2d1dddcdd69a2aad8dcfbbaaaa2aaa2aadcdddcddc622aacccdb22aaaa2aaa2aa2ccccc88ccba2d86d6aaa2aaaaaaa2aaadcccccccccaadc6ddaaaa2aaaaaaaaaa2cccccc88caa6ddddaaaaaaaaaaaaaaa2cccdc88882a6ddddaaaaaaaaaaaaaaaadc8dd88dd2a26ddd"
+	],
+	"animationSpeed": 1,
+	"vmuName": "DIRECTION DATA_0",
+	"description": "STREET FIGHTER 3 3rd STRIKE",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v5311.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/streetfight3rd"
+	},
+	"tags": [],
+	"hash": "c32800006c5424b840fc58b388f32d3e1aae0066",
+	"added": "2026-11-05"
+}
