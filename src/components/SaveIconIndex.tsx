@@ -52,9 +52,10 @@ export default function SaveIconIndex({ icons }: { icons: SaveIconEntry[] }) {
 
 	const q = query.trim()
 	const results = useMemo(
-		() => (q ? fuse.search(q).map(r => r.item) : icons),
+		() => cards(q ? fuse.search(q).map(r => r.item) : icons),
 		[fuse, icons, q]
 	)
+	const total = useMemo(() => cards(icons).length, [icons])
 	const games = new Set(icons.map(i => i.gameSlug)).size
 
 	return (
@@ -72,8 +73,8 @@ export default function SaveIconIndex({ icons }: { icons: SaveIconEntry[] }) {
 					aria-live="polite"
 				>
 					{q
-						? `${results.length} of ${icons.length} icons`
-						: `${icons.length} icons · ${games} ${games === 1 ? 'game' : 'games'}`}
+						? `${results.length} of ${total} icons`
+						: `${total} icons · ${games} ${games === 1 ? 'game' : 'games'}`}
 				</span>
 			</div>
 
@@ -87,8 +88,12 @@ export default function SaveIconIndex({ icons }: { icons: SaveIconEntry[] }) {
 				/>
 			) : (
 				<ul className="grid grid-cols-2 gap-3 sm:grid-cols-3 md:grid-cols-4 lg:grid-cols-6">
-					{results.map(icon => (
-						<SaveIconCard key={icon.id} icon={icon} />
+					{results.map(({ icon, vmu }) => (
+						<SaveIconCard
+							key={vmu ? `${icon.id}-vmu` : icon.id}
+							icon={icon}
+							vmu={vmu}
+						/>
 					))}
 				</ul>
 			)}
@@ -96,7 +101,17 @@ export default function SaveIconIndex({ icons }: { icons: SaveIconEntry[] }) {
 	)
 }
 
-function SaveIconCard({ icon }: { icon: SaveIconEntry }) {
+/**
+ * One card per image: a memory card icon carries two, its colour icon and the
+ * 1-bit one the VMU shows, and gets a card for each, side by side.
+ */
+const cards = (icons: SaveIconEntry[]) =>
+	icons.flatMap(icon => [
+		{ icon, vmu: false },
+		...(icon.hasVmuIcon ? [{ icon, vmu: true }] : [])
+	])
+
+function SaveIconCard({ icon, vmu }: { icon: SaveIconEntry; vmu: boolean }) {
 	const game = icon.hasPage ? (
 		<Link
 			href={`/games/${icon.gameSlug}`}
@@ -110,19 +125,16 @@ function SaveIconCard({ icon }: { icon: SaveIconEntry }) {
 	return (
 		<li className="border-border bg-card hover:border-foreground flex flex-col border">
 			<div className="flex items-center justify-center gap-3 p-4">
-				{icon.hasVmuIcon ? (
-					<>
-						<SaveIconImage icon={icon} className="w-16" />
-						{/* The 1-bit icon the VMU shows, like the rest of the VMU art. */}
-						<img
-							src={`/save-icons/${icon.id}-vmu.png`}
-							alt={`${icon.game}: ${icon.title}, on the VMU`}
-							width={32}
-							height={32}
-							loading="lazy"
-							className="pixelated aspect-square h-auto w-16 dark:invert"
-						/>
-					</>
+				{vmu ? (
+					// The 1-bit icon the VMU shows, like the rest of the VMU art.
+					<img
+						src={`/save-icons/${icon.id}-vmu.png`}
+						alt={`${icon.game}: ${icon.title}, on the VMU`}
+						width={32}
+						height={32}
+						loading="lazy"
+						className="pixelated aspect-square h-auto w-24 dark:invert"
+					/>
 				) : (
 					<SaveIconImage icon={icon} className="w-24" />
 				)}
@@ -149,7 +161,7 @@ function SaveIconCard({ icon }: { icon: SaveIconEntry }) {
 				</span>
 				{icon.kind === 'memory-card' && (
 					<span className="text-muted-foreground/70">
-						Memory card icon
+						{vmu ? 'VMU screen' : 'Dreamcast menu'}
 						{icon.madeByGame === null && (
 							<span title="Not yet found on the game's disc: it may be the game's, or made with a tool">
 								{' '}
