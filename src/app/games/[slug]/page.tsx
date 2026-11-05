@@ -20,6 +20,9 @@ import { getSpriteSheet } from '@/lib/sprites'
 
 export const dynamicParams = false
 
+/** Save icons shown beside the title; the rest are a link away. */
+const HEADER_SAVE_ICONS = 3
+
 export function generateStaticParams() {
 	return getGames().map(g => ({ slug: g.slug }))
 }
@@ -42,6 +45,10 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 	const { game, icons, notes } = found
 	const sheet = getSpriteSheet(game.slug)
 	const saveIcons = getGameSaveIcons(game.slug)
+	const headerIcons = [...saveIcons]
+		.sort((a, b) => b.saves - a.saves)
+		.slice(0, HEADER_SAVE_ICONS)
+	const allSaveIcons = `/save-icons?${new URLSearchParams({ q: game.en })}`
 	const meta = [game.publisher, game.year].filter(Boolean).join(' · ')
 
 	// The page's sections as tabs, screens first; only those the game has.
@@ -121,13 +128,20 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 						</BreadcrumbItem>
 					</BreadcrumbList>
 				</Breadcrumb>
-				{/* The game's save icons, at their own size, as its emblem. */}
+				{/*
+					The game's save icons, at their own size, as its emblem: the few
+					most saves carry (usually its main save file), and a link to the
+					rest on the save icons page.
+				*/}
 				{saveIcons.length > 0 && (
-					<ul className="flex shrink-0 gap-2" aria-label="Save icons">
-						{saveIcons.map(icon => (
+					<ul
+						className="flex shrink-0 items-center gap-2"
+						aria-label="Save icons"
+					>
+						{headerIcons.map(icon => (
 							<li key={icon.id}>
 								<Link
-									href={`/save-icons?${new URLSearchParams({ q: game.en })}`}
+									href={allSaveIcons}
 									title={`Save icon: ${icon.title}`}
 									className="focus-visible:ring-ring block outline-none focus-visible:ring-1"
 								>
@@ -135,6 +149,17 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 								</Link>
 							</li>
 						))}
+						{saveIcons.length > headerIcons.length && (
+							<li>
+								<Link
+									href={allSaveIcons}
+									title={`All ${saveIcons.length} save icons`}
+									className="text-muted-foreground hover:text-foreground focus-visible:ring-ring flex h-8 items-center px-1 text-xs outline-none focus-visible:ring-1"
+								>
+									+{saveIcons.length - headerIcons.length}
+								</Link>
+							</li>
+						)}
 					</ul>
 				)}
 			</header>
