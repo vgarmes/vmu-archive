@@ -1,0 +1,19 @@
+{
+	"title": "Trade: complete, please disconnect",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000000000000000000000000000000000000000000000000000000000000e700e039ff00a500bfef0500a500ab01ed00b500b57ddd009d7f9fc7d500a550a4ffd500bddfbc83d500a5b0a1d5d700a460a1319500e7c0e1fff70000000000000000000001c003ffe7ffff7e76d6bda888abd456b0efaac1b6d6bda8eeeb2476bdedecbaa6f6bdedeebba2add39b99a6a3bf7efeff3ce000000000000000000000000000000000000000000000000000000000000000000000000"
+	],
+	"tags": [
+		"vs-com",
+		"letters"
+	],
+	"hash": "e46264bbf219fbe088e334ea328c74f840effda7",
+	"added": "2026-11-05"
+}

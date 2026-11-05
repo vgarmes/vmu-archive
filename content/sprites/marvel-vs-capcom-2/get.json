@@ -1,0 +1,22 @@
+{
+	"title": "GET!",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 7,
+	"bpp": 1,
+	"frames": [
+		"001fffffbc0000304080a4000027cff7a40000244094240000274f943c00003040942400001fff9c3c00"
+	],
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 15146
+	},
+	"tags": [
+		"vs-com",
+		"banner"
+	],
+	"hash": "b232cb67cfe66bca1299b2798902069a54a0ccab",
+	"added": "2026-11-05"
+}

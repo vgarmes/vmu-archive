@@ -1,0 +1,26 @@
+{
+	"title": "Character number",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 28,
+	"bpp": 1,
+	"frames": [
+		"01c0fffc0000137c9b4400083237f954000c73610a54000e3235eb57000c13779b45000801dcffff000007fffffc0000145a3b44000835dad954000c75c21a54000e35dabb57000c145adb45000807ffffff000001c0fffc0000037c9b4400000237f954000003610a5400000235eb57000003779b45000001dcffff000007fffffc0000045a3b44000005dad954000005c21a54000005dabb570000045adb45000007ffffff0000"
+	],
+	"glyphs": {
+		"height": 7
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 13932
+	},
+	"tags": [
+		"vs-com",
+		"letters"
+	],
+	"hash": "2cb6477fb085c1f5ddade0d1bf09f8e7b15c890f",
+	"added": "2026-11-05"
+}

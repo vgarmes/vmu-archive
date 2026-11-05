@@ -1,0 +1,26 @@
+{
+	"title": "Sound settings",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 24,
+	"bpp": 1,
+	"frames": [
+		"7e700e0ef8705a503bfb8fdf5bdf2b51ac01db05eb5fadfd81766bf17505db57e8ffffdf5b546b3107dc7bd45bfff7c41a35da11aedc76ef3a15de1f4c9cea1125e178f78e1fff3f0000000000001c3fff7dfe7017618d57435c11df75535d4616df75535d5a16e375555d5a75bd75565dd6477d75d65d1c4c438e374330787efbfdffe0000000000000000000000000"
+	],
+	"glyphs": {
+		"height": 12
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 15284
+	},
+	"tags": [
+		"vs-com",
+		"banner"
+	],
+	"hash": "e0bb790f825f93b2ce2a387668b7f00a7c4296cb",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,21 @@
+{
+	"title": "Question mark",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 20,
+	"bpp": 1,
+	"frames": [
+		"00007ffe00000000c0030000000187e18000fffd0c30bfff8c7d0810be31c63d0bd0bc63e31d9b90b8c7f18cf030b18ff8c601e1a31ff8c7fb03231ff18ffa7e718fe31ffa40f8c7c63ffa5ffc638c7ffbdffe31fffff81fffff000003c00000000006600000000004200000000006600000000003c00000"
+	],
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 14208
+	},
+	"tags": [
+		"vs-com"
+	],
+	"hash": "7fb087a51a51dfa98c342b8e4b6ef025f367b3e9",
+	"added": "2026-11-05"
+}

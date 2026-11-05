@@ -1,0 +1,27 @@
+{
+	"title": "Menu items",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 135,
+	"bpp": 1,
+	"frames": [
+		"0000000000007fffffffffff6ca97169c5476dab752add57eca9754ac6c76dab716add5f64d93569c55b7fffffffffff0000000000000000000000003fffffffffff3bcbcc4568c730abad552dbffae9ed554dcf36eaec556df73ddbddc56d8f3fffffffffff0000000000000000000000003fffffffffff35153c4568c735555d552dbff5553d554dcf3b555c556df73b115dc56d8f3fffffffffff0000000000000000000000003fffffffffff3518a88fffff357baaaffffff5188aafffff35deaa8fffff3b18a8bfffff3fffffffffff0000000000000000000000003fffffffffff31511fffffff37555ffffffff1155fffffff3d551fffffff31517fffffff3fffffffffff0000000000000000000000003fffffffffff3bfce67d45ff31bfd57d75fffb08744d74ff31af777f6d7f3bbceefcd5ff3fffffffffff0000000000000000000000003fffffffffff35153e2a271f35555eeaaafff5553ee2273f3b555eeaabdf3b115e2aaa373fffffffffff0000000000000000000000003fffffffffff3bfce67bbf5f31bfd57bbf6ffb087449b93f31af777aaf5f3bbceefb9f7f3fffffffffff0000000000000000000000003fffffffffff311cc61fffff3b6b5afffffffb085a3fffff3b5b5affffff3b6b461fffff3fffffffffff0000000000000000000000003fffffffffff317158a48fff35755daabffff5751daa8fff3171bdaebfff3715bdae8fff3fffffffffff0000000000000000000000003fffffffffff3688c636b7ff32bddad2affff48dc2149fff36bdd6d6afff368ddad6b7ff3fffffffffff0000000000000000000000003fffffffffff3aeff5d7c3ff30425683fadffadbd3d676ef3efbd5dfb6ef3df637e77b7f3fffffffffff0000000000000000000000003fffffffffff3885ad1fffff37b5a56ffffff9b5a96fffff3eb5ad6fffff31842d1fffff3fffffffffff0000000000000000000000003fffffffffff311f6d45ffff3dffd575fffffd115d74ffff3bbfdf6d7fff357f3cd5ffff3fffffffffff0000000000000000000000003fffffffffff388ce218ffff37db5ef7fffff9d85239ffff3edb5afeffff31db6211ffff3fffffffffff000000000000"
+	],
+	"glyphs": {
+		"height": 9
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 12212
+	},
+	"tags": [
+		"vs-com",
+		"menu",
+		"letters"
+	],
+	"hash": "73c83acfd7c10cb85a31171f822140992612504d",
+	"added": "2026-11-05"
+}

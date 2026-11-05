@@ -1,0 +1,25 @@
+{
+	"title": "Menu arrows",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 8,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"f8e0f0b8981c0c0c00f8e0f0b89818000c0c1c98b8f0e0f8001898b8f0e0f800"
+	],
+	"glyphs": {
+		"height": 8
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 11204
+	},
+	"tags": [
+		"vs-com",
+		"menu"
+	],
+	"hash": "ab1ab574ab07e14d9508f12685b802d76c100124",
+	"added": "2026-11-05"
+}

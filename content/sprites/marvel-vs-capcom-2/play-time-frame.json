@@ -1,0 +1,21 @@
+{
+	"title": "Play time frame",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 13,
+	"bpp": 1,
+	"frames": [
+		"0ffffffffff818000000000c1000000000041000000000041000e00380041000a00280041000e00380041000a00280041000e003800410000000000410000000000418000000000c0ffffffffff8"
+	],
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 14418
+	},
+	"tags": [
+		"vs-com"
+	],
+	"hash": "46a133014c57c892080fa9ab8b92c1ae0b5016e6",
+	"added": "2026-11-05"
+}

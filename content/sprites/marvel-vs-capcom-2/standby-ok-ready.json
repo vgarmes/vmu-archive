@@ -1,0 +1,26 @@
+{
+	"title": "Standby OK, Ready",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 14,
+	"bpp": 1,
+	"frames": [
+		"1ffe39fffff81193ef6024481d5d56e724480d1d5ca723c81bdd5aa7207815b2eea024481fffffbffff8001ffffff80000118cc6a8000016bb5aa8000010985aa8000015bb5b780000168b476800001ffffdf800"
+	],
+	"glyphs": {
+		"height": 7
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 15194
+	},
+	"tags": [
+		"vs-com",
+		"banner"
+	],
+	"hash": "628260b7c229e38e0aa25934a599336f4772b5e0",
+	"added": "2026-11-05"
+}

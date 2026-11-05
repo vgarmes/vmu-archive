@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "DOWNLOAD file",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#aa9988ff",
+		"#ffddaaff",
+		"#ffbb88ff",
+		"#cc8844ff",
+		"#bb5500ff",
+		"#ffff00ff",
+		"#ffffffff",
+		"#bbccbbff",
+		"#778877ff",
+		"#ff5555ff",
+		"#ff3311ff",
+		"#cc2211ff",
+		"#aa3311ff",
+		"#883311ff",
+		"#662211ff",
+		"#ff9900ff"
+	],
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff444444ffffffffffffffffffffffff4444444444ffffffffffffffffff223255234444444ffffffffffffffff25255225233444434ffffffffffffff3553552223355333334fffffffffffff3234325555225533334ffffffffffff323444433255522533444fffffffffff334444213432553224444fffffffffff333442111344355323444fffffffffff3324211112444352334444fffffffffff312111111244432413444fffffffffff3111111211234431314444ffffffffff3111113111123442414ddddfffffffff42111d2111112444134dfffffffffffff4213ddd42112442344dfffffffffffffd3123dd6111434dd44dfffffffffffff43211432114334dcddaabffffffffff442111112144441dbadabffffffffffffd43211231124113baabffffffffffffff43dd4311231135babcbbcfffffffffffa4321123322325bacaaaacfffffffffbaa4433443325237acbaaabcfffffffbaaaaaab325255377bcbbbacabffffffffcccbaab33233553bcabbbcaafffffffbbbaabba725522553caabcbaaffffffbaaabaaab2555535553aaadbaa"
+	],
+	"animationSpeed": 5,
+	"vmuName": "MVS.C2_DOWNLOAD",
+	"description": "ﾏｰｳﾞﾙ VS.ｶﾌﾟｺﾝ 2_DOWNLOADﾌｧｲﾙ",
+	"source": {
+		"kind": "disc",
+		"file": "/1ST_READ.BIN"
+	},
+	"tags": [],
+	"hash": "159b35d3c8125ecfe9577df0bcbc7adf63762871",
+	"added": "2026-11-05"
+}

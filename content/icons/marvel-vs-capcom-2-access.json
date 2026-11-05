@@ -1,0 +1,17 @@
+{
+	"title": "Access",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000016ffffffff6816f9cc8ccf6816f6bbbbbf6816f0bb8ddf6816f6bbbeef6816f6cc899f6816ffffffff680000000000007ffffe00000056c54a3fe00045555a603800544d4b800c005556c93f04007fffffff8400007b8ffffffe005bbf9b122a00591fb556a2005d4fb136aa005c6f95722a006e8bfffffe002fffc300000037ff0e00000019fc380000000e70e3e0000003838e6000000e0e38c00000383fe1800000600003000000c00006000000fffffc0000000000000000"
+	],
+	"tags": [
+		"memory-card"
+	],
+	"hash": "d49de262dca95c4c39be7700befe46f9bc4fe3c3",
+	"added": "2026-11-05"
+}

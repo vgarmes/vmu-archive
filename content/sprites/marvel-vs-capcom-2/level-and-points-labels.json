@@ -1,0 +1,25 @@
+{
+	"title": "Level and points labels",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 28,
+	"bpp": 1,
+	"frames": [
+		"01dfffc000000151515c00000157575400000151515c00000177577400000111b11c000001fffff00000000001f1f000000001191fe00000016f5b200000016951600000016f1bb8000001197928000001f1cff8000001f9f000000001691fe00000012f5b200000014951600000016f1bb8000001697928000001f9cff8000001f9f000000001691fe00000016f5b200000016951600000010f1bb8000001997928000000f1cff8"
+	],
+	"glyphs": {
+		"height": 7
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 13764
+	},
+	"tags": [
+		"vs-com",
+		"letters"
+	],
+	"hash": "63f61b50c26b67ff279caa0cc20a83118390a9f3",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,22 @@
+{
+	"title": "Win, lose",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 32,
+	"height": 15,
+	"bpp": 1,
+	"frames": [
+		"effc0000aab70000ba950000aaa70000aab50000d6b700007ffc000000000000fffc0000b1270000b56d0000b5270000b5ad000091270000fffc0000"
+	],
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 14538
+	},
+	"tags": [
+		"vs-com",
+		"letters"
+	],
+	"hash": "8f7df1d126f795ef02f9f38b67584d9016151c27",
+	"added": "2026-11-05"
+}

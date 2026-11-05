@@ -1,0 +1,26 @@
+{
+	"title": "Shop prompts",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 28,
+	"bpp": 1,
+	"frames": [
+		"1ffffffff9f810844a086f0817befbef4168148ecbef6dd816befb2eed701086c7d95b501ffffc7ffe700003ffffc0000002108840000002f7db4000000291dec0000002d7d38000000210d280000003fff380000000ffff0000000084a10000000094ad00000000947b0000000094ae0000000084aa00000000ffee0000ffffffffffff063371f9b44005ed76f6b6c0066d76f6b6c007ad76f6b6c0047311f9cec0ffffffffffff"
+	],
+	"glyphs": {
+		"height": 7
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 20683
+	},
+	"tags": [
+		"vs-com",
+		"letters"
+	],
+	"hash": "547c8d8a29d51d522c8c5271d59a96436fb2eb93",
+	"added": "2026-11-05"
+}

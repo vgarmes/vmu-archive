@@ -1,0 +1,18 @@
+{
+	"title": "Title screen",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"7ffffe00000056c54a3fe00045555a603800544d4b800c005556c93f04007fffffff8400007b8ffffffe005bbf9b122a00591fb556a2005d4fb136aa005c6f95722a006e8bfffffe002fffc30ff00037ff0e0a900019fc380ab0000e70e3eadc0003838e6d96000e0e38dffe00383fe1b22a006000032ea200c000062eaa00fffffc322a000000001ffe00000000000003ffffe7c780022222247cc002aaeee56d4002aa222544c00226fba46d4002ea22257c4003bfffe7c7c0000000000000"
+	],
+	"tags": [
+		"vs-com",
+		"logo"
+	],
+	"hash": "60b3de32bde669d457f41df4eca5ae8c6716837c",
+	"added": "2026-11-05"
+}

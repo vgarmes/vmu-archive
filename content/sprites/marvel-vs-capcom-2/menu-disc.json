@@ -1,0 +1,22 @@
+{
+	"title": "Menu disc",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 16,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"f0001e00e380fcc0ff609fb087d881ec80f48076807a803a803b803d801dfffdfffd801d803d803b807a807a80f681f483ec8fd8bfb0ff60fcc0e3801e00f000"
+	],
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 11236
+	},
+	"tags": [
+		"vs-com",
+		"menu"
+	],
+	"hash": "946fe7804a04558cfd9bf6b1fbaca24c2976f9e4",
+	"added": "2026-11-05"
+}

@@ -3,16 +3,15 @@
 	"gameId": "marvel-vs-capcom-2",
 	"publisher": "Capcom",
 	"year": 2000,
-	"region": "US",
 	"width": 48,
 	"height": 32,
 	"bpp": 1,
 	"frames": [
-		"000000000000000000000000000000000000ffffff0000008000017ff000a93ab5c01c00baaaa51fc600bab2b47ff200abaaa4c0fa00aaa936007a00800000007bffff843000000100a44064edd500a4404aa95d00a2a04ec95d00a2904a895500a1106a8dd500916400000100d0003cffff004800f18000006603c7f00000318f1c1000001c7c7190000071f1c7300000c7c01e6000019ffffcc000013ffff9800001000003000001fffffe0000000000000000000000000000000000000000"
+		"ffffffffffffffffffffffffffffffffffff000000ffffff7ffffe800fff56c54a3fe3ff45555ae039ff454d4b800dff54555b3f05ff5556c9ff85ff7fffffff8400007bcffffffeff5bbf9b122aff5bbfb556a2ff5d5fb136a2ff5d6fb576aaff5eef95722aff6e9bfffffeff2fffc30000ffb7ff0e7fffff99fc380fffffce70e3efffffe3838e6fffff8e0e38cfffff383fe19ffffe6000033ffffec000067ffffefffffcfffffe000001ffffffffffffffffffffffffffffffffffffffff"
 	],
 	"tags": [
 		"logo"
 	],
-	"hash": "26d226aea5a8c72be00c4dafbeb02815ff02a0cf",
+	"hash": "8a8de66a2bb526f93a4173717d48648cd520c60e",
 	"added": "2026-10-10"
 }

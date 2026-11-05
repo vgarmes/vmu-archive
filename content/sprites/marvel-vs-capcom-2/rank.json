@@ -1,0 +1,22 @@
+{
+	"title": "Rank",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 48,
+	"height": 7,
+	"bpp": 1,
+	"frames": [
+		"56efefffffff56efec30cc9356efec92449356efec92488f56efec704c9356efec924c9356efefffffff"
+	],
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 14496
+	},
+	"tags": [
+		"vs-com",
+		"banner"
+	],
+	"hash": "22419c148e89c84c589d555c2c6f5ccbc3c35503",
+	"added": "2026-11-05"
+}

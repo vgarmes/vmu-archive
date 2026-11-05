@@ -1,0 +1,22 @@
+{
+	"title": "Figure",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 16,
+	"height": 16,
+	"bpp": 1,
+	"frames": [
+		"000000e0013e07e209f40ff40feeffff905f93fefd2c051c0bf209e1071f0000"
+	],
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 10612
+	},
+	"tags": [
+		"vs-com",
+		"character"
+	],
+	"hash": "3d802ff11af461214ce039a39690aade7125e2b2",
+	"added": "2026-11-05"
+}

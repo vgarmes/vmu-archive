@@ -1,0 +1,26 @@
+{
+	"title": "Digits",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"width": 8,
+	"height": 70,
+	"bpp": 1,
+	"frames": [
+		"f888a8a8a888f878486828282838f888e888b888f8f888e888e888f8f8a8a888e82838f888b888e888f8f888b888a888f8f888a8e8282838f888a888a888f8f888a888e888f8"
+	],
+	"glyphs": {
+		"height": 7
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 18273
+	},
+	"tags": [
+		"vs-com",
+		"font",
+		"digits"
+	],
+	"hash": "d5540f5f359289773e9685ae5508d9e55bda94bc",
+	"added": "2026-11-05"
+}

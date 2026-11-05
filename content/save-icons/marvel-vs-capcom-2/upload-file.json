@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "UPLOAD file",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#aa9988ff",
+		"#eeffffff",
+		"#ccccaaff",
+		"#ffccbbff",
+		"#dd9977ff",
+		"#aa6644ff",
+		"#663322ff",
+		"#00ddbbff",
+		"#00aa88ff",
+		"#007777ff",
+		"#7799ffff",
+		"#5566ccff",
+		"#445599ff",
+		"#003355ff",
+		"#ff4400ff",
+		"#ffff00ff"
+	],
+	"frames": [
+		"ccccccc52225222226cccccccccccccc5cccccc5225222226ccccccccccccccc2cccccc524522225cccccccccccccccc26ccccc545222256cccccccccccccccc26cccc555222226ccccccccccccccccc6cccc5222222e6cccccccccccccccccccccc5222e256cecc5cccccccccccccccccc522e22eee5ce5ceccccccccccccccccc2e22eee5eee5eececccccccccccccdc522eeeeee5eeeeee5ecccccccccccc9d222eeeeeeeeeeeeeeeeccccccccccc79dd5eeeeeeeeeeeeeeee555cccccccc78d9c5eeeeeeeeeeeeeeeeeee5cccccc87988ce5ee5eeeeeeeeeecccce5ccccc8898895e5ee5e5eeeee55eecccc5cccc9999cc5ee5e45e45ee5eeeeeeccc5ccc99d88356e5e33e34ee5e555eeecccccc9d888363e554333335445cccceeccccccd888363e346433333335ccccccecccc9d8883365335163333356ccccccceccc9d98834463335ab545b6ccccccccc5cc8dc99944643333333646cccccccccccc89dddd6666333334646ccccccccccccc8899df654463355646cccccccccccccc789d5654444643446cccccccccddcccc889d655544446666cccccccccdbbdccc889d6665555446cccccddccccdaadccc889d6555444456ccccdaacccdcadcddc88cd66554444456cccdaadcdcbdccdbd89dcc6555444446cccdbacdbbcdddbadddcccc6554444456ccdddbbdbbcdbaadcccccc6555444456ccdcbbbdcbbdccdc"
+	],
+	"animationSpeed": 5,
+	"vmuName": "MVS.C2_UPLOAD",
+	"description": "ﾏｰｳﾞﾙ VS.ｶﾌﾟｺﾝ 2_UPLOADﾌｧｲﾙ",
+	"source": {
+		"kind": "disc",
+		"file": "/1ST_READ.BIN"
+	},
+	"tags": [],
+	"hash": "6c8ea32c8978aa62bd4708090bec7811a04810e6",
+	"added": "2026-11-05"
+}

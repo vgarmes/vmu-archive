@@ -1,0 +1,26 @@
+{
+	"title": "Which character?",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 48,
+	"height": 16,
+	"bpp": 1,
+	"frames": [
+		"0fdc39dc3ff01b776d542b9811a5c7742d681a72ed35e7e80be6f3572a5809d6eb75ee700a77615328500ffdffde38700000000000003bffffbfff782ab516a2d1cc2eb576aed6b42a8570ae10ec2ab576aed5bc35b516a2d6a81fffffbfffb8"
+	],
+	"glyphs": {
+		"height": 8
+	},
+	"source": {
+		"file": "/VS4.BIN",
+		"offset": 14838
+	},
+	"tags": [
+		"vs-com",
+		"letters"
+	],
+	"hash": "aa9ca0742dc1a15f2b40aace5af059931155e839",
+	"added": "2026-11-05"
+}

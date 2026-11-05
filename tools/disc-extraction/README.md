@@ -67,15 +67,16 @@ Every game so far did it differently. What has turned up:
 **Where it lives.**
 
 - In the program itself, `1ST_READ.BIN`, with no file of its own: Bangaioh,
-  Crazy Taxi 2, Ikaruga, Jet Set Radio, Moero! Justice Gakuen, Power Stone 1
-  and 2, Street Fighter III 3rd Strike.
+  Crazy Taxi 2, Ikaruga, Jet Set Radio, Marvel vs. Capcom 2, Moero! Justice
+  Gakuen, Power Stone 1 and 2, Street Fighter III 3rd Strike.
 - In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
   `TYPE_E.EXE` (a PE file; map addresses through its section table).
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
 - In a VMU program the game carries for the VMU to run, with its own code:
   Shenmue Passport's Goodies viewer (`SYEN.BIN`), Power Stone Mini, a whole
   VMS image inside Power Stone's `1ST_READ.BIN`, and Jet Set Radio's graffiti
-  viewer, the first member of `JETRADIO/SYSOPTION.AFS`. Find one by its VMS header
+  viewer, the first member of `JETRADIO/SYSOPTION.AFS`, and Marvel vs.
+  Capcom 2's VS.COM, `/VS4.BIN`, which the game writes to the memory card. Find one by its VMS header
   (a 16-byte description at `+0x200`); read its code with `lc86k.py`.
 - In a system ROM, not a disc: the VMU's own BIOS (fonts and clock sprites,
   from which it builds every screen) and the Dreamcast's `dc_boot.bin` (its
@@ -158,5 +159,6 @@ The code also says what the game never shows: screens nothing calls are marked
 | Crazy Taxi 2                     | US v1.004 (2001, Sega)                     | [`crazytaxi2/`](crazytaxi2/)   | [crazy-taxi-2](../../content/games/crazy-taxi-2.md)                                                                       |
 | Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                   | [`eva-typing/`](eva-typing/)   | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
 | Jet Set Radio                    | JP (2000, Sega), Redump                    | [`jsr/`](jsr/)                 | [jet-set-radio](../../content/games/jet-set-radio.md)                                                                     |
+| Marvel vs. Capcom 2              | JP (2000, Capcom), Redump                  | [`mvc2/`](mvc2/)               | [marvel-vs-capcom-2](../../content/games/marvel-vs-capcom-2.md)                                                           |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
 | Visual Memory Unit, Dreamcast    | US VMU BIOS v1.05, `dc_boot.bin` (Sega)    | [`bios/`](bios/)               | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

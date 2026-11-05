@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Capcom network file",
+	"gameId": "marvel-vs-capcom-2",
+	"publisher": "Capcom",
+	"year": 2000,
+	"region": "JP",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#0000ffff",
+		"#3300bbff",
+		"#4411aaff",
+		"#55eeffff",
+		"#662299ff",
+		"#bb8855ff",
+		"#cc6666ff",
+		"#ccaa44ff",
+		"#ff5544ff",
+		"#ff6644ff",
+		"#ff7744ff",
+		"#ff8833ff",
+		"#ff9933ff",
+		"#ffbb33ff",
+		"#ffdd22ff",
+		"#ffee22ff"
+	],
+	"frames": [
+		"eddddddddddddddddddddddddddddddcc8888889999aaaaaaaaaa9999989888bc8888999a9aa9644212246999998888bc8889999aa941111111111169999988bc88999aaa6111265777562112899998bc8999aaa41147ffffffffe52118a998bc999aaa4116ffffffffffffd4116999bc999aa6117ffffff757effffe411899bc99aa8115fffff7411127ffffd114a9bc99aa414fffff71124112efff6129a9bc9aa9117ffffd216dd5117ff4128ba9bc9aa614fffff614ddd511ef6115bbb9bcaab415fffff215ddd61156115cbbbabc9ab217ffffe117eeed411115cccbbabc9ab11dffffd11deeeed6116ccccbbabcaab117ffffe117efeeed56ddcccbbabc9bb217fffff215eeeeeddddccccbbabc9ab415fffff614eeeeeddddccccbbabc9bb614fffffd115eeeddd644446bbabc9aa9117fffff5116dedd5111114bbabc9abb414efffff51126641124214bbabc9aab9116ffffff72111114df614baabc9aabb6115ffffffe56465fff614baabc333333333333333333333333333333bc300003300030000000030000000003bc300000300030003333333330003333bc300000000030000000344430003998bc300030000030003333322230003999bc30003300003000333333bb30003988bc30003330003000000003aa30003988bc33333933333333333333aa33333888b86666666666666666666666666666665"
+	],
+	"animationSpeed": 5,
+	"vmuName": "CAP-NET_NETﾌｧｲﾙ",
+	"description": "カプコン　ネットワークファイル",
+	"source": {
+		"kind": "disc",
+		"file": "/1ST_READ.BIN"
+	},
+	"tags": [],
+	"hash": "467c011b189e5c84d037356f68c817101e42da2c",
+	"added": "2026-11-05"
+}
