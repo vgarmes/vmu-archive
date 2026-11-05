@@ -31,7 +31,7 @@
 	"description": "Evangelion Typing-E",
 	"source": {
 		"kind": "save",
-		"file": "type_e01.VMS"
+		"file": "EVATYPEE.DAT"
 	},
 	"tags": [],
 	"hash": "060d28094abe87a10f6acc0b67c20807cca75382",

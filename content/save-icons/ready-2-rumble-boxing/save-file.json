@@ -31,7 +31,7 @@
 	"description": "Ready 2 Rumble Boxing",
 	"source": {
 		"kind": "save",
-		"file": "00000013.VMS"
+		"file": "R2RUMBLE.SYS"
 	},
 	"tags": [],
 	"hash": "4f63c84975c4c47dc29b5488a4a8ba80d70b70dc",

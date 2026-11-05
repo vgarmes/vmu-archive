@@ -31,7 +31,7 @@
 	"description": "KONOHANA:TrueReport",
 	"source": {
 		"kind": "save",
-		"file": "00000004.VMS"
+		"file": "KONOHANA.DAT"
 	},
 	"tags": [],
 	"hash": "a5381c9aedff069b28a11e346d07d7d9c4fd9f8d",

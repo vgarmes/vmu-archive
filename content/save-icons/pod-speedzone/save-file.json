@@ -31,7 +31,7 @@
 	"description": "POD SPEEDZONE",
 	"source": {
 		"kind": "save",
-		"file": "podsave.VMS"
+		"file": "POD_MLTP.SYS"
 	},
 	"tags": [],
 	"hash": "bfd782591496e1b38d3abdfcd273ee37d2c4acf0",

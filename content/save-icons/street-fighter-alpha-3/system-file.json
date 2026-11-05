@@ -31,7 +31,7 @@
 	"description": "SFALPHA3_SYSTEM_FILE",
 	"source": {
 		"kind": "save",
-		"file": "v27946.VMS"
+		"file": "SFALPHA3.SYS"
 	},
 	"tags": [],
 	"hash": "7494bddad6ed9d74e952bbbcb196c97cdf5420fa",

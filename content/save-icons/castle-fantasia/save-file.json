@@ -31,7 +31,7 @@
 	"description": "キャッスルファンタジア　聖魔大戦",
 	"source": {
 		"kind": "save",
-		"file": "CASTLEFA.VMS"
+		"file": "CF2R_DC_SAVE"
 	},
 	"tags": [],
 	"hash": "f40ea43a4209588f2612f4cbb34eb45f815fa288",

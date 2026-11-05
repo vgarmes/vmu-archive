@@ -33,7 +33,7 @@
 	"description": "SONIC ADVENTURE 2 / Main File",
 	"source": {
 		"kind": "save",
-		"file": "SONIC_2.VMS"
+		"file": "SONIC2___S01"
 	},
 	"tags": [],
 	"hash": "32f5aead02d38ce4f7e2044f7d0f6a038834e8bd",

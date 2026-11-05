@@ -33,7 +33,7 @@
 	"description": "MaximumPool Prefs",
 	"source": {
 		"kind": "save",
-		"file": "MAX2.VMS"
+		"file": "MAXPOOL2.SYS"
 	},
 	"tags": [],
 	"hash": "a529236f1048c59ee19744b20fdc17f8ea0723f4",

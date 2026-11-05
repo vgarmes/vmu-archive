@@ -33,7 +33,7 @@
 	"description": "THE TYPING OF THE DEAD",
 	"source": {
 		"kind": "save",
-		"file": "TYPEDEAD.VMS"
+		"file": "TOD_DC_E.SYS"
 	},
 	"tags": [],
 	"hash": "168275990c38a50888f79b930c4a5ddf07065709",

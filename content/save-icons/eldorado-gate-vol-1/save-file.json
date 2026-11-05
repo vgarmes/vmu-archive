@@ -31,7 +31,7 @@
 	"description": "エルドラドゲート データ１",
 	"source": {
 		"kind": "save",
-		"file": "eldgate1.VMS"
+		"file": "ELDORADO.001"
 	},
 	"tags": [],
 	"hash": "31a8c266ec3a8188bd2f2cdb46f1091c5e0307cc",

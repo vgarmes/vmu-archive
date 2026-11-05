@@ -31,7 +31,7 @@
 	"description": "パワースマッシュ",
 	"source": {
 		"kind": "save",
-		"file": "psmash1.VMS"
+		"file": "POWER_SMASH."
 	},
 	"tags": [],
 	"hash": "8bb5a1860296c011bcc12e859cdcd48afabd406a",

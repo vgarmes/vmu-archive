@@ -31,7 +31,7 @@
 	"description": "Prince of Persia 3D Save File",
 	"source": {
 		"kind": "save",
-		"file": "v18551.VMS"
+		"file": "PRINCELV.SYS"
 	},
 	"tags": [],
 	"hash": "cd82043b8134044a0dee4d3ac983797904799b83",

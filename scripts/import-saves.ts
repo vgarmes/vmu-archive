@@ -56,7 +56,10 @@ interface Sidecar {
 }
 
 interface Read {
+	/** The dumped .VMS's name, as "titles" refers to it. */
 	file: string
+	/** The save's name on the memory card, from its .VMI (0x58, 12 bytes). */
+	name?: string
 	kind: SaveIcon['kind']
 	vmuName: string
 	description: string
@@ -115,18 +118,21 @@ function readSave(vms: string): Read {
 				path.extname(f).toLowerCase() === '.vmi' &&
 				path.basename(f, path.extname(f)).toLowerCase() === stem.toLowerCase()
 		)
-	const mode = vmi ? fs.readFileSync(path.join(dir, vmi)).readUInt16LE(0x64) : 0
+	const info = vmi ? fs.readFileSync(path.join(dir, vmi)) : undefined
+	const mode = info ? info.readUInt16LE(0x64) : 0
+	const name = info ? text(info.subarray(0x58, 0x64)) || undefined : undefined
 	const d = fs.readFileSync(vms)
 	const first = mode & 2 ? 0x200 : 0 // a VMU program keeps its header at 0x200
 	const h = [first, 0x200 - first].find(at => headerAt(d, at))
 	if (h === undefined) {
 		const icondata = readIcondata(d, file)
-		if (icondata) return icondata
+		if (icondata) return { ...icondata, name }
 		throw new Error(`${file}: neither a save header nor ICONDATA_VMS`)
 	}
 	const count = headerAt(d, h)!
 	return {
 		file,
+		name,
 		kind: 'save',
 		vmuName: text(d.subarray(h, h + 0x10)),
 		description: text(d.subarray(h + 0x10, h + 0x30)),
@@ -137,6 +143,8 @@ function readSave(vms: string): Read {
 		)
 	}
 }
+
+const withName = (s: Read) => (s.name ? { file: s.name } : {})
 
 function existingHashes() {
 	const hashes = new Map<string, string>()
@@ -239,8 +247,9 @@ function main() {
 			description: first.description,
 			source: {
 				kind: 'save',
-				// The save that named it; the others carrying it add nothing.
-				file: files.find(f => sidecar.titles[f]) ?? files[0]
+				// The memory card name of the save that named it (the dump's own
+				// file names are its uploader's), or none without a .VMI.
+				...withName(group.find(s => sidecar.titles[s.file]) ?? first)
 			},
 			tags: sidecar.tags ?? [],
 			hash,

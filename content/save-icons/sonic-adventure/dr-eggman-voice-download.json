@@ -33,7 +33,7 @@
 	"description": "SONIC ADVENTURE / DrEGGMAN Voice",
 	"source": {
 		"kind": "save",
-		"file": "SA1_V17.VMS"
+		"file": "SONICADV_V17"
 	},
 	"tags": [],
 	"hash": "0f727c273521471f82f8a02a850f6f3499845c19",

@@ -31,7 +31,7 @@
 	"description": "SpiderMan Save File",
 	"source": {
 		"kind": "save",
-		"file": "SPIDER01.VMS"
+		"file": "SPIDRMAN.DAT"
 	},
 	"tags": [],
 	"hash": "486255aaa3b0e90a8db49a47b9a51daba784d6fe",

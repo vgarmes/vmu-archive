@@ -31,7 +31,7 @@
 	"description": "SEGA MARINE FISHING SYSTEM",
 	"source": {
 		"kind": "save",
-		"file": "v21653.VMS"
+		"file": "MARINE_F.SYS"
 	},
 	"tags": [],
 	"hash": "b57ad54bf29b39e12018e8691fbb2bce130272cc",

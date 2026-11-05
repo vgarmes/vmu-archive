@@ -31,7 +31,7 @@
 	"description": "NFL Blitz 2000",
 	"source": {
 		"kind": "save",
-		"file": "v21453.VMS"
+		"file": "BLTZ2000.SYS"
 	},
 	"tags": [],
 	"hash": "0cec3c052c2047b295f8e9d099632aee8caffd84",

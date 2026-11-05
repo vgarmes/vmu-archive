@@ -31,7 +31,7 @@
 	"description": "TOY COMMANDER : SAVED GAME",
 	"source": {
 		"kind": "save",
-		"file": "00000621.VMS"
+		"file": "TOY_COMM.JAC"
 	},
 	"tags": [],
 	"hash": "68155dbe9cc7f4a5e978c89bf508e204b250a7ad",

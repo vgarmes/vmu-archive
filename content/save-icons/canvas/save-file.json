@@ -31,7 +31,7 @@
 	"description": "Ｃａｎｖａｓ",
 	"source": {
 		"kind": "save",
-		"file": "CANVAS.VMS"
+		"file": "CANVAS__.SYS"
 	},
 	"tags": [],
 	"hash": "ffcec84329bb7c567203290ebd63ca9652994c18",

@@ -32,7 +32,7 @@
 	"description": "Gundam外伝 Premium Disc",
 	"source": {
 		"kind": "save",
-		"file": "GUNDAM1.VMS"
+		"file": "GUNDAM_PD_01"
 	},
 	"tags": [],
 	"hash": "adeda7093cc7967238523b4ae3499bc67946d597",

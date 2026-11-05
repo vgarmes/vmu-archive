@@ -33,7 +33,7 @@
 	"description": "セガテトリスセーブデータ",
 	"source": {
 		"kind": "save",
-		"file": "00000025.VMS"
+		"file": "SEGATETRIS00"
 	},
 	"tags": [],
 	"hash": "2f3c2c551391bc1605648772e55fc0b0f69c1d3b",

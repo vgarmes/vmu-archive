@@ -31,7 +31,7 @@
 	"description": "F355 Challenge LONG-BEACH Data",
 	"source": {
 		"kind": "save",
-		"file": "v59007.VMS"
+		"file": "F355DATA.LNG"
 	},
 	"tags": [],
 	"hash": "f709f68a70f539e7c99f57cb9616b490b27e7018",

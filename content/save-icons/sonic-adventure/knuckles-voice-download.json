@@ -33,7 +33,7 @@
 	"description": "SONIC ADVENTURE / KNUCKLES Voice",
 	"source": {
 		"kind": "save",
-		"file": "SA1_V13.VMS"
+		"file": "SONICADV_V13"
 	},
 	"tags": [],
 	"hash": "726d53ca9756a2cacbfd293789443737158620b2",

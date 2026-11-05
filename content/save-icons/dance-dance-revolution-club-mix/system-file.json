@@ -31,7 +31,7 @@
 	"description": "DDR CLUB VER. システムファイル",
 	"source": {
 		"kind": "save",
-		"file": "DDRCLUB.VMS"
+		"file": "DDR_CLUB.SYS"
 	},
 	"tags": [],
 	"hash": "cdd2a9c017db5778bedf2045f72bba4cb560ef19",

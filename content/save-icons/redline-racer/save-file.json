@@ -33,7 +33,7 @@
 	"description": "Redline Racer Save Game",
 	"source": {
 		"kind": "save",
-		"file": "REDRACE.VMS"
+		"file": "REDLINER.SAV"
 	},
 	"tags": [],
 	"hash": "51cccf476daac7f4bc891c46d0863029e617ba45",

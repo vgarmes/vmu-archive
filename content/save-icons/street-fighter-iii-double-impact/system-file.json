@@ -31,7 +31,7 @@
 	"description": "STREET FIGHTER 3 DOUBLE IMPACT",
 	"source": {
 		"kind": "save",
-		"file": "v21939.VMS"
+		"file": "STF3_D_I.DAT"
 	},
 	"tags": [],
 	"hash": "e0e5237dce11a62e27c6c254f3a6aa4d31af0d56",

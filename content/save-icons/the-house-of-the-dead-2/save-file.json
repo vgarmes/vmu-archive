@@ -33,7 +33,7 @@
 	"description": "THE HOUSE OF THE DEAD 2",
 	"source": {
 		"kind": "save",
-		"file": "00000095.VMS"
+		"file": "HOD2DC_U.SYS"
 	},
 	"tags": [],
 	"hash": "2d29f284846cbcc386a77a681be9122ffbe87457",

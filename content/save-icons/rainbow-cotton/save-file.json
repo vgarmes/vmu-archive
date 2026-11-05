@@ -32,7 +32,7 @@
 	"description": "レインボー コットン",
 	"source": {
 		"kind": "save",
-		"file": "RAINCOT.VMS"
+		"file": "R_COTTON.SCO"
 	},
 	"tags": [],
 	"hash": "d8ddd010fa9c979ab21dc60e1fbd686a7dad3d7f",

@@ -33,7 +33,7 @@
 	"description": "どこでもポップンミュージック",
 	"source": {
 		"kind": "save",
-		"file": "POPMUSI1.VMS"
+		"file": "POPMUSIC1"
 	},
 	"tags": [],
 	"hash": "c162c99140f5303983aac9632fed02ce7307ebf5",

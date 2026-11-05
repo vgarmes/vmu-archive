@@ -33,7 +33,7 @@
 	"description": "PROPELLER ARENA SYSTEM",
 	"source": {
 		"kind": "save",
-		"file": "PARENA.VMS"
+		"file": "PROPARNA.SYS"
 	},
 	"tags": [],
 	"hash": "80f05f1c7b30a79bc7af5ec2c72bcd5072d6619e",

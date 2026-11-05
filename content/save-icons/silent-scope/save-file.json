@@ -32,7 +32,7 @@
 	"description": "サイレントスコープ",
 	"source": {
 		"kind": "save",
-		"file": "sscopejp.VMS"
+		"file": "SSCOPE01.DAT"
 	},
 	"tags": [],
 	"hash": "a7030bf71bec8c997cbb33becb336191f4c8ac6d",

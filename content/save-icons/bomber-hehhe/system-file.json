@@ -33,7 +33,7 @@
 	"description": "ボンバーヘッヘシステムファイル",
 	"source": {
 		"kind": "save",
-		"file": "bomberhe.VMS"
+		"file": "BOMB_HEH_SYS"
 	},
 	"tags": [],
 	"hash": "ba74ee25b14116c38caa2f10b5af4d520fd263e5",

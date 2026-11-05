@@ -31,7 +31,7 @@
 	"description": "機動戦艦ナデシコ",
 	"source": {
 		"kind": "save",
-		"file": "NADESICO.VMS"
+		"file": "NADESICO.001"
 	},
 	"tags": [],
 	"hash": "ab71b4aea65782097514a2cfdf4ca3abb5185a58",

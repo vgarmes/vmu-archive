@@ -32,7 +32,7 @@
 	"description": "ハローキティのダイエットルーム",
 	"source": {
 		"kind": "save",
-		"file": "KITTYCAT.VMS"
+		"file": "HELLO_KITTY"
 	},
 	"tags": [],
 	"hash": "62a2c92572024c183b90485b2f936d9fe357f1b4",

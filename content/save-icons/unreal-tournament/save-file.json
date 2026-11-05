@@ -31,7 +31,7 @@
 	"description": "UNREAL TOURNAMENT",
 	"source": {
 		"kind": "save",
-		"file": "UNREAL01.VMS"
+		"file": "UNREALTO.SYS"
 	},
 	"tags": [],
 	"hash": "8c7fe983b124fbcf17dde4e7cf10af7e6439aacb",

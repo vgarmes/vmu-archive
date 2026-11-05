@@ -31,7 +31,7 @@
 	"description": "AEROWINGS 2: AIR STRIKE",
 	"source": {
 		"kind": "save",
-		"file": "v22200.VMS"
+		"file": "AEROWIN2.SYS"
 	},
 	"tags": [],
 	"hash": "39cabd2b7acd27471b65be726787314178d6fe2d",

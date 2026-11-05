@@ -31,7 +31,7 @@
 	"description": "F355 Challenge Player Data",
 	"source": {
 		"kind": "save",
-		"file": "f355_1.VMS"
+		"file": "F355DATA.PLY"
 	},
 	"tags": [],
 	"hash": "db21b39db5d5406ed8dd235b33794b4f768afd61",

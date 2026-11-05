@@ -33,7 +33,7 @@
 	"description": "Ms. Pac-Man Maze Madness",
 	"source": {
 		"kind": "save",
-		"file": "PACMAN.VMS"
+		"file": "MSPACMMM.SYS"
 	},
 	"tags": [],
 	"hash": "8b192d9ff02afe932ef5a73f64603a9d4ad3a73e",

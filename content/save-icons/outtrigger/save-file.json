@@ -31,7 +31,7 @@
 	"description": "OUTTRIGGER SAVE FILE",
 	"source": {
 		"kind": "save",
-		"file": "OUTTRIGR.VMS"
+		"file": "OUTTRIGR.SYS"
 	},
 	"tags": [],
 	"hash": "9cb13e79d6b42139938a2bab8d9191be7eefe3b4",

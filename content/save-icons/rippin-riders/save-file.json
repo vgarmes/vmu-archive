@@ -31,7 +31,7 @@
 	"description": "Rippin' Riders        SYSTEMDATA",
 	"source": {
 		"kind": "save",
-		"file": "00000579.VMS"
+		"file": "R_RIDERS.SYS"
 	},
 	"tags": [],
 	"hash": "a79e049df0cfb81889caf15e1c807c49f2aa3fd6",

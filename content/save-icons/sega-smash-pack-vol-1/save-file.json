@@ -31,7 +31,7 @@
 	"description": "PHANTASY STAR 2",
 	"source": {
 		"kind": "save",
-		"file": "MDEMU001.VMS"
+		"file": "SP1_PHAN.001"
 	},
 	"tags": [],
 	"hash": "85debfde6ccbb9f9d0a96775a214ddf006174f88",

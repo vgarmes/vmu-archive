@@ -33,7 +33,7 @@
 	"description": "ＳｅｇａＧＴ",
 	"source": {
 		"kind": "save",
-		"file": "segagt01.VMS"
+		"file": "SEGAGT__.SYS"
 	},
 	"tags": [],
 	"hash": "fa50607e8f4a3e2b87a4a18b83fbd2b97308264a",

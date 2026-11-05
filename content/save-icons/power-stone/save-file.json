@@ -35,7 +35,7 @@
 	"description": "POWER STONE DATA",
 	"source": {
 		"kind": "save",
-		"file": "00000033.VMS"
+		"file": "POWSTONE_DAT"
 	},
 	"tags": [],
 	"hash": "15c6c65b85c96cb487b40e9983f2f22df3a2a113",

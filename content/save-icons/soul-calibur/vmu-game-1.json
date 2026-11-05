@@ -31,7 +31,7 @@
 	"description": "SOULCALIBUR / VMU GAME 1",
 	"source": {
 		"kind": "save",
-		"file": "SCALIBU.VMS"
+		"file": "SOULCALIBUR"
 	},
 	"tags": [],
 	"hash": "c4b095c5fc161f270914f6e13fd09576cedd2b60",

@@ -31,7 +31,7 @@
 	"description": "MDK2 Savegame",
 	"source": {
 		"kind": "save",
-		"file": "00001154.VMS"
+		"file": "MDK2SAVE.SAV"
 	},
 	"tags": [],
 	"hash": "ba70827e80d2f3695c3ae2bcf5f798fa4d182047",

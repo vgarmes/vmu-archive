@@ -33,7 +33,7 @@
 	"description": "サクラ大戦３",
 	"source": {
 		"kind": "save",
-		"file": "sw3_sys.VMS"
+		"file": "SAKURA_3.SYS"
 	},
 	"tags": [],
 	"hash": "0151078593a7780e372848f40eccf262ac4782f7",

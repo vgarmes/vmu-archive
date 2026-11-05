@@ -33,7 +33,7 @@
 	"description": "エンジェルプレゼント",
 	"source": {
 		"kind": "save",
-		"file": "angelpre.VMS"
+		"file": "ANGELPRE_SYS"
 	},
 	"tags": [],
 	"hash": "08d557b3c7188c38548df22131d4e1fdb3a33dcc",

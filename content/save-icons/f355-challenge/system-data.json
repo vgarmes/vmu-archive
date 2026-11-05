@@ -31,7 +31,7 @@
 	"description": "F355 Challenge System Data",
 	"source": {
 		"kind": "save",
-		"file": "f355_2.VMS"
+		"file": "F355DATA.SYS"
 	},
 	"tags": [],
 	"hash": "b4d9316444f0f596a4465d071eef7a759fbfb337",

@@ -33,7 +33,7 @@
 	"description": "JETGRINDRADIO SYSTEM",
 	"source": {
 		"kind": "save",
-		"file": "JETGR.VMS"
+		"file": "JETGRIND_SYS"
 	},
 	"tags": [],
 	"hash": "32fb537efb1e51fdaab7b9f0fd19c750370b0675",

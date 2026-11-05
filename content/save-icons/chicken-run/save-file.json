@@ -31,7 +31,7 @@
 	"description": "CHICKEN RUN",
 	"source": {
 		"kind": "save",
-		"file": "CHICKEN.VMS"
+		"file": "CHICKENRUNDC"
 	},
 	"tags": [],
 	"hash": "c47c24a2afe47eabcb91224fb677955a278fd828",

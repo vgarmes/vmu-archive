@@ -31,7 +31,7 @@
 	"description": "Tomb Raider IV Save",
 	"source": {
 		"kind": "save",
-		"file": "00000001.VMS"
+		"file": "TOMBRAID.000"
 	},
 	"tags": [],
 	"hash": "e07cbe9ac2666d34bdd64c2125df9fcce05b25b5",

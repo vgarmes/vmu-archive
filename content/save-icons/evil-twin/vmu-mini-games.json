@@ -33,7 +33,7 @@
 	"description": "Evil Twin - Fat Rain",
 	"source": {
 		"kind": "save",
-		"file": "FATRAIN.VMS"
+		"file": "FATRAIN"
 	},
 	"tags": [],
 	"hash": "86429128837fa0f1ada1b9191e09467fa716cc2d",

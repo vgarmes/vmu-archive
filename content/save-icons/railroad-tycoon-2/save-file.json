@@ -31,7 +31,7 @@
 	"description": "Railroad Tycoon II",
 	"source": {
 		"kind": "save",
-		"file": "RTYCOON2.VMS"
+		"file": "RTYCOON2.CMP"
 	},
 	"tags": [],
 	"hash": "6bc705d52dbfba30f47a9c25d55724930f320370",

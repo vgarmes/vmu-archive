@@ -31,7 +31,7 @@
 	"description": "FAR OFF PROMISE Linear Watch",
 	"source": {
 		"kind": "save",
-		"file": "MINICLOC.VMS"
+		"file": "LIN_WATCH"
 	},
 	"tags": [],
 	"hash": "a69854e22bbcd0ff45e10c27013dead643b0f001",

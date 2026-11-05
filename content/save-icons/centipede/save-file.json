@@ -31,7 +31,7 @@
 	"description": "CENTIPEDE SAVE GAME",
 	"source": {
 		"kind": "save",
-		"file": "v72205.VMS"
+		"file": "CENTIPEDE_01"
 	},
 	"tags": [],
 	"hash": "cd691f4b558f5646712ccb9f55e8ed70e8579ea2",

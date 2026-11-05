@@ -31,7 +31,7 @@
 	"description": "THE KING OF FIGHTERS 2000",
 	"source": {
 		"kind": "save",
-		"file": "KOF_2000.VMS"
+		"file": "KOF2000_0000"
 	},
 	"tags": [],
 	"hash": "24bbfac1ae87a859607640e645a47cc43a371932",

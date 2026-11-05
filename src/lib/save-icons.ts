@@ -30,7 +30,7 @@ interface File {
 	madeByGame?: boolean | null
 	vmuName: string
 	description: string
-	source: { kind: 'save' | 'disc'; file: string }
+	source: { kind: 'save' | 'disc'; file?: string }
 }
 
 export interface SaveIcon {

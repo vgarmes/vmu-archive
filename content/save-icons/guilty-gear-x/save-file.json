@@ -32,7 +32,7 @@
 	"description": "ギルティギアゼクス for ＤＣ",
 	"source": {
 		"kind": "save",
-		"file": "guiltyx.VMS"
+		"file": "DCGUILTY.DAT"
 	},
 	"tags": [],
 	"hash": "709f6305cfc656a347b5a3110085099bb777446e",

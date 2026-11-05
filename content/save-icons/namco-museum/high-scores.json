@@ -33,7 +33,7 @@
 	"description": "Namco Museum High-Scores",
 	"source": {
 		"kind": "save",
-		"file": "v15212.VMS"
+		"file": "NAMCOMUS.SYS"
 	},
 	"tags": [],
 	"hash": "631d7119b36349fb6301d80bb97b5b978130b205",

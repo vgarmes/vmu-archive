@@ -31,7 +31,7 @@
 	"description": "MAGFORCE RACING SAVEGAME",
 	"source": {
 		"kind": "save",
-		"file": "v25599.VMS"
+		"file": "MAGFORCE_001"
 	},
 	"tags": [],
 	"hash": "6f2e38af015ef393fd24d73e76d356675a5c9c42",

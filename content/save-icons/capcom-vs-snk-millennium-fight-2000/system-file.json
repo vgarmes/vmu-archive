@@ -31,7 +31,7 @@
 	"description": "CAPCOM VS. SNK_ｼｽﾃﾑﾌｧｲﾙ",
 	"source": {
 		"kind": "save",
-		"file": "cvs1jp01.VMS"
+		"file": "CAPVSSNK_SYS"
 	},
 	"tags": [],
 	"hash": "069366f7c7297b7020192e649af96682ee6f93df",

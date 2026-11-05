@@ -33,7 +33,7 @@
 	"description": "SONIC ADVENTURE / TAILS Voice",
 	"source": {
 		"kind": "save",
-		"file": "SA1_V12.VMS"
+		"file": "SONICADV_V12"
 	},
 	"tags": [],
 	"hash": "62af20296fd0f71c3ed97dcd8076a18bec85ab2d",

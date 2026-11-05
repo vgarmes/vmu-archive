@@ -31,7 +31,7 @@
 	"description": "ラブひな　データ",
 	"source": {
 		"kind": "save",
-		"file": "lovehina.VMS"
+		"file": "LOVEHINA.SYS"
 	},
 	"tags": [],
 	"hash": "88e39735ca06340a9fde8866691a4fbdac13a6a4",

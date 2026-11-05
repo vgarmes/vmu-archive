@@ -33,7 +33,7 @@
 	"description": "SONIC SHUFFLE",
 	"source": {
 		"kind": "save",
-		"file": "SONICEX.VMS"
+		"file": "SSHUFFLE.DAT"
 	},
 	"tags": [],
 	"hash": "5f777e56a8cf5bd31a0ea66a7c4ba50e5d8b0f0a",

@@ -60,8 +60,12 @@ export interface SaveIcon {
 	source: {
 		/** "save": dumped save files; "disc": a game's disc. */
 		kind: 'save' | 'disc'
-		/** The save (or disc file) it was read from; other saves may carry it too. */
-		file: string
+		/**
+		 * A save's name on the memory card, as the game wrote it (up to 12
+		 * characters, from the save's .VMI: "IKARUGA_DATA"), which a disc's
+		 * program also holds; left out when unknown. On a disc: the file it's in.
+		 */
+		file?: string
 		/** On a disc: the byte offset of the header in that file. */
 		offset?: number
 	}
@@ -137,10 +141,17 @@ export function saveIconProblems(s: SaveIcon): string[] {
 	if (
 		!s.source ||
 		!['save', 'disc'].includes(s.source.kind) ||
-		typeof s.source.file !== 'string' ||
-		!s.source.file
+		(s.source.kind === 'disc' && !s.source.file) ||
+		(s.source.file !== undefined &&
+			(typeof s.source.file !== 'string' || !s.source.file))
 	)
-		out.push('"source" needs a "kind" (save or disc) and its "file"')
+		out.push('"source" needs a "kind" (save or disc), and a disc its "file"')
+	else if (
+		s.source.kind === 'save' &&
+		s.source.file &&
+		s.source.file.length > 12
+	)
+		out.push(`"source": "${s.source.file}" is longer than a memory card name`)
 	for (const key of Object.keys(s.source ?? {}))
 		if (!['kind', 'file', 'offset'].includes(key))
 			out.push(`"source" has "${key}": it keeps only kind, file and offset`)

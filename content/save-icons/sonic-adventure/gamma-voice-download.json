@@ -33,7 +33,7 @@
 	"description": "SONIC ADVENTURE / GAMMA Voice",
 	"source": {
 		"kind": "save",
-		"file": "00000523.VMS"
+		"file": "SONICADV_V15"
 	},
 	"tags": [],
 	"hash": "5411cae3ea22077b732a21196f20129f9235c165",

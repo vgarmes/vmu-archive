@@ -31,7 +31,7 @@
 	"description": "ＭＡＣＲＯＳＳ　－Ｍ３－",
 	"source": {
 		"kind": "save",
-		"file": "m3office.VMS"
+		"file": "MACROSSM3.SV"
 	},
 	"tags": [],
 	"hash": "c625959df082f95df908a80ac22b75f9db37ffe1",

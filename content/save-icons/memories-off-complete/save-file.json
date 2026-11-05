@@ -33,7 +33,7 @@
 	"description": "メモリーズオフ　せーぶでーた",
 	"source": {
 		"kind": "save",
-		"file": "memoff1.VMS"
+		"file": "MEMO_OFF.DAT"
 	},
 	"tags": [],
 	"hash": "113757e920c25e84f9ff35f4ceb5be7198549760",

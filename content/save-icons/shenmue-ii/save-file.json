@@ -35,7 +35,7 @@
 	"description": "SHENMUE 2 EU",
 	"source": {
 		"kind": "save",
-		"file": "00000036.VMS"
+		"file": "SHENMUE2_SYS"
 	},
 	"tags": [],
 	"hash": "319e813172b034a59912f80dbaf8b0ac36b33c91",

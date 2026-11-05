@@ -31,7 +31,7 @@
 	"description": "Walt Disney World Quest:MRT",
 	"source": {
 		"kind": "save",
-		"file": "v15203.VMS"
+		"file": "WDWORLDQ_MRT"
 	},
 	"tags": [],
 	"hash": "f4eeff770349c0d0d354811de8e7427696afe706",

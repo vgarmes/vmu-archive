@@ -33,7 +33,7 @@
 	"description": "機動戦士ガンダムＤＸシステム",
 	"source": {
 		"kind": "save",
-		"file": "gundadx2.VMS"
+		"file": "GUNDAMDX_SYS"
 	},
 	"tags": [],
 	"hash": "136d49caf8f41d3ba9e75431ae6b450b588693fe",

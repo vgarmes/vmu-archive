@@ -35,7 +35,7 @@
 	"description": "斑鳩（いかるが）",
 	"source": {
 		"kind": "save",
-		"file": "IKARUGA.VMS"
+		"file": "IKARUGA_DATA"
 	},
 	"tags": [],
 	"hash": "a905874e53f5a77b1f9c56f2563fd16d9ffc36b8",

@@ -33,7 +33,7 @@
 	"description": "SONIC ADVENTURE / Tremble Park",
 	"source": {
 		"kind": "save",
-		"file": "00000028.VMS"
+		"file": "SONICADV_505"
 	},
 	"tags": [],
 	"hash": "dc5beaf71c7e70ad07748e5f1a233da4726ae0d1",

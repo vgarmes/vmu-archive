@@ -33,7 +33,7 @@
 	"description": "STREET FIGHTER 3 3rd STRIKE",
 	"source": {
 		"kind": "save",
-		"file": "sf33rd.VMS"
+		"file": "STF3_3RD.SYS"
 	},
 	"tags": [],
 	"hash": "e87df99bf3d20854b9dce53171cf1ac8dfb429fd",

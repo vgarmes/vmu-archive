@@ -31,7 +31,7 @@
 	"description": "TECH ROMANCER SAVE DATA",
 	"source": {
 		"kind": "save",
-		"file": "v64763.VMS"
+		"file": "ROMANCER_DAT"
 	},
 	"tags": [],
 	"hash": "4e41cc72fe771799ba345b571d4c68f1195057e8",

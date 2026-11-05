@@ -33,7 +33,7 @@
 	"description": "青の６号 歳月不待人 Extra Data",
 	"source": {
 		"kind": "save",
-		"file": "BSUBNO6.VMS"
+		"file": "AONODATA_EXT"
 	},
 	"tags": [],
 	"hash": "92b620568ca9cf3c4cde6481cdf55bc8f505f7c1",

@@ -31,7 +31,7 @@
 	"description": "Le Mans 24 Options",
 	"source": {
 		"kind": "save",
-		"file": "LEMANS24.VMS"
+		"file": "LEMANS24.OPT"
 	},
 	"tags": [],
 	"hash": "08c55045732f84698b1d4db2ce23b0f83d0abf48",

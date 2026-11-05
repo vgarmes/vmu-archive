@@ -33,7 +33,7 @@
 	"description": "パワーストーン２　セーブデータ",
 	"source": {
 		"kind": "save",
-		"file": "PSTONE2.VMS"
+		"file": "P_STONE2_DAT"
 	},
 	"tags": [],
 	"hash": "c62b070a6f36791b7165a6183396950be714217e",

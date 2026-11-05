@@ -31,7 +31,7 @@
 	"description": "Quake III Arena",
 	"source": {
 		"kind": "save",
-		"file": "QUAKE3.VMS"
+		"file": "QUAKE3_ARENA"
 	},
 	"tags": [],
 	"hash": "68a31495955a678c205498abc7d9db37f7314aef",

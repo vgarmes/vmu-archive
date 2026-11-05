@@ -33,7 +33,7 @@
 	"description": "DEAD OR ALIVE2 / Main Save File",
 	"source": {
 		"kind": "save",
-		"file": "00000701.VMS"
+		"file": "DEADORALIVE2"
 	},
 	"tags": [],
 	"hash": "450d62bc6d396014bc05dc45b5ddcd0099af048e",

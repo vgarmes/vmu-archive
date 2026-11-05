@@ -33,7 +33,7 @@
 	"description": "SONIC ADVENTURE / CART",
 	"source": {
 		"kind": "save",
-		"file": "v99030.VMS"
+		"file": "SONICADV_511"
 	},
 	"tags": [],
 	"hash": "082518b1d959941c133e54ee13a6c55e628808b8",

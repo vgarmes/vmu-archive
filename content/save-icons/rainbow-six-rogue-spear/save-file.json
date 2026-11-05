@@ -31,7 +31,7 @@
 	"description": "ROGUE SPEAR",
 	"source": {
 		"kind": "save",
-		"file": "v20049.VMS"
+		"file": "ROGUE_SP.CM2"
 	},
 	"tags": [],
 	"hash": "69c59bd4f1ee79ec5679204cfb55e07c42dbcfcf",

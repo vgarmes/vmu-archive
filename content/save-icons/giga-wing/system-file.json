@@ -31,7 +31,7 @@
 	"description": "ギガウイング＿システムファイル",
 	"source": {
 		"kind": "save",
-		"file": "GIGAWING.VMS"
+		"file": "GIGAWING_DAT"
 	},
 	"tags": [],
 	"hash": "71e64b892ad32e714b54e8eaab9fb97afdf2aa73",

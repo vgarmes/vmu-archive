@@ -31,7 +31,7 @@
 	"description": "デスクリムゾンＯＸシステムデータ",
 	"source": {
 		"kind": "save",
-		"file": "deathcox.VMS"
+		"file": "DEATHCROXSYS"
 	},
 	"tags": [],
 	"hash": "81f5204190192a293151fb3a9520eabaca461124",
