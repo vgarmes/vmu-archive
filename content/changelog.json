@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-05",
+		"title": "Game pages in tabs",
+		"body": "A game's screens, sprites, fonts and notes are now tabs at the top of its page, so you can go straight to the sprites without scrolling past every screen. Press 1 to 4 to switch, and a link keeps the tab you're on. A game's save icons now sit beside its title."
+	},
+	{
+		"date": "2026-11-05",
 		"title": "Save icons",
 		"body": "A new page for the colour icons the Dreamcast's memory card menu shows for each save, every game's in one grid you can search. The first come from Capcom vs. SNK 2: its system file and replay file icons, read from 23 dumped saves that share just those two."
 	},
