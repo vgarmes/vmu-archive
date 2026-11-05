@@ -1,0 +1,50 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "mars-matrix",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#220000ff",
+		"#002200ff",
+		"#003300ff",
+		"#442200ff",
+		"#006600ff",
+		"#664400ff",
+		"#885500ff",
+		"#996600ff",
+		"#bb7700ff",
+		"#cc8800ff",
+		"#eeaa00ff",
+		"#ffbb00ff",
+		"#ffcc00ff",
+		"#ffee00ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"000000000002356bb653200000000000000ff00000235ffeee75320000000000000fff002235fffeedc7532200000000000fff023354fffccaa745332000000000fffff3506fffffba7016053200000000ff0ff51a8ff6ffdb6007a15320000000ff23ff67ff99ffdd986676053200000fff35ff00ffc9fffa8bc400415320000ff356bffffadb7ff8bda9017b6532000ff58dbffff98baffab89b98abd853200ff4eedbffdc97affa79cdcabdee45202349eedcbdff967bb778ffdbcdee94322546eecbacfff7a99a7fffbabcee64522546acba77fffd8768cfff77acda64522598eda60fffff8998fffff06ade89522589bdb61ffbffbccbffbff16cdb9852251779bcaff16ffddff64ffacb9771522510747efff00ffcbff00fffe74701522504780affa118ffff811aff8087105225607774ffc98affffa89cff4777065225966666ffbcbdeffedccbff6466695223197744711cebeeeebec11744779132025488666667ca8aa8afff666688fff002350664648797467479fff6466fff20002335046468894994988fff60fff2000002235174666886988676ffffff2000000002351487607a9706784ffff00000000000235048611b911684ffffff0000000000023506604d94066fff20fff000000000002354841e9148fff2000fff00000000000235696b969fff200000fff0000000000023549b9945320000000000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "MarsSaveData",
+	"description": "ＭａｒｓＭａｔｒｉｘセーブデータ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"mars_m.VMS",
+			"v2405.VMS",
+			"v31444.VMS",
+			"v3391.VMS",
+			"v36250.VMS",
+			"v37943.VMS",
+			"v81574.VMS",
+			"v83282.VMS",
+			"v88050.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/marsmatrix"
+	},
+	"tags": [],
+	"hash": "afd1a8372174232e4060eacc89af8f455edb5f22",
+	"added": "2026-11-05"
+}

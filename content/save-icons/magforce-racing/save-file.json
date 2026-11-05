@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "magforce-racing",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#aa7777ff",
+		"#ccbbbbff",
+		"#ee5566ff",
+		"#aa4444ff",
+		"#ff8888ff",
+		"#221111ff",
+		"#553333ff",
+		"#665566ff",
+		"#eeeeffff",
+		"#ddccffff",
+		"#aaaaccff",
+		"#888899ff",
+		"#ffeebbff",
+		"#eeddddff",
+		"#ffbbbbff",
+		"#ffffffff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffd7b8ffffffffffffffffffffffffffff7560000018fffffffffffffffffffff166665555660dffffffffffffffffffb555555555556444dfffffffffffff8b7575556665555322308ffffffffff876568655556655533322efffffffff876551f5555556555324ee4dffffffffb6556f1555667776534ee408fffffff16555bfb5677b766304e4061fffffffd065551fb5770aa00eccc357d8fffffd736555afb56319dccdccc161fffffff0676555787632ecccde44244effffff167736555b504444ee23222444e8fff877ba1165563222233333224444418ffd63efff75663223663332224e4444dff160effd67a333666633322ee23de2eff1730b765ab66666633324e430e1d448f99a65557a6566663333233011018e2ef9aab766aa6566666665564e00d11d2efbbbbb7bab5666555555633011b11d4efaabb77aa76666555555564100100e4ef99b766ba7656655555556634030032ef99a7777b7666655555555303303660ff999777776566355555555563355578ff989b77777666365555555565555bffff88abb77b7666065555555555561fffff88abbb77776606555555555578ffffff88abbbbb7b76075555555557afffffff88abbbbbbbb7765556655567a999888f89bbbbbbbbb7777777777767a9999998"
+	],
+	"animationSpeed": 1,
+	"vmuName": "MAG SAVEGAME",
+	"description": "MAGFORCE RACING SAVEGAME",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v25599.VMS",
+			"v45397.VMS",
+			"v51230.VMS",
+			"v7123.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/magforceracing"
+	},
+	"tags": [],
+	"hash": "6f2e38af015ef393fd24d73e76d356675a5c9c42",
+	"added": "2026-11-05"
+}

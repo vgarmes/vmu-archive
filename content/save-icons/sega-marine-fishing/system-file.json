@@ -1,0 +1,57 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "sega-marine-fishing",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#aa8866ff",
+		"#eeaa22ff",
+		"#ffffffff",
+		"#888888ff",
+		"#555555ff",
+		"#aa7755ff",
+		"#aa6655ff",
+		"#996644ff",
+		"#995544ff",
+		"#ffdd88ff",
+		"#ee8822ff",
+		"#dd5522ff",
+		"#00000000",
+		"#00000000",
+		"#00000000"
+	],
+	"frames": [
+		"cccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccccc5000000000005ccccccccccbcccbcc5000cbccc0000005005ccbcbcccbcccb0ccbccc0000000000005ccbcbcbcbcb5bcbcb000000000000000bccbcbcbcbcbcbcb0000cb0000000000cbbcbcbcbcbcbcb000bcb00000005000bccbcbcbcbcbcb00cbcb00000400c500cbbcbbbcbbbcb40cbbb00004bb00bb50bbbbbcbbbcbbb0bbbc4004bbbc00bcb0bcbbbbbbbbbbbbbbb404bbbbbb00bbb0bbbb2bbb2bbb2bbb25bb2bbb2b002bb52b2bbb2bbb2bbb2bbb2bbb2bbb00bb2bbbb2b2b2b2b2b2b2b2b2b2b2b200b2b2b22b2b2b2b2b2b2b2b2b2b2b24002b2b2ba2a2b2b2b2b2b2b2b2b2b2b500b2b2b22a2a2b2b2b2b2b2b2b2b2b25002b2b2baaa2a2a222b222b222b222b000b222b233aa2a2ab222b222b222b2200022b222333aa2a2222222222222225000222222333aaa2a22222222222222000022222222229999999999999999950000599999222888288288888828885000000888883272737737727777745000000005777726266666666664500000000000005666121311114500000000000000000005110000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SMF MAIN DATA",
+	"description": "SEGA MARINE FISHING SYSTEM",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v21653.VMS",
+			"v21855.VMS",
+			"v22795.VMS",
+			"v37175.VMS",
+			"v52833.VMS",
+			"v64015.VMS",
+			"v69853.VMS",
+			"v72852.VMS",
+			"v7347.VMS",
+			"v74449.VMS",
+			"v75039.VMS",
+			"v8135.VMS",
+			"v83653.VMS",
+			"v90235.VMS",
+			"v9044.VMS",
+			"v91348.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/marinefish"
+	},
+	"tags": [],
+	"hash": "b57ad54bf29b39e12018e8691fbb2bce130272cc",
+	"added": "2026-11-05"
+}

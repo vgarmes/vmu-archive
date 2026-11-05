@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "july",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#770000ff",
+		"#bb0000ff",
+		"#990000ff",
+		"#ee3300ff",
+		"#ee0000ff",
+		"#990000ff",
+		"#ee2200ff",
+		"#dd0000ff",
+		"#660000ff",
+		"#440000ff",
+		"#330000ff",
+		"#110000ff",
+		"#ee3322ff",
+		"#dd1111ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"000000000000000000000000000000000000001100000000000000000000000000000111100000000010000000000000000021344000000001220000000000000000233440000000021200000000000000002334400000000211000000000000000056447500000005710000000000000000001475000000001750000000000088880854708888888017280088825808888888047088888880141888880725888888898770817098881410098924709899999987729142999914121999141999999985077190719099142075a9742999aaa917017190718209145a5700770aaaaaa871071190729189141aa277719aaaaab07157779071819a267aa87441aaaabbb8412cd7087112ab5619ab1740bbbbbbe977766450d6c2bb26d59b26d5bbbbeee04636c7a8d661ba16618e26c8eeeeeee0466d79eb2d72eb77170bd638eeeeeee044369eeee092be57110b1479eeeeeee86332eeeeebe9eeaa9aaa630eeeeeeeee826aeeeeeeebeeaebeb5338beeeeeeeeeb8eeeeeeeebeebeeeb0369eeeeeeeeeeebeeeeeeeeeeebeeeb135beeeeeeeeeeebeeeeeeeeeeeeeeea76aeeeeeeeeeeeeeeeeeeeeeeeeeeeea75beeeeeeeeeeeeeeeeeeeeeeeeeeeeb59eeeeeeeeeeeeeeeeeeeeeeeeeeeeeb8beeeeeeeeeeeeeeeeeeeeeeeeeeeeeebeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeebeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeeee"
+	],
+	"animationSpeed": 1,
+	"vmuName": "JULY C18 MAKOTO",
+	"description": "Ｊｕｌｙ　最終章　高村誠",
+	"source": {
+		"kind": "save",
+		"files": [
+			"july0001.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/july"
+	},
+	"tags": [],
+	"hash": "8c8ccc0e5655e62beeb265ae5938d06567722a6a",
+	"added": "2026-11-05"
+}

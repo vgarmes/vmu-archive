@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "jeremy-mcgrath-supercross-2000",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ddeeffff",
+		"#aabbbbff",
+		"#888899ff",
+		"#777777ff",
+		"#667799ff",
+		"#556666ff",
+		"#44bbffff",
+		"#223333ff",
+		"#1155ddff",
+		"#0044aaff",
+		"#0077ffff",
+		"#0044ddff",
+		"#002288ff",
+		"#000022ff",
+		"#000000ff"
+	],
+	"frames": [
+		"bbbffffffedbc70212e7777bbbbeffffaddcbbbbbbbe808ff0010101bbbcfffffffcbbbbbbba18fff86f8f80bbbbeffffffabbbbbbb7168fffff6f40bbbbcdcbfffebbbbbbbb10064ffeff00bcdeebbbffffbbbbb717a8206fffff22fffffbbbffffcbbb11421770ffffff81fffffdbbbbbbcfff16ff8002f33efff26fffffbbbbbbbfff003fff8f1000eff81effffabbbbbbef61efffff607708fff26ffffebbbbbbdf3382ffff40105ffff18fffedabbbbbaf34606ffeff41ffff21dcbbbbcbbbbbbf62f02fffff6eff821bbbbbbbbbbbbcccb0845fffffefff201bbbbbbbbefffffbb00ffefff61ffff4007bbbbbbffffffab703f488840ff44ff11bbbbbbffffffdbb708ff6360ff00f207bbbbbbfffffffbbb70ffff808f0012ebbbbbbbfffffffbbb708ffff06f066ffcbbbcadfffffffabb00effff3ef09dbbcefffffffffeedcd501efffffff07bbbbffffffdcbbbbbbff103fffe20107bbbbdfffffbbbbbbbbefe10fff00777bbbbbbfffffbbbbbbbbaff616ff21bbbbbbbbbeffffbbbbbbbbbff628ff22cbbbbbbbbaffffbbbbbbbbbff62fff22dbbbbbbbbbffffbbbbbbbbbdf61fff23fbbbbbbbbbdeedbbbbbbbbbcfd06ff17bdeeeeeeffabbbbbbbbcdeedbb06f80bbaffffffffebbbcdeffffffebb06f40bbbfffffffffcbbefffffffffbb04f27bbbeffffffffdbbefffffffffab7041bbbbcfffffffffbb"
+	],
+	"animationSpeed": 1,
+	"vmuName": "OHANLEY-COMBO",
+	"description": "JEREMY MCGRATH SUPERCROSS 2000",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v52330.VMS",
+			"v62775.VMS",
+			"v85569.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/jeremymcgrath"
+	},
+	"tags": [],
+	"hash": "8f7da30f7113459453e21be70bbbf2ef5c48f31e",
+	"added": "2026-11-05"
+}

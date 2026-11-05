@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "the-king-of-fighters-2000",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#776666ff",
+		"#332222ff",
+		"#554444ff",
+		"#111111ff",
+		"#ccbbccff",
+		"#ffffeeff",
+		"#eeeeeeff",
+		"#ddccbbff",
+		"#ddddccff",
+		"#eeddddff",
+		"#ffffffff",
+		"#bbbbaaff",
+		"#998888ff",
+		"#aa9999ff",
+		"#887777ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"801120102d9228b0bbc0220ecbafffff7c13303111bd3092e57d0b9e0d9fffffcc233223131b23ec3df8dc9b20b6afff21223312e231022c119592e7cdb65fff231003320033120023db7eddbe79ffff23328e3333333e98032edbdbbc885fff23332013333314a92330d808ddb976ff2333311333333c4d2132e9eb7dbbbb6f03333331333331213132e7d070cce89523331e213333333333322db2bc2c2e852333c55133333333333220d0bdbe799a0333b5ab33333311221221de7eb8b6ff2333d558e3333312213222c0ed2ddd75033332878c13331222120d0020e2db86d1333310997edb7868020b2021208fffb1333333b76aaaaaa70128222112c5ffc33331db879655699b011bc1012220bf03332898879556877b011ed1201ebdba0331b9996999697b7de212e11ce0db5f0113112ed89898bbbd01322210c02bff0113333110ed87bb7c01321112c0baff01112ed8977b7bb7bc023131129affff011112112ba8b77bdce21332128fffffe11333333c7b78bdcc00130be09affff0111333220ec79bcce022e7600afffff011133e787de79bce2110c7d206fffffc11131d8966968c02132b1112e8fffffc211317966556c1133e78212107fffffc22132cdbbbd01333077820e02d5afffe2233333111133331cb89008a7b95fffe1133333333333332eb96e0fffffaaff01133333333333312c889c25ffaaaaff"
+	],
+	"animationSpeed": 0,
+	"vmuName": "KOF 2000 DATA",
+	"description": "THE KING OF FIGHTERS 2000",
+	"source": {
+		"kind": "save",
+		"files": [
+			"KOF_2000.VMS",
+			"v76270.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kof2000"
+	},
+	"tags": [],
+	"hash": "24bbfac1ae87a859607640e645a47cc43a371932",
+	"added": "2026-11-05"
+}

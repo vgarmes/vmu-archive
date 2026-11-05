@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "power-jet-racing-2001",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#aa3311ff",
+		"#aa4411ff",
+		"#aa4411ff",
+		"#aa5511ff",
+		"#aa5511ff",
+		"#aa6611ff",
+		"#aa6611ff",
+		"#aa7711ff",
+		"#bb8833ff",
+		"#bb9955ff",
+		"#bbaa77ff",
+		"#990022ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"bbbbbbbbbbbbbbbbbbbbbbbbbaa99731bbbbbbbaaaaaaaaaaaaaaaaaaaaa9731bbbbba97777777777777777777778731bbbb9777777777777777999999999921bbb977777777777779999aaaaaaaa911bba677777777777999aaaaaaaaaaa911bb97777777777799aaaaaaaaaaaaa911ba7777777777799aaaaaaaa999999a11ba777777777799aaaaaa999935555521ba77777777799aaaaa99935577777721ba7777777799addddddddddddddd7721ba777777799addcccccccccccccdd721ba77777799aadccccccccccccccdd721ba7777779aaadccccdddddddddddd721ba7777799aaadccccdddddddddddd721ba777779aaaadccccdd7777777777721ba777779aaaadccccdddddddddd77721ba777799aaa9dcccccccccccccdd7721ba77779aaaa9dccccccccccccccdd721ba77779aaaa9dccccccccccccccdd721ba77779aaa99ddcccccccccccccdd721ba77779aaa957ddddddddddccccdd721ba77779aaa9577dddddddddccccdd721ba77779aaa957777777777dccccdd721ba77779aaa95dddddddddddccccdd721ba77779aaa95dccccccccccccccdd311aa77779aaa95dcccccccccccccddd211aa77779aaa99ddddddddddddddddd1119977779aaaa95ddddddddddddddd11117776779aaaa9577777777777732111113333221111112222222222222111111111111111111111111111111111111111"
+	],
+	"animationSpeed": 0,
+	"vmuName": "FAANG",
+	"description": "POWER JET RACING SYSTEM DATA",
+	"source": {
+		"kind": "save",
+		"files": [
+			"JETRACE1.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/jetr2001"
+	},
+	"tags": [],
+	"hash": "cc10f91e63d79b1dd6c68c4e6e59575e6d5e52ea",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "memories-off-2nd",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ff88ccff",
+		"#000000ff",
+		"#222222ff",
+		"#333322ff",
+		"#554444ff",
+		"#443333ff",
+		"#ddaa77ff",
+		"#997755ff",
+		"#ccbbaaff",
+		"#999988ff",
+		"#cc8866ff",
+		"#665555ff",
+		"#555544ff",
+		"#eeddccff",
+		"#776666ff",
+		"#eeeeeeff"
+	],
+	"frames": [
+		"ff0000000000000000000000000000fff00bcccccc4cc4cccc4cc34cccc4400f00ecccccc54ccccccc454b54cccc5e0009cccccc43ccccccc44c55c5ccc455800c4ccccc25cccc5ccc54b4555ccc43b004cbccc55cc4c45cccc54c453ccc433004bccc53bc44c47cccb43bc533cc45200cecc43b4c3b458b44bb55e432cc45300cb4c3bb455e34d94c5ec2cb525c55300eb4c3e5c3b44bd8cb54e53b423c55500b4c35e554b5b7ddeeb3be3bb23c33400b5c24b53b44a7dd89842435b32452400b5534c35754a9ddd9a6b5b5752552500e5535454655a6dddd6a21227c4352500b5352577b12bdddddd9212f4b7232500552325a311fedddddddb12c5472224004422257e2129ddddddde111957223400c42237c85119ddddddde243967433300c523378f424eddddddd8e43667742200c323b7ad9c8dddddddddd866a77224004425376ddddddddddddddd66a7313c00443322e8dddddddd6dddd666c5223500355c533bddddddddddddd66a5542330022554c9f96ddddad8addd669f9995500233ffffff9dddddddddd6a8fffff8500339fffffff89ddddddd69ffffffff90033ffffffffff98dddd67fffffffecc0022ffffffffff96a68aa7ffffff9b550023be59ffffff766aaaa7ffffffffc500054ffefffff98666a797ffffffff900f0058ffffff88d6669d999fffffff00fff0000000000000000000000000000ff",
+		"ff0000000000000000000000000000fff00bcc4ccc4cc4ccc44cc34cccc4400f00ecccccc54ccccccc454c54cccc5e0009cccccc43ccccccc44c55c5ccc455800c4ccccc25cccc5ccc54b4555ccc43b004cbccc55cc4c45cccc54c453ccc433004bccc53bc44c47cccb43bc533cc45200cecc43b4c3b458b44bb55e432cc45300cb4c3bb455e34d94c5ec2cb525c55300eb4c3e5c3b44bd8cb54e53b423c55500b4c35e554b5b7ddeeb3be3bb23c33400b5c24b53b44a7dd89842435b32452400b5534c35755a9ddd9a6b5b5752552500e553545464b66dddd6a21227c4352500b5352577db7ddddddd9212f4b7232500552325a6d8addddddddb12c5472224004422236dd7c7ddddddde111957223400c42237a8ce99ddddddde243967433300c52337698dddddddddd8e43667742200c323c9adddddddddddddd866a77224004425376ddddddddddddddd66a7313c00443322e8dddddddd6dddd666c5223500355c533bddddddddddddd66a5542330022554c9f96ddddaaaaddd669f9995500233ffffff9dddd6aa6dd6a8fffff8500339fffffff89ddd66dd69ffffffff90033ffffffffff98dddd67fffffffecc0022ffffffffff96a68aa7ffffff9b550023be59ffffff766aaaa7ffffffffc500054ffefffff98666a797ffffffff900f0058ffffff88d6669d999fffffff00fff0000000000000000000000000000ff"
+	],
+	"animationSpeed": 16,
+	"vmuName": "MemOff2 Data",
+	"description": "ﾒﾓﾘｰｽﾞｵﾌ2 セーブデータ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"memoff2.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/memoff2"
+	},
+	"tags": [],
+	"hash": "b0d9e179809a67356525dbc0fcab1b48cbaac4a0",
+	"added": "2026-11-05"
+}

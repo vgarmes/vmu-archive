@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "the-last-blade-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#000000ff",
+		"#0033ffff",
+		"#0033eeff",
+		"#0033ccff",
+		"#0022bbff",
+		"#002299ff",
+		"#002288ff",
+		"#001166ff",
+		"#001144ff",
+		"#000033ff",
+		"#ffff00ff",
+		"#dd1199ff",
+		"#ccbb22ff",
+		"#ff77ffff",
+		"#550066ff"
+	],
+	"frames": [
+		"222cccccccccccccccccccccccccc22222222cccccccccccccccccccccc22222222222fceccff222222fceccff222222222222fceccff222222fceccff2222223dd333fcecdddd3333ddddccfdddddd33bb333fcebbbbbb33bbbbbbcfbbbbbb33bb333fcebbffbb33bbfcbbcff3bb3333bb333fcebbffbb33bbfceccff3bb333400444fce0000004400000ccff4004444bb444fcebbbbbb444bbbbbcff4bb4444bb444fcebbffbb4444fcbbcff4bb4444bb444fcebbffbb44bbfcbbcff4bb4445ddddddceddffdd55ddddddcff5dd5555ddddddceddffdd555ddddccff5dd555555555fceccff555555fceccff555555555555fceccff555555fceccff5555556dddd6fddccff6ddd66ddddcfddddd666bbbbbfbbccffbbbbb6bbbbbfbbbbb666bb66bfbbccffbb66b6bbecbfbb666666bb66bfbbccffbb66b6bbecbfbb666667bb77bfbbccffbb77b7bbecbfbb77777700007f00ccff00000700ec0f00007777bbbb7fbbccffbbbbb7bbecbfbbbb7777bb77bfbbccffbb77b7bbecbfbb777778bb88bfbbccffbb88b8bbecbfbb888888bb88bfbbccffbb88b8bbecbfbb888881dddddfdddddfdd11d1dddddfddddd111dddd1fdddddfdd11d1ddddcfddddd11111111fceccff111111fceccff111111999999fceccff9999999ceccf999999999999cccccccccccccccccccccc99999999cccccccccccccccccccccccccc999"
+	],
+	"animationSpeed": 0,
+	"vmuName": "LAST BLADE2 File",
+	"description": "LAST BLADE2",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v35892.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lastblade2"
+	},
+	"tags": [],
+	"hash": "6c5ed4b9abbc2a2a3a97b8821bdaaf585e7f85b9",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "kanon",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#4400ccff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"ff0ffffffffffff0fffffffffffffffff0ff0fffffffff000fffffffff0fffff0ff0f0ffffffff000ffffffff0f0ffffffff0ffffffff00000ffffff0fff0ffffffffffffff0ff000ff0fffff0f0ffffffffffffffff00f0f00fffffff0ffffffffffff0f0f0ff000ff0f0f0ffffffffffffffff0f0f00f0f00f0f0ffffffffffff0000f0f0fff000fff0f0f0000fffffff0000f0f0ff00000ff0f0f0000ffffffff000000000ff0ff000000000ffffffffff0f0000fff000fff0000f0ffffffffffff0ff00f0000000f00ff0ffffffffffff0ff00f0000f0000f00ff0fffffffffffff0f0f000fff000f0f0fffffffffffffffff0f00fffff00f0fffffffffffffffffff0f00fffff00f0fffffffffffffffff0f0f000fff000f0f0fffffffffffff0ff00f0000f0000f00ff0ffffffffffff0ff00f0000000f00ff0ffffffffffff0f0000fff000fff0000f0ffffffffff000000000ff0ff000000000ffffffff0000f0f0ff00000ff0f0f0000fffffff0000f0f0fff000fff0f0f0000ffffffffffff0f0f00f0f00f0f0ffffffffffffffff0f0f0ff000ff0f0f0ffff0f0fffffffffffff00f0f00ffffffffff0fffffffffffff0ff000ff0ffffff0ffffff0fffffffffff00000fffffff0f0ffff0f0fffffffffff000fffffff0fff0ffff0ffffffffffff000ffffffff0f0fffffffffffffffffff0ffffffffff0fffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "Kanon",
+	"description": "Ｋａｎｏｎ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"KANON1.VMS",
+			"KANON2.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kanon"
+	},
+	"tags": [],
+	"hash": "6dc59d587336adff2e85f8ac42b7d0150e7be3cc",
+	"added": "2026-11-05"
+}

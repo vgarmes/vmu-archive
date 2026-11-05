@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "magic-the-gathering",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#554444ff",
+		"#333333ff",
+		"#000000ff",
+		"#336677ff",
+		"#447788ff",
+		"#aa8855ff",
+		"#000000ff",
+		"#666655ff",
+		"#221111ff",
+		"#553322ff",
+		"#332211ff",
+		"#664433ff",
+		"#773311ff",
+		"#884422ff",
+		"#883322ff",
+		"#000000ff"
+	],
+	"frames": [
+		"777776222222222222222222222677777777768688a8888888a9999a97a27777777776ac68888888a88999aadd927777777776ac688689edee018ac9cda27777777776a68861ddeeeedd1a99ab927777777776a8621deededeedd18a9ba27777777776a881ec0c90cc09bc119da27777777776a6640a39a301a90b38a9a27777777776a61949001a3119194889a27777777776867c44a3cdcc999ccb99a27777777776810c03a3177bb777771a82777777777681cdccdceecdeceecd1982777777777681ddeceedeeeddeecd0982777777777689deeedeeeeeeeeeee098277777777768becdeecdeceeeeeedba8277777777768bdeceecc55ceeddeeba8277777777768beeeeeddceebcedeeb88277777777768bddedc7ddeb4cccedb88277777777768bdccecceeedceeedeb862777777777689deeceddce9dedecd0a82777777777681ddeeeceedacedddd1a82777777777688deecdecddedeeeeb8a827777777776a69deecdeecedeeddb6a827777777776a8adeeddeeeeeeeed189a27777777776886bdcddeeeddeeeb88a8277777777766868ddccdeddcedd188a827777777776886144444434344406aa827777777776a66830777777770098888277777777768c666269dede9868a8c9827777777776ac688666681866aa66c98277777777766266666622626666666662777777777622222222222222222222267777"
+	],
+	"animationSpeed": 10,
+	"vmuName": "Magic:TheGather.",
+	"description": "ＭＡＧＩＣ：THE GATHERING",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000026.VMS",
+			"magicthe.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/magic"
+	},
+	"tags": [],
+	"hash": "0ce26a9c38d0fef71717bbf2c500ec4928ce3b8e",
+	"added": "2026-11-05"
+}

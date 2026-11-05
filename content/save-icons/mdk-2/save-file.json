@@ -1,0 +1,54 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "mdk-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#883311ff",
+		"#cc6611ff",
+		"#ffaa11ff",
+		"#bb9944ff",
+		"#777755ff",
+		"#889988ff",
+		"#ddffffff",
+		"#aabbccff",
+		"#ffffffff",
+		"#88ddffff",
+		"#77aaccff",
+		"#eeeeeeff",
+		"#ccddddff",
+		"#4488bbff",
+		"#335577ff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffffffffffeeeeefeeeeffffffffffffeeeeefeeeee3331fef88effffffeeeeee333eee33113331ef8888fffeeee333e33333ee33113331ef88888ff333e333e333333e33113331ef88888ff333e333e333333e33133311ef88688ff333e333e331333e3313331fef88f68ff333e333e331133e3333331eefffb68ff333e333e331133e3333311efeeeb68ff3334333e331133e333331effffeb68ff3334333e331133e333331effffeb68ff3333333e331133e333331effffeb68ff3333332e331133e333331effffee67ff3332323e331133e323231effe6dd78ff2323232e231132e232321efee77777ff3222222e321123e322221efe677777ff2222222e221132e222222efe67777fff2222222e221122e222222efe677eefff2122122e221122e222222eee678fffff2122122e221122e2222222ee687fffff2122122e221122e22122221e688fffff2122122e221122e22122221e688fffff2122122e221122e221e2221e688f88ff2122122e221222e221e2221e688e88ff2122122e222222e221e2221e688e88ff2122122e222222e221ee221e688888ffeeee122e222222e221ee221e688888fffffeeeee22222ee221ee221e688888fffffffffeeeeeeee221ee22ee688888ffffffffffffffffeeeeeeeefeeeeeeffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "MDK2 SAVEGAME",
+	"description": "MDK2 Savegame",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00001154.VMS",
+			"v23982.VMS",
+			"v28017.VMS",
+			"v32835.VMS",
+			"v35819.VMS",
+			"v47448.VMS",
+			"v54936.VMS",
+			"v62477.VMS",
+			"v71379.VMS",
+			"v72014.VMS",
+			"v73389.VMS",
+			"v87101.VMS",
+			"v88074.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/mdk2"
+	},
+	"tags": [],
+	"hash": "ba70827e80d2f3695c3ae2bcf5f798fa4d182047",
+	"added": "2026-11-05"
+}

@@ -215,7 +215,8 @@
 		"name": "Eldorado Gate Vol. 7"
 	},
 	"espion-age-nts": {
-		"name": "Espion-Age-Nts"
+		"name": "Espion-Age-Nts",
+		"en": "Industrial Spy: Operation Espionage"
 	},
 	"espn-international-track-and-field": {
 		"name": "ESPN International Track and Field"
@@ -337,8 +338,23 @@
 	"hundred-swords": {
 		"name": "Hundred Swords"
 	},
+	"hydro-thunder": {
+		"name": "Hydro Thunder"
+	},
 	"ikaruga": {
 		"name": "Ikaruga"
+	},
+	"illbleed": {
+		"name": "Illbleed"
+	},
+	"incoming": {
+		"name": "Incoming"
+	},
+	"iron-aces": {
+		"name": "Iron Aces"
+	},
+	"jeremy-mcgrath-supercross-2000": {
+		"name": "Jeremy McGrath Supercross 2000"
 	},
 	"jet-set-radio": {
 		"name": "Jet Set Radio",
@@ -348,17 +364,89 @@
 			"Jet Set Radio DX"
 		]
 	},
+	"jojos-bizarre-adventure": {
+		"name": "Jojo's Bizarre Adventure"
+	},
+	"july": {
+		"name": "July"
+	},
+	"kaen-seibo-the-virgin-on-megiddo": {
+		"name": "Kaen Seibo: The Virgin on Megiddo"
+	},
+	"kanon": {
+		"name": "Kanon"
+	},
+	"kao-the-kangaroo": {
+		"name": "Kao the Kangaroo"
+	},
 	"kidou-senshi-gundam-renpou-vs-zeon": {
 		"name": "Kidou Senshi Gundam: Renpou vs. Zeon"
+	},
+	"kiss-psycho-circus-the-nightmare-child": {
+		"name": "KISS Psycho Circus: The Nightmare Child"
+	},
+	"langrisser-millennium": {
+		"name": "Langrisser Millennium"
 	},
 	"legacy-of-kain-soul-reaver": {
 		"name": "Legacy of Kain: Soul Reaver"
 	},
+	"looney-tunes-space-race": {
+		"name": "Looney Tunes: Space Race"
+	},
+	"love-hina": {
+		"name": "Love Hina"
+	},
+	"love-hina-2": {
+		"name": "Love Hina 2"
+	},
+	"macross-m3": {
+		"name": "Macross M3"
+	},
+	"magforce-racing": {
+		"name": "MagForce Racing"
+	},
+	"magic-the-gathering": {
+		"name": "Magic: The Gathering"
+	},
+	"maken-x": {
+		"name": "Maken X"
+	},
+	"marionette-handler": {
+		"name": "Marionette Handler"
+	},
+	"mars-matrix": {
+		"name": "Mars Matrix"
+	},
+	"marvel-vs-capcom": {
+		"name": "Marvel vs. Capcom"
+	},
 	"marvel-vs-capcom-2": {
 		"name": "Marvel vs. Capcom 2"
 	},
+	"mat-hoffmans-pro-bmx": {
+		"name": "Mat Hoffman's Pro BMX"
+	},
+	"max-steel": {
+		"name": "Max Steel"
+	},
+	"maximum-pool": {
+		"name": "Maximum Pool"
+	},
+	"mdk-2": {
+		"name": "MDK 2"
+	},
+	"memories-off-2nd": {
+		"name": "Memories Off 2nd"
+	},
+	"memories-off-complete": {
+		"name": "Memories Off Complete"
+	},
 	"mr-driller": {
 		"name": "Mr. Driller"
+	},
+	"power-jet-racing-2001": {
+		"name": "Power Jet Racing 2001"
 	},
 	"power-stone": {
 		"name": "Power Stone"
@@ -388,6 +476,9 @@
 	},
 	"sega-bass-fishing-2": {
 		"name": "Sega Bass Fishing 2"
+	},
+	"sega-marine-fishing": {
+		"name": "Sega Marine Fishing"
 	},
 	"sega-tetris": {
 		"name": "Sega Tetris"
@@ -433,11 +524,32 @@
 	"super-hero-retsuden": {
 		"name": "Super Hero Retsuden"
 	},
+	"test-drive-le-mans": {
+		"name": "Test Drive Le Mans"
+	},
 	"the-grinch": {
 		"name": "The Grinch"
 	},
 	"the-house-of-the-dead-2": {
 		"name": "The House of the Dead 2"
+	},
+	"the-king-of-fighters-2000": {
+		"name": "The King of Fighters 2000"
+	},
+	"the-king-of-fighters-2001": {
+		"name": "The King of Fighters 2001"
+	},
+	"the-king-of-fighters-2002": {
+		"name": "The King of Fighters 2002"
+	},
+	"the-king-of-fighters-99-evolution": {
+		"name": "The King of Fighters '99 Evolution"
+	},
+	"the-king-of-fighters-dream-match-1999": {
+		"name": "The King of Fighters: Dream Match 1999"
+	},
+	"the-last-blade-2": {
+		"name": "The Last Blade 2"
 	},
 	"tnn-motorsports-hardcore-heat": {
 		"name": "TNN Motorsports Hardcore Heat"

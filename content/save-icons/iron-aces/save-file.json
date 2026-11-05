@@ -1,0 +1,50 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "iron-aces",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#000000ff",
+		"#112222ff",
+		"#334466ff",
+		"#880000ff",
+		"#555555ff",
+		"#884411ff",
+		"#993300ff",
+		"#aa3300ff",
+		"#997700ff",
+		"#0088ddff",
+		"#7799ffff",
+		"#bbccccff",
+		"#ffee00ff",
+		"#ffffffff",
+		"#ffffffff"
+	],
+	"frames": [
+		"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1aaaaaaaaaaaaaaaaaa111111aaaaaa11aaaaaaaaaaaaaaaaa11bb1b11aaaaa11aaaaaaaaaaa11111111bb1b131aaa111aaaaaaaaa11133133311b1b1331aa1ccaaaaaaaa113335133331111133311111aaaaa1111355551333333333cc333111aaaa115c155111132311113cccc3ccccaaaa11551122221221122113cc333333aaaaa111122222121122221222222222aaaaaaaa122222111222221122222211aaaaaaaa11222211222222211111111aaaaaaaaaa111111111111111aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6666666a6aaaaaaaaaaaaaaaaaaaaaa666d996666aaaaaaaaaaaaaaaaaaaaaa1666666111aaaaaaaaaaaaaaaaaaaaaaa1111111a1aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+		"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1111aaaaaaaaaaaaaaa111111aaaaaa11cc11aaaaaaaaaaaaa11bb1b11aaaaa111111aaaaaaa11111111bb1b131aaa1111111aaaaa11133133311b1b1331aa1ccccc1aaaa1133351333311111333111111111aaa11355551333333333cc3331111111aaac155111132311113cccc3ccccccc1aaa51122221221122113cc3333332221aaa11222221211222212222222222211aaaa122222111222221122222211111aaaaa11222211222222211111111aaaaaaaaaa111111111111111aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa6aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa66aaaaaaaaaaaaaaaaaaaaaaaaaaaa66611aaaaaaaaaaaaaaaaaaaaaaaaaa69661aaaaaaaaaaaaaaaaaaaaaaaaaa69661aaaaaaaaaaaaaaaaaaaaaaaaaa6d661aaaaaaaaaaaaaaaaaaaaaaaaaaa6661aaaaaaaaaaaaaaaaaaaaaaaaaaaa611aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa",
+		"aaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaaa1111aaaaaaaaaaaaaaaaaa111aaaaaa11cc11aaaaaaaaaaaaaaaaa1b11aaaaa111111aaaaaaaaaaaaaaaaa1b131aaa1111111aaaaaaaaaaaaaaaaa1b1331aa1ccccc1aaaaaaaaaaaaaaaaa111333111111111aaaaaaaaaaaaaaaaa333cc3331111111aaaaaaaaaaaaaaaaa13cccc3ccccccc1aaaaaaaaaaaaaaaaa113cc3333332221aaaaaaaaaaaaaaaaa212222222222211aaaaaaaaaaaaaaaaa21122222211111aaaaaaaaa77aaaaaaa2211111111aaaaaaaaaaaaa77aaaaaaa111aaaaaaaaaaaaaaaaaaaa77aaaaaaaaaaaaaaaaaaaaaaaaaaaaaa77aaaaaa7aaaaaaaaaaaaaaaaaaaaaaa77aaaaa77aaaaaaaaaaaaaaaaaaaaaaa77aaaaa77aaaaaaaaaaaaaaaaaaaaaa7777aaa777aaaaaaaaaaaaaaaaaaaa777777777777aaaaaaaaaaaaaaaaaaaa777d77777777aaaaaaaaaaaaaaaaaaa7777ddd77dd77aaaaaaaaaaaaaaaaaaa7777ddd77777daaaaaaaaaaaaaaaaa77777dd7777777daaaaaaaaaaaaaaaaa77777d77777ddddaaaaaaaaaaa7aaaaa77777d77777d7d7aaaaaaaaaaa77aa7777dddd7777dddd7aaaaaaaaaaa7777777777dd777ddd777aaaaaaaaaaa7777777777d7777dd77d7aaaaaaaaaaaa77777777dd77d7d7ddddaaaaaaaaaaaaaaaa777ddd7dddddddddaaaaaaaaaaaaaaaaa77d777dddddddddaaaaaaaaaaaaaaaaa77d7ddddddddddd"
+	],
+	"animationSpeed": 22,
+	"vmuName": "GAME-17END",
+	"description": "Iron Aces      GAME SIR OLSEN",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v42319.VMS",
+			"v5139.VMS",
+			"v63890.VMS",
+			"v64562.VMS",
+			"v6897.VMS",
+			"v89766.VMS",
+			"v91038.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ironaces"
+	},
+	"tags": [],
+	"hash": "ac6d02bd706dab017d167c1aa80ac1b80b16e684",
+	"added": "2026-11-05"
+}

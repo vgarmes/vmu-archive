@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "Gekka no Kenshi 2 save file",
+	"gameId": "the-last-blade-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#000000ff",
+		"#0033ffff",
+		"#0033eeff",
+		"#0033ccff",
+		"#0022bbff",
+		"#002299ff",
+		"#002288ff",
+		"#001166ff",
+		"#001144ff",
+		"#000033ff",
+		"#ffff11ff",
+		"#ffffffff",
+		"#aaaa22ff",
+		"#ffccffff",
+		"#dd77ddff"
+	],
+	"frames": [
+		"22111111111111222222222ff2222222221cbbbbbbbbbb122222ff2ce2ff2222221cbbbbbbbbbb12222fcefcefcef222221cb1111111cb12222feefeefeef222331cb1111111cb133333ffeffeff3333331cbbbbbbbbbb1333fccefccfeccf33331cbbbbbbbbbb1333feeefeefeeef33331cb1111111cb133333ffeffeff3333441cb1111111cb14444fcefeefcef444441cbbbbbbbbbb14444feefcefeef444441cbbbbbbbbbb144444ff4ce4ff4444441cb1111111cb144444444ff4444444551cb1555551cb155555555555555555551cd1555551cb15551111551111555551cb15555551cb15551cf1551cf1555551cd15555551cb11111ce1111ce111151cb16666661cbb11ceeeeeeeeeeeee161bb16666661bb161fffeeffffeefff1611166666666116611eceeeeeeeeee11666666666666666661fceffceffcef16677777ccbb777777111ce11ce11ce1117777ccbbbbb777771eeeeeeeeeeeeee1777cbbb7777777771ffceffceffceff1777cbb7777777777111ce11ce11ce11178cbbb888888888881eeeeeeeeeeee1888cbbb888888b88811fffffcefffff1188cbbb888888cb81feeeeeeceeeeeeef18cbbbc8888cbb81eeeeeeeceeeeeeee199bbbbccccbb9911111111ce1111111199bbbbbbbbbb9999999991ce19999999999bbbbbbbb99999999991ce1999999999999bbbb99999999999911119999999"
+	],
+	"animationSpeed": 0,
+	"vmuName": "Gekka2 Data File",
+	"description": "LAST BLADE2",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v15978.VMS",
+			"v29093.VMS",
+			"v64003.VMS",
+			"v73393.VMS",
+			"yuehua.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/lastblade2"
+	},
+	"tags": [],
+	"hash": "47ce81a86cc10c1b74ca136bf8afe41c43b9a0ff",
+	"added": "2026-11-05"
+}

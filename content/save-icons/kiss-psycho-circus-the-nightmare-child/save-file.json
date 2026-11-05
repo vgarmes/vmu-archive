@@ -1,0 +1,49 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "kiss-psycho-circus-the-nightmare-child",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#992222ff",
+		"#443344ff",
+		"#662288ff",
+		"#331144ff",
+		"#bb66ddff",
+		"#777711ff",
+		"#111111ff",
+		"#222211ff",
+		"#332222ff",
+		"#ddddccff",
+		"#000000ff",
+		"#221100ff",
+		"#665555ff",
+		"#551111ff",
+		"#aa8888ff",
+		"#000000ff"
+	],
+	"frames": [
+		"aaaaaaaaffffb1ceec1bffff6aaaaaa6aaaafffffb31ceeeeeec13bfffffaaa6aaffffffb11ceee99eeec11bffffffa6afffff333eeee999999eeee333fffffaffffff332299e999999e992233fffffffffffffff34999999999943ffffffffffffffffffff499eeee994ffffffffffffff59999fffb999cc999bfff99995fff31ffe999efff19e33e91fffe999eff13222ff5ee5ffff1bffb1ffff5ee5ff2222222fffffffffffddfffffffffff2222e2244cffc9acf1e99e1fca9cffc4422ee2499ffa9ee1d0e99e0d1ee9aaa9942ee4499eed1de1d00ee00d1ed1dee9944ee91ffbdddcedd000000ddecdddbff19e99ffffddd00dffd00dffd00dddffff99e9ffbfbddd00dffffffd00dddbfbff9eee1fdffbbddd00dddd00dddbbffdf1eefeefdbfff1bbbddddddbbb1fffbdfee6aac1dbfffe1c1eeeeee1c1efffbd1c66aaacdbfffd1be999a99eb1dfffbdc676aaaaddffffbfb3fddf3bfbffffdd6776aaaaadfffbb11bbffbb11bbfffd66666a6aaaddfbfd1cec11cec1dfbfdd77666aaaaad0dbffddccccccddffbd0d66666aaa6afd0b1b1bdeccedb1b1b0d766667faaaffd0ed1cb38dd83bc1de0d766666faaafff0e0d1ce9999ec1d0e07667777aaaafffd0ee0dbd22dbd0ee0d6668767aaaaafffd0e9edddddde9e0d87778667aaaaaffffd0ee999999ee0d877887777aaaaaaffffdd00000000dd8888888778"
+	],
+	"animationSpeed": 1,
+	"vmuName": "KISSPSYCHOCIRCUS",
+	"description": "",
+	"source": {
+		"kind": "save",
+		"files": [
+			"KISSPC.VMS",
+			"v15003.VMS",
+			"v18475.VMS",
+			"v18835.VMS",
+			"v25392.VMS",
+			"v55188.VMS",
+			"v64618.VMS",
+			"v95432.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/kisspsycho"
+	},
+	"tags": [],
+	"hash": "65d40862ef3dafb07a867f5470813823ec8c2e58",
+	"added": "2026-11-05"
+}

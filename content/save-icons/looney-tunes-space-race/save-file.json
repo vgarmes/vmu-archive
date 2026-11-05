@@ -1,0 +1,45 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "looney-tunes-space-race",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ff2222ff",
+		"#dd5566ff",
+		"#dd7788ff",
+		"#ddaabbff",
+		"#eeddeeff",
+		"#ffffffff",
+		"#001155ff",
+		"#8899bbff",
+		"#225599ff",
+		"#aabbddff",
+		"#4477ccff",
+		"#3377ccff",
+		"#55aaffff",
+		"#bbddffff",
+		"#55aaffff",
+		"#ff0000ff"
+	],
+	"frames": [
+		"666677779778888888888886666666666645533344555d9aaaaa8888866666666451fffffff13455ddacaaaa88866666751fffffffffff0355ccccaaa888666653ffffffffffffff148cccccaa88866650ffffffffffffff346666ccccaa886650ffff0221ffffff49666668ccca888652ffff55555431ff578886666ccca886950fff35467955545aa8888666ccaa88854ffff2559aac9ddaaaa888668ccaa889551fff03554cccccccaa88666ccaa88875530ffff355da8acccca88666cca88aacd5541ffff3554445ddd78866ccaa8aace674553fff11111234555476ccca8add96687d550fffffffffff24548caa87544488aad53fff05431fffff158cca8c5115559dd54fff259453fffff47cca87551f1344530fff35a853fffff58cca8ac5541fffffffff3d8550ffff358caa8abc9455321112ff49551ffff259ccca8aacc689455554ff4541ffff3596cca888acc66688acd4ff540ffff35466ccaa88accc66888ad4ff2fffff15586ccaa8688acc86688843fffffffff1454cca88688aacc6666852ffff0ffffff3559a886688accc666651f03453ffffff155d8666888accc86651f4549541ffffff255766688aacccc65ff47668554ffffff0456666888aaccc5435868ccd551ffffff166666888aaccdddd9cccccc5530ffff16666668888aaaaccccccaaa89551ff05666666668888aaaaaaa8a88888453045"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ROD",
+	"description": "LOONEY TUNES SPACE RACE GAME",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v40327.VMS",
+			"v68008.VMS",
+			"v95476.VMS",
+			"v96069.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/looneytoons"
+	},
+	"tags": [],
+	"hash": "08cd351533eee9237160b729ee426fe82f9439f1",
+	"added": "2026-11-05"
+}
