@@ -33,6 +33,11 @@
  * it in "titles" as its source. An icon not named in "titles" is left out, so
  * a folder can be imported in part.
  * Icons already in the archive, under any game, are skipped.
+ *
+ * Saves rebuilt from a game's disc (a disc-extraction script writes the header
+ * the game would, from the pieces its program holds) name that file in the
+ * sidecar, `"disc": "/1ST_READ.BIN"`: their entries get
+ * `"source": { "kind": "disc", "file": "/1ST_READ.BIN" }`.
  */
 import fs from 'node:fs'
 import path from 'node:path'
@@ -52,6 +57,8 @@ interface Sidecar {
 	year?: number
 	region?: SaveIcon['region']
 	tags?: string[]
+	/** Saves rebuilt from this file on the game's disc, not dumped ones. */
+	disc?: string
 	titles: Record<string, string>
 }
 
@@ -245,12 +252,14 @@ function main() {
 				: {}),
 			vmuName: first.vmuName,
 			description: first.description,
-			source: {
-				kind: 'save',
-				// The memory card name of the save that named it (the dump's own
-				// file names are its uploader's), or none without a .VMI.
-				...withName(group.find(s => sidecar.titles[s.file]) ?? first)
-			},
+			source: sidecar.disc
+				? { kind: 'disc', file: sidecar.disc }
+				: {
+						kind: 'save',
+						// The memory card name of the save that named it (the dump's
+						// own file names are its uploader's), or none without a .VMI.
+						...withName(group.find(s => sidecar.titles[s.file]) ?? first)
+					},
 			tags: sidecar.tags ?? [],
 			hash,
 			added: new Date().toISOString().slice(0, 10)
