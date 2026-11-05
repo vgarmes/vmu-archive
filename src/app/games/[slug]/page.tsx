@@ -158,7 +158,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 								<Link
 									href={allSaveIcons}
 									title={`All ${saveIcons.length} save icons`}
-									className="text-muted-foreground hover:text-foreground focus-visible:ring-ring flex h-8 items-center px-1 text-xs outline-none focus-visible:ring-1"
+									className="border-border bg-card text-muted-foreground hover:border-foreground hover:bg-foreground hover:text-background focus-visible:ring-ring flex h-8 min-w-8 items-center justify-center border px-1.5 text-xs tabular-nums outline-none focus-visible:ring-1"
 								>
 									+{saveIcons.length - headerIcons.length}
 								</Link>
