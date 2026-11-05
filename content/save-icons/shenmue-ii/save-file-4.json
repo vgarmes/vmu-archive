@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Save file",
-	"game": "Shenmue II",
+	"gameId": "shenmue-ii",
 	"publisher": "Sega",
 	"year": 2001,
 	"width": 32,

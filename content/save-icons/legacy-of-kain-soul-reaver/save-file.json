@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Save file",
-	"game": "Legacy of Kain: Soul Reaver",
+	"gameId": "legacy-of-kain-soul-reaver",
 	"publisher": "Eidos Interactive",
 	"year": 2000,
 	"width": 32,

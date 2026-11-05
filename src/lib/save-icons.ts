@@ -3,10 +3,10 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { getGames } from './games'
 import type { PixelArt } from './pixels'
-import { slug } from './slug'
+import { getGameEntry } from './registry'
 
 /**
- * Save icons (content/save-icons/<game slug>/*.json, see scripts/save-icons.ts),
+ * Save icons (content/save-icons/<game id>/*.json, see scripts/save-icons.ts),
  * read at build time for the /save-icons page and the game pages. Their images
  * are /save-icons/<id>.png (frame 1) and, when animated, /save-icons/<id>.gif.
  */
@@ -16,7 +16,7 @@ const DIR = path.join(process.cwd(), 'content/save-icons')
 interface File {
 	kind: 'save' | 'memory-card'
 	title: string
-	game: string
+	gameId: string
 	publisher?: string
 	year?: number
 	region?: string
@@ -34,7 +34,7 @@ interface File {
 }
 
 export interface SaveIcon {
-	/** "<game slug>-<file id>", unique across games; names its images. */
+	/** "<game id>-<file id>", unique across games; names its images. */
 	id: string
 	/** A save's icon, or a memory card's own (ICONDATA_VMS). */
 	kind: 'save' | 'memory-card'
@@ -83,14 +83,18 @@ export function getSaveIcons(): SaveIcon[] {
 			const s = JSON.parse(
 				fs.readFileSync(path.join(dir, file), 'utf8')
 			) as File
-			const game = games.get(slug(s.game))
+			if (s.gameId !== gameSlug)
+				throw new Error(
+					`content/save-icons/${gameSlug}/${file}: its gameId is ${s.gameId}`
+				)
+			const game = games.get(s.gameId)
 			cache.push({
 				id: `${gameSlug}-${file.replace(/\.json$/, '')}`,
 				kind: s.kind,
 				madeByGame: s.madeByGame,
 				hasVmuIcon: !!s.vmuIcon,
 				title: s.title,
-				game: game?.en ?? s.game,
+				game: game?.en ?? getGameEntry(s.gameId).name,
 				gameSlug,
 				ja: game?.ja,
 				hasPage: !!game,

@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Save file",
-	"game": "Rez",
+	"gameId": "rez",
 	"publisher": "Sega",
 	"year": 2002,
 	"width": 32,

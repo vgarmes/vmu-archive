@@ -18,6 +18,7 @@ from pathlib import Path
 from PIL import Image
 
 GAME = 'Ikaruga'
+GAME_ID = 'ikaruga'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 # Matches the entry already in the archive. The logo and English text are the
 # same in every release, so no region.
@@ -44,7 +45,7 @@ def main(out, inbox):
     have = set()
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             have.update(data.get('frames', []))
     if inbox.exists():
         shutil.rmtree(inbox)

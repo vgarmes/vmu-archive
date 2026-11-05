@@ -2,7 +2,7 @@
  * Save icons: the colour icon the Dreamcast's file menu shows for a save, read
  * from the save file's header (or found on a game's disc). Not VMU art: 32x32,
  * 4 bits a pixel through a 16-colour palette, one frame or a few. Kept in
- * content/save-icons/<game slug>/<id>.json, one per distinct icon: saves that
+ * content/save-icons/<game id>/<id>.json, one per distinct icon: saves that
  * carry the same icon (every system file of a game, say) share one entry.
  *
  * Written by `pnpm saveicons:import` (scripts/import-saves.ts) and checked by
@@ -29,7 +29,8 @@ export interface SaveIcon {
 	kind: 'save' | 'memory-card'
 	/** What the save is, in English ("System file", "Replay file"). */
 	title: string
-	game: string
+	/** The game's id in the registry, content/games.json. */
+	gameId: string
 	publisher?: string
 	year?: number
 	region?: 'JP' | 'US' | 'EU' | 'WW'
@@ -110,7 +111,7 @@ export function saveIconProblems(s: SaveIcon): string[] {
 	} else if (s.vmuIcon !== undefined || s.madeByGame !== undefined)
 		out.push('only a memory card icon has "vmuIcon" and "madeByGame"')
 	if (!s.title) out.push('no "title"')
-	if (!s.game) out.push('no "game"')
+	if (!s.gameId) out.push('no "gameId"')
 	if (s.region !== undefined && !REGIONS.includes(s.region))
 		out.push(`"region" ${s.region} is not one of ${REGIONS.join(', ')}`)
 	if (s.width !== ICON_SIZE || s.height !== ICON_SIZE || s.bpp !== 4)

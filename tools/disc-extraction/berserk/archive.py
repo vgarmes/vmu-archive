@@ -3,6 +3,7 @@ import json
 from pathlib import Path
 
 GAME = 'Berserk: Millennium Falcon-hen – Wasurebana no Shō'
+GAME_ID = 'berserk-millennium-falcon-hen-wasurebana-no-sho'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 
 
@@ -18,5 +19,5 @@ def archive_entries(screens):
     by_hex = {m['frame_hex']: n for n, m in screens.items()}
     for path in sorted((REPO / 'content/icons').glob('*.json')):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             yield path.stem, data, [by_hex.get(h) for h in data['frames']]

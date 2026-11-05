@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Save file",
-	"game": "Carrier",
+	"gameId": "carrier",
 	"publisher": "Jaleco",
 	"year": 2000,
 	"width": 32,

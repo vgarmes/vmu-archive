@@ -12,6 +12,7 @@ from pathlib import Path
 from PIL import Image
 
 GAME = 'Project Justice'
+GAME_ID = 'project-justice'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 BASE = dict(game=GAME, publisher='Capcom', year=2000)
 # (title, tags, region). Region follows the logo, not the disc: the Japanese pair
@@ -30,7 +31,7 @@ def main(out, inbox):
     have = set()
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             have.update(data['frames'])
     if inbox.exists():
         shutil.rmtree(inbox)

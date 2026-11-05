@@ -1,20 +1,112 @@
 {
-	"Bangai-O": {
+	"bangai-o": {
+		"name": "Bangai-O",
 		"ja": "Bakuretsu Muteki Bangaioh"
 	},
-	"Berserk: Millennium Falcon-hen – Wasurebana no Shō": {
+	"berserk-millennium-falcon-hen-wasurebana-no-sho": {
+		"name": "Berserk: Millennium Falcon-hen – Wasurebana no Shō",
 		"en": "Sword of the Berserk: Guts' Rage"
 	},
-	"Project Justice": {
+	"blue-stinger": {
+		"name": "Blue Stinger"
+	},
+	"capcom-vs-snk-2": {
+		"name": "Capcom vs. SNK 2"
+	},
+	"carrier": {
+		"name": "Carrier"
+	},
+	"crazy-taxi": {
+		"name": "Crazy Taxi"
+	},
+	"crazy-taxi-2": {
+		"name": "Crazy Taxi 2"
+	},
+	"dreamcast": {
+		"name": "Dreamcast"
+	},
+	"ikaruga": {
+		"name": "Ikaruga"
+	},
+	"jet-set-radio": {
+		"name": "Jet Set Radio",
+		"aliases": [
+			"Jet Grind Radio",
+			"De La Jet Set Radio",
+			"Jet Set Radio DX"
+		]
+	},
+	"legacy-of-kain-soul-reaver": {
+		"name": "Legacy of Kain: Soul Reaver"
+	},
+	"marvel-vs-capcom-2": {
+		"name": "Marvel vs. Capcom 2"
+	},
+	"power-stone": {
+		"name": "Power Stone"
+	},
+	"power-stone-2": {
+		"name": "Power Stone 2"
+	},
+	"project-justice": {
+		"name": "Project Justice",
 		"ja": "Moero! Justice Gakuen"
 	},
-	"Puyo Pop Fever": {
+	"puyo-pop-fever": {
+		"name": "Puyo Pop Fever",
 		"ja": "Puyo Puyo Fever"
 	},
-	"Shenmue": {
-		"ja": "Shenmue Isshō: Yokosuka"
+	"rez": {
+		"name": "Rez"
 	},
-	"Street Fighter III: 3rd Strike": {
-		"ja": "Street Fighter III 3rd Strike: Fight for the Future"
+	"sakura-taisen-3-paris-wa-moete-iru-ka": {
+		"name": "Sakura Taisen 3: Paris wa Moete Iru ka",
+		"aliases": [
+			"Sakura Wars 3"
+		]
+	},
+	"sega-tetris": {
+		"name": "Sega Tetris"
+	},
+	"shenmue": {
+		"name": "Shenmue",
+		"ja": "Shenmue Isshō: Yokosuka",
+		"aliases": [
+			"Shenmue Chapter 1: Yokosuka"
+		]
+	},
+	"shenmue-ii": {
+		"name": "Shenmue II"
+	},
+	"shinseiki-evangelion-typing-e-keikaku": {
+		"name": "Shinseiki Evangelion: Typing E-Keikaku"
+	},
+	"sonic-adventure": {
+		"name": "Sonic Adventure"
+	},
+	"sonic-adventure-2": {
+		"name": "Sonic Adventure 2"
+	},
+	"sonic-shuffle": {
+		"name": "Sonic Shuffle"
+	},
+	"soul-calibur": {
+		"name": "Soul Calibur"
+	},
+	"street-fighter-iii-3rd-strike": {
+		"name": "Street Fighter III: 3rd Strike",
+		"ja": "Street Fighter III 3rd Strike: Fight for the Future",
+		"aliases": [
+			"Street Fighter 3rd Strike"
+		]
+	},
+	"tony-hawks-pro-skater": {
+		"name": "Tony Hawk's Pro Skater"
+	},
+	"unknown": {
+		"name": "Unknown"
+	},
+	"visual-memory-unit": {
+		"name": "Visual Memory Unit"
 	}
 }

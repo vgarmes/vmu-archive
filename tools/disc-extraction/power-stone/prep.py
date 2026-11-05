@@ -21,7 +21,7 @@ def main(out, inbox):
     have = set()
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] in YEARS:
+        if data['gameId'] in ('power-stone', 'power-stone-2'):
             have.update(data['frames'])
     if inbox.exists():
         shutil.rmtree(inbox)

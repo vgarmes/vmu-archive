@@ -1,6 +1,6 @@
 {
 	"title": "Title screen",
-	"game": "Carrier",
+	"gameId": "carrier",
 	"publisher": "Jaleco",
 	"year": 2000,
 	"width": 48,

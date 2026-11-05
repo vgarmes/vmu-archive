@@ -10,6 +10,7 @@ import sys
 from pathlib import Path
 
 GAME = 'Street Fighter III: 3rd Strike'
+GAME_ID = 'street-fighter-iii-3rd-strike'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 # The name and logo are the same in every release, so no region.
 BASE = dict(game=GAME, publisher='Capcom', year=2000)
@@ -26,7 +27,7 @@ def main(out, inbox):
     have = set()
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             have.update(data.get('frames', []))
     if inbox.exists():
         shutil.rmtree(inbox)

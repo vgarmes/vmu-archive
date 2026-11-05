@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Big voice download",
-	"game": "Sonic Adventure",
+	"gameId": "sonic-adventure",
 	"publisher": "Sega",
 	"year": 1998,
 	"width": 32,

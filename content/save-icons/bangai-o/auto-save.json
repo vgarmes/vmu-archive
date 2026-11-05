@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Auto save",
-	"game": "Bangai-O",
+	"gameId": "bangai-o",
 	"publisher": "Treasure",
 	"year": 1999,
 	"width": 32,

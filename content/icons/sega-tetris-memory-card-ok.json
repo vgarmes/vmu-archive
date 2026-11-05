@@ -1,6 +1,6 @@
 {
 	"title": "Memory card: OK",
-	"game": "Sega Tetris",
+	"gameId": "sega-tetris",
 	"publisher": "Sega",
 	"year": 2000,
 	"region": "JP",

@@ -16,6 +16,7 @@ from pathlib import Path
 from PIL import Image
 
 GAME = 'Jet Set Radio'
+GAME_ID = 'jet-set-radio'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 BASE = dict(game=GAME, publisher='Sega', year=2000)
 GAME_SCREENS = {
@@ -74,7 +75,7 @@ def main(game_out, app_out, inbox):
     have = set()
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             have.add(tuple(data['frames']))
     if inbox.exists():
         shutil.rmtree(inbox)

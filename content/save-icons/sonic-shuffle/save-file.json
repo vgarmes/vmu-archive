@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Save file",
-	"game": "Sonic Shuffle",
+	"gameId": "sonic-shuffle",
 	"publisher": "Sega",
 	"year": 2000,
 	"width": 32,

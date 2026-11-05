@@ -1,7 +1,7 @@
 {
 	"kind": "memory-card",
 	"title": "Memory card icon",
-	"game": "Crazy Taxi",
+	"gameId": "crazy-taxi",
 	"publisher": "Sega",
 	"year": 2000,
 	"width": 32,

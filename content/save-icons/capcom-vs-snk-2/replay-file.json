@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Replay file",
-	"game": "Capcom vs. SNK 2",
+	"gameId": "capcom-vs-snk-2",
 	"publisher": "Capcom",
 	"year": 2001,
 	"region": "JP",

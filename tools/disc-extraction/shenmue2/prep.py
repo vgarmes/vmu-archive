@@ -13,6 +13,7 @@ import sys
 from pathlib import Path
 
 GAME = 'Shenmue II'
+GAME_ID = 'shenmue-ii'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 BASE = dict(game=GAME, publisher='Sega', year=2001, region='JP')
 CARD = ['memory-card']
@@ -43,7 +44,7 @@ def main(out, inbox):
     have = set()
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             have.update(data['frames'])
     if inbox.exists():
         shutil.rmtree(inbox)

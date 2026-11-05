@@ -30,13 +30,17 @@ pnpm typecheck
 Art comes from disc dumps, through a per-game folder in
 [`tools/disc-extraction/`](tools/disc-extraction/) (its README has the method).
 What each game's scripts found is written up in its notes,
-`content/games/<game slug>.md`, shown on the game's page.
+`content/games/<game id>.md`, shown on the game's page.
 
-A game's English and romanized Japanese titles, when they differ, go in
-`content/games.json`, keyed by the `game` its screens use (which also gives
-its URL, `/games/<game slug>`). Set `en` when that name is the Japanese one,
-`ja` when it's the English one. `cover` picks the screen its card shows (an
-icon id); by default that's its title screen, else its logo.
+Every game is in `content/games.json`, the registry, under a stable id that
+its screens, sprites and save icons refer to (`"gameId"`) and that gives its
+URL, `/games/<game id>`, and folders. `name` is its name in the archive;
+`aliases` are other names sources use for it, so the importers can find it.
+Set `en` when the name is the Japanese one, `ja` when it's the English one.
+`cover` picks the screen its card shows (an icon id); by default that's its
+title screen, else its logo. A sidecar's `"game"` can be a name, an alias or
+an id; a game the registry doesn't know yet is added to it with its name's
+slug as id. Renaming a game only changes its `name`.
 
 1. Run the game's scripts. They write one `.png` per piece, 48 pixels wide and
    32 tall per frame with frames stacked top to bottom (dark pixels are lit),
@@ -84,9 +88,9 @@ art enters from the top edge, and the entry rests on the strip's bottom screen.
 
 ### Pictures in a game's notes
 
-A game's notes (`content/games/<game slug>.md`) can show pictures that explain
+A game's notes (`content/games/<game id>.md`) can show pictures that explain
 something but aren't archive entries, like a sequence rebuilt from the code. Put
-them in `public/notes/<game slug>/` at native size, near-black on transparent
+them in `public/notes/<game id>/` at native size, near-black on transparent
 like the thumbnails, and link them relative to the notes file:
 
 ```md

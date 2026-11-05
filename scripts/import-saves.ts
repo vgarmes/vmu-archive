@@ -5,7 +5,9 @@
  *
  * The folder holds a game's saves (.VMS, each with its .VMI). A
  * save-icons.json, in the folder or given with --sidecar, says which game
- * they're from and names each distinct icon by any one of its saves:
+ * they're from (by its name, an alias or its id in content/games.json; a game
+ * the registry doesn't know yet is added to it) and names each distinct icon
+ * by any one of its saves:
  *
  *   {
  *     "game": "Capcom vs. SNK 2", "publisher": "Capcom", "year": 2001,
@@ -35,6 +37,7 @@
 import fs from 'node:fs'
 import path from 'node:path'
 import { slug } from '../src/lib/slug.ts'
+import { gameIdFor, loadRegistry } from './registry.ts'
 import {
 	ICON_SIZE,
 	SAVE_ICONS_DIR,
@@ -182,8 +185,9 @@ function main() {
 		groups.set(hash, [...(groups.get(hash) ?? []), s])
 	}
 
+	const gameId = gameIdFor(loadRegistry(), sidecar.game, { dryRun })
 	const have = existingHashes()
-	const dir = path.join(SAVE_ICONS_DIR, slug(sidecar.game))
+	const dir = path.join(SAVE_ICONS_DIR, gameId)
 	const taken = new Set(
 		fs.existsSync(dir)
 			? fs.readdirSync(dir).map(f => f.replace(/\.json$/, ''))
@@ -216,7 +220,7 @@ function main() {
 		const icon: SaveIcon = {
 			kind: first.kind,
 			title,
-			game: sidecar.game,
+			gameId,
 			publisher: sidecar.publisher,
 			year: sidecar.year,
 			region: sidecar.region,
@@ -246,7 +250,7 @@ function main() {
 			)
 		}
 		console.log(
-			`  add   ${files[0]} (+${files.length - 1}) → save-icons/${slug(sidecar.game)}/${id}.json (${icon.kind}, ${icon.frames.length} frame${icon.frames.length === 1 ? '' : 's'})`
+			`  add   ${files[0]} (+${files.length - 1}) → save-icons/${gameId}/${id}.json (${icon.kind}, ${icon.frames.length} frame${icon.frames.length === 1 ? '' : 's'})`
 		)
 		added++
 	}

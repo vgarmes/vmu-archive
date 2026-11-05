@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "System file",
-	"game": "Puyo Pop Fever",
+	"gameId": "puyo-pop-fever",
 	"publisher": "Sega",
 	"year": 2004,
 	"width": 32,

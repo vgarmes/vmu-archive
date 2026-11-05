@@ -10,7 +10,10 @@
  *
  * Metadata comes from a sidecar with the same basename (title-screen.png →
  * title-screen.json): { title, game, publisher, year, region, tags, unused,
- * frameDelayMs, frameDelaysMs, posterFrame, replaces }. "frameDelaysMs" gives
+ * frameDelayMs, frameDelaysMs, posterFrame, replaces }. "game" names the game
+ * by its name, an alias or its id in content/games.json; the entry stores its
+ * id ("gameId"), and a game the registry doesn't know yet is added to it.
+ * "frameDelaysMs" gives
  * each frame its own delay, one per frame, for frames that last different
  * times. Back-to-back copies of a frame are merged into one frame held for
  * their combined delay, so a pose held by repeating it is stored once, with a
@@ -33,7 +36,7 @@
  *
  * A sprite — art the game draws onto part of a screen, like the digits of a
  * counter — is imported at its own size with `"sprite": true` in its sidecar.
- * It goes to content/sprites/<game slug>/ for preservation; the site never
+ * It goes to content/sprites/<game id>/ for preservation; the site never
  * shows it (see scripts/sprites.ts). Its sidecar can also say where it came
  * from, `"source": { "file": "/LCDIMG.BIN", "entry": 11 }`, and where the game
  * draws it, `"drawnAt": [{ "screen": "<icon id>", "x": 30, "y": 2 }]`. A font
@@ -48,6 +51,7 @@ import path from 'node:path'
 import pngjs from 'pngjs'
 import { DEFAULT_FRAME_DELAY_MS, encodeFrame } from '../src/lib/pixels.ts'
 import { slug } from '../src/lib/slug.ts'
+import { gameIdFor, loadRegistry } from './registry.ts'
 import {
 	ICONS_DIR,
 	SPRITES_DIR,
@@ -64,6 +68,7 @@ const H = 32
 
 interface Meta {
 	title?: string
+	/** The game's name, an alias or its id in content/games.json. */
 	game?: string
 	publisher?: string
 	year?: number
@@ -155,7 +160,7 @@ function readSprite(buf: Buffer) {
 	return { width: img.width, height: img.height, frame: encodeFrame(bits, 1) }
 }
 
-/** Every sprite's hash, as "<game slug>/<id>.json", to skip duplicates. */
+/** Every sprite's hash, as "<game id>/<id>.json", to skip duplicates. */
 function existingSprites() {
 	const hashes = new Map<string, string>()
 	if (!fs.existsSync(SPRITES_DIR)) return hashes
@@ -182,12 +187,12 @@ function existingSprites() {
  * thumbnail URL and ?screen= links).
  */
 function newId(
-	game: string,
+	gameId: string,
 	title: string,
 	tags: string[],
 	taken: Set<string>
 ) {
-	const g = slug(game)
+	const g = gameId
 	const t = slug(title)
 	const base = (
 		(t === g || t.startsWith(`${g}-`) ? t : `${g}-${t}`) +
@@ -256,6 +261,9 @@ function collect(inputs: string[]): string[] {
 function main() {
 	const args = process.argv.slice(2)
 	const dryRun = args.includes('--dry-run')
+	// Sidecars name their game by name, alias or id; a new one joins the registry.
+	const registry = loadRegistry()
+	const gameIdOf = (name: string) => gameIdFor(registry, name, { dryRun })
 	const inputs = args.filter(a => !a.startsWith('--'))
 	if (!inputs.length) {
 		console.log(
@@ -334,8 +342,8 @@ function main() {
 					continue
 				}
 				const title = meta.title || path.basename(base)
-				const game = meta.game || title
-				const dir = path.join(SPRITES_DIR, slug(game))
+				const gameId = gameIdOf(meta.game || title)
+				const dir = path.join(SPRITES_DIR, gameId)
 				const takenHere = new Set(
 					fs.existsSync(dir)
 						? fs.readdirSync(dir).map(f => f.replace(/\.json$/, ''))
@@ -345,7 +353,7 @@ function main() {
 				for (let n = 2; takenHere.has(id); n++) id = `${slug(title)}-${n}`
 				const sprite: Sprite = {
 					title,
-					game,
+					gameId,
 					publisher: meta.publisher,
 					year: meta.year,
 					region: meta.region,
@@ -369,9 +377,9 @@ function main() {
 						JSON.stringify(sprite, null, '\t') + '\n'
 					)
 				}
-				spriteHashes.set(hash, `${slug(game)}/${id}.json`)
+				spriteHashes.set(hash, `${gameId}/${id}.json`)
 				console.log(
-					`  add   ${label} → sprites/${slug(game)}/${id}.json (sprite, ${width}x${height})`
+					`  add   ${label} → sprites/${gameId}/${id}.json (sprite, ${width}x${height})`
 				)
 				added++
 				continue
@@ -410,12 +418,14 @@ function main() {
 				}
 				if (meta.replaces) hashes.delete(prev.hash as string)
 				const title = pick('title') || path.basename(base)
+				const gameId = meta.game
+					? gameIdOf(meta.game)
+					: ((prev.gameId as string | undefined) ?? gameIdOf(title))
 				const id =
-					meta.replaces ??
-					newId(pick('game') || title, title, pick('tags') ?? [], taken)
+					meta.replaces ?? newId(gameId, title, pick('tags') ?? [], taken)
 				const entry = {
 					title,
-					game: pick('game') || title,
+					gameId,
 					publisher: pick('publisher'),
 					year: pick('year'),
 					region: pick('region'),
@@ -528,12 +538,14 @@ function main() {
 			if (meta.replaces) hashes.delete(prev.hash as string)
 
 			const title = pick('title') || path.basename(base)
+			const gameId = meta.game
+				? gameIdOf(meta.game)
+				: ((prev.gameId as string | undefined) ?? gameIdOf(title))
 			const id =
-				meta.replaces ??
-				newId(pick('game') || title, title, pick('tags') ?? [], taken)
+				meta.replaces ?? newId(gameId, title, pick('tags') ?? [], taken)
 			const entry = {
 				title,
-				game: pick('game') || title,
+				gameId,
 				publisher: pick('publisher'),
 				year: pick('year'),
 				region: pick('region'),

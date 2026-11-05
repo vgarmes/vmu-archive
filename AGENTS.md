@@ -16,23 +16,26 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   so code after that only sees frames. Add art with `pnpm icons:import`;
   don't hand-write frames.
 - Smaller art a game draws onto part of a screen (digits, buttons) is a
-  sprite: `content/sprites/<game slug>/*.json` at its own size, imported with
+  sprite: `content/sprites/<game id>/*.json` at its own size, imported with
   `"sprite": true` (see `scripts/sprites.ts`). They're kept for preservation
   and `pnpm content:check` validates them. The site only shows them: the build
-  packs each game's into `/sprites/<game slug>.png` (`src/lib/sprites.ts`),
+  packs each game's into `/sprites/<game id>.png` (`src/lib/sprites.ts`),
   shown in the Sprites and Fonts tabs of its page; that sheet is never committed.
 - Save icons (the colour icon the Dreamcast's file menu shows for a save) are
-  `content/save-icons/<game slug>/*.json`, 32x32 at 4 bits a pixel with their
+  `content/save-icons/<game id>/*.json`, 32x32 at 4 bits a pixel with their
   palette (see `scripts/save-icons.ts`), one per distinct icon. Import them
   from dumped saves with `pnpm saveicons:import <folder>` (`.VMS`/`.VMI` and a
   `save-icons.json`, see `scripts/import-saves.ts`); they're shown on
   `/save-icons` and beside the title of their game's page, never inverted in dark mode.
 - Findings about a game (format, timing, unused screens) go in its notes,
-  `content/games/<game slug>.md`; its README in `tools/disc-extraction/<game>/`
+  `content/games/<game id>.md`; its README in `tools/disc-extraction/<game>/`
   only names the dump and how to run the scripts.
-- A game's English/Japanese (romanized) titles and card cover live in
-  `content/games.json`, keyed by the icons' `game` (see `src/lib/games.ts`).
-  The site has one page per game, `/games/<game slug>`, which shows its notes.
+- `content/games.json` is the game registry: every game under a stable id,
+  with its name, English/Japanese (romanized) titles, aliases and card cover
+  (see `scripts/registry.ts`). Content refers to a game by that id
+  (`"gameId"`), never by name; folders and the page route
+  (`/games/<game id>`, which shows its notes) use it too. Importers resolve a
+  sidecar's `"game"` name or alias through the registry.
 - `src/lib/pixels.ts` is run by Node directly from the importer: keep it free
   of imports and non-erasable TypeScript.
 - The site is a static export (`output: 'export'`): every dynamic route needs

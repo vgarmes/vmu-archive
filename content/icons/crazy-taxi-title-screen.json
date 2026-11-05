@@ -1,6 +1,6 @@
 {
 	"title": "Title screen",
-	"game": "Crazy Taxi",
+	"gameId": "crazy-taxi",
 	"publisher": "Sega",
 	"year": 2000,
 	"width": 48,

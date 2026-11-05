@@ -1,7 +1,7 @@
 /**
  * Sprites: art a game draws onto part of the VMU screen at run time (digits,
  * buttons, counters), as opposed to a whole 48x32 screen. They're kept for
- * preservation, at their own size, in content/sprites/<game slug>/<id>.json,
+ * preservation, at their own size, in content/sprites/<game id>/<id>.json,
  * and kept out of content/icons/, which stays whole screens only. The site
  * shows them only in a game's Sprites and Fonts tabs (src/lib/sprites.ts).
  *
@@ -23,7 +23,8 @@ export const SCREEN_H = 32
 
 export interface Sprite {
 	title: string
-	game: string
+	/** The game's id in the registry, content/games.json. */
+	gameId: string
 	publisher?: string
 	year?: number
 	region?: 'JP' | 'US' | 'EU' | 'WW'
@@ -75,7 +76,7 @@ const isInt = (v: unknown, min: number) =>
 export function spriteProblems(s: Sprite, screens: Set<string>): string[] {
 	const out: string[] = []
 	if (!s.title) out.push('no "title"')
-	if (!s.game) out.push('no "game"')
+	if (!s.gameId) out.push('no "gameId"')
 	if (s.region !== undefined && !REGIONS.includes(s.region))
 		out.push(`"region" ${s.region} is not one of ${REGIONS.join(', ')}`)
 	if (s.bpp !== 1) out.push('"bpp" must be 1')

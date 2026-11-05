@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Save file",
-	"game": "Crazy Taxi",
+	"gameId": "crazy-taxi",
 	"publisher": "Sega",
 	"year": 2000,
 	"width": 32,

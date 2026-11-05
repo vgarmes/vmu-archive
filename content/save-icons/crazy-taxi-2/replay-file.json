@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Replay file",
-	"game": "Crazy Taxi 2",
+	"gameId": "crazy-taxi-2",
 	"publisher": "Sega",
 	"year": 2001,
 	"width": 32,

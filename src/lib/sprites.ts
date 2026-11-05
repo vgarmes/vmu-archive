@@ -5,8 +5,8 @@ import { type Glyphs, glyphBoxes } from './glyphs'
 import { decodeFrame } from './pixels'
 
 /**
- * A game's sprites (content/sprites/<game slug>/*.json, see scripts/sprites.ts)
- * packed into one sheet, read at build time. /sprites/<game slug>.png is the
+ * A game's sprites (content/sprites/<game id>/*.json, see scripts/sprites.ts)
+ * packed into one sheet, read at build time. /sprites/<game id>.png is the
  * sheet; the game page lays each sprite out as its own cell cut from it, so
  * they rewrap with the window instead of the sheet scaling.
  *

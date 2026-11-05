@@ -14,6 +14,7 @@ from pathlib import Path
 from PIL import Image
 
 GAME = 'Bangai-O'
+GAME_ID = 'bangai-o'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 BASE = dict(game=GAME, publisher='Treasure', year=1999, region='JP')
 TITLES = {
@@ -30,7 +31,7 @@ TITLES = {
 def archive_frames():
     for path in sorted((REPO / 'content/icons').glob('*.json')):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             yield path.stem, data['frames']
 
 

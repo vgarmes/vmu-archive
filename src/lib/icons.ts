@@ -2,6 +2,7 @@ import 'server-only'
 import fs from 'node:fs'
 import path from 'node:path'
 import { z } from 'zod'
+import { getGameEntry } from './registry'
 import {
 	frameHexLength,
 	scrollFrames,
@@ -50,7 +51,8 @@ const scrollSchema = z
 const schema = z
 	.object({
 		title: z.string(),
-		game: z.string(),
+		/** The game's id in the registry, content/games.json. */
+		gameId: z.string(),
 		publisher: z.string().optional(),
 		year: z.number().int().optional(),
 		region: z.enum(['JP', 'US', 'EU', 'WW']).optional(),
@@ -130,6 +132,7 @@ export interface Icon {
 export interface IndexEntry {
 	id: string
 	title: string
+	/** The game's name, from the registry. */
 	game: string
 	publisher?: string
 	year?: number
@@ -161,7 +164,8 @@ export interface IndexEntry {
 let cache: Icon[] | undefined
 
 /** Unknown games sort after every named one. */
-const gameKey = (game: string) => (game === 'Unknown' ? '￿' : game)
+const gameKey = (gameId: string) =>
+	gameId === 'unknown' ? '￿' : getGameEntry(gameId).name
 
 /**
  * Every icon, grouped by game, then by title ("Stage 2" before "Stage 10"),
@@ -182,7 +186,7 @@ export function getIcons(): Icon[] {
 		})
 		.sort(
 			(a, b) =>
-				gameKey(a.data.game).localeCompare(gameKey(b.data.game)) ||
+				gameKey(a.data.gameId).localeCompare(gameKey(b.data.gameId)) ||
 				a.data.title.localeCompare(b.data.title, undefined, {
 					numeric: true
 				}) ||
@@ -196,7 +200,7 @@ export const getIcon = (id: string) => getIcons().find(icon => icon.id === id)
 export const toIndexEntry = ({ id, data }: Icon): IndexEntry => ({
 	id,
 	title: data.title,
-	game: data.game,
+	game: getGameEntry(data.gameId).name,
 	publisher: data.publisher,
 	year: data.year,
 	tags: data.tags,

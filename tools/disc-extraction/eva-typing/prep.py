@@ -10,6 +10,7 @@ import sys
 from pathlib import Path
 
 GAME = 'Shinseiki Evangelion: Typing E-Keikaku'
+GAME_ID = 'shinseiki-evangelion-typing-e-keikaku'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 # Only released in Japan, and the logo is Japanese.
 BASE = dict(game=GAME, publisher='Gainax', year=2001, region='JP')
@@ -28,7 +29,7 @@ def main(out, inbox):
     have = set()
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             have.update(data.get('frames', []))
     if inbox.exists():
         shutil.rmtree(inbox)

@@ -1,99 +1,118 @@
 /**
- * Checks the sprites and save icons, which no other step reads closely
- * enough to catch a mistake in them:
+ * Checks the game registry, the sprites and the save icons, which no other
+ * step reads closely enough to catch a mistake in them:
  *
  *   pnpm content:check
  *
- * Every content/sprites/<game slug>/*.json is well formed (see
- * scripts/sprites.ts), sits in its game's folder, and is drawn only on screens
- * that exist.
+ * - content/games.json, the registry (see scripts/registry.ts), is sound,
+ *   every game in it has some content, and every screen, sprite and save icon
+ *   names a game that's in it (`gameId`).
+ * - Every content/sprites/<game id>/*.json is well formed (see
+ *   scripts/sprites.ts), sits in its game's folder, and is drawn only on
+ *   screens that exist.
+ * - Every content/save-icons/<game id>/*.json is well formed (see
+ *   scripts/save-icons.ts), sits in its game's folder, and is stored once.
+ * - Every content/games/<game id>.md is a registered game's notes.
  */
 import fs from 'node:fs'
 import path from 'node:path'
-import { slug } from '../src/lib/slug.ts'
+import { loadRegistry, registryProblems } from './registry.ts'
+import {
+	SAVE_ICONS_DIR,
+	type SaveIcon,
+	saveIconProblems
+} from './save-icons.ts'
 import {
 	ICONS_DIR,
 	SPRITES_DIR,
 	type Sprite,
 	spriteProblems
 } from './sprites.ts'
-import {
-	SAVE_ICONS_DIR,
-	type SaveIcon,
-	saveIconProblems
-} from './save-icons.ts'
 
 const jsonFiles = (dir: string) =>
 	fs.existsSync(dir) ? fs.readdirSync(dir).filter(f => f.endsWith('.json')) : []
 
-const problems: string[] = []
+const registry = loadRegistry()
+const problems: string[] = [...registryProblems(registry)]
+const used = new Set<string>()
+const known = (where: string, gameId: string) => {
+	used.add(gameId)
+	if (!registry[gameId])
+		problems.push(`${where}: no game "${gameId}" in content/games.json`)
+}
+
 const screens = new Set<string>()
 for (const file of jsonFiles(ICONS_DIR)) {
 	screens.add(file.replace(/\.json$/, ''))
+	const { gameId } = JSON.parse(
+		fs.readFileSync(path.join(ICONS_DIR, file), 'utf8')
+	)
+	known(`icons/${file}`, gameId)
+}
+
+/** Each JSON in content/<root>/<game id>/, with where it is. */
+function* inGameFolders<T>(root: string, label: string) {
+	if (!fs.existsSync(root)) return
+	for (const dir of fs.readdirSync(root)) {
+		const full = path.join(root, dir)
+		if (!fs.statSync(full).isDirectory()) {
+			if (dir !== '.gitkeep')
+				problems.push(`${label}/${dir}: not in a game's folder`)
+			continue
+		}
+		for (const file of jsonFiles(full)) {
+			const where = `${label}/${dir}/${file}`
+			let entry: T
+			try {
+				entry = JSON.parse(fs.readFileSync(path.join(full, file), 'utf8'))
+			} catch (err) {
+				problems.push(`${where}: ${(err as Error).message}`)
+				continue
+			}
+			yield { dir, where, entry }
+		}
+	}
 }
 
 let sprites = 0
-if (fs.existsSync(SPRITES_DIR))
-	for (const dir of fs.readdirSync(SPRITES_DIR)) {
-		const full = path.join(SPRITES_DIR, dir)
-		if (!fs.statSync(full).isDirectory()) {
-			if (dir !== '.gitkeep')
-				problems.push(`sprites/${dir}: not in a game's folder`)
-			continue
-		}
-		for (const file of jsonFiles(full)) {
-			const where = `sprites/${dir}/${file}`
-			let s: Sprite
-			try {
-				s = JSON.parse(fs.readFileSync(path.join(full, file), 'utf8'))
-			} catch (err) {
-				problems.push(`${where}: ${(err as Error).message}`)
-				continue
-			}
-			sprites++
-			if (s.game && slug(s.game) !== dir)
-				problems.push(
-					`${where}: "${s.game}" belongs in sprites/${slug(s.game)}/`
-				)
-			for (const p of spriteProblems(s, screens))
-				problems.push(`${where}: ${p}`)
-		}
-	}
+for (const { dir, where, entry: s } of inGameFolders<Sprite>(
+	SPRITES_DIR,
+	'sprites'
+)) {
+	sprites++
+	known(where, s.gameId)
+	if (s.gameId && s.gameId !== dir)
+		problems.push(`${where}: "${s.gameId}" belongs in sprites/${s.gameId}/`)
+	for (const p of spriteProblems(s, screens)) problems.push(`${where}: ${p}`)
+}
 
-// Save icons: well formed (scripts/save-icons.ts), in their game's folder,
-// each stored once.
 let saveIcons = 0
 const saveHashes = new Map<string, string>()
-if (fs.existsSync(SAVE_ICONS_DIR))
-	for (const dir of fs.readdirSync(SAVE_ICONS_DIR)) {
-		const full = path.join(SAVE_ICONS_DIR, dir)
-		if (!fs.statSync(full).isDirectory()) {
-			problems.push(`save-icons/${dir}: not in a game's folder`)
-			continue
-		}
-		for (const file of jsonFiles(full)) {
-			const where = `save-icons/${dir}/${file}`
-			let s: SaveIcon
-			try {
-				s = JSON.parse(fs.readFileSync(path.join(full, file), 'utf8'))
-			} catch (err) {
-				problems.push(`${where}: ${(err as Error).message}`)
-				continue
-			}
-			saveIcons++
-			if (s.game && slug(s.game) !== dir)
-				problems.push(
-					`${where}: "${s.game}" belongs in save-icons/${slug(s.game)}/`
-				)
-			const twin = saveHashes.get(s.hash)
-			if (twin) problems.push(`${where}: same icon as ${twin}`)
-			saveHashes.set(s.hash, where)
-			for (const p of saveIconProblems(s)) problems.push(`${where}: ${p}`)
-		}
-	}
+for (const { dir, where, entry: s } of inGameFolders<SaveIcon>(
+	SAVE_ICONS_DIR,
+	'save-icons'
+)) {
+	saveIcons++
+	known(where, s.gameId)
+	if (s.gameId && s.gameId !== dir)
+		problems.push(`${where}: "${s.gameId}" belongs in save-icons/${s.gameId}/`)
+	const twin = saveHashes.get(s.hash)
+	if (twin) problems.push(`${where}: same icon as ${twin}`)
+	saveHashes.set(s.hash, where)
+	for (const p of saveIconProblems(s)) problems.push(`${where}: ${p}`)
+}
+
+const notesDir = path.resolve(import.meta.dirname, '../content/games')
+for (const file of fs.readdirSync(notesDir).filter(f => f.endsWith('.md')))
+	if (!registry[file.replace(/\.md$/, '')])
+		problems.push(`games/${file}: no game with this id in content/games.json`)
+
+for (const id of Object.keys(registry))
+	if (!used.has(id))
+		problems.push(`games.json: "${id}" has no screens, sprites or save icons`)
 
 for (const p of problems) console.error(`  fail  ${p}`)
 console.log(
-	`${sprites} sprite${sprites === 1 ? '' : 's'}, ${saveIcons} save icon${saveIcons === 1 ? '' : 's'}: ${problems.length ? `${problems.length} problem${problems.length === 1 ? '' : 's'}` : 'ok'}`
+	`${Object.keys(registry).length} games, ${screens.size} screens, ${sprites} sprite${sprites === 1 ? '' : 's'}, ${saveIcons} save icon${saveIcons === 1 ? '' : 's'}: ${problems.length ? `${problems.length} problem${problems.length === 1 ? '' : 's'}` : 'ok'}`
 )
 if (problems.length) process.exitCode = 1

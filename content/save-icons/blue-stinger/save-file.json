@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Save file",
-	"game": "Blue Stinger",
+	"gameId": "blue-stinger",
 	"publisher": "Activision",
 	"year": 1999,
 	"width": 32,

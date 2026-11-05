@@ -13,6 +13,7 @@ from pathlib import Path
 from PIL import Image
 
 GAME = 'Crazy Taxi 2'
+GAME_ID = 'crazy-taxi-2'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 # The name and logo are the same in every release, so nothing gets a region.
 BASE = dict(game=GAME, publisher='Sega', year=2001)
@@ -30,7 +31,7 @@ def main(out, inbox):
     have = set()
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             have.add(frozenset(data['frames']))
     if inbox.exists():
         shutil.rmtree(inbox)

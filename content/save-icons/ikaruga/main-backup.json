@@ -1,7 +1,7 @@
 {
 	"kind": "save",
 	"title": "Main backup",
-	"game": "Ikaruga",
+	"gameId": "ikaruga",
 	"publisher": "Treasure",
 	"year": 2001,
 	"width": 32,

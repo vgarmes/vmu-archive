@@ -29,6 +29,7 @@ from pathlib import Path
 from PIL import Image
 
 GAME = 'Sakura Taisen 3: Paris wa Moete Iru ka'
+GAME_ID = 'sakura-taisen-3-paris-wa-moete-iru-ka'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 BASE = dict(game=GAME, publisher='Sega', year=2001, region='JP')
 FACES = {
@@ -136,7 +137,7 @@ def main(out, inbox):
     have, ids = set(), {}
     for path in (REPO / 'content/icons').glob('*.json'):
         data = json.loads(path.read_text())
-        if data['game'] == GAME:
+        if data['gameId'] == GAME_ID:
             have.update(data.get('frames', []))  # scroll entries store a strip instead
             if len(data.get('frames', [])) == 1:
                 ids[data['frames'][0]] = path.stem  # stills, to replace with their animation
