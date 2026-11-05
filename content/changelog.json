@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-05",
+		"title": "Search by any of a game's names",
+		"body": "Searching for a game now finds it by its other names too, like Jet Grind Radio for Jet Set Radio, on the home page and the save icons page. Sword of the Berserk: Guts' Rage, Tee Off, Surf Rocket Racers and Industrial Spy: Operation Espionage now go by their English titles, with the Japanese one beneath. Save icons also show their game's publisher and year wherever the game has them."
+	},
+	{
+		"date": "2026-11-05",
 		"title": "Marvel vs. Capcom 2, and VS.COM",
 		"body": "From the Japanese disc: the title screen, now the right way round (a light logo on a dark screen; the old screenshot had it inverted), the ACCESS screen, and VS.COM, the VMU program the game copies to the memory card, with its Capcom logo, title, menu, copyright, shop and trade screens in Japanese and English. Its fonts, character names, ranks and menu parts are in the Sprites card. Three more save icons the game writes, UPLOAD, DOWNLOAD and Capcom network, come straight from the disc, which also confirms the two already here."
 	},
