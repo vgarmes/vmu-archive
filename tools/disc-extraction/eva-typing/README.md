@@ -1,7 +1,7 @@
 # Shinseiki Evangelion: Typing E-Keikaku
 
 Dump: `Shinseiki Evangelion - Typing E Keikaku v1.001 (2001)(Gainax)(JP)[!][req. keyboard]`
-(`.gdi`). Every entry from it has region `JP`.
+(`.gdi`). Every entry from it has region `ntsc-j`.
 
 What the scripts found is written up in the game's notes,
 [`content/games/shinseiki-evangelion-typing-e-keikaku.md`](../../../content/games/shinseiki-evangelion-typing-e-keikaku.md).

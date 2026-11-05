@@ -16,7 +16,7 @@ from PIL import Image
 GAME = 'Bangai-O'
 GAME_ID = 'bangai-o'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
-BASE = dict(game=GAME, publisher='Treasure', year=1999, region='JP')
+BASE = dict(game=GAME, publisher='Treasure', year=1999, region='ntsc-j')
 TITLES = {
     0: ('Treasure logo', ['logo']),
     1: ('Title screen', ['logo']),

@@ -31,7 +31,7 @@ from PIL import Image
 GAME = 'Sakura Taisen 3: Paris wa Moete Iru ka'
 GAME_ID = 'sakura-taisen-3-paris-wa-moete-iru-ka'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
-BASE = dict(game=GAME, publisher='Sega', year=2001, region='JP')
+BASE = dict(game=GAME, publisher='Sega', year=2001, region='ntsc-j')
 FACES = {
     'mgkg_coq': ('Coquelicot', 'coquelicot'),
     'mgkg_eri': ('Erica', 'erica'),

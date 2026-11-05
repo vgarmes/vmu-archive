@@ -9,9 +9,10 @@ import { slug } from './slug'
 /**
  * The games with screens, each with a page: the screens grouped by their
  * `gameId`, plus what content/ says about each one:
- * - the registry, content/games.json (./registry), keyed by that id: its name,
- *   its English and romanized Japanese titles where they differ, its publisher
- *   and year, and which screen its card shows (`cover`, an icon id; by default its title screen,
+ * - the registry, content/games.json (./registry), keyed by that id: the
+ *   title to show (`name`), its Japanese title beneath it (`ja`), its
+ *   publisher and year, its other names for the search (`aliases`), and which
+ *   screen its card shows (`cover`, an icon id; by default its title screen,
  *   else its logo, else its first). A game there without screens (one with
  *   only save icons, say) has no page.
  * - content/games/<game id>.md, its notes on how the screens were extracted,
@@ -21,16 +22,16 @@ const NOTES = path.join(process.cwd(), 'content/games')
 
 /** What the game list and a game's header need — it ships to every visitor. */
 export interface Game {
-	/** The game's name in the registry. */
+	/** The title to show, the registry's `name`. */
 	name: string
 	/** Its id in the registry, which is its page's route. */
 	slug: string
-	/** The title to show: the English one. */
-	en: string
-	/** The romanized Japanese title, when it differs from `en`. */
+	/** Its Japanese release's title, romanized, when it differs from `name`. */
 	ja?: string
 	publisher?: string
 	year?: number
+	/** Its other names, which the search finds it by. */
+	aliases?: string[]
 	/** How many icons the game has. */
 	count: number
 	/** The icon its card shows. */
@@ -54,20 +55,15 @@ function load() {
 	cache = [...byGame].map(([id, icons]) => {
 		const m = registry[id]
 		if (!m) throw new Error(`content/games.json: no game "${id}"`)
-		if (m.en && m.ja)
-			throw new Error(
-				`content/games.json: "${id}": its name is one of its titles; set en or ja, not both`
-			)
 		slugs.add(id)
-		const ja = m.ja ?? (m.en ? m.name : undefined)
 		return {
 			game: {
 				name: m.name,
 				slug: id,
-				en: m.en ?? m.name,
-				...(ja && { ja }),
+				...(m.ja && { ja: m.ja }),
 				publisher: m.publisher,
 				year: m.year,
+				...(m.aliases && { aliases: m.aliases }),
 				count: icons.length,
 				cover: toIndexEntry(pickCover(id, icons, m.cover))
 			},
@@ -77,7 +73,7 @@ function load() {
 	})
 
 	// By the title shown, Unknown last.
-	const key = (g: Game) => (g.slug === 'unknown' ? '\uffff' : g.en)
+	const key = (g: Game) => (g.slug === 'unknown' ? '\uffff' : g.name)
 	cache.sort((a, b) => key(a.game).localeCompare(key(b.game)))
 
 	for (const file of fs.readdirSync(NOTES))

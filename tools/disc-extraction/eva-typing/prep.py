@@ -13,7 +13,7 @@ GAME = 'Shinseiki Evangelion: Typing E-Keikaku'
 GAME_ID = 'shinseiki-evangelion-typing-e-keikaku'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 # Only released in Japan, and the logo is Japanese.
-BASE = dict(game=GAME, publisher='Gainax', year=2001, region='JP')
+BASE = dict(game=GAME, publisher='Gainax', year=2001, region='ntsc-j')
 TITLES = {
     0: ('Title screen', ['logo']),
     1: ('Access', ['memory-card']),

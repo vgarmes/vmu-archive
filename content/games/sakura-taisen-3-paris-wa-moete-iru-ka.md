@@ -3,7 +3,7 @@
 Scripts: `tools/disc-extraction/sakura3/`.
 
 Dump: `Sakura Taisen 3 - Paris wa Moete Iru Ka v1.003 (2001)(Sega)(JP)(Disc 1 of 3)[!][3M1]`
-(`.gdi`). Every entry from it has region `JP`.
+(`.gdi`). Every entry from it has region `ntsc-j`.
 
 **Imported.** Every screen, animation and banner on the disc is in the archive,
 and the battle screen's parts are kept as a sprite. Only the title screen and

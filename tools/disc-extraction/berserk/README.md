@@ -1,8 +1,9 @@
 # Sword of the Berserk: Guts' Rage
 
 Dump: `Sword of the Berserk - Guts' Rage v1.000 (2000)(Eidos)(US)[!]` (`.gdi`).
-The archive files these under the Japanese release's title, with region `US` on
-what came from this disc.
+The archive files these under the English title, with the Japanese release's,
+Berserk: Millennium Falcon-hen – Wasurebana no Shō, beneath it, and region
+`ntsc-u` on what came from this disc.
 
 What the scripts found is written up in the game's notes,
 [`content/games/berserk-millennium-falcon-hen-wasurebana-no-sho.md`](../../../content/games/berserk-millennium-falcon-hen-wasurebana-no-sho.md).

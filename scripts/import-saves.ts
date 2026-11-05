@@ -12,7 +12,7 @@
  *
  *   {
  *     "game": "Capcom vs. SNK 2", "publisher": "Capcom", "year": 2001,
- *     "region": "JP",
+ *     "region": "ntsc-j",
  *     "titles": { "cvs2jp.VMS": "System file", "cvs2rep1.VMS": "Replay file" }
  *   }
  *
@@ -42,6 +42,7 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+import { isRegion, REGIONS } from '../src/lib/regions.ts'
 import { slug } from '../src/lib/slug.ts'
 import {
 	findGame,
@@ -192,6 +193,10 @@ function main() {
 	const sidecar: Sidecar = JSON.parse(
 		fs.readFileSync(sidecarPath ?? path.join(folder, 'save-icons.json'), 'utf8')
 	)
+	if (sidecar.region !== undefined && !isRegion(sidecar.region))
+		throw new Error(
+			`"region" ${JSON.stringify(sidecar.region)} is not one of ${REGIONS.join(', ')} (leave it out when the saves are in every release)`
+		)
 	const saves = fs
 		.readdirSync(folder)
 		.filter(f => path.extname(f).toLowerCase() === '.vms')

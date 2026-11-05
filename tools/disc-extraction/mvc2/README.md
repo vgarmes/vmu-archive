@@ -2,7 +2,7 @@
 
 Dump: `Marvel vs. Capcom 2 - New Age of Heroes (Japan)` (Redump, `.cue` and
 three `.bin` tracks). The logo is the same in every release, so its screens get
-no region; the save icons it adds are kept as `JP`, as their names are.
+no region; the save icons it adds are kept as `ntsc-j`, as their names are.
 
 What the scripts found is written up in the game's notes,
 [`content/games/marvel-vs-capcom-2.md`](../../../content/games/marvel-vs-capcom-2.md).

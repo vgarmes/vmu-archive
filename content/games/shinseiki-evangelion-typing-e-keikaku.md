@@ -4,7 +4,7 @@ Scripts: `tools/disc-extraction/eva-typing/`.
 
 Dump: `Shinseiki Evangelion - Typing E Keikaku v1.001 (2001)(Gainax)(JP)[!][req. keyboard]`
 (`.gdi`). The game was only released in Japan and its logo is Japanese, so
-every entry gets region `JP`.
+every entry gets region `ntsc-j`.
 
 ## What's on the disc
 

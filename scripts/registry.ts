@@ -3,15 +3,20 @@
  * game the archive has anything of, keyed by a stable id that its content
  * refers to (`"gameId"`), its page's route and its folders use.
  *
- *   "jet-set-radio": {
- *     "name": "Jet Set Radio",
- *     "aliases": ["Jet Grind Radio", "De La Jet Set Radio"]
+ *   "shenmue": {
+ *     "name": "Shenmue",
+ *     "ja": "Shenmue Isshō: Yokosuka",
+ *     "publisher": "Sega",
+ *     "year": 1999,
+ *     "aliases": ["Shenmue Chapter 1: Yokosuka"]
  *   }
  *
- * `name` is the game's name in the archive; `en` or `ja` give its other
- * release's title when they differ; `publisher` and `year` are its first
- * release's (see `setGameDetails`); `aliases` are other names it goes by in
- * sources (save collections, other releases), so an importer can find it.
+ * `name` is the title the site shows, in English when the game has one; `ja`
+ * is its Japanese release's title, romanized, when that differs, shown
+ * beneath it. `publisher` and `year` are its first release's (see
+ * `setGameDetails`). `aliases` are its other names: its titles in other
+ * regions or on other platforms, the names sources use for it. The site's
+ * search finds a game by any of them, and an importer finds it by them too.
  * Renaming a game is a change to its `name` only: its id, route and folders
  * stay. Run by Node directly: keep the imports relative with their .ts
  * extension.
@@ -25,7 +30,6 @@ export const REGISTRY = path.join(ROOT, 'content/games.json')
 
 export interface GameEntry {
 	name: string
-	en?: string
 	ja?: string
 	publisher?: string
 	year?: number
@@ -41,7 +45,6 @@ export const loadRegistry = (): Registry =>
 /** The order an entry's fields are written in. */
 const FIELDS = [
 	'name',
-	'en',
 	'ja',
 	'publisher',
 	'year',
@@ -67,9 +70,9 @@ export function saveRegistry(registry: Registry) {
 /** Names that differ only in case, spacing or punctuation ("vs."/"vs") match. */
 const loose = (s: string) => slug(s).replace(/[^a-z0-9]/g, '')
 
-/** Every name a game answers to: its id, name, other titles and aliases. */
+/** Every name a game answers to: its id, name, Japanese title and aliases. */
 const namesOf = (id: string, g: GameEntry) =>
-	[id, g.name, g.en, g.ja, ...(g.aliases ?? [])].filter((n): n is string => !!n)
+	[id, g.name, g.ja, ...(g.aliases ?? [])].filter((n): n is string => !!n)
 
 /** The id of the game a name (or id) refers to, if the registry has it. */
 export function findGame(registry: Registry, name: string): string | undefined {
@@ -142,10 +145,10 @@ export function registryProblems(registry: Registry): string[] {
 	for (const [id, g] of Object.entries(registry)) {
 		if (id !== slug(id)) out.push(`games.json: "${id}" is not a slug`)
 		if (!g.name) out.push(`games.json: "${id}" has no "name"`)
-		if (g.en && g.ja)
-			out.push(
-				`games.json: "${id}": set en or ja, not both (name is the other)`
-			)
+		if (g.ja !== undefined && (typeof g.ja !== 'string' || !g.ja))
+			out.push(`games.json: "${id}": "ja" must be a title`)
+		if (g.ja === g.name)
+			out.push(`games.json: "${id}": "ja" is its name; leave it out`)
 		if (
 			g.publisher !== undefined &&
 			(typeof g.publisher !== 'string' || !g.publisher)

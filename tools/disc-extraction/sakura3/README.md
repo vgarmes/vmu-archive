@@ -1,7 +1,7 @@
 # Sakura Taisen 3: Paris wa Moete Iru ka
 
 Dump: `Sakura Taisen 3 - Paris wa Moete Iru Ka v1.003 (2001)(Sega)(JP)(Disc 1 of 3)[!][3M1]`
-(`.gdi`). Every entry from it has region `JP`.
+(`.gdi`). Every entry from it has region `ntsc-j`.
 
 What the scripts found is written up in the game's notes,
 [`content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md`](../../../content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md).

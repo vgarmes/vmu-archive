@@ -2,7 +2,7 @@
 
 Dump: `Moero! Justice Gakuen v1.004 (2000)(Capcom)(JP)[!][1M4]` (`.gdi`). The
 archive files these under `Project Justice`. The disc carries both the Japanese
-and the English (Project Justice) screens, so region follows the logo: `JP` on
+and the English (Project Justice) screens, so region follows the logo: `ntsc-j` on
 the Japanese pair, none on the Project Justice pair, which was the US and
 European title.
 

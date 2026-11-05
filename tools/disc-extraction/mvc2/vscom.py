@@ -184,21 +184,21 @@ def merge(shots, ms):
 STILLS = [
     ('copyright', 'Copyright', 0x2CB4, [], None, False),
     # 0x2B = 1 only; 0 and 2 show the one above.
-    ('copyright-usa', 'Copyright (Capcom U.S.A.)', 0x2D74, [], 'US', False),
-    ('not-enough-points-jp', 'Not enough points', 0x5179, ['letters'], 'JP', False),
+    ('copyright-usa', 'Copyright (Capcom U.S.A.)', 0x2D74, [], 'ntsc-u', False),
+    ('not-enough-points-jp', 'Not enough points', 0x5179, ['letters'], 'ntsc-j', False),
     ('not-enough-points', 'Not enough points', 0x5239, ['letters'], None, False),
     # The trade, through the link cable (0x5F6A, 0x5FEE, 0x603C, 0x61B0).
-    ('trade-connect-jp', 'Trade: please connect', 0x47A7, ['letters'], 'JP', False),
+    ('trade-connect-jp', 'Trade: please connect', 0x47A7, ['letters'], 'ntsc-j', False),
     ('trade-connect', 'Trade: please connect', 0x4867, ['letters'], None, False),
-    ('trade-trading-jp', 'Trade: trading', 0x4927, ['letters'], 'JP', False),
+    ('trade-trading-jp', 'Trade: trading', 0x4927, ['letters'], 'ntsc-j', False),
     ('trade-wait', 'Trade: please wait', 0x49E7, ['letters'], None, False),
-    ('trade-failed-jp', 'Trade: failed', 0x4AA7, ['letters'], 'JP', False),
+    ('trade-failed-jp', 'Trade: failed', 0x4AA7, ['letters'], 'ntsc-j', False),
     ('trade-error', 'Trade: error', 0x4B67, ['letters'], None, False),
-    ('trade-done-jp', 'Trade: complete, please disconnect', 0x4C27, ['letters'], 'JP', False),
+    ('trade-done-jp', 'Trade: complete, please disconnect', 0x4C27, ['letters'], 'ntsc-j', False),
     ('trade-finished', 'Trade: finished, please disconnect', 0x4CE7, ['letters'], None, False),
     # 0x1104 shows the first when the battery is low, before the player's data
     # (and so 0x2B) is read; nothing loads the English one.
-    ('caution-jp', 'Caution: change the battery', 0x57B2, ['system'], 'JP', False),
+    ('caution-jp', 'Caution: change the battery', 0x57B2, ['system'], 'ntsc-j', False),
     ('caution', 'Caution: change the battery', 0x5872, ['system'], None, True),
 ]
 
@@ -222,13 +222,13 @@ def sprites(prog):
 
     # Opening and menu. The menu's backgrounds are kept whole here: the item
     # drawn over rows 12-20 hides part of the disc.
-    bg = run('menu-backgrounds', 'Menu backgrounds', 0x2E34, 48, 32, 2, ['menu'], 'JP')
+    bg = run('menu-backgrounds', 'Menu backgrounds', 0x2E34, 48, 32, 2, ['menu'], 'ntsc-j')
     check(T_MENU_BG, 3, [bg[0], bg[1], bg[1]], 'menu backgrounds')
     check(T_COPYRIGHT, 3, [0x2CB4, 0x2D74, 0x2CB4], 'copyright')
     check(T_NO_POINTS, 3, [0x5179, 0x5239, 0x5239], 'not enough points')
     check(T_SLIDE, 8, [0x2B54 - 0x40 * k for k in range(8)], 'slide')
     run('menu-arrows', 'Menu arrows', 0x2BC4, 8, 8, 4, ['menu'])
-    items = run('menu-items', 'Menu items', 0x2FB4, 48, 9, 15, ['menu', 'letters'], 'JP')
+    items = run('menu-items', 'Menu items', 0x2FB4, 48, 9, 15, ['menu', 'letters'], 'ntsc-j')
     lv, pts_jp, pts, shop_jp, shop, chars_jp, chars, trade_jp, trade, time, rank, sound_jp, sound, \
         stages_jp, stages = items
     lists = table(prog, T_MENU_ITEMS, 3) + table(prog, T_MENU_ITEMS_9, 3)
@@ -247,10 +247,10 @@ def sprites(prog):
     gauge = run('exp-gauge', 'EXP gauge', 0x32EC, 32, 7, 26, ['status'])
     check(0x28BE, 26, gauge, 'exp gauge')  # index (0xBA >> 2) & 0x3F, at 0x178E
     run('labels', 'Level and points labels', 0x35C4, 48, 7, 4, ['letters'])
-    no = run('character-number', 'Character number', 0x366C, 48, 7, 4, ['letters'], 'JP')
+    no = run('character-number', 'Character number', 0x366C, 48, 7, 4, ['letters'], 'ntsc-j')
     check(0x27A8, 2, [no[2], no[0]], 'character number, JP')
     check(0x27AC, 2, [no[3], no[1]], 'character number, English')
-    r = run('ready-small', 'Standby OK, Ready, New color', 0x3714, 24, 12, 3, ['banner'], 'JP')
+    r = run('ready-small', 'Standby OK, Ready, New color', 0x3714, 24, 12, 3, ['banner'], 'ntsc-j')
     check(0x27B0, 3, [r[0], r[1], r[1]], 'standby')
     # A 48x20 bitmap (a question mark between arrows) between them and the
     # play-time header: no literal, table or computed address reaches it.
@@ -263,16 +263,16 @@ def sprites(prog):
     check(0x278A, 8, ranks[::-1], 'net ranks')  # [0xBB]: 0 is G, 7 is S
 
     # Character list and trade.
-    which = run('which-character', 'Which character?', 0x39F6, 48, 8, 2, ['letters'], 'JP')
+    which = run('which-character', 'Which character?', 0x39F6, 48, 8, 2, ['letters'], 'ntsc-j')
     check(0x27B6, 3, [which[0], which[1], which[1]], 'which character')
     yn = run('yes-no', 'Yes, no', 0x3A56, 24, 11, 6, ['letters'])
     check(0x28BA, 2, yn[0:2], 'yes')
     check(0x28B6, 2, yn[3:5], 'no')
     run('ok', 'OK?', 0x3B1C, 16, 7, 1, ['letters'])
     run('get', 'GET!', 0x3B2A, 48, 7, 1, ['banner'])
-    sb = run('standby', 'Standby OK, Ready', 0x3B5A, 48, 7, 2, ['banner'], 'JP')
+    sb = run('standby', 'Standby OK, Ready', 0x3B5A, 48, 7, 2, ['banner'], 'ntsc-j')
     check(0x3B54, 3, [sb[0], sb[1], sb[1]], 'standby')
-    snd = run('sound-headers', 'Sound settings', 0x3BB4, 48, 12, 2, ['banner'], 'JP')
+    snd = run('sound-headers', 'Sound settings', 0x3BB4, 48, 12, 2, ['banner'], 'ntsc-j')
     check(0x3BAE, 3, [snd[0], snd[1], snd[1]], 'sound')
     on = run('sound-icons', 'Sound on and off', 0x3C44, 24, 16, 4, [])
     check(0x279A, 2, on[0:2], 'speaker')
@@ -293,7 +293,7 @@ def sprites(prog):
     check(0x28F2, 3, pages[0::2], 'pages')
     labels = run('shop-prices', 'Shop price labels', 0x4E25, 48, 16, 7, ['letters'])
     check(0x290E, 8, [labels[0]] + labels[0:6] + [labels[5]], 'shop prices')
-    asks = run('shop-prompts', 'Shop prompts', 0x50CB, 48, 7, 4, ['letters'], 'JP')
+    asks = run('shop-prompts', 'Shop prompts', 0x50CB, 48, 7, 4, ['letters'], 'ntsc-j')
     check(0x50C5, 3, [asks[0], asks[1], asks[1]], 'get?')
     yn = run('yes-no-small', 'Yes, no (small)', 0x52F9, 24, 7, 3, ['letters'])
     check(0x28F8, 2, [yn[2], yn[0]], 'small yes/no')
@@ -331,7 +331,7 @@ def main(src, out):
     title.blit(prog, 0x2C24, 6, 24, 0)     # 0x15B3: the logo,
     title.blit(prog, 0x2B94, 6, 8, 0x90)   # PRESS A+B under it
     pieces.append(('title', title.image(), meta('Title screen', ['logo']), title.image()))
-    for lang, stem, region in ((0, 'menu-jp', 'JP'), (1, 'menu', None)):
+    for lang, stem, region in ((0, 'menu-jp', 'ntsc-j'), (1, 'menu', None)):
         frames, delays = merge(menu(prog, lang), 8 * TICK_MS)
         pieces.append((stem, stack(frames), meta('Menu', ['menu'], region, frameDelaysMs=delays), frames[0]))
     for stem, name, addr, tags, region, unused in STILLS:

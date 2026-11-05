@@ -15,7 +15,7 @@ from pathlib import Path
 GAME = 'Shenmue II'
 GAME_ID = 'shenmue-ii'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
-BASE = dict(game=GAME, publisher='Sega', year=2001, region='JP')
+BASE = dict(game=GAME, publisher='Sega', year=2001, region='ntsc-j')
 CARD = ['memory-card']
 # name: (title, tags)
 TITLES = {

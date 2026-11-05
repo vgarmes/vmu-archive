@@ -138,7 +138,7 @@ def main(src, vs4, out):
         titles[file] = s['what']
         print(f'save type {t}: {card:12} {s["what"]:20} palette {pal_ptrs[t]:#x} frame {bmp_ptrs[t]:#x}')
     (out / 'saves' / 'save-icons.json').write_text(json.dumps(dict(
-        game='Marvel vs. Capcom 2', publisher='Capcom', year=2000, region='JP',
+        game='Marvel vs. Capcom 2', publisher='Capcom', year=2000, region='ntsc-j',
         disc='/1ST_READ.BIN', titles=titles), ensure_ascii=False, indent=1))
 
     scale = 3

@@ -13,6 +13,7 @@ import { createHash } from 'node:crypto'
 import path from 'node:path'
 import { type Glyphs, glyphBoxes, glyphProblems } from '../src/lib/glyphs.ts'
 import { frameHexLength } from '../src/lib/pixels.ts'
+import { isRegion, REGIONS, type Region } from '../src/lib/regions.ts'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 export const ICONS_DIR = path.join(ROOT, 'content/icons')
@@ -25,7 +26,8 @@ export interface Sprite {
 	title: string
 	/** The game's id in the registry, content/games.json. */
 	gameId: string
-	region?: 'JP' | 'US' | 'EU' | 'WW'
+	/** Only when it's in one region's release alone (src/lib/regions.ts). */
+	region?: Region
 	width: number
 	height: number
 	bpp: 1
@@ -63,7 +65,6 @@ export const spriteHash = (width: number, height: number, frames: string[]) =>
 		.update(['sprite', width, height, 1, frames.join(',')].join('|'))
 		.digest('hex')
 
-const REGIONS = ['JP', 'US', 'EU', 'WW']
 const isInt = (v: unknown, min: number) =>
 	typeof v === 'number' && Number.isInteger(v) && v >= min
 
@@ -75,7 +76,7 @@ export function spriteProblems(s: Sprite, screens: Set<string>): string[] {
 	const out: string[] = []
 	if (!s.title) out.push('no "title"')
 	if (!s.gameId) out.push('no "gameId"')
-	if (s.region !== undefined && !REGIONS.includes(s.region))
+	if (s.region !== undefined && !isRegion(s.region))
 		out.push(`"region" ${s.region} is not one of ${REGIONS.join(', ')}`)
 	if (s.bpp !== 1) out.push('"bpp" must be 1')
 	if (!isInt(s.width, 1) || !isInt(s.height, 1))

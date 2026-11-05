@@ -387,7 +387,7 @@ def main(src, out):
     pieces = []  # (stem, title, image, meta, preview)
     for stem, title, addrs, tags, jp in SCREENS:
         frames = [bits(prog, a, 48, 32) for a in addrs]
-        meta = dict(title=title, **BASE, **({'region': 'JP'} if jp else {}), tags=tags)
+        meta = dict(title=title, **BASE, **({'region': 'ntsc-j'} if jp else {}), tags=tags)
         pieces.append((stem, stack(frames), meta, frames[0]))
     notes = out / 'notes'
     notes.mkdir(exist_ok=True)
@@ -400,11 +400,11 @@ def main(src, out):
     for key, name, t, n in RULES:
         for k, a in enumerate(table(prog, t, n)):
             im = bits(prog, a, 48, 32)
-            meta = dict(title=f'{name} rules ({k + 1}/{n})', **BASE, region='JP',
+            meta = dict(title=f'{name} rules ({k + 1}/{n})', **BASE, region='ntsc-j',
                         tags=['minigame', 'letters', key])
             pieces.append((f'rules-{key}-{k + 1}', im, meta, im))
     for stem, title, im, tags, jp, addr, glyphs in sprites(prog):
-        meta = dict(title=title, **BASE, **({'region': 'JP'} if jp else {}), tags=tags, sprite=True,
+        meta = dict(title=title, **BASE, **({'region': 'ntsc-j'} if jp else {}), tags=tags, sprite=True,
                     source={'file': FILE, 'offset': at + addr})
         if glyphs:
             meta['glyphs'] = glyphs

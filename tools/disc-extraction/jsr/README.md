@@ -1,7 +1,7 @@
 # Jet Set Radio
 
 Dump: `Jet Set Radio (Japan)` (Redump, `.cue` with three `.bin` tracks).
-Only the Japanese pieces get region `JP`; see `prep.py`.
+Only the Japanese pieces get region `ntsc-j`; see `prep.py`.
 
 What the scripts found is written up in the game's notes,
 [`content/games/jet-set-radio.md`](../../../content/games/jet-set-radio.md).

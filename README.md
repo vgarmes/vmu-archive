@@ -34,12 +34,14 @@ What each game's scripts found is written up in its notes,
 
 Every game is in `content/games.json`, the registry, under a stable id that
 its screens, sprites and save icons refer to (`"gameId"`) and that gives its
-URL, `/games/<game id>`, and folders. `name` is its name in the archive;
-`aliases` are other names sources use for it, so the importers can find it.
-Set `en` when the name is the Japanese one, `ja` when it's the English one.
-`publisher` and `year` (its first release's) are the game's, kept here
-rather than on each screen: a sidecar's `"publisher"` and `"year"` fill them
-in, and one that disagrees with the registry fails the import.
+URL, `/games/<game id>`, and folders. `name` is the title the site shows,
+in English when the game has one, and `ja` its Japanese release's title,
+romanized, when that differs; it's shown beneath the name. `aliases` are its
+other names (its title in another region or on another platform, the names
+sources use): the site's search finds the game by them, and so do the
+importers. `publisher` and `year` (its first release's) are the game's, kept
+here rather than on each screen: a sidecar's `"publisher"` and `"year"` fill
+them in, and one that disagrees with the registry fails the import.
 `cover` picks the screen its card shows (an icon id); by default that's its
 title screen, else its logo. A sidecar's `"game"` can be a name, an alias or
 an id; a game the registry doesn't know yet is added to it with its name's
@@ -58,7 +60,8 @@ slug as id. Renaming a game only changes its `name`.
      "frameDelayMs": 133
    }
    ```
-   Set `"region"` only on a screen that belongs to one release, `"unused"` on
+   Set `"region"` (`"ntsc-j"`, `"ntsc-u"` or `"pal"`) only on a screen that's
+   in that region's release alone, `"unused"` on
    one the game's code never shows. For frames that last different times, give
    `"frameDelaysMs"` instead: one delay per frame. Back-to-back copies of a
    frame are merged into one frame held for their combined delay.

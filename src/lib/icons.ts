@@ -2,6 +2,7 @@ import 'server-only'
 import fs from 'node:fs'
 import path from 'node:path'
 import { z } from 'zod'
+import { REGIONS } from './regions'
 import { getGameEntry } from './registry'
 import {
 	frameHexLength,
@@ -53,7 +54,7 @@ const schema = z
 		title: z.string(),
 		/** The game's id in the registry, content/games.json. */
 		gameId: z.string(),
-		region: z.enum(['JP', 'US', 'EU', 'WW']).optional(),
+		region: z.enum(REGIONS).optional(),
 		width: z.literal(48),
 		height: z.literal(32),
 		bpp: z.literal(1),
@@ -135,7 +136,7 @@ export interface IndexEntry {
 	publisher?: string
 	year?: number
 	tags: string[]
-	/** Only when the screen belongs to one region's release. */
+	/** Only when the screen is in one region's release alone. */
 	region?: IconData['region']
 	/** Only when the game's code never shows the screen. */
 	unused?: true

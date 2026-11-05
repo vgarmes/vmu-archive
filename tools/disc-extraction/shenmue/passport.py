@@ -32,7 +32,7 @@ from pathlib import Path
 
 from PIL import Image
 
-BASE = dict(game='Shenmue', publisher='Sega', year=1999, region='JP')
+BASE = dict(game='Shenmue', publisher='Sega', year=1999, region='ntsc-j')
 SOURCE = '/PASSPORT/ATU/SYEN.BIN'
 # (offset, stem, title, tags)
 SCREENS = [

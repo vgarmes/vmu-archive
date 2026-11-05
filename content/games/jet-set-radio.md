@@ -124,4 +124,4 @@ itself, so the ticks aren't converted to milliseconds, and the animations play
 at the site's default.
 
 The radio, the SEGA screens and the fonts are byte for byte the same on the US
-disc, so they have no region; the screens with Japanese text are `JP`.
+disc, so they have no region; the screens with Japanese text are `ntsc-j`.

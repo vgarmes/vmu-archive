@@ -20,7 +20,7 @@ GAME_ID = 'jet-set-radio'  # its id in content/games.json
 REPO = Path(__file__).resolve().parents[3]
 BASE = dict(game=GAME, publisher='Sega', year=2000)
 GAME_SCREENS = {
-    'logo': ('Logo', ['logo'], 'JP'),
+    'logo': ('Logo', ['logo'], 'ntsc-j'),
     'radio': ('Radio', [], None),
     'now-saving': ('Now Saving', ['memory-card'], None),
     'now-loading': ('Now Loading', ['memory-card'], None),
@@ -32,10 +32,10 @@ APP_FILE = '/JETRADIO/SYSOPTION.AFS'
 APP_SCREENS = {
     'sega': ('SEGA', ['logo'], None),
     'copyright': ('copyright', [], None),
-    'title': ('title', ['logo'], 'JP'),
-    'channel': ('downloaded graffiti', ['menu'], 'JP'),
-    'size-menu': ('size menu', ['menu'], 'JP'),
-    'no-graffiti': ('no graffiti', ['menu'], 'JP'),
+    'title': ('title', ['logo'], 'ntsc-j'),
+    'channel': ('downloaded graffiti', ['menu'], 'ntsc-j'),
+    'size-menu': ('size menu', ['menu'], 'ntsc-j'),
+    'no-graffiti': ('no graffiti', ['menu'], 'ntsc-j'),
 }
 APP_SPRITES = {
     'radio-1': ('radio, left', []),

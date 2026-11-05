@@ -12,6 +12,7 @@
 import { createHash } from 'node:crypto'
 import path from 'node:path'
 import { frameHexLength } from '../src/lib/pixels.ts'
+import { isRegion, REGIONS, type Region } from '../src/lib/regions.ts'
 
 const ROOT = path.resolve(import.meta.dirname, '..')
 export const SAVE_ICONS_DIR = path.join(ROOT, 'content/save-icons')
@@ -31,7 +32,8 @@ export interface SaveIcon {
 	title: string
 	/** The game's id in the registry, content/games.json. */
 	gameId: string
-	region?: 'JP' | 'US' | 'EU' | 'WW'
+	/** Only when it's in one region's release alone (src/lib/regions.ts). */
+	region?: Region
 	width: 32
 	height: 32
 	bpp: 4
@@ -90,8 +92,6 @@ export const saveIconHash = (
 		)
 		.digest('hex')
 
-const REGIONS = ['JP', 'US', 'EU', 'WW']
-
 /** What's wrong with a save icon entry, or nothing. */
 export function saveIconProblems(s: SaveIcon): string[] {
 	const out: string[] = []
@@ -110,7 +110,7 @@ export function saveIconProblems(s: SaveIcon): string[] {
 		out.push('only a memory card icon has "vmuIcon" and "madeByGame"')
 	if (!s.title) out.push('no "title"')
 	if (!s.gameId) out.push('no "gameId"')
-	if (s.region !== undefined && !REGIONS.includes(s.region))
+	if (s.region !== undefined && !isRegion(s.region))
 		out.push(`"region" ${s.region} is not one of ${REGIONS.join(', ')}`)
 	if (s.width !== ICON_SIZE || s.height !== ICON_SIZE || s.bpp !== 4)
 		out.push('a save icon is 32x32 at 4 bits a pixel')

@@ -6,7 +6,7 @@ Scripts: `tools/disc-extraction/power-stone/` (release `ps1`), shared with
 Dump: `Power Stone v1.020 (1999)(Capcom)(JP)[!][1MB1]` (`.gdi`).
 
 The name and logo are the same in every release, so the game's own screens get
-no region. Power Stone Mini's screens with Japanese text get `JP` (see
+no region. Power Stone Mini's screens with Japanese text get `ntsc-j` (see
 [Power Stone Mini](#power-stone-mini)).
 
 ## What's on the disc

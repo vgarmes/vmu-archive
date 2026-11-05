@@ -9,7 +9,8 @@ import type { SaveIconEntry } from '@/lib/save-icons'
 
 /**
  * The /save-icons page: every game's save icons in one grid, and a search over
- * their titles, games (English and romanized Japanese), the saves' own names
+ * their titles, games (name, romanized Japanese title and other names), the
+ * saves' own names
  * and descriptions, and publishers, kept in the URL as ?q=.
  */
 export default function SaveIconIndex({ icons }: { icons: SaveIconEntry[] }) {
@@ -37,6 +38,7 @@ export default function SaveIconIndex({ icons }: { icons: SaveIconEntry[] }) {
 				keys: [
 					{ name: 'game', weight: 2 },
 					{ name: 'ja', weight: 2 },
+					{ name: 'aliases', weight: 1.5 },
 					{ name: 'title', weight: 1.5 },
 					{ name: 'vmuName', weight: 0.5 },
 					{ name: 'description', weight: 0.5 },

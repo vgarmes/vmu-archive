@@ -3,6 +3,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import { getGames } from './games'
 import type { PixelArt } from './pixels'
+import type { Region } from './regions'
 import { getGameEntry } from './registry'
 
 /**
@@ -17,7 +18,7 @@ interface File {
 	kind: 'save' | 'memory-card'
 	title: string
 	gameId: string
-	region?: string
+	region?: Region
 	width: number
 	height: number
 	bpp: 4
@@ -48,12 +49,14 @@ export interface SaveIcon {
 	gameSlug: string
 	/** The game's romanized Japanese title, when the archive has it. */
 	ja?: string
+	/** The game's other names, which the search finds it by. */
+	aliases?: string[]
 	/** Whether the game has a page (it has VMU screens). */
 	hasPage: boolean
 	/** The game's publisher and year, from the registry. */
 	publisher?: string
 	year?: number
-	region?: string
+	region?: Region
 	vmuName: string
 	description: string
 	frames: number
@@ -83,8 +86,7 @@ export function getSaveIcons(): SaveIcon[] {
 				throw new Error(
 					`content/save-icons/${gameSlug}/${file}: its gameId is ${s.gameId}`
 				)
-			// Titles as on game pages: the English one first, the name as the
-			// Japanese one when the English differs.
+			// Titles as on game pages: the name, and the Japanese one under it.
 			const entry = getGameEntry(s.gameId)
 			const game = games.get(s.gameId)
 			cache.push({
@@ -93,9 +95,10 @@ export function getSaveIcons(): SaveIcon[] {
 				madeByGame: s.madeByGame,
 				hasVmuIcon: !!s.vmuIcon,
 				title: s.title,
-				game: entry.en ?? entry.name,
+				game: entry.name,
 				gameSlug,
-				ja: entry.ja ?? (entry.en ? entry.name : undefined),
+				ja: entry.ja,
+				aliases: entry.aliases,
 				hasPage: !!game,
 				publisher: entry.publisher,
 				year: entry.year,

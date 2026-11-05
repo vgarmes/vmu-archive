@@ -13,10 +13,10 @@ from pathlib import Path
 
 # The US BIOS. Its text is English; the Japanese BIOS wasn't checked, so the
 # VMU's pieces get a region.
-VMU = dict(game='Visual Memory Unit', publisher='Sega', year=1999, region='US')
+VMU = dict(game='Visual Memory Unit', publisher='Sega', year=1999, region='ntsc-u')
 VMU_FILE = 'american_v1.05.bin'
 # Matches the entry already in the archive ("Menu smile").
-DC = dict(game='Dreamcast', publisher='Sega', year=1998, region='WW')
+DC = dict(game='Dreamcast', publisher='Sega', year=1998)
 DC_FILE = 'dc_boot.bin'
 
 VMU_SPRITES = {

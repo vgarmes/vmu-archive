@@ -68,7 +68,7 @@ the type, not the name.
 - **From the disc.** UPLOAD, DOWNLOAD and the Capcom network file (CAP-NET,
   カプコン ネットワークファイル) have no dumped save in the archive. `vmu.py` rebuilds
   each header as the game does and they're imported with the disc as their
-  source. They're kept as `JP`, as their names are.
+  source. They're kept as `ntsc-j`, as their names are.
 - Type 2, VS.COM, takes nothing from the table: the file is `VS4.BIN`, a VMU
   program with its own header (`MVS.C2_VS.COM`), whose three frames are
   three copies of the table's type 2 frame. The dumped VS.COM save in the
@@ -106,7 +106,7 @@ are big-endian, read through `0x14EA`.
 
 **Language.** Many tables are indexed by the player-data byte at `0x0A4D`
 (`0x2B` in RAM), clamped to 0–2: 0 picks the Japanese art, 1 and 2 the English.
-Only 1 picks the copyright with ©CAPCOM U.S.A., kept as `US`; which value the
+Only 1 picks the copyright with ©CAPCOM U.S.A., kept as `ntsc-u`; which value the
 Japanese game writes wasn't checked. The 56 fighters' names have two tables
 that share most entries: 0 gives the Japanese names (TRON, BULLETA, GOUKI,
 ROCKMAN, NASH, VEGA, KOBUN), 1 and 2 the overseas ones (T.BONNE, B.B.HOOD,

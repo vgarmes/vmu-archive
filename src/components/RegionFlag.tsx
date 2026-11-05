@@ -5,7 +5,7 @@ import type { IndexEntry } from '@/lib/icons'
 const FLAGS: Partial<
 	Record<NonNullable<IndexEntry['region']>, { src: string; label: string }>
 > = {
-	JP: { src: '/flags/jp.svg', label: 'Japan' }
+	'ntsc-j': { src: '/flags/jp.svg', label: 'Japan (NTSC-J)' }
 }
 
 /** A small flag for a screen that belongs to one region's release. */

@@ -19,8 +19,8 @@ BASE = dict(game=GAME, publisher='Capcom', year=2000)
 # is JP; the Project Justice pair (the US and European title) gets none, since
 # this Japanese disc carries it too.
 TITLES = {
-    0: ('Title screen', ['logo'], 'JP'),
-    1: ('Access', ['logo', 'memory-card'], 'JP'),
+    0: ('Title screen', ['logo'], 'ntsc-j'),
+    1: ('Access', ['logo', 'memory-card'], 'ntsc-j'),
     2: ('Title screen', ['logo'], None),
     3: ('Access', ['logo', 'memory-card'], None),
 }

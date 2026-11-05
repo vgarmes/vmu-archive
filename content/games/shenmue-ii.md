@@ -3,7 +3,7 @@
 Scripts: `tools/disc-extraction/shenmue2/`.
 
 Dump: `Shenmue II v1.003 (2001)(Sega)(JP)(Disc 1 of 4)[!][3MM1]` (`.gdi`). The
-VMU art is on disc 1. Every entry from it has region `JP`, the English screens
+VMU art is on disc 1. Every entry from it has region `ntsc-j`, the English screens
 included.
 
 The first game stores its art the same way, under the same names, and twelve of

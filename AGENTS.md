@@ -31,8 +31,12 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   `content/games/<game id>.md`; its README in `tools/disc-extraction/<game>/`
   only names the dump and how to run the scripts.
 - `content/games.json` is the game registry: every game under a stable id,
-  with its name, English/Japanese (romanized) titles, publisher, year,
-  aliases and card cover (see `scripts/registry.ts`). Content refers to a
+  with its name (the title shown, English when there is one), `ja` (the
+  Japanese title, shown beneath it), publisher, year, aliases (its other
+  names, which the search finds it by: "Jet Grind Radio") and card cover (see
+  `scripts/registry.ts`). A piece's `region` (`ntsc-j`, `ntsc-u` or `pal`,
+  from `src/lib/regions.ts`) is set only when it's in that region's release
+  alone. Content refers to a
   game by that id (`"gameId"`), never by name, and doesn't repeat its
   publisher or year (`pnpm content:check` fails if it does); a sidecar's
   `"publisher"`/`"year"` are written to the registry. Folders and the page route

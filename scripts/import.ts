@@ -52,6 +52,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 import pngjs from 'pngjs'
 import { DEFAULT_FRAME_DELAY_MS, encodeFrame } from '../src/lib/pixels.ts'
+import { isRegion, REGIONS, type Region } from '../src/lib/regions.ts'
 import { slug } from '../src/lib/slug.ts'
 import {
 	gameIdFor,
@@ -81,7 +82,8 @@ interface Meta {
 	publisher?: string
 	/** The game's first release, written to its entry in content/games.json. */
 	year?: number
-	region?: 'JP' | 'US' | 'EU' | 'WW'
+	/** Only when the piece is in one region's release alone. */
+	region?: Region
 	tags?: string[]
 	/** The game's code never shows this screen (checked in the code). */
 	unused?: boolean
@@ -315,6 +317,10 @@ function main() {
 			const meta: Meta = sidecar
 				? JSON.parse(fs.readFileSync(sidecar, 'utf8'))
 				: {}
+			if (meta.region !== undefined && !isRegion(meta.region))
+				throw new Error(
+					`"region" ${JSON.stringify(meta.region)} is not one of ${REGIONS.join(', ')} (leave it out when the piece is in every release)`
+				)
 
 			// Replacing keeps the id (so URLs don't change), the added date and
 			// any metadata the sidecar doesn't override.

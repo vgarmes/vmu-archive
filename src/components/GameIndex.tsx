@@ -10,7 +10,7 @@ import type { Game } from '@/lib/games'
 
 /**
  * The home page: every game as a card showing its cover screen, and a search
- * over their English and romanized Japanese titles (and publishers), kept in
+ * over their names, Japanese titles, other names (and publishers), kept in
  * the URL as ?q=.
  *
  * Links from before game pages existed (?game=<slug>, ?screen=<id>) are sent
@@ -57,8 +57,9 @@ export default function GameIndex({ games }: { games: Game[] }) {
 		() =>
 			new Fuse(games, {
 				keys: [
-					{ name: 'en', weight: 2 },
+					{ name: 'name', weight: 2 },
 					{ name: 'ja', weight: 2 },
+					{ name: 'aliases', weight: 1.5 },
 					{ name: 'publisher', weight: 0.5 },
 					{ name: 'year', weight: 0.5, getFn: g => String(g.year ?? '') }
 				],
@@ -127,8 +128,8 @@ function GameCard({ game }: { game: Game }) {
 				<Thumb icon={game.cover} gifSrc={gif.src} />
 				<span className="border-border flex flex-col gap-0.5 border-t px-3 py-2 text-xs">
 					<span className="flex items-baseline justify-between gap-2">
-						<span className="truncate" title={game.en}>
-							{game.en}
+						<span className="truncate" title={game.name}>
+							{game.name}
 						</span>
 						<span
 							className="text-muted-foreground shrink-0 tabular-nums"

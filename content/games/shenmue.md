@@ -3,7 +3,7 @@
 Scripts: `tools/disc-extraction/shenmue/`.
 
 Dump: `Shenmue - Isshou Yokosuka v1.007 (1999)(Sega)(JP)(Disc 1 of 4)[!][1MB3, 1MB4, 1MB5, 1MM1]`
-(`.gdi`). The VMU art is on disc 1. Every entry from it has region `JP`, the
+(`.gdi`). The VMU art is on disc 1. Every entry from it has region `ntsc-j`, the
 English screens included.
 
 ## What's on the disc

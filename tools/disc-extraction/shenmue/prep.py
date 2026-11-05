@@ -25,7 +25,7 @@ from PIL import Image
 
 GAME = 'Shenmue'
 REPO = Path(__file__).resolve().parents[3]
-BASE = dict(game=GAME, publisher='Sega', year=1999, region='JP')
+BASE = dict(game=GAME, publisher='Sega', year=1999, region='ntsc-j')
 CARD = ['memory-card']
 BATTLE = ['status']
 # name: (title, tags)

@@ -34,8 +34,8 @@ export async function generateMetadata({
 	if (!found) return {}
 	const { game } = found
 	return {
-		title: game.en,
-		description: `${game.count} VMU ${game.count === 1 ? 'screen' : 'screens'} from ${game.en}${game.ja ? ` (${game.ja})` : ''}, free to download.`
+		title: game.name,
+		description: `${game.count} VMU ${game.count === 1 ? 'screen' : 'screens'} from ${game.name}${game.ja ? ` (${game.ja})` : ''}, free to download.`
 	}
 }
 
@@ -53,7 +53,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 	const headerIcons = [...saveIcons]
 		.sort((a, b) => rank(a) - rank(b))
 		.slice(0, HEADER_SAVE_ICONS)
-	const allSaveIcons = `/save-icons?${new URLSearchParams({ q: game.en })}`
+	const allSaveIcons = `/save-icons?${new URLSearchParams({ q: game.name })}`
 	const meta = [game.publisher, game.year].filter(Boolean).join(' · ')
 
 	// The page's sections as tabs, screens first; only those the game has.
@@ -114,7 +114,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 			<header className="flex items-center justify-between gap-4">
 				{/* The breadcrumb shows the title; the heading is for screen readers. */}
 				<h1 className="sr-only">
-					{game.en}
+					{game.name}
 					{game.ja && ` (${game.ja})`}
 				</h1>
 				<Breadcrumb className="min-w-0">
@@ -125,7 +125,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 						<BreadcrumbSeparator />
 						<BreadcrumbItem className="min-w-0">
 							<BreadcrumbPage className="truncate" title={game.ja}>
-								{game.en}
+								{game.name}
 							</BreadcrumbPage>
 							{meta && (
 								<span className="text-muted-foreground shrink-0">· {meta}</span>
@@ -169,7 +169,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 			</header>
 
 			{tabs.length > 1 ? (
-				<GameTabs tabs={tabs} label={`${game.en} sections`} />
+				<GameTabs tabs={tabs} label={`${game.name} sections`} />
 			) : (
 				tabs[0].panel
 			)}

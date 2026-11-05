@@ -17,6 +17,7 @@
  */
 import fs from 'node:fs'
 import path from 'node:path'
+import { isRegion, REGIONS } from '../src/lib/regions.ts'
 import { loadRegistry, registryProblems } from './registry.ts'
 import {
 	SAVE_ICONS_DIR,
@@ -51,10 +52,12 @@ const known = (where: string, entry: { gameId: string }) => {
 const screens = new Set<string>()
 for (const file of jsonFiles(ICONS_DIR)) {
 	screens.add(file.replace(/\.json$/, ''))
-	known(
-		`icons/${file}`,
-		JSON.parse(fs.readFileSync(path.join(ICONS_DIR, file), 'utf8'))
-	)
+	const icon = JSON.parse(fs.readFileSync(path.join(ICONS_DIR, file), 'utf8'))
+	known(`icons/${file}`, icon)
+	if (icon.region !== undefined && !isRegion(icon.region))
+		problems.push(
+			`icons/${file}: "region" ${icon.region} is not one of ${REGIONS.join(', ')}`
+		)
 }
 
 /** Each JSON in content/<root>/<game id>/, with where it is. */

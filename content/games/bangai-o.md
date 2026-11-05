@@ -3,7 +3,7 @@
 Scripts: `tools/disc-extraction/bangaioh/`.
 
 Dump: `Bakuretsu Muteki Bangaioh v1.003 (1999)(ESP)(JP)[!]` (`.gdi`). The archive
-files these under `Bangai-O`, with region `JP` on what came from this disc.
+files these under `Bangai-O`, with region `ntsc-j` on what came from this disc.
 
 ## What's on the disc
 
