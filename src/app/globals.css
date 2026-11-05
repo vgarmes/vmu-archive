@@ -77,6 +77,15 @@
 	* {
 		@apply border-border outline-ring/50;
 	}
+	/*
+		Always keep room for the scrollbar where it takes space (classic
+		scrollbars), so a short page lays out as wide as a long one and the
+		centred header doesn't shift between them. Overlay scrollbars (macOS's
+		default, phones) are unaffected.
+	*/
+	html {
+		scrollbar-gutter: stable;
+	}
 	body {
 		@apply bg-background text-foreground;
 	}
