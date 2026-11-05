@@ -1,0 +1,55 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "ecco-the-dolphin-defender-of-the-future",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#443333ff",
+		"#ccbbccff",
+		"#eeeeeeff",
+		"#665555ff",
+		"#888899ff",
+		"#110011ff",
+		"#776677ff",
+		"#444444ff",
+		"#ddccddff",
+		"#222233ff",
+		"#aa99aaff",
+		"#665566ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"cccccccccccccccccc72a5ccccccccccccccccccccccccccc8fb99ccccccccccccccccccccccccccff959ccccccccccccccccccccccccccff457ccccccccccccccccccccccccccfff86bccccccccccccccccccccecccbfffff8a6ccccccccccccccccceccc4fffff281a149cccdccdcccccedccc0fffff214b666aa47cccceccccccccc6fffff86b337333034a0ccccccccdcc6fffff86037030000907abcccccccec9fffff83709009555555d944ccccccccff8ffa33099053ad595555946cccccc6f41f103000057f85955dd559a9ccccc8ab4374379d94f8d918869dec74ccccc43b30436b78126dd3a612a75deaeccccbb43aa4664439d9b6435db17e545cccc3867ff8006676643dd5bb5a4ec49e4cc5842f2a40443dddddccc563a9c450f0c81881606b55ddccccccccc7a936cc3882828a3655ddcccccccccccc8e6ccce73bbb9095ddc50482bcccccc4acaccceec5ccccddcc50a8282faccccfa67ccccccccccccccc55c91a4488a4f17ccccccccccccccccccccc7a1a6bb70ccccccccccccccccc5ccccccc04a63bccccccccccedcc5ccccccccccccc54669ccccccccccccccccccc5ccccccc4466bcccccccccdcccc5cc5ccccccccca4666ecccccccceccccccccccc5ccccc416a5ecccccccccccccccccccccccccc0187eeccccccccccccccccccccccccccb295eccccccccccccccccccccccccccc6cccccccccc"
+	],
+	"animationSpeed": 30,
+	"vmuName": "ECCO SaveGame",
+	"description": "ECCO: Defender Of The Future",
+	"source": {
+		"kind": "save",
+		"files": [
+			"ecco.VMS",
+			"v19532.VMS",
+			"v20964.VMS",
+			"v21143.VMS",
+			"v23408.VMS",
+			"v34450.VMS",
+			"v36417.VMS",
+			"v45125.VMS",
+			"v48991.VMS",
+			"v49387.VMS",
+			"v55326.VMS",
+			"v720.VMS",
+			"v79960.VMS",
+			"v86933.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ecco"
+	},
+	"tags": [],
+	"hash": "be7ea845ecbd23906a322158b749bb84cc210782",
+	"added": "2026-11-05"
+}

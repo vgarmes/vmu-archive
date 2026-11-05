@@ -1,0 +1,57 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "evolution",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#00000000",
+		"#aa9966ff",
+		"#44aaccff",
+		"#444466ff",
+		"#773300ff",
+		"#ffdd99ff",
+		"#995500ff",
+		"#ffbb55ff",
+		"#ff8822ff",
+		"#bb2200ff",
+		"#ff7700ff",
+		"#000000ff",
+		"#ffcc77ff",
+		"#110000ff",
+		"#660000ff",
+		"#ffffffff"
+	],
+	"frames": [
+		"d321ff587ebbdeeee57d33332211f512d1ff5888edd11333d858132211ff12ff88778a6edb15ff223e877881ff12ffff8896eedbb4144cc13de6aaa8c2ffff26eeeddbddd4444d884bdeeeea88cf121a4ddd4466646644d44ddeedddea888778c46877aa7cccc7766114ddddbde9a88ec4ddbe9a64661117cccc14ddbbbbdeedc6a999eaa9ae9aed46667786dbbbbdddc6a9776d6aa987ee8aede99664ddbbbbc6a974bbd6a9cad67eeaaa99ed466644c69963f2be8979ea9ea9edde999e9681c69e3ff1bdaa7e99eedb324bb9aa996ec69e1f5dbd66ae9e993fff3f3b6aa98ec64eff3bb4c9e9ee77ffff2f3bb6a9aec76d5f3bb358daeaccffff15bbbda99d4669cf3b335cda7c5cffffbbbdbd9eeeff4c5f23f35c685c5cfff23bb33bde9e1f8ff522f6ccc77cccfff13bbf23eae6f16ff132375c887ccc5ff3223f2baae9f1ef55344fc8a877c5fff3222239a9e9f1d15c555ccaa877c5ff13323b9aaeedf1d45c555cc7777cc5fffff5c8aaeedef3d4cccccccccccc55cc5fff57a9bd98feb1f7cccccc86666447555c8aeeedeafedfff77ccc57818875555c8ae9e13ee1edffff175555555555cc7aae9dbb27a1e3fffff4475555557788ae999bbbbf84d3fff4d4ddd7cc776de99e9aabbbbbf4d1f3d6884dbbb669e314e9aa9bbbdb3a4f3e8c84beadbe994833334edbbbd4b64f16c84b98ae99eee1dbbd3334ddddd"
+	],
+	"animationSpeed": 0,
+	"vmuName": "EVOLUTION",
+	"description": "Evolution Pannam Town",
+	"source": {
+		"kind": "save",
+		"files": [
+			"00000011.VMS",
+			"00000606.VMS",
+			"evolujp.VMS",
+			"v30167.VMS",
+			"v47072.VMS",
+			"v49616.VMS",
+			"v69147.VMS",
+			"v74072.VMS",
+			"v77140.VMS",
+			"v81894.VMS",
+			"v8206.VMS",
+			"v92335.VMS",
+			"v94887.VMS",
+			"v96083.VMS",
+			"v96215.VMS",
+			"v99264.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evolution"
+	},
+	"tags": [],
+	"hash": "b7010697d8312fc8ebbf361c44506e0d7bc38b58",
+	"added": "2026-11-05"
+}

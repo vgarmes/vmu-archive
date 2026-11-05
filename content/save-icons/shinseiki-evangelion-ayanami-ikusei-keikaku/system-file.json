@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "shinseiki-evangelion-ayanami-ikusei-keikaku",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#223355ff",
+		"#114466ff",
+		"#226699ff",
+		"#004477ff",
+		"#115588ff",
+		"#5588aaff",
+		"#885533ff",
+		"#aa7755ff",
+		"#aa7766ff",
+		"#aa8866ff",
+		"#bb9999ff",
+		"#bbaaaaff",
+		"#660000ff",
+		"#aa0000ff",
+		"#bbbbbbff",
+		"#000000ff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffeeeeeeeeee555e5eee551122eeeee5ffe33552222233693222369963322223ffe33522222330002223399a96332223ffe362222233009a222369aaa9333223ffe3622233336aaa223699aaaa933323ffe362233369aaa923fff66aaaa93333ff539233699996ff3ffffffff6aa633fff5393699aa6fffffffffffffffa922fff43a699aaffffcccccccccc9fff9223ff96aa9aaaaacccccccceecca9fff223ffeaaaaaaaaeccdccccceecceef69223ffeaaaaaaaaeccdccccccdcce9fa9523ffeaaaaaaaaa9cddccccddc9e6aa9553ffeaaaaaaaaaaccddddddcceaaaa9553ffeaaaaaaaaaa9ccddddcc9aaaaa5553ffeaaaaaaaaaaa9cccccc9aaaaaa5552ffeaaaaaaaaaaaaaaaaaaaaaaaa95552ffeaaaaaaaaaaaaaaaaaaaaaaaa55552ffeaaaaaaaaaaaaaaaaaaaaaaa955553ffeaaaaaaaaaaaaaaaaaaaaaa9555553ffeaaaaaaaaaaaaaaaaaaaaa95555523ffeaaaaaaaaaaaaaaaaaaa9555555223ffeaaaaaaaaaaaaaaaaa955555522233ffeaaaaaaaaaaaaaaaaaaa2222233323ff766aaaaaaaaaaaaaaaa99963333223ffee96aaaaaaaaaaaaaaaa9733332223ffeee6aaaaaaaaaaaaaaa99633222223ff8779aaaaaaaaaaaaaaa9733222222fffbaaaaaaaaaaaaaaaaa99332222223fff96666666666666666663ff3333f33ffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SYSTEM DATA",
+	"description": "エヴァンゲリオン　綾波育成計画",
+	"source": {
+		"kind": "save",
+		"files": [
+			"vmfl_173.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evarei"
+	},
+	"tags": [],
+	"hash": "73687ba4bf109e2805fbd59257062388e3cd681b",
+	"added": "2026-11-05"
+}

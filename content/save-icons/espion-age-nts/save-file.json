@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "espion-age-nts",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#221111ff",
+		"#332222ff",
+		"#444455ff",
+		"#663322ff",
+		"#884433ff",
+		"#885544ff",
+		"#886666ff",
+		"#aa6655ff",
+		"#cc7755ff",
+		"#dd9977ff",
+		"#ffaa77ff",
+		"#eeaa99ff",
+		"#ffdd99ff",
+		"#ddccbbff",
+		"#ffeeddff"
+	],
+	"frames": [
+		"eeeeeeeeeffffeefec86866eeeeeeeeeeeeeeeeeffffeffec9888886eeeeeeeeeeeeeeeffffefeca985689988eeeeeeeeeeeeeefffefeca998899aa98ceeeeeeeeeeeefffefecaaaaa9a9aa988eeeeeeeeeeeeffceeccacaababba8886ceeeeeeeeeaccaccccacaabbabd968867eeeeeeeeecaaccacaaaaddbadda86866eeeeeeeeaaaa999989addddaddb66854eeeeeeeea99899958bddddddddb695527eeeeeea896a9958aadddddabbb8a5613eeeeee686ca968bbaadddbbbaa9b543eeeeee888ca98243129dddd83104a52afffeea9eaa98257327cdddde72779417ffeee8ecc984459448dddddd7446b216ffaeeaec986444dddddddddddddba113ee7eefaa864456addddddddddddb6113777eeac96646477ddddddddddddb2237e7eeeaa58446464addddabddddb9242247eeec6864564744ddddccabdbb466665eeeea68456647448ddc5c97277766684ceee88646655c452addb9ba982556665aeee68546667a4541adddbba145486667eee865584677444427ddb91545566684eee8646655644323e114205812246686cee8658655643114da200699123356887ee8666655633201cdd68bb9123365886ee66666454333043afe8864023345588ce665565533332bccee469b1333365868f8655653312339ddaebbb93333355686a8556543333233ddbbbbb33311335588865663333332236dbdbb6322222312688"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ｴｽﾋﾟｵﾈｰｼﾞｪﾝﾂ",
+	"description": "ＥＳＰＩＯＮ－ＡＧＥ－ＮＴＳ",
+	"source": {
+		"kind": "save",
+		"files": [
+			"ESPION.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/espion"
+	},
+	"tags": [],
+	"hash": "d5f925e07acc1cff27071d73ece1375fb046a5ba",
+	"added": "2026-11-05"
+}

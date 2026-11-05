@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "dance-dance-revolution-club-mix",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#ffbb88ff",
+		"#ff5588ff",
+		"#eeeeeeff",
+		"#ccff66ff",
+		"#ccccccff",
+		"#aaaaaaff",
+		"#888899ff",
+		"#777777ff",
+		"#55bbffff",
+		"#555555ff",
+		"#22ff77ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#000000ff"
+	],
+	"frames": [
+		"ccccccccccccccccccccccccccccccccccccccccccccaaaaaaaacccccccccccccccccccccaaa77777777aaacccccccccccccccccaa77444bb66677aaccccccccccccccaa7744bbb666666677aacccccccccccaa7bbbbbbb6666666667aacccccccccaa7bbb999b666666666667aacccccccca7bb99999b6666666666667accccccca7bb999999966666666666667acccccaa766999999965333366666667aacccca76666699666888833366666667acccca76666666688aaaa88336666667accca76666666688a8888a88366669bb7acca7666666668a888888a8656999bb7acca766666668a88acca88a899996667acca766666658a88cccc88a856666667acca766666658a86cccc88a899999bb7acca766666638a885cca88a866666667acca76666bbbb8a883568a8666666667acca7bbbbb63688a8888a88665566667accca74466644b88aaaa88696555567acccca76664444446888853569665557accccaa714444411344333365696667aaccccca711111116614666653569667accccccca7211116611666665535697accccccccaa72221661166666665557aacccccccccaa722666116666666657aacccccccccccaa7766226666666677aaccccccccccccccaa772266666677aacccccccccccccccccaaa77777777aaacccccccccccccccccccccaaaaaaaacccccccccccccccccccccccccccccccccccccccccccc"
+	],
+	"animationSpeed": 1,
+	"vmuName": "DDR CLUB System",
+	"description": "DDR CLUB VER. システムファイル",
+	"source": {
+		"kind": "save",
+		"files": [
+			"DDRCLUB.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ddrclubmix"
+	},
+	"tags": [],
+	"hash": "cdd2a9c017db5778bedf2045f72bba4cb560ef19",
+	"added": "2026-11-05"
+}

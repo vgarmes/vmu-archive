@@ -11,6 +11,9 @@
 	"action-replay-cdx": {
 		"name": "Action Replay CDX"
 	},
+	"advanced-daisenryaku": {
+		"name": "Advanced Daisenryaku"
+	},
 	"aero-dancing-i": {
 		"name": "Aero Dancing i"
 	},
@@ -60,6 +63,9 @@
 	},
 	"blue-submarine-no-6": {
 		"name": "Blue Submarine No. 6"
+	},
+	"boku-doraemon": {
+		"name": "Boku Doraemon"
 	},
 	"bomber-hehhe": {
 		"name": "Bomber Hehhe"
@@ -118,14 +124,113 @@
 	"confidential-mission": {
 		"name": "Confidential Mission"
 	},
+	"conflict-zone": {
+		"name": "Conflict Zone"
+	},
+	"cool-cool-toon": {
+		"name": "Cool Cool Toon"
+	},
 	"crazy-taxi": {
 		"name": "Crazy Taxi"
 	},
 	"crazy-taxi-2": {
 		"name": "Crazy Taxi 2"
 	},
+	"d-vine-luv": {
+		"name": "D+Vine [LUV]"
+	},
+	"d2": {
+		"name": "D2"
+	},
+	"dabitsuku": {
+		"name": "Dabitsuku"
+	},
+	"dance-dance-revolution-club-mix": {
+		"name": "Dance Dance Revolution Club Mix"
+	},
+	"dave-mirra-freestyle-bmx": {
+		"name": "Dave Mirra Freestyle BMX"
+	},
+	"daytona-usa": {
+		"name": "Daytona USA"
+	},
+	"dead-or-alive-2": {
+		"name": "Dead or Alive 2"
+	},
+	"death-crimson-ox": {
+		"name": "Death Crimson OX"
+	},
+	"deep-fighter": {
+		"name": "Deep Fighter"
+	},
+	"demolition-racer-no-exit": {
+		"name": "Demolition Racer: No Exit"
+	},
+	"digi-charat-fantasy": {
+		"name": "DiGi Charat Fantasy"
+	},
+	"dino-crisis": {
+		"name": "Dino Crisis"
+	},
+	"disneys-dinosaur": {
+		"name": "Disney's Dinosaur"
+	},
+	"donald-duck-goin-quackers": {
+		"name": "Donald Duck: Goin' Quackers"
+	},
+	"draconus-cult-of-the-wyrm": {
+		"name": "Draconus: Cult of the Wyrm"
+	},
+	"dragon-riders-chronicles-of-pern": {
+		"name": "Dragon Riders: Chronicles of Pern"
+	},
+	"dream-passport-3": {
+		"name": "Dream Passport 3"
+	},
 	"dreamcast": {
 		"name": "Dreamcast"
+	},
+	"ducati-world-racing-challenge": {
+		"name": "Ducati World Racing Challenge"
+	},
+	"dynamite-cop": {
+		"name": "Dynamite Cop"
+	},
+	"ecco-the-dolphin-defender-of-the-future": {
+		"name": "Ecco the Dolphin: Defender of the Future"
+	},
+	"ecw-anarchy-rulz": {
+		"name": "ECW: Anarchy Rulz"
+	},
+	"ecw-hardcore-revolution": {
+		"name": "ECW: Hardcore Revolution"
+	},
+	"egg-elemental-gimmick-gear": {
+		"name": "EGG: Elemental Gimmick Gear"
+	},
+	"eldorado-gate-vol-1": {
+		"name": "Eldorado Gate Vol. 1"
+	},
+	"eldorado-gate-vol-7": {
+		"name": "Eldorado Gate Vol. 7"
+	},
+	"espion-age-nts": {
+		"name": "Espion-Age-Nts"
+	},
+	"espn-international-track-and-field": {
+		"name": "ESPN International Track and Field"
+	},
+	"espn-nba-2night": {
+		"name": "ESPN NBA 2Night"
+	},
+	"evil-dead-hail-to-the-king": {
+		"name": "Evil Dead: Hail to the King"
+	},
+	"evil-twin": {
+		"name": "Evil Twin"
+	},
+	"evolution": {
+		"name": "Evolution"
 	},
 	"ikaruga": {
 		"name": "Ikaruga"
@@ -143,6 +248,9 @@
 	},
 	"marvel-vs-capcom-2": {
 		"name": "Marvel vs. Capcom 2"
+	},
+	"mr-driller": {
+		"name": "Mr. Driller"
 	},
 	"power-stone": {
 		"name": "Power Stone"
@@ -186,6 +294,9 @@
 	"shenmue-ii": {
 		"name": "Shenmue II"
 	},
+	"shinseiki-evangelion-ayanami-ikusei-keikaku": {
+		"name": "Shinseiki Evangelion: Ayanami Ikusei Keikaku"
+	},
 	"shinseiki-evangelion-typing-e-keikaku": {
 		"name": "Shinseiki Evangelion: Typing E-Keikaku"
 	},
@@ -219,6 +330,9 @@
 	},
 	"visual-memory-unit": {
 		"name": "Visual Memory Unit"
+	},
+	"walt-disney-world-quest-magical-racing-tour": {
+		"name": "Walt Disney World Quest: Magical Racing Tour"
 	},
 	"world-series-baseball-2k1": {
 		"name": "World Series Baseball 2K1"

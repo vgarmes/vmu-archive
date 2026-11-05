@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "d-vine-luv",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#555588ff",
+		"#ffccbbff",
+		"#997777ff",
+		"#332233ff",
+		"#ddaa88ff",
+		"#000088ff",
+		"#ffffffff",
+		"#003300ff",
+		"#ccbbeeff",
+		"#ffbbbbff",
+		"#bb7777ff",
+		"#666699ff",
+		"#665555ff",
+		"#8888aaff",
+		"#554466ff"
+	],
+	"frames": [
+		"666666ce1111c11c111111c1ec66666666669e1c1c11cc1c11111111cce9666666e6e9e11c1cccccc111c1ccce7e6966669ee7ecccccccc1c1ccccce9e9e97666677e99ececccecfccccecc99e9997669697979e9eeeceefccecec799e77776976e977979e971e91ec9c7e77e979776976c99777ecc71e717e7f979ec77999679efee99eccf9fc9ce77f9eecc79ee9e79efcc99ecffefc7cc9efeccffe9ecee9eefcfeeecffefc7cfeefcfcffeeccee9eecffeeccffefc9cfccfcffffcecfeeececffe4f4444bfeffcff4444f4cffeeececff1c4fffcb4cfbf4bfbfb4fcffeeccccff1cfbfbfbfcfbfbbfbbbbfcffeccc11fbf0f0000bbfb5bb50000b0cffcccc11fbf00007750f55505007700fffcccc1ff0fe000775925229500770ef0fcccc1ff0be940005922229240009ef0fccccfffbb99400427222272400499fbfccc1fffbb77d00d27222272d00d77bbfffc1fff5b77d00d27222272d00d77b5fffc1fff5b77300327222272300377b5fffc1f4fabaaaaaa22222222aaaaaabaffffff4fabaaaa2a22222222a2aaaabaf4fff64f5b22222222222222222222b5f46ff64f542222225222222522222245f46ff64f4422222222bbbb2222222244446ff64f442422222222222222224244446ff64f44442b222222222222b24444446ff666444444252222222252444444666ff666664444445b5555b544444466666f"
+	],
+	"animationSpeed": 0,
+	"vmuName": "ｽｹｱｸﾛｳ/ﾌﾟﾘﾝｾｽｿﾌﾄ",
+	"description": "Ｄ＋ＶＩＮＥ[ＬＵＶ]",
+	"source": {
+		"kind": "save",
+		"files": [
+			"DVINELUV.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dvine"
+	},
+	"tags": [],
+	"hash": "3f5d6f6482ca9ef25bd188fa55342e7fa08b5bad",
+	"added": "2026-11-05"
+}

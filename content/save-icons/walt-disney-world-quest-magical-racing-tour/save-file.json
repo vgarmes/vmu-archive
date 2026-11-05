@@ -1,0 +1,48 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "walt-disney-world-quest-magical-racing-tour",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#110000ff",
+		"#111111ff",
+		"#000000ff",
+		"#111100ff",
+		"#555555ff",
+		"#222222ff",
+		"#eecc77ff",
+		"#999999ff",
+		"#aa8855ff",
+		"#332211ff",
+		"#885544ff",
+		"#443322ff",
+		"#664433ff",
+		"#221111ff",
+		"#eeeeeeff",
+		"#000000ff"
+	],
+	"frames": [
+		"f7eeeeeeeeeeeeeeeeeeeeeeeee7ffff7eeeeeeeeeeeeeeeeeeeeeeeeeee7fffeee7fffffffffffffffffffff7eeefffee7ff133caaaaaaa88acc9022f7eefffeefff0a8886888888666688c21feefffeeff0aa9aa8666666666886692feefffeeff0a57b3a66666668d33b882feefffeef1b5eee4c866668adb771d69feefffeef9b4eeeeca6666a34eeeed8cfeefffeefb97eeeeca666895eeeee4bafeefffeef997e477ba666897eeeee7bafeefffe7fb97423bca668897e74ee7ccfeefff442bb4561548668896e124e7cbfeefffb529b5235bc666a8974655e8c9feefff52bac12f988668a89b4d157cb0feefff2c88aaad9866688aa912231db0feefffd8668888866e66888c2d9bcaa0feefffb6666886666668888cc8666e8afeefffb6668a8aa866888ac886666668feefff966cddbabba888cbc888886668feefff088bcc8a8cdb9d9aa9d90ba888feefff598acb8888a99aacaab02dba8a2eefff509cccba8888aaaaaaddbcbaaafeefff1339cc99c6888888a92dbcccacfeefff71f09cc99b88888cdf3bacccb9feefffee4f2dcadfdbb90ff29aac900d2eefffeee4ffdca3ffff2393a8ad000f1eefff7eee445dca3fdcdaca8ad002f27e7ffff7ee74414c8dcaccc68b02ff25e7ffffffffff2fffc8acca8c00ffffffffffffffffffffff29a88c022fffffffffffffffffffffffff9bcaffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "WDworldquest:MRT",
+	"description": "Walt Disney World Quest:MRT",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v15203.VMS",
+			"v34869.VMS",
+			"v35455.VMS",
+			"v53567.VMS",
+			"v80503.VMS",
+			"v80612.VMS",
+			"v85326.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/disneymagical"
+	},
+	"tags": [],
+	"hash": "f4eeff770349c0d0d354811de8e7427696afe706",
+	"added": "2026-11-05"
+}

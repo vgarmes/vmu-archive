@@ -1,0 +1,43 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "d2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#bbbbbbff",
+		"#bb9977ff",
+		"#999999ff",
+		"#999999ff",
+		"#888888ff",
+		"#ee6633ff",
+		"#996644ff",
+		"#777777ff",
+		"#ee3311ff",
+		"#666666ff",
+		"#dd3311ff",
+		"#dd2211ff",
+		"#555555ff",
+		"#cc2211ff",
+		"#882211ff",
+		"#443333ff"
+	],
+	"frames": [
+		"000000000000000000000000000000020222222222222222222222222222222702c4222222222222222222222222c42702402222222222222222222222224027033333333333222222222222222222270344444444433333222223333333333704777feef974443333233344444443370eeeedaabdefc7443333447cfffc74490ceaaaaaaaabbdc443344feddbbbd94907fdaaaaaaaaaaa94447fdabaaaab57907fdaaabbaaaaab5744ceab5ddaab86c07fdaab58abaaab8677fdab5feaaab1c07fdaab5fffdaaab177cebb8cfbaab1c07fdaab5ccffbaab5979fdb86eaaba1c07fdaab59ccfdaab5999cfe6fdaab54c07fdaab5799feaab59fe6ccfeaab819c07fdaab8799ceaab5ce81cfeaabb197c07fdaaba197ceaab1cf57cebab81997907fdaaab599fdab81c999fbaba5cc99907fdaaab59cfdab57977ceaaa5ffcc6907fdaaab5cfeaab19777fbab5ffd6f6c07fdaaaa8eebab54977fdaaa8eda8e1c07fdaaaabbaab819777fbaaabbaaba1c09fbaaabbbbb8197747fbabbbbbbba1c0ed88a8888856c774479f8888888851c09ccf666fcccc77444479ccfffffcc7c07799ccccc97744433447799999997790447777777744433333444777777744904c7444444443333233334444444c739034033333333332222233333333340370222222222222222222222222222222727777777777777777777777777777777"
+	],
+	"animationSpeed": 1,
+	"vmuName": "D2SYSTEM",
+	"description": "D2SYSTEM",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v60528.VMS",
+			"v69484.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/d2"
+	},
+	"tags": [],
+	"hash": "4883f24bd3b27fada4a1e75b200f7c15daea88df",
+	"added": "2026-11-05"
+}

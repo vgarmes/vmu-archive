@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "eldorado-gate-vol-7",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#ffffccff",
+		"#eeeebbff",
+		"#cccc99ff",
+		"#bbaa88ff",
+		"#999966ff",
+		"#777755ff",
+		"#665533ff",
+		"#443322ff",
+		"#332200ff",
+		"#ffffffff",
+		"#ddddddff",
+		"#aaaaaaff",
+		"#777788ff",
+		"#444455ff",
+		"#001122ff"
+	],
+	"frames": [
+		"00000dcceeccbabaaabaabbaabbbbcbb0000dcee00ecbabaaababbaabbbbcbbc000ede0000ecbabaabaabaabbaabbbcb000ee00000edbabaababaabaaabaacbb00e00000000ebabaabaaabaaabaacabc00000000000ecabaaaaabaaabaababcb00000000000ecabaaaabaaaaaababcbb00000000000eccbaaaaaabaaababbabc00000000000811caaaaabaaabbbbaacb000000000084111cccccccabbbcabbaa000000000841113111111cccbcabaabb00000000841113111131111ccbbbbbcc000000008111131111311213dddccccc000000000f21121113211316348dcccc000000000ff2111442111316347dcdcd000000000fff111111133113646ddccd0000000063ff112111111112744dccdf0000000063f5113f9aa99af8344ec88cf00000006f711122ffaaaf3334467118ff0000008841112225fff33344471448fff000008f3111111271223354435848ffff0009ff8871111241223454688448fffff0961f6311111111123444764480fffff975113f632113f3234454449800fffff84113115ffff8323544788897f0fffff8711133111222224545875556ffffffff871111333113455347875556ffffff7ff86411111123443358775556ffff888fff8852111122333368675557fff8778fff888852122333368775556ffff768ff8876668854334588667556ffffffff88766666667888887667579fffff"
+	],
+	"animationSpeed": 16,
+	"vmuName": "ｴﾙﾄﾞﾗﾄﾞｹﾞｰﾄ ﾃﾞｰﾀ",
+	"description": "エルドラドゲート データ１",
+	"source": {
+		"kind": "save",
+		"files": [
+			"eldgate7.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/eldorado7"
+	},
+	"tags": [],
+	"hash": "2f6423d55f63e2ba23fcd3f28edfecde2d4943bd",
+	"added": "2026-11-05"
+}

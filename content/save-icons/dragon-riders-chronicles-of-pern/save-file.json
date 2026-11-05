@@ -1,0 +1,46 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "dragon-riders-chronicles-of-pern",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#000000ff",
+		"#110011ff",
+		"#331122ff",
+		"#442222ff",
+		"#552222ff",
+		"#772222ff",
+		"#774444ff",
+		"#883333ff",
+		"#884444ff",
+		"#aa4444ff",
+		"#bb4444ff",
+		"#aa5555ff",
+		"#bb7755ff",
+		"#dd7755ff",
+		"#dd9977ff"
+	],
+	"frames": [
+		"ddddddd5cdcdffc9dcefff73cefe78cfcccccd9797dff95aaeefe834bee56c9fcccccd796aff939adeefea58ee54ef9dcccccc552cf9469bdffee64ab64aef5cdccccc255aa684aedfffe64ba36cee49dcccd95aea6a47effeee85ab46adea23ccccc79cd6a85befffeccfb5586ce6139cccc75978b68befeeeff724556be6139cccc5455b88bbdfdcf920236aa8fd34d9cc9422986bbeee9f727528bba8ff2479cc5203a88bbee69d35525bbb86ff1579cc4003a6abbe83d45f328eb84af429799c500586bbe919c1ff25aa538f62597579300558efc15e35f4683456e70388977720143bec2463053562673ba0028d979720246bb8643576552873aa20139f99951055bb8636cffa65a53a8100236e97741366a8548affbba54385201122399973166a868bbdc5be42552000121136797328ab8abba94df935300001110127d97358babbba84df7341000012111217d6935aa8bb8a4cf73430000221104627a6738a6ab888aa435750100320044a44d642a62abbaa625777711134302a5c74e34285c95be6147999721323304b5a93c33469703fd137cccc711423208e98c3a54688245d427ccccc51132322dfc8a47668aaa8f9047cccc940122316ffaab524a6be9dc1594479d94012212aefcbb71059acd949e60113573001114befcbe921058778ceb22122143001118effbeb84444599aac92344337412136cfffeec9"
+	],
+	"animationSpeed": 16,
+	"vmuName": "LOC:26",
+	"description": "DRAGONRIDERS",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v10250.VMS",
+			"v10984.VMS",
+			"v18754.VMS",
+			"v68252.VMS",
+			"v99654.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dragon"
+	},
+	"tags": [],
+	"hash": "f58aea1e50203c3458afcaffd3197a7e55e94c46",
+	"added": "2026-11-05"
+}

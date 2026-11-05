@@ -1,0 +1,52 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "dino-crisis",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#eebb99ff",
+		"#bb9977ff",
+		"#aa7755ff",
+		"#996644ff",
+		"#885544ff",
+		"#774433ff",
+		"#995544ff",
+		"#cc3322ff",
+		"#992211ff",
+		"#666666ff",
+		"#333333ff",
+		"#662222ff",
+		"#441111ff",
+		"#111111ff",
+		"#114455ff"
+	],
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffefeeeeeeeefeffffffffffffffffffefdedcddddddedeeffffffffffffffff9e88c9cdc9dcddddeeffffffffffffef897798dc99c9dccdddfeffffffffffef997788d98c98c99ddcedffffffffff9ec97889c8cd889999c9ddfeffffffef99cc799c98cd8c989c99dcfeffffff9e988c79cc89d99c99cc9cdcedffffef79c92879cc898ccd99dcccc9edffff9e87c922899c86ccd99ccccdccddfeff9e975c31c96895ccd99cccddcdddfeff9e982c518956c9c6c8cddcddddddfeff9e984c3268c666c698cdddddddddfeffef985c3453b6ec6c98cddcddddddfeffef99c95b42b5be66c8c9ccddddddfeffff8eb95e41445665d9d9c9ddddddfeffff9e591341342265dcd99cdcddddfeffffef5911423443966dcdcdccddedfeffffef5c11324454c6d9dcddcdccedffffffff5b22544555c6c6d6ddddddfeffffffffce25534555666cc6ddddddfeffffffffbf254255656666cbdcddedffffffffffef4b53666666666bc6dcedffffffffffffbe34555666b66666bbfeffffffffffffef464365666b66b6bbfeffffffffffffff5e3265b66666bbbbebffffffffffffffbe54b66b66b6aabaebffffffffffffffefeebb66b6abbababbfeffffffffffffffefeebeabaabaaabbebffffffffffffffffffbeabaabbaaaabbeeffffffffffffffffbeabaaabaaaaaabbee"
+	],
+	"animationSpeed": 30,
+	"vmuName": "DINO CRISIS",
+	"description": "DINO/NORMAL/Facility 1F",
+	"source": {
+		"kind": "save",
+		"files": [
+			"DINO1.VMS",
+			"DINOCR.VMS",
+			"v18718.VMS",
+			"v24016.VMS",
+			"v33127.VMS",
+			"v34053.VMS",
+			"v34274.VMS",
+			"v44434.VMS",
+			"v57518.VMS",
+			"v6784.VMS",
+			"v86342.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/dinocrisis"
+	},
+	"tags": [],
+	"hash": "73e1ec9caa201e1e82deb231a6d7c12191f32884",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "System file",
+	"gameId": "digi-charat-fantasy",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#7788aaff",
+		"#77aaeeff",
+		"#3377ccff",
+		"#003366ff",
+		"#113311ff",
+		"#225522ff",
+		"#000000ff",
+		"#557744ff",
+		"#444444ff",
+		"#ffffffff",
+		"#887766ff",
+		"#aa9988ff",
+		"#ffddccff",
+		"#ffccaaff",
+		"#ddaa99ff",
+		"#bbaaaaff"
+	],
+	"frames": [
+		"333333333333333333333333333333333434343344344300008443447744375334445457445448edec7444445744577334545487555547addda4445447544773335454a7585785addcb5555447744573344455e75a57a5aeccb5585447754573354658a75e57d4abcce55a555a75445333454ab85b77c48bdce55e555e7a5413356a4dff4a58da5eecd47d545c778453344b4efc7d75bd5becc47d84adb776833447668aada5dc87ccd5bb84add7a483344b46648ab5dcb4dcd8eca4bab87713344b8a666666ec98aceaddb5dde74883344fcf6666858ccb8ceadda5bdddaa83346a9c4666f9adccaacab8668bdcbd833447999a888cabcceacbeca6664a8b133345999999cccecdcbbdd906666666833144f99cccddccddccedcd464668b84331f78999ccccccdcddcddcd864689c1331cfc899888eabeddcddcddcbbaedc13319c9f888d88eaccdddcddddddddec133199998f9cc8eeacccddcdddddddc813319998f99bb888ecddcdddddddcd8b1331999899eabee88cccddddddde889c1331998c9cccccc98dcccccd8886899c133199899ccdbbbb8ecdeb848ed8b999133188899cccedcc4666664bddc89999133199899ccccdcc866668ddedc899991331cc8f9ccccbba8668eddeded899991331ccd899ccdccda8adddedede89999133111111111111111111111111111111333333333333333333333333333333333"
+	],
+	"animationSpeed": 1,
+	"vmuName": "SYSTEM DATA",
+	"description": "デ・ジ・キャラット　ファンタジー",
+	"source": {
+		"kind": "save",
+		"files": [
+			"DIGICHAR.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/digichar"
+	},
+	"tags": [],
+	"hash": "78c3f2c5f88eae529d562244ce9c55af08450bf2",
+	"added": "2026-11-05"
+}

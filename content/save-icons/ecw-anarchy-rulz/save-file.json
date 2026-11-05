@@ -1,0 +1,44 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "ecw-anarchy-rulz",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#ffffffff",
+		"#ddbbccff",
+		"#ccaabbff",
+		"#ffcceeff",
+		"#cc99bbff",
+		"#ddaaccff",
+		"#cc88bbff",
+		"#bb77bbff",
+		"#ccaaccff",
+		"#bb99bbff",
+		"#996699ff",
+		"#996699ff",
+		"#bb99bbff",
+		"#994499ff",
+		"#994499ff"
+	],
+	"frames": [
+		"00cc0000000cc00000c0cccc000000000fffffffffffff000fffffffffff00000f0cf4df48cc9f00fd88f4f23c9cff000f8cddcd00dddf0f980f8fff0dc9dff00fc8dfffffffff0f08ddffffffd9c3f00f24848f0000000ff338f0000f8ccff00f888c8f0000000fc888f0000ffffff00f44488fffff000f883cf000000000000f48888ddddf000fd8ddf000000000000f384c8fffff000f3380f000000000000f84830fc000000f0890f0000ffffff00f44888f0000000fcc83f0000fc99df00f4488dfffffff0fddccffffff9c9cf00f4488c8888d0f00fd8cdccc8cd9ff000ff0ffff0ff00f000ff3300088f3f0000fffffffffffff0000ffffffffff0000000000000000000000000000000000000000000000000000000000000000000001ffff000fff000ffff10ffff0ffff000fee8ff0f544f0ff8eef0fddf0fddf000f24fef0f144f0fefb2f0fdff0fdff000f745a4ff444ff4aff7f0f04f0f04f0000f447444444e447f1f00f4cf0f4cf0000fa444444444444faf00f88f0f88f0000f564466444664f65f00f38f0f38f00000f38434444034f3f000f8cf0f8cf00000fda444444b74adf000f83f0f83f00000fc74954f44917cf000f88f0f88f000000f922df0fd229f0000f0df0f0df000000fbbaaf0faabbf0000f8ff0f8ff00000001fd96069df100000ffff0ffff0000000000000000000000000000000000"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ECW CUSTOM",
+	"description": "ECW Anarchy Rulz",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v34644.VMS",
+			"v39669.VMS",
+			"v96747.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ecwanarchy"
+	},
+	"tags": [],
+	"hash": "fa8bf25bb66cac686ad972dd45f06e4c60714f6c",
+	"added": "2026-11-05"
+}

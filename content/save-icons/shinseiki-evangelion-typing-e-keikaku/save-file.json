@@ -1,0 +1,42 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "shinseiki-evangelion-typing-e-keikaku",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#111111ff",
+		"#221111ff",
+		"#552211ff",
+		"#554444ff",
+		"#992211ff",
+		"#887766ff",
+		"#aaaa99ff",
+		"#ccccccff",
+		"#ee3344ff",
+		"#cc7711ff",
+		"#dd7711ff",
+		"#ee8811ff",
+		"#ff8811ff",
+		"#ffbb55ff",
+		"#eeccbbff",
+		"#eeeeeeff"
+	],
+	"frames": [
+		"77777777777777777777777777777777777777777777777777777777777677777313136777777775777777763135357772ee80016753001400335632228e8177628802820149b1bc909942028404827762002420214b42ccc914bb940420007762044041cb1429ccccc4149b9144007770040444ccb11ccdccccb4114904007770222b1bdcc4bccdcdccc941199003773022944ddccccccdddcdd92124b10377240041dddccccccddddddccc92120167b9002cdddcc4cccddcddcdcccc911907bb02cccdccb09ccdd99c29ccb9cb0b45b42cccc92c409cccd40b909c91cc249390bcccc119154c9cc434c11cc29c94b194cccc2311562c1cc461b039c1bc94b191c9403505530b0cc251105242cc94b1b099945e7eee310bc1761ee012cc29b1901cc46e5005e35445ee5017e0c909b29224c1e707f06ee107e50f60e39024b4449000e601305eee7ee30310650191bb4491e2e717005eeeeee55500e565124b1945e37e6225eeeeeeee5226e56e192b0945e55eeeeeeeeeeeeeeeeee56e190b4990763eeeeee0355306eeeee1e6191b99920507eeeee533335eeeee6030991b99929923eeeeeeeeeeeeeeee1499924499944bb23eeeeeeeeeeeeee149940442499909bb416eeeeeeeeee504940000571299214bb201356666530099999925777633373335777655556776044440377777777777777777777777777655577777"
+	],
+	"animationSpeed": 10,
+	"vmuName": "SaveData",
+	"description": "Evangelion Typing-E",
+	"source": {
+		"kind": "save",
+		"files": [
+			"type_e01.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/evaproe"
+	},
+	"tags": [],
+	"hash": "060d28094abe87a10f6acc0b67c20807cca75382",
+	"added": "2026-11-05"
+}

@@ -1,0 +1,47 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "ducati-world-racing-challenge",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#000000ff",
+		"#000000ff",
+		"#111111ff",
+		"#111111ff",
+		"#111111ff",
+		"#221111ff",
+		"#222222ff",
+		"#332222ff",
+		"#552222ff",
+		"#000000ff",
+		"#dd0033ff",
+		"#cc1133ff",
+		"#aa1122ff",
+		"#ee2233ff",
+		"#772222ff"
+	],
+	"frames": [
+		"00000000000000000000000000000000000000000159f24ccccd961100000000000000015fceda7ccccbbcd72000000000000029cbcb919bccccccbbf4100000000003fbbccb80fcccccccccbd61000000003fbcccbc62dccccccccccbd6000000019bccccbd33ccccccccccccbd30000007cbccccbd26cccccccccccccbf100002dbcccccbf18cccccccccccccbc600017bccccccb80fccccccccccccccbf0001dbccccccc71dcccccccccccccccc4004cccccccbc52dcccccccccccccccb8008bccccccbd34ccccccccccccccccbf00dcccccccbf17cccccccccccccccccd00ccccccccb909cccccccccccccccccc00ccccccccc71fcccccccccccccccccc00cccccccbc62dcccccccccccccccccc00cccccccbd33dcccccccccccccccccc00fbcccccbf16cccccccccccccccccbd008bcccccb909cccccccccccccccccbf005ccccccc81fcccccccccccccccccb8001dbcccbc62dccccccccccccccccbc30018bcccbd32dccccccccccccccccbf10003dbccbf26ccccccccccccccccbc4000018bccb908ccccccccccccccccb91000002fbbc819cccccccccccccccef200000003dec62fccccccccccccccbd40000000004dd52dbcccccccccccbbd5000000000003626cbccccccccccbcf31000000000000106dbbcccccccbcd610000000000000000149dccccccd96110000000000000000000000000000000000000000"
+	],
+	"animationSpeed": 0,
+	"vmuName": "SaveGame",
+	"description": "DUCATI WORLD",
+	"source": {
+		"kind": "save",
+		"files": [
+			"v12887.VMS",
+			"v31160.VMS",
+			"v3342.VMS",
+			"v63358.VMS",
+			"v86688.VMS",
+			"v94629.VMS"
+		],
+		"url": "https://github.com/bucanero/dreamcast-saves/tree/master/ducati"
+	},
+	"tags": [],
+	"hash": "712c36f4e9b1ec17583f59794aa71e7af2c8c947",
+	"added": "2026-11-05"
+}
