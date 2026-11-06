@@ -69,7 +69,12 @@ play wasn't traced. Neither were the gem's count and the ring's plus and
 minus.
 
 The hand is made from game state, so the archive keeps its pieces rather than
-a screen of it.
+a screen of it. As an example, `vmu.py` draws a hand the way `0x8C0A57A4`
+does: 3, 1, 6, S, 2, Eggman and 5, the cursor over the S card, and 2 beside
+the gem, with the ring cleared. The hand was picked for the example, not
+captured.
+
+![An example hand](../../public/notes/sonic-shuffle/hand.png 'An example hand: 3, 1, 6, S, 2, Eggman, 5')
 
 ## Sprites
 
