@@ -494,7 +494,9 @@
 		"name": "Memories Off Complete"
 	},
 	"metropolis-street-racer": {
-		"name": "Metropolis Street Racer"
+		"name": "Metropolis Street Racer",
+		"publisher": "Sega",
+		"year": 2000
 	},
 	"milky-season": {
 		"name": "Milky Season"

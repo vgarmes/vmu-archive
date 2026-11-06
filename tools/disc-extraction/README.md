@@ -70,6 +70,9 @@ Every game so far did it differently. What has turned up:
   Crazy Taxi 2, Ikaruga, Jet Set Radio, Marvel vs. Capcom 2, Moero! Justice
   Gakuen, Power Stone 1 and 2, Resident Evil Code: Veronica, Street Fighter
   III 3rd Strike.
+- In the game's own program, loaded by a small `1ST_READ.BIN`: Metropolis
+  Street Racer's `MSR.BIN` (it runs from `0x8C010000`; string pointers give
+  the base away).
 - In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
   `TYPE_E.EXE` (a PE file; map addresses through its section table).
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
@@ -96,6 +99,7 @@ colour textures; the real art was found by following the code that loads it.
 | Encoding                 | Example                                                                                   |
 | ------------------------ | ----------------------------------------------------------------------------------------- |
 | 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue 1 and 2 (with a width and height byte)            |
+| 1 bit per dot, low first | Metropolis Street Racer: bit 0 of each byte is the leftmost dot                           |
 | 1 bit per dot, a sheet   | Code: Veronica: one 128x128 sheet, cut by a rectangle table into every screen's parts     |
 | 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Jet Set Radio, Typing E-Keikaku: turned 180°, as the LCD takes it |
 | 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                            |
@@ -166,5 +170,6 @@ The code also says what the game never shows: screens nothing calls are marked
 | Jet Set Radio                    | JP (2000, Sega), Redump                    | [`jsr/`](jsr/)                 | [jet-set-radio](../../content/games/jet-set-radio.md)                                                                     |
 | Marvel vs. Capcom 2              | JP (2000, Capcom), Redump                  | [`mvc2/`](mvc2/)               | [marvel-vs-capcom-2](../../content/games/marvel-vs-capcom-2.md)                                                           |
 | Resident Evil Code: Veronica     | JP and EU disc 1 (2000, Capcom), Redump    | [`cvx/`](cvx/)                 | [resident-evil-code-veronica](../../content/games/resident-evil-code-veronica.md)                                         |
+| Metropolis Street Racer          | EU Rev B (2000, Sega), Redump              | [`msr/`](msr/)                 | [metropolis-street-racer](../../content/games/metropolis-street-racer.md)                                                 |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
 | Visual Memory Unit, Dreamcast    | US VMU BIOS v1.05, `dc_boot.bin` (Sega)    | [`bios/`](bios/)               | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |
