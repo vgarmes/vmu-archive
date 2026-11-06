@@ -676,7 +676,10 @@
 		"name": "Resident Evil 3: Nemesis"
 	},
 	"resident-evil-code-veronica": {
-		"name": "Resident Evil Code: Veronica"
+		"name": "Resident Evil Code: Veronica",
+		"ja": "Biohazard Code: Veronica",
+		"publisher": "Capcom",
+		"year": 2000
 	},
 	"revive": {
 		"name": "Revive"
