@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-06",
+		"title": "Sonic Shuffle",
+		"body": "From the Japanese disc: the logo screen is now the game's own bitmap (the old capture was a dot off in places), and NO CARD joins it, a screen the game carries but never shows. The VMU's main job in Sonic Shuffle is keeping your hand of cards out of the other players' sight; that screen is built from pieces of one small sheet, now kept with the game's sprites: the cards 1 to 6, S, Eggman and face down, the digits, the cursor and a few icons."
+	},
+	{
+		"date": "2026-11-06",
 		"title": "Metropolis Street Racer",
 		"body": "Three screens from the European disc, each with the MSR logo: the Kudos K the VMU shows most of the time, SAVING..... as a save starts, and OK! when it's done, held for 150 ticks before the logo screen comes back. The game also carries a small font for printing text on the VMU, though nothing in the game ever calls it; it's kept with the game's sprites."
 	},
