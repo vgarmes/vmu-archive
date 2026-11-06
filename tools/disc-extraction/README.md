@@ -68,7 +68,8 @@ Every game so far did it differently. What has turned up:
 
 - In the program itself, `1ST_READ.BIN`, with no file of its own: Bangaioh,
   Crazy Taxi 2, Ikaruga, Jet Set Radio, Marvel vs. Capcom 2, Moero! Justice
-  Gakuen, Power Stone 1 and 2, Street Fighter III 3rd Strike.
+  Gakuen, Power Stone 1 and 2, Resident Evil Code: Veronica, Street Fighter
+  III 3rd Strike.
 - In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
   `TYPE_E.EXE` (a PE file; map addresses through its section table).
 - In a dedicated file: Berserk's `LCDIMG.BIN`.
@@ -95,6 +96,7 @@ colour textures; the real art was found by following the code that loads it.
 | Encoding                 | Example                                                                                   |
 | ------------------------ | ----------------------------------------------------------------------------------------- |
 | 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue 1 and 2 (with a width and height byte)            |
+| 1 bit per dot, a sheet   | Code: Veronica: one 128x128 sheet, cut by a rectangle table into every screen's parts     |
 | 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Jet Set Radio, Typing E-Keikaku: turned 180°, as the LCD takes it |
 | 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                            |
 | 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's                          |
@@ -134,7 +136,10 @@ files and look for the screen in what comes out.
 - Rebuilt from drawing code: Jet Set Radio's graffiti viewer composes its
   screens from bitmaps, sprites and font strings, so they were redrawn from
   what its code places where. Its ticks come from the VMU's base timer at a
-  rate it never sets, so they play at the site's default.
+  rate it never sets, so they play at the site's default. Code: Veronica
+  composes every screen from its sheet with a small byte-code interpreter and
+  draw modes, so its screens were redrawn by re-running those modes tick by
+  tick (a tick every second pass of the game loop, assuming 60 Hz).
 - From captures: Sakura Taisen 3's title (100 ms a frame) and its scrolling
   banners (1 px per tick, stored as one strip; see the main README).
 - Unknown yet: Soul Calibur's fighters play at the site's default until someone
@@ -160,6 +165,6 @@ The code also says what the game never shows: screens nothing calls are marked
 | Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                   | [`eva-typing/`](eva-typing/)   | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
 | Jet Set Radio                    | JP (2000, Sega), Redump                    | [`jsr/`](jsr/)                 | [jet-set-radio](../../content/games/jet-set-radio.md)                                                                     |
 | Marvel vs. Capcom 2              | JP (2000, Capcom), Redump                  | [`mvc2/`](mvc2/)               | [marvel-vs-capcom-2](../../content/games/marvel-vs-capcom-2.md)                                                           |
-| Resident Evil Code: Veronica     | JP disc 1 (2000, Capcom), Redump           | [`cvx/`](cvx/)                 | save icons checked; no screens yet, findings in its README                                                                |
+| Resident Evil Code: Veronica     | JP disc 1 (2000, Capcom), Redump           | [`cvx/`](cvx/)                 | [resident-evil-code-veronica](../../content/games/resident-evil-code-veronica.md)                                         |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
 | Visual Memory Unit, Dreamcast    | US VMU BIOS v1.05, `dc_boot.bin` (Sega)    | [`bios/`](bios/)               | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

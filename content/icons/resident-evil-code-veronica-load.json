@@ -1,0 +1,15 @@
+{
+	"title": "Load",
+	"gameId": "resident-evil-code-veronica",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffcff07e3c0fffcfe73e3ce7ffcfcf9c9cf3ffcfcf9ddcf3ffcfcf99ccf3ffcfcf980cf3ffcfcf9becf3ffcfcf93e4f3ffcfe733e4e7ffc07073e40ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": [
+		"memory-card"
+	],
+	"hash": "1cd2fbf01db9b811f38a4cb9a3361d1498a3a9e1",
+	"added": "2026-11-06"
+}

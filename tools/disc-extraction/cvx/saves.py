@@ -5,7 +5,8 @@
 The program holds the three icons it writes into a save's header, each a
 16-colour ARGB4444 palette followed by its 32x32 frames at 4 bits a pixel, as
 in the VMS header (see scripts/import-saves.ts). The addresses are the ones the
-save code stores into the header it builds (see the README). Prints, for each,
+save code stores into the header it builds (see
+content/games/resident-evil-code-veronica.md). Prints, for each,
 the archive entry holding the same palette and frames, and exits non-zero if
 one is missing or differs.
 """

@@ -1,0 +1,15 @@
+{
+	"title": "Save",
+	"gameId": "resident-evil-code-veronica",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffe07c73e403ffcf3c73e403ffcfb933e5ffffcffbbbedffffe1f399cc07fff8701dddffffff37ddddffffdf27cc9dffffcf27ce3c03ffe067ce3c03fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": [
+		"memory-card"
+	],
+	"hash": "65de144e875aded66a671e69ad3ab29114b8853b",
+	"added": "2026-11-06"
+}
