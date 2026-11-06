@@ -22,11 +22,28 @@ GAME = 'Resident Evil Code: Veronica'
 GAME_ID = 'resident-evil-code-veronica'  # its id in content/games.json
 LOAD = 0x8C010000  # where 1ST_READ.BIN runs from
 
-SHEET = 0x8C13CEFC  # 128x128, 16 bytes a row, bit 7 leftmost, 1 lit
-RECTS = 0x8C13D6FC  # 56 x (y, x, height, width), 16-bit
-TRACES = 0x8C16D488  # 6 pointers to a status's six 8-px trace columns (rect numbers)
-TRACE_Y = 0x8C13DA38  # 6 longs: the row a status's trace is drawn at
-LABELS = 0x8C13DA50  # 6 bytes: a status's label rect
+# Where each release keeps the art. Code addresses in the docs are the
+# Japanese program's; the European one has the same VMU code 0x2D5C bytes on.
+#   sheet: 128x128, 16 bytes a row, bit 7 leftmost, 1 lit; followed by the
+#     rects, 56 x (y, x, height, width) 16-bit, at +0x800, then the draw-mode
+#     table, each status's trace row (6 longs, +0xB3C) and label rect
+#     (6 bytes, +0xB54)
+#   traces: 6 pointers to a status's six 8-px trace columns (rect numbers)
+#   region: the title's (the only screen that differs: BIOHAZARD in Japan,
+#     RESIDENT EVIL in Europe; the American disc wasn't checked, so the
+#     European title gets no region)
+RELEASES = {
+    'Japan': dict(sheet=0x8C13CEFC, traces=0x8C16D488, region='ntsc-j'),
+    'Europe': dict(sheet=0x8C1404B8, traces=0x8C1705C0, region=None),
+}
+FIRST_RECT = struct.pack('<4h', 0, 0, 32, 48)  # the title, at (0, 0)
+
+
+def release(b):
+    for name, r in RELEASES.items():
+        if b[r['sheet'] - LOAD + 0x800:r['sheet'] - LOAD + 0x808] == FIRST_RECT:
+            return name, r
+    sys.exit('not a program this script knows: no rect table where expected')
 
 # One tick is every second pass of the game loop (0x8C12CBF6 acts on odd
 # passes only); taking that loop as 60 Hz, a tick is 1/30 s.
@@ -36,11 +53,11 @@ W, H = 64, 64  # the canvas
 
 
 class Vmu:
-    def __init__(self, b):
-        self.b = b
-        off = SHEET - LOAD
+    def __init__(self, b, rel):
+        self.b, self.rel = b, rel
+        off = rel['sheet'] - LOAD
         self.sheet = [b[off + y * 16:off + y * 16 + 16] for y in range(128)]
-        self.rects = [struct.unpack_from('<4h', b, RECTS - LOAD + n * 8) for n in range(56)]
+        self.rects = [struct.unpack_from('<4h', b, off + 0x800 + n * 8) for n in range(56)]
         self.canvas = [bytearray(8) for _ in range(H)]
 
     def u32(self, addr):
@@ -89,10 +106,10 @@ def status(vmu, which):
     Returns one cycle once the screen has been drawn once (the first cycle
     starts from a blank screen; every later one from the full trace).
     """
-    pieces = vmu.u32(TRACES + 4 * which)
+    pieces = vmu.u32(vmu.rel['traces'] + 4 * which)
     piece = [vmu.b[pieces - LOAD + m] for m in range(6)]
-    ty = vmu.u32(TRACE_Y + 4 * which)
-    label = vmu.b[LABELS - LOAD + which]
+    ty = vmu.u32(vmu.rel['sheet'] + 0xB3C + 4 * which)
+    label = vmu.b[vmu.rel['sheet'] - LOAD + 0xB54 + which]
     st = {'state': 0, 'n': 0, 'm': 0, 'hold': 0}
     vmu.fill(0, 0, 32, 48, 0)  # state 0
     st['state'] = 1
@@ -205,7 +222,7 @@ def png(path, frames):
 # 4 the dead flag, 5 poisoned. Modes 12-16 show the portraits; 15 picks one by
 # the character (0 Claire, 1 Chris, 2 bonus, 3), from 0x8C13DA58.
 SCREENS = [
-    ('title', 'Title screen', ['logo'], {'region': 'ntsc-j'}, lambda v: static(v, lambda v: v.blit(0, 0, 0))),
+    ('title', 'Title screen', ['logo'], {}, lambda v: static(v, lambda v: v.blit(0, 0, 0))),
     ('capcom', 'Capcom', ['logo'], {}, lambda v: static(v, on_clear(12, 0, 5))),
     ('save', 'Save', ['memory-card'], {}, lambda v: static(v, text_on_lit(1))),
     ('load', 'Load', ['memory-card'], {}, lambda v: static(v, text_on_lit(2))),
@@ -233,8 +250,12 @@ def main(program, inbox):
     if inbox.exists():
         shutil.rmtree(inbox)
     inbox.mkdir(parents=True)
+    name, rel = release(b)
+    print(f'{name} program, sheet at {rel["sheet"]:#010x}')
     for stem, title, tags, extra, draw in SCREENS:
-        frames, holds = draw(Vmu(b))
+        if stem == 'title':
+            extra = {'region': rel['region']} if rel['region'] else {}
+        frames, holds = draw(Vmu(b, rel))
         frames, delays = merge(frames)
         if holds:
             delays[-1] = HOLD_MS

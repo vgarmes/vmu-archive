@@ -2,9 +2,26 @@
 
 Scripts: `tools/disc-extraction/cvx/`.
 
-Dump: `Biohazard - Code - Veronica (Japan) (Disc 1)` (Redump, `.cue`). The
-title screen says BIOHAZARD, so it's kept as `ntsc-j`; every other screen is
-in English and gets no region.
+Dumps: `Biohazard - Code - Veronica (Japan) (Disc 1)` and `Resident Evil -
+Code - Veronica (Europe) (Disc 1)` (Redump, `.cue`). The addresses below are
+the Japanese program's.
+
+## Japan and Europe
+
+The only difference on the VMU is the title. Japan's says BIOHAZARD, so it's
+kept as `ntsc-j`; Europe's says RESIDENT EVIL over the same CODE: Veronica.
+The American disc wasn't checked; it very likely has the European title too,
+so that title gets no region rather than `pal`. Every other screen is the same
+in both and gets no region.
+
+The European `1ST_READ.BIN` holds the sheet at `0x8C1404B8`. It differs from
+the Japanese one only in rows 7–14, the BIOHAZARD band. The rectangle table
+and everything after the sheet are the same, apart from pointers. So is the VMU
+code, 0x2D5C bytes later, instruction for instruction except for the pointers
+it loads, and the trace lists, at `0x8C1705C0`. The three save icons are the
+same bytes, 0x35AC bytes later. Only the names on the card change:
+`RECV%02u_GAMEDATA`, with descriptions `RE_CV/CLAIRE/`, `RE_CV/CHRIS/`,
+`RE_CV/DUMMY/` (Japan's `BIO_CV/ｵﾏｹ/`) and `RE_CV/SYSTEMDATA`.
 
 ## What's on the disc
 

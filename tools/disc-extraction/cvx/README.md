@@ -1,8 +1,9 @@
 # Resident Evil Code: Veronica
 
-Dump: `Biohazard - Code - Veronica (Japan) (Disc 1)` (Redump, `.cue` and
-three `.bin` tracks). The title screen says BIOHAZARD, so it's kept as
-`ntsc-j`; the other screens get no region.
+Dumps: `Biohazard - Code - Veronica (Japan) (Disc 1)` and `Resident Evil -
+Code - Veronica (Europe) (Disc 1)` (Redump, `.cue` and three `.bin` tracks).
+Both scripts tell the two programs apart by themselves. The European program
+only adds its title; the importer skips the other screens as duplicates.
 
 What the scripts found is written up in the game's notes,
 [`content/games/resident-evil-code-veronica.md`](../../../content/games/resident-evil-code-veronica.md).
@@ -17,5 +18,7 @@ python3 -E vmu.py $OUT/files/1ST_READ.BIN $OUT/inbox   # screens, redrawn from t
 pnpm icons:import $OUT/inbox
 python3 -E saves.py $OUT/files/1ST_READ.BIN            # checks the archive's save icons
 ```
+
+For the European disc, the same with its dump and another `OUT`.
 
 Run the Python scripts from this folder. Neither needs Pillow.

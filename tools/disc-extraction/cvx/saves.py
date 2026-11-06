@@ -14,6 +14,8 @@ import json
 import sys
 from pathlib import Path
 
+from vmu import release  # which program this is
+
 REPO = Path(__file__).resolve().parents[3]
 GAME_ID = 'resident-evil-code-veronica'  # its id in content/games.json
 LOAD = 0x8C010000  # where 1ST_READ.BIN runs from
@@ -23,10 +25,12 @@ LOAD = 0x8C010000  # where 1ST_READ.BIN runs from
 # Claire's icon when the character byte (+0x84 of the game state) is 0 and the
 # other one for 1 (Chris) and 2 (the bonus mode).
 ICONS = [
-    ('VERONICA.SYS, BIO_CV/システムデータ', 0x8C13BC20, 1, 30),
+    ('system file, VERONICA.SYS', 0x8C13BC20, 1, 30),
     ('game save, Claire', 0x8C13BE40, 3, 30),
     ('game save, Chris or bonus', 0x8C13C460, 3, 30),
 ]
+# Those are the Japanese program's; the European one has the same icons later.
+SHIFT = {'Japan': 0, 'Europe': 0x35AC}
 
 
 def palette(b, off):
@@ -45,7 +49,10 @@ def main(program):
         s = json.loads(path.read_text())
         archive[(tuple(s['palette']), tuple(s['frames']))] = (path.name, s)
     bad = 0
+    release_name, _ = release(b)
+    print(release_name, 'program')
     for what, addr, nframes, speed in ICONS:
+        addr += SHIFT[release_name]
         off = addr - LOAD
         pal = palette(b, off)
         frames = [b[off + 0x20 + n * 0x200:off + 0x20 + (n + 1) * 0x200].hex() for n in range(nframes)]
