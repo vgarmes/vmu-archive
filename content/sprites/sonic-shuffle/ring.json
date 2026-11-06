@@ -1,0 +1,16 @@
+{
+	"title": "Ring",
+	"gameId": "sonic-shuffle",
+	"width": 9,
+	"height": 9,
+	"bpp": 1,
+	"frames": ["3e20a736da2db672823e00"],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"entry": "16",
+		"offset": 971332
+	},
+	"tags": [],
+	"hash": "a7fb41c479dea23f25f823da3356e658e962e0a6",
+	"added": "2026-11-06"
+}

@@ -1,0 +1,16 @@
+{
+	"title": "Cursor",
+	"gameId": "sonic-shuffle",
+	"width": 7,
+	"height": 5,
+	"bpp": 1,
+	"frames": ["ff8db1c100"],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"entry": "14",
+		"offset": 971026
+	},
+	"tags": [],
+	"hash": "25c6719210f46d06d938f5167afed9053c315063",
+	"added": "2026-11-06"
+}

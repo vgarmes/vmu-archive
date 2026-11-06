@@ -5,11 +5,9 @@
 	"height": 32,
 	"bpp": 1,
 	"frames": [
-		"0000000000003f87e1e3bc1f7fcff9f3bc7fffdff9f3bcfffbdffdfbbdfff83e3dfbbdf1ff3c3dffbde07fbc3dffbde03fbc3dffbde107fe7ddfbdf3f7dff9dfbdffffdff9cfbcffff8ff1cfbc7f3f07e1c7bc1f000000000000ffffffffffffc04c998613c187cc993cf39f87cc993cf39fc0c099041381f84c993cf39ff84c893cf39f80ccc13cf841ffffffffffffffffffffffffffffffffffffffc03ffffffefc0001fffffcf000000ffff080000000ff80000000000000000000000000"
+		"0000000000003f07e1e3bc1f7fcff9f3bc7fffdff9f3bcfffbdffdfbbdfff83e3dfbbdf1ff3c3dffbde07fbc3dffbde03fbc3dffbde107fe7ddfbdf3f7dff9dfbdffffdff9cfbcffff8ff1cfbc7f3f03e1c7bc1f000000000000ffffffffffffc099330c27c18f993279e79f8f993279e79fc18132082783f8993279e79ff8991279e79f81998279f0c1ffffffffffffffffffffffffffffffffffffff807ffffffef80003fffffce000001ffff080000001ff00000000000000000000000000"
 	],
-	"tags": [
-		"logo"
-	],
-	"hash": "8a5c506b35ccf4e7842e5bec0b0d7e020b9b55ae",
+	"tags": ["logo"],
+	"hash": "34cfd8e84044155b3aa455f8fdf9928e73ce66f0",
 	"added": "2026-10-04"
 }

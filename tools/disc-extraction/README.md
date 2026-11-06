@@ -68,8 +68,8 @@ Every game so far did it differently. What has turned up:
 
 - In the program itself, `1ST_READ.BIN`, with no file of its own: Bangaioh,
   Crazy Taxi 2, Ikaruga, Jet Set Radio, Marvel vs. Capcom 2, Moero! Justice
-  Gakuen, Power Stone 1 and 2, Resident Evil Code: Veronica, Street Fighter
-  III 3rd Strike.
+  Gakuen, Power Stone 1 and 2, Resident Evil Code: Veronica, Sonic Shuffle,
+  Street Fighter III 3rd Strike.
 - In the game's own program, loaded by a small `1ST_READ.BIN`: Metropolis
   Street Racer's `MSR.BIN` (it runs from `0x8C010000`; string pointers give
   the base away).
@@ -105,6 +105,7 @@ colour textures; the real art was found by following the code that loads it.
 | 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                            |
 | 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's                          |
 | 1 byte per dot, mirrored | Berserk                                                                                   |
+| 1 byte per dot, a sheet  | Sonic Shuffle's hand: one 48x32 sheet of 8 (lit) or 0, cut by a rectangle table           |
 | Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                           |
 | Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                             |
 
@@ -154,22 +155,23 @@ The code also says what the game never shows: screens nothing calls are marked
 
 ## Games
 
-| Game                             | Dump                                       | Folder                         | Notes                                                                                                                     |
-| -------------------------------- | ------------------------------------------ | ------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
-| Sword of the Berserk: Guts' Rage | US v1.000 (2000, Eidos)                    | [`berserk/`](berserk/)         | [berserk-millennium-falcon-hen-wasurebana-no-sho](../../content/games/berserk-millennium-falcon-hen-wasurebana-no-sho.md) |
-| Bakuretsu Muteki Bangaioh        | JP v1.003 (1999, ESP)                      | [`bangaioh/`](bangaioh/)       | [bangai-o](../../content/games/bangai-o.md)                                                                               |
-| Moero! Justice Gakuen            | JP v1.004 (2000, Capcom)                   | [`justice/`](justice/)         | [project-justice](../../content/games/project-justice.md)                                                                 |
-| Power Stone, Power Stone 2       | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/) | [power-stone](../../content/games/power-stone.md), [power-stone-2](../../content/games/power-stone-2.md)                  |
-| Shenmue                          | JP v1.007 disc 1 (1999, Sega)              | [`shenmue/`](shenmue/)         | [shenmue](../../content/games/shenmue.md)                                                                                 |
-| Shenmue II                       | JP v1.003 disc 1 (2001, Sega)              | [`shenmue2/`](shenmue2/)       | [shenmue-ii](../../content/games/shenmue-ii.md)                                                                           |
-| Sakura Taisen 3                  | JP v1.003 disc 1 (2001, Sega)              | [`sakura3/`](sakura3/)         | [sakura-taisen-3-paris-wa-moete-iru-ka](../../content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md)                     |
-| Street Fighter III 3rd Strike    | JP v1.003 (2000, Capcom)                   | [`sf3/`](sf3/)                 | [street-fighter-iii-3rd-strike](../../content/games/street-fighter-iii-3rd-strike.md)                                     |
-| Ikaruga                          | JP v1.002 (2002, ESP)                      | [`ikaruga/`](ikaruga/)         | [ikaruga](../../content/games/ikaruga.md)                                                                                 |
-| Crazy Taxi 2                     | US v1.004 (2001, Sega)                     | [`crazytaxi2/`](crazytaxi2/)   | [crazy-taxi-2](../../content/games/crazy-taxi-2.md)                                                                       |
-| Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                   | [`eva-typing/`](eva-typing/)   | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
-| Jet Set Radio                    | JP (2000, Sega), Redump                    | [`jsr/`](jsr/)                 | [jet-set-radio](../../content/games/jet-set-radio.md)                                                                     |
-| Marvel vs. Capcom 2              | JP (2000, Capcom), Redump                  | [`mvc2/`](mvc2/)               | [marvel-vs-capcom-2](../../content/games/marvel-vs-capcom-2.md)                                                           |
-| Resident Evil Code: Veronica     | JP and EU disc 1 (2000, Capcom), Redump    | [`cvx/`](cvx/)                 | [resident-evil-code-veronica](../../content/games/resident-evil-code-veronica.md)                                         |
-| Metropolis Street Racer          | EU Rev B (2000, Sega), Redump              | [`msr/`](msr/)                 | [metropolis-street-racer](../../content/games/metropolis-street-racer.md)                                                 |
-| Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/) | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
-| Visual Memory Unit, Dreamcast    | US VMU BIOS v1.05, `dc_boot.bin` (Sega)    | [`bios/`](bios/)               | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |
+| Game                             | Dump                                       | Folder                             | Notes                                                                                                                     |
+| -------------------------------- | ------------------------------------------ | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
+| Sword of the Berserk: Guts' Rage | US v1.000 (2000, Eidos)                    | [`berserk/`](berserk/)             | [berserk-millennium-falcon-hen-wasurebana-no-sho](../../content/games/berserk-millennium-falcon-hen-wasurebana-no-sho.md) |
+| Bakuretsu Muteki Bangaioh        | JP v1.003 (1999, ESP)                      | [`bangaioh/`](bangaioh/)           | [bangai-o](../../content/games/bangai-o.md)                                                                               |
+| Moero! Justice Gakuen            | JP v1.004 (2000, Capcom)                   | [`justice/`](justice/)             | [project-justice](../../content/games/project-justice.md)                                                                 |
+| Power Stone, Power Stone 2       | JP v1.020 (1999), JP v2.000 (2000), Capcom | [`power-stone/`](power-stone/)     | [power-stone](../../content/games/power-stone.md), [power-stone-2](../../content/games/power-stone-2.md)                  |
+| Shenmue                          | JP v1.007 disc 1 (1999, Sega)              | [`shenmue/`](shenmue/)             | [shenmue](../../content/games/shenmue.md)                                                                                 |
+| Shenmue II                       | JP v1.003 disc 1 (2001, Sega)              | [`shenmue2/`](shenmue2/)           | [shenmue-ii](../../content/games/shenmue-ii.md)                                                                           |
+| Sakura Taisen 3                  | JP v1.003 disc 1 (2001, Sega)              | [`sakura3/`](sakura3/)             | [sakura-taisen-3-paris-wa-moete-iru-ka](../../content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md)                     |
+| Street Fighter III 3rd Strike    | JP v1.003 (2000, Capcom)                   | [`sf3/`](sf3/)                     | [street-fighter-iii-3rd-strike](../../content/games/street-fighter-iii-3rd-strike.md)                                     |
+| Ikaruga                          | JP v1.002 (2002, ESP)                      | [`ikaruga/`](ikaruga/)             | [ikaruga](../../content/games/ikaruga.md)                                                                                 |
+| Crazy Taxi 2                     | US v1.004 (2001, Sega)                     | [`crazytaxi2/`](crazytaxi2/)       | [crazy-taxi-2](../../content/games/crazy-taxi-2.md)                                                                       |
+| Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                   | [`eva-typing/`](eva-typing/)       | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
+| Jet Set Radio                    | JP (2000, Sega), Redump                    | [`jsr/`](jsr/)                     | [jet-set-radio](../../content/games/jet-set-radio.md)                                                                     |
+| Marvel vs. Capcom 2              | JP (2000, Capcom), Redump                  | [`mvc2/`](mvc2/)                   | [marvel-vs-capcom-2](../../content/games/marvel-vs-capcom-2.md)                                                           |
+| Resident Evil Code: Veronica     | JP and EU disc 1 (2000, Capcom), Redump    | [`cvx/`](cvx/)                     | [resident-evil-code-veronica](../../content/games/resident-evil-code-veronica.md)                                         |
+| Metropolis Street Racer          | EU Rev B (2000, Sega), Redump              | [`msr/`](msr/)                     | [metropolis-street-racer](../../content/games/metropolis-street-racer.md)                                                 |
+| Sonic Shuffle                    | JP (2000, Sega), Redump                    | [`sonic-shuffle/`](sonic-shuffle/) | [sonic-shuffle](../../content/games/sonic-shuffle.md)                                                                     |
+| Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                    | [`soulcalibur/`](soulcalibur/)     | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
+| Visual Memory Unit, Dreamcast    | US VMU BIOS v1.05, `dc_boot.bin` (Sega)    | [`bios/`](bios/)                   | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

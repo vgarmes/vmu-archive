@@ -1,0 +1,16 @@
+{
+	"title": "End of the hand",
+	"gameId": "sonic-shuffle",
+	"width": 1,
+	"height": 16,
+	"bpp": 1,
+	"frames": ["ffff"],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"entry": "15",
+		"offset": 971033
+	},
+	"tags": ["cards"],
+	"hash": "adae995a55d1991a5ba5e8b27259bc29fb319dae",
+	"added": "2026-11-06"
+}

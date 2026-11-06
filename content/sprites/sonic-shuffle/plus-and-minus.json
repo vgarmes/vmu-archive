@@ -1,0 +1,19 @@
+{
+	"title": "Plus and minus",
+	"gameId": "sonic-shuffle",
+	"width": 7,
+	"height": 14,
+	"bpp": 1,
+	"frames": ["3853bc1ee50e0001fe0ff00000"],
+	"glyphs": {
+		"height": 7
+	},
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"entry": "17, 18",
+		"offset": 971341
+	},
+	"tags": [],
+	"hash": "4e6941a31d983621aebd170f47321a3aff17a8d2",
+	"added": "2026-11-06"
+}

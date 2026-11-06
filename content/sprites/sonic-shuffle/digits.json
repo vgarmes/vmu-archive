@@ -1,0 +1,19 @@
+{
+	"title": "Digits",
+	"gameId": "sonic-shuffle",
+	"width": 5,
+	"height": 42,
+	"bpp": 1,
+	"frames": ["76f7bdedce318c631bdb19ddcfff6370f7fc637bf8c7fc7863dfc0"],
+	"glyphs": {
+		"height": 7
+	},
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"entry": "8, 9, 10, 11, 12, 13",
+		"offset": 970996
+	},
+	"tags": ["font", "digits"],
+	"hash": "387af9a757429fae059b3ba480b27f4e061428bb",
+	"added": "2026-11-06"
+}

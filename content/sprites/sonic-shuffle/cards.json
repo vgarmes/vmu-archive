@@ -1,0 +1,21 @@
+{
+	"title": "Cards",
+	"gameId": "sonic-shuffle",
+	"width": 6,
+	"height": 144,
+	"bpp": 1,
+	"frames": [
+		"fe082cb2492492492492083ffe082eba28aeba8a2eba083ffe082eba28aeba28aeba083ffe082aaaaaaaaaeba28a083ffe082eba8a2eba28aeba083ffe082eba8a2ebaaaaeba083ffffce186dbe3c7db61873ffffff8619e79e18679e7861ffffe0aa4aa4aa4aa4aa4aa483f"
+	],
+	"glyphs": {
+		"height": 16
+	},
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"entry": "0, 1, 2, 3, 4, 5, 6, 7, 20",
+		"offset": 970228
+	},
+	"tags": ["cards"],
+	"hash": "725e17097deffa85ed821ef0da5a9d910f729b9e",
+	"added": "2026-11-06"
+}

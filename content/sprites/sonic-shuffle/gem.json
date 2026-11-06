@@ -1,0 +1,16 @@
+{
+	"title": "Gem",
+	"gameId": "sonic-shuffle",
+	"width": 11,
+	"height": 9,
+	"bpp": 1,
+	"frames": ["1f063129421fffffdef18c1f00"],
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"entry": "19",
+		"offset": 971355
+	},
+	"tags": [],
+	"hash": "fa9c58d88c9135e7d5f63f23fc7cf6d30b540a8e",
+	"added": "2026-11-06"
+}
