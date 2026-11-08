@@ -77,17 +77,38 @@ type FramesChoice = 'all' | 'animated' | `${number}`
 /**
  * Colour presets: the ink of lit pixels, used by every export, and the screen
  * behind them, used by the preview and the LCD-dots SVG only (the other
- * formats stay transparent). "Site theme" has neither: the preview follows the
- * page and exports use the default ink, as before presets.
+ * formats stay transparent). Those two draw unlit dots too, in `off`, with the
+ * screen showing in the gaps between dots; without an `off` they're the ink
+ * at ~12%. "Site theme" has none: the preview follows the page and exports use
+ * the default ink, as before presets.
  */
 const PALETTES = [
-	{ id: 'site', name: 'Site theme', ink: null, screen: null },
-	// VMU and LCD are the DreamPotato emulator's Dark Green and VM2 palettes:
-	// its Screen1 (lit pixels) as ink and Screen0 as screen.
-	{ id: 'vmu', name: 'VMU', ink: '#231024', screen: '#3e4e44' },
-	{ id: 'lcd', name: 'LCD', ink: '#000000', screen: '#9fcede' },
-	{ id: 'mono', name: 'Mono', ink: '#000000', screen: '#ffffff' },
-	{ id: 'gameboy', name: 'Game Boy', ink: '#0f380f', screen: '#9bbc0f' }
+	{ id: 'site', name: 'Site theme', ink: null, off: null, screen: null },
+	// VMU and LCD are the DreamPotato emulator's Dark Green and VM2 palettes,
+	// all three tones: Screen1 (lit) as ink, Screen0 (unlit) as off and its
+	// lighter Margin, the frame round the screen, as the screen in the gaps.
+	{
+		id: 'vmu',
+		name: 'VMU',
+		ink: '#231024',
+		off: '#3e4e44',
+		screen: '#4d594b'
+	},
+	{
+		id: 'lcd',
+		name: 'LCD',
+		ink: '#000000',
+		off: '#9fcede',
+		screen: '#b5d3dd'
+	},
+	{ id: 'mono', name: 'Mono', ink: '#000000', off: null, screen: '#ffffff' },
+	{
+		id: 'gameboy',
+		name: 'Game Boy',
+		ink: '#0f380f',
+		off: null,
+		screen: '#9bbc0f'
+	}
 ] as const
 type PaletteId = (typeof PALETTES)[number]['id']
 const COLORS_KEY = 'vmu-archive:colors'
@@ -114,10 +135,11 @@ function useColors() {
 	const palette = PALETTES.find(p => p.id === colors.id) ?? PALETTES[0]
 	const ink = colors.swapped ? palette.screen : palette.ink
 	const screen = colors.swapped ? palette.ink : palette.screen
-	return { ...colors, palette, ink, screen, update }
+	// The middle tone stays put when ink and screen swap.
+	return { ...colors, palette, ink, off: palette.off, screen, update }
 }
 
-/** A preset's colours: an ink square on its screen colour. */
+/** A preset's colours: an ink square on its unlit colour, or its screen. */
 function Swatch({
 	ink,
 	screen
@@ -306,12 +328,13 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 	const [frames, setFrames] = useState<FramesChoice>('all')
 	const colors = useColors()
 	// Ink for every export: the preset's, or the default. Unlit LCD dots are
-	// the ink at ~12% opacity; toHexColor already includes the alpha, so the
-	// colour is built rather than appended to.
+	// the preset's own unlit colour, or else the ink at ~12% opacity;
+	// toHexColor already includes the alpha, so that colour is built rather
+	// than appended to.
 	const inkRgba = colors.ink ? parseColor(colors.ink) : LCD_INK
 	const ink = toHexColor(inkRgba)
 	const [r, g, b] = inkRgba
-	const unlit = toHexColor([r, g, b, 0x1f])
+	const unlit = colors.off ?? toHexColor([r, g, b, 0x1f])
 
 	// The Frames row only applies to animations, and not to GIF, which is
 	// always the whole animation.
@@ -532,7 +555,10 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 									<SelectValue>
 										{() => (
 											<span className="flex items-center gap-2">
-												<Swatch ink={colors.ink} screen={colors.screen} />
+												<Swatch
+													ink={colors.ink}
+													screen={colors.off ?? colors.screen}
+												/>
 												{colors.palette.name}
 											</span>
 										)}
@@ -542,7 +568,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 									{PALETTES.map(p => (
 										<SelectItem key={p.id} value={p.id}>
 											<span className="flex items-center gap-2">
-												<Swatch ink={p.ink} screen={p.screen} />
+												<Swatch ink={p.ink} screen={p.off ?? p.screen} />
 												{p.name}
 											</span>
 										</SelectItem>
