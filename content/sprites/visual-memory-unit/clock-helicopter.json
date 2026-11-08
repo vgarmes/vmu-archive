@@ -1,0 +1,16 @@
+{
+	"title": "Clock helicopter",
+	"gameId": "visual-memory-unit",
+	"region": "ntsc-j",
+	"width": 8,
+	"height": 8,
+	"bpp": 1,
+	"frames": ["7f081eb9ff7f1c00"],
+	"source": {
+		"file": "jp1004-19980930-315-6208-01.bin",
+		"offset": 3898
+	},
+	"tags": ["bios", "clock", "animal"],
+	"hash": "37aa09bbfec756b5ebaceea5239c25f2cd50e78f",
+	"added": "2026-11-08"
+}

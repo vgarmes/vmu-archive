@@ -1,0 +1,16 @@
+{
+	"title": "Clock cat paw print",
+	"gameId": "visual-memory-unit",
+	"region": "ntsc-j",
+	"width": 8,
+	"height": 8,
+	"bpp": 1,
+	"frames": ["0676f8fbfbf87606"],
+	"source": {
+		"file": "jp1004-19980930-315-6208-01.bin",
+		"offset": 3866
+	},
+	"tags": ["bios", "clock", "animal"],
+	"hash": "92ead6a332cabc7f244c88fee5e56b6f97fbea65",
+	"added": "2026-11-08"
+}

@@ -11,8 +11,8 @@ import shutil
 import sys
 from pathlib import Path
 
-# The US BIOS. Its text is English, so the VMU's pieces get no region: the
-# Japanese BIOS wasn't checked, and nothing marks them as the US's alone.
+# The US BIOS. The Japanese one (vmubios_jp.py) lacks most of these, but a
+# region can't say "everywhere but Japan", so the VMU's pieces get none.
 VMU = dict(game='Visual Memory Unit', publisher='Sega', year=1999)
 VMU_FILE = 'american_v1.05.bin'
 # Matches the entry already in the archive ("Menu smile").
