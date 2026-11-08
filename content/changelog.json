@@ -1,5 +1,10 @@
 [
 	{
+		"date": "2026-11-08",
+		"title": "The Japanese VMU",
+		"body": "The first VMUs, sold in Japan in 1998, run their own BIOS, and it has art the later one doesn't. Its main menu reads just Visual Memory, with bold capitals and no Unit. Its clock writes the date with 年, 月 and 日 in one of three digit styles, thin, bold or with a slashed zero, and walks a cat's paw prints or a helicopter across the screen where the later VMU has a dog and a bird; the fish is the same in both. The four mode icons along the bottom of the screen still aren't in either ROM: they're printed on the glass."
+	},
+	{
 		"date": "2026-11-06",
 		"title": "Sonic Shuffle",
 		"body": "From the Japanese disc: the logo screen is now the game's own bitmap (the old capture was a dot off in places), and NO CARD joins it, a screen the game carries but never shows. The VMU's main job in Sonic Shuffle is keeping your hand of cards out of the other players' sight; that screen is built from pieces of one small sheet, now kept with the game's sprites: the cards 1 to 6, S, Eggman and face down, the digits, the cursor and a few icons."
