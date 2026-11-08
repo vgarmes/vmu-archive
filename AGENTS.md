@@ -45,6 +45,9 @@ This block is written and re-added by `next dev` — verify at `node_modules/nex
   `"publisher"`/`"year"` are written to the registry. Folders and the page route
   (`/games/<game id>`, which shows its notes) use it too. Importers resolve a
   sidecar's `"game"` name or alias through the registry.
+- A `content/changelog.json` entry's body is one or two short sentences:
+  what arrived and anything notable about it. Don't list the screens or
+  sprites by name; the game's page shows them and its notes explain them.
 - `src/lib/pixels.ts` is run by Node directly from the importer: keep it free
   of imports and non-erasable TypeScript.
 - The site is a static export (`output: 'export'`): every dynamic route needs

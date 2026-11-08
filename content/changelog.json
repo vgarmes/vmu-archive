@@ -2,181 +2,181 @@
 	{
 		"date": "2026-11-08",
 		"title": "The Japanese VMU",
-		"body": "The first VMUs, sold in Japan in 1998, run their own BIOS, and it has art the later one doesn't. Its main menu reads just Visual Memory, with bold capitals and no Unit. Its clock writes the date with 年, 月 and 日 in one of three digit styles, thin, bold or with a slashed zero, and walks a cat's paw prints or a helicopter across the screen where the later VMU has a dog and a bird; the fish is the same in both. The four mode icons along the bottom of the screen still aren't in either ROM: they're printed on the glass."
+		"body": "The main menu, big font and clock animals of the first VMUs, sold in Japan in 1998, read from their own BIOS. Its clock has a cat's paw prints and a helicopter where the later VMU has a dog and a bird."
 	},
 	{
 		"date": "2026-11-06",
 		"title": "Sonic Shuffle",
-		"body": "From the Japanese disc: the logo screen is now the game's own bitmap (the old capture was a dot off in places), and NO CARD joins it, a screen the game carries but never shows. The VMU's main job in Sonic Shuffle is keeping your hand of cards out of the other players' sight; that screen is built from pieces of one small sheet, now kept with the game's sprites: the cards 1 to 6, S, Eggman and face down, the digits, the cursor and a few icons."
+		"body": "The logo screen redrawn from the Japanese disc, an unused NO CARD screen, and the sheet of cards and digits the game builds your hand from."
 	},
 	{
 		"date": "2026-11-06",
 		"title": "Metropolis Street Racer",
-		"body": "Three screens from the European disc, each with the MSR logo: the Kudos K the VMU shows most of the time, SAVING..... as a save starts, and OK! when it's done, held for 150 ticks before the logo screen comes back. The game also carries a small font for printing text on the VMU, though nothing in the game ever calls it; it's kept with the game's sprites."
+		"body": "Three screens from the European disc, and a small text font the game carries but never uses."
 	},
 	{
 		"date": "2026-11-06",
 		"title": "Resident Evil Code: Veronica",
-		"body": "Nineteen screens from the Japanese and European discs, redrawn from the one sheet the game builds them all from: the title as each release has it, BIOHAZARD in Japan and RESIDENT EVIL in Europe, CAPCOM, SAVE, LOAD, OK and NG, Mission Clear!, the dripping YOU DIED, portraits of Claire, Chris, Steve and Wesker, and the condition monitor in all six states, Fine, two Cautions, Danger, Poison and Died, its heartbeat swept across the screen as the game does. The disc also confirms the game's three save icons and shows which save gets which: the red one is Claire's and the olive one Chris's. The game goes by its Japanese title too, Biohazard Code: Veronica, so searching for Biohazard finds it."
+		"body": "Nineteen screens from the Japanese and European discs, including the portraits and the condition monitor with its heartbeat. The disc also shows which save icon is Claire's and which is Chris's."
 	},
 	{
 		"date": "2026-11-05",
 		"title": "Search by any of a game's names",
-		"body": "Searching for a game now finds it by its other names too, like Jet Grind Radio for Jet Set Radio, on the home page and the save icons page. Sword of the Berserk: Guts' Rage, Tee Off, Surf Rocket Racers and Industrial Spy: Operation Espionage now go by their English titles, with the Japanese one beneath. Save icons also show their game's publisher and year wherever the game has them. The Japanese flag now marks only screens found in the Japanese release alone, mostly those with Japanese text, rather than everything extracted from a Japanese disc."
+		"body": "Games are now found by their other names too, like Jet Grind Radio for Jet Set Radio, and show their English title with the Japanese one beneath. The Japanese flag now marks only what's in the Japanese release alone."
 	},
 	{
 		"date": "2026-11-05",
 		"title": "Marvel vs. Capcom 2, and VS.COM",
-		"body": "From the Japanese disc: the title screen, now the right way round (a light logo on a dark screen; the old screenshot had it inverted), the ACCESS screen, and VS.COM, the VMU program the game copies to the memory card, with its Capcom logo, title, menu, copyright, shop and trade screens in Japanese and English. Its fonts, character names, ranks and menu parts are in the Sprites card. Three more save icons the game writes, UPLOAD, DOWNLOAD and Capcom network, come straight from the disc, which also confirms the two already here."
+		"body": "Screens from the Japanese disc, including VS.COM, the VMU program the game copies to the memory card, with its sprites and three more save icons."
 	},
 	{
 		"date": "2026-11-05",
 		"title": "Game pages in tabs",
-		"body": "A game's screens, sprites, fonts and notes are now tabs at the top of its page, so you can go straight to the sprites without scrolling past every screen. Press 1 to 4 to switch, and a link keeps the tab you're on. A game's save icons now sit beside its title."
+		"body": "A game's screens, sprites, fonts and notes are now tabs on its page; press 1 to 4 to switch."
 	},
 	{
 		"date": "2026-11-05",
 		"title": "Save icons",
-		"body": "A new page for the colour icons the Dreamcast's memory card menu shows for each save, every game's in one grid you can search: 520 icons from 344 games, read from a collection of dumped saves, each kept once however many saves carry it, with the name the game gave the save on the memory card. Some memory cards' own icons are there too, colour and VMU side by side, marked unverified until a game's disc shows it made them; and the VMU mini-games that came with games, like Chao Adventure and Pinta's Quest."
+		"body": "A new page for the colour icons the Dreamcast's file menu shows for each save: 520 icons from 344 games, searchable in one grid."
 	},
 	{
 		"date": "2026-11-04",
 		"title": "Jet Set Radio, and its graffiti viewer",
-		"body": "Twelve screens from the Japanese disc: the katakana logo, the radio turning on its loop, Now Saving, Now Loading, OK and NG, and the graffiti viewer the game copies to the VMU, with its SEGA and copyright screens, title, menus and blinking Press A. Its fonts and radio parts are in the Sprites card."
+		"body": "Twelve screens from the Japanese disc, including the graffiti viewer the game copies to the VMU, with its fonts and sprites."
 	},
 	{
 		"date": "2026-11-04",
 		"title": "Sprites, out from behind the scenes",
-		"body": "The smaller art games draw onto part of a screen, like digits, buttons, fonts and faces, now has its own Sprites card on each game's page: all 341 of Shenmue's, the Dreamcast BIOS's 129 memory card icons, Power Stone Mini's, the VMU's fonts and clock animals, Ikaruga's chain digits and Sakura Taisen 3's battle parts. Hover one for its name."
+		"body": "The smaller art games draw onto part of a screen, like digits, fonts and faces, now has its own card on each game's page."
 	},
 	{
 		"date": "2026-11-04",
 		"title": "Falcon's course, scrolling down",
-		"body": "Screens can now scroll down as well as sideways. The first is the course of Power Stone Mini's Falcon game: one whole lap, frame for frame as the game draws it, moving at Falcon's cruising speed. That speed comes from the code, but the length of a tick is still an estimate."
+		"body": "Screens can now scroll down as well as sideways, starting with a whole lap of Power Stone Mini's Falcon game."
 	},
 	{
 		"date": "2026-11-04",
 		"title": "Power Stone Mini",
-		"body": "The VMU game hidden in Power Stone's program: its title, the Capcom and copyright screens, both of Falcon, Ayame and Gunrock's portraits, and the Japanese rules, slot prompts, high scores and rewards of Falcon's Aerial Adventure, Ayame's Shuriken Training and Gun-Gun Slots. Its sprites, reels and the whole Falcon course are kept too."
+		"body": "The VMU game hidden in Power Stone's program: its title, portraits and the screens of its three minigames."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "The Shenmue Goodies viewer",
-		"body": "From Shenmue's Passport disc, the VMU program that showed the Goodies: its あつめて シェンムー title, a Dreamcast logo and a brush-stroke drawing. It also holds the four characters it comes with, which match the ones already here pixel for pixel."
+		"body": "The VMU program from Shenmue's Passport disc that showed the Goodies."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Shenmue's Goodies characters",
-		"body": "213 Shenmue characters animated on the VMU, from Ryo and Lan Di to the neighbourhood cats, the Goodies that Shenmue Passport's online service traded for Winning Cans until 2002. They come from the Neoseeker Shenmue wiki, with the four built-in characters' portraits. Ryo Hazuki now plays the wiki's version. Their timing is the wiki's and hasn't been checked against the game."
+		"body": "213 animated Shenmue characters, the Goodies Shenmue Passport traded online until 2002, from the Neoseeker Shenmue wiki. Their timing hasn't been checked against the game."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Shenmue, straight from the disc",
-		"body": "Shenmue's own VMU screens from the Japanese disc: the 莎木 title logo, the start, count and cleared screens of the 70 Man Battle, and its English Please Wait. Its loading, saving, OK, NG and PK screens are the same pictures Shenmue II uses, so they stay filed there."
+		"body": "Shenmue's title logo and 70 Man Battle screens from the Japanese disc."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "The VMU's own main menu",
-		"body": "The screen the Visual Memory Unit shows by itself, with no game: the SEGA logo over \"Visual Memory Unit\", drawn by the US VMU BIOS every time it returns to its menu. Read from a commented disassembly of that BIOS, which also gave up the dog, fish and bird of its clock animation and both of its fonts, kept behind the scenes with the Dreamcast BIOS's 129 memory card icons."
+		"body": "The screen the VMU shows with no game, read from the US BIOS along with its clock animals and fonts."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Shinseiki Evangelion: Typing E-Keikaku",
-		"body": "Every VMU screen in Gainax's Evangelion typing game: its title logo, and the Access, Save OK, Save NG, Load OK and Load NG screens it shows while saving and loading. The first Windows CE game in the archive. Nothing on its VMU animates."
+		"body": "Every VMU screen in Gainax's Evangelion typing game, the first Windows CE game in the archive."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Crazy Taxi 2",
-		"body": "Every VMU screen in the US Crazy Taxi 2: its title screen, flames dancing over the logo, and the Now Loading and Now Saving screens. The title plays at 267 ms a frame, which assumes the game runs at 60 Hz, until a capture confirms it."
+		"body": "Every VMU screen in the US release, including the title's dancing flames."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "The rest of Ikaruga",
-		"body": "Every other VMU screen from the Japanese Ikaruga disc: the blinking Save screen, Load, OK and NG, and the chain counter, drawn from a set of digits over a CHAIN panel. Also a second Load screen, with the bird in another pose, that the game never shows. The Save blink's speed is read from the game's code and not yet measured."
+		"body": "Every other VMU screen from the Japanese disc, including the chain counter and an unused Load screen."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Street Fighter III: 3rd Strike, straight from the disc",
-		"body": "Every VMU screen in the Japanese Street Fighter III 3rd Strike: the title screen, and the Access, OK and Error screens it shows while saving and loading. Nothing on its VMU animates."
+		"body": "Every VMU screen in the Japanese release."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Browse by game",
-		"body": "The archive now opens on a grid of its games, searchable by their English or Japanese titles. Each game has its own page with its screens, a search within them, and notes on how they were extracted from the disc. Old links still work."
+		"body": "The archive now opens on a searchable grid of games, each with its own page. Old links still work."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "The rest of Sakura Taisen 3",
-		"body": "Everything else on the Sakura Taisen 3 disc: the power-on animation, the logo intros of the three Kajino Taisen minigames, the second crest and the strategy map, and the faces now blink. Their timing is a best guess until it's measured."
+		"body": "Everything else on the disc, including the minigame intros, and the faces now blink."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Soul Calibur's fighters",
-		"body": "All 19 fighters from Soul Calibur, the little figures the game shows on the VMU, five poses each, decompressed from the US disc with the game's own routine. They play at the site's default speed until their in-game timing is measured."
+		"body": "All 19 fighters, five poses each, decompressed from the US disc."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Sakura Taisen 3, with scrolling banners",
-		"body": "From the Japanese Sakura Taisen 3 disc: the title screen with its logo intro, the crest, and four expressions each for Erica, Glycine, Coquelicot, Lobelia, Hanabi and Ogami. Also the 23 special attack banners the game scrolls across the VMU in battle, stored as the one strip the game slides through the screen and played at its speed. They download as that strip, or as an animation."
+		"body": "The title, crest and character expressions from the Japanese disc, and the 23 special attack banners the game scrolls across the VMU in battle."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Shenmue II, straight from the disc",
-		"body": "Every VMU screen in the Japanese Shenmue II: the title screen, loading, saving and resume screens in Japanese and English, and the battle screens."
+		"body": "Every VMU screen in the Japanese release."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Power Stone and Power Stone 2, straight from the disc",
-		"body": "Every VMU screen in both games: the Access screens for Power Stone and Power Stone 2, and the Power Stone 2 title screen. The Power Stone title screen already in the archive matches the disc exactly."
+		"body": "Every VMU screen in both games."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Project Justice, straight from the disc",
-		"body": "Every VMU screen in the Japanese Moero! Justice Gakuen: the Japanese title screen, and the Access screen under both the Japanese and Project Justice logos."
+		"body": "Every VMU screen in the Japanese Moero! Justice Gakuen."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Bangaioh, straight from the disc",
-		"body": "Every VMU screen in the Japanese Bakuretsu Muteki Bangaioh, played with the timing from the game's own code: the Japanese title screen and the Riki and Mami loops. Four more the game never shows are marked Unused: the Treasure logo, a second Riki and Mami loop each, and an animated Continue?."
+		"body": "Every VMU screen in the Japanese release, played with the game's own timing, and four it never shows."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Berserk, straight from the disc",
-		"body": "Every Puck screen, extracted from the Sword of the Berserk disc and played with the timing read from the game's own code: seven new animations, the NG screen, the US title screen, and Do not touch now animated in full. Six screens the game never shows are marked Unused."
+		"body": "Every Puck screen, played with the game's own timing, including seven new animations and six unused screens."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Bangai-O",
-		"body": "The title screen from Treasure's shooter Bangai-O, and its animated robot."
+		"body": "The title screen and its animated robot."
 	},
 	{
 		"date": "2026-11-02",
 		"title": "Ryo Hazuki comes to life",
-		"body": "Shenmue's Ryo Hazuki is now animated. You can also pick a game next to the search box to see only its screens."
+		"body": "Shenmue's Ryo Hazuki is now animated, and you can filter the screens by game."
 	},
 	{
 		"date": "2026-11-01",
 		"title": "Carrier",
-		"body": "The title screen from Jaleco's survival horror Carrier."
+		"body": "The title screen from Jaleco's survival horror."
 	},
 	{
 		"date": "2026-10-11",
 		"title": "Sega Tetris",
-		"body": "The title screen, the memory card screens and the full cast of animated characters, from Bowie to Panna-Panna."
+		"body": "The title screen, memory card screens and the full animated cast."
 	},
 	{
 		"date": "2026-10-10",
 		"title": "Title screens and the first animations",
-		"body": "Title screens from Blue Stinger, Legacy of Kain: Soul Reaver, Marvel vs. Capcom 2, Power Stone, Rez and Shenmue, the Dreamcast menu smile and screens from Berserk, including Puck. Animated screens now play on hover and download as GIF or animated SVG. The Crazy Taxi title screen is animated too."
+		"body": "Title screens from six more games and the first animated screens, which play on hover and download as GIF or animated SVG."
 	},
 	{
 		"date": "2026-10-06",
 		"title": "Tony Hawk's Pro Skater",
-		"body": "All 35 screens: the title screen, loading and saving, and every reaction from \"Rad\" to \"U suck\"."
+		"body": "All 35 screens, from \"Rad\" to \"U suck\"."
 	},
 	{
 		"date": "2026-10-04",
 		"title": "The archive opens",
-		"body": "The first 128 screens: the whole Puyo Pop Fever cast, Sonic Adventure and Sonic Adventure 2, and title screens from Crazy Taxi, Ikaruga, Jet Set Radio, Project Justice, Sonic Shuffle and Soul Calibur."
+		"body": "The first 128 screens, from the Puyo Pop Fever cast to Sonic Adventure."
 	}
 ]
