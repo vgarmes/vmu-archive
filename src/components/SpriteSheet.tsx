@@ -84,7 +84,10 @@ function Cells({
 	)
 }
 
-/** The sprites that aren't fonts, one cell each, at 1x (2x from `sm`). */
+/**
+ * The sprites that aren't fonts, one cell each, at the fonts' scale, 2x (3x
+ * from `sm`), so a VMU dot is the same size in both tabs.
+ */
 export default function SpritesPanel({
 	gameSlug,
 	sheet
@@ -98,7 +101,7 @@ export default function SpritesPanel({
 			gameSlug={gameSlug}
 			sheet={sheet}
 		>
-			<Cells cells={sheet.cells} className="gap-1 [--s:1] sm:[--s:2]" />
+			<Cells cells={sheet.cells} className="gap-1 [--s:2] sm:[--s:3]" />
 		</Panel>
 	)
 }
