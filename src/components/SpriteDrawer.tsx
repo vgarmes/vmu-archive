@@ -82,9 +82,10 @@ type FramesChoice = 'all' | 'animated' | `${number}`
  */
 const PALETTES = [
 	{ id: 'site', name: 'Site theme', ink: null, screen: null },
-	// Dark blue on green, like a real VMU; ⇄ gives Flycast's light-on-dark look.
-	{ id: 'vmu', name: 'VMU', ink: '#32365d', screen: '#87a186' },
-	{ id: 'lcd', name: 'LCD', ink: '#262a33', screen: '#a7b3a0' },
+	// VMU and LCD are the DreamPotato emulator's Dark Green and VM2 palettes:
+	// its Screen1 (lit pixels) as ink and Screen0 as screen.
+	{ id: 'vmu', name: 'VMU', ink: '#231024', screen: '#3e4e44' },
+	{ id: 'lcd', name: 'LCD', ink: '#000000', screen: '#9fcede' },
 	{ id: 'mono', name: 'Mono', ink: '#000000', screen: '#ffffff' },
 	{ id: 'gameboy', name: 'Game Boy', ink: '#0f380f', screen: '#9bbc0f' }
 ] as const
