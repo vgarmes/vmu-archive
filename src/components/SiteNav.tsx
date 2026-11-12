@@ -21,7 +21,7 @@ const LINKS: NavLink[] = [
 ]
 
 const NAV_LINK =
-	'text-muted-foreground hover:bg-foreground hover:text-background focus-visible:bg-foreground focus-visible:text-background flex h-6 items-center gap-1 px-2 text-xs tracking-[0.2em] uppercase outline-none'
+	'text-muted-foreground hover:bg-foreground hover:text-background focus-visible:bg-foreground focus-visible:text-background flex h-6 min-w-0 items-center gap-1 px-2 text-xs tracking-[0.2em] uppercase outline-none'
 
 /** External links open in a new tab, marked with a diagonal arrow. */
 const newTab = (external?: boolean) =>
@@ -30,7 +30,8 @@ const newTab = (external?: boolean) =>
 function Label({ label, external }: NavLink) {
 	return (
 		<>
-			{label}
+			{/* One line; in the desktop row it truncates when space runs out. */}
+			<span className="truncate">{label}</span>
 			{external && <ArrowUpRightIcon aria-hidden className="size-3 shrink-0" />}
 			{external && <span className="sr-only"> (opens in a new tab)</span>}
 		</>
@@ -71,7 +72,7 @@ export default function SiteNav() {
 
 	return (
 		<>
-			<nav className="hidden items-center gap-4 sm:flex">
+			<nav className="hidden min-w-0 items-center gap-4 sm:flex">
 				{LINKS.map(link => (
 					<Link
 						key={link.href}
@@ -86,7 +87,7 @@ export default function SiteNav() {
 					The links' px-2 only shows on hover, so their text sits 8px further
 					apart than the toggle's border sits from its neighbour; this evens it.
 				*/}
-				<div className="ml-2">
+				<div className="ml-2 shrink-0">
 					<ThemeToggle />
 				</div>
 			</nav>

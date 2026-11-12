@@ -41,7 +41,7 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 				<header className="relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-6">
 					<Link
 						href="/"
-						className="flex items-center gap-3 text-sm leading-none font-bold tracking-[0.2em] uppercase"
+						className="flex shrink-0 items-center gap-3 text-sm leading-none font-bold tracking-[0.2em] whitespace-nowrap uppercase"
 					>
 						<Swirl className="h-4 w-auto shrink-0" />
 						{SITE}
