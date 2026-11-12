@@ -1,0 +1,18 @@
+{
+	"title": "Love & Punch rules (1/4)",
+	"gameId": "tech-romancer",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffff5febffffffff5febffffffff546affffffff57eafffffffecfd9ffffffffffffffff0000000000000000000000003a8e0381411000000a865d783a00979c411002c0a2244110044121045d7839ee008461700000000000003180000000002e000d9c34442200032a5f5e0f800faa75440237a32ad3440210242a505e0c7863125f5c00000000000030800c00000025587041f50025811040450005017c40e500088111451500088211481000105c6330e500000000000000"
+	],
+	"tags": [
+		"minigame",
+		"letters",
+		"love-and-punch"
+	],
+	"hash": "eae7fc9626874f061af53aff0de9b1a04515cd67",
+	"added": "2026-11-12"
+}

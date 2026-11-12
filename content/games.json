@@ -933,7 +933,11 @@
 		"name": "Tantei Shinshi Dash"
 	},
 	"tech-romancer": {
-		"name": "Tech Romancer"
+		"name": "Tech Romancer",
+		"ja": "Chōkō Senki Kikaiō",
+		"publisher": "Capcom",
+		"year": 1999,
+		"aliases": ["Choukou Senki Kikaioh", "Kikaioh"]
 	},
 	"test-drive-6": {
 		"name": "Test Drive 6"

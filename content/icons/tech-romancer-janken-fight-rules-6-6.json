@@ -1,0 +1,18 @@
+{
+	"title": "Janken Fight! rules (6/6)",
+	"gameId": "tech-romancer",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffe9f4f7cfffff81cfd7f7ffffef1fd1efffffabdfb6dfffffabdc77c7ffffffffffffff00000000000000000000000010520c80008879ea0be000bc2082022100882cb2202278882082404e02bc2cb1818206b80000000000000400000010000cf9e07233f01c08000172100c13f07232d00c30470232d00c50400432101e8d80787bf00000000000000010000000002088848800d821eaafdd24342093e488a2fa2090841222302492a41722401923e3861030000000000000"
+	],
+	"tags": [
+		"minigame",
+		"letters",
+		"janken-fight"
+	],
+	"hash": "35bf49e30ba30f0d7213f74ee5e0d3cb5daeabc5",
+	"added": "2026-11-12"
+}
