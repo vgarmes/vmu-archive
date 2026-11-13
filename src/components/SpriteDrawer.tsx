@@ -133,10 +133,27 @@ function useColors() {
 		} catch {}
 	}
 	const palette = PALETTES.find(p => p.id === colors.id) ?? PALETTES[0]
-	const ink = colors.swapped ? palette.screen : palette.ink
-	const screen = colors.swapped ? palette.ink : palette.screen
-	// The middle tone stays put when ink and screen swap.
-	return { ...colors, palette, ink, off: palette.off, screen, update }
+	if (!colors.swapped)
+		return {
+			...colors,
+			palette,
+			ink: palette.ink,
+			off: palette.off,
+			screen: palette.screen,
+			update
+		}
+	// Swapping trades lit for unlit: the ink takes the unlit colour (or the
+	// screen, for a preset without one) and the unlit dots and the gaps
+	// between them take the ink. The lighter frame colour isn't kept in the
+	// gaps, where it would draw a bright grid round the now-dark dots.
+	return {
+		...colors,
+		palette,
+		ink: palette.off ?? palette.screen,
+		off: palette.off ? palette.ink : null,
+		screen: palette.ink,
+		update
+	}
 }
 
 /** A preset's colours: an ink square on its unlit colour, or its screen. */
