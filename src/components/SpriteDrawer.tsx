@@ -621,12 +621,19 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 									value={scale}
 									onValueChange={v => v && setScale(v)}
 								>
-									<SelectTrigger aria-label="Scale" className="w-full">
+									<SelectTrigger
+										aria-label="Scale"
+										className="w-full font-mono"
+									>
 										<SelectValue />
 									</SelectTrigger>
 									<SelectContent alignItemWithTrigger={false}>
 										{scales.map(s => (
-											<SelectItem key={s.value} value={s.value}>
+											<SelectItem
+												key={s.value}
+												value={s.value}
+												className="font-mono"
+											>
 												{s.label}
 											</SelectItem>
 										))}

@@ -43,7 +43,7 @@ export default function Changelog() {
 						<div className="relative md:sticky md:top-8 md:self-start">
 							<time
 								dateTime={day.date}
-								className="text-muted-foreground block text-xs leading-6 tracking-[0.2em] uppercase"
+								className="text-muted-foreground block font-mono text-xs leading-6 tracking-[0.2em] uppercase"
 							>
 								{formatDate(day.date)}
 							</time>

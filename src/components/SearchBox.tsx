@@ -49,7 +49,7 @@ export default function SearchBox({
 				placeholder={placeholder}
 				aria-label={label}
 				ref={inputRef}
-				className="placeholder:text-muted-foreground h-full min-h-0 w-full min-w-0 flex-1 border-0 bg-transparent py-0 font-mono text-sm leading-5 ring-0 outline-none focus:outline-none"
+				className="placeholder:text-muted-foreground h-full min-h-0 w-full min-w-0 flex-1 border-0 bg-transparent py-0 text-sm leading-5 ring-0 outline-none focus:outline-none"
 			/>
 			{value && (
 				<button

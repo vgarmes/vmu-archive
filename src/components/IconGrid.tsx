@@ -140,7 +140,7 @@ export default function IconGrid({ icons }: { icons: IndexEntry[] }) {
 					inputRef={searchRef}
 				/>
 				<span
-					className="text-muted-foreground text-right text-sm"
+					className="text-muted-foreground text-right font-mono text-sm"
 					aria-live="polite"
 				>
 					{query ? `${results.length} of ${icons.length}` : icons.length}{' '}

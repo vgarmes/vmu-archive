@@ -1,7 +1,7 @@
 'use client'
 
-import { cn } from 'cn'
-import { type ReactNode, useEffect, useId, useRef, useState } from 'react'
+import { type ReactNode, useEffect, useState } from 'react'
+import { Tabs, TabsContent, TabsList, TabsTrigger } from '@/components/ui/tabs'
 
 export interface GameTab {
 	/** Its value in the URL, ?tab=<id>; the first tab has none. */
@@ -22,7 +22,7 @@ export interface GameTab {
  *
  * Keys: the number keys 1-9 pick a tab (not while typing, with a modifier, or
  * with a dialog open); in the tab bar, the arrow keys, Home and End move
- * between tabs, as a tablist does.
+ * between tabs (Base UI's tablist does that).
  */
 export default function GameTabs({
 	tabs,
@@ -33,8 +33,6 @@ export default function GameTabs({
 }) {
 	const [selected, setSelected] = useState(tabs[0].id)
 	const [restored, setRestored] = useState(false)
-	const refs = useRef<(HTMLButtonElement | null)[]>([])
-	const base = useId()
 
 	// The tab in the URL. A link to one screen always shows the screens, so
 	// its ?tab= is dropped there and then: whatever writes the URL next (the
@@ -86,96 +84,36 @@ export default function GameTabs({
 		return () => removeEventListener('keydown', onKey)
 	}, [tabs])
 
-	const move = (to: number) => {
-		const i = (to + tabs.length) % tabs.length
-		setSelected(tabs[i].id)
-		refs.current[i]?.focus()
-	}
-
 	return (
-		<div className="flex flex-col gap-6">
-			<div
-				role="tablist"
-				aria-label={label}
-				className="flex gap-1.5 overflow-x-auto pb-0.5"
-				onKeyDown={e => {
-					const i = tabs.findIndex(t => t.id === selected)
-					const to =
-						e.key === 'ArrowRight'
-							? i + 1
-							: e.key === 'ArrowLeft'
-								? i - 1
-								: e.key === 'Home'
-									? 0
-									: e.key === 'End'
-										? tabs.length - 1
-										: null
-					if (to === null) return
-					e.preventDefault()
-					move(to)
-				}}
-			>
-				{tabs.map((tab, i) => {
-					const on = tab.id === selected
-					return (
-						<button
+		<Tabs
+			value={selected}
+			onValueChange={value => setSelected(String(value))}
+			className="gap-6"
+		>
+			{/* Scrolls sideways on a phone rather than squeezing the labels. */}
+			<div className="-mx-4 overflow-x-auto px-4">
+				<TabsList aria-label={label}>
+					{tabs.map((tab, i) => (
+						<TabsTrigger
 							key={tab.id}
-							ref={el => {
-								refs.current[i] = el
-							}}
-							type="button"
-							role="tab"
-							id={`${base}-tab-${tab.id}`}
-							aria-selected={on}
-							aria-controls={`${base}-panel-${tab.id}`}
-							tabIndex={on ? 0 : -1}
-							onClick={() => setSelected(tab.id)}
-							// Two blocks, terminal-style: the key, filled, then the label,
-							// outlined. Selected, both fill with the foreground colour;
-							// hover or keyboard focus fills the key and outlines the label.
-							className="group flex h-[30px] shrink-0 items-stretch text-xs leading-[30px] tracking-[0.05em] whitespace-nowrap uppercase outline-none"
+							value={tab.id}
+							title={`${tab.label} (${i + 1})`}
 						>
-							<kbd
-								aria-hidden="true"
-								className={cn(
-									'min-w-[3ch] px-[1ch] text-center font-mono transition-colors duration-[120ms]',
-									on
-										? 'bg-foreground text-background'
-										: 'bg-foreground/30 text-foreground group-hover:bg-foreground group-hover:text-background group-focus-visible:bg-foreground group-focus-visible:text-background'
-								)}
-							>
-								{i + 1}
-							</kbd>
-							<span
-								className={cn(
-									'flex items-center gap-[1ch] px-[1.25ch] ring-1 transition-[background-color,color,box-shadow] duration-[120ms] ring-inset',
-									on
-										? 'bg-foreground text-background ring-foreground'
-										: 'text-muted-foreground ring-foreground/30 group-hover:text-foreground group-hover:ring-foreground group-focus-visible:text-foreground group-focus-visible:ring-foreground'
-								)}
-							>
-								{tab.label}
-								{tab.count !== undefined && (
-									<span className="tracking-normal normal-case opacity-65">
-										{tab.count}
-									</span>
-								)}
-							</span>
-						</button>
-					)
-				})}
+							{tab.label}
+							{tab.count !== undefined && (
+								<span className="font-mono tabular-nums opacity-60">
+									{tab.count}
+								</span>
+							)}
+						</TabsTrigger>
+					))}
+				</TabsList>
 			</div>
 			{tabs.map(tab => (
-				<div
-					key={tab.id}
-					role="tabpanel"
-					id={`${base}-panel-${tab.id}`}
-					aria-labelledby={`${base}-tab-${tab.id}`}
-					hidden={tab.id !== selected}
-				>
+				<TabsContent key={tab.id} value={tab.id} keepMounted>
 					{tab.panel}
-				</div>
+				</TabsContent>
 			))}
-		</div>
+		</Tabs>
 	)
 }

@@ -71,7 +71,7 @@ export default function SaveIconIndex({ icons }: { icons: SaveIconEntry[] }) {
 					inputRef={searchRef}
 				/>
 				<span
-					className="text-muted-foreground text-right text-sm"
+					className="text-muted-foreground text-right font-mono text-sm"
 					aria-live="polite"
 				>
 					{q

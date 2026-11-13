@@ -88,7 +88,7 @@ export default function GameIndex({ games }: { games: Game[] }) {
 					inputRef={searchRef}
 				/>
 				<span
-					className="text-muted-foreground text-right text-sm"
+					className="text-muted-foreground text-right font-mono text-sm"
 					aria-live="polite"
 				>
 					{q
@@ -132,7 +132,7 @@ function GameCard({ game }: { game: Game }) {
 							{game.name}
 						</span>
 						<span
-							className="text-muted-foreground shrink-0 tabular-nums"
+							className="text-muted-foreground shrink-0 font-mono tabular-nums"
 							aria-label={`${game.count} ${game.count === 1 ? 'screen' : 'screens'}`}
 						>
 							{game.count}

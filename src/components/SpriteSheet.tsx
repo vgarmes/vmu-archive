@@ -128,7 +128,7 @@ export function FontsPanel({
 					<h3 className="text-muted-foreground text-xs">
 						{f.title}
 						{f.split && (
-							<span className="text-muted-foreground/70">
+							<span className="text-muted-foreground/70 font-mono">
 								{' '}
 								· {f.cells.length} characters
 							</span>

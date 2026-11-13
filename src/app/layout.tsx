@@ -1,10 +1,16 @@
 import type { Metadata, Viewport } from 'next'
-import { Geist_Mono } from 'next/font/google'
+import { Geist, Geist_Mono } from 'next/font/google'
 import Link from 'next/link'
 import { Analytics } from '@vercel/analytics/next'
 import Swirl from '@/components/Swirl'
 import SiteNav from '@/components/SiteNav'
 import './globals.css'
+
+// Geist for the site; Geist Mono only for data (counts, dates, sizes).
+const geist = Geist({
+	variable: '--font-geist-sans',
+	subsets: ['latin']
+})
 
 const geistMono = Geist_Mono({
 	variable: '--font-geist-mono',
@@ -33,11 +39,15 @@ const themeScript = `try{var t=localStorage.getItem('theme')||'auto';if(t==='dar
 export default function RootLayout({ children }: LayoutProps<'/'>) {
 	return (
 		// The theme script adds a class before React hydrates.
-		<html lang="en" className={geistMono.variable} suppressHydrationWarning>
+		<html
+			lang="en"
+			className={`${geist.variable} ${geistMono.variable}`}
+			suppressHydrationWarning
+		>
 			<head>
 				<script dangerouslySetInnerHTML={{ __html: themeScript }} />
 			</head>
-			<body className="min-h-screen font-mono antialiased">
+			<body className="min-h-screen font-sans antialiased">
 				<header className="relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-6">
 					<Link
 						href="/"
