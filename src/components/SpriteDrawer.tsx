@@ -601,7 +601,7 @@ function SpritePanel({ entry }: { entry: IndexEntry }) {
 								aria-pressed={colors.swapped}
 								aria-label="Swap ink and screen colors"
 								title="Swap ink and screen colors"
-								className="border-input hover:border-foreground text-muted-foreground hover:text-foreground aria-pressed:text-foreground flex size-8 shrink-0 items-center justify-center rounded-lg border disabled:opacity-40"
+								className="border-input enabled:hover:border-foreground text-muted-foreground enabled:hover:text-foreground aria-pressed:text-foreground flex size-8 shrink-0 items-center justify-center rounded-lg border disabled:opacity-40"
 							>
 								<ArrowLeftRightIcon className="size-4" aria-hidden="true" />
 							</button>
