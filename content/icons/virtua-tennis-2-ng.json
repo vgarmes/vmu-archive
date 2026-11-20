@@ -1,0 +1,13 @@
+{
+	"title": "NG",
+	"gameId": "virtua-tennis-2",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000007ffffffffffe7ffffffffffe6000000000066000000000066fc7c1ff07e66fc7c7ff87e66fc7c7ff87e66fe7cfffc7e66fe7cfcfc7e66fe7cfcfc7e66ff7cfcfc7e66ff7cfcfc7e66ff7cfc007e66fffcfc007e66fffcfdfc7e66fffcfdfc7e66fffcfdfc7e66fbfcfcfc7e66fbfcfcfc7e66fbfcfcfc3c66f9fcfcfc3c66f9fcfcfc0066f9fcfcfc3c66f8fcfffc3c66f8fc7ffc3c66f8fc3ffc3c66f8fc1f783c66000000000067ffffffffffe7ffffffffffe000000000000"
+	],
+	"tags": ["memory-card"],
+	"hash": "fce8ed0b2f89bfc6ee90ca52e51491fd80543223",
+	"added": "2026-11-20"
+}

@@ -1,0 +1,14 @@
+{
+	"title": "Title screen (Tennis 2K2)",
+	"gameId": "virtua-tennis-2",
+	"region": "ntsc-u",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffe0c18183ffffdfbf7f7dffffe1816101fffffebf7d7dffffc1c1837dffffffffffffffffdcfbcf1effffbd75d7bdffffdcf5cfbeffffbdfbd7bdfffffffffffffff00000000003effffffffffdd0204f279306d02047239202dce7c7239272dcc09249261ebcc092492785b9cf984c24e5b981389c4c05b9813c9e4e0ddffffffffffbe00000000007fffffffffffffffc1d9c1ffffff9cd39cfffffffcc7fcffffff818781ffffff3fb33fffffff01b901fffffffffffffff"
+	],
+	"tags": ["logo"],
+	"hash": "272c2b3ee937108bf549ba6f7ea3abc12ffa1959",
+	"added": "2026-11-20"
+}

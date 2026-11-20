@@ -1065,7 +1065,11 @@
 		"name": "Virtua Tennis"
 	},
 	"virtua-tennis-2": {
-		"name": "Virtua Tennis 2"
+		"name": "Virtua Tennis 2",
+		"ja": "Power Smash 2",
+		"publisher": "Sega",
+		"year": 2001,
+		"aliases": ["Tennis 2K2", "Sega Sports Tennis 2K2"]
 	},
 	"visual-memory-unit": {
 		"name": "Visual Memory Unit",
