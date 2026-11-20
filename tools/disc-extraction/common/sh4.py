@@ -1,6 +1,6 @@
 """Minimal SH-4 disassembler for the Dreamcast's main CPU: the common integer
-instructions, enough to follow control flow and see constants. Unknown words
-print as `.word`.
+instructions and the single-precision FPU ones, enough to follow control flow,
+see constants and read float maths. Unknown words print as `.word`.
 
     python3 sh4.py <1ST_READ.BIN> <start address> <end address>
 
@@ -58,32 +58,71 @@ def dis(b, off, load=LOAD):
         return f'mov.l   @({d4 * 4},r{m}),r{n}'
     if top == 0x6:
         return {0x3: f'mov     r{m},r{n}', 0x2: f'mov.l   @r{m},r{n}', 0x1: f'mov.w   @r{m},r{n}', 0x0: f'mov.b   @r{m},r{n}',
-                0x6: f'mov.l   @r{m}+,r{n}', 0xC: f'extu.b  r{m},r{n}', 0xD: f'extu.w  r{m},r{n}',
+                0x6: f'mov.l   @r{m}+,r{n}', 0x4: f'mov.b   @r{m}+,r{n}', 0x5: f'mov.w   @r{m}+,r{n}',
+                0x7: f'not     r{m},r{n}', 0x8: f'swap.b  r{m},r{n}', 0x9: f'swap.w  r{m},r{n}',
+                0xA: f'negc    r{m},r{n}', 0xB: f'neg     r{m},r{n}', 0xC: f'extu.b  r{m},r{n}', 0xD: f'extu.w  r{m},r{n}',
                 0xE: f'exts.b  r{m},r{n}', 0xF: f'exts.w  r{m},r{n}'}.get(d4, f'.word {w:04x}')
     if top == 0x2:
         return {0x2: f'mov.l   r{m},@r{n}', 0x1: f'mov.w   r{m},@r{n}', 0x0: f'mov.b   r{m},@r{n}', 0x6: f'mov.l   r{m},@-r{n}',
-                0x8: f'tst     r{m},r{n}', 0x9: f'and     r{m},r{n}', 0xB: f'or      r{m},r{n}'}.get(d4, f'.word {w:04x}')
+                0x4: f'mov.b   r{m},@-r{n}', 0x5: f'mov.w   r{m},@-r{n}', 0x8: f'tst     r{m},r{n}',
+                0x9: f'and     r{m},r{n}', 0xA: f'xor     r{m},r{n}', 0xB: f'or      r{m},r{n}',
+                0xD: f'xtrct   r{m},r{n}', 0xE: f'mulu.w  r{m},r{n}', 0xF: f'muls.w  r{m},r{n}'}.get(d4, f'.word {w:04x}')
     if top == 0x3:
         return {0x0: f'cmp/eq  r{m},r{n}', 0x2: f'cmp/hs  r{m},r{n}', 0x3: f'cmp/ge  r{m},r{n}', 0x6: f'cmp/hi  r{m},r{n}',
-                0x7: f'cmp/gt  r{m},r{n}', 0xC: f'add     r{m},r{n}', 0x8: f'sub     r{m},r{n}'}.get(d4, f'.word {w:04x}')
+                0x7: f'cmp/gt  r{m},r{n}', 0xC: f'add     r{m},r{n}', 0x8: f'sub     r{m},r{n}',
+                0x5: f'dmulu.l r{m},r{n}', 0xD: f'dmuls.l r{m},r{n}', 0xA: f'subc    r{m},r{n}',
+                0xE: f'addc    r{m},r{n}', 0x4: f'div1    r{m},r{n}'}.get(d4, f'.word {w:04x}')
     if top == 0x4:
+        if d4 == 0xC:
+            return f'shad    r{m},r{n}'
+        if d4 == 0xD:
+            return f'shld    r{m},r{n}'
         return {0x0B: f'jsr     @r{n}', 0x2B: f'jmp     @r{n}', 0x22: f'sts.l   pr,@-r{n}', 0x26: f'lds.l   @r{n}+,pr',
                 0x15: f'cmp/pl  r{n}', 0x11: f'cmp/pz  r{n}', 0x10: f'dt      r{n}', 0x08: f'shll2   r{n}', 0x00: f'shll    r{n}',
-                0x01: f'shlr    r{n}', 0x18: f'shll8   r{n}', 0x28: f'shll16  r{n}', 0x09: f'shlr2   r{n}'}.get(w & 0xFF, f'.word {w:04x}')
+                0x01: f'shlr    r{n}', 0x18: f'shll8   r{n}', 0x28: f'shll16  r{n}', 0x09: f'shlr2   r{n}',
+                0x19: f'shlr8   r{n}', 0x29: f'shlr16  r{n}', 0x20: f'shal    r{n}', 0x21: f'shar    r{n}',
+                0x04: f'rotl    r{n}', 0x05: f'rotr    r{n}', 0x24: f'rotcl   r{n}', 0x25: f'rotcr   r{n}',
+                0x5A: f'lds     r{n},fpul', 0x6A: f'lds     r{n},fpscr', 0x1A: f'lds     r{n},macl', 0x0A: f'lds     r{n},mach',
+                0x56: f'lds.l   @r{n}+,fpul', 0x52: f'sts.l   fpul,@-r{n}', 0x66: f'lds.l   @r{n}+,fpscr',
+                0x62: f'sts.l   fpscr,@-r{n}'}.get(w & 0xFF, f'.word {w:04x}')
     if top == 0x0:
         if w == 0x000B:
             return 'rts'
         if w == 0x0009:
             return 'nop'
         named = {0xC: f'mov.b   @(r0,r{m}),r{n}', 0xD: f'mov.w   @(r0,r{m}),r{n}', 0xE: f'mov.l   @(r0,r{m}),r{n}',
-                 0x4: f'mov.b   r{m},@(r0,r{n})', 0x6: f'mov.l   r{m},@(r0,r{n})', 0x7: f'mul.l   r{m},r{n}'}
+                 0x4: f'mov.b   r{m},@(r0,r{n})', 0x5: f'mov.w   r{m},@(r0,r{n})', 0x6: f'mov.l   r{m},@(r0,r{n})',
+                 0x7: f'mul.l   r{m},r{n}'}
         if d4 in named:
             return named[d4]
-        return {0x29: f'movt    r{n}', 0x2A: f'sts     pr,r{n}'}.get(w & 0xFF, f'.word {w:04x}')
+        return {0x29: f'movt    r{n}', 0x2A: f'sts     pr,r{n}', 0x1A: f'sts     macl,r{n}', 0x0A: f'sts     mach,r{n}',
+                0x5A: f'sts     fpul,r{n}', 0x6A: f'sts     fpscr,r{n}', 0x03: f'bsrf    r{n}', 0x23: f'braf    r{n}',
+                0x08: 'clrt', 0x18: 'sett', 0x19: 'div0u', 0x28: 'clrmac'}.get(w & 0xFF, f'.word {w:04x}')
     if top == 0xC:
-        return {0x8: f'tst     #{i8},r0', 0x9: f'and     #{i8},r0', 0xB: f'or      #{i8},r0',
+        return {0x8: f'tst     #{i8},r0', 0x9: f'and     #{i8},r0', 0xB: f'or      #{i8},r0', 0xA: f'xor     #{i8},r0',
                 0x7: f'mova    @({hex(((pc + 4) & ~3) + i8 * 4)}),r0'}.get(n, f'.word {w:04x}')
+    if top == 0xF:
+        return _fpu(w, n, m, d4)
     return f'.word {w:04x}'
+
+
+def _fpu(w, n, m, d4):
+    """The FPU's instructions, single precision as games use it (FRn)."""
+    named = {0x0: f'fadd    fr{m},fr{n}', 0x1: f'fsub    fr{m},fr{n}', 0x2: f'fmul    fr{m},fr{n}',
+             0x3: f'fdiv    fr{m},fr{n}', 0x4: f'fcmp/eq fr{m},fr{n}', 0x5: f'fcmp/gt fr{m},fr{n}',
+             0x6: f'fmov.s  @(r0,r{m}),fr{n}', 0x7: f'fmov.s  fr{m},@(r0,r{n})', 0x8: f'fmov.s  @r{m},fr{n}',
+             0x9: f'fmov.s  @r{m}+,fr{n}', 0xA: f'fmov.s  fr{m},@r{n}', 0xB: f'fmov.s  fr{m},@-r{n}',
+             0xC: f'fmov    fr{m},fr{n}', 0xE: f'fmac    fr0,fr{m},fr{n}'}
+    if d4 in named:
+        return named[d4]
+    if w & 0xF3FF == 0xF1FD:
+        return f'ftrv    xmtrx,fv{(w >> 10 & 3) * 4}'
+    if w & 0xF1FF == 0xF0FD:
+        return f'fsca    fpul,dr{n & 14}'
+    return {0x0: f'fsts    fpul,fr{n}', 0x1: f'flds    fr{n},fpul', 0x2: f'float   fpul,fr{n}',
+            0x3: f'ftrc    fr{n},fpul', 0x4: f'fneg    fr{n}', 0x5: f'fabs    fr{n}', 0x6: f'fsqrt   fr{n}',
+            0x7: f'fsrra   fr{n}', 0x8: f'fldi0   fr{n}', 0x9: f'fldi1   fr{n}',
+            0xE: f'fipr    fv{(w >> 8 & 3) * 4},fv{(w >> 10 & 3) * 4}'}.get(m, f'.word {w:04x}') if d4 == 0xD else f'.word {w:04x}'
 
 
 def listing(b, start, end, load=LOAD):

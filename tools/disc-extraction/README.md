@@ -15,7 +15,10 @@ Python loads modules.
   - `disc.py` lists or copies files from a dump: the folder holding a `.gdi`
     or a Redump `.cue`, and its tracks.
   - `sh4.py` is a small disassembler for the main CPU (SH-4), enough to read
-    control flow and constants. `1ST_READ.BIN` loads at `0x8C010000`.
+    control flow, constants and the FPU's float maths (FTRV, FSCA). Between
+    a pair of `fschg`, an `fmov` moves register pairs, into the back bank
+    (XMTRX) when its odd register is named. `1ST_READ.BIN` loads at
+    `0x8C010000`.
   - `lc86k.py` is the same for the VMU's own CPU (LC86K), for VMU programs a
     game carries. `refs` finds where the code loads an address into TRH/TRL,
     the pointer its `LDC` reads art through.
@@ -146,7 +149,10 @@ files and look for the screen in what comes out.
   rate it never sets, so they play at the site's default. Code: Veronica
   composes every screen from its sheet with a small byte-code interpreter and
   draw modes, so its screens were redrawn by re-running those modes tick by
-  tick (a tick every second pass of the game loop, assuming 60 Hz).
+  tick (a tick every second pass of the game loop, assuming 60 Hz). Virtua
+  Tennis 2 turns its title logo in 3D, a perspective projection of the logo's
+  dots through the matrix library, so the turn was redrawn by re-running that
+  renderer in single-precision floats.
 - From captures: Sakura Taisen 3's title (100 ms a frame) and its scrolling
   banners (1 px per tick, stored as one strip; see the main README).
 - Unknown yet: Soul Calibur's fighters play at the site's default until someone
