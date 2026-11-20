@@ -1,0 +1,40 @@
+{
+	"kind": "save",
+	"title": "Capcom network file",
+	"gameId": "capcom-vs-snk-millennium-fight-2000",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffdd22ff",
+		"#ffbb33ff",
+		"#ff9933ff",
+		"#ff5544ff",
+		"#ff6644ff",
+		"#ff7744ff",
+		"#ff8833ff",
+		"#cc6666ff",
+		"#662299ff",
+		"#4411aaff",
+		"#3300bbff",
+		"#bb8855ff",
+		"#ccaa44ff",
+		"#ffee22ff",
+		"#55eeffff",
+		"#0000ffff"
+	],
+	"frames": [
+		"011111111111111111111111111111122333333444455555555554444434333623333444545547889a99874444433336233344445548aaaaaaaaaaa7444443362334445557aaa97bcccb79aa93444436234445558aa8cdddddddd0b9aa35443624445558aa7dddddddddddd18aa744462444557aacddddddcbc0dddd08aa3446244553aabdddddc8aaa9cdddd1aa8546244558a8dddddcaa98aa90ddd7a9454624554aacdddd19a711baacdd8a93654624557a8ddddd7a8111baa0d7aab6664625568abddddd9ab1117aab7aab26665624569acdddd0aac00018aaaab22266562456aa1dddd1aa1000017aa7222266562556aacdddd0aac0d0001b711222665624669acddddd9ab0000011112222665624568abddddd7a80000011112222665624667a8ddddd1aab000111788887665624554aacdddddbaa71011baaaaa86656245668a80dddddbaa9778aa989a86656245564aa7ddddddc9aaaaa81d7a865562455667aabdddddd0b787bddd7a865562eeeeeeeeeeeeeeeeeeeeeeeeeeeeee62effffeefffeffffffffefffffffffe62efffffefffefffeeeeeeeeefffeeee62efffffffffefffffffe888efffe44362efffefffffefffeeeee999efffe44462efffeeffffefffeeeeee66efffe43362efffeeefffeffffffffe55efffe43362eeeee4eeeeeeeeeeeeee55eeeee33363777777777777777777777777777777b"
+	],
+	"animationSpeed": 5,
+	"vmuName": "CAP-NET_NETﾌｧｲﾙ",
+	"description": "カプコン　ネットワークファイル",
+	"source": {
+		"kind": "disc",
+		"file": "/1ST_READ.BIN"
+	},
+	"tags": [],
+	"hash": "54ea2464ea5b7129153f489766d32a3bd477a04c",
+	"added": "2026-11-20"
+}
