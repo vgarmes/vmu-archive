@@ -67,10 +67,10 @@ Every game so far did it differently. What has turned up:
 **Where it lives.**
 
 - In the program itself, `1ST_READ.BIN`, with no file of its own: Bangaioh,
-  Choukou Senki Kikaioh (in its save file's descriptor), Crazy Taxi 2,
-  Ikaruga, Jet Set Radio, Marvel vs. Capcom 2, Moero! Justice Gakuen, Power
-  Stone 1 and 2, Resident Evil Code: Veronica, Sonic Shuffle, Street Fighter
-  III 3rd Strike.
+  Capcom vs. SNK, Choukou Senki Kikaioh (in its save file's descriptor),
+  Crazy Taxi 2, Ikaruga, Jet Set Radio, Marvel vs. Capcom 2, Moero! Justice
+  Gakuen, Power Stone 1 and 2, Resident Evil Code: Veronica, Sonic Shuffle,
+  Street Fighter III 3rd Strike.
 - In the game's own program, loaded by a small `1ST_READ.BIN`: Metropolis
   Street Racer's `MSR.BIN` (it runs from `0x8C010000`; string pointers give
   the base away).
@@ -177,4 +177,5 @@ The code also says what the game never shows: screens nothing calls are marked
 | Sonic Shuffle                    | JP (2000, Sega), Redump                     | [`sonic-shuffle/`](sonic-shuffle/) | [sonic-shuffle](../../content/games/sonic-shuffle.md)                                                                     |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                     | [`soulcalibur/`](soulcalibur/)     | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
 | Choukou Senki Kikaioh (partly)   | JP V1.003 (1999, Capcom), Redump            | [`kikaioh/`](kikaioh/)             | [tech-romancer](../../content/games/tech-romancer.md)                                                                     |
+| Capcom vs. SNK                   | JP Rev A (2000, Capcom), Redump             | [`cvs/`](cvs/)                     | [capcom-vs-snk-millennium-fight-2000](../../content/games/capcom-vs-snk-millennium-fight-2000.md)                         |
 | Visual Memory Unit, Dreamcast    | US v1.05, JP v1.004 VMU BIOS, `dc_boot.bin` | [`bios/`](bios/)                   | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

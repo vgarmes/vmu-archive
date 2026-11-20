@@ -106,7 +106,9 @@
 		"year": 2001
 	},
 	"capcom-vs-snk-millennium-fight-2000": {
-		"name": "Capcom vs SNK: Millennium Fight 2000"
+		"name": "Capcom vs SNK: Millennium Fight 2000",
+		"publisher": "Capcom",
+		"year": 2000
 	},
 	"cardcaptor-sakura-tomoyo-no-video-daisakusen": {
 		"name": "Cardcaptor Sakura: Tomoyo no Video Daisakusen"
