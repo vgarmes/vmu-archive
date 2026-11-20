@@ -99,6 +99,9 @@ Every game so far did it differently. What has turned up:
 - As small blocks in many files: Sakura Taisen 3's `LCD1` blocks, in its own
   `.LC1` files and inside minigame and battle files.
 - Inside an archive, per character: Soul Calibur's `HUMAN.DAT`.
+- Nowhere: Record of Lodoss War only clears the screen. To tell, follow the
+  calls into the LCD library's write (here `pdLcd`, found by its version
+  string) back to where the screen pointer is set.
 
 File names rarely help. Shenmue II's `SPRITE/VM_*.GZ` sound like VMU art but are
 colour textures; the real art was found by following the code that loads it.
@@ -194,4 +197,5 @@ The code also says what the game never shows: screens nothing calls are marked
 | Capcom vs. SNK                   | JP Rev A (2000, Capcom), Redump             | [`cvs/`](cvs/)                     | [capcom-vs-snk-millennium-fight-2000](../../content/games/capcom-vs-snk-millennium-fight-2000.md)                         |
 | Virtua Tennis 2                  | EU (2001, Sega), Redump                     | [`vt2/`](vt2/)                     | [virtua-tennis-2](../../content/games/virtua-tennis-2.md)                                                                 |
 | Vampire Chronicle                | JP (2000, Capcom), Redump                   | [`vampire/`](vampire/)             | [vampire-chronicle-for-matching-service](../../content/games/vampire-chronicle-for-matching-service.md)                   |
+| Record of Lodoss War             | JP Rev A, Redump                            | [`lodoss/`](lodoss/)               | none: it draws nothing on the VMU (see its README)                                                                        |
 | Visual Memory Unit, Dreamcast    | US v1.05, JP v1.004 VMU BIOS, `dc_boot.bin` | [`bios/`](bios/)                   | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |
