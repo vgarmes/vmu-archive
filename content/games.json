@@ -1040,6 +1040,12 @@
 	"urban-chaos": {
 		"name": "Urban Chaos"
 	},
+	"vampire-chronicle-for-matching-service": {
+		"name": "Vampire Chronicle for Matching Service",
+		"publisher": "Capcom",
+		"year": 2000,
+		"aliases": ["Vampire Chronicle"]
+	},
 	"vanishing-point": {
 		"name": "Vanishing Point"
 	},

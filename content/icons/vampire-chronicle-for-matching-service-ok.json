@@ -1,0 +1,15 @@
+{
+	"title": "OK",
+	"gameId": "vampire-chronicle-for-matching-service",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffffffffffffff1bffffffff8667c371fcfe18ff8cec63bc7f3f67fe0c783ffffffffff000000000000ffffffffffff00000000000000007fff00000000c64900000000824900000000925900000000925900000000921900000000921900000000925900000000924f00000000824900000000c649000000007fff0000000000000000ffffffffffff00000000000083ffffffffffc7f3f67fe0c7e18ff8cec63bf8667c371fcffff1bfffffffffffffffffffffffffffffff"
+	],
+	"tags": ["memory-card"],
+	"unused": true,
+	"hash": "45a552d4c03df407996e6a59cae2ac6502b32595",
+	"added": "2026-11-20"
+}

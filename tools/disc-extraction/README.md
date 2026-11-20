@@ -73,7 +73,7 @@ Every game so far did it differently. What has turned up:
   Capcom vs. SNK, Choukou Senki Kikaioh (in its save file's descriptor),
   Crazy Taxi 2, Ikaruga, Jet Set Radio, Marvel vs. Capcom 2, Moero! Justice
   Gakuen, Power Stone 1 and 2, Resident Evil Code: Veronica, Sonic Shuffle,
-  Street Fighter III 3rd Strike, Virtua Tennis 2.
+  Street Fighter III 3rd Strike, Vampire Chronicle, Virtua Tennis 2.
 - In the game's own program, loaded by a small `1ST_READ.BIN`: Metropolis
   Street Racer's `MSR.BIN` (it runs from `0x8C010000`; string pointers give
   the base away).
@@ -185,4 +185,5 @@ The code also says what the game never shows: screens nothing calls are marked
 | Choukou Senki Kikaioh (partly)   | JP V1.003 (1999, Capcom), Redump            | [`kikaioh/`](kikaioh/)             | [tech-romancer](../../content/games/tech-romancer.md)                                                                     |
 | Capcom vs. SNK                   | JP Rev A (2000, Capcom), Redump             | [`cvs/`](cvs/)                     | [capcom-vs-snk-millennium-fight-2000](../../content/games/capcom-vs-snk-millennium-fight-2000.md)                         |
 | Virtua Tennis 2                  | EU (2001, Sega), Redump                     | [`vt2/`](vt2/)                     | [virtua-tennis-2](../../content/games/virtua-tennis-2.md)                                                                 |
+| Vampire Chronicle                | JP (2000, Capcom), Redump                   | [`vampire/`](vampire/)             | [vampire-chronicle-for-matching-service](../../content/games/vampire-chronicle-for-matching-service.md)                   |
 | Visual Memory Unit, Dreamcast    | US v1.05, JP v1.004 VMU BIOS, `dc_boot.bin` | [`bios/`](bios/)                   | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

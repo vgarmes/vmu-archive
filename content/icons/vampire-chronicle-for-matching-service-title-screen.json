@@ -1,0 +1,14 @@
+{
+	"title": "Title screen",
+	"gameId": "vampire-chronicle-for-matching-service",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffc7fffffffffc01ffffffffc0007ffff7ff1c780ffff9fcfffe0fffdc3fdee707fe3e3f4f3307307f1c87300b80ff98959830c7ff8d34196065ffc924093763ffc934492646ffe1796320c1ffe3b3f161e3fe00000000007fe00036007fffe3af637a1dfff36e413b03fffbf76377c7fffff7bef7effffffb006ffffffffcff9fffffffff007fffffffffffffffffc001000020ff9a5c64a6aeffa25296a8a8ffa3d297a8aeffa25c95a888ff9a5264a6eeffc000000000fffffffffffff"
+	],
+	"tags": ["logo"],
+	"hash": "0f5ee021e56a9353c7dbc2bed17d3c34d6a236bd",
+	"added": "2026-11-20"
+}

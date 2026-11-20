@@ -1,0 +1,14 @@
+{
+	"title": "Access",
+	"gameId": "vampire-chronicle-for-matching-service",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffffffffffffff1bffffffff8667c371fcfe18ff8cec63bc7f3f67fe0c783ffffffffff000000000000ffffffffffff0000000000000fbeffffbe0018e38c18e300104104104100124924f24900124924f3cffe124f3c39e7aa124f3c2cf3aa104924fe79fe104924f2490012410410410012638c18e3001ffeffffbe00000000000000ffffffffffff00000000000083ffffffffffc7f3f67fe0c7e18ff8cec63bf8667c371fcffff1bfffffffffffffffffffffffffffffff"
+	],
+	"tags": ["memory-card"],
+	"hash": "f0e32ddbe66bc403c26af2611c2fa693d5aefe53",
+	"added": "2026-11-20"
+}

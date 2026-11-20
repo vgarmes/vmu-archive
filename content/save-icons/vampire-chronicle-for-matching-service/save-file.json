@@ -1,0 +1,40 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "vampire-chronicle-for-matching-service",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#880099ff",
+		"#772200ff",
+		"#446688ff",
+		"#ff2200ff",
+		"#995522ff",
+		"#ff6600ff",
+		"#bb7744ff",
+		"#cc8866ff",
+		"#88aabbff",
+		"#ee9900ff",
+		"#dd9977ff",
+		"#eebb88ff",
+		"#eecc11ff",
+		"#ffcc99ff",
+		"#ffddaaff",
+		"#ffffffff"
+	],
+	"frames": [
+		"3000000000006000000000000000005c30f0f00f00f000f0ff00f0ff00fff0cc30f0f0f0f0ff0ff0f0f0f0f0f0f000c930f0f0f0f0f0f0f0f0f0f0f0f0fff03330f0f0fff0f000f0ff00f0ff00f00033300f00f0f0f060f0f000f0f0f0fff0333300000000006000007000000000003333335111446664666667773333c3333333335114144666a776676753359333333333911164476bba7767665335533333335ca1146717addbd77666933953333355cca1147a6bddddea66669535333333ccc99414aaaddddddb7666ac353333339c935614aaadddddeed7677a953333333c536116aaabddddeddb7746b535933339536117dddddddebadeb746b595593335536114bdddbdeb67aeda66b5c33c5333534114bddbada6babeda67c39339933353611afe7b7646aadeb76bb55535c333535416ed4abbdaadeeb76bb93535c3333339114416edbdeeeeea77d93333c5333335411116eeddddeeebdbdc3333c5333533611117eeeddddeebbbdb5533c5333333541114bbeedddeeddddd7933553333333614447deeddddeddddd289353335333351444adbdeddddadddd62a353335333334447beeabddb7adddd8285533353333394446abdddd76bddb8888993335333333646abaadea6adb888888ac333533333351aeedddb67ba28888888c333933333354467ba64772228888888a539c33333574444466662222888888889"
+	],
+	"animationSpeed": 5,
+	"vmuName": "ｳﾞｧﾝﾊﾟｲｱｾｰﾌﾞﾃﾞｰﾀ",
+	"description": "ヴァンパイア ｸﾛﾆｸﾙ セーブデータ",
+	"source": {
+		"kind": "disc",
+		"file": "/1ST_READ.BIN"
+	},
+	"tags": [],
+	"hash": "72c9f5bb706ab5cf92b3fd589e39cec9a0cbf25a",
+	"added": "2026-11-20"
+}
