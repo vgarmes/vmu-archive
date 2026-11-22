@@ -54,7 +54,7 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 		.sort((a, b) => rank(a) - rank(b))
 		.slice(0, HEADER_SAVE_ICONS)
 	const allSaveIcons = `/save-icons?${new URLSearchParams({ q: game.name })}`
-	const meta = [game.publisher, game.year].filter(Boolean).join(' · ')
+	const meta = [game.publisher, game.year].filter(Boolean).join(' ')
 
 	// The page's sections as tabs, screens first; only those the game has.
 	const tabs: GameTab[] = [
@@ -118,19 +118,26 @@ export default async function GamePage({ params }: PageProps<'/games/[slug]'>) {
 					{game.ja && ` (${game.ja})`}
 				</h1>
 				<Breadcrumb className="min-w-0">
-					<BreadcrumbList className="text-xs tracking-[0.2em] uppercase">
+					{/*
+						On a small screen the publisher and year drop to a line of
+						their own; the title keeps its place beside "Games",
+						truncated when it's too long.
+					*/}
+					<BreadcrumbList className="gap-y-1 text-xs tracking-[0.2em] uppercase sm:flex-nowrap">
 						<BreadcrumbItem>
 							<BreadcrumbLink render={<Link href="/" />}>Games</BreadcrumbLink>
 						</BreadcrumbItem>
 						<BreadcrumbSeparator />
-						<BreadcrumbItem className="min-w-0">
+						<BreadcrumbItem className="min-w-0 flex-1 sm:flex-initial">
 							<BreadcrumbPage className="truncate" title={game.ja}>
 								{game.name}
 							</BreadcrumbPage>
-							{meta && (
-								<span className="text-muted-foreground shrink-0">· {meta}</span>
-							)}
 						</BreadcrumbItem>
+						{meta && (
+							<li className="basis-full sm:ml-1.5 sm:shrink-0 sm:basis-auto">
+								{meta}
+							</li>
+						)}
 					</BreadcrumbList>
 				</Breadcrumb>
 				{/*
