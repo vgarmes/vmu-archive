@@ -1,0 +1,14 @@
+{
+	"title": "OK",
+	"gameId": "super-puzzle-fighter-ii-x-for-matching-service",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000ffffffffffff0000000000000000fffe000000018c920000000104920000000124b20000000124b20000000124320000000124320000000124b200000001249e000000010492000000018c9200000000fffe0000000000000000ffffffffffff000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": ["memory-card", "unused"],
+	"hash": "0019fadc9b0465eac6ac1684599e6bda0f28793f",
+	"added": "2026-11-22"
+}

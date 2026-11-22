@@ -1,0 +1,14 @@
+{
+	"title": "Title screen",
+	"gameId": "super-puzzle-fighter-ii-x-for-matching-service",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"0000000000000000001ff0381e79eff81fec3f7feedbefd63f7ff891dfba7fe7d0b7efbb7f8314b7ef3d7f1a1d01e0737b3a981e81ee7bb3b1f609dc7ca70f0f49b83f0d587389783e3261c188f81e7fddacc9700c71f52c896007c7d56989a0771e552349b0746dc549c8d0784a552cc0587a2b55ed83a87c6a7ffa1fcc3e6def0eef743f6fef0fef7e1f3fcf0fef7e0000000000007ffffffffffe7ffffffffffe7ffffffffffe2b59f57d2ef41e2e9d64fbcc2c266899c934000000000000"
+	],
+	"tags": ["logo"],
+	"hash": "d041e058345da4e90b89ea8cc5f8e7d46897d505",
+	"added": "2026-11-22"
+}

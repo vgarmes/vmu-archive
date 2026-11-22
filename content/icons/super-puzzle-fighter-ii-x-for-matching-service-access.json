@@ -1,0 +1,14 @@
+{
+	"title": "Access",
+	"gameId": "super-puzzle-fighter-ii-x-for-matching-service",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff000000000000ffffffffffff0000000000000fbeffffbe0018e38c18e300104104104100124924f24900124924f3cffe124f3c39e7aa124f3c2cf3aa104924fe79fe104924f2490012410410410012638c18e3001ffeffffbe00000000000000ffffffffffff000000000000ffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": ["memory-card"],
+	"hash": "bcb91ae66444396be0dec69edc36409d49d16f9a",
+	"added": "2026-11-22"
+}
