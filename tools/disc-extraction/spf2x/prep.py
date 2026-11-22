@@ -17,8 +17,8 @@ BASE = dict(game='Super Puzzle Fighter II X for Matching Service', publisher='Ca
 SCREENS = {
     'title': dict(title='Title screen', tags=['logo']),
     'access': dict(title='Access', tags=['memory-card']),
-    'ok': dict(title='OK', tags=['memory-card', 'unused']),
-    'error': dict(title='Error', tags=['memory-card', 'unused']),
+    'ok': dict(title='OK', tags=['memory-card'], unused=True),
+    'error': dict(title='Error', tags=['memory-card'], unused=True),
 }
 
 

@@ -38,7 +38,7 @@ text along the bottom too small to read. Nothing animates.
 
 **OK! and ERROR! are never shown.** They follow ACCESS in the same block, but
 nothing loads them, by address or by an offset from ACCESS, as in Vampire
-Chronicle. They're kept, tagged `unused`.
+Chronicle. They're kept, marked unused.
 
 **The buffer isn't empty on the disc.** Its 1,536 bytes hold a smiling face
 between brackets, drawn in single-dot lines, as Vampire Chronicle's does. Every
