@@ -11,6 +11,7 @@ type NavLink = { href: string; label: string; external?: boolean }
 
 const LINKS: NavLink[] = [
 	{ href: '/save-icons', label: 'Save icons' },
+	{ href: '/clock', label: 'Clock' },
 	{ href: '/about', label: 'About' },
 	{ href: '/changelog', label: 'Changelog' },
 	{
