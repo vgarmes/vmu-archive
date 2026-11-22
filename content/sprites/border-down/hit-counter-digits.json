@@ -1,0 +1,30 @@
+{
+	"title": "Hit counter digits",
+	"gameId": "border-down",
+	"region": "ntsc-j",
+	"width": 10,
+	"height": 120,
+	"bpp": 1,
+	"frames": [
+		"3e18c63306c1b06c1b06c198c630f83c0300c0300c0300c0300c0300c0fc3e18cc1806030181c0c060306c1bfe3e18cc1806030780300601b06630f80301c0f06c1b0cc6330cffc0c0303f7f980601807e1cc6180601b06630f83e18cc0300fe38cc1b06c1b06630f8ffb06c300c060180c03018060180601e0cc61986330fc61b03c0f03618fc3e18cc1b06c1b06638fe01b06630f8"
+	],
+	"glyphs": {
+		"height": 12,
+		"width": 10
+	},
+	"source": {
+		"file": "/1ST_READ.BIN",
+		"offset": 1270996
+	},
+	"drawnAt": [
+		{
+			"screen": "border-down-hit-counter",
+			"x": 37,
+			"y": 10,
+			"glyph": 0
+		}
+	],
+	"tags": ["font", "digits"],
+	"hash": "8e27c6f8bc292f168c3efc05e383b1c4f7708660",
+	"added": "2026-11-22"
+}

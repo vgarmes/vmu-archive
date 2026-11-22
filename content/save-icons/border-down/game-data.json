@@ -1,0 +1,40 @@
+{
+	"kind": "save",
+	"title": "Game data",
+	"gameId": "border-down",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ff0000ff",
+		"#ff0000ff",
+		"#ff1111ff",
+		"#ff2222ff",
+		"#ff3333ff",
+		"#ff4444ff",
+		"#ff5555ff",
+		"#ff6666ff",
+		"#ff7777ff",
+		"#ff9999ff",
+		"#ffaaaaff",
+		"#ffbbbbff",
+		"#ffccccff",
+		"#ffddddff",
+		"#ffeeeeff",
+		"#ffffffff"
+	],
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffea7543468bffffffffffffffffffffc6100000000038efffffffffffffffe70000000001100029fffffffffffffc300000027beffea6106effffffffffb10000007effffffffd505effffffffd2000001bffffffffffff605ffffffff5344443cfffffffffffffe308fffffffffffffffffffffffffffffa01dfffa41000000cffffffffffffffff306ffc000122222dffffffffffffffff700df903efffffffffffffffffffffffa009fb007adfffffebbbbbcfffffffffb005ff70000048efc00000029fffffffc001fffeb974005fc039986109ffffffc333efffffffd00dc05ffffb01efffffffffff888887400e602888cf50a988888888a9000000008f0000009f7095000000007f999999acff803999df50bf00999999afd000000000c05ffffb02ef00fffffffff300000000c02777500aff00777777aff800000000c0000004bfff000000007ffe10000000fdddddefffff00aaaaaaffff800000004fffffffffff00f800dfffffe30000000affffffffff00f208fffffffd10000001cfffffffef00005fffffffffb100000006abba85200005effffffffffc3000000000000000006effffffffffffe60000000000000029ffffffffffffffffc6100000000028efffffffffffffffffffe97533458bfffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ｹﾞｰﾑﾃﾞｰﾀ",
+	"description": "ＢＯＲＤＥＲ ＤＯＷＮ ＤＣ",
+	"source": {
+		"kind": "disc",
+		"file": "/1ST_READ.BIN"
+	},
+	"tags": [],
+	"hash": "9d7daacbcf111f0809f906012ee104ff0048f44f",
+	"added": "2026-11-22"
+}
