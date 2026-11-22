@@ -1,0 +1,19 @@
+{
+	"title": "Traffic sign quiz: sign 11",
+	"gameId": "tokyo-bus-guide",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ff000007ffe0001ffff8003ffffc007ffffe00ff81ff01fe047f83fc0e1fc3fe0e0fc7ff1f07e7efbf87e7c7bf83efc36ec3ff819701ff80f781ff807b81ff813dc1ff839dc1ff87cdc1ffcfe3c3f7cba3c3e7e387b7e7e38fbfe3f3877fc3f8023fc1fe007f80ff81ff007ffffe003ffffc001ffff80007ffe00000ff000"
+	],
+	"source": {
+		"file": "/SYSTEM/PDAQUIZ.BIN",
+		"entry": 11,
+		"offset": 15318
+	},
+	"tags": ["minigame"],
+	"hash": "4cb5c16ceb560efdb37936897d1ac9cd967e7f81",
+	"added": "2026-11-22"
+}

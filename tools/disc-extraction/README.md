@@ -80,13 +80,15 @@ Every game so far did it differently. What has turned up:
   the base away).
 - In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
   `TYPE_E.EXE` (a PE file; map addresses through its section table).
-- In a dedicated file: Berserk's `LCDIMG.BIN`.
+- In a dedicated file: Berserk's `LCDIMG.BIN`, Tokyo Bus Guide's
+  `SYSTEM/*.LCD`.
 - In a VMU program the game carries for the VMU to run, with its own code:
   Shenmue Passport's Goodies viewer (`SYEN.BIN`), Power Stone Mini, a whole
   VMS image inside Power Stone's `1ST_READ.BIN`, and Jet Set Radio's graffiti
   viewer, the first member of `JETRADIO/SYSOPTION.AFS`, and Marvel vs.
   Capcom 2's VS.COM, `/VS4.BIN`, which the game writes to the memory card,
-  and Kikaioh Mini, `/GAME/KIKAIOH.BIN` (Power Stone Mini's engine). Find one by its VMS header
+  and Kikaioh Mini, `/GAME/KIKAIOH.BIN` (Power Stone Mini's engine), and
+  Tokyo Bus Guide's traffic sign quiz, `/SYSTEM/PDAQUIZ.BIN`. Find one by its VMS header
   (a 16-byte description at `+0x200`); read its code with `lc86k.py`.
 - In a system ROM, not a disc: the VMU's own BIOS (fonts and clock sprites,
   from which it builds every screen) and the Dreamcast's `dc_boot.bin` (its
@@ -111,6 +113,7 @@ colour textures; the real art was found by following the code that loads it.
 | 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                                             |
 | 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's                                           |
 | 1 byte per dot, mirrored | Berserk                                                                                                    |
+| 1 byte per dot, as shown | Tokyo Bus Guide: `0x0F` lit, 0 not, after a frame count                                                    |
 | 1 byte per dot, a sheet  | Sonic Shuffle's hand: one 48x32 sheet of 8 (lit) or 0, cut by a rectangle table                            |
 | Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                                            |
 | Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                                              |
@@ -183,6 +186,7 @@ The code also says what the game never shows: screens nothing calls are marked
 | Metropolis Street Racer          | EU Rev B (2000, Sega), Redump               | [`msr/`](msr/)                     | [metropolis-street-racer](../../content/games/metropolis-street-racer.md)                                                 |
 | Sonic Shuffle                    | JP (2000, Sega), Redump                     | [`sonic-shuffle/`](sonic-shuffle/) | [sonic-shuffle](../../content/games/sonic-shuffle.md)                                                                     |
 | Super Puzzle Fighter II X        | JP v1.001 (2001, Capcom), Redump            | [`spf2x/`](spf2x/)                 | [super-puzzle-fighter-ii-x-for-matching-service](../../content/games/super-puzzle-fighter-ii-x-for-matching-service.md)   |
+| Tokyo Bus Guide                  | JP Rev A V2.000 (1999, Fortyfive), Redump   | [`tokyo-bus/`](tokyo-bus/)         | [tokyo-bus-guide](../../content/games/tokyo-bus-guide.md)                                                                 |
 | Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                     | [`soulcalibur/`](soulcalibur/)     | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
 | Choukou Senki Kikaioh (partly)   | JP V1.003 (1999, Capcom), Redump            | [`kikaioh/`](kikaioh/)             | [tech-romancer](../../content/games/tech-romancer.md)                                                                     |
 | Capcom vs. SNK                   | JP Rev A (2000, Capcom), Redump             | [`cvs/`](cvs/)                     | [capcom-vs-snk-millennium-fight-2000](../../content/games/capcom-vs-snk-millennium-fight-2000.md)                         |

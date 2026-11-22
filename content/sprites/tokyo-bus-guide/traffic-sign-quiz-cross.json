@@ -1,0 +1,17 @@
+{
+	"title": "Traffic sign quiz: cross",
+	"gameId": "tokyo-bus-guide",
+	"region": "ntsc-j",
+	"width": 15,
+	"height": 15,
+	"bpp": 1,
+	"frames": ["4005c01dc071c1c1c701dc01f001c007c01dc071c1c1c701dc01d00100"],
+	"source": {
+		"file": "/SYSTEM/PDAQUIZ.BIN",
+		"entry": 66,
+		"offset": 13880
+	},
+	"tags": ["minigame"],
+	"hash": "60d73f5a7a2075ee57ad5e85f0da94430a2c2c8b",
+	"added": "2026-11-22"
+}

@@ -1,0 +1,17 @@
+{
+	"title": "Traffic sign quiz: left arrow",
+	"gameId": "tokyo-bus-guide",
+	"region": "ntsc-j",
+	"width": 3,
+	"height": 5,
+	"bpp": 1,
+	"frames": ["2fb2"],
+	"source": {
+		"file": "/SYSTEM/PDAQUIZ.BIN",
+		"entry": 65,
+		"offset": 13845
+	},
+	"tags": ["minigame"],
+	"hash": "c45b1136ae6839053aa36ebb074e8e9a5943f5f1",
+	"added": "2026-11-22"
+}

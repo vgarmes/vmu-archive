@@ -1,0 +1,19 @@
+{
+	"title": "Traffic sign quiz: sign 00",
+	"gameId": "tokyo-bus-guide",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ff000007ffe0001ffff8003ffffc007ffffe00ff81ff01fe007f83fc001fc3fe000fc7ff0007e7ef8007e7c7c003efc3e003ff81f001ff80f801ff807c01ff803e01ff801f01ff800f81ffc007c3f7c003e3e7e001f7e7e000ffe3f0007fc3f8003fc1fe007f80ff81ff007ffffe003ffffc001ffff80007ffe00000ff000"
+	],
+	"source": {
+		"file": "/SYSTEM/PDAQUIZ.BIN",
+		"entry": 0,
+		"offset": 13910
+	},
+	"tags": ["minigame"],
+	"hash": "54bc96b047dc23b4017ad2e189dbcc52f2bd49f5",
+	"added": "2026-11-22"
+}

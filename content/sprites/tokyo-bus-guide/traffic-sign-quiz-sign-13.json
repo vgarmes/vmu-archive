@@ -1,0 +1,19 @@
+{
+	"title": "Traffic sign quiz: sign 13",
+	"gameId": "tokyo-bus-guide",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000ff000007ffe0001ffff8003ffffc007ffffe00ff00ff01feff7f83f9ff9fc3f07e0fc7e01807e7e30007e7c78003efccc003ff8cc601ff80cf01ff819b41ff819b7dff80c655ff8cdb55ffccdb55f7c7af03e7e30607e7e01807e3f07e0fc3f9ff9fc1feff7f80ff00ff007ffffe003ffffc001ffff80007ffe00000ff000"
+	],
+	"source": {
+		"file": "/SYSTEM/PDAQUIZ.BIN",
+		"entry": 13,
+		"offset": 15574
+	},
+	"tags": ["minigame"],
+	"hash": "3bf712c4a3d65f8647ee7d2f9e7614b2186fc7ae",
+	"added": "2026-11-22"
+}

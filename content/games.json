@@ -998,7 +998,10 @@
 		"name": "TNN Motorsports Hardcore Heat"
 	},
 	"tokyo-bus-guide": {
-		"name": "Tokyo Bus Guide"
+		"name": "Tokyo Bus Guide",
+		"ja": "Tokyo Bus Annai",
+		"publisher": "Fortyfive",
+		"year": 1999
 	},
 	"tokyo-xtreme-racer": {
 		"name": "Tokyo Xtreme Racer"

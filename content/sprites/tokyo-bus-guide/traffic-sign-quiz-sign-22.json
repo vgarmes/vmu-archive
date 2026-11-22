@@ -1,0 +1,19 @@
+{
+	"title": "Traffic sign quiz: sign 22",
+	"gameId": "tokyo-bus-guide",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"00000000000000003ffffffc7ffffffeffffffffffffffffbe7dfdfdbe7dfdfdbc3dfdfdbc3dfdfdf81fffffb00dfdfdb24dfdfdbe7dfdfdbe7dfdfdfe7fffffbe7dfdfdbe7dfdfdbffdfdfdbffdfdfdfffffffffc01fffff001ffffec01ffffc001ffffc001ffffe7e7ffffffffffff7ffffffe3ffffffc0000000000000000"
+	],
+	"source": {
+		"file": "/SYSTEM/PDAQUIZ.BIN",
+		"entry": 22,
+		"offset": 16726
+	},
+	"tags": ["minigame"],
+	"hash": "4d4ffd9e2ec43792c7e9e5dbac48825a6a3e0746",
+	"added": "2026-11-22"
+}

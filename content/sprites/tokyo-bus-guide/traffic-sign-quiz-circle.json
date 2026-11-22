@@ -1,0 +1,17 @@
+{
+	"title": "Traffic sign quiz: circle",
+	"gameId": "tokyo-bus-guide",
+	"region": "ntsc-j",
+	"width": 15,
+	"height": 15,
+	"bpp": 1,
+	"frames": ["07c03fe0f1e380e600dc01f001e003c007c01d803380e3c783fe01f000"],
+	"source": {
+		"file": "/SYSTEM/PDAQUIZ.BIN",
+		"entry": 66,
+		"offset": 13850
+	},
+	"tags": ["minigame"],
+	"hash": "7ad2f653f08b6dfeb2ae848b269e33480ae1a30f",
+	"added": "2026-11-22"
+}

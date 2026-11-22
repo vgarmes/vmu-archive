@@ -1,0 +1,40 @@
+{
+	"kind": "save",
+	"title": "Traffic sign quiz",
+	"gameId": "tokyo-bus-guide",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#000000ff",
+		"#110000ff",
+		"#111100ff",
+		"#111111ff",
+		"#221100ff",
+		"#332200ff",
+		"#443300ff",
+		"#553300ff",
+		"#664400ff",
+		"#775500ff",
+		"#996600ff",
+		"#cc9900ff",
+		"#eeaa00ff",
+		"#ffbb00ff",
+		"#ffcc00ff",
+		"#ffdd00ff"
+	],
+	"frames": [
+		"0000000000000009a000000000000000000000000000009bb90000000000000000000000000009b88ba00000000000000000000000009aaeeaaa000000000000000000000009aaeeeeaaa0000000000000000000009aaeebdeeaaa00000000000000000009aaeeb0aeeeaa9000000000000000009aaeed404deeeaa90000000000000009aaeee90008eeeeaa900000000000009aaeeeb00000beeeeaa9000000000009aaeeeeb9706abeeeeeaaa0000000009aaeeeedefa08fedeeeeeaaa00000009aaeeeeeeee50aeeeeeeeeeaaa00000aaaeeeeeeeea00ceeeeeeeeeeaaa0009baeeeeeeeec20aeeeeeeeeeeeeaa919b8eeeeeeeeec009deeeeeeeeeeee8b9ab8eeeeeeeeee90008beeeeeeeeee8b909aaeeeeeeeeeea5000beeeeeeeeaa9100aaaeeeeeeeeeeeb505eeeeeeeaaa00000aaaeeeeeeeeeee806eeeeeeaaa0000000aaaeeeeeeeee900beeeeeaaa0000000009aaeeeeeeea00aeeeeeaa9000000000009aaeeeeeb00aeeeeeaa900000000000009aaeeee906eeeeeaa90000000000000009aaeee80aeeeeaa9000000000000000009aaeecbceeeaa90000000000000000000aaaeeeeeeaaa000000000000000000000aaaeeeeaaa00000000000000000000000aaaeeaaa00000000000000000000000009b77b90000000000000000000000000009bb90000000000000000000000000000199100000000000003"
+	],
+	"animationSpeed": 20,
+	"vmuName": "QUIZ GAME",
+	"description": "東京バス案内  交通標識クイズ",
+	"source": {
+		"kind": "disc",
+		"file": "/SYSTEM/PDAQUIZ.BIN"
+	},
+	"tags": [],
+	"hash": "62356333d7b3027e5a7e5a7c97d66145b658ef10",
+	"added": "2026-11-22"
+}
