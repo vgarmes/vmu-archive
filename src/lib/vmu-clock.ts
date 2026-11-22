@@ -160,6 +160,39 @@ export function makeClockDrawer(art: ClockArt) {
 	}
 }
 
+/** The strip's size: the bird's path, then the screen's time row, side by side. */
+export const STRIP_WIDTH = WIDTH * 2
+/** The bird climbs 6 dots over its path, above the 8-dot row it starts on. */
+const BIRD_CLIMB = 6
+export const STRIP_HEIGHT = CELL + BIRD_CLIMB
+
+/**
+ * The site footer's clock: the bird's six positions as the screen's lower
+ * half holds them, at the left, and the time row exactly as the screen draws
+ * it at the right (its blank first column the gap between them). The rows
+ * are lined up so the bird's lowest position sits level with the digits: it
+ * takes off from the time. Steps as `makeClockDrawer`'s.
+ */
+export function makeClockStripDrawer(art: ClockArt) {
+	const draw = makeClockDrawer(art)
+	// The bird's rows on the screen: its highest position's top to its lowest's bottom.
+	const ys = SEQUENCES.bird.map(o => xramXY(o)[1])
+	const top = Math.min(...ys)
+	const bottom = Math.max(...ys) + CELL
+
+	return function drawStrip({ now, steps }: { now: Date; steps: number }) {
+		const screen = draw({ view: 'time', now, animal: 'bird', steps })
+		const strip = new Uint8Array(STRIP_WIDTH * STRIP_HEIGHT)
+		const copy = (fromY: number, toY: number, toX: number) => {
+			const row = screen.subarray(fromY * WIDTH, fromY * WIDTH + WIDTH)
+			strip.set(row, toY * STRIP_WIDTH + toX)
+		}
+		for (let y = top; y < bottom; y++) copy(y, y - top, 0)
+		for (let y = 0; y < CELL; y++) copy(y, STRIP_HEIGHT - CELL + y, WIDTH)
+		return strip
+	}
+}
+
 /** What the screen says, for a screen reader. */
 export function describeClock({ view, now, animal }: ClockScreen) {
 	if (view === 'date')

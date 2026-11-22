@@ -1,7 +1,8 @@
 'use client'
 
-import { useEffect, useMemo, useState } from 'react'
+import { useMemo, useState } from 'react'
 import { ColorsPicker, lcdColors, useColors } from '@/components/ColorPresets'
+import { useClock, useReducedMotion } from '@/components/useClock'
 import {
 	Select,
 	SelectContent,
@@ -32,54 +33,12 @@ const ANIMAL_ITEMS = ANIMALS.map(a => ({
 	label: a[0].toUpperCase() + a.slice(1)
 }))
 
-/** Whether the visitor asks for reduced motion. */
-function useReducedMotion() {
-	const [reduced, setReduced] = useState(false)
-	useEffect(() => {
-		const media = matchMedia('(prefers-reduced-motion: reduce)')
-		const update = () => setReduced(media.matches)
-		update()
-		media.addEventListener('change', update)
-		return () => media.removeEventListener('change', update)
-	}, [])
-	return reduced
-}
-
-/**
- * The visitor's clock, ticking on the second like the VMU's. `steps` counts
- * the seconds since the screen was last drawn, which is what moves the
- * animal; it starts over whenever the view or the animal changes, as the BIOS
- * redraws the screen then. Nothing is shown until mounted, so the server's
- * render (which has no visitor time) matches the first one in the browser.
- */
-function useClock(view: View, animal: Animal) {
-	const [now, setNow] = useState<Date | null>(null)
-	const [steps, setSteps] = useState(0)
-
-	useEffect(() => setSteps(0), [view, animal])
-
-	useEffect(() => {
-		let timer: ReturnType<typeof setTimeout>
-		const tick = (first: boolean) => {
-			setNow(new Date())
-			if (!first) setSteps(s => s + 1)
-			// Wake just after the next second starts, not every 1000 ms from
-			// whenever the page loaded.
-			timer = setTimeout(() => tick(false), 1000 - (Date.now() % 1000) + 5)
-		}
-		tick(true)
-		return () => clearTimeout(timer)
-	}, [])
-
-	return { now, steps }
-}
-
 export default function VmuClock({ art }: { art: ClockArt }) {
 	const [view, setView] = useState<View>('time')
 	const [animal, setAnimal] = useState<Animal>('dog')
 	const colors = useColors()
 	const reduced = useReducedMotion()
-	const { now, steps } = useClock(view, animal)
+	const { now, steps } = useClock(`${view} ${animal}`)
 	const draw = useMemo(() => makeClockDrawer(art), [art])
 
 	// With reduced motion the animal holds still, its whole trail drawn.

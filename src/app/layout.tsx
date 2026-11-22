@@ -4,6 +4,8 @@ import Link from 'next/link'
 import { Analytics } from '@vercel/analytics/next'
 import Swirl from '@/components/Swirl'
 import SiteNav from '@/components/SiteNav'
+import FooterClock from '@/components/FooterClock'
+import { getClockArt } from '@/lib/vmu-clock-art'
 import './globals.css'
 
 const geistMono = Geist_Mono({
@@ -37,8 +39,8 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 			<head>
 				<script dangerouslySetInnerHTML={{ __html: themeScript }} />
 			</head>
-			<body className="min-h-screen font-mono antialiased">
-				<header className="relative mx-auto flex max-w-6xl items-center justify-between gap-4 px-4 py-6">
+			<body className="flex min-h-screen flex-col font-mono antialiased">
+				<header className="relative mx-auto flex w-full max-w-6xl items-center justify-between gap-4 px-4 py-6">
 					<Link
 						href="/"
 						className="flex shrink-0 items-center gap-3 text-sm leading-none font-bold tracking-[0.2em] whitespace-nowrap uppercase"
@@ -48,7 +50,14 @@ export default function RootLayout({ children }: LayoutProps<'/'>) {
 					</Link>
 					<SiteNav />
 				</header>
-				<main className="mx-auto max-w-6xl px-4 pb-16">{children}</main>
+				<main className="mx-auto w-full max-w-6xl flex-1 px-4 pb-16">
+					{children}
+				</main>
+				<footer className="border-t">
+					<div className="mx-auto flex max-w-6xl items-center justify-end px-4 py-2">
+						<FooterClock art={getClockArt()} />
+					</div>
+				</footer>
 				<Analytics />
 			</body>
 		</html>
