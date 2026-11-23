@@ -532,6 +532,12 @@
 	"namco-museum": {
 		"name": "Namco Museum"
 	},
+	"napple-tale-arsia-in-daydream": {
+		"name": "Napple Tale: Arsia in Daydream",
+		"publisher": "Sega",
+		"year": 2000,
+		"aliases": ["Napple Tale"]
+	},
 	"nba-hoopz": {
 		"name": "NBA Hoopz"
 	},

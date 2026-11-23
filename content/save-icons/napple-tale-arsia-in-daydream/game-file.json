@@ -1,0 +1,40 @@
+{
+	"kind": "save",
+	"title": "Game file",
+	"gameId": "napple-tale-arsia-in-daydream",
+	"region": "ntsc-j",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ffffffff",
+		"#882222ff",
+		"#554433ff",
+		"#774422ff",
+		"#cc6611ff",
+		"#ff8811ff",
+		"#995522ff",
+		"#887711ff",
+		"#99aa22ff",
+		"#335566ff",
+		"#0088bbff",
+		"#0099eeff",
+		"#00aaffff",
+		"#116688ff",
+		"#cc2233ff",
+		"#000000ff"
+	],
+	"frames": [
+		"cccccccccccccccccccccccccccccccccccccccccccccccccccbd99dabcccccccccccccccccccccccbd9788879bccccccccccccccccccccbd3778888879bcccccccccccccccccccd78888888887dccccccccccccccccccc9888888888882bcccccccccccbbbbccc2888888888887acccccccccca21119bc98888888888889ccccccccc91eeeee1ab3888888888889bcccccccd1eee1111192377777888882bcccccca1eee16444211344444388883bcccccc2eee165555531355554288882accccca1eee145555553245556238882bcccccd1eee165555554245553e12882bccccc9eeeee35555555645542ee1782bccccc2eeeee25554645555541eee272cccccb2eeeee65556126555541eee139cccccc2eeeee15556ee1455541eee19dcccccc2eeeee35556eee255541eee3cccccccc9eeeee155561ee155541eeedccccccccdeeeee355541ee145541ee9ccccccccca1eeee155541ee165541e9ccccccccccc9eee1355541ee145552acccccccccccca1ee24555531e655556bccccccccccccb9ee1666662e1344442bccccccccccccca2ee11e11eee19bbbbccccccccccccccca1eeeeeeeee9ccccccccccccccccccccca1eeeeeee9ccccccccccccccccccccccca2eeeee2ccccccccccccccccccccccccca21ee1bccccccccccccccccccccccccccca22cccccccccccccccccccccccccccccccccccccccccccccccccc"
+	],
+	"animationSpeed": 1,
+	"vmuName": "ﾅｯﾌﾟﾙ ﾌｧｲﾙ1",
+	"description": "ナップル・テール",
+	"source": {
+		"kind": "disc",
+		"file": "/1ST_READ.BIN"
+	},
+	"tags": [],
+	"hash": "a750320be83da1086a01951511c1047e8ccfdae7",
+	"added": "2026-11-23"
+}

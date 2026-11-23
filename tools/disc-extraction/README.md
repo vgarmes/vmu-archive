@@ -76,7 +76,7 @@ Every game so far did it differently. What has turned up:
   Street Fighter III 3rd Strike, Super Puzzle Fighter II X, Vampire Chronicle,
   Border Down,
   Virtua Tennis 2, Space Channel 5 (in its copy of Sega's sample `vmslcd.c`,
-  a table of rectangles and bitmaps), Space Channel 5: Part 2.
+  a table of rectangles and bitmaps), Space Channel 5: Part 2, Napple Tale.
 - In the game's own program, loaded by a small `1ST_READ.BIN`: Metropolis
   Street Racer's `MSR.BIN` (it runs from `0x8C010000`; string pointers give
   the base away), and Rainbow Cotton's overlays `TITLE.BIN`, `GAME.BIN`,
@@ -120,7 +120,7 @@ colour textures; the real art was found by following the code that loads it.
 | 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                                                                      |
 | 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's                                                                    |
 | 1 byte per dot, mirrored | Berserk                                                                                                                             |
-| 1 byte per dot, as shown | Tokyo Bus Guide: `0x0F` lit, 0 not, after a frame count; Border Down: 8 lit, 0 not                                                  |
+| 1 byte per dot, as shown | Tokyo Bus Guide: `0x0F` lit, 0 not, after a frame count; Border Down: 8 lit, 0 not; Napple Tale: 255 lit, 0 not                     |
 | 1 byte per dot, a sheet  | Sonic Shuffle's hand: one 48x32 sheet of 8 (lit) or 0, cut by a rectangle table                                                     |
 | Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                                                                     |
 | Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                                                                       |
@@ -205,5 +205,6 @@ The code also says what the game never shows: screens nothing calls are marked
 | Rainbow Cotton                   | JP V1.009 (1999, Success), Redump           | [`rainbow-cotton/`](rainbow-cotton/)                 | [rainbow-cotton](../../content/games/rainbow-cotton.md)                                                                   |
 | Space Channel 5                  | JP V1.001 (1999, Sega), Redump              | [`space-channel-5/`](space-channel-5/)               | [space-channel-5](../../content/games/space-channel-5.md)                                                                 |
 | Space Channel 5: Part 2          | JP V2.000 (2002, Sega), Redump              | [`space-channel-5-part-2/`](space-channel-5-part-2/) | [space-channel-5-part-2](../../content/games/space-channel-5-part-2.md)                                                   |
+| Napple Tale                      | JP V1.006 (2000, Sega), Redump              | [`napple-tale/`](napple-tale/)                       | [napple-tale-arsia-in-daydream](../../content/games/napple-tale-arsia-in-daydream.md)                                     |
 | Record of Lodoss War             | JP Rev A, Redump                            | [`lodoss/`](lodoss/)                                 | none: it draws nothing on the VMU (see its README)                                                                        |
 | Visual Memory Unit, Dreamcast    | US v1.05, JP v1.004 VMU BIOS, `dc_boot.bin` | [`bios/`](bios/)                                     | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |
