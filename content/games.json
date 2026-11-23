@@ -640,7 +640,9 @@
 		"name": "Railroad Tycoon 2"
 	},
 	"rainbow-cotton": {
-		"name": "Rainbow Cotton"
+		"name": "Rainbow Cotton",
+		"publisher": "Success",
+		"year": 2000
 	},
 	"rainbow-six": {
 		"name": "Rainbow Six"

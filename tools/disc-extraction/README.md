@@ -78,7 +78,9 @@ Every game so far did it differently. What has turned up:
   Virtua Tennis 2.
 - In the game's own program, loaded by a small `1ST_READ.BIN`: Metropolis
   Street Racer's `MSR.BIN` (it runs from `0x8C010000`; string pointers give
-  the base away).
+  the base away), and Rainbow Cotton's overlays `TITLE.BIN`, `GAME.BIN`,
+  `BO01.BIN` and `LAST.BIN`, each with its own copy (all run from
+  `0x8C200000`).
 - In a Windows CE program's `.data`: Shinseiki Evangelion: Typing E-Keikaku's
   `TYPE_E.EXE` (a PE file; map addresses through its section table).
 - In a dedicated file: Berserk's `LCDIMG.BIN`, Tokyo Bus Guide's
@@ -110,7 +112,7 @@ colour textures; the real art was found by following the code that loads it.
 
 | Encoding                 | Example                                                                                                    |
 | ------------------------ | ---------------------------------------------------------------------------------------------------------- |
-| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Shenmue 1 and 2 (with a width and height byte)                             |
+| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Rainbow Cotton, Shenmue 1 and 2 (with a width and height byte)             |
 | 1 bit per dot, low first | Metropolis Street Racer: bit 0 of each byte is the leftmost dot                                            |
 | 1 bit per dot, a sheet   | Code: Veronica: one 128x128 sheet, cut by a rectangle table into every screen's parts                      |
 | 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Jet Set Radio, Typing E-Keikaku, Virtua Tennis 2: turned 180°, as the LCD takes it |
@@ -151,6 +153,8 @@ files and look for the screen in what comes out.
   tick estimated from a timer's setup. It scrolls down the screen, so it's a
   `"direction": "down"` scroll (see the main README). Jet Set Radio's radio:
   a null-terminated list of screens stepped every 6 ticks, assuming 60 Hz.
+  Rainbow Cotton: lists of a screen and its hold in ticks, ticked once a game
+  loop, assuming 60 Hz.
 - Rebuilt from drawing code: Jet Set Radio's graffiti viewer composes its
   screens from bitmaps, sprites and font strings, so they were redrawn from
   what its code places where. Its ticks come from the VMU's base timer at a
@@ -171,31 +175,32 @@ The code also says what the game never shows: screens nothing calls are marked
 
 ## Games
 
-| Game                             | Dump                                        | Folder                             | Notes                                                                                                                     |
-| -------------------------------- | ------------------------------------------- | ---------------------------------- | ------------------------------------------------------------------------------------------------------------------------- |
-| Sword of the Berserk: Guts' Rage | US v1.000 (2000, Eidos)                     | [`berserk/`](berserk/)             | [berserk-millennium-falcon-hen-wasurebana-no-sho](../../content/games/berserk-millennium-falcon-hen-wasurebana-no-sho.md) |
-| Bakuretsu Muteki Bangaioh        | JP v1.003 (1999, ESP)                       | [`bangaioh/`](bangaioh/)           | [bangai-o](../../content/games/bangai-o.md)                                                                               |
-| Moero! Justice Gakuen            | JP v1.004 (2000, Capcom)                    | [`justice/`](justice/)             | [project-justice](../../content/games/project-justice.md)                                                                 |
-| Power Stone, Power Stone 2       | JP v1.020 (1999), JP v2.000 (2000), Capcom  | [`power-stone/`](power-stone/)     | [power-stone](../../content/games/power-stone.md), [power-stone-2](../../content/games/power-stone-2.md)                  |
-| Shenmue                          | JP v1.007 disc 1 (1999, Sega)               | [`shenmue/`](shenmue/)             | [shenmue](../../content/games/shenmue.md)                                                                                 |
-| Shenmue II                       | JP v1.003 disc 1 (2001, Sega)               | [`shenmue2/`](shenmue2/)           | [shenmue-ii](../../content/games/shenmue-ii.md)                                                                           |
-| Sakura Taisen 3                  | JP v1.003 disc 1 (2001, Sega)               | [`sakura3/`](sakura3/)             | [sakura-taisen-3-paris-wa-moete-iru-ka](../../content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md)                     |
-| Street Fighter III 3rd Strike    | JP v1.003 (2000, Capcom)                    | [`sf3/`](sf3/)                     | [street-fighter-iii-3rd-strike](../../content/games/street-fighter-iii-3rd-strike.md)                                     |
-| Ikaruga                          | JP v1.002 (2002, ESP)                       | [`ikaruga/`](ikaruga/)             | [ikaruga](../../content/games/ikaruga.md)                                                                                 |
-| Crazy Taxi 2                     | US v1.004 (2001, Sega)                      | [`crazytaxi2/`](crazytaxi2/)       | [crazy-taxi-2](../../content/games/crazy-taxi-2.md)                                                                       |
-| Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                    | [`eva-typing/`](eva-typing/)       | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
-| Jet Set Radio                    | JP (2000, Sega), Redump                     | [`jsr/`](jsr/)                     | [jet-set-radio](../../content/games/jet-set-radio.md)                                                                     |
-| Marvel vs. Capcom 2              | JP (2000, Capcom), Redump                   | [`mvc2/`](mvc2/)                   | [marvel-vs-capcom-2](../../content/games/marvel-vs-capcom-2.md)                                                           |
-| Resident Evil Code: Veronica     | JP and EU disc 1 (2000, Capcom), Redump     | [`cvx/`](cvx/)                     | [resident-evil-code-veronica](../../content/games/resident-evil-code-veronica.md)                                         |
-| Metropolis Street Racer          | EU Rev B (2000, Sega), Redump               | [`msr/`](msr/)                     | [metropolis-street-racer](../../content/games/metropolis-street-racer.md)                                                 |
-| Sonic Shuffle                    | JP (2000, Sega), Redump                     | [`sonic-shuffle/`](sonic-shuffle/) | [sonic-shuffle](../../content/games/sonic-shuffle.md)                                                                     |
-| Super Puzzle Fighter II X        | JP v1.001 (2001, Capcom), Redump            | [`spf2x/`](spf2x/)                 | [super-puzzle-fighter-ii-x-for-matching-service](../../content/games/super-puzzle-fighter-ii-x-for-matching-service.md)   |
-| Tokyo Bus Guide                  | JP Rev A V2.000 (1999, Fortyfive), Redump   | [`tokyo-bus/`](tokyo-bus/)         | [tokyo-bus-guide](../../content/games/tokyo-bus-guide.md)                                                                 |
-| Border Down                      | JP v1.000 (2003, G.rev), Redump             | [`border-down/`](border-down/)     | [border-down](../../content/games/border-down.md)                                                                         |
-| Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                     | [`soulcalibur/`](soulcalibur/)     | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
-| Choukou Senki Kikaioh (partly)   | JP V1.003 (1999, Capcom), Redump            | [`kikaioh/`](kikaioh/)             | [tech-romancer](../../content/games/tech-romancer.md)                                                                     |
-| Capcom vs. SNK                   | JP Rev A (2000, Capcom), Redump             | [`cvs/`](cvs/)                     | [capcom-vs-snk-millennium-fight-2000](../../content/games/capcom-vs-snk-millennium-fight-2000.md)                         |
-| Virtua Tennis 2                  | EU (2001, Sega), Redump                     | [`vt2/`](vt2/)                     | [virtua-tennis-2](../../content/games/virtua-tennis-2.md)                                                                 |
-| Vampire Chronicle                | JP (2000, Capcom), Redump                   | [`vampire/`](vampire/)             | [vampire-chronicle-for-matching-service](../../content/games/vampire-chronicle-for-matching-service.md)                   |
-| Record of Lodoss War             | JP Rev A, Redump                            | [`lodoss/`](lodoss/)               | none: it draws nothing on the VMU (see its README)                                                                        |
-| Visual Memory Unit, Dreamcast    | US v1.05, JP v1.004 VMU BIOS, `dc_boot.bin` | [`bios/`](bios/)                   | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |
+| Game                             | Dump                                        | Folder                               | Notes                                                                                                                     |
+| -------------------------------- | ------------------------------------------- | ------------------------------------ | ------------------------------------------------------------------------------------------------------------------------- |
+| Sword of the Berserk: Guts' Rage | US v1.000 (2000, Eidos)                     | [`berserk/`](berserk/)               | [berserk-millennium-falcon-hen-wasurebana-no-sho](../../content/games/berserk-millennium-falcon-hen-wasurebana-no-sho.md) |
+| Bakuretsu Muteki Bangaioh        | JP v1.003 (1999, ESP)                       | [`bangaioh/`](bangaioh/)             | [bangai-o](../../content/games/bangai-o.md)                                                                               |
+| Moero! Justice Gakuen            | JP v1.004 (2000, Capcom)                    | [`justice/`](justice/)               | [project-justice](../../content/games/project-justice.md)                                                                 |
+| Power Stone, Power Stone 2       | JP v1.020 (1999), JP v2.000 (2000), Capcom  | [`power-stone/`](power-stone/)       | [power-stone](../../content/games/power-stone.md), [power-stone-2](../../content/games/power-stone-2.md)                  |
+| Shenmue                          | JP v1.007 disc 1 (1999, Sega)               | [`shenmue/`](shenmue/)               | [shenmue](../../content/games/shenmue.md)                                                                                 |
+| Shenmue II                       | JP v1.003 disc 1 (2001, Sega)               | [`shenmue2/`](shenmue2/)             | [shenmue-ii](../../content/games/shenmue-ii.md)                                                                           |
+| Sakura Taisen 3                  | JP v1.003 disc 1 (2001, Sega)               | [`sakura3/`](sakura3/)               | [sakura-taisen-3-paris-wa-moete-iru-ka](../../content/games/sakura-taisen-3-paris-wa-moete-iru-ka.md)                     |
+| Street Fighter III 3rd Strike    | JP v1.003 (2000, Capcom)                    | [`sf3/`](sf3/)                       | [street-fighter-iii-3rd-strike](../../content/games/street-fighter-iii-3rd-strike.md)                                     |
+| Ikaruga                          | JP v1.002 (2002, ESP)                       | [`ikaruga/`](ikaruga/)               | [ikaruga](../../content/games/ikaruga.md)                                                                                 |
+| Crazy Taxi 2                     | US v1.004 (2001, Sega)                      | [`crazytaxi2/`](crazytaxi2/)         | [crazy-taxi-2](../../content/games/crazy-taxi-2.md)                                                                       |
+| Typing E-Keikaku                 | JP v1.001 (2001, Gainax)                    | [`eva-typing/`](eva-typing/)         | [shinseiki-evangelion-typing-e-keikaku](../../content/games/shinseiki-evangelion-typing-e-keikaku.md)                     |
+| Jet Set Radio                    | JP (2000, Sega), Redump                     | [`jsr/`](jsr/)                       | [jet-set-radio](../../content/games/jet-set-radio.md)                                                                     |
+| Marvel vs. Capcom 2              | JP (2000, Capcom), Redump                   | [`mvc2/`](mvc2/)                     | [marvel-vs-capcom-2](../../content/games/marvel-vs-capcom-2.md)                                                           |
+| Resident Evil Code: Veronica     | JP and EU disc 1 (2000, Capcom), Redump     | [`cvx/`](cvx/)                       | [resident-evil-code-veronica](../../content/games/resident-evil-code-veronica.md)                                         |
+| Metropolis Street Racer          | EU Rev B (2000, Sega), Redump               | [`msr/`](msr/)                       | [metropolis-street-racer](../../content/games/metropolis-street-racer.md)                                                 |
+| Sonic Shuffle                    | JP (2000, Sega), Redump                     | [`sonic-shuffle/`](sonic-shuffle/)   | [sonic-shuffle](../../content/games/sonic-shuffle.md)                                                                     |
+| Super Puzzle Fighter II X        | JP v1.001 (2001, Capcom), Redump            | [`spf2x/`](spf2x/)                   | [super-puzzle-fighter-ii-x-for-matching-service](../../content/games/super-puzzle-fighter-ii-x-for-matching-service.md)   |
+| Tokyo Bus Guide                  | JP Rev A V2.000 (1999, Fortyfive), Redump   | [`tokyo-bus/`](tokyo-bus/)           | [tokyo-bus-guide](../../content/games/tokyo-bus-guide.md)                                                                 |
+| Border Down                      | JP v1.000 (2003, G.rev), Redump             | [`border-down/`](border-down/)       | [border-down](../../content/games/border-down.md)                                                                         |
+| Soul Calibur (partly imported)   | US v1.000 (1999, Namco)                     | [`soulcalibur/`](soulcalibur/)       | [soul-calibur](../../content/games/soul-calibur.md)                                                                       |
+| Choukou Senki Kikaioh (partly)   | JP V1.003 (1999, Capcom), Redump            | [`kikaioh/`](kikaioh/)               | [tech-romancer](../../content/games/tech-romancer.md)                                                                     |
+| Capcom vs. SNK                   | JP Rev A (2000, Capcom), Redump             | [`cvs/`](cvs/)                       | [capcom-vs-snk-millennium-fight-2000](../../content/games/capcom-vs-snk-millennium-fight-2000.md)                         |
+| Virtua Tennis 2                  | EU (2001, Sega), Redump                     | [`vt2/`](vt2/)                       | [virtua-tennis-2](../../content/games/virtua-tennis-2.md)                                                                 |
+| Vampire Chronicle                | JP (2000, Capcom), Redump                   | [`vampire/`](vampire/)               | [vampire-chronicle-for-matching-service](../../content/games/vampire-chronicle-for-matching-service.md)                   |
+| Rainbow Cotton                   | JP V1.009 (1999, Success), Redump           | [`rainbow-cotton/`](rainbow-cotton/) | [rainbow-cotton](../../content/games/rainbow-cotton.md)                                                                   |
+| Record of Lodoss War             | JP Rev A, Redump                            | [`lodoss/`](lodoss/)                 | none: it draws nothing on the VMU (see its README)                                                                        |
+| Visual Memory Unit, Dreamcast    | US v1.05, JP v1.004 VMU BIOS, `dc_boot.bin` | [`bios/`](bios/)                     | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

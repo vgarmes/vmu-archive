@@ -1,0 +1,14 @@
+{
+	"title": "Seeing stars",
+	"gameId": "rainbow-cotton",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"004001e0000000400f37000003f870f8800001f18047801000e603f87e1001b801f004fe01100ce0087c00201db4043800707f7c026c00fffffe024401ffffff870003ffffffff0003ffffffff8007fffdffff8007ffffffffc00fffdbffffc00fffdbffffe01bf9803fffe017fc6073ffb007fdb380ff9007fcc070ffc00ffbe1c1ffc00dfd0079ffc009fa1029ffe009f80053ffe001f83e03ff60013c1e07ff2000021e0fff0000018e3f7c0000006fc6700000001e044000000000000000"
+	],
+	"tags": ["character", "reaction"],
+	"hash": "05e56c7b6d47e1ea6fcf284b52d512b04b5b0a59",
+	"added": "2026-11-23"
+}
