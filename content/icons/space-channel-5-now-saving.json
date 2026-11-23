@@ -1,0 +1,13 @@
+{
+	"title": "Now saving",
+	"gameId": "space-channel-5",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffc003ffffffff0000fffffffc1ff83ffffff07ffe0fffffe0f80707ffffe1f80787ffffc1f0ff83ff8381f1ff81c10183f01fc1800003e00fc0000003ff0fc0000183ff0fc1808381e31f81c1ffc1c71f83ffffe1c01f87ffffe0c03f07fffff07ffe0ffffffc1ff83fffffff0000ffffffffc003ffffffffffffffffffffffffffff9dbb9954e7ffaaab75555fffaaabb5555c93aaabd1555493aa93d55557ffadd735b547ffffffffffffff"
+	],
+	"tags": ["status"],
+	"hash": "690f2186276da0e679e564ddb1ddae00975d9a97",
+	"added": "2026-11-23"
+}

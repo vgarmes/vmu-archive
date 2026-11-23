@@ -854,7 +854,9 @@
 		"name": "South Park Rally"
 	},
 	"space-channel-5": {
-		"name": "Space Channel 5"
+		"name": "Space Channel 5",
+		"publisher": "Sega",
+		"year": 1999
 	},
 	"space-channel-5-part-2": {
 		"name": "Space Channel 5: Part 2"

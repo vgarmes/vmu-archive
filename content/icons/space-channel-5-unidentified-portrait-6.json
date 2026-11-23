@@ -1,0 +1,13 @@
+{
+	"title": "Unidentified portrait",
+	"gameId": "space-channel-5",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"1f81e00781f83fc1300c83fc79c11008839e70e08811070e20e04812070400602814060000e01818070001c00810038003801c3801c00f00ffff00f01c03ffffc038380ffffff01c701ffffff80e603f55d57c06607ffffffe0670ffffffff0e3f7fc001fefc0f7e00003ef0017ffffffe8000ffffffff000067ffffe600001bfe7fd800003bfdbfdc0007f7fdbfefe00fe0ffff07f01c003dbc0038380019d8001c302018e8040c30301870cc0c38701c39ce1c1fe00e5f87f80fc0066f03f0"
+	],
+	"tags": ["portrait", "unidentified"],
+	"hash": "f075e283103532e201dc39b91079b48d69ea98c8",
+	"added": "2026-11-23"
+}
