@@ -154,7 +154,9 @@
 		"name": "Conflict Zone"
 	},
 	"cool-cool-toon": {
-		"name": "Cool Cool Toon"
+		"name": "Cool Cool Toon",
+		"publisher": "SNK",
+		"year": 2000
 	},
 	"crazy-taxi": {
 		"name": "Crazy Taxi",
