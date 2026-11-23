@@ -859,7 +859,9 @@
 		"year": 1999
 	},
 	"space-channel-5-part-2": {
-		"name": "Space Channel 5: Part 2"
+		"name": "Space Channel 5: Part 2",
+		"publisher": "Sega",
+		"year": 2002
 	},
 	"spawn-in-the-demons-hand": {
 		"name": "Spawn: In the Demon's Hand"

@@ -1,0 +1,14 @@
+{
+	"title": "Now saving",
+	"gameId": "space-channel-5-part-2",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffc003ffffffff0000fffffffc1ff83ffffff07ffe0fffffe0f80307ffffe1f80387ffffc1f0ff83ff8383f1ffc1c10183e00fc1800003e007c0000003ff87c0000183e387c1808383c30fc1c1ffc1c70f83ffffe1c00f87ffffe0e01f07fffff07ffe0ffffffc1ff83fffffff0000ffffffffc003ffffffffffffffffffffffffffff9dbb9954e7ffaaab75555fffaaabb5555c93aaabd1555493aa93d55557ffadd735b547ffffffffffffff"
+	],
+	"tags": ["status"],
+	"hash": "d3bacf92b6a75df37d1c5b05db69b25844764007",
+	"added": "2026-11-23"
+}

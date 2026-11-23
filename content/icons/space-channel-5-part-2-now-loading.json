@@ -1,0 +1,14 @@
+{
+	"title": "Now loading",
+	"gameId": "space-channel-5-part-2",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffffffffffffffffffc003ffffffff0000fffffffc1ff83ffffff07ffe0fffffe0f80307ffffe1f80387ffffc1f0ff83ff8383f1ffc1c10183e00fc1800003e007c0000003ff87c0000183e387c1808383c30fc1c1ffc1c70f83ffffe1c00f87ffffe0e01f07fffff07ffe0ffffffc1ff83fffffff0000ffffffffc003ffffffffffffffffffffffffffff9dbb7b934e7faaab755555ffaaab755555c9aaab75155549aa937555557fadd71b53547fffffffffffff"
+	],
+	"tags": ["status"],
+	"hash": "cc19c15af921a742fa36bc4595254710e7e973ab",
+	"added": "2026-11-23"
+}
