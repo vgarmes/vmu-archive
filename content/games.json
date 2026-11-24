@@ -692,7 +692,10 @@
 		"name": "Resident Evil 2"
 	},
 	"resident-evil-3-nemesis": {
-		"name": "Resident Evil 3: Nemesis"
+		"name": "Resident Evil 3: Nemesis",
+		"ja": "Biohazard 3: Last Escape",
+		"publisher": "Capcom",
+		"year": 2000
 	},
 	"resident-evil-code-veronica": {
 		"name": "Resident Evil Code: Veronica",
