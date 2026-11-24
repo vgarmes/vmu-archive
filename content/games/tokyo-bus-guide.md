@@ -28,8 +28,10 @@ for byte): a little-endian frame count, then 48x32 frames at a byte a dot
 blank screen) and `0x8C01C940`, called from the game's loops, sends it to every
 VMU through `0x8C01BB78`. That keeps a shared count (`0x8C226318`) and moves to
 the next frame once it has reached the record's 10, so each frame is held 11
-calls. At one call per 60 Hz frame that's 183 ms a frame, which is what the bus
-plays at; a capture would settle it. The game picks the bus, Danger and the
+calls. A capture of the emulated VMU shows the bus changing every 350–375 ms,
+365 ms on average over four changes, so the loops call it once every two 60 Hz
+frames (the game runs at 30 Hz): 11 calls are 367 ms a frame, which is what
+the bus plays at. The game picks the bus, Danger and the
 loading screen from several places each; which situations those are wasn't
 traced.
 
