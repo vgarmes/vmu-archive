@@ -1,12 +1,14 @@
 """Check the archive's Resident Evil 3 save icons against the disc's.
 
-    python3 saves.py <folder with RETENUTO/DC/BIO3_FICON.DCB and BIO3_SYSFICON.DCB>
+    python3 saves.py <folder with RETENUTO/DC*/BIO3_FICON.DCB and BIO3_SYSFICON.DCB>
 
-Each .DCB is the icon the game writes into a save's header: a 16-colour
-ARGB4444 palette (32 bytes), then three 32x32 frames at 4 bits a pixel (512
-bytes each), as in the VMS header (see scripts/import-saves.ts). Prints, for
-each, the archive entry holding the same palette and frames, and exits
-non-zero if one is missing.
+Checks every set it finds: RETENUTO/DC (the Japanese disc's, and a copy of
+it on the European disc), DC_E (the European program's) and DC_U. Each .DCB
+is the icon the game writes into a save's header: a 16-colour ARGB4444
+palette (32 bytes), then three 32x32 frames at 4 bits a pixel (512 bytes
+each), as in the VMS header (see scripts/import-saves.ts). Prints, for each,
+the archive entry holding the same palette and frames, and exits non-zero if
+one is missing.
 """
 import json
 import sys
@@ -14,10 +16,8 @@ from pathlib import Path
 
 REPO = Path(__file__).resolve().parents[3]
 GAME_ID = 'resident-evil-3-nemesis'  # its id in content/games.json
-ICONS = [
-    ('game save', 'RETENUTO/DC/BIO3_FICON.DCB'),
-    ('system file', 'RETENUTO/DC/BIO3_SYSFICON.DCB'),
-]
+SETS = ['RETENUTO/DC', 'RETENUTO/DC_E', 'RETENUTO/DC_U']
+ICONS = [('game save', 'BIO3_FICON.DCB'), ('system file', 'BIO3_SYSFICON.DCB')]
 
 
 def palette(b):
@@ -35,7 +35,9 @@ def main(src):
         s = json.loads(path.read_text())
         archive[(tuple(s['palette']), tuple(s['frames']))] = (path.name, s)
     bad = 0
-    for what, name in ICONS:
+    found = [(f'{d}/{f}', what) for d in SETS if (Path(src) / d).is_dir() for what, f in ICONS]
+    assert found, 'no RETENUTO/DC* folder'
+    for name, what in found:
         b = (Path(src) / name).read_bytes()
         assert len(b) == 0x20 + 3 * 0x200, len(b)
         frames = [b[0x20 + n * 0x200:0x20 + (n + 1) * 0x200].hex() for n in range(3)]

@@ -2,15 +2,29 @@
 
 Scripts: `tools/disc-extraction/re3/`.
 
-Dump: Redump `Biohazard 3 - Last Escape (Japan)` (`.cue` and three `.bin`
-tracks; T-1222M V1.002, 2000-09-13). The addresses below are its program's.
+Dumps: Redump `Biohazard 3 - Last Escape (Japan)` (T-1222M V1.002,
+2000-09-13) and `Resident Evil 3 - Nemesis (Europe)` (T-7021D-05 V1.000,
+2000-11-14), each a `.cue` and three `.bin` tracks. The addresses below are
+the Japanese program's.
 
 ## Japan and the West
 
-Only the title screen, BIOHAZARD3 / LAST ESCAPE, is kept as `ntsc-j`: the
-American and European releases are called Resident Evil 3: Nemesis, so they
-can't show it. Their discs weren't checked. Every other screen is in English
-and gets no region.
+The only difference on the VMU is the title. Japan's says BIOHAZARD3 / LAST
+ESCAPE, so it's kept as `ntsc-j`; Europe's says RESIDENT EVIL3 / NEMESIS in
+the same style. The other 44 screens are the same bytes in both and get no
+region.
+
+The European disc carries three sets of the VMU files. `RETENUTO/DC` is the
+Japanese set, byte for byte, title included. `RETENUTO/DC_E` and `DC_U` are
+identical to each other, with the Western title. The European program only
+names `RETENUTO/DC_e/vms_1.DCL` (and its icons) and never the other two.
+`DC_U` is by its name the American set: the American disc wasn't checked,
+but this is why the Western title gets no region rather than `pal`.
+
+The European program's VMU code is the Japanese one moved, instruction for
+instruction except for the pointers it loads. The picker is at `0x8C153304`,
+the routine that runs the VMU at `0x8C1540C4`, and the file's name at
+`0x8C17CE70`.
 
 ## What's on the disc
 
@@ -74,7 +88,15 @@ The browser, `2_DP.BIN`, doesn't name the file.
 
 `/RETENUTO/DC/BIO3_FICON.DCB` and `BIO3_SYSFICON.DCB` are the icons the game
 writes into a save and into its system file: a 16-colour ARGB4444 palette,
-then three 32x32 frames at 4 bits a dot (1568 bytes). They match the
-archive's two Japanese entries, Save file (ＢＨ３／ＡＨ／倉庫オフィス) and
-System file (ＢＨ３／システム／アップロード), byte for byte. The archive's other
-save icon, from an American save (`RESIDENT EVIL3`), isn't on this disc.
+then three 32x32 frames at 4 bits a dot (1568 bytes). All three of the
+archive's entries are on the discs, byte for byte:
+
+| Icon               | Japanese disc (`DC`) | European disc (`DC_E`, `DC_U`) | Archive entry, from a save                   |
+| ------------------ | -------------------- | ------------------------------ | -------------------------------------------- |
+| Game save, Japan's | `BIO3_FICON.DCB`     | (only the leftover `DC` copy)  | Save file (ＢＨ３／ＡＨ／倉庫オフィス)       |
+| Game save, West's  | not there            | `BIO3_FICON.DCB`               | Save file (RE3/EASY/Monitor Room)            |
+| System file        | `BIO3_SYSFICON.DCB`  | `BIO3_SYSFICON.DCB`            | System file (ＢＨ３／システム／アップロード) |
+
+So the Japanese game-save icon is `ntsc-j`. The Western one, read from an
+American save, is the European disc's too, and the system file's icon is the
+same in every set.
