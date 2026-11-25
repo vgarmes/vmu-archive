@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-25",
+		"title": "Resident Evil 2",
+		"body": "Every VMU screen from the European disc, in English and French, including the status screen with its blinking condition, and the weapon names and digits it's built from; the art is hidden in the Windows CE program's resources. The disc also has four more save icons and confirms the nine already here."
+	},
+	{
+		"date": "2026-11-25",
 		"title": "Guilty Gear X",
 		"body": "The logo, the one screen the game ever puts on the VMU, from the Japanese disc, and two more save icons: the save's icon changes with what's been unlocked. The disc also shows the icon already here is the one for Dizzy."
 	},
