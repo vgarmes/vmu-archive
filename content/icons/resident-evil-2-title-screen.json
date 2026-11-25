@@ -1,0 +1,13 @@
+{
+	"title": "Title screen",
+	"gameId": "resident-evil-2",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffffe5fffffffff9d8cfffffffe05887ffffffe01803ffffffc01803fffffec03c037ffffc403c023ffffc003c043ffff8003c001ffff8003c001ffff8003c001ffff8003c001ffff8003c001ffffc003c003ffffc003c003ffffe003c027ffffe0018037fffff401803ffffffc01883ffffffe099d7fffffff587ffffffffffdffffffffffffffffff99b4cb465573ab555b6ed56dab75596ed56d99b54a6e557babd55b6ed577ab555b6eed6fa9b4cb6e6d21ffffffffffff"
+	],
+	"tags": ["logo"],
+	"hash": "f8febf93607e1764e836b9fe6767659114432010",
+	"added": "2026-11-25"
+}

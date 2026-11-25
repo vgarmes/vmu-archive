@@ -1,0 +1,39 @@
+{
+	"kind": "save",
+	"title": "Save file",
+	"gameId": "resident-evil-2",
+	"width": 32,
+	"height": 32,
+	"bpp": 4,
+	"palette": [
+		"#ccbbbbff",
+		"#776677ff",
+		"#111122ff",
+		"#333344ff",
+		"#000055ff",
+		"#444477ff",
+		"#8899ccff",
+		"#006633ff",
+		"#22bb22ff",
+		"#554422ff",
+		"#997755ff",
+		"#ddaa88ff",
+		"#886644ff",
+		"#ddddddff",
+		"#bb9999ff",
+		"#000000ff"
+	],
+	"frames": [
+		"888888955323333f233ff233788888888888885532333cc32fffffff4788888888887511323152fffffffffff4378888888741113332fff2ffff23ff3344588888835111c32f29ccc322332ff22445888834155112f9ebbbbbb922332f2ff478885553512f9ebbbbbbbba2233222ff3888455213f2abbbbbbbbbe322333f2f4888353212f9ebbbbbbbbbb92233322ff7875522323abbbbbbbbbbba9f2323fff3875322229abbbbbbbbbbbeaf2322fff984423229cc9aeebe11ccaeec22f2fff2844222333999aeac33cccaee2fffffff844f2233223ceecc9999caae2fffffff844f23ce33eeeecc13ff2caaffffffff844421e0dd0eeacaee33ccacffffffff88343eddddd0eaae0d00ebe3229992f2887450ddddd0eaaedddddba99ed0def9887440dddeaaaaae0ddd0eaccbbeb528888746dddec9caae00d0beaceb000288888875dd0eeaaaeee00eeaaceeb058888888870deaccaaeeeeeeeaaced0588888888886d0eaccceeeeeeeaaae61888888888885ddddeaaeeeeeeaaaa1788888888888886d0eaaeeeeeeaaaaa17888888888888876d0eeeeeeeaaaaaa17888888888888885000eeeeeaccaaaae488888888888888856eeeaccccaaaaae57888888888888888833999ccaaaaa1ee578888888888888882cccaeeaaaac111147888888888888889eeeeeeeaccccc1ee57888888888888890eeeeeacccc11eeee678"
+	],
+	"animationSpeed": 15,
+	"vmuName": "RESIDENT EVIL2",
+	"description": "RE2/",
+	"source": {
+		"kind": "disc",
+		"file": "/BIO2DC.EXE"
+	},
+	"tags": [],
+	"hash": "ef5f392fe7803c93722081b98de54f5a34fb9e30",
+	"added": "2026-11-25"
+}

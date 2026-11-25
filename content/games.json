@@ -691,7 +691,9 @@
 		"name": "Rent A Hero No. 1"
 	},
 	"resident-evil-2": {
-		"name": "Resident Evil 2"
+		"name": "Resident Evil 2",
+		"publisher": "Capcom",
+		"year": 1999
 	},
 	"resident-evil-3-nemesis": {
 		"name": "Resident Evil 3: Nemesis",

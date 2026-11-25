@@ -1,0 +1,20 @@
+{
+	"title": "Condition labels",
+	"gameId": "resident-evil-2",
+	"width": 48,
+	"height": 45,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffc27fffffffffcfc38fffffffce4927ffffffc24907ffffffce493fffffffce4937ffffffce498fffffffffffffffffffffffffffffc7fff33fffff9b1933f187ff9ec9212493ff9f09332493ff9e49332493ff9a49332493ffc70c333193ffffffffffffffffffffffffffc3ffffffffffc98c386327ffc96492491fffc98492413fffc924984f3fffc924964d3fffc38498e33ffffffffffffffffffffffffffff0ff3ffffffff263f1c61ffff24926924ffff24921924ffff0c930924ffff3c92c924ffff3e331c64ffffffffffffff000000000000755700000000577500000000555500000000755500000000555500000000555500000000555700000000000000000000"
+	],
+	"glyphs": {
+		"height": 9
+	},
+	"source": {
+		"file": "/BIO2DC.EXE",
+		"entry": "VCONDITIONS_ENG"
+	},
+	"tags": ["status"],
+	"hash": "16de9560819a853db4e1c21a686ce199fa2e7696",
+	"added": "2026-11-25"
+}
