@@ -894,7 +894,8 @@
 	"spider-man": {
 		"name": "Spider-Man",
 		"publisher": "Activision",
-		"year": 2001
+		"year": 2001,
+		"cover": "spider-man-mask"
 	},
 	"sports-jam": {
 		"name": "Sports Jam"

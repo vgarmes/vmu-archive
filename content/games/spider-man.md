@@ -34,7 +34,8 @@ sprite: the game draws it only when its art is missing.
 
 - **The mask.** `0x8C191F80` loads `VMULOGO.BMP` once and sends it to every
   VMU the library knows of; `0x8C192320` loads it without sending. It's what
-  the VMU shows whenever nothing else is.
+  the VMU shows whenever nothing else is. The game has no VMU title screen,
+  so the mask is its card's cover.
 - **Saving.** The save routine (`0x8C18F800`) shows `VMUSAVE.BMP` first,
   then `VMUOK.BMP` (`0x8C18FB28`) or `VMUFAILED.BMP` (`0x8C18FBCA`).
 - **Loading.** The load routine shows `VMULOAD.BMP` (`0x8C18FC40`), then
