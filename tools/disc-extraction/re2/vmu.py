@@ -7,8 +7,11 @@ for `pnpm icons:import`), <out>/saves/<icon>/ (a save rebuilt for each icon
 the archive lacks, for `pnpm saveicons:import`, one folder an icon so each
 entry names its own resource) and <out>/contact-sheet.png.
 
-Redump `Resident Evil 2 (Europe) (En,Fr) (Disc 1)` (T-7004D-50 V1.000). The
-game is a Windows CE program, not a 1ST_READ.BIN: BIO2DC.EXE is an SH-4 PE
+Redump `Resident Evil 2 (Europe) (En,Fr) (Disc 1)` (T-7004D-50 V1.000) and
+`Biohazard 2 - Value Plus (Japan) (Disc 1)` (T-1214M V1.005); it tells the two
+programs apart by their resources. The European one has the art in English
+and French, the Japanese one once, in Japanese. The addresses below are the
+European program's unless said. The game is a Windows CE program, not a 1ST_READ.BIN: BIO2DC.EXE is an SH-4 PE
 file with image base 0x10000, and it reaches the VMU through MAPLEDEV.dll.
 Addresses below are virtual addresses in that image. Its VMU art and save
 icons are resources of type "BM" in .rsrc. Before writing anything it checks,
@@ -82,23 +85,39 @@ def words(img, lo, hi):
 
 # ---- what the code says -----------------------------------------------------
 
-STATUS = 0x11DE64      # the status update: every VMU slot, once per call
-INTERVAL_AT = 0x11DE9E  # mov #125,r3 / ... / shll2 r3: 500 ms between updates
-LOADER = 0x11DAAC      # FindResource/LoadResource/LockResource for each piece
-DIGIT = 0x11DD1C       # a digit's byte offset in VNUMBERS
 STEP_MS = 500
 
+# Per release: where the status update (the European one at 0x11DE64, which
+# runs every VMU slot) checks its 500 ms (mov #125,r3 / mov.l @r8,r2 /
+# shll2 r3), where the digit lookup is (the European one at 0x11DD1C), the
+# art's language sets (a resource suffix, a title suffix, an id suffix), and
+# the region of what's only in that release. The Japanese program draws the
+# same status screen from its one set: the same rows, offsets, blinking and
+# no-weapon test, read from its code (0x11A874), with the AMMO band drawn
+# after the condition instead of before, which changes nothing.
+RELEASES = {
+    # names: the save header's fixed VMU name and description start
+    'Europe': dict(interval=0x11DE9E, digit=0x11DD1C, region=None, names=(0x19A1EC, 0x19A1FC),
+                   langs=[('_ENG', '', ''), ('_FRA', ' (French)', '-french')]),
+    'Japan': dict(interval=0x11A8AE, digit=0x11A7BC, region='ntsc-j', names=(0x194328, 0x194334),
+                  langs=[('', ' (Japanese)', '-japanese')]),
+}
+PARTS = ['VSAVE', 'VCONDITIONS', 'VCONNECT', 'VWEAPONS']
 
-def check_code(img):
-    assert words(img, INTERVAL_AT, INTERVAL_AT + 8)[0] == 0xE37D  # mov #125,r3
-    assert words(img, INTERVAL_AT, INTERVAL_AT + 8)[2] == 0x4308  # shll2 r3
-    # the names the loader asks for, in its order
-    names = [va(img, a, 40).decode('utf-16le').split('\0')[0]
-             for a in (0x19F394, 0x19F3B0, 0x19F3CC, 0x19F3F4, 0x19F41C, 0x19F434, 0x19F458, 0x19F47C, 0x19F4A0, 0x19F4C4)]
-    assert names == ['VSAVE_ENG', 'VSAVE_FRA', 'VCONDITIONS_ENG', 'VCONDITIONS_FRA', 'VTITLE', 'VCONNECT_ENG',
-                     'VCONNECT_FRA', 'VWEAPONS_ENG', 'VWEAPONS_FRA', 'VNUMBERS'], names
-    # 0x11DD1C: n <= 5 -> 5-n; 6..11 -> 5-(n-6)+72; 12.. -> 5-(n-12)+144
-    w = words(img, DIGIT, DIGIT + 0x2C)
+
+def release(res):
+    for name, r in RELEASES.items():
+        want = {p + lang for p in PARTS for lang, _, _ in r['langs']} | {'VTITLE', 'VNUMBERS'}
+        if want <= set(res):
+            return name, r
+    sys.exit('neither the European nor the Japanese program')
+
+
+def check_code(img, r):
+    w = words(img, r['interval'], r['interval'] + 6)
+    assert w == (0xE37D, 0x6282, 0x4308), [hex(x) for x in w]  # mov #125,r3 / mov.l @r8,r2 / shll2 r3
+    # n <= 5 -> 5-n; 6..11 -> 5-(n-6)+72; 12.. -> 5-(n-12)+144
+    w = words(img, r['digit'], r['digit'] + 0x2C)
     assert (w[0], w[3], w[9], w[10], w[16]) == (0xE105, 0xE30B, 0xE248, 0x4200, 0x7548), [hex(x) for x in w]
 
 
@@ -166,7 +185,7 @@ CONDITIONS = [  # (title, label offset in VCONDITIONS, blinks)
 def status(res, lang, label, show):
     """0x11DE64's status screen, no weapon equipped."""
     lcd = Lcd()
-    cond, weapons = res[f'VCONDITIONS_{lang}'], res[f'VWEAPONS_{lang}']
+    cond, weapons = res[f'VCONDITIONS{lang}'], res[f'VWEAPONS{lang}']
     lcd.blit(cond, 0, 12, 6, 9, 288)  # AMMO / MUN
     if show:
         lcd.blit(cond, 0, 22, 6, 9, label)
@@ -212,7 +231,6 @@ def hex_palette(pal):
 
 ICONS = ['ORLN', 'ORLU', 'ORCN', 'ORCU', 'ARLN', 'ARLU', 'ARCN', 'ARCU',
          'EXLEON', 'EXCLAIRE', 'EXADA', 'EXCHRIS', 'SYSICON']
-VMU_NAME, DESCRIPTION = 0x19A1EC, 0x19A1FC  # RESIDENT EVIL2, RE2/ (the rest is written at save time)
 SPEED = 15  # as every dumped save in the archive has it
 
 
@@ -221,8 +239,11 @@ SPEED = 15  # as every dumped save in the archive has it
 def main(exe, out):
     out = Path(out)
     img, rsrc = flat(Path(exe).read_bytes())
-    check_code(img)
     res = resources(img, rsrc)
+    rel, r = release(res)
+    check_code(img, r)
+    region = dict(region=r['region']) if r['region'] else {}
+    print(rel, 'program')
 
     inbox = out / 'inbox'
     shutil.rmtree(inbox, ignore_errors=True)
@@ -235,15 +256,18 @@ def main(exe, out):
             strip.paste(f, (0, y))
             y += f.height
         strip.save(inbox / f'{GAME}-{stem}.png')
-        (inbox / f'{GAME}-{stem}.json').write_text(json.dumps(dict(**meta, **BASE), ensure_ascii=False, indent=1) + '\n')
+        (inbox / f'{GAME}-{stem}.json').write_text(
+            json.dumps(dict(**meta, **BASE, **region), ensure_ascii=False, indent=1) + '\n')
         return frames
 
+    # Pieces the same as the other release's are left for the importer to
+    # skip as duplicates (Japan's ACCESS, CONNECT and digits are Europe's).
     shown = []
-    shown += put('title-screen', [full(res, 'VTITLE')], dict(title='Title screen', tags=['logo']))
-    for lang, suffix in (('ENG', ''), ('FRA', ' (French)')):
-        slug = '' if lang == 'ENG' else '-french'
-        shown += put(f'access{slug}', [full(res, f'VSAVE_{lang}')], dict(title=f'Access{suffix}', tags=['memory-card']))
-        shown += put(f'connect{slug}', [full(res, f'VCONNECT_{lang}')], dict(title=f'Connect{suffix}', tags=[]))
+    title_slug = '' if rel == 'Europe' else '-japanese'
+    shown += put(f'title-screen{title_slug}', [full(res, 'VTITLE')], dict(title='Title screen', tags=['logo']))
+    for lang, suffix, slug in r['langs']:
+        shown += put(f'access{slug}', [full(res, f'VSAVE{lang}')], dict(title=f'Access{suffix}', tags=['memory-card']))
+        shown += put(f'connect{slug}', [full(res, f'VCONNECT{lang}')], dict(title=f'Connect{suffix}', tags=[]))
         for name, label, blinks in CONDITIONS:
             frames = [status(res, lang, label, True)] + ([status(res, lang, label, False)] if blinks else [])
             meta = dict(title=f'Condition: {name}{suffix}', tags=['status'])
@@ -254,15 +278,14 @@ def main(exe, out):
 
     # the parts, kept whole as sprites, upright, after checking they give back
     # the resource's bytes
-    for lang, suffix in (('ENG', ''), ('FRA', ' (French)')):
-        slug = '' if lang == 'ENG' else '-french'
+    for lang, suffix, slug in r['langs']:
         for key, title, count in (('VCONDITIONS', 'Condition labels', 5), ('VWEAPONS', 'Weapon names', 17)):
-            raw = res[f'{key}_{lang}']
+            raw = res[f'{key}{lang}']
             im = sheet(raw)
             assert unsheet(im) == raw and im.height == 9 * count
             put(f'{title.lower().replace(" ", "-")}{slug}', [im], dict(
                 title=f'{title}{suffix}', sprite=True, glyphs=dict(height=9), tags=['status'],
-                source=dict(file='/BIO2DC.EXE', entry=f'{key}_{lang}')))
+                source=dict(file='/BIO2DC.EXE', entry=f'{key}{lang}')))
 
     # the digits: 6 cells of 8x9 a row, the game's 0-9 % - then the two halves
     # of the infinity sign; the four cells after it are empty
@@ -280,7 +303,7 @@ def main(exe, out):
     for n in range(14):
         back.paste(font.crop((0, 9 * n, 8, 9 * n + 9)), (8 * (n % 6), 9 * (n // 6)))
     assert unsheet(back) == raw
-    for n in range(14):  # the game's index n is the byte 0x11DD1C gives it
+    for n in range(14):  # the game's index n is the byte the digit lookup gives it
         assert digit_offset(n) == 72 * (n // 6) + 5 - n % 6
     put('ammo-digits', [font], dict(
         title='Ammo digits', sprite=True, glyphs=dict(height=9), tags=['font', 'digits'],
@@ -292,8 +315,7 @@ def main(exe, out):
         s = json.loads(path.read_text())
         have[(tuple(s['palette']), tuple(s['frames']))] = path.name
     shutil.rmtree(out / 'saves', ignore_errors=True)
-    vmu_name = va(img, VMU_NAME, 16).split(b'\0')[0].decode()
-    description = va(img, DESCRIPTION, 16).split(b'\0')[0].decode()
+    vmu_name, description = (va(img, a, 16).split(b'\0')[0].decode('shift_jis') for a in r['names'])
     icons = []
     for name in ICONS:
         pal, frame, ncol = bmp_icon(res[name])
@@ -303,8 +325,8 @@ def main(exe, out):
         if hit:
             continue
         hdr = bytearray(0x80)
-        hdr[0:16] = vmu_name.encode().ljust(16, b' ')
-        hdr[0x10:0x30] = description.encode().ljust(32, b' ')
+        hdr[0:16] = vmu_name.encode('shift_jis').ljust(16, b' ')
+        hdr[0x10:0x30] = description.encode('shift_jis').ljust(32, b' ')
         struct.pack_into('<HH', hdr, 0x40, 1, SPEED)
         hdr[0x60:0x80] = pal
         folder = out / 'saves' / name
@@ -318,7 +340,7 @@ def main(exe, out):
     rows_ = (len(shown) + cols - 1) // cols
     sheet_ = Image.new('RGB', (12 + cols * cw, 40 + rows_ * ch + 32 * scale + 24), '#f5f2e9')
     draw = ImageDraw.Draw(sheet_)
-    draw.text((12, 12), 'Resident Evil 2 (Europe): /BIO2DC.EXE resources, every frame', fill='black')
+    draw.text((12, 12), f'Resident Evil 2 ({rel}): /BIO2DC.EXE resources, every frame', fill='black')
     for n, im in enumerate(shown):
         sheet_.paste(im.convert('RGB').resize((W * scale, H * scale), Image.NEAREST),
                      (12 + n % cols * cw, 40 + n // cols * ch))

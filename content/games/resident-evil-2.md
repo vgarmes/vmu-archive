@@ -2,10 +2,33 @@
 
 Scripts: `tools/disc-extraction/re2/`.
 
-Dump: Redump `Resident Evil 2 (Europe) (En,Fr) (Disc 1)` (`.cue` and six
-`.bin` tracks; T-7004D-50 V1.000, 2000-02-22). The European release carries
-English and French, and so does its VMU art. Nothing here is marked as one
-region's: the American and Japanese discs weren't checked.
+Dumps: Redump `Resident Evil 2 (Europe) (En,Fr) (Disc 1)` (T-7004D-50
+V1.000, 2000-02-22) and `Biohazard 2 - Value Plus (Japan) (Disc 1)` (T-1214M
+V1.005, 1999-11-14), each a `.cue` and six `.bin` tracks. The addresses below
+are the European program's unless said.
+
+## Japan and Europe
+
+The European release carries its VMU art in English and French; the Japanese
+one has one set, with no suffix on the names (`VTITLE`, `VSAVE`,
+`VCONDITIONS`…). Of that set:
+
+- ACCESS, CONNECT, the digits and all 13 save icons are the European English
+  ones, byte for byte.
+- The title says BIOHAZARD2 where Europe's says RESIDENT EVIL2.
+- The condition labels are the same English words, but the AMMO band reads
+  のこり (remaining).
+- The weapon names are in katakana (コンバットナイフ, ハンドガン…).
+
+So the Japanese title, status screens and those two sprites are `ntsc-j`.
+Nothing else is marked as one region's: the American disc wasn't checked, so
+the European English pieces get no region, and neither do the French ones.
+
+The Japanese program draws the same status screen from its set: the code
+(`0x11A874`) has the same rows, label offsets, blinking, 500 ms check
+(`0x11A8AE`) and no-weapon test, and the same copy (`0xC7440`) and digit
+lookup (`0x11A7BC`), byte for byte. It draws the AMMO band after the label
+instead of before, which changes nothing, and has no language switch.
 
 ## What's on the disc
 
@@ -96,6 +119,8 @@ three: that's what dumped saves hold.
 | `SYSICON`                     | System file                                            |
 
 All nine already in the archive match byte for byte, the Japanese save's
-too, so the icons are the same in both releases. The rebuilt saves carry the
-fixed part of the names (RESIDENT EVIL2, RE2/) and speed 15, as the dumped
-ones have; the game adds the mode, difficulty and room when it saves.
+too, and the Japanese disc holds the same 13 resources, so the icons are the
+same in both releases. The rebuilt saves carry the European program's fixed
+part of the names (RESIDENT EVIL2, RE2/; the Japanese one has BIOHAZARD2,
+ＢＨ２／) and speed 15, as the dumped ones have; the game adds the mode,
+difficulty and room when it saves.

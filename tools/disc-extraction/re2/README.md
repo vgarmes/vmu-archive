@@ -1,7 +1,10 @@
 # Resident Evil 2
 
-Dump: `Resident Evil 2 (Europe) (En,Fr) (Disc 1)` (Redump, `.cue` and six
-`.bin` tracks; T-7004D-50 V1.000).
+Dumps: `Resident Evil 2 (Europe) (En,Fr) (Disc 1)` (T-7004D-50 V1.000) and
+`Biohazard 2 - Value Plus (Japan) (Disc 1)` (T-1214M V1.005), Redump, `.cue`
+and six `.bin` tracks each. `vmu.py` tells the two programs apart by itself;
+the importer skips the Japanese pieces that are the same as the European
+ones.
 
 What the script found is written up in the game's notes,
 [`content/games/resident-evil-2.md`](../../../content/games/resident-evil-2.md).
@@ -16,6 +19,8 @@ python3 -E vmu.py $OUT/files/BIO2DC.EXE $OUT/out   # screens, sprites, save icon
 pnpm icons:import $OUT/out/inbox
 for d in $OUT/out/saves/*/; do pnpm saveicons:import "$d"; done
 ```
+
+For the Japanese disc, the same with its dump and another `OUT`.
 
 Run the script from this folder; it needs Pillow. It checks the save icons
 against the archive's and only writes the ones it lacks, one folder each.

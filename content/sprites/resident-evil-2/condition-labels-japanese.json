@@ -1,0 +1,21 @@
+{
+	"title": "Condition labels (Japanese)",
+	"gameId": "resident-evil-2",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 45,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffc27fffffffffcfc38fffffffce4927ffffffc24907ffffffce493fffffffce4937ffffffce498fffffffffffffffffffffffffffffc7fff33fffff9b1933f187ff9ec9212493ff9f09332493ff9e49332493ff9a49332493ffc70c333193ffffffffffffffffffffffffffc3ffffffffffc98c386327ffc96492491fffc98492413fffc924984f3fffc924964d3fffc38498e33ffffffffffffffffffffffffffff0ff3ffffffff263f1c61ffff24926924ffff24921924ffff0c930924ffff3c92c924ffff3e331c64ffffffffffffff00000000000019d200000000345200000000549a0000000054120000000055020000000055020000000029cc00000000000000000000"
+	],
+	"glyphs": {
+		"height": 9
+	},
+	"source": {
+		"file": "/BIO2DC.EXE",
+		"entry": "VCONDITIONS"
+	},
+	"tags": ["status"],
+	"hash": "55f5f819ac545530cf677001924002b9b32dffd9",
+	"added": "2026-11-25"
+}
