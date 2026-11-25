@@ -350,7 +350,9 @@
 		"name": "Grandia 2"
 	},
 	"guilty-gear-x": {
-		"name": "Guilty Gear X"
+		"name": "Guilty Gear X",
+		"publisher": "Sammy",
+		"year": 2000
 	},
 	"gunbird-2": {
 		"name": "Gunbird 2"

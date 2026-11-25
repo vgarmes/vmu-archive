@@ -77,7 +77,7 @@ Every game so far did it differently. What has turned up:
   Border Down,
   Virtua Tennis 2, Space Channel 5 (in its copy of Sega's sample `vmslcd.c`,
   a table of rectangles and bitmaps), Space Channel 5: Part 2, Napple Tale,
-  Cool Cool Toon.
+  Cool Cool Toon, Guilty Gear X.
 - In the game's own program, loaded by a small `1ST_READ.BIN`: Metropolis
   Street Racer's `MSR.BIN` (it runs from `0x8C010000`; string pointers give
   the base away), and Rainbow Cotton's overlays `TITLE.BIN`, `GAME.BIN`,
@@ -106,26 +106,28 @@ Every game so far did it differently. What has turned up:
 - Inside an archive, per character: Soul Calibur's `HUMAN.DAT`.
 - Nowhere: Record of Lodoss War only clears the screen. To tell, follow the
   calls into the LCD library's write (here `pdLcd`, found by its version
-  string) back to where the screen pointer is set.
+  string) back to where the screen pointer is set. pdLcd 1.04's routines are
+  the same bytes in every game that links it, so one found in one game finds
+  it in the next: Guilty Gear X's write was found from Resident Evil 3's.
 
 File names rarely help. Shenmue II's `SPRITE/VM_*.GZ` sound like VMU art but are
 colour textures; the real art was found by following the code that loads it.
 
 **How the dots are stored.**
 
-| Encoding                 | Example                                                                                                                                              |
-| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------- |
-| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Rainbow Cotton, Cool Cool Toon, Shenmue 1 and 2 (with a width and height byte), Space Channel 5 (with a rectangle)   |
-| 1 bit per dot, low first | Metropolis Street Racer: bit 0 of each byte is the leftmost dot                                                                                      |
-| 1 bit per dot, a sheet   | Code: Veronica: one 128x128 sheet, cut by a rectangle table into every screen's parts                                                                |
-| 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Jet Set Radio, Space Channel 5: Part 2, Typing E-Keikaku, Virtua Tennis 2: turned 180°, as the LCD takes it                  |
-| 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                                                                                       |
-| 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's                                                                                     |
-| 1 byte per dot, mirrored | Berserk                                                                                                                                              |
-| 1 byte per dot, as shown | Tokyo Bus Guide: `0x0F` lit, 0 not, after a frame count; Resident Evil 3: likewise, no count; Border Down: 8 lit, 0 not; Napple Tale: 255 lit, 0 not |
-| 1 byte per dot, a sheet  | Sonic Shuffle's hand: one 48x32 sheet of 8 (lit) or 0, cut by a rectangle table                                                                      |
-| Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                                                                                      |
-| Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                                                                                        |
+| Encoding                 | Example                                                                                                                                                                |
+| ------------------------ | ---------------------------------------------------------------------------------------------------------------------------------------------------------------------- |
+| 1 bit per dot, as shown  | Moero! Justice Gakuen, Ikaruga, Rainbow Cotton, Cool Cool Toon, Shenmue 1 and 2 (with a width and height byte), Space Channel 5 (with a rectangle)                     |
+| 1 bit per dot, low first | Metropolis Street Racer: bit 0 of each byte is the leftmost dot                                                                                                        |
+| 1 bit per dot, a sheet   | Code: Veronica: one 128x128 sheet, cut by a rectangle table into every screen's parts                                                                                  |
+| 1 bit per dot, rotated   | Bangaioh, Crazy Taxi 2, Jet Set Radio, Space Channel 5: Part 2, Typing E-Keikaku, Virtua Tennis 2: turned 180°, as the LCD takes it                                    |
+| 1 bit per dot, inverted  | Power Stone's title (the game inverts it again before sending)                                                                                                         |
+| 1 bit per dot, masked    | Power Stone Mini: each row is the mask's bytes, then the image's                                                                                                       |
+| 1 byte per dot, mirrored | Berserk                                                                                                                                                                |
+| 1 byte per dot, as shown | Tokyo Bus Guide: `0x0F` lit, 0 not, after a frame count; Resident Evil 3: likewise, no count; Border Down and Guilty Gear X: 8 lit, 0 not; Napple Tale: 255 lit, 0 not |
+| 1 byte per dot, a sheet  | Sonic Shuffle's hand: one 48x32 sheet of 8 (lit) or 0, cut by a rectangle table                                                                                        |
+| Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                                                                                                        |
+| Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                                                                                                          |
 
 So try every packing, every flip and mirror, and inverted bits before
 concluding the art isn't there. A sprite can also be stored eight times, shifted
@@ -213,6 +215,7 @@ The code also says what the game never shows: screens nothing calls are marked
 | Space Channel 5: Part 2          | JP V2.000 (2002, Sega), Redump                 | [`space-channel-5-part-2/`](space-channel-5-part-2/) | [space-channel-5-part-2](../../content/games/space-channel-5-part-2.md)                                                   |
 | Napple Tale                      | JP V1.006 (2000, Sega), Redump                 | [`napple-tale/`](napple-tale/)                       | [napple-tale-arsia-in-daydream](../../content/games/napple-tale-arsia-in-daydream.md)                                     |
 | Cool Cool Toon                   | JP V1.012 (2000, SNK), Redump                  | [`cool-cool-toon/`](cool-cool-toon/)                 | [cool-cool-toon](../../content/games/cool-cool-toon.md)                                                                   |
+| Guilty Gear X                    | JP V2.000 (2000, Sammy), Redump                | [`guilty-gear-x/`](guilty-gear-x/)                   | [guilty-gear-x](../../content/games/guilty-gear-x.md)                                                                     |
 | Resident Evil 3: Nemesis         | JP V1.002 and EU V1.000 (2000, Capcom), Redump | [`re3/`](re3/)                                       | [resident-evil-3-nemesis](../../content/games/resident-evil-3-nemesis.md)                                                 |
 | Record of Lodoss War             | JP Rev A, Redump                               | [`lodoss/`](lodoss/)                                 | none: it draws nothing on the VMU (see its README)                                                                        |
 | Visual Memory Unit, Dreamcast    | US v1.05, JP v1.004 VMU BIOS, `dc_boot.bin`    | [`bios/`](bios/)                                     | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

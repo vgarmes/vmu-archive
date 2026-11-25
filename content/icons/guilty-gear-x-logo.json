@@ -1,0 +1,14 @@
+{
+	"title": "Guilty Gear X logo",
+	"gameId": "guilty-gear-x",
+	"region": "ntsc-j",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"000000000000000007f00000000df80e3800001f47f17c00003fbffcfc00007f701ffc00007fe3bffc00003fe7fff800003ffc07f800001ff8f7e400001ff9fff4000017fd1fb400002dff3f7a00002efffffa003fef7ffdfbfc400fdffff802bffffffffffda2d58a8c6cd5a2d58a8c5555aed5dabdd555aed5d8bdd56da0d5dd8444edaad5ddadc455a215dd8c5555ab345dac5555bffffffffffd40039ff7c0023fffc7f3fffc0007380fe000000607f0e000000800006000000000001000"
+	],
+	"tags": ["logo"],
+	"hash": "78541d47649613a2bdd4dc7b3e34513f37cc16b9",
+	"added": "2026-11-25"
+}
