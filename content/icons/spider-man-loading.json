@@ -1,0 +1,13 @@
+{
+	"title": "Loading",
+	"gameId": "spider-man",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff841fffffffff000fffffffff7fefffffffff402fffbfffff402fff9fffff402fff8fffff402e9007ffff402e9003ffff402e9001ffff402e9000ffff402e9000ffff7fee9001ffff7fee9003ffff656e9007ffff43efff8fffff42afff9fffff67efffbfffff3fcfffffffff9f9fffffffffc03fffffffffffffffffff0000000000000200024000000200020000000239ce4e700002294a4a50000228ca4a500002294a4a700002294a4a154003b9ce4a5540000000007000000000000000"
+	],
+	"tags": ["memory-card"],
+	"hash": "79b6c06800f484e6f55cb7f30fe12de50be9d331",
+	"added": "2026-11-25"
+}

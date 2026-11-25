@@ -1,0 +1,13 @@
+{
+	"title": "Failed",
+	"gameId": "spider-man",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff841fffffffff000fffffffff7feff01fffff402fc007ffff402f87c3ffff402f1ff1ffff402f3c79ffff402e3c78ffff402e7c7cffff402e7c7cffff402e7c7cffff7fee7c7cffff7fee7ffcffff656e3c78ffff43ef3c79ffff42af1ff1ffff67ef87c3ffff3fcfc007ffff9f9ff01fffffc03fffffffffffffffffff000000000000000000000000001c090048000010010048000011c971c800001d495148000010c97148000011494140000011495148000011c971c800000000000000"
+	],
+	"tags": ["memory-card"],
+	"hash": "fc78a95b5bf392e3ee82e75345d05ae275c707e9",
+	"added": "2026-11-25"
+}

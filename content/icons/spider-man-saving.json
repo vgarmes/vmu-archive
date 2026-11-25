@@ -1,0 +1,13 @@
+{
+	"title": "Saving",
+	"gameId": "spider-man",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ff841fffffffff000fffffffff7fefffffffff402ffbffffff402ff3ffffff402fe3ffffff402fc012ffff402f8012ffff402f0012ffff402e0012ffff402e0012ffff7fef0012ffff7fef8012ffff656fc012ffff43efe3ffffff42aff3ffffff67effbffffff3fcfffffffff9f9fffffffffc03fffffffffffffffffff00000000000000e00100000000a00000000000a74539c00000c54529400000236d29400000a52929c00000a52928550000e73929550000000001c000000000000000"
+	],
+	"tags": ["memory-card"],
+	"hash": "2aa0c7acba899ac7acc170085c4fc0432d598be3",
+	"added": "2026-11-25"
+}

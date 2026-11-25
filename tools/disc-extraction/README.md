@@ -91,7 +91,8 @@ Every game so far did it differently. What has turned up:
   `FindResource`'s callers, and the VMU code from `MAPLEDEV.dll`'s imports.
 - In a dedicated file: Berserk's `LCDIMG.BIN`, Tokyo Bus Guide's
   `SYSTEM/*.LCD`, Resident Evil 3's `RETENUTO/DC/VMS_1.DCL` (all 45 screens
-  back to back, nothing else).
+  back to back, nothing else), Spider-Man's `VMU*.BMP` (a Windows BMP a
+  screen).
 - In a VMU program the game carries for the VMU to run, with its own code:
   Shenmue Passport's Goodies viewer (`SYEN.BIN`), Power Stone Mini, a whole
   VMS image inside Power Stone's `1ST_READ.BIN`, and Jet Set Radio's graffiti
@@ -130,6 +131,7 @@ colour textures; the real art was found by following the code that loads it.
 | 1 byte per dot, mirrored | Berserk                                                                                                                                                                                                        |
 | 1 byte per dot, as shown | Tokyo Bus Guide: `0x0F` lit, 0 not, after a frame count; Resident Evil 3: likewise, no count; Border Down and Guilty Gear X: 8 lit, 0 not; Napple Tale: 255 lit, 0 not                                         |
 | 1 byte per dot, a sheet  | Sonic Shuffle's hand: one 48x32 sheet of 8 (lit) or 0, cut by a rectangle table                                                                                                                                |
+| A two-colour BMP         | Spider-Man: 8 bits a dot, its palette white then black, black lit, rows bottom up                                                                                                                              |
 | Brightness 0–15 per dot  | Sakura Taisen 3: lit where the value is below 8                                                                                                                                                                |
 | Several values per dot   | Soul Calibur: 15 lit; 0 and 128 unlit (figure and background)                                                                                                                                                  |
 
@@ -222,5 +224,6 @@ The code also says what the game never shows: screens nothing calls are marked
 | Guilty Gear X                    | JP V2.000 (2000, Sammy), Redump                            | [`guilty-gear-x/`](guilty-gear-x/)                   | [guilty-gear-x](../../content/games/guilty-gear-x.md)                                                                     |
 | Resident Evil 2                  | EU V1.000 and JP V1.005 disc 1 (1999–2000, Capcom), Redump | [`re2/`](re2/)                                       | [resident-evil-2](../../content/games/resident-evil-2.md)                                                                 |
 | Resident Evil 3: Nemesis         | JP V1.002 and EU V1.000 (2000, Capcom), Redump             | [`re3/`](re3/)                                       | [resident-evil-3-nemesis](../../content/games/resident-evil-3-nemesis.md)                                                 |
+| Spider-Man                       | US (2001, Activision), Redump                              | [`spider-man/`](spider-man/)                         | [spider-man](../../content/games/spider-man.md)                                                                           |
 | Record of Lodoss War             | JP Rev A, Redump                                           | [`lodoss/`](lodoss/)                                 | none: it draws nothing on the VMU (see its README)                                                                        |
 | Visual Memory Unit, Dreamcast    | US v1.05, JP v1.004 VMU BIOS, `dc_boot.bin`                | [`bios/`](bios/)                                     | [visual-memory-unit](../../content/games/visual-memory-unit.md), [dreamcast](../../content/games/dreamcast.md)            |

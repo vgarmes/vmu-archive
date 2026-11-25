@@ -892,7 +892,9 @@
 		"name": "Speed Devils Online Racing"
 	},
 	"spider-man": {
-		"name": "Spider-Man"
+		"name": "Spider-Man",
+		"publisher": "Activision",
+		"year": 2001
 	},
 	"sports-jam": {
 		"name": "Sports Jam"
