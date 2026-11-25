@@ -7,12 +7,7 @@
 	{
 		"date": "2026-11-24",
 		"title": "Resident Evil 3: Nemesis",
-		"body": "The European title screen, RESIDENT EVIL3 / NEMESIS, from the European disc; its other screens are the same as the Japanese ones. The disc also shows which save icon is Japan's and which the West's."
-	},
-	{
-		"date": "2026-11-24",
-		"title": "Resident Evil 3: Nemesis",
-		"body": "Every VMU screen from the Japanese disc: the title, the memory card messages, the four players' portraits and the condition monitor's heartbeat in each of its nine states. One screen, Connect, is never shown by the game."
+		"body": "Every VMU screen from the Japanese and European discs, which differ only in the title: the portraits, the memory card messages, the condition monitor's heartbeat in each of its nine states and one screen the game never shows. The discs also show which save icon is Japan's and which the West's."
 	},
 	{
 		"date": "2026-11-23",
@@ -26,13 +21,8 @@
 	},
 	{
 		"date": "2026-11-23",
-		"title": "Space Channel 5: Part 2",
-		"body": "The Channel 5 logo with Part2 beneath it, which the VMU rests on, and the Now loading and Now saving screens, from the Japanese disc. The disc also confirms the save icon already here is the game's own."
-	},
-	{
-		"date": "2026-11-23",
-		"title": "Space Channel 5",
-		"body": "Fifteen screens from the Japanese disc: the Channel 5 logo the VMU rests on, Now loading and Now saving, a Sibuya sign from the staff roll, and eleven character portraits, ten of them not yet identified. The disc also confirms the save icon already here is the game's own."
+		"title": "Space Channel 5 and Space Channel 5: Part 2",
+		"body": "Each game's Channel 5 logo, which the VMU rests on, and its loading and saving screens from the Japanese discs, and in the first game a Sibuya sign from the staff roll and eleven character portraits, ten of them not yet identified. The discs also confirm both save icons already here are the games' own."
 	},
 	{
 		"date": "2026-11-23",
@@ -136,18 +126,13 @@
 	},
 	{
 		"date": "2026-11-03",
-		"title": "The Shenmue Goodies viewer",
-		"body": "The VMU program from Shenmue's Passport disc that showed the Goodies."
+		"title": "Shenmue's Goodies",
+		"body": "213 animated Shenmue characters, the Goodies Shenmue Passport traded online until 2002, from the Neoseeker Shenmue wiki, and the VMU program from the Passport disc that showed them. Their timing hasn't been checked against the game."
 	},
 	{
 		"date": "2026-11-03",
-		"title": "Shenmue's Goodies characters",
-		"body": "213 animated Shenmue characters, the Goodies Shenmue Passport traded online until 2002, from the Neoseeker Shenmue wiki. Their timing hasn't been checked against the game."
-	},
-	{
-		"date": "2026-11-03",
-		"title": "Shenmue, straight from the disc",
-		"body": "Shenmue's title logo and 70 Man Battle screens from the Japanese disc."
+		"title": "Shenmue and Shenmue II, straight from the disc",
+		"body": "Shenmue's title logo and 70 Man Battle screens, and every VMU screen in Shenmue II, from the Japanese discs."
 	},
 	{
 		"date": "2026-11-03",
@@ -181,23 +166,13 @@
 	},
 	{
 		"date": "2026-11-03",
-		"title": "The rest of Sakura Taisen 3",
-		"body": "Everything else on the disc, including the minigame intros, and the faces now blink."
+		"title": "Sakura Taisen 3, with scrolling banners",
+		"body": "Everything on the Japanese disc: the title, crest, minigame intros and blinking character expressions, and the 23 special attack banners the game scrolls across the VMU in battle."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Soul Calibur's fighters",
 		"body": "All 19 fighters, five poses each, decompressed from the US disc."
-	},
-	{
-		"date": "2026-11-03",
-		"title": "Sakura Taisen 3, with scrolling banners",
-		"body": "The title, crest and character expressions from the Japanese disc, and the 23 special attack banners the game scrolls across the VMU in battle."
-	},
-	{
-		"date": "2026-11-03",
-		"title": "Shenmue II, straight from the disc",
-		"body": "Every VMU screen in the Japanese release."
 	},
 	{
 		"date": "2026-11-03",
@@ -211,18 +186,13 @@
 	},
 	{
 		"date": "2026-11-03",
-		"title": "Bangaioh, straight from the disc",
-		"body": "Every VMU screen in the Japanese release, played with the game's own timing, and four it never shows."
+		"title": "Bangai-O, straight from the disc",
+		"body": "Every VMU screen in the Japanese Bangaioh, from the title screen and its animated robot to four screens the game never shows, played with the game's own timing."
 	},
 	{
 		"date": "2026-11-03",
 		"title": "Berserk, straight from the disc",
 		"body": "Every Puck screen, played with the game's own timing, including seven new animations and six unused screens."
-	},
-	{
-		"date": "2026-11-03",
-		"title": "Bangai-O",
-		"body": "The title screen and its animated robot."
 	},
 	{
 		"date": "2026-11-02",
