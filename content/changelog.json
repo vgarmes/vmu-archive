@@ -1,6 +1,11 @@
 [
 	{
 		"date": "2026-11-25",
+		"title": "Spider-Man",
+		"body": "Spider-Man's mask, which the VMU rests on, and the saving, loading, OK and failed screens, from the American disc, where each is a small Windows bitmap of its own."
+	},
+	{
+		"date": "2026-11-25",
 		"title": "Resident Evil 2",
 		"body": "Every VMU screen from the European and Japanese discs, in English, French and Japanese, including the status screen with its blinking condition, and the weapon names and digits it's built from; the art is hidden in the Windows CE program's resources. The discs also have four more save icons and confirm the nine already here."
 	},
