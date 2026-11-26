@@ -1,0 +1,13 @@
+{
+	"title": "NG",
+	"gameId": "mars-matrix",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffff800000000001bffffffffffdb00ffffff00dbffffffffffdbe01ffff807dbffffffffffdbf807ffe01fdbffffffffffdbffefb8fcffdbffefb77cffdbffe7afbcffdbffe7afbcffdbffebaffcffdbffebaffcffdbffedaffcffdbffedae3cffdbffeeafbdffdbffeeafbfffdbffef2fbfffdbffef373cffdbffefb8bcffdbffffffffffdbffffffffffdbf807ffe03fdbffffffffffdbc01ffff807dbffffffffffda00ffffff00dbffffffffffd800000000001ffffffffffff"
+	],
+	"tags": ["memory-card"],
+	"hash": "7ca7f484346504077d633acde4b16e48af03f1fa",
+	"added": "2026-11-26"
+}

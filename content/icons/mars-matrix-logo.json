@@ -1,0 +1,13 @@
+{
+	"title": "Mars Matrix logo",
+	"gameId": "mars-matrix",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"fffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffefefe70103ffe7cfe77d7fffd7d7db7d7fffdbb7db7b9fffbbbb8107e7ffbd7bbd77f9ff7c7d7e7bfeff7efd7e7dff7e00000000003e7cfe7b7d1f7d7d7dbb7d6efdbb7dbb7b75fbbbb81b0779fbd7bbdb7776f7c7d7eb7b6f37efd7eb7d5fcffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffffff"
+	],
+	"tags": ["logo"],
+	"hash": "e063541f3f3bd45df637a5e412ad151748666154",
+	"added": "2026-11-26"
+}

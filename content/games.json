@@ -479,7 +479,10 @@
 		"name": "Marionette Handler"
 	},
 	"mars-matrix": {
-		"name": "Mars Matrix"
+		"name": "Mars Matrix",
+		"publisher": "Capcom",
+		"year": 2000,
+		"cover": "mars-matrix-logo"
 	},
 	"marvel-vs-capcom": {
 		"name": "Marvel vs. Capcom"

@@ -1,0 +1,13 @@
+{
+	"title": "OK",
+	"gameId": "mars-matrix",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffff800000000001bffffffffffdbfff8001fffdbffffffffffdbffc00003ffdbffffffffffdbff000000ffdbffffffffffdbfff8efbcffdbfff76f7cffdbffefaf7cffdbffefaefcffdbffefadfcffdbffefadfcffdbffefabfcffdbffefa5fcffdbffefaefdffdbffefaeffffdbffefaf7fffdbfff76fbcffdbfff8efbcffdbffffffffffdbffffffffffdbff000000ffdbffffffffffdbffc00003ffdbffffffffffdbfff8001fffdbffffffffffd800000000001ffffffffffff"
+	],
+	"tags": ["memory-card"],
+	"hash": "a9608dc1258111b0ca2007b38cfc8f146d01c206",
+	"added": "2026-11-26"
+}
