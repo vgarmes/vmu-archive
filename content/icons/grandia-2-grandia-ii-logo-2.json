@@ -1,0 +1,13 @@
+{
+	"title": "Grandia II logo",
+	"gameId": "grandia-2",
+	"width": 48,
+	"height": 32,
+	"bpp": 1,
+	"frames": [
+		"ffffffffffffffffffffffffe001e0001007c7bccd9bc6f39fbe1d9be6f9bfbf39d876fc380771db361e70336cfb36ce67b6ecfb36c667befdfb76c671bcfdbbf6fe71b6cdbbe6fe39b6cd9bc6c6bdb6cd9b96ce9f800000301ecfbfffffff3ce7bfc003ff99f1bfdffbffc3fc3fcff3ffe7ffffe667fffffffff66ffffffffff66ffffffffff66ffffffffff66ffffffffff66ffffffffff66fffffffffe667ffffffffcff3ffffffffdffbffffffffc003ffffffffffffffffffffffffffff"
+	],
+	"tags": ["logo"],
+	"hash": "874eae5bb9718464e6444404444bfaa52438b2b6",
+	"added": "2026-11-26"
+}

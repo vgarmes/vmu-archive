@@ -347,7 +347,10 @@
 		"name": "Grand Theft Auto 2"
 	},
 	"grandia-2": {
-		"name": "Grandia 2"
+		"name": "Grandia 2",
+		"publisher": "Game Arts",
+		"year": 2000,
+		"cover": "grandia-2-grandia-ii-logo-2"
 	},
 	"guilty-gear-x": {
 		"name": "Guilty Gear X",
